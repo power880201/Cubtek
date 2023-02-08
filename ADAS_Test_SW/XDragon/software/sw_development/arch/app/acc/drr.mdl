@@ -1,0 +1,3964 @@
+Library {
+  Name			  "drr"
+  Version		  8.1
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1252"
+  PostLoadFcn		  ", if any(exist('dsrtsu_mdlpostloadfcn', 'file') == [2, 3, 6]), try dsrtsu_mdlpostloadfcn('Execute', "
+  "bdroot); catch fprintf('Error in PostLoadFcn (dsrtsu_mdlpostloadfcn) for model \"%s\":\\n %s\\n', bdroot, lasterr); "
+  "end, end, \n"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  UserBdParams		  "DSRTSU_INTERNAL_RTI_VER;DSRTSU_INTERNAL_RTI_TYPE;RTICANMMDATA;DSRTSU_INTERNAL_DSETHERNETUDP;DSRTSU_"
+  "INTERNAL_RTIFPGA"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-8.0, 0.0, 1932.0, 1056.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[13]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1882.0, 890.0]
+	ZoomFactor		[1.5864661654135339]
+	Offset			[296.89868593161668, 204.0]
+      }
+    }
+  }
+  DSRTSU_INTERNAL_RTI_VER "450"
+  DSRTSU_INTERNAL_RTI_TYPE "rti1401"
+  RTICANMMDATA		  "struct('GeneralSetupData',struct('modelroot','D:\\ELN150201_TAIWAN\\trunk\\AdasDragon\\software\\sw"
+  "_development\\arch\\app\\acc','generalsettings',struct('filesettings',struct('destfolder',struct('Name','RTICANMM_FI"
+  "LES','Check',1),'buildfolder',struct('Name','.','Check',1),'AbsDestfolder',struct('Name','D:\\ELN150201_TAIWAN\\trun"
+  "k\\AdasDragon\\software\\sw_development\\arch\\app\\acc\\RTICANMM_FILES'),'AbsBuildfolder',struct('Name','D:\\ELN150"
+  "201_TAIWAN\\trunk\\AdasDragon\\software\\sw_development\\arch\\app\\acc'))),'options',struct('addpaths',1,'rmpaths',"
+  "1,'addtrcexclusion',logical(1),'cannavigator',struct('checkmonitoring',0),'show_usrtrc',0,'use_usrtrc',0),'advanced'"
+  ",struct('options',[1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"
+  " 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1]),'MPSetup',{"
+  "{}},'modelname','drr','block','drr'))"
+  DSRTSU_INTERNAL_DSETHERNETUDP	"10"
+  DSRTSU_INTERNAL_RTIFPGA "40"
+  Created		  "Mon Feb 15 11:21:09 2016"
+  Creator		  "AT015411"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "AT015555"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri May 05 10:55:36 2017"
+  RTWModifiedTimeStamp	  415882523
+  ModelVersionFormat	  "1.%<AutoIncrement:306>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "all"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  RecordCoverage	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      6
+      Version		      "1.13.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  7
+	  Version		  "1.13.0"
+	  StartTime		  "0.0"
+	  StopTime		  "Inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.001"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode1"
+	  SolverName		  "ode1"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  8
+	  Version		  "1.13.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  9
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  off
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  off
+	  BufferReuse		  off
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  off
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  off
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  10
+	  Version		  "1.13.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  11
+	  Version		  "1.13.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Zero"
+	  ProdEndianess		  "BigEndian"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "Generic->Custom"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Zero"
+	  TargetEndianess	  "BigEndian"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Generic->Custom"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  12
+	  Version		  "1.13.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  13
+	  Version		  "1.13.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  14
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    16
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    Cell		    "PackageGeneratedCodeAndArtifacts"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "rti1005.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rti"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  TemplateMakefile	  "rti1005.tmf"
+	  Description		  "dSPACE DS1005 Hardware Platform"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  "rti1005_make_rtw_hook"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      15
+	      Version		      "1.13.0"
+	      Array {
+		Type			"Cell"
+		Dimension		22
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.STFCustomTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      16
+	      Version		      "1.13.0"
+	      Array {
+		Type			"Cell"
+		Dimension		21
+		Cell			"TimeScaleFactor"
+		Cell			"CCompilerOptimizationOpts"
+		Cell			"RTICfgSetVer"
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"GRTInterface"
+		Cell			"ParMdlRefBuildCompliant"
+		Cell			"MultiInstanceERTCode"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   off
+	      ConcurrentExecutionCompliant off
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      on
+	      GenerateAllocFcn	      off
+	      SystemTargetFile	      "rti1005.tlc"
+	      DialogCategory	      0
+	      Array {
+		Type			"Handle"
+		Dimension		1
+		Simulink.GRTTargetCC {
+		  $BackupClass		  "Simulink.TargetCC"
+		  $ObjectID		  17
+		  Version		  "1.13.0"
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    18
+		    Cell		    "GeneratePreprocessorConditionals"
+		    Cell		    "IncludeMdlTerminateFcn"
+		    Cell		    "CombineOutputUpdateFcns"
+		    Cell		    "SuppressErrorStatus"
+		    Cell		    "ERTCustomFileBanners"
+		    Cell		    "GenerateSampleERTMain"
+		    Cell		    "GenerateTestInterfaces"
+		    Cell		    "ModelStepFunctionPrototypeControlCompliant"
+		    Cell		    "CPPClassGenCompliant"
+		    Cell		    "GenerateAllocFcn"
+		    Cell		    "PurelyIntegerCode"
+		    Cell		    "SupportComplex"
+		    Cell		    "SupportAbsoluteTime"
+		    Cell		    "SupportContinuousTime"
+		    Cell		    "SupportNonInlinedSFcns"
+		    Cell		    "GRTInterface"
+		    Cell		    "ParMdlRefBuildCompliant"
+		    Cell		    "MultiInstanceERTCode"
+		    PropName		    "DisabledProps"
+		  }
+		  TargetFcnLib		  "ansi_tfl_table_tmw.mat"
+		  TargetLibSuffix	  ""
+		  TargetPreCompLibLocation ""
+		  CodeReplacementLibrary  "ANSI_C"
+		  UtilityFuncGeneration	  "Auto"
+		  ERTMultiwordTypeDef	  "System defined"
+		  ERTMultiwordLength	  256
+		  MultiwordLength	  2048
+		  GenerateFullHeader	  on
+		  GenerateSampleERTMain	  off
+		  GenerateTestInterfaces  off
+		  IsPILTarget		  off
+		  ModelReferenceCompliant on
+		  ParMdlRefBuildCompliant on
+		  CompOptLevelCompliant	  off
+		  ConcurrentExecutionCompliant off
+		  IncludeMdlTerminateFcn  on
+		  GeneratePreprocessorConditionals "Disable all"
+		  CombineOutputUpdateFcns off
+		  CombineSignalStateStructs off
+		  SuppressErrorStatus	  off
+		  ERTFirstTimeCompliant	  off
+		  IncludeFileDelimiter	  "Auto"
+		  ERTCustomFileBanners	  off
+		  SupportAbsoluteTime	  on
+		  LogVarNameModifier	  "rt_"
+		  MatFileLogging	  on
+		  MultiInstanceERTCode	  off
+		  SupportNonFinite	  on
+		  SupportComplex	  on
+		  PurelyIntegerCode	  off
+		  SupportContinuousTime	  on
+		  SupportNonInlinedSFcns  on
+		  SupportVariableSizeSignals off
+		  EnableShiftOperators	  on
+		  ParenthesesLevel	  "Nominal"
+		  MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+		  ModelStepFunctionPrototypeControlCompliant off
+		  CPPClassGenCompliant	  off
+		  AutosarCompliant	  off
+		  GRTInterface		  on
+		  GenerateAllocFcn	  off
+		  UseMalloc		  off
+		  ExtMode		  off
+		  ExtModeStaticAlloc	  off
+		  ExtModeTesting	  off
+		  ExtModeStaticAllocSize  1000000
+		  ExtModeTransport	  0
+		  ExtModeMexFile	  "noextcomm"
+		  ExtModeIntrfLevel	  "Level1"
+		  RTWCAPISignals	  off
+		  RTWCAPIParams		  off
+		  RTWCAPIStates		  off
+		  RTWCAPIRootIO		  off
+		  GenerateASAP2		  off
+		}
+		PropName		"Components"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files (x86)_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1005_1InitialSi"
+		"mState"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "RUN"
+		  Value			  1
+		  String		  "PAUSE"
+		  Value			  2
+		  String		  "STOP"
+		}
+		Name			"InitialSimState"
+		Value			"RUN"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files (x86)_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1005_1Execution"
+		"Mode"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "real-time"
+		  Value			  1
+		  String		  "time-scaled"
+		  Value			  2
+		  String		  "as fast as possible"
+		}
+		Name			"ExecutionMode"
+		Value			"real-time"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"ExecutionModeNonUI"
+		Value			"RTSIM"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TimeScaleFactor"
+		Value			"1.0"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TimeScaleFactorNonUI"
+		Value			"OPTION_DISABLED"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files (x86)_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1005_1Assertion"
+		"Mode"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "OFF"
+		  Value			  1
+		  String		  "WARN"
+		  Value			  2
+		  String		  "STOP"
+		}
+		Name			"AssertionMode"
+		Value			"OFF"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"EnableRealTimeTesting"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"EnableRealTimeTestingNonUI"
+		Value			"ON"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files (x86)_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1005_1CCompiler"
+		"OptimizationOptsPopup_"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Default"
+		  Value			  1
+		  String		  "None"
+		  Value			  2
+		  String		  "User-defined"
+		}
+		Name			"CCompilerOptimizationOptsPopup_"
+		Value			"Default"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"CCompilerOptimizationOptsNonUI"
+		Value			"USE_DEFAULT"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"EnableDataSetStorage"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"EnableDataSetStorageNonUI"
+		Value			"OFF"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"AllowReservedHostServiceNums"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"int32"
+		Name			"RTICfgSetVer"
+		Value			450
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"LoadAfterBuild"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"LoadToFlash"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"LoadApplNonUI"
+		Value			"ON"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"BoardName"
+		Value			"ds1005"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"BoardNameNonUI"
+		Value			"ds1005"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"NetworkClientNonUI"
+		Value			"OPTION_DISABLED"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCOnlyGlobals"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateLabels"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateVirtualBlocks"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateStates"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateDerivatives"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateParamValues"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCIsOmitVdOn"
+		Value			off
+	      }
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  18
+	  Version		  "1.13.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    " "
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 190, 135, 1250, 765 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      ActionPort
+      InitializeStates	      "held"
+      PropagateVarSize	      "Only when execution is resumed"
+      ActionType	      "unset"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Delay
+      DelayLengthSource	      "Dialog"
+      DelayLength	      "2"
+      DelayLengthUpperLimit   "100"
+      InitialConditionSource  "Dialog"
+      InitialCondition	      "0.0"
+      ExternalReset	      "None"
+      PreventDirectFeedthrough off
+      DiagnosticForOutOfRangeDelayLength "None"
+      RemoveProtectionDelayLength off
+      InputProcessing	      "Elements as channels (sample based)"
+      UseCircularBuffer	      off
+      SampleTime	      "-1"
+      StateMustResolveToSignalObject off
+      CodeGenStateStorageClass "Auto"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      From
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Goto
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      If
+      NumInputs		      "1"
+      IfExpression	      "u1 > 0"
+      ShowElse		      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Merge
+      Inputs		      "2"
+      InitialOutput	      "[]"
+      AllowUnequalInputPortWidths off
+      InputPortOffsets	      "[]"
+    }
+    Block {
+      BlockType		      MinMax
+      Function		      "min"
+      Inputs		      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+  }
+  System {
+    Name		    "drr"
+    Location		    [-8, 0, 1924, 1056]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "159"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "1270"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Decel_Ramp_Up_Down"
+      SID		      "1103"
+      Ports		      [12, 1]
+      Position		      [440, 218, 815, 517]
+      ZOrder		      627
+      LibraryVersion	      "*1.270"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Decel_Ramp_Up_Down"
+	Location		[-8, 0, 1924, 1056]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"150"
+	Block {
+	  BlockType		  Inport
+	  Name			  "VACC_ACCRawDecelReq_mps2"
+	  SID			  "1104"
+	  Position		  [20, 713, 50, 727]
+	  ZOrder		  262
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VACC_DecelControlReq_flg"
+	  SID			  "1167"
+	  Position		  [20, 1353, 50, 1367]
+	  ZOrder		  342
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VACC_ACCOverride_flg"
+	  SID			  "1166"
+	  Position		  [20, 1308, 50, 1322]
+	  ZOrder		  341
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VACC_ACCDistControlSel_flg"
+	  SID			  "1171"
+	  Position		  [20, 943, 50, 957]
+	  ZOrder		  712
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VACC_ACCMCBraking_flg"
+	  SID			  "1213"
+	  Position		  [20, 983, 50, 997]
+	  ZOrder		  723
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VACC_ACCMCDecel_mps2"
+	  SID			  "1214"
+	  Position		  [20, 1023, 50, 1037]
+	  ZOrder		  722
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VJUD_ACCSetTimeGap_s"
+	  SID			  "1216"
+	  Position		  [20, 1103, 50, 1117]
+	  ZOrder		  725
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VACC_ACCBrakeToStop_flg"
+	  SID			  "1221"
+	  Position		  [20, 1428, 50, 1442]
+	  ZOrder		  726
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VACC_ACCTargetVehAssigned_flg"
+	  SID			  "1227"
+	  Position		  [20, 343, 50, 357]
+	  ZOrder		  727
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VACC_ACCDecelReqPrev_mps2"
+	  SID			  "1229"
+	  Position		  [20, 1548, 50, 1562]
+	  ZOrder		  729
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VIFO_DriverTurnSignalOn_flg"
+	  SID			  "1264"
+	  Position		  [20, 1618, 50, 1632]
+	  ZOrder		  739
+	  Port			  "11"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VIFO_ACCTGap_s"
+	  SID			  "1215"
+	  Position		  [20, 1063, 50, 1077]
+	  ZOrder		  724
+	  Port			  "12"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "C_TICK_TIME_S"
+	  SID			  "1147"
+	  Position		  [1835, 1005, 2020, 1035]
+	  ZOrder		  320
+	  ShowName		  off
+	  Value			  "C_TICK_TIME_S"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Chart_Decel_Smooth_Increase"
+	  SID			  "1142"
+	  Ports			  [4, 1]
+	  Position		  [2240, 648, 2845, 1212]
+	  ZOrder		  315
+	  LibraryVersion	  "1.262"
+	  ErrorFcn		  "Stateflow.Translate.translate"
+	  PermitHierarchicalResolution "ExplicitOnly"
+	  TreatAsAtomicUnit	  on
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  SFBlockType		  "Chart"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "NACC_ACCDecelReqRampUp_mps2"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "Chart_Decel_Smooth_Increase"
+	    Location		    [-8, -8, 1928, 1048]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    SIDHighWatermark	    "303"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VACC_ACCRawDecelReq_mps2"
+	      SID		      "1142::48"
+	      Position		      [20, 101, 40, 119]
+	      ZOrder		      28
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VACC_ACCDecelStepInc_mps2"
+	      SID		      "1142::45"
+	      Position		      [20, 136, 40, 154]
+	      ZOrder		      25
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "NACC_ACCDecelIncTimer_stp"
+	      SID		      "1142::46"
+	      Position		      [20, 171, 40, 189]
+	      ZOrder		      26
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VACC_ACCDecelRampReset_flg"
+	      SID		      "1142::82"
+	      Position		      [20, 206, 40, 224]
+	      ZOrder		      41
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      " Demux "
+	      SID		      "1142::158"
+	      Ports		      [1, 1]
+	      Position		      [270, 230, 320, 270]
+	      ZOrder		      69
+	      Outputs		      "1"
+	    }
+	    Block {
+	      BlockType		      S-Function
+	      Name		      " SFunction "
+	      SID		      "1142::157"
+	      Tag		      "Stateflow S-Function drr 6"
+	      Ports		      [4, 2]
+	      Position		      [180, 102, 230, 203]
+	      ZOrder		      68
+	      FunctionName	      "sf_sfun"
+	      Parameters	      "TRUE,ZERO_FLOAT,ZERO_INT"
+	      PortCounts	      "[4 2]"
+	      EnableBusSupport	      off
+	      Port {
+		PortNumber		2
+		Name			"NACC_ACCDecelReqRampUp_mps2"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      " Terminator "
+	      SID		      "1142::159"
+	      Position		      [460, 241, 480, 259]
+	      ZOrder		      70
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NACC_ACCDecelReqRampUp_mps2"
+	      SID		      "1142::47"
+	      Position		      [460, 101, 480, 119]
+	      ZOrder		      27
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "VACC_ACCRawDecelReq_mps2"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "VACC_ACCDecelStepInc_mps2"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "NACC_ACCDecelIncTimer_stp"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "VACC_ACCDecelRampReset_flg"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      4
+	    }
+	    Line {
+	      Name		      "NACC_ACCDecelReqRampUp_mps2"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      2
+	      DstBlock		      "NACC_ACCDecelReqRampUp_mps2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " Demux "
+	      SrcPort		      1
+	      DstBlock		      " Terminator "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " SFunction "
+	      SrcPort		      1
+	      DstBlock		      " Demux "
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "DecelRampRollAvg"
+	  SID			  "1163"
+	  Ports			  [5, 1]
+	  Position		  [3535, 858, 3975, 1012]
+	  ZOrder		  340
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VACC_ACCDecelReqRollAvgOutput_mps2"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "DecelRampRollAvg"
+	    Location		    [-8, 0, 1924, 1056]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "125"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "NACC_ACCDecelReqRamp_mps2"
+	      SID		      "1164"
+	      Position		      [20, 43, 50, 57]
+	      ZOrder		      340
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VACC_ACCBrakeToStop_flg"
+	      SID		      "1222"
+	      Position		      [20, 98, 50, 112]
+	      ZOrder		      650
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VACC_ACCMCDecel_mps2"
+	      SID		      "1232"
+	      Position		      [20, 198, 50, 212]
+	      ZOrder		      730
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VACC_ACCMCBraking_flg"
+	      SID		      "1267"
+	      Position		      [20, 263, 50, 277]
+	      ZOrder		      740
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VACC_ACCDecelReqPrev_mps2"
+	      SID		      "1233"
+	      Position		      [20, 153, 50, 167]
+	      ZOrder		      731
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "AccelRollingAvg"
+	      SID		      "1159"
+	      Ports		      [4, 1]
+	      Position		      [2720, 31, 2925, 174]
+	      ZOrder		      336
+	      LibraryVersion	      "1.475"
+	      SourceBlock	      "hcu_lib/rolling average"
+	      SourceType	      "Rolling Average"
+	      Port {
+		PortNumber		1
+		Name			"VACC_ACCDecelReqRollAvgOutput_mps2"
+		PropagatedSignals	"new_ave"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      SID		      "1263"
+	      Ports		      [2, 1]
+	      Position		      [860, 197, 890, 228]
+	      ZOrder		      739
+	      ShowName		      off
+	      Inputs		      "+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "C_TICK_TIME_S1"
+	      SID		      "1160"
+	      Position		      [2495, 107, 2685, 133]
+	      ZOrder		      338
+	      ShowName		      off
+	      Value		      "C_TICK_TIME_S"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Decel_Roll_Avg_Interval_Chart"
+	      SID		      "1239"
+	      Ports		      [6, 1]
+	      Position		      [1105, 76, 1710, 409]
+	      ZOrder		      737
+	      LibraryVersion	      "1.262"
+	      ErrorFcn		      "Stateflow.Translate.translate"
+	      PermitHierarchicalResolution "ExplicitOnly"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      SFBlockType	      "Chart"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VACC_DecelReqRollAvgIntAppl_s"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"Decel_Roll_Avg_Interval_Chart"
+		Location		[-8, 0, 1924, 1056]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SIDHighWatermark	"129"
+		Block {
+		  BlockType		  Inport
+		  Name			  "VACC_ACCBrakeToStop_flg"
+		  SID			  "1239::46"
+		  Position		  [20, 101, 40, 119]
+		  ZOrder		  26
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VACC_ACCDecelReqPrev_mps2"
+		  SID			  "1239::47"
+		  Position		  [20, 136, 40, 154]
+		  ZOrder		  27
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VACC_ACCMCConsideredDecel_mps2"
+		  SID			  "1239::48"
+		  Position		  [20, 171, 40, 189]
+		  ZOrder		  28
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VACC_ACCMCBraking_flg"
+		  SID			  "1239::119"
+		  Position		  [20, 206, 40, 224]
+		  ZOrder		  31
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "KACC_BTSDecelRampDownRollAvgInt_s"
+		  SID			  "1239::49"
+		  Position		  [20, 246, 40, 264]
+		  ZOrder		  29
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "KACC_DecelRampDownRollAvgInt_s"
+		  SID			  "1239::50"
+		  Position		  [20, 281, 40, 299]
+		  ZOrder		  30
+		  Port			  "6"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Demux
+		  Name			  " Demux "
+		  SID			  "1239::42"
+		  Ports			  [1, 1]
+		  Position		  [270, 230, 320, 270]
+		  ZOrder		  22
+		  Outputs		  "1"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  " SFunction "
+		  SID			  "1239::41"
+		  Tag			  "Stateflow S-Function drr 1"
+		  Ports			  [6, 2]
+		  Position		  [180, 117, 230, 258]
+		  ZOrder		  21
+		  FunctionName		  "sf_sfun"
+		  Parameters		  "FALSE,TRUE"
+		  PortCounts		  "[6 2]"
+		  EnableBusSupport	  off
+		  Port {
+		    PortNumber		    2
+		    Name		    "VACC_DecelReqRollAvgIntAppl_s"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  " Terminator "
+		  SID			  "1239::43"
+		  Position		  [460, 241, 480, 259]
+		  ZOrder		  23
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "VACC_DecelReqRollAvgIntAppl_s"
+		  SID			  "1239::45"
+		  Position		  [460, 101, 480, 119]
+		  ZOrder		  25
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  SrcBlock		  "VACC_ACCBrakeToStop_flg"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "VACC_ACCDecelReqPrev_mps2"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "VACC_ACCMCConsideredDecel_mps2"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "VACC_ACCMCBraking_flg"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  4
+		}
+		Line {
+		  SrcBlock		  "KACC_BTSDecelRampDownRollAvgInt_s"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  5
+		}
+		Line {
+		  SrcBlock		  "KACC_DecelRampDownRollAvgInt_s"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  6
+		}
+		Line {
+		  Name			  "VACC_DecelReqRollAvgIntAppl_s"
+		  Labels		  [0, 0]
+		  SrcBlock		  " SFunction "
+		  SrcPort		  2
+		  DstBlock		  "VACC_DecelReqRollAvgIntAppl_s"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  " Demux "
+		  SrcPort		  1
+		  DstBlock		  " Terminator "
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  " SFunction "
+		  SrcPort		  1
+		  DstBlock		  " Demux "
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Delay
+	      Name		      "Delay"
+	      SID		      "1161"
+	      Ports		      [1, 1]
+	      Position		      [2890, 228, 2925, 262]
+	      ZOrder		      339
+	      BlockMirror	      on
+	      ShowName		      off
+	      InputPortMap	      "u0"
+	      DelayLength	      "1"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From_VACC_DecelReqRollAvgIntAppl_s"
+	      SID		      "1226"
+	      Position		      [2480, 142, 2695, 168]
+	      ZOrder		      654
+	      ShowName		      off
+	      GotoTag		      "VACC_DecelReqRollAvgIntAppl_s"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto_VACC_DecelReqRollAvgIntAppl_s"
+	      SID		      "1225"
+	      Position		      [2235, 142, 2450, 168]
+	      ZOrder		      653
+	      ShowName		      off
+	      GotoTag		      "VACC_DecelReqRollAvgIntAppl_s"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "KACC_BTSDecelRampDownRollAvgInt_s"
+	      SID		      "1224"
+	      Position		      [550, 312, 795, 338]
+	      ZOrder		      652
+	      ShowName		      off
+	      Value		      "KACC_BTSDecelRampDownRollAvgInt_s"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "KACC_DecelRampDownRollAvgInt_s"
+	      SID		      "1162"
+	      Position		      [550, 367, 795, 393]
+	      ZOrder		      337
+	      ShowName		      off
+	      Value		      "KACC_DecelRampDownRollAvgInt_s"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "KACC_TargetDecelMargin_mps2"
+	      SID		      "1262"
+	      Position		      [550, 227, 795, 253]
+	      ZOrder		      738
+	      ShowName		      off
+	      Value		      "KACC_TargetDecelMargin_mps2"
+	      OutDataTypeStr	      "single"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VACC_ACCDecelReqRollAvgOutput_mps2"
+	      SID		      "1165"
+	      Position		      [3370, 98, 3400, 112]
+	      ZOrder		      341
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Delay"
+	      SrcPort		      1
+	      Points		      [-418, 0; 0, -160]
+	      DstBlock		      "AccelRollingAvg"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "KACC_DecelRampDownRollAvgInt_s"
+	      SrcPort		      1
+	      DstBlock		      "Decel_Roll_Avg_Interval_Chart"
+	      DstPort		      6
+	    }
+	    Line {
+	      SrcBlock		      "C_TICK_TIME_S1"
+	      SrcPort		      1
+	      DstBlock		      "AccelRollingAvg"
+	      DstPort		      3
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "NACC_ACCDecelReqRamp_mps2"
+	      SrcPort		      1
+	      DstBlock		      "AccelRollingAvg"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "VACC_ACCDecelReqRollAvgOutput_mps2"
+	      Labels		      [0, 0]
+	      SrcBlock		      "AccelRollingAvg"
+	      SrcPort		      1
+	      Points		      [177, 0]
+	      Branch {
+		DstBlock		"VACC_ACCDecelReqRollAvgOutput_mps2"
+		DstPort			1
+	      }
+	      Branch {
+		Points			[0, 140]
+		DstBlock		"Delay"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "VACC_ACCBrakeToStop_flg"
+	      SrcPort		      1
+	      DstBlock		      "Decel_Roll_Avg_Interval_Chart"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "KACC_BTSDecelRampDownRollAvgInt_s"
+	      SrcPort		      1
+	      DstBlock		      "Decel_Roll_Avg_Interval_Chart"
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "From_VACC_DecelReqRollAvgIntAppl_s"
+	      SrcPort		      1
+	      DstBlock		      "AccelRollingAvg"
+	      DstPort		      4
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "VACC_ACCMCDecel_mps2"
+	      SrcPort		      1
+	      DstBlock		      "Add"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "VACC_ACCDecelReqPrev_mps2"
+	      SrcPort		      1
+	      DstBlock		      "Decel_Roll_Avg_Interval_Chart"
+	      DstPort		      2
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Decel_Roll_Avg_Interval_Chart"
+	      SrcPort		      1
+	      Points		      [195, 0; 0, -90]
+	      DstBlock		      "Goto_VACC_DecelReqRollAvgIntAppl_s"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "KACC_TargetDecelMargin_mps2"
+	      SrcPort		      1
+	      Points		      [22, 0; 0, -20]
+	      DstBlock		      "Add"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      DstBlock		      "Decel_Roll_Avg_Interval_Chart"
+	      DstPort		      3
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "VACC_ACCMCBraking_flg"
+	      SrcPort		      1
+	      DstBlock		      "Decel_Roll_Avg_Interval_Chart"
+	      DstPort		      4
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Decel_Maintain"
+	  SID			  "1261"
+	  Ports			  [3, 1]
+	  Position		  [4235, 884, 4655, 986]
+	  ZOrder		  738
+	  LibraryVersion	  "1.30"
+	  SourceBlock		  "ltd/Decel_Maintain"
+	  SourceType		  "SubSystem"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VACC_ACCDecelReqMaintained_mps2"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Decel_Ramp_Timer_Calc"
+	  SID			  "1176"
+	  Ports			  [5, 1]
+	  Position		  [525, 933, 930, 1127]
+	  ZOrder		  717
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VACC_ACCDecelTimerAppl_s"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "Decel_Ramp_Timer_Calc"
+	    Location		    [-8, 0, 1924, 1056]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "150"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VACC_ACCDistControlSel_flg"
+	      SID		      "1177"
+	      Position		      [20, 28, 50, 42]
+	      ZOrder		      715
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VACC_ACCMCBraking_flg"
+	      SID		      "1184"
+	      Position		      [20, 68, 50, 82]
+	      ZOrder		      719
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VACC_ACCMCDecel_mps2"
+	      SID		      "1183"
+	      Position		      [20, 453, 50, 467]
+	      ZOrder		      718
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_ACCTGap_s"
+	      SID		      "1185"
+	      Position		      [20, 138, 50, 152]
+	      ZOrder		      720
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VJUD_ACCSetTimeGap_s"
+	      SID		      "1186"
+	      Position		      [20, 173, 50, 187]
+	      ZOrder		      721
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "ACC_Decel_Long_Timer"
+	      SID		      "1188"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [1850, 132, 2050, 188]
+	      ZOrder		      723
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"NACC_ACCDecelIncLongTimer_s"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"ACC_Decel_Long_Timer"
+		Location		[-8, -8, 1928, 1048]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "1190"
+		  Position		  [145, 180, 204, 208]
+		  ZOrder		  -2
+		  ActionType		  "then"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KACC_ACCDecelIncLongTimer_s"
+		  SID			  "1172"
+		  Position		  [145, 265, 330, 295]
+		  ZOrder		  714
+		  Value			  "KACC_ACCDecelIncLongTimer_s"
+		  Port {
+		    PortNumber		    1
+		    Name		    "NACC_ACCDecelIncLongTimer_s"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NACC_ACCDecelIncLongTimer_s"
+		  SID			  "1191"
+		  Position		  [605, 273, 635, 287]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  Name			  "NACC_ACCDecelIncLongTimer_s"
+		  Labels		  [0, 0]
+		  SrcBlock		  "KACC_ACCDecelIncLongTimer_s"
+		  SrcPort		  1
+		  DstBlock		  "NACC_ACCDecelIncLongTimer_s"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "ACC_Decel_Med_Timer"
+	      SID		      "1192"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [1480, 307, 1680, 363]
+	      ZOrder		      724
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VACC_ACCDecelIncMedTimer_s"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"ACC_Decel_Med_Timer"
+		Location		[-8, -8, 1928, 1048]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"175"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "1194"
+		  Position		  [170, 15, 229, 43]
+		  ZOrder		  -2
+		  ActionType		  "else"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KACC_ACCDecelIncMedTimer_s"
+		  SID			  "1146"
+		  Position		  [170, 95, 355, 125]
+		  ZOrder		  320
+		  Value			  "KACC_ACCDecelIncMedTimer_s"
+		  Port {
+		    PortNumber		    1
+		    Name		    "VACC_ACCDecelIncMedTimer_s"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "VACC_ACCDecelIncMedTimer_s"
+		  SID			  "1195"
+		  Position		  [615, 103, 645, 117]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  Name			  "VACC_ACCDecelIncMedTimer_s"
+		  Labels		  [1, 1]
+		  SrcBlock		  "KACC_ACCDecelIncMedTimer_s"
+		  SrcPort		  1
+		  DstBlock		  "VACC_ACCDecelIncMedTimer_s"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "ACC_Decel_Short_Timer"
+	      SID		      "1196"
+	      Ports		      [0, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [1665, 222, 1865, 278]
+	      ZOrder		      725
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VACC_ACCDecelIncShortTimer_s"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"ACC_Decel_Short_Timer"
+		Location		[-8, -8, 1928, 1048]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"200"
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "1198"
+		  Position		  [170, 15, 229, 43]
+		  ZOrder		  -2
+		  ActionType		  "elseif"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KACC_ACCDecelIncShortTimer_s"
+		  SID			  "1200"
+		  Position		  [60, 115, 245, 145]
+		  ZOrder		  727
+		  Value			  "KACC_ACCDecelIncShortTimer_s"
+		  Port {
+		    PortNumber		    1
+		    Name		    "VACC_ACCDecelIncShortTimer_s"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "VACC_ACCDecelIncShortTimer_s"
+		  SID			  "1199"
+		  Position		  [600, 123, 630, 137]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  Name			  "VACC_ACCDecelIncShortTimer_s"
+		  Labels		  [1, 1]
+		  SrcBlock		  "KACC_ACCDecelIncShortTimer_s"
+		  SrcPort		  1
+		  DstBlock		  "VACC_ACCDecelIncShortTimer_s"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      SID		      "1220"
+	      Ports		      [2, 1]
+	      Position		      [505, 172, 535, 203]
+	      ZOrder		      742
+	      ShowName		      off
+	      Inputs		      "+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      If
+	      Name		      "Decel_Inc_If"
+	      SID		      "1187"
+	      Ports		      [5, 3]
+	      Position		      [1115, 17, 1355, 213]
+	      ZOrder		      722
+	      NumInputs		      "5"
+	      IfExpression	      "~u1 & ~u2 & ~u4"
+	      ElseIfExpressions	      "u1 | u3 | u5"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide"
+	      SID		      "1219"
+	      Ports		      [2, 1]
+	      Position		      [415, 222, 445, 253]
+	      ZOrder		      741
+	      ShowName		      off
+	      Inputs		      "**"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "KACC_ACCMCHardBrakingThrs_mps2"
+	      SID		      "1202"
+	      Position		      [175, 480, 360, 510]
+	      ZOrder		      728
+	      ShowName		      off
+	      Value		      "KACC_ACCMCHardBrakingThrs_mps2"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "KACC_ACCMinSetTimeGap_s"
+	      SID		      "1205"
+	      Position		      [175, 380, 360, 410]
+	      ZOrder		      731
+	      ShowName		      off
+	      Value		      "KACC_ACCMinSetTimeGap_s"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "KACC_TimeGapIntrusionPerc_perc"
+	      SID		      "1218"
+	      Position		      [175, 230, 360, 260]
+	      ZOrder		      740
+	      ShowName		      off
+	      Value		      "KACC_TimeGapIntrusionPerc_perc"
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Logical\nOperator"
+	      SID		      "1210"
+	      Ports		      [2, 1]
+	      Position		      [845, 364, 875, 426]
+	      ZOrder		      736
+	      ShowName		      off
+	      AllPortsSameDT	      off
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Logical\nOperator1"
+	      SID		      "1211"
+	      Ports		      [2, 1]
+	      Position		      [845, 84, 875, 146]
+	      ZOrder		      737
+	      ShowName		      off
+	      AllPortsSameDT	      off
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      Merge
+	      Name		      "Merge"
+	      SID		      "1212"
+	      Ports		      [3, 1]
+	      Position		      [2385, 142, 2420, 248]
+	      ZOrder		      738
+	      ShowName		      off
+	      Inputs		      "3"
+	      Port {
+		PortNumber		1
+		Name			"VACC_ACCDecelTimerAppl_s"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      RelationalOperator
+	      Name		      "Relational\nOperator"
+	      SID		      "1201"
+	      Ports		      [2, 1]
+	      Position		      [615, 444, 640, 511]
+	      ZOrder		      727
+	      ShowName		      off
+	      Operator		      ">"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "boolean"
+	      Port {
+		PortNumber		1
+		Name			"VACC_MCHardBraking_flg"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      RelationalOperator
+	      Name		      "Relational\nOperator1"
+	      SID		      "1203"
+	      Ports		      [2, 1]
+	      Position		      [615, 129, 640, 196]
+	      ZOrder		      729
+	      ShowName		      off
+	      Operator		      "<="
+	      InputSameDT	      off
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      RelationalOperator
+	      Name		      "Relational\nOperator2"
+	      SID		      "1204"
+	      Ports		      [2, 1]
+	      Position		      [615, 344, 640, 411]
+	      ZOrder		      730
+	      ShowName		      off
+	      Operator		      "<="
+	      InputSameDT	      off
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VACC_ACCDecelTimerAppl_s"
+	      SID		      "1178"
+	      Position		      [2645, 188, 2675, 202]
+	      ZOrder		      716
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "VACC_ACCMCDecel_mps2"
+	      SrcPort		      1
+	      DstBlock		      "Relational\nOperator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "KACC_ACCMCHardBrakingThrs_mps2"
+	      SrcPort		      1
+	      DstBlock		      "Relational\nOperator"
+	      DstPort		      2
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "VIFO_ACCTGap_s"
+	      SrcPort		      1
+	      DstBlock		      "Relational\nOperator1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "VJUD_ACCSetTimeGap_s"
+	      SrcPort		      1
+	      Points		      [88, 0]
+	      Branch {
+		Points			[235, 0]
+		Branch {
+		  DstBlock		  "Add"
+		  DstPort		  1
+		}
+		Branch {
+		  Points		  [0, 50]
+		  DstBlock		  "Divide"
+		  DstPort		  1
+		}
+	      }
+	      Branch {
+		Points			[0, 180]
+		DstBlock		"Relational\nOperator2"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "KACC_ACCMinSetTimeGap_s"
+	      SrcPort		      1
+	      DstBlock		      "Relational\nOperator2"
+	      DstPort		      2
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "VACC_ACCDistControlSel_flg"
+	      SrcPort		      1
+	      DstBlock		      "Decel_Inc_If"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "VACC_ACCMCBraking_flg"
+	      SrcPort		      1
+	      Points		      [647, 0]
+	      Branch {
+		Points			[0, 25]
+		DstBlock		"Logical\nOperator1"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Decel_Inc_If"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      Name		      "VACC_MCHardBraking_flg"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Relational\nOperator"
+	      SrcPort		      1
+	      Points		      [104, 0; 0, -70]
+	      DstBlock		      "Logical\nOperator"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Relational\nOperator1"
+	      SrcPort		      1
+	      Points		      [58, 0]
+	      Branch {
+		Points			[309, 0; 0, -10]
+		DstBlock		"Decel_Inc_If"
+		DstPort			4
+	      }
+	      Branch {
+		Points			[0, -35]
+		DstBlock		"Logical\nOperator1"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "Relational\nOperator2"
+	      SrcPort		      1
+	      DstBlock		      "Logical\nOperator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Decel_Inc_If"
+	      SrcPort		      1
+	      Points		      [590, 0]
+	      DstBlock		      "ACC_Decel_Long_Timer"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      SrcBlock		      "Logical\nOperator"
+	      SrcPort		      1
+	      Points		      [175, 0; 0, -200]
+	      DstBlock		      "Decel_Inc_If"
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "Decel_Inc_If"
+	      SrcPort		      2
+	      Points		      [405, 0]
+	      DstBlock		      "ACC_Decel_Short_Timer"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      SrcBlock		      "Decel_Inc_If"
+	      SrcPort		      3
+	      Points		      [220, 0]
+	      DstBlock		      "ACC_Decel_Med_Timer"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      Name		      "VACC_ACCDecelTimerAppl_s"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Merge"
+	      SrcPort		      1
+	      DstBlock		      "VACC_ACCDecelTimerAppl_s"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "ACC_Decel_Long_Timer"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "ACC_Decel_Short_Timer"
+	      SrcPort		      1
+	      Points		      [323, 0; 0, -55]
+	      DstBlock		      "Merge"
+	      DstPort		      2
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "ACC_Decel_Med_Timer"
+	      SrcPort		      1
+	      Points		      [579, 0; 0, -105]
+	      DstBlock		      "Merge"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Logical\nOperator1"
+	      SrcPort		      1
+	      DstBlock		      "Decel_Inc_If"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "KACC_TimeGapIntrusionPerc_perc"
+	      SrcPort		      1
+	      DstBlock		      "Divide"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      Points		      [30, 0; 0, -10]
+	      DstBlock		      "Relational\nOperator1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Divide"
+	      SrcPort		      1
+	      Points		      [22, 0; 0, -45]
+	      DstBlock		      "Add"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide"
+	  SID			  "1148"
+	  Ports			  [2, 1]
+	  Position		  [2080, 959, 2100, 1041]
+	  ZOrder		  321
+	  ShowName		  off
+	  Inputs		  "*/"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	  Port {
+	    PortNumber		    1
+	    Name		    "NACC_ACCDecelIncTimer_stp"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide2"
+	  SID			  "1149"
+	  Ports			  [2, 1]
+	  Position		  [1755, 939, 1775, 1021]
+	  ZOrder		  322
+	  ShowName		  off
+	  Inputs		  "*/"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Divide3"
+	  SID			  "1150"
+	  Ports			  [2, 1]
+	  Position		  [1475, 819, 1495, 901]
+	  ZOrder		  323
+	  ShowName		  off
+	  Inputs		  "*/"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	  Port {
+	    PortNumber		    1
+	    Name		    "VACC_ACCDecelStepInc_mps2"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VACC_ACCDecelTimerAppl_s"
+	  SID			  "1174"
+	  Position		  [1380, 943, 1610, 977]
+	  ZOrder		  715
+	  ShowName		  off
+	  GotoTag		  "VACC_ACCDecelTimerAppl_s"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VACC_ACCMCBraking_flg"
+	  SID			  "1266"
+	  Position		  [365, 1512, 545, 1538]
+	  ZOrder		  741
+	  ShowName		  off
+	  GotoTag		  "VACC_ACCMCBraking_flg"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VACC_ACCMCDecel_mps2"
+	  SID			  "1231"
+	  Position		  [365, 1467, 545, 1493]
+	  ZOrder		  731
+	  ShowName		  off
+	  GotoTag		  "VACC_ACCMCDecel_mps2"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VACC_ACCDecelTimerAppl_s"
+	  SID			  "1175"
+	  Position		  [1135, 943, 1365, 977]
+	  ZOrder		  716
+	  ShowName		  off
+	  GotoTag		  "VACC_ACCDecelTimerAppl_s"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VACC_ACCMCBraking_flg"
+	  SID			  "1265"
+	  Position		  [135, 957, 315, 983]
+	  ZOrder		  740
+	  ShowName		  off
+	  GotoTag		  "VACC_ACCMCBraking_flg"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VACC_ACCMCDecel_mps2"
+	  SID			  "1230"
+	  Position		  [135, 997, 315, 1023]
+	  ZOrder		  730
+	  ShowName		  off
+	  GotoTag		  "VACC_ACCMCDecel_mps2"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "KACC_ACCDecelIncSteps_num"
+	  SID			  "1141"
+	  Position		  [765, 865, 950, 895]
+	  ZOrder		  314
+	  ShowName		  off
+	  Value			  "KACC_ACCDecelIncSteps_num"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator"
+	  SID			  "1168"
+	  Ports			  [1, 1]
+	  Position		  [970, 1299, 1000, 1331]
+	  ZOrder		  343
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator1"
+	  SID			  "1169"
+	  Ports			  [2, 1]
+	  Position		  [1340, 1293, 1370, 1382]
+	  ZOrder		  344
+	  ShowName		  off
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	  Port {
+	    PortNumber		    1
+	    Name		    "VACC_ACCDecelRampReset_flg"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator2"
+	  SID			  "1170"
+	  Ports			  [1, 1]
+	  Position		  [970, 1344, 1000, 1376]
+	  ZOrder		  345
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  MinMax
+	  Name			  "MinMax"
+	  SID			  "1155"
+	  Ports			  [2, 1]
+	  Position		  [3075, 534, 3100, 621]
+	  ZOrder		  332
+	  ShowName		  off
+	  Inputs		  "2"
+	  InputSameDT		  off
+	  SaturateOnIntegerOverflow off
+	  Port {
+	    PortNumber		    1
+	    Name		    "NACC_ACCDecelReqRamp_mps2"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VACC_ACCDecelReqMaintained_mps2"
+	  SID			  "1131"
+	  Position		  [5005, 928, 5035, 942]
+	  ZOrder		  263
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator2"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator1"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Chart_Decel_Smooth_Increase"
+	  SrcPort		  1
+	  Points		  [138, 0; 0, -330]
+	  DstBlock		  "MinMax"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "VACC_ACCDecelStepInc_mps2"
+	  Labels		  [-1, 0]
+	  SrcBlock		  "Divide3"
+	  SrcPort		  1
+	  DstBlock		  "Chart_Decel_Smooth_Increase"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "KACC_ACCDecelIncSteps_num"
+	  SrcPort		  1
+	  Points		  [418, 0]
+	  Branch {
+	    Points		    [0, 120]
+	    DstBlock		    "Divide2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "Divide3"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  Name			  "NACC_ACCDecelIncTimer_stp"
+	  Labels		  [-1, 0]
+	  SrcBlock		  "Divide"
+	  SrcPort		  1
+	  DstBlock		  "Chart_Decel_Smooth_Increase"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "C_TICK_TIME_S"
+	  SrcPort		  1
+	  DstBlock		  "Divide"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Divide2"
+	  SrcPort		  1
+	  DstBlock		  "Divide"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "VACC_ACCRawDecelReq_mps2"
+	  SrcPort		  1
+	  Points		  [1183, 0]
+	  Branch {
+	    Points		    [0, 120]
+	    DstBlock		    "Divide3"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [898, 0]
+	    Branch {
+	      Points		      [0, -165]
+	      DstBlock		      "MinMax"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "Chart_Decel_Smooth_Increase"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  Name			  "VACC_ACCDecelRampReset_flg"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Logical\nOperator1"
+	  SrcPort		  1
+	  Points		  [667, 0; 0, -200]
+	  DstBlock		  "Chart_Decel_Smooth_Increase"
+	  DstPort		  4
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "VACC_ACCOverride_flg"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator1"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "VACC_DecelControlReq_flg"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VACC_ACCDecelTimerAppl_s"
+	  SrcPort		  1
+	  DstBlock		  "Divide2"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "VACC_ACCDistControlSel_flg"
+	  SrcPort		  1
+	  DstBlock		  "Decel_Ramp_Timer_Calc"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "VIFO_ACCTGap_s"
+	  SrcPort		  1
+	  DstBlock		  "Decel_Ramp_Timer_Calc"
+	  DstPort		  4
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "VACC_ACCMCDecel_mps2"
+	  SrcPort		  1
+	  Points		  [51, 0]
+	  Branch {
+	    Points		    [0, -20]
+	    DstBlock		    "Goto_VACC_ACCMCDecel_mps2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Decel_Ramp_Timer_Calc"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "VJUD_ACCSetTimeGap_s"
+	  SrcPort		  1
+	  DstBlock		  "Decel_Ramp_Timer_Calc"
+	  DstPort		  5
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "VACC_ACCMCBraking_flg"
+	  SrcPort		  1
+	  Points		  [53, 0]
+	  Branch {
+	    Points		    [0, -20]
+	    DstBlock		    "Goto_VACC_ACCMCBraking_flg"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Decel_Ramp_Timer_Calc"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  Labels		  [1, 1]
+	  SrcBlock		  "Decel_Ramp_Timer_Calc"
+	  SrcPort		  1
+	  Points		  [146, 0; 0, -70]
+	  DstBlock		  "Goto_VACC_ACCDecelTimerAppl_s"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VACC_ACCBrakeToStop_flg"
+	  SrcPort		  1
+	  Points		  [2996, 0; 0, -530]
+	  DstBlock		  "DecelRampRollAvg"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "NACC_ACCDecelReqRamp_mps2"
+	  Labels		  [0, 0]
+	  SrcBlock		  "MinMax"
+	  SrcPort		  1
+	  Points		  [192, 0; 0, 295]
+	  DstBlock		  "DecelRampRollAvg"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VACC_ACCTargetVehAssigned_flg"
+	  SrcPort		  1
+	  Points		  [4000, 0; 0, 550]
+	  DstBlock		  "Decel_Maintain"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VACC_ACCMCDecel_mps2"
+	  SrcPort		  1
+	  Points		  [2572, 0; 0, -545]
+	  DstBlock		  "DecelRampRollAvg"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VACC_ACCDecelReqPrev_mps2"
+	  SrcPort		  1
+	  Points		  [3325, 0; 0, -560]
+	  DstBlock		  "DecelRampRollAvg"
+	  DstPort		  5
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "DecelRampRollAvg"
+	  SrcPort		  1
+	  DstBlock		  "Decel_Maintain"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Decel_Maintain"
+	  SrcPort		  1
+	  DstBlock		  "VACC_ACCDecelReqMaintained_mps2"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VIFO_DriverTurnSignalOn_flg"
+	  SrcPort		  1
+	  Points		  [4050, 0; 0, -655]
+	  DstBlock		  "Decel_Maintain"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VACC_ACCMCBraking_flg"
+	  SrcPort		  1
+	  Points		  [2701, 0; 0, -560]
+	  DstBlock		  "DecelRampRollAvg"
+	  DstPort		  4
+	}
+      }
+    }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.6 (R2013a) dated Jan 19 2013, 14:32:03
+#
+#
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "drr"
+    created		    "08-Jun-2016 12:08:54"
+    isLibrary		    1
+    firstTarget		    38
+    sfVersion		    76014001.0015
+  }
+  chart {
+    id			    2
+    name		    "Decel_Ramp_Up_Down/DecelRampRollAvg/Decel_Roll_Avg_Interval_Chart"
+    windowPosition	    [169.5 246.75 417 348.75]
+    viewLimits		    [533.763 2039.834 61.536 773.759]
+    zoomFactor		    1.067
+    stateColor		    [0.3803921568627451 0.2745098039215687 0.1803921568627451]
+    stateLabelColor	    [0.4588235294117647 0.2980392156862745 0.1411764705882353]
+    transitionColor	    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
+    transitionLabelColor    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
+    junctionColor	    [0.7764705882352941 0.4980392156862745 0]
+    chartColor		    [1 0.9882352941176471 0.9254901960784314]
+    screen		    [1 1 1920 1200 1.333333333333333]
+    treeNode		    [0 3 0 0]
+    firstTransition	    14
+    viewObj		    2
+    visible		    1
+    machine		    1
+    toolbarMode		    LIBRARY_TOOLBAR
+    subviewS {
+    }
+    ssIdHighWaterMark	    16
+    decomposition	    CLUSTER_CHART
+    firstData		    5
+    chartFileNumber	    1
+    saturateOnIntegerOverflow 1
+    userSpecifiedStateTransitionExecutionOrder 1
+    disableImplicitCasting  1
+  }
+  state {
+    id			    3
+    labelString		    "DECEL_SHORT_INTERVAL\nen:\nVACC_DecelReqRollAvgIntAppl_s=KACC_DecelRampDownRollAvgInt_s;\n"
+    position		    [361 278 485.2 120]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 0 4]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    7
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    4
+    labelString		    "DECEL_LONG_INTERVAL\nen:\nVACC_DecelReqRollAvgIntAppl_s=KACC_BTSDecelRampDownRollAvgInt_s;\n"
+    position		    [1440.2 278 485.2 120]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 3 0]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    9
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  data {
+    id			    5
+    ssIdNumber		    1
+    name		    "VACC_DecelReqRollAvgIntAppl_s"
+    linkNode		    [2 0 6]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_SINGLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "single"
+  }
+  data {
+    id			    6
+    ssIdNumber		    2
+    name		    "VACC_ACCBrakeToStop_flg"
+    linkNode		    [2 5 7]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    7
+    ssIdNumber		    3
+    name		    "VACC_ACCDecelReqPrev_mps2"
+    linkNode		    [2 6 8]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    8
+    ssIdNumber		    4
+    name		    "VACC_ACCMCConsideredDecel_mps2"
+    linkNode		    [2 7 9]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    9
+    ssIdNumber		    16
+    name		    "VACC_ACCMCBraking_flg"
+    linkNode		    [2 8 10]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    10
+    ssIdNumber		    5
+    name		    "KACC_BTSDecelRampDownRollAvgInt_s"
+    linkNode		    [2 9 11]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    11
+    ssIdNumber		    6
+    name		    "KACC_DecelRampDownRollAvgInt_s"
+    linkNode		    [2 10 12]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    12
+    ssIdNumber		    11
+    name		    "TRUE"
+    linkNode		    [2 11 13]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 1
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    13
+    ssIdNumber		    13
+    name		    "FALSE"
+    linkNode		    [2 12 0]
+    scope		    PARAMETER_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "boolean"
+  }
+  transition {
+    id			    14
+    labelString		    ""
+    labelPosition	    [388.858 210.82 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 0 0 0 373.3779 244 0 0]
+    }
+    dst {
+      id		      3
+      intersection	      [1 0 -1 0.1492 433.3779 278 0 0]
+    }
+    midPoint		    [390.3779 232]
+    chart		    2
+    linkNode		    [2 0 15]
+    dataLimits		    [373.378 435.778 228.93 278]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    8
+  }
+  transition {
+    id			    15
+    labelString		    "[VACC_ACCBrakeToStop_flg==TRUE...\n&& VACC_ACCDecelReqPrev_mps2 > VACC_ACCMCConsideredDecel_mps2"
+    "...\n&& VACC_ACCMCBraking_flg==TRUE]"
+    labelPosition	    [908.794 258.21 435.5 47]
+    fontSize		    12
+    src {
+      id		      3
+      intersection	      [2 1 0 0.2385 846.2 306.6161 0 0]
+    }
+    dst {
+      id		      4
+      intersection	      [4 -1 -0 0.7615 1440.2 306.6161 0 0]
+    }
+    midPoint		    [1139.2 306.6161]
+    chart		    2
+    linkNode		    [2 14 16]
+    dataLimits		    [846.2 1440.2 304.216 309.016]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    10
+  }
+  transition {
+    id			    16
+    labelString		    "[VACC_ACCBrakeToStop_flg==FALSE]"
+    labelPosition	    [957.466 360.484 212.5 17]
+    fontSize		    12
+    src {
+      id		      4
+      intersection	      [4 -1 0 0.1882 1440.2 375.4161 0 0]
+    }
+    dst {
+      id		      3
+      intersection	      [2 1 -0 0.8118 846.2 375.4161 0 0]
+    }
+    midPoint		    [1147.2 375.4161]
+    chart		    2
+    linkNode		    [2 15 0]
+    dataLimits		    [846.2 1440.2 373.016 377.816]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    12
+  }
+  instance {
+    id			    17
+    name		    "Decel_Ramp_Up_Down/DecelRampRollAvg/Decel_Roll_Avg_Interval_Chart"
+    machine		    1
+    chart		    2
+  }
+  chart {
+    id			    18
+    name		    "Decel_Ramp_Up_Down/Chart_Decel_Smooth_Increase"
+    windowPosition	    [-8 -8 1936 1056]
+    viewLimits		    [487.87 1745.204 75.277 668.611]
+    zoomFactor		    0.889
+    stateColor		    [0.3803921568627451 0.2745098039215687 0.1803921568627451]
+    stateLabelColor	    [0.4588235294117647 0.2980392156862745 0.1411764705882353]
+    transitionColor	    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
+    transitionLabelColor    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
+    junctionColor	    [0.7764705882352941 0.4980392156862745 0]
+    chartColor		    [1 0.9882352941176471 0.9254901960784314]
+    screen		    [1 1 1920 1200 1.333333333333333]
+    treeNode		    [0 19 0 0]
+    firstTransition	    31
+    viewObj		    18
+    machine		    1
+    toolbarMode		    LIBRARY_TOOLBAR
+    ssIdHighWaterMark	    21
+    decomposition	    CLUSTER_CHART
+    firstData		    22
+    chartFileNumber	    6
+    saturateOnIntegerOverflow 1
+    userSpecifiedStateTransitionExecutionOrder 1
+    disableImplicitCasting  1
+    actionLanguage	    1
+  }
+  state {
+    id			    19
+    labelString		    "INIT\nen:\nNACC_ACCDecelReqRampUp_mps2 = ZERO_FLOAT;"
+    position		    [307.3333 265.7667 307.5 242.75]
+    fontSize		    12
+    chart		    18
+    treeNode		    [18 0 0 20]
+    visible		    0
+    subviewer		    18
+    ssIdNumber		    4
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    20
+    labelString		    "COUNT\nen:\nNACC_ACCDecelIncTimerLocal_stp=ZERO_INT;\n\ndu:\nNACC_ACCDecelIncTimerLocal_stp=NACC"
+    "_ACCDecelIncTimerLocal_stp+1;"
+    position		    [1048.3333 265.7667 425.4 133.4]
+    fontSize		    12
+    chart		    18
+    treeNode		    [18 0 19 21]
+    visible		    0
+    subviewer		    18
+    ssIdNumber		    6
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    21
+    labelString		    "INC_DECEL\nen:\nNACC_ACCDecelReqRampUp_mps2=NACC_ACCDecelReqRampUp_mps2+VACC_ACCDecelStepInc_mps"
+    "2;"
+    position		    [1934.4293 265.7667 628.85 212.8]
+    fontSize		    12
+    chart		    18
+    treeNode		    [18 0 20 0]
+    visible		    0
+    subviewer		    18
+    ssIdNumber		    11
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  data {
+    id			    22
+    ssIdNumber		    8
+    name		    "VACC_ACCRawDecelReq_mps2"
+    linkNode		    [18 0 23]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    23
+    ssIdNumber		    1
+    name		    "VACC_ACCDecelStepInc_mps2"
+    linkNode		    [18 22 24]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    24
+    ssIdNumber		    2
+    name		    "NACC_ACCDecelIncTimer_stp"
+    linkNode		    [18 23 25]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    25
+    ssIdNumber		    3
+    name		    "NACC_ACCDecelReqRampUp_mps2"
+    linkNode		    [18 24 26]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_SINGLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "single"
+  }
+  data {
+    id			    26
+    ssIdNumber		    5
+    name		    "ZERO_FLOAT"
+    linkNode		    [18 25 27]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 1
+    machine		    1
+    props {
+      type {
+	primitive		SF_SINGLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "single"
+  }
+  data {
+    id			    27
+    ssIdNumber		    9
+    name		    "NACC_ACCDecelIncTimerLocal_stp"
+    linkNode		    [18 26 28]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_SINGLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "single"
+  }
+  data {
+    id			    28
+    ssIdNumber		    10
+    name		    "ZERO_INT"
+    linkNode		    [18 27 29]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 2
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    29
+    ssIdNumber		    18
+    name		    "VACC_ACCDecelRampReset_flg"
+    linkNode		    [18 28 30]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    30
+    ssIdNumber		    19
+    name		    "TRUE"
+    linkNode		    [18 29 0]
+    scope		    PARAMETER_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	expression		"bool"
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "boolean"
+  }
+  transition {
+    id			    31
+    labelString		    ""
+    labelPosition	    [318.741 226.752 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 0 0 0 326.0397 235.1745 0 0]
+    }
+    dst {
+      id		      19
+      intersection	      [1 0 -1 0.2112 372.2897 265.7667 0 0]
+    }
+    midPoint		    [347.2897 228.9245]
+    chart		    18
+    linkNode		    [18 0 32]
+    dataLimits		    [326.04 374.69 228.835 265.767]
+    subviewer		    18
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    13
+  }
+  transition {
+    id			    32
+    labelString		    "[NACC_ACCDecelIncTimerLocal_stp>NACC_ACCDecelIncTimer_stp]"
+    labelPosition	    [1530.789 287.791 375.25 17]
+    fontSize		    12
+    src {
+      id		      20
+      intersection	      [2 1 0 0.294 1473.7333 304.9911 0 0]
+    }
+    dst {
+      id		      21
+      intersection	      [4 -1 -0 0.8157 1934.4293 304.9911 0 0]
+    }
+    midPoint		    [1700.0813 304.9911]
+    chart		    18
+    linkNode		    [18 31 33]
+    dataLimits		    [1473.733 1934.429 302.591 307.391]
+    subviewer		    18
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    12
+  }
+  transition {
+    id			    33
+    labelString		    "[NACC_ACCDecelReqRampUp_mps2<VACC_ACCRawDecelReq_mps2]"
+    labelPosition	    [635.035 289.967 396.75 17]
+    fontSize		    12
+    src {
+      id		      19
+      intersection	      [2 1 0 0.1689 614.8333 306.7667 0 0]
+    }
+    dst {
+      id		      20
+      intersection	      [4 -1 -0 0.6927 1048.3333 306.7667 0 0]
+    }
+    midPoint		    [827.5833 306.7667]
+    chart		    18
+    linkNode		    [18 32 34]
+    dataLimits		    [614.833 1048.333 304.367 309.167]
+    subviewer		    18
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    7
+  }
+  transition {
+    id			    34
+    labelString		    "[NACC_ACCDecelReqRampUp_mps2<VACC_ACCRawDecelReq_mps2]"
+    labelPosition	    [1522.405 326.558 396.75 17]
+    fontSize		    12
+    src {
+      id		      21
+      intersection	      [4 -1 0 0.6492 1934.4293 340.4078 0 0]
+    }
+    dst {
+      id		      20
+      intersection	      [2 1 -0 0.5595 1473.7333 340.4078 0 0]
+    }
+    midPoint		    [1708.0813 340.4078]
+    chart		    18
+    linkNode		    [18 33 35]
+    dataLimits		    [1473.733 1934.429 338.008 342.808]
+    subviewer		    18
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    14
+  }
+  transition {
+    id			    35
+    labelString		    "[VACC_ACCDecelRampReset_flg==TRUE]"
+    labelPosition	    [720.83 345.425 233.5 17]
+    fontSize		    12
+    src {
+      id		      20
+      intersection	      [4 -1 0 0.3084 1048.3333 358.0238 0 0]
+    }
+    dst {
+      id		      19
+      intersection	      [2 1 -0 0.38 614.8333 358.0238 0 0]
+    }
+    midPoint		    [835.5833 358.0238]
+    chart		    18
+    linkNode		    [18 34 36]
+    dataLimits		    [614.833 1048.333 355.624 360.424]
+    subviewer		    18
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    21
+  }
+  transition {
+    id			    36
+    labelString		    "[VACC_ACCDecelRampReset_flg==TRUE]"
+    labelPosition	    [1074.55 447.841 233.5 17]
+    fontSize		    12
+    src {
+      id		      21
+      intersection	      [4 -1 0 0.0864 1934.4293 460.1745 0 0]
+    }
+    dst {
+      id		      19
+      intersection	      [2 1 -0 0.8009 614.8333 460.1745 0 0]
+    }
+    midPoint		    [1278.6313 460.1745]
+    chart		    18
+    linkNode		    [18 35 0]
+    dataLimits		    [614.833 1934.429 457.775 462.575]
+    subviewer		    18
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    15
+  }
+  instance {
+    id			    37
+    name		    "Decel_Ramp_Up_Down/Chart_Decel_Smooth_Increase"
+    machine		    1
+    chart		    18
+  }
+  target {
+    id			    38
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 39]
+  }
+  target {
+    id			    39
+    name		    "rtw"
+    machine		    1
+    linkNode		    [1 38 0]
+  }
+}

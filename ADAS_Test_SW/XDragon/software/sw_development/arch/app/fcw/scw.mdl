@@ -1,0 +1,2452 @@
+Library {
+  Name			  "scw"
+  Version		  8.1
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1252"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-8.0, 0.0, 1296.0, 1000.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[1]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[13]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1053.0, 834.0]
+	ZoomFactor		[1.0]
+	Offset			[157.5, 96.5]
+      }
+    }
+  }
+  Created		  "Tue Sep 15 16:55:42 2015"
+  Creator		  "xsellart"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "AT015411"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Tue Feb 02 15:21:22 2016"
+  RTWModifiedTimeStamp	  376327276
+  ModelVersionFormat	  "1.%<AutoIncrement:32>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "all"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  RecordCoverage	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      6
+      Version		      "1.13.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  7
+	  Version		  "1.13.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  8
+	  Version		  "1.13.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  9
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  10
+	  Version		  "1.13.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  11
+	  Version		  "1.13.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  12
+	  Version		  "1.13.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  13
+	  Version		  "1.13.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  14
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    15
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      15
+	      Version		      "1.13.0"
+	      Array {
+		Type			"Cell"
+		Dimension		22
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      16
+	      Version		      "1.13.0"
+	      Array {
+		Type			"Cell"
+		Dimension		15
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  17
+	  Version		  "1.13.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    " "
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 153, 69, 1213, 699 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+  }
+  System {
+    Name		    "scw"
+    Location		    [-8, 0, 1288, 1000]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "1"
+    Block {
+      BlockType		      SubSystem
+      Name		      "FCW_State_Flow"
+      SID		      "1"
+      Ports		      [10, 8]
+      Position		      [295, 230, 810, 650]
+      ZOrder		      32
+      ErrorFcn		      "Stateflow.Translate.translate"
+      PermitHierarchicalResolution "ExplicitOnly"
+      TreatAsAtomicUnit	      on
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      SFBlockType	      "Chart"
+      System {
+	Name			"FCW_State_Flow"
+	Location		[-8, 0, 1288, 1000]
+	Open			on
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	SIDHighWatermark	"203"
+	SIDPrevWatermark	"65"
+	Block {
+	  BlockType		  Inport
+	  Name			  "VJUD_FCWEnableReq_flg"
+	  SID			  "1::46"
+	  Position		  [20, 101, 40, 119]
+	  ZOrder		  26
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VJUD_FCWOperational_flg"
+	  SID			  "1::47"
+	  Position		  [20, 136, 40, 154]
+	  ZOrder		  27
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VJUD_FCWSpeedInRange_flg"
+	  SID			  "1::53"
+	  Position		  [20, 171, 40, 189]
+	  ZOrder		  33
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VJUD_FCWActionReq_flg"
+	  SID			  "1::48"
+	  Position		  [20, 206, 40, 224]
+	  ZOrder		  28
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VJUD_FCWReturnOperational_flg"
+	  SID			  "1::203"
+	  Position		  [20, 246, 40, 264]
+	  ZOrder		  50
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VJUD_FCWDeactivationReq_flg"
+	  SID			  "1::52"
+	  Position		  [20, 281, 40, 299]
+	  ZOrder		  32
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VJUD_FCWDBSAllowed_flg"
+	  SID			  "1::49"
+	  Position		  [20, 316, 40, 334]
+	  ZOrder		  29
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VIFO_BrakePedalPressed_flg"
+	  SID			  "1::50"
+	  Position		  [20, 351, 40, 369]
+	  ZOrder		  30
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "KFCW_BrakePreFillTimer_ms"
+	  SID			  "1::202"
+	  Position		  [20, 386, 40, 404]
+	  ZOrder		  49
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "KFCW_HapticOnTimer_ms"
+	  SID			  "1::201"
+	  Position		  [20, 426, 40, 444]
+	  ZOrder		  48
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  " Demux "
+	  SID			  "1::65"
+	  Ports			  [1, 1]
+	  Position		  [270, 425, 320, 465]
+	  ZOrder		  43
+	  Outputs		  "1"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  " SFunction "
+	  SID			  "1::64"
+	  Tag			  "Stateflow S-Function scw 1"
+	  Ports			  [10, 9]
+	  Position		  [180, 100, 230, 320]
+	  ZOrder		  42
+	  FunctionName		  "sf_sfun"
+	  Parameters		  "C_TICK_TIME_S,ENUM_FCWSTATE_DBS,ENUM_FCWSTATE_DISABLED,ENUM_FCWSTATE_HAPTIC_OFF,ENUM_FCWSTATE_HAPTIC"
+	  "_ON,ENUM_FCWSTATE_OPERATIONAL,ENUM_FCWSTATE_PREFILL,ENUM_FCWSTATE_STANDBY,ENUM_FCWSTATE_WARNING,ENUM_HMISTATE_ACTIV"
+	  "E,ENUM_HMISTATE_DISABLED,ENUM_HMISTATE_STANDBY,FALSE,TRUE"
+	  PortCounts		  "[10 9]"
+	  EnableBusSupport	  off
+	  Port {
+	    PortNumber		    2
+	    Name		    "VFCW_FCWSystemState_enum"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "VFCW_FCWStateHMI_enum"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    Name		    "VFCW_FCWActing_flg"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    Name		    "VFCW_FCWWarningReq_flg"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    6
+	    Name		    "VFCW_FCWBrakePreFillReq_flg"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    7
+	    Name		    "VFCW_FCWBrakePreFillReqAppl_flg"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    8
+	    Name		    "VFCW_FCWHapticReq_flg"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    9
+	    Name		    "VFCW_FCWDecelReqAppl_flg"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  " Terminator "
+	  SID			  "1::144"
+	  Position		  [460, 436, 480, 454]
+	  ZOrder		  46
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VFCW_FCWSystemState_enum"
+	  SID			  "1::51"
+	  Position		  [460, 101, 480, 119]
+	  ZOrder		  31
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VFCW_FCWStateHMI_enum"
+	  SID			  "1::54"
+	  Position		  [460, 136, 480, 154]
+	  ZOrder		  34
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VFCW_FCWActing_flg"
+	  SID			  "1::55"
+	  Position		  [460, 171, 480, 189]
+	  ZOrder		  35
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VFCW_FCWWarningReq_flg"
+	  SID			  "1::56"
+	  Position		  [460, 206, 480, 224]
+	  ZOrder		  36
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VFCW_FCWBrakePreFillReq_flg"
+	  SID			  "1::57"
+	  Position		  [460, 246, 480, 264]
+	  ZOrder		  37
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VFCW_FCWBrakePreFillReqAppl_flg"
+	  SID			  "1::142"
+	  Position		  [460, 281, 480, 299]
+	  ZOrder		  44
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VFCW_FCWHapticReq_flg"
+	  SID			  "1::143"
+	  Position		  [460, 316, 480, 334]
+	  ZOrder		  45
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VFCW_FCWDecelReqAppl_flg"
+	  SID			  "1::145"
+	  Position		  [460, 351, 480, 369]
+	  ZOrder		  47
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "VJUD_FCWEnableReq_flg"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "VJUD_FCWOperational_flg"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "VJUD_FCWSpeedInRange_flg"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "VJUD_FCWActionReq_flg"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "VJUD_FCWReturnOperational_flg"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "VJUD_FCWDeactivationReq_flg"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "VJUD_FCWDBSAllowed_flg"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "VIFO_BrakePedalPressed_flg"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  8
+	}
+	Line {
+	  SrcBlock		  "KFCW_BrakePreFillTimer_ms"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  9
+	}
+	Line {
+	  SrcBlock		  "KFCW_HapticOnTimer_ms"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  10
+	}
+	Line {
+	  Name			  "VFCW_FCWSystemState_enum"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  2
+	  DstBlock		  "VFCW_FCWSystemState_enum"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "VFCW_FCWStateHMI_enum"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  3
+	  DstBlock		  "VFCW_FCWStateHMI_enum"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "VFCW_FCWActing_flg"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  4
+	  DstBlock		  "VFCW_FCWActing_flg"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "VFCW_FCWWarningReq_flg"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  5
+	  DstBlock		  "VFCW_FCWWarningReq_flg"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "VFCW_FCWBrakePreFillReq_flg"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  6
+	  DstBlock		  "VFCW_FCWBrakePreFillReq_flg"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "VFCW_FCWBrakePreFillReqAppl_flg"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  7
+	  DstBlock		  "VFCW_FCWBrakePreFillReqAppl_flg"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "VFCW_FCWHapticReq_flg"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  8
+	  DstBlock		  "VFCW_FCWHapticReq_flg"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "VFCW_FCWDecelReqAppl_flg"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  9
+	  DstBlock		  "VFCW_FCWDecelReqAppl_flg"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " Demux "
+	  SrcPort		  1
+	  DstBlock		  " Terminator "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " SFunction "
+	  SrcPort		  1
+	  DstBlock		  " Demux "
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.6 (R2013a) dated Jan 19 2013, 14:32:20
+#
+#
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "scw"
+    created		    "23-Sep-2015 14:47:37"
+    isLibrary		    1
+    firstTarget		    66
+    sfVersion		    76014001.0015
+  }
+  chart {
+    id			    2
+    name		    "FCW_State_Flow"
+    windowPosition	    [-8 0 1292 876]
+    viewLimits		    [-44.079 1008.658 19.869 853.661]
+    zoomFactor		    1.333
+    stateColor		    [0.3803921568627451 0.2745098039215687 0.1803921568627451]
+    stateLabelColor	    [0.4588235294117647 0.2980392156862745 0.1411764705882353]
+    transitionColor	    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
+    transitionLabelColor    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
+    junctionColor	    [0.7764705882352941 0.4980392156862745 0]
+    chartColor		    [1 0.9882352941176471 0.9254901960784314]
+    screen		    [1 1 1920 1200 1.333333333333333]
+    treeNode		    [0 3 0 0]
+    firstTransition	    62
+    viewObj		    2
+    visible		    1
+    machine		    1
+    toolbarMode		    LIBRARY_TOOLBAR
+    subviewS {
+    }
+    ssIdHighWaterMark	    83
+    decomposition	    CLUSTER_CHART
+    firstData		    28
+    chartFileNumber	    1
+    saturateOnIntegerOverflow 1
+    userSpecifiedStateTransitionExecutionOrder 1
+    disableImplicitCasting  1
+  }
+  state {
+    id			    3
+    labelString		    "ENABLED\n\n\n"
+    position		    [650.2752 96.9912 1610.1152 546.708]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 4 0 11]
+    firstTransition	    15
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    4
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    4
+    labelString		    "ACTIVE\n"
+    position		    [1313.9607 193.7099 927.319 332.8392]
+    fontSize		    12
+    chart		    2
+    treeNode		    [3 6 0 10]
+    firstTransition	    19
+    visible		    0
+    subviewer		    2
+    subviewS {
+      x1		      -19.999
+      y1		      -19.999
+      pos		      [0 0 987.935 305.981]
+    }
+    ssIdNumber		    6
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    5
+    labelString		    "OPERATIONAL\nen:\nVFCW_FCWSystemState_enum=ENUM_FCWSTATE_OPERATIONAL;\nVFCW_FCWStateHMI_enum = E"
+    "NUM_HMISTATE_STANDBY;"
+    position		    [1327.6256 303.687 401.5924 117.012]
+    fontSize		    12
+    chart		    2
+    treeNode		    [4 0 6 0]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    8
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    6
+    labelString		    "ACTING\nen:\nVFCW_FCWStateHMI_enum = ENUM_HMISTATE_ACTIVE;\nVFCW_FCWActing_flg=TRUE;\nVFCW_FCWWa"
+    "rningReq_flg=TRUE;\nex:\nVFCW_FCWActing_flg=FALSE;\nVFCW_FCWWarningReq_flg=FALSE;\n"
+    position		    [2001.2133 298.9439 222.5955 126.4982]
+    fontSize		    12
+    chart		    2
+    treeNode		    [4 8 0 5]
+    firstTransition	    22
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    2
+    subviewS {
+      x1		      130.001
+      y1		      113.001
+      pos		      [15.618 20.125 3614.919 558.875]
+    }
+    ssIdNumber		    10
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    7
+    labelString		    "WARNING\nen:\nVFCW_FCWSystemState_enum=ENUM_FCWSTATE_WARNING;"
+    position		    [53.2851 325.6971 368.6096 119.9542]
+    fontSize		    12
+    chart		    2
+    treeNode		    [6 0 9 0]
+    visible		    0
+    subviewer		    6
+    ssIdNumber		    11
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    8
+    labelString		    "PREBRAKING\nVFCW_FCWBrakePreFillReq_flg = TRUE;\nVFCW_FCWBrakePreFillReqAppl_flg = TRUE;\nex:\nV"
+    "FCW_FCWBrakePreFillReq_flg = FALSE;\nVFCW_FCWBrakePreFillReqAppl_flg = FALSE;"
+    position		    [688.7123 114.6279 2311.5784 446.1209]
+    fontSize		    12
+    chart		    2
+    treeNode		    [6 12 0 9]
+    firstTransition	    25
+    visible		    0
+    subviewer		    6
+    ssIdNumber		    12
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    9
+    labelString		    "BRAKE_SUPPORT\nen:\nVFCW_FCWSystemState_enum=ENUM_FCWSTATE_DBS;\nVFCW_FCWDecelReqAppl_flg = TRUE"
+    ";\n\nex:\nVFCW_FCWDecelReqAppl_flg = FALSE;\n\n\n"
+    position		    [3241.0771 318.895 357.8596 129.9542]
+    fontSize		    12
+    chart		    2
+    treeNode		    [6 0 8 7]
+    visible		    0
+    subviewer		    6
+    ssIdNumber		    13
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    10
+    labelString		    "STANDBY\nen:\nVFCW_FCWSystemState_enum=ENUM_FCWSTATE_STANDBY;\nVFCW_FCWStateHMI_enum = ENUM_HMIS"
+    "TATE_STANDBY;"
+    position		    [664.2152 269.8047 372.7605 144.4836]
+    fontSize		    12
+    chart		    2
+    treeNode		    [3 0 4 0]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    5
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    11
+    labelString		    "DISABLED\nen:\nVFCW_FCWSystemState_enum=ENUM_FCWSTATE_DISABLED;\nVFCW_FCWStateHMI_enum = ENUM_HM"
+    "ISTATE_DISABLED;\nVFCW_FCWActing_flg=FALSE;\nVFCW_FCWWarningReq_flg=FALSE;\nVFCW_FCWBrakePreFillReq_flg=FALSE;\nVF"
+    "CW_FCWBrakePreFillReqAppl_flg = FALSE;\nVFCW_FCWHapticReq_flg = FALSE;\nVFCW_FCWDecelReqAppl_flg = FALSE;"
+    position		    [14.0039 237.9969 384.9988 192.5664]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 3 0]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    2
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    12
+    labelString		    "HAPTIC_ON\nen:\nVFCW_FCWSystemState_enum = ENUM_FCWSTATE_HAPTIC_ON;\nVFCW_FCWHapticReq_flg = TRU"
+    "E;\nVFCW_FCWDecelReqAppl_flg = TRUE;\n\ndu: \nNFCW_MaintainTimeLocal_stp = NFCW_MaintainTimeLocal_stp + 1;\nNFCW_M"
+    "aintainTimeLocal_ms = NFCW_MaintainTimeLocal_stp * C_TICK_TIME_S*1000;\n\nex:\nVFCW_FCWDecelReqAppl_flg = FALSE;\n"
+    "VFCW_FCWHapticReq_flg = FALSE;\nNFCW_MaintainTimeLocal_stp = 0;\nNFCW_MaintainTimeLocal_ms = 0;\n"
+    position		    [1631.4567 274.8595 502.1845 248.6667]
+    fontSize		    12
+    chart		    2
+    treeNode		    [8 0 0 13]
+    visible		    0
+    subviewer		    6
+    ssIdNumber		    63
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    13
+    labelString		    "HAPTIC_OFF\nen:\nVFCW_FCWSystemState_enum = ENUM_FCWSTATE_HAPTIC_OFF;\n"
+    position		    [2505.9677 309.2471 452.2512 204.25]
+    fontSize		    12
+    chart		    2
+    treeNode		    [8 0 12 14]
+    visible		    0
+    subviewer		    6
+    ssIdNumber		    65
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    14
+    labelString		    "PREFILL\nen:\nVFCW_FCWSystemState_enum = ENUM_FCWSTATE_PREFILL;\nNFCW_MaintainTimeLocal_stp = 0;"
+    "\nNFCW_MaintainTimeLocal_ms = 0;\ndu: \nNFCW_MaintainTimeLocal_stp = NFCW_MaintainTimeLocal_stp + 1;\nNFCW_Maintai"
+    "nTimeLocal_ms = NFCW_MaintainTimeLocal_stp * C_TICK_TIME_S*1000;\n\nex:\nNFCW_MaintainTimeLocal_stp = 0;\nNFCW_Mai"
+    "ntainTimeLocal_ms = 0;\n\n"
+    position		    [717.534 315.9138 498.9178 202.5834]
+    fontSize		    12
+    chart		    2
+    treeNode		    [8 0 13 0]
+    visible		    0
+    subviewer		    6
+    ssIdNumber		    70
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  transition {
+    id			    15
+    labelString		    ""
+    labelPosition	    [744.847 217.568 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 0 0 0 736.1825 235.0907 0 0]
+    }
+    dst {
+      id		      10
+      intersection	      [1 0 -1 0.2699 764.8332 269.8047 0 0]
+    }
+    midPoint		    [749.1215 237.8634]
+    chart		    2
+    linkNode		    [3 0 16]
+    dataLimits		    [736.183 767.233 235.091 269.805]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    7
+  }
+  transition {
+    id			    16
+    labelString		    "[VJUD_FCWOperational_flg == TRUE]"
+    labelPosition	    [1073.124 272.698 208.75 17]
+    fontSize		    12
+    src {
+      id		      10
+      intersection	      [2 1 0 0.1504 1036.9757 291.5337 0 0]
+    }
+    dst {
+      id		      4
+      intersection	      [4 -1 -0 0.7061 1313.9607 291.5337 0 0]
+    }
+    midPoint		    [1171.4682 291.5337]
+    chart		    2
+    linkNode		    [3 15 17]
+    dataLimits		    [1036.976 1313.961 289.134 293.934]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    19
+  }
+  transition {
+    id			    17
+    labelString		    "[VJUD_FCWSpeedInRange_flg==FALSE]"
+    labelPosition	    [1063.083 350.64 225.75 17]
+    fontSize		    12
+    src {
+      id		      5
+      intersection	      [4 -1 0 0.7019 1327.6256 338.5686 0 0]
+    }
+    dst {
+      id		      10
+      intersection	      [2 1 0 0.4759 1036.9757 338.5686 0 0]
+    }
+    midPoint		    [1186.3007 338.5686]
+    chart		    2
+    linkNode		    [3 16 18]
+    dataLimits		    [1036.976 1327.626 336.169 340.969]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    46
+  }
+  transition {
+    id			    18
+    labelString		    "[VJUD_FCWDeactivationReq_flg==TRUE]"
+    labelPosition	    [1068.942 406.154 229 17]
+    fontSize		    12
+    src {
+      id		      4
+      intersection	      [4 -1 0 0.3981 1313.9607 394.0323 0 0]
+    }
+    dst {
+      id		      10
+      intersection	      [2 1 0 0.8598 1036.9757 394.0323 0 0]
+    }
+    midPoint		    [1179.4682 394.0323]
+    chart		    2
+    linkNode		    [3 17 0]
+    dataLimits		    [1036.976 1313.961 391.632 396.432]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    20
+  }
+  transition {
+    id			    19
+    labelString		    ""
+    labelPosition	    [1402.164 253.753 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 0 0 0 1390.7709 269.3978 0 0]
+    }
+    dst {
+      id		      5
+      intersection	      [1 0 -1 0.2705 1436.2409 303.687 0 0]
+    }
+    midPoint		    [1413.5059 275.9771]
+    chart		    2
+    linkNode		    [4 0 20]
+    dataLimits		    [1390.771 1438.641 269.398 303.687]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    21
+  }
+  transition {
+    id			    20
+    labelString		    "[VJUD_FCWActionReq_flg==TRUE]"
+    labelPosition	    [1767.489 322.67 195.5 17]
+    fontSize		    12
+    src {
+      id		      5
+      intersection	      [2 1 0 0.3007 1729.218 338.8747 0 0]
+    }
+    dst {
+      id		      6
+      intersection	      [4 -1 0 0.6843 2001.2133 338.8747 0 0]
+    }
+    midPoint		    [1861.2157 338.8747]
+    chart		    2
+    linkNode		    [4 19 21]
+    dataLimits		    [1729.218 2001.213 336.475 341.275]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    22
+  }
+  transition {
+    id			    21
+    labelString		    "[VJUD_FCWReturnOperational_flg==TRUE]"
+    labelPosition	    [1748.941 371.862 238.75 17]
+    fontSize		    12
+    src {
+      id		      6
+      intersection	      [4 -1 0 0.2892 2001.2133 388.8622 0 0]
+    }
+    dst {
+      id		      5
+      intersection	      [2 1 -0 0.7279 1729.218 388.8622 0 0]
+    }
+    midPoint		    [1869.2157 388.8622]
+    chart		    2
+    linkNode		    [4 20 0]
+    dataLimits		    [1729.218 2001.213 386.462 391.262]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    83
+  }
+  transition {
+    id			    22
+    labelString		    ""
+    labelPosition	    [78.254 276.706 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 0 0 0 60.4517 288.6306 0 0]
+    }
+    dst {
+      id		      7
+      intersection	      [1 0 -1 0.134 102.6877 325.6971 0 0]
+    }
+    midPoint		    [81.5697 296.7549]
+    chart		    2
+    linkNode		    [6 0 23]
+    dataLimits		    [60.452 105.088 288.631 325.697]
+    subviewer		    6
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    24
+  }
+  transition {
+    id			    23
+    labelString		    "[VJUD_FCWDBSAllowed_flg==TRUE]"
+    labelPosition	    [448.395 360.443 206.75 17]
+    fontSize		    12
+    src {
+      id		      7
+      intersection	      [2 1 0 0.4502 421.8947 379.6988 0 0]
+    }
+    dst {
+      id		      8
+      intersection	      [4 -1 0 0.4058 688.7123 379.6988 0 0]
+    }
+    midPoint		    [551.3035 379.6988]
+    chart		    2
+    linkNode		    [6 22 24]
+    dataLimits		    [421.895 688.712 377.299 382.099]
+    subviewer		    6
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    14
+  }
+  transition {
+    id			    24
+    labelString		    "[VIFO_BrakePedalPressed_flg==TRUE]"
+    labelPosition	    [3018.969 366.629 215 17]
+    fontSize		    12
+    src {
+      id		      8
+      intersection	      [2 1 0 0.6049 3000.2907 384.4659 0 0]
+    }
+    dst {
+      id		      9
+      intersection	      [4 -1 0 0.4954 3241.0771 384.4659 0 0]
+    }
+    midPoint		    [3116.6839 384.4659]
+    chart		    2
+    linkNode		    [6 23 0]
+    dataLimits		    [3000.291 3241.077 382.066 386.866]
+    subviewer		    6
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    15
+  }
+  transition {
+    id			    25
+    labelString		    ""
+    labelPosition	    [772.799 275.002 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 0.9965 0.0835 0 756.5827 279.1267 0 0]
+    }
+    dst {
+      id		      14
+      intersection	      [1 0 -1 0.1534 794.0827 315.9138 0 0]
+    }
+    midPoint		    [781.2214 288.1042]
+    chart		    2
+    linkNode		    [8 0 26]
+    dataLimits		    [756.583 796.483 279.127 315.914]
+    subviewer		    6
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    66
+  }
+  transition {
+    id			    26
+    labelString		    "[NFCW_MaintainTimeLocal_ms> KFCW_HapticOnTimer_ms]"
+    labelPosition	    [2151.076 364.86 329.75 17]
+    fontSize		    12
+    src {
+      id		      12
+      intersection	      [2 1 0 0.4448 2133.6412 385.4557 0 0]
+    }
+    dst {
+      id		      13
+      intersection	      [4 -1 0 0.6269 2505.9677 385.4557 0 0]
+    }
+    midPoint		    [2315.8044 385.4557]
+    chart		    2
+    linkNode		    [8 25 27]
+    dataLimits		    [2133.641 2505.968 383.056 387.856]
+    subviewer		    6
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    67
+  }
+  transition {
+    id			    27
+    labelString		    "[NFCW_MaintainTimeLocal_ms> KFCW_BrakePreFillTimer_ms]"
+    labelPosition	    [1245.875 367.461 344.75 17]
+    fontSize		    12
+    src {
+      id		      14
+      intersection	      [2 1 0 0.345 1216.4518 385.7973 0 0]
+    }
+    dst {
+      id		      12
+      intersection	      [4 -1 0 0.5539 1631.4567 385.7973 0 0]
+    }
+    midPoint		    [1419.9542 385.7973]
+    chart		    2
+    linkNode		    [8 26 0]
+    dataLimits		    [1216.452 1631.457 383.397 388.197]
+    subviewer		    6
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    71
+  }
+  data {
+    id			    28
+    ssIdNumber		    25
+    name		    "VJUD_FCWEnableReq_flg"
+    linkNode		    [2 0 29]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    29
+    ssIdNumber		    26
+    name		    "VJUD_FCWOperational_flg"
+    linkNode		    [2 28 30]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    30
+    ssIdNumber		    48
+    name		    "VJUD_FCWSpeedInRange_flg"
+    linkNode		    [2 29 31]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    31
+    ssIdNumber		    27
+    name		    "VJUD_FCWActionReq_flg"
+    linkNode		    [2 30 32]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    32
+    ssIdNumber		    82
+    name		    "VJUD_FCWReturnOperational_flg"
+    linkNode		    [2 31 33]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    33
+    ssIdNumber		    47
+    name		    "VJUD_FCWDeactivationReq_flg"
+    linkNode		    [2 32 34]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    34
+    ssIdNumber		    28
+    name		    "VJUD_FCWDBSAllowed_flg"
+    linkNode		    [2 33 35]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    35
+    ssIdNumber		    29
+    name		    "VIFO_BrakePedalPressed_flg"
+    linkNode		    [2 34 36]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    36
+    ssIdNumber		    33
+    name		    "VFCW_FCWSystemState_enum"
+    linkNode		    [2 35 37]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      resolveToSignalObject   1
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    37
+    ssIdNumber		    34
+    name		    "ENUM_FCWSTATE_DISABLED"
+    linkNode		    [2 36 38]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 2
+    machine		    1
+    props {
+      initialValue	      "0"
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    38
+    ssIdNumber		    36
+    name		    "ENUM_FCWSTATE_STANDBY"
+    linkNode		    [2 37 39]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 7
+    machine		    1
+    props {
+      initialValue	      "1"
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    39
+    ssIdNumber		    37
+    name		    "ENUM_HMISTATE_ACTIVE"
+    linkNode		    [2 38 40]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 9
+    machine		    1
+    props {
+      initialValue	      "2"
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    40
+    ssIdNumber		    38
+    name		    "ENUM_FCWSTATE_OPERATIONAL"
+    linkNode		    [2 39 41]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 5
+    machine		    1
+    props {
+      initialValue	      "2"
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    41
+    ssIdNumber		    40
+    name		    "ENUM_FCWSTATE_WARNING"
+    linkNode		    [2 40 42]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 8
+    machine		    1
+    props {
+      initialValue	      "3"
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    42
+    ssIdNumber		    41
+    name		    "ENUM_FCWSTATE_PREFILL"
+    linkNode		    [2 41 43]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 6
+    machine		    1
+    props {
+      initialValue	      "4"
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    43
+    ssIdNumber		    42
+    name		    "ENUM_FCWSTATE_DBS"
+    linkNode		    [2 42 44]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 1
+    machine		    1
+    props {
+      initialValue	      "5"
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    44
+    ssIdNumber		    49
+    name		    "VFCW_FCWStateHMI_enum"
+    linkNode		    [2 43 45]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      resolveToSignalObject   1
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    45
+    ssIdNumber		    50
+    name		    "VFCW_FCWActing_flg"
+    linkNode		    [2 44 46]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      resolveToSignalObject   1
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    46
+    ssIdNumber		    51
+    name		    "VFCW_FCWWarningReq_flg"
+    linkNode		    [2 45 47]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      resolveToSignalObject   1
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    47
+    ssIdNumber		    52
+    name		    "VFCW_FCWBrakePreFillReq_flg"
+    linkNode		    [2 46 48]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      resolveToSignalObject   1
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    48
+    ssIdNumber		    58
+    name		    "ENUM_HMISTATE_DISABLED"
+    linkNode		    [2 47 49]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 10
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    49
+    ssIdNumber		    59
+    name		    "ENUM_HMISTATE_STANDBY"
+    linkNode		    [2 48 50]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 11
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    50
+    ssIdNumber		    60
+    name		    "TRUE"
+    linkNode		    [2 49 51]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 13
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    51
+    ssIdNumber		    61
+    name		    "FALSE"
+    linkNode		    [2 50 52]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 12
+    machine		    1
+    props {
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    52
+    ssIdNumber		    68
+    name		    "VFCW_FCWBrakePreFillReqAppl_flg"
+    linkNode		    [2 51 53]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      resolveToSignalObject   1
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    53
+    ssIdNumber		    69
+    name		    "VFCW_FCWHapticReq_flg"
+    linkNode		    [2 52 54]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      resolveToSignalObject   1
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    54
+    ssIdNumber		    72
+    name		    "VFCW_FCWDecelReqAppl_flg"
+    linkNode		    [2 53 55]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      resolveToSignalObject   1
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    55
+    ssIdNumber		    73
+    name		    "ENUM_FCWSTATE_HAPTIC_ON"
+    linkNode		    [2 54 56]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 4
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    56
+    ssIdNumber		    74
+    name		    "ENUM_FCWSTATE_HAPTIC_OFF"
+    linkNode		    [2 55 57]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 3
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    57
+    ssIdNumber		    75
+    name		    "NFCW_MaintainTimeLocal_ms"
+    linkNode		    [2 56 58]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_SINGLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "single"
+  }
+  data {
+    id			    58
+    ssIdNumber		    76
+    name		    "NFCW_MaintainTimeLocal_stp"
+    linkNode		    [2 57 59]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_SINGLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "single"
+  }
+  data {
+    id			    59
+    ssIdNumber		    77
+    name		    "KFCW_BrakePreFillTimer_ms"
+    linkNode		    [2 58 60]
+    scope		    INPUT_DATA
+    paramIndexForInitFromWorkspace 13
+    machine		    1
+    props {
+      type {
+	primitive		SF_SINGLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "single"
+  }
+  data {
+    id			    60
+    ssIdNumber		    78
+    name		    "KFCW_HapticOnTimer_ms"
+    linkNode		    [2 59 61]
+    scope		    INPUT_DATA
+    paramIndexForInitFromWorkspace 14
+    machine		    1
+    props {
+      type {
+	primitive		SF_SINGLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "single"
+  }
+  data {
+    id			    61
+    ssIdNumber		    80
+    name		    "C_TICK_TIME_S"
+    linkNode		    [2 60 0]
+    scope		    PARAMETER_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_SINGLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "single"
+  }
+  transition {
+    id			    62
+    labelString		    ""
+    labelPosition	    [45.345 191.378 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 0 0 0 12.5339 208.9969 0 0]
+    }
+    dst {
+      id		      11
+      intersection	      [1 0 -1 0.0845 46.5339 237.9969 0 0]
+    }
+    midPoint		    [31.0795 207.7823]
+    chart		    2
+    linkNode		    [2 0 63]
+    dataLimits		    [12.534 48.934 207.477 237.997]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    3
+  }
+  transition {
+    id			    63
+    labelString		    "[VJUD_FCWEnableReq_flg==TRUE]"
+    labelPosition	    [430.243 267.479 200.25 17]
+    fontSize		    12
+    src {
+      id		      11
+      intersection	      [2 1 0 0.239 399.0027 284.0142 0 0]
+    }
+    dst {
+      id		      3
+      intersection	      [4 -1 -0 0.6579 650.2752 284.0142 0 0]
+    }
+    midPoint		    [520.639 284.0142]
+    chart		    2
+    linkNode		    [2 62 64]
+    dataLimits		    [399.003 650.275 281.614 286.414]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    17
+  }
+  transition {
+    id			    64
+    labelString		    "[VJUD_FCWEnableReq_flg==FALSE]"
+    labelPosition	    [433.206 369.61 205 17]
+    fontSize		    12
+    src {
+      id		      3
+      intersection	      [4 -1 0 0.5207 650.2752 359.0142 0 0]
+    }
+    dst {
+      id		      11
+      intersection	      [2 1 -0 0.6284 399.0027 359.0142 0 0]
+    }
+    midPoint		    [528.639 359.0142]
+    chart		    2
+    linkNode		    [2 63 0]
+    dataLimits		    [399.003 650.275 356.614 361.414]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    18
+  }
+  instance {
+    id			    65
+    name		    "FCW_State_Flow"
+    machine		    1
+    chart		    2
+  }
+  target {
+    id			    66
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 0]
+  }
+}

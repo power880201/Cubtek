@@ -1,0 +1,2376 @@
+Library {
+  Name			  "ddm"
+  Version		  8.2
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "Big5"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-8.0, 0.0, 1382.0, 744.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[13]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1332.0, 577.0]
+	ZoomFactor		[1.0]
+	Offset			[0.0, 0.0]
+      }
+    }
+  }
+  Created		  "Thu Apr 18 17:30:16 2013"
+  Creator		  "R00T"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "14014"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Nov 07 13:19:03 2016"
+  RTWModifiedTimeStamp	  400425538
+  ModelVersionFormat	  "1.%<AutoIncrement:184>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  RecordCoverage	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  CovEnableCumulative	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      6
+      Version		      "1.13.1"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  7
+	  Version		  "1.13.1"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "SingleTasking"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  8
+	  Version		  "1.13.1"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  9
+	  Version		  "1.13.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  off
+	  BooleanDataType	  off
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  10
+	  Version		  "1.13.1"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"none"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "none"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "Warning"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  11
+	  Version		  "1.13.1"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  on
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  12
+	  Version		  "1.13.1"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  13
+	  Version		  "1.13.1"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  14
+	  Version		  "1.13.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    15
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "grt_default_tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  ""
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  ""
+	  ConfigurationScript	  ""
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  DataInitializer	  ""
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      15
+	      Version		      "1.13.1"
+	      Array {
+		Type			"Cell"
+		Dimension		23
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      16
+	      Version		      "1.13.1"
+	      Array {
+		Type			"Cell"
+		Dimension		15
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 143, 64, 1223, 704 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Arial"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      DataStoreMemory
+      DataStoreName	      "A"
+      ReadBeforeWriteMsg      "none"
+      WriteAfterWriteMsg      "none"
+      WriteAfterReadMsg	      "none"
+      InitialValue	      "0"
+      StateMustResolveToSignalObject off
+      RTWStateStorageClass    "Auto"
+      VectorParams1D	      on
+      ShowAdditionalParam     off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      SignalType	      "auto"
+      Dimensions	      "-1"
+      DataLogging	      off
+      DataLoggingLimitDataPoints off
+      DataLoggingMaxPoints    "5000"
+      DataLoggingDecimateData off
+      DataLoggingDecimation   "2"
+      DataLoggingNameMode     "SignalName"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+      ContentPreviewEnabled   off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      StatesWhenEnabling      "inherit"
+      PropagateVarSize	      "During execution"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      SampleTimeType	      "triggered"
+      SampleTime	      "1"
+      ZeroCross		      on
+      PortDimensions	      "-1"
+      TriggerSignalSampleTime "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      Interpolate	      on
+    }
+  }
+  System {
+    Name		    "ddm"
+    Location		    [-8, 0, 1374, 744]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "141"
+    Block {
+      BlockType		      SubSystem
+      Name		      "DDM"
+      SID		      "1"
+      Ports		      [2, 0, 0, 1]
+      Position		      [300, 200, 600, 400]
+      ZOrder		      -1
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Nonreusable function"
+      RTWFcnNameOpts	      "Use subsystem name"
+      RTWFileNameOpts	      "Use subsystem name"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"DDM"
+	Location		[-8, 0, 1374, 744]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "BINP_outputs"
+	  SID			  "2"
+	  Position		  [95, 281, 125, 299]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: BINP_outputs"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "BDHP_outputs"
+	  SID			  "3"
+	  Position		  [95, 326, 125, 344]
+	  ZOrder		  -2
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "trig_DDM"
+	  SID			  "4"
+	  Ports			  []
+	  Position		  [160, 20, 180, 40]
+	  ZOrder		  -3
+	  TriggerType		  "function-call"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory"
+	  SID			  "5"
+	  Position		  [470, 600, 711, 629]
+	  ZOrder		  -4
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ABS2CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory1"
+	  SID			  "6"
+	  Position		  [470, 40, 711, 69]
+	  ZOrder		  -5
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ABSCANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory10"
+	  SID			  "7"
+	  Position		  [470, 845, 711, 874]
+	  ZOrder		  -6
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPM1CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory100"
+	  SID			  "8"
+	  Position		  [470, 355, 711, 384]
+	  ZOrder		  -7
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_HMICANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory101"
+	  SID			  "9"
+	  Position		  [470, 985, 711, 1014]
+	  ZOrder		  -8
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPM5CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory102"
+	  SID			  "10"
+	  Position		  [470, 1865, 711, 1894]
+	  ZOrder		  -9
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANMCPressureSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory103"
+	  SID			  "11"
+	  Position		  [470, 1900, 711, 1929]
+	  ZOrder		  -10
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANSurfGradeSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory104"
+	  SID			  "12"
+	  Position		  [470, 1935, 711, 1964]
+	  ZOrder		  -11
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANBrakBoostPresSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory105"
+	  SID			  "13"
+	  Position		  [470, 1970, 711, 1999]
+	  ZOrder		  -12
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANLFWhlSpdSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory106"
+	  SID			  "14"
+	  Position		  [470, 2005, 711, 2034]
+	  ZOrder		  -13
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANLRWhlSpdSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory107"
+	  SID			  "15"
+	  Position		  [470, 2040, 711, 2069]
+	  ZOrder		  -14
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANRFWhlSpdSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory108"
+	  SID			  "16"
+	  Position		  [470, 2075, 711, 2104]
+	  ZOrder		  -15
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANRRWhlSpdSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory109"
+	  SID			  "17"
+	  Position		  [470, 250, 711, 279]
+	  ZOrder		  -16
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ACCANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory11"
+	  SID			  "18"
+	  Position		  [470, 880, 711, 909]
+	  ZOrder		  -17
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPM2CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory110"
+	  SID			  "19"
+	  Position		  [470, 285, 711, 314]
+	  ZOrder		  -18
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPBCANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory111"
+	  SID			  "20"
+	  Position		  [470, 320, 711, 349]
+	  ZOrder		  -19
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_VCUCANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory112"
+	  SID			  "21"
+	  Position		  [765, 400, 1006, 429]
+	  ZOrder		  -20
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ACCANInvalidFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory113"
+	  SID			  "22"
+	  Position		  [765, 435, 1006, 464]
+	  ZOrder		  -21
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPBCANInvalidFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory114"
+	  SID			  "23"
+	  Position		  [765, 470, 1006, 499]
+	  ZOrder		  -22
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_VCUCANInvalidFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory115"
+	  SID			  "24"
+	  Position		  [765, 2010, 1006, 2039]
+	  ZOrder		  -23
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANOutsideTempSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory116"
+	  SID			  "25"
+	  Position		  [765, 2075, 1006, 2104]
+	  ZOrder		  -24
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANParkBrakBindStaSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory117"
+	  SID			  "26"
+	  Position		  [470, 2175, 711, 2204]
+	  ZOrder		  -25
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANAckCurBrakDecReqSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory118"
+	  SID			  "27"
+	  Position		  [470, 2210, 711, 2239]
+	  ZOrder		  -26
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANAckCurPTTqReqSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory119"
+	  SID			  "28"
+	  Position		  [470, 2245, 711, 2274]
+	  ZOrder		  -27
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANAckCurVehDecSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory12"
+	  SID			  "29"
+	  Position		  [470, 915, 711, 944]
+	  ZOrder		  -28
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPM3CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory120"
+	  SID			  "30"
+	  Position		  [470, 2280, 711, 2309]
+	  ZOrder		  -29
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANESCBattVoltSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory121"
+	  SID			  "31"
+	  Position		  [470, 2315, 711, 2344]
+	  ZOrder		  -30
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANHWAPPSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory122"
+	  SID			  "32"
+	  Position		  [470, 460, 711, 489]
+	  ZOrder		  -31
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPAS1CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory123"
+	  SID			  "33"
+	  Position		  [765, 1725, 1006, 1754]
+	  ZOrder		  -32
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANStrSpdSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory124"
+	  SID			  "34"
+	  Position		  [470, 2350, 711, 2379]
+	  ZOrder		  -33
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANCurDriverTqReqSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory125"
+	  SID			  "135"
+	  Position		  [160, 1475, 401, 1504]
+	  ZOrder		  1
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CSW1CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory126"
+	  SID			  "137"
+	  Position		  [195, 460, 436, 489]
+	  ZOrder		  3
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CSWCANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory127"
+	  SID			  "138"
+	  Position		  [1045, 540, 1286, 569]
+	  ZOrder		  4
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CSWCANInvalidFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory13"
+	  SID			  "35"
+	  Position		  [470, 950, 711, 979]
+	  ZOrder		  -34
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPM4CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory14"
+	  SID			  "36"
+	  Position		  [765, 190, 1006, 219]
+	  ZOrder		  -35
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ABSCANInvalidFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory15"
+	  SID			  "37"
+	  Position		  [765, 225, 1006, 254]
+	  ZOrder		  -36
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_BCMCANInvalidFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory16"
+	  SID			  "38"
+	  Position		  [765, 260, 1006, 289]
+	  ZOrder		  -37
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ECMCANInvalidFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory17"
+	  SID			  "39"
+	  Position		  [765, 295, 1006, 324]
+	  ZOrder		  -38
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_TCMCANInvalidFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory18"
+	  SID			  "40"
+	  Position		  [765, 540, 1006, 569]
+	  ZOrder		  -39
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPMCANInvalidFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory19"
+	  SID			  "41"
+	  Position		  [765, 330, 1006, 359]
+	  ZOrder		  -40
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPSCANInvalidFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory2"
+	  SID			  "42"
+	  Position		  [470, 75, 711, 104]
+	  ZOrder		  -41
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_BCMCANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory20"
+	  SID			  "43"
+	  Position		  [765, 575, 1006, 604]
+	  ZOrder		  -42
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ECM9CANRolCntFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory21"
+	  SID			  "44"
+	  Position		  [765, 610, 1006, 639]
+	  ZOrder		  -43
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_SAS1CANRolCntFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory22"
+	  SID			  "45"
+	  Position		  [765, 750, 1006, 779]
+	  ZOrder		  -44
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ABS2CANRolCntFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory23"
+	  SID			  "46"
+	  Position		  [470, 1555, 711, 1584]
+	  ZOrder		  -45
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANShftPosnSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory24"
+	  SID			  "47"
+	  Position		  [470, 1590, 711, 1619]
+	  ZOrder		  -46
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANNowGearPosnSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory25"
+	  SID			  "48"
+	  Position		  [470, 1625, 711, 1654]
+	  ZOrder		  -47
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANTMTurbSpdSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory26"
+	  SID			  "49"
+	  Position		  [765, 1585, 1006, 1614]
+	  ZOrder		  -48
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANVehCrashdSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory27"
+	  SID			  "50"
+	  Position		  [765, 1690, 1006, 1719]
+	  ZOrder		  -49
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANStrTorqSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory28"
+	  SID			  "51"
+	  Position		  [765, 1760, 1006, 1789]
+	  ZOrder		  -50
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANRelStrAngSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory29"
+	  SID			  "52"
+	  Position		  [765, 1795, 1006, 1824]
+	  ZOrder		  -51
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANAckCurStrAngReqSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory3"
+	  SID			  "53"
+	  Position		  [470, 110, 711, 139]
+	  ZOrder		  -52
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ECMCANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory30"
+	  SID			  "54"
+	  Position		  [765, 1655, 1006, 1684]
+	  ZOrder		  -53
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANStrAngSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory31"
+	  SID			  "55"
+	  Position		  [765, 1830, 1006, 1859]
+	  ZOrder		  -54
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANAckCurStrTqReqSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory32"
+	  SID			  "56"
+	  Position		  [765, 2175, 1006, 2204]
+	  ZOrder		  -55
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_IgnVoltRangHighFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory33"
+	  SID			  "57"
+	  Position		  [765, 2210, 1006, 2239]
+	  ZOrder		  -56
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_IgnVoltRangLowFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory34"
+	  SID			  "58"
+	  Position		  [765, 2315, 1006, 2344]
+	  ZOrder		  -57
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EEPROMFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory35"
+	  SID			  "59"
+	  Position		  [765, 2350, 1006, 2379]
+	  ZOrder		  -58
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_RAMFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory36"
+	  SID			  "60"
+	  Position		  [765, 2385, 1006, 2414]
+	  ZOrder		  -59
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ROMFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory37"
+	  SID			  "61"
+	  Position		  [765, 2420, 1006, 2449]
+	  ZOrder		  -60
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_VREF1Fault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory38"
+	  SID			  "62"
+	  Position		  [765, 2455, 1006, 2484]
+	  ZOrder		  -61
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_VREF2Fault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory39"
+	  SID			  "63"
+	  Position		  [765, 2490, 1006, 2519]
+	  ZOrder		  -62
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ADCFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory4"
+	  SID			  "64"
+	  Position		  [470, 145, 711, 174]
+	  ZOrder		  -63
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_TCMCANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory40"
+	  SID			  "65"
+	  Position		  [765, 35, 1006, 64]
+	  ZOrder		  -64
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ADASFaultMode_bf"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory41"
+	  SID			  "66"
+	  Position		  [765, 70, 1006, 99]
+	  ZOrder		  -65
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ADASLightMode_bf"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory42"
+	  SID			  "67"
+	  Position		  [470, 425, 711, 454]
+	  ZOrder		  -66
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_SAS1CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory43"
+	  SID			  "68"
+	  Position		  [470, 495, 711, 524]
+	  ZOrder		  -67
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPAS2CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory44"
+	  SID			  "69"
+	  Position		  [470, 530, 711, 559]
+	  ZOrder		  -68
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPAS3CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory45"
+	  SID			  "70"
+	  Position		  [765, 645, 1006, 674]
+	  ZOrder		  -69
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPAS2CANRolCntFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory46"
+	  SID			  "71"
+	  Position		  [765, 680, 1006, 709]
+	  ZOrder		  -70
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPAS3CANRolCntFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory47"
+	  SID			  "72"
+	  Position		  [1045, 35, 1286, 64]
+	  ZOrder		  -71
+	  BackgroundColor	  "yellow"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_FirstInitAfterProg_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory48"
+	  SID			  "73"
+	  Position		  [470, 1020, 711, 1049]
+	  ZOrder		  -72
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_METER1CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory49"
+	  SID			  "74"
+	  Position		  [470, 213, 710, 244]
+	  ZOrder		  -73
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_METERCANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory5"
+	  SID			  "75"
+	  Position		  [470, 390, 711, 419]
+	  ZOrder		  -74
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPMCANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory50"
+	  SID			  "76"
+	  Position		  [765, 365, 1006, 394]
+	  ZOrder		  -75
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_METERCANInvalidFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory51"
+	  SID			  "77"
+	  Position		  [765, 2245, 1006, 2274]
+	  ZOrder		  -76
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_BattVoltRangHighFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory52"
+	  SID			  "78"
+	  Position		  [765, 2280, 1006, 2309]
+	  ZOrder		  -77
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_BattVoltRangLowFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory53"
+	  SID			  "79"
+	  Position		  [470, 705, 711, 734]
+	  ZOrder		  -78
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ECM1CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory54"
+	  SID			  "80"
+	  Position		  [470, 1690, 711, 1719]
+	  ZOrder		  -79
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANBrkLampOnSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory55"
+	  SID			  "81"
+	  Position		  [470, 1725, 711, 1754]
+	  ZOrder		  -80
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANVehSpdSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory56"
+	  SID			  "82"
+	  Position		  [470, 1760, 711, 1789]
+	  ZOrder		  -81
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANYawRateSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory57"
+	  SID			  "83"
+	  Position		  [470, 1795, 711, 1824]
+	  ZOrder		  -82
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANLatAccelSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory58"
+	  SID			  "84"
+	  Position		  [470, 1830, 711, 1859]
+	  ZOrder		  -83
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANLongAccelSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory59"
+	  SID			  "85"
+	  Position		  [765, 1865, 1006, 1894]
+	  ZOrder		  -84
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANEPSBattVoltSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory6"
+	  SID			  "86"
+	  Position		  [470, 178, 710, 209]
+	  ZOrder		  -85
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPSCANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory60"
+	  SID			  "87"
+	  Position		  [765, 1915, 1006, 1944]
+	  ZOrder		  -86
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANOdoMeterSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory61"
+	  SID			  "88"
+	  Position		  [765, 1950, 1006, 1979]
+	  ZOrder		  -87
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANMeterVehSpdSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory62"
+	  SID			  "89"
+	  Position		  [470, 1125, 711, 1154]
+	  ZOrder		  -88
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_BCM2CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory63"
+	  SID			  "90"
+	  Position		  [470, 635, 711, 664]
+	  ZOrder		  -89
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ABS3CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory64"
+	  SID			  "91"
+	  Position		  [470, 740, 711, 769]
+	  ZOrder		  -90
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ECM2CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory65"
+	  SID			  "92"
+	  Position		  [470, 1160, 711, 1189]
+	  ZOrder		  -91
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_TCM1CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory66"
+	  SID			  "93"
+	  Position		  [470, 1195, 711, 1224]
+	  ZOrder		  -92
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_TCM2CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory67"
+	  SID			  "94"
+	  Position		  [470, 1090, 711, 1119]
+	  ZOrder		  -93
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_BCM1CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory68"
+	  SID			  "95"
+	  Position		  [470, 1055, 711, 1084]
+	  ZOrder		  -94
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_METER3CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory69"
+	  SID			  "96"
+	  Position		  [470, 1230, 711, 1259]
+	  ZOrder		  -95
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_AC1CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory7"
+	  SID			  "97"
+	  Position		  [470, 670, 711, 699]
+	  ZOrder		  -96
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ABS4CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory70"
+	  SID			  "98"
+	  Position		  [765, 505, 1006, 534]
+	  ZOrder		  -97
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_HMICANInvalidFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory71"
+	  SID			  "99"
+	  Position		  [470, 1265, 711, 1294]
+	  ZOrder		  -98
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPB1CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory72"
+	  SID			  "100"
+	  Position		  [470, 1300, 711, 1329]
+	  ZOrder		  -99
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_VCU1CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory73"
+	  SID			  "101"
+	  Position		  [470, 565, 711, 594]
+	  ZOrder		  -100
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ABS1CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory74"
+	  SID			  "102"
+	  Position		  [470, 1335, 711, 1364]
+	  ZOrder		  -101
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_VCU2CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory75"
+	  SID			  "103"
+	  Position		  [470, 1370, 711, 1399]
+	  ZOrder		  -102
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_HCU3CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory76"
+	  SID			  "104"
+	  Position		  [765, 855, 1006, 884]
+	  ZOrder		  -103
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_HCU3CANRolCntFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory77"
+	  SID			  "105"
+	  Position		  [765, 785, 1006, 814]
+	  ZOrder		  -104
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_VCU1CANRolCntFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory78"
+	  SID			  "106"
+	  Position		  [765, 820, 1006, 849]
+	  ZOrder		  -105
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_VCU2CANRolCntFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory79"
+	  SID			  "107"
+	  Position		  [765, 890, 1006, 919]
+	  ZOrder		  -106
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ABS2CANChkSumFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory8"
+	  SID			  "108"
+	  Position		  [470, 775, 711, 804]
+	  ZOrder		  -107
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ECM3CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory80"
+	  SID			  "109"
+	  Position		  [765, 925, 1006, 954]
+	  ZOrder		  -108
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_SAS1CANChkSumFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory81"
+	  SID			  "110"
+	  Position		  [765, 960, 1006, 989]
+	  ZOrder		  -109
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPAS2CANChkSumFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory82"
+	  SID			  "111"
+	  Position		  [765, 995, 1006, 1024]
+	  ZOrder		  -110
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_EPAS3CANChkSumFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory83"
+	  SID			  "112"
+	  Position		  [765, 1030, 1006, 1059]
+	  ZOrder		  -111
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_VCU1CANChkSumFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory84"
+	  SID			  "113"
+	  Position		  [765, 715, 1006, 744]
+	  ZOrder		  -112
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ABS1CANRolCntFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory85"
+	  SID			  "114"
+	  Position		  [765, 1160, 1006, 1189]
+	  ZOrder		  -113
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANAPPSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory86"
+	  SID			  "139"
+	  Position		  [470, 2385, 711, 2414]
+	  ZOrder		  5
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANDriverBrkPdlOnSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory88"
+	  SID			  "117"
+	  Position		  [765, 1195, 1006, 1224]
+	  ZOrder		  -116
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANEffAPPSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory89"
+	  SID			  "118"
+	  Position		  [765, 1230, 1006, 1259]
+	  ZOrder		  -117
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANEngSpdSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory9"
+	  SID			  "119"
+	  Position		  [470, 810, 711, 839]
+	  ZOrder		  -118
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_ECM9CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory90"
+	  SID			  "120"
+	  Position		  [765, 1265, 1006, 1294]
+	  ZOrder		  -119
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANEngTqFricSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory92"
+	  SID			  "122"
+	  Position		  [765, 1300, 1006, 1329]
+	  ZOrder		  -121
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANEngTqMaxSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory93"
+	  SID			  "123"
+	  Position		  [765, 1335, 1006, 1364]
+	  ZOrder		  -122
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANEngTqMinSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory94"
+	  SID			  "124"
+	  Position		  [765, 1370, 1006, 1399]
+	  ZOrder		  -123
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANEngTqIndSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory95"
+	  SID			  "125"
+	  Position		  [765, 1065, 1006, 1094]
+	  ZOrder		  -124
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_VCU2CANChkSumFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory96"
+	  SID			  "126"
+	  Position		  [765, 1405, 1006, 1434]
+	  ZOrder		  -125
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_CANEngTqIndCORSigFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory97"
+	  SID			  "127"
+	  Position		  [470, 1405, 711, 1434]
+	  ZOrder		  -126
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_HCU4CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory98"
+	  SID			  "128"
+	  Position		  [470, 1440, 711, 1469]
+	  ZOrder		  -127
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_HMI2CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  DataStoreMemory
+	  Name			  "Data Store\nMemory99"
+	  SID			  "129"
+	  Position		  [470, 1475, 711, 1504]
+	  ZOrder		  -128
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  DataStoreName		  "VDDML_HMI1CANCommuFault_AF_flg"
+	  WriteAfterWriteMsg	  "warning"
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator"
+	  SID			  "131"
+	  Position		  [185, 325, 205, 345]
+	  ZOrder		  -130
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  "Terminator1"
+	  SID			  "132"
+	  Position		  [185, 280, 205, 300]
+	  ZOrder		  -131
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "modelInfo"
+	  SID			  "133"
+	  Ports			  []
+	  Position		  [100, 85, 300, 105]
+	  ZOrder		  -132
+	  ShowName		  off
+	  LibraryVersion	  "1.285"
+	  SourceBlock		  "simulink/Model-Wide\nUtilities/Model Info"
+	  SourceType		  "CMBlock"
+	  ContentPreviewEnabled	  off
+	  InitialBlockCM	  "None"
+	  BlockCM		  "None"
+	  Frame			  "on"
+	  DisplayStringWithTags	  "%<ModifiedDate>"
+	  MaskDisplayString	  "Mon Nov 07 13:19:00 2016"
+	  HorizontalTextAlignment "Center"
+	  LeftAlignmentValue	  "0.5"
+	  SourceBlockDiagram	  "ddm"
+	  TagMaxNumber		  "20"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "BDHP_outputs"
+	  SrcPort		  1
+	  DstBlock		  "Terminator"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "BINP_outputs"
+	  SrcPort		  1
+	  DstBlock		  "Terminator1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Model Info"
+      SID		      "140"
+      Ports		      []
+      Position		      [30, 34, 248, 88]
+      ZOrder		      127
+      ShowName		      off
+      LibraryVersion	      "1.285"
+      FontName		      "Arial"
+      SourceBlock	      "simulink/Model-Wide\nUtilities/Model Info"
+      SourceType	      "CMBlock"
+      ContentPreviewEnabled   off
+      InitialBlockCM	      "None"
+      BlockCM		      "None"
+      Frame		      "on"
+      DisplayStringWithTags   "Model Version        : %<ModelVersion>\nCreator                   : %<Creator>\nLast Mo"
+      "dified by    : %<LastModifiedBy>"
+      MaskDisplayString	      "Model Version        : 1.184\\nCreator                   : R00T\\nLast Modified by    :"
+      " 14014"
+      HorizontalTextAlignment "Left"
+      LeftAlignmentValue      "0.02"
+      SourceBlockDiagram      "ddm"
+      TagMaxNumber	      "20"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "model_info"
+      SID		      "141"
+      Ports		      []
+      Position		      [295, 49, 579, 77]
+      ZOrder		      126
+      ShowName		      off
+      LibraryVersion	      "1.285"
+      FontName		      "Arial"
+      SourceBlock	      "simulink/Model-Wide\nUtilities/Model Info"
+      SourceType	      "CMBlock"
+      ContentPreviewEnabled   off
+      InitialBlockCM	      "None"
+      BlockCM		      "None"
+      Frame		      "on"
+      DisplayStringWithTags   "$Id: hcu_lib.mdl 1464 2016-08-01 05:27:43Z chimotsai $"
+      MaskDisplayString	      "$Id: hcu_lib.mdl 1464 2016-08-01 05:27:43Z chimotsai $"
+      HorizontalTextAlignment "Center"
+      LeftAlignmentValue      "0.5"
+      SourceBlockDiagram      "ddm"
+      TagMaxNumber	      "20"
+    }
+  }
+}

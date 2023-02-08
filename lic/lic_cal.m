@@ -1,0 +1,42 @@
+% =========== $Update Time : 05-Dec-2022 18:13:33 $  =========
+disp('Loading $Id: lic_cal.m 151 2022-12-05 10:14:04Z Matt $')
+
+a2l_cal('KLIC_C0CrossingThr_m', 	0);
+a2l_cal('KLIC_CalDefaultTLC_s', 	2);
+a2l_cal('KLIC_CalTLCMax_s', 	2);
+a2l_cal('KLIC_CalTLCMin_s', 	0);
+a2l_cal('KLIC_DefaultLaneWidth_m', 	3.2);
+a2l_cal('KLIC_LaneWidHoldOnTime_s', 	1);
+a2l_cal('KLIC_LaneWidRampInRisRt_mps', 	0);
+a2l_cal('KLIC_LaneWidRampInFalRt_mps', 	-0.1);
+a2l_cal('KLIC_LaneWidRampOutRisRt_mps', 	1);
+a2l_cal('KLIC_LaneWidRampOutFalRt_mps', 	-1);
+a2l_cal('KLIC_LaneWidRampFinErrThres_m', 	0.1);
+a2l_cal('KLIC_LaneWidRampFinTimeThres_s', 	3);
+a2l_cal('KLIC_C2Max4Act_rat', 	200);
+a2l_cal('KLIC_Lane4ActThr_s', 	1);
+a2l_cal('KLIC_C2Max4Disable_rat', 	200);
+a2l_cal('KLIC_C2Max4DisableThr_s', 	1);
+a2l_cal('KLIC_C1Max4Act_rad', 	0.04);
+a2l_cal('KLIC_LaneWidthUpThr_m', 	4);
+a2l_cal('KLIC_LaneWidthLowThr_m', 	3);
+a2l_cal('ALIC_TLCThrVehSpd_X_kph', 	[0 10 20 30 40 50 60 70 80 90 100 110 120 130 140 150 160]);
+a2l_cal('ALIC_TLCThrHeading_Y_deg', 	[0 5 10 15 20]);
+a2l_cal('MLIC_TLCThr4LKA_s', 	[0 0 0 0 0 ;
+0.7 0.7 0.7 0.7 0.7 ;
+0.7 0.7 0.7 0.7 0.7 ;
+0.7 0.7 0.7 0.7 0.7 ;
+0.7 0.7 0.7 0.7 0.7 ;
+0.7 0.7 0.7 0.7 0.7 ;
+0.7 0.7 0.7 0.7 0.7 ;
+0.7 0.7 0.7 0.7 0.7 ;
+0.7 0.7 0.7 0.7 0.7 ;
+0.7 0.7 0.7 0.7 0.7 ;
+0.7 0.7 0.7 0.7 0.7 ;
+0.7 0.7 0.7 0.7 0.7 ;
+0.7 0.7 0.7 0.7 0.7 ;
+0.7 0.7 0.7 0.7 0.7 ;
+0.7 0.7 0.7 0.7 0.7 ;
+0.7 0.7 0.7 0.7 0.7 ;
+0.7 0.7 0.7 0.7 0.7]);
+a2l_cal('KLIC_TLCTriggerThrHysis_s', 	0.1);

@@ -1,0 +1,867 @@
+Library {
+  Name			  fun
+  Version		  7.0
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1252"
+  PreLoadFcn		  "if exist('tl_preloadfcn','file'), tl_preloadfcn(gcs,100); end"
+  PostLoadFcn		  "if exist('tl_postloadfcn','file'), tl_postloadfcn(gcs,100); end"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  UserBdParams		  "TLRevision;DS_PROJECTFILE"
+  TLRevision		  "100"
+  Created		  "Mon Aug 11 13:57:28 2008"
+  Creator		  "pg2"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "eb8"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed May 16 19:38:36 2012"
+  RTWModifiedTimeStamp	  259097916
+  ModelVersionFormat	  "1.%<AutoIncrement:1028>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "all"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  BrowserLookUnderMasks	  on
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    Orientation		    "right"
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Arial"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusCreator
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      BusSelector
+      OutputAsBus	      off
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      From
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Goto
+      IconDisplay	      "Tag"
+    }
+    Block {
+      BlockType		      Ground
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeMode	      "Logical (see Configuration Parameters: Optimization)"
+      LogicDataType	      "uint(8)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Relay
+      OnSwitchValue	      "eps"
+      OffSwitchValue	      "eps"
+      OnOutputValue	      "1"
+      OffOutputValue	      "0"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "All ports same datatype"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      StatesWhenEnabling      "inherit"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      SampleTimeType	      "triggered"
+      SampleTime	      "1"
+      ZeroCross		      on
+    }
+  }
+  System {
+    Name		    fun
+    Location		    [490, 373, 1477, 1069]
+    Open		    off
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    353
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "FUN"
+      Ports		      [1, 1, 0, 1]
+      Position		      [65, 48, 230, 192]
+      ForegroundColor	      "red"
+      BackgroundColor	      "yellow"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      MaskHideContents	      off
+      System {
+	Name			"FUN"
+	Location		[146, 150, 1519, 741]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "BINP_outputs"
+	  Position		  [100, 348, 130, 362]
+	  IconDisplay		  "Port number"
+	  UseBusObject		  on
+	  BusObject		  "BINP_outputs"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "trig_FUN"
+	  Ports			  []
+	  Position		  [480, 15, 500, 35]
+	  TriggerType		  "function-call"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Determine_EBoost_Available"
+	  Ports			  [1, 1, 0, 1]
+	  Position		  [380, 280, 610, 430]
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "BFUN_outputs"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "Determine_EBoost_Available"
+	    Location		    [283, 161, 1656, 752]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "BINP_outputs"
+	      Position		      [40, 258, 70, 272]
+	      IconDisplay	      "Port number"
+	      UseBusObject	      on
+	      BusObject		      "BINP_outputs"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      TriggerPort
+	      Name		      "det_eboost_avl"
+	      Ports		      []
+	      Position		      [445, 25, 465, 45]
+	      TriggerType	      "function-call"
+	    }
+	    Block {
+	      BlockType		      BusCreator
+	      Name		      "Bus\nCreator"
+	      Ports		      [1, 1]
+	      Position		      [1065, 236, 1070, 294]
+	      ShowName		      off
+	      Inputs		      "1"
+	      DisplayOption	      "bar"
+	      UseBusObject	      on
+	      BusObject		      "BFUN_outputs"
+	      Port {
+		PortNumber		1
+		Name			"BFUN_outputs"
+		PropagatedSignals	"VFUN_EBoostAvail_flg"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      BusSelector
+	      Name		      "Bus\nSelector1"
+	      Ports		      [1, 4]
+	      Position		      [180, 85, 185, 445]
+	      ShowName		      off
+	      OutputSignals	      "VINP_HVBattSOC_pct,VINP_HVBattSOCValid_flg,VINP_HVBattPwrAvailDischargeValid_flg,VINP_MCUE"
+	      "nabled_flg"
+	      Port {
+		PortNumber		1
+		Name			"<VINP_HVBattSOC_pct>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		2
+		Name			"<VINP_HVBattSOCValid_flg>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		3
+		Name			"<VINP_HVBattPwrAvailDischargeValid_flg>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		4
+		Name			"<VINP_MCUEnabled_flg>"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Logical\nOperator1"
+	      Ports		      [4, 1]
+	      Position		      [820, 83, 855, 447]
+	      ShowName		      off
+	      Inputs		      "4"
+	      AllPortsSameDT	      off
+	      OutDataTypeMode	      "boolean"
+	      LogicDataType	      "fixdt(0, 8)"
+	      Port {
+		PortNumber		1
+		Name			"VFUN_EBoostAvail_flg"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Relay
+	      Name		      "Relay1"
+	      Position		      [440, 115, 470, 145]
+	      ShowName		      off
+	      AttributesFormatString  "%<OnSwitchValue>\\n%<OffSwitchValue>"
+	      OnSwitchValue	      "KFUN_EBoostHVBattSOCMinEntry_pct"
+	      OffSwitchValue	      "KFUN_EBoostHVBattSOCMinExit_pct"
+	      OutDataType	      "fixdt(1, 16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "SRS_FUN_031"
+	      Ports		      []
+	      Position		      [922, 70, 962, 109]
+	      UserDataPersistent      on
+	      UserData		      "DataTag0"
+	      SourceBlock	      "simulink/Model-Wide\nUtilities/DocBlock"
+	      SourceType	      "DocBlock"
+	      ShowPortLabels	      "FromPortIcon"
+	      SystemSampleTime	      "-1"
+	      FunctionWithSeparateData off
+	      RTWMemSecFuncInitTerm   "Inherit from model"
+	      RTWMemSecFuncExecute    "Inherit from model"
+	      RTWMemSecDataConstants  "Inherit from model"
+	      RTWMemSecDataInternal   "Inherit from model"
+	      RTWMemSecDataParameters "Inherit from model"
+	      DocumentType	      "Text"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "BFUN_outputs"
+	      Position		      [1275, 258, 1305, 272]
+	      IconDisplay	      "Port number"
+	      UseBusObject	      on
+	      BusObject		      "BFUN_outputs"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Line {
+	      Name		      "BFUN_outputs"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nCreator"
+	      SrcPort		      1
+	      DstBlock		      "BFUN_outputs"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<VINP_HVBattSOC_pct>"
+	      Labels		      [0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0]
+	      SrcBlock		      "Bus\nSelector1"
+	      SrcPort		      1
+	      DstBlock		      "Relay1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0]
+	      SrcBlock		      "BINP_outputs"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nSelector1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "VFUN_EBoostAvail_flg"
+	      Labels		      [0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0]
+	      SrcBlock		      "Logical\nOperator1"
+	      SrcPort		      1
+	      DstBlock		      "Bus\nCreator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Relay1"
+	      SrcPort		      1
+	      DstBlock		      "Logical\nOperator1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "<VINP_HVBattSOCValid_flg>"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector1"
+	      SrcPort		      2
+	      DstBlock		      "Logical\nOperator1"
+	      DstPort		      2
+	    }
+	    Line {
+	      Name		      "<VINP_HVBattPwrAvailDischargeValid_flg>"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector1"
+	      SrcPort		      3
+	      DstBlock		      "Logical\nOperator1"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "<VINP_MCUEnabled_flg>"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Bus\nSelector1"
+	      SrcPort		      4
+	      DstBlock		      "Logical\nOperator1"
+	      DstPort		      4
+	    }
+	    Annotation {
+	      Name		      "Determine if EBoost is available (for entry to\na state that needs boost)."
+	      Position		      [553, 89]
+	      HorizontalAlignment     "left"
+	      FontSize		      12
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From1"
+	  Position		  [320, 241, 490, 259]
+	  ShowName		  off
+	  CloseFcn		  "tagdialog Close"
+	  GotoTag		  "det_eboost_avl"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "det_eboost_avl"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto20"
+	  Position		  [455, 116, 625, 134]
+	  ShowName		  off
+	  GotoTag		  "det_eboost_avl"
+	  TagVisibility		  "local"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "fun_execution_order"
+	  Ports			  [0, 1]
+	  Position		  [135, 90, 340, 160]
+	  PermitHierarchicalResolution "ParametersOnly"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  MaskHideContents	  off
+	  MaskType		  "Stateflow"
+	  MaskDescription	  "Stateflow diagram"
+	  MaskDisplay		  "plot(sf('Private','sfblk','xIcon'),sf('Private','sfblk','yIcon'));text(0.5,0,sf('Private', 'sfblk',"
+	  " 'tIcon'),'HorizontalAl','Center','VerticalAl','Bottom');"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  off
+	  MaskIconOpaque	  off
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "autoscale"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "det_eboost_avl"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "fun_execution_order"
+	    Location		    [257, 457, 812, 717]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Demux
+	      Name		      " Demux "
+	      Ports		      [1, 1]
+	      Position		      [270, 100, 320, 140]
+	      Outputs		      "1"
+	      Port {
+		PortNumber		1
+		Name			"det_eboost_avl"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Ground
+	      Name		      " Ground "
+	      Position		      [20, 111, 40, 129]
+	    }
+	    Block {
+	      BlockType		      "S-Function"
+	      Name		      " SFunction "
+	      Tag		      "Stateflow S-Function tpaadd47d0_0368_43af_a7c6_f3d898c871f5 56"
+	      Ports		      [1, 1]
+	      Position		      [180, 100, 230, 140]
+	      FunctionName	      "sf_sfun"
+	      PortCounts	      "[1 1]"
+	      EnableBusSupport	      off
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "det_eboost_avl"
+	      Position		      [460, 101, 480, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      " SFunction "
+	      SrcPort		      1
+	      DstBlock		      " Demux "
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "det_eboost_avl"
+	      Labels		      [0, 0]
+	      SrcBlock		      " Demux "
+	      SrcPort		      1
+	      DstBlock		      "det_eboost_avl"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " Ground "
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "model_info"
+	  Ports			  []
+	  Position		  [680, 54, 964, 82]
+	  ShowName		  off
+	  SourceBlock		  "simulink/Model-Wide\nUtilities/Model Info"
+	  SourceType		  "CMBlock"
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  RTWMemSecFuncInitTerm	  "Inherit from model"
+	  RTWMemSecFuncExecute	  "Inherit from model"
+	  RTWMemSecDataConstants  "Inherit from model"
+	  RTWMemSecDataInternal	  "Inherit from model"
+	  RTWMemSecDataParameters "Inherit from model"
+	  InitialBlockCM	  "None"
+	  BlockCM		  "None"
+	  Frame			  "on"
+	  DisplayStringWithTags	  "$Id: fun.mdl 2 2019-09-19 09:28:50Z JuneXmas $"
+	  MaskDisplayString	  "$Id: fun.mdl 2 2019-09-19 09:28:50Z JuneXmas $"
+	  HorizontalTextAlignment "Center"
+	  LeftAlignmentValue	  "0.5"
+	  SourceBlockDiagram	  "tpaadd47d0_0368_43af_a7c6_f3d898c871f5"
+	  TagMaxNumber		  "20"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BFUN_outputs"
+	  Position		  [985, 348, 1015, 362]
+	  IconDisplay		  "Port number"
+	  UseBusObject		  on
+	  BusObject		  "BFUN_outputs"
+	  OutDataType		  "fixdt(1, 16)"
+	  OutScaling		  "2^0"
+	}
+	Line {
+	  Name			  "<>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "BINP_outputs"
+	  SrcPort		  1
+	  DstBlock		  "Determine_EBoost_Available"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0]
+	  SrcBlock		  "From1"
+	  SrcPort		  1
+	  DstBlock		  "Determine_EBoost_Available"
+	  DstPort		  trigger
+	}
+	Line {
+	  Labels		  [0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0]
+	  SrcBlock		  "fun_execution_order"
+	  SrcPort		  1
+	  DstBlock		  "Goto20"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0]
+	  SrcBlock		  "Determine_EBoost_Available"
+	  SrcPort		  1
+	  DstBlock		  "BFUN_outputs"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "Determine conditions to enter/exit eboost"
+	  Position		  [478, 211]
+	  FontSize		  18
+	}
+	Annotation {
+	  Name			  "Determine the HCU's functional state."
+	  Position		  [813, 111]
+	  FontSize		  12
+	}
+      }
+    }
+  }
+}
+MatData {
+  NumRecords		  1
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    X     8    (     @         %    \"     $    !     0         %  0 \"     $    0    =F5R<"
+    "VEO;@!C;VYT96YT  X    X    !@    @    &          4    (     0    $    !          D    (    FIF9F9F9\\3\\.    4    "
+    " 8    (    !          %    \"     $    <     0         0    '    %1Y<&4@>6]U<B!D;V-U;65N=&%T:6]N(&AE<F4     "
+  }
+}
+Stateflow {
+  machine {
+    id			    1
+    name		    "tpaadd47d0_0368_43af_a7c6_f3d898c871f5"
+    created		    "28-Aug-2008 15:29:46"
+    isLibrary		    1
+    firstTarget		    9
+    defaultActionLanguage   CLASSIC_BITOPS
+    sfVersion		    71014000.00001
+  }
+  chart {
+    id			    2
+    name		    "FUN/fun_execution_order"
+    windowPosition	    [552 -238.5 732 261.75]
+    viewLimits		    [0 688.5 0 225.75]
+    screen		    [1 1 1280 800 1.333333333333333]
+    firstTransition	    5
+    firstJunction	    3
+    viewObj		    2
+    machine		    1
+    toolbarMode		    LIBRARY_TOOLBAR
+    decomposition	    CLUSTER_CHART
+    firstEvent		    7
+    chartFileNumber	    56
+    disableImplicitCasting  1
+    actionLanguage	    1
+  }
+  junction {
+    id			    3
+    position		    [160.0747 61.1997 7]
+    chart		    2
+    linkNode		    [2 0 4]
+    subviewer		    2
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    4
+    position		    [160.0747 124.5747 7]
+    chart		    2
+    linkNode		    [2 3 0]
+    subviewer		    2
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    5
+    labelPosition	    [141.358 27.558 8.246 15.719]
+    fontSize		    12
+    src {
+      intersection	      [0 0.6922 0.7217 0 119 18.375 0 0]
+    }
+    dst {
+      id		      3
+      intersection	      [7 -0.6922 -0.7217 -1 155.2293 56.1479 0 0]
+    }
+    midPoint		    [134.953 35.0076]
+    chart		    2
+    linkNode		    [2 0 6]
+    dataLimits		    [119 149.692 18.375 50.374]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+  }
+  transition {
+    id			    6
+    labelString		    "{\ndet_eboost_avl;\n}"
+    labelPosition	    [167.625 69.375 86.208 44.164]
+    fontSize		    12
+    src {
+      id		      3
+      intersection	      [0 0 1 -1 160.0747 68.1997 0 0]
+    }
+    dst {
+      id		      4
+      intersection	      [0 0 -1 -1 160.0747 117.5747 0 0]
+    }
+    midPoint		    [160.0747 89.6999]
+    chart		    2
+    linkNode		    [2 5 0]
+    dataLimits		    [160.075 160.075 68.2 109.575]
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+  }
+  event {
+    id			    7
+    name		    "det_eboost_avl"
+    linkNode		    [2 0 0]
+    scope		    OUTPUT_EVENT
+    trigger		    FUNCTION_CALL_EVENT
+    machine		    1
+  }
+  instance {
+    id			    8
+    name		    "FUN/fun_execution_order"
+    machine		    1
+    chart		    2
+  }
+  target {
+    id			    9
+    name		    "sfun"
+    machine		    1
+    linkNode		    [1 0 10]
+  }
+  target {
+    id			    10
+    codeFlags		    " comments=1 autocomments=0 emitdescriptions=1 statebitsets=1 databitsets=1 emitlogicalops=1 elseif"
+    "detection=1 constantfolding=1 redundantloadelimination=0 exportcharts=0 ioformat=0 initializer=0 multiinstanced=0"
+    machine		    1
+    linkNode		    [1 9 11]
+  }
+  target {
+    id			    11
+    name		    "untitled1"
+    codeFlags		    " comments=1 autocomments=0 emitdescriptions=1 statebitsets=1 databitsets=1 emitlogicalops=1 elseif"
+    "detection=1 constantfolding=1 redundantloadelimination=0 exportcharts=0 ioformat=0 initializer=0 multiinstanced=0"
+    machine		    1
+    linkNode		    [1 10 0]
+  }
+}

@@ -1,0 +1,5741 @@
+Library {
+  Name			  "gim"
+  Version		  8.1
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1252"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime off
+  DisableAllScopes	  off
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [169.0, 33.0, 1386.0, 788.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[13]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1336.0, 622.0]
+	ZoomFactor		[1.0]
+	Offset			[0.0, 0.0]
+      }
+    }
+  }
+  Created		  "Tue Sep 15 16:55:42 2015"
+  Creator		  "xsellart"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "AT015555"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon May 22 15:52:13 2017"
+  RTWModifiedTimeStamp	  417369131
+  ModelVersionFormat	  "1.%<AutoIncrement:60>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "all"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  RecordCoverage	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      6
+      Version		      "1.13.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  7
+	  Version		  "1.13.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  8
+	  Version		  "1.13.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  9
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  10
+	  Version		  "1.13.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "error"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  11
+	  Version		  "1.13.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  12
+	  Version		  "1.13.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  13
+	  Version		  "1.13.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  14
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    15
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      15
+	      Version		      "1.13.0"
+	      Array {
+		Type			"Cell"
+		Dimension		22
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      16
+	      Version		      "1.13.0"
+	      Array {
+		Type			"Cell"
+		Dimension		14
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "None"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  17
+	  Version		  "1.13.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    " "
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 153, 69, 1213, 699 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      From
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Goto
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Selector
+      NumberOfDimensions      "1"
+      IndexMode		      "One-based"
+      InputPortWidth	      "-1"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      AllowDiffInputSizes     off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+  }
+  System {
+    Name		    "gim"
+    Location		    [169, 33, 1555, 821]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "386"
+    Block {
+      BlockType		      SubSystem
+      Name		      "get_info_for_mct"
+      SID		      "1"
+      Ports		      [9, 20]
+      Position		      [250, 17, 620, 463]
+      ZOrder		      314
+      LibraryVersion	      "*1.54"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"get_info_for_mct"
+	Location		[169, 33, 1555, 821]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"71"
+	Block {
+	  BlockType		  Inport
+	  Name			  "VIFO_FCWMCTTargetId_enum"
+	  SID			  "2"
+	  Position		  [1425, 278, 1455, 292]
+	  ZOrder		  84
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VIFO_FCWMCTTargId_num"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VIFO_AEBMCTTargetId_enum"
+	  SID			  "3"
+	  Position		  [1425, 368, 1455, 382]
+	  ZOrder		  85
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VIFO_AEBMCTTargId_num"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VIFO_ACCMCTTargId_num"
+	  SID			  "307"
+	  Position		  [1425, 818, 1455, 832]
+	  ZOrder		  290
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VIFO_ACCMCTTargId_num"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VIFO_VRUMCTTargId_num"
+	  SID			  "313"
+	  Position		  [1425, 908, 1455, 922]
+	  ZOrder		  307
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VIFO_VRUMCTTargId_num"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VIFO_TargVehRelSpdXVect30_mps"
+	  SID			  "9"
+	  Position		  [1425, 548, 1455, 562]
+	  ZOrder		  91
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VIFO_TargVehRelSpdXVect30_mps"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_TargIdVect30_num"
+	  SID			  "196"
+	  Position		  [1425, 638, 1455, 652]
+	  ZOrder		  278
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_TargIdVect30_num"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VIFO_TargAccelXVect30_mps2"
+	  SID			  "231"
+	  Position		  [1425, 728, 1455, 742]
+	  ZOrder		  287
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VIFO_TargAccelXVect30_mps2"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_TargXPosVect30_m"
+	  SID			  "8"
+	  Position		  [1425, 458, 1455, 472]
+	  ZOrder		  90
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_TargXPosVect30_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_TargYPosVect30_m"
+	  SID			  "386"
+	  Position		  [1425, 998, 1455, 1012]
+	  ZOrder		  319
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Get_Information_For_MC_Veh"
+	  SID			  "40"
+	  Ports			  [9, 20]
+	  Position		  [1665, 238, 2045, 1052]
+	  ZOrder		  83
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "NIFO_FCWTargetVehRelSpeedX_mps"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "NIFO_FCWMCVehXPosition_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    PropagatedSignals	    "NIFO_FCWTargetVehAssigned_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    PropagatedSignals	    "NIFO_AEBTargetVehRelSpeedX_mps"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    PropagatedSignals	    "NIFO_AEBMCVehXPosition_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    6
+	    PropagatedSignals	    "NIFO_AEBTargetVehAssigned_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    7
+	    PropagatedSignals	    "NIFO_FCWMCVehId_num"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    8
+	    PropagatedSignals	    "NIFO_AEBMCVehId_num"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    9
+	    PropagatedSignals	    "NIFO_FCWMCLongAccel_mps2"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    10
+	    PropagatedSignals	    "NIFO_AEBMCLongAccel_mps2"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    11
+	    PropagatedSignals	    "NIFO_ACCTargetVehRelSpeedX_mps"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    12
+	    PropagatedSignals	    "NIFO_ACCMCVehXPosition_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    13
+	    PropagatedSignals	    "NIFO_ACCTargetVehAssigned_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    14
+	    PropagatedSignals	    "NIFO_ACCMCVehId_num"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    15
+	    PropagatedSignals	    "NIFO_ACCMCLongAccel_mps2"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    16
+	    PropagatedSignals	    "NIFO_VRUTargetPedRelSpeedX_mps"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    17
+	    PropagatedSignals	    "NIFO_VRUMCPedXPosition_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    18
+	    PropagatedSignals	    "NIFO_VRUTargetPedAssigned_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    19
+	    PropagatedSignals	    "NIFO_VRUMCPedId_num"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    20
+	    PropagatedSignals	    "NIFO_VRUMCLongAccel_mps2"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "Get_Information_For_MC_Veh"
+	    Location		    [169, 33, 1555, 821]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "125"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_FCWMCTTargId_num"
+	      SID		      "73"
+	      Position		      [330, 328, 360, 342]
+	      ZOrder		      134
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_FCWMCTTargId_num"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_AEBMCTTargId_num"
+	      SID		      "121"
+	      Position		      [330, 743, 360, 757]
+	      ZOrder		      151
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_AEBMCTTargId_num"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VPER_TargXPosVect30_m"
+	      SID		      "74"
+	      Position		      [330, 393, 360, 407]
+	      ZOrder		      136
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VPER_TargXPosVect30_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_TargVehRelSpdXVect30_mps"
+	      SID		      "75"
+	      Position		      [330, 458, 360, 472]
+	      ZOrder		      135
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_TargVehRelSpdXVect30_mps"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VPER_TargIdVect30_num"
+	      SID		      "197"
+	      Position		      [330, 523, 360, 537]
+	      ZOrder		      278
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VPER_TargIdVect30_num"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_TargAccelXVect30_mps2"
+	      SID		      "232"
+	      Position		      [330, 588, 360, 602]
+	      ZOrder		      287
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_TargAccelXVect30_mps2"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_ACCMCTTargId_num"
+	      SID		      "255"
+	      Position		      [330, 1138, 360, 1152]
+	      ZOrder		      292
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_ACCMCTTargId_num"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_VRUMCTTargId_num"
+	      SID		      "356"
+	      Position		      [330, 1533, 360, 1547]
+	      ZOrder		      304
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_VRUMCTTargId_num"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VPER_TargYPosVect30_m"
+	      SID		      "385"
+	      Position		      [330, 1783, 360, 1797]
+	      ZOrder		      314
+	      Port		      "9"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From"
+	      SID		      "161"
+	      Position		      [645, 783, 850, 817]
+	      ZOrder		      155
+	      ShowName		      off
+	      GotoTag		      "VPER_TargXPosVect30_m"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VPER_TargXPosVect30_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From1"
+	      SID		      "163"
+	      Position		      [645, 832, 850, 868]
+	      ZOrder		      157
+	      ShowName		      off
+	      GotoTag		      "VIFO_TargVehRelSpdXVect30_mps"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_TargVehRelSpdXVect30_mps"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From2"
+	      SID		      "208"
+	      Position		      [645, 882, 850, 918]
+	      ZOrder		      281
+	      ShowName		      off
+	      GotoTag		      "VPER_TargIdVect30_num"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VPER_TargIdVect30_num"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From3"
+	      SID		      "256"
+	      Position		      [645, 1178, 850, 1212]
+	      ZOrder		      294
+	      ShowName		      off
+	      GotoTag		      "VPER_TargXPosVect30_m"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VPER_TargXPosVect30_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From4"
+	      SID		      "257"
+	      Position		      [645, 1227, 850, 1263]
+	      ZOrder		      295
+	      ShowName		      off
+	      GotoTag		      "VIFO_TargVehRelSpdXVect30_mps"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_TargVehRelSpdXVect30_mps"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From5"
+	      SID		      "258"
+	      Position		      [645, 1277, 850, 1313]
+	      ZOrder		      299
+	      ShowName		      off
+	      GotoTag		      "VPER_TargIdVect30_num"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VPER_TargIdVect30_num"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From6"
+	      SID		      "357"
+	      Position		      [645, 1573, 850, 1607]
+	      ZOrder		      305
+	      ShowName		      off
+	      GotoTag		      "VPER_TargXPosVect30_m"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VPER_TargXPosVect30_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From7"
+	      SID		      "358"
+	      Position		      [645, 1622, 850, 1658]
+	      ZOrder		      306
+	      ShowName		      off
+	      GotoTag		      "VIFO_TargVehRelSpdXVect30_mps"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_TargVehRelSpdXVect30_mps"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From8"
+	      SID		      "359"
+	      Position		      [645, 1672, 850, 1708]
+	      ZOrder		      307
+	      ShowName		      off
+	      GotoTag		      "VPER_TargIdVect30_num"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VPER_TargIdVect30_num"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From_VPER_TargLongAccelVect30_mps1"
+	      SID		      "259"
+	      Position		      [645, 1327, 850, 1363]
+	      ZOrder		      302
+	      ShowName		      off
+	      GotoTag		      "VIFO_TargAccelXVect30_mps2"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_TargAccelXVect30_mps2"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From_VPER_TargLongAccelVect30_mps2"
+	      SID		      "252"
+	      Position		      [645, 932, 850, 968]
+	      ZOrder		      291
+	      ShowName		      off
+	      GotoTag		      "VIFO_TargAccelXVect30_mps2"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_TargAccelXVect30_mps2"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From_VPER_TargLongAccelVect30_mps3"
+	      SID		      "360"
+	      Position		      [645, 1722, 850, 1758]
+	      ZOrder		      308
+	      ShowName		      off
+	      GotoTag		      "VIFO_TargAccelXVect30_mps2"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_TargAccelXVect30_mps2"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Get_Information_For_ACC_MC_Veh"
+	      SID		      "260"
+	      Ports		      [5, 5]
+	      Position		      [1115, 1122, 1480, 1368]
+	      ZOrder		      293
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"NIFO_ACCTargetVehRelSpeedX_mps"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		2
+		PropagatedSignals	"NIFO_ACCMCVehXPosition_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		3
+		PropagatedSignals	"NIFO_ACCTargetVehAssigned_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		4
+		PropagatedSignals	"NIFO_ACCMCVehId_num"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		5
+		PropagatedSignals	"NIFO_ACCMCLongAccel_mps2"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"Get_Information_For_ACC_MC_Veh"
+		Location		[169, 33, 1555, 821]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"150"
+		Block {
+		  BlockType		  Inport
+		  Name			  "VIFO_ACCMCTTargId_num"
+		  SID			  "266"
+		  Position		  [20, 193, 50, 207]
+		  ZOrder		  151
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VIFO_ACCMCTTargId_num"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VPER_TargXPosVect30_m"
+		  SID			  "267"
+		  Position		  [20, 358, 50, 372]
+		  ZOrder		  152
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VPER_TargXPosVect30_m"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VIFO_TargVehRelSpdXVect30_mps"
+		  SID			  "268"
+		  Position		  [20, 453, 50, 467]
+		  ZOrder		  153
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VIFO_TargVehRelSpdXVect30_mps"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VPER_TargIdVect30_num"
+		  SID			  "269"
+		  Position		  [20, 548, 50, 562]
+		  ZOrder		  158
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VPER_TargIdVect30_num"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VIFO_TargAccelXVect30_mps2"
+		  SID			  "270"
+		  Position		  [20, 638, 50, 652]
+		  ZOrder		  290
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VIFO_TargAccelXVect30_mps2"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "FALSE"
+		  SID			  "271"
+		  Position		  [635, 245, 740, 275]
+		  ZOrder		  150
+		  ShowName		  off
+		  Value			  "FALSE"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From"
+		  SID			  "272"
+		  Position		  [635, 351, 865, 379]
+		  ZOrder		  123
+		  ShowName		  off
+		  GotoTag		  "VIFO_TargVehRelSpdXVect30_mps"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From3"
+		  SID			  "275"
+		  Position		  [635, 616, 865, 644]
+		  ZOrder		  125
+		  ShowName		  off
+		  GotoTag		  "VPER_TargXPosVect30_m"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From5"
+		  SID			  "277"
+		  Position		  [635, 866, 865, 894]
+		  ZOrder		  159
+		  ShowName		  off
+		  GotoTag		  "VPER_TargIdVect30_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From7"
+		  SID			  "279"
+		  Position		  [635, 1116, 865, 1144]
+		  ZOrder		  292
+		  ShowName		  off
+		  GotoTag		  "VIFO_TargAccelXVect30_mps2"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From_VIFO_ACCMCTTargId_num"
+		  SID			  "273"
+		  Position		  [635, 411, 865, 439]
+		  ZOrder		  132
+		  ShowName		  off
+		  GotoTag		  "VIFO_ACCMCTTargId_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From_VIFO_ACCMCTTargId_num_1"
+		  SID			  "274"
+		  Position		  [635, 676, 865, 704]
+		  ZOrder		  133
+		  ShowName		  off
+		  GotoTag		  "VIFO_ACCMCTTargId_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From_VIFO_ACCMCTTargId_num_2"
+		  SID			  "276"
+		  Position		  [635, 926, 865, 954]
+		  ZOrder		  161
+		  ShowName		  off
+		  GotoTag		  "VIFO_ACCMCTTargId_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From_VIFO_ACCMCTTargId_num_3"
+		  SID			  "278"
+		  Position		  [635, 1176, 865, 1204]
+		  ZOrder		  294
+		  ShowName		  off
+		  GotoTag		  "VIFO_ACCMCTTargId_num"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto"
+		  SID			  "280"
+		  Position		  [275, 442, 520, 478]
+		  ZOrder		  144
+		  ShowName		  off
+		  GotoTag		  "VIFO_TargVehRelSpdXVect30_mps"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto1"
+		  SID			  "281"
+		  Position		  [275, 347, 520, 383]
+		  ZOrder		  145
+		  ShowName		  off
+		  GotoTag		  "VPER_TargXPosVect30_m"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto3"
+		  SID			  "283"
+		  Position		  [275, 537, 520, 573]
+		  ZOrder		  157
+		  ShowName		  off
+		  GotoTag		  "VPER_TargIdVect30_num"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto_VIFO_ACCMCTTargId_num"
+		  SID			  "282"
+		  Position		  [270, 127, 515, 163]
+		  ZOrder		  146
+		  ShowName		  off
+		  GotoTag		  "VIFO_ACCMCTTargId_num"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto_VPER_TargLongAccelVect30_mps2"
+		  SID			  "284"
+		  Position		  [275, 627, 520, 663]
+		  ZOrder		  291
+		  ShowName		  off
+		  GotoTag		  "VIFO_TargAccelXVect30_mps2"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_ACCRelSpeedNoTargets_kph"
+		  SID			  "285"
+		  Position		  [690, 512, 885, 538]
+		  ZOrder		  142
+		  ShowName		  off
+		  Value			  "KIFO_ACCRelSpeedNoTargets_kph"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_ACCXPositionNoTargets_m"
+		  SID			  "288"
+		  Position		  [840, 787, 1015, 813]
+		  ZOrder		  143
+		  ShowName		  off
+		  Value			  "KIFO_ACCXPositionNoTargets_m"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_TargetIdNoTargets_num"
+		  SID			  "286"
+		  Position		  [820, 1037, 1015, 1063]
+		  ZOrder		  286
+		  ShowName		  off
+		  Value			  "KIFO_TargetIdNoTargets_num"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_TargetIdNoTargets_num1"
+		  SID			  "287"
+		  Position		  [805, 1287, 1015, 1313]
+		  ZOrder		  297
+		  ShowName		  off
+		  Value			  "KIFO_LongAccelNoTargets_mps2"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator1"
+		  SID			  "289"
+		  Ports			  [2, 1]
+		  Position		  [270, 192, 300, 223]
+		  ZOrder		  128
+		  ShowName		  off
+		  Operator		  "~="
+		  InputSameDT		  off
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_ACCMCTargetVehAssigned_flg"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector"
+		  SID			  "290"
+		  Ports			  [2, 1]
+		  Position		  [935, 396, 975, 434]
+		  ZOrder		  124
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector1"
+		  SID			  "291"
+		  Ports			  [2, 1]
+		  Position		  [935, 661, 975, 699]
+		  ZOrder		  126
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector2"
+		  SID			  "292"
+		  Ports			  [2, 1]
+		  Position		  [935, 911, 975, 949]
+		  ZOrder		  160
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector3"
+		  SID			  "293"
+		  Ports			  [2, 1]
+		  Position		  [935, 1161, 975, 1199]
+		  ZOrder		  293
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch1"
+		  SID			  "294"
+		  Position		  [810, 187, 855, 233]
+		  ZOrder		  147
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_ACCTargetVehAssigned_flg"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch2"
+		  SID			  "295"
+		  Position		  [1125, 472, 1170, 518]
+		  ZOrder		  140
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_ACCTargetVehRelSpeedX_mps"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch3"
+		  SID			  "296"
+		  Position		  [1125, 722, 1170, 768]
+		  ZOrder		  141
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_ACCMCVehXPosition_m"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch4"
+		  SID			  "297"
+		  Position		  [1125, 972, 1170, 1018]
+		  ZOrder		  162
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_ACCMCVehId_num"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch5"
+		  SID			  "298"
+		  Position		  [1125, 1222, 1170, 1268]
+		  ZOrder		  295
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_ACCMCLongAccel_mps2"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "TRUE"
+		  SID			  "299"
+		  Position		  [635, 130, 740, 160]
+		  ZOrder		  149
+		  ShowName		  off
+		  Value			  "TRUE"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "ZERO_INT"
+		  SID			  "300"
+		  Position		  [130, 257, 210, 283]
+		  ZOrder		  129
+		  ShowName		  off
+		  Value			  "ZERO_INT"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "kph2mps"
+		  SID			  "301"
+		  Ports			  [1, 1]
+		  Position		  [920, 514, 1015, 536]
+		  ZOrder		  287
+		  ShowName		  off
+		  LibraryVersion	  "1.475"
+		  SourceBlock		  "hcu_lib/kph2mps"
+		  SourceType		  "Conversion"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_ACCTargetVehRelSpeedX_mps"
+		  SID			  "302"
+		  Position		  [1875, 488, 1905, 502]
+		  ZOrder		  154
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_ACCMCVehXPosition_m"
+		  SID			  "303"
+		  Position		  [1875, 738, 1905, 752]
+		  ZOrder		  155
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_ACCTargetVehAssigned_flg"
+		  SID			  "304"
+		  Position		  [1875, 203, 1905, 217]
+		  ZOrder		  156
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_ACCMCVehId_num"
+		  SID			  "305"
+		  Position		  [1875, 988, 1905, 1002]
+		  ZOrder		  164
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_ACCMCLongAccel_mps2"
+		  SID			  "306"
+		  Position		  [1875, 1238, 1905, 1252]
+		  ZOrder		  296
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  Name			  "NIFO_ACCMCVehXPosition_m"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch3"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_ACCMCVehXPosition_m"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Selector"
+		  SrcPort		  1
+		  Points		  [70, 0; 0, 65]
+		  DstBlock		  "Switch2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From3"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, 40]
+		  DstBlock		  "Selector1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, 40]
+		  DstBlock		  "Selector"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "FALSE"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, -35]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Line {
+		  Name			  "NIFO_ACCTargetVehAssigned_flg"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch1"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_ACCTargetVehAssigned_flg"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "TRUE"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, 50]
+		  DstBlock		  "Switch1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "ZERO_INT"
+		  SrcPort		  1
+		  Points		  [40, 0]
+		  DstBlock		  "Relational\nOperator1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "KIFO_ACCXPositionNoTargets_m"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, -40]
+		  DstBlock		  "Switch3"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Selector1"
+		  SrcPort		  1
+		  Points		  [70, 0; 0, 50]
+		  DstBlock		  "Switch3"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VPER_TargXPosVect30_m"
+		  SrcPort		  1
+		  DstBlock		  "Goto1"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NIFO_ACCTargetVehRelSpeedX_mps"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch2"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_ACCTargetVehRelSpeedX_mps"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From_VIFO_ACCMCTTargId_num_1"
+		  SrcPort		  1
+		  DstBlock		  "Selector1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "From_VIFO_ACCMCTTargId_num"
+		  SrcPort		  1
+		  DstBlock		  "Selector"
+		  DstPort		  2
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VIFO_TargVehRelSpdXVect30_mps"
+		  SrcPort		  1
+		  DstBlock		  "Goto"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VIFO_ACCMCTTargId_num"
+		  SrcPort		  1
+		  Points		  [170, 0]
+		  Branch {
+		    Points		    [0, -55]
+		    DstBlock		    "Goto_VIFO_ACCMCTTargId_num"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "KIFO_ACCRelSpeedNoTargets_kph"
+		  SrcPort		  1
+		  DstBlock		  "kph2mps"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VPER_TargIdVect30_num"
+		  SrcPort		  1
+		  DstBlock		  "Goto3"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NIFO_ACCMCVehId_num"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch4"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_ACCMCVehId_num"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From5"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, 40]
+		  DstBlock		  "Selector2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "KIFO_TargetIdNoTargets_num"
+		  SrcPort		  1
+		  Points		  [50, 0; 0, -40]
+		  DstBlock		  "Switch4"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Selector2"
+		  SrcPort		  1
+		  Points		  [70, 0; 0, 50]
+		  DstBlock		  "Switch4"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From_VIFO_ACCMCTTargId_num_2"
+		  SrcPort		  1
+		  DstBlock		  "Selector2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "kph2mps"
+		  SrcPort		  1
+		  Points		  [27, 0; 0, -15]
+		  DstBlock		  "Switch2"
+		  DstPort		  3
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VIFO_TargAccelXVect30_mps2"
+		  SrcPort		  1
+		  DstBlock		  "Goto_VPER_TargLongAccelVect30_mps2"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NIFO_ACCMCLongAccel_mps2"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch5"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_ACCMCLongAccel_mps2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From7"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, 40]
+		  DstBlock		  "Selector3"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "KIFO_TargetIdNoTargets_num1"
+		  SrcPort		  1
+		  Points		  [50, 0; 0, -40]
+		  DstBlock		  "Switch5"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Selector3"
+		  SrcPort		  1
+		  Points		  [70, 0; 0, 50]
+		  DstBlock		  "Switch5"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From_VIFO_ACCMCTTargId_num_3"
+		  SrcPort		  1
+		  DstBlock		  "Selector3"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "NIFO_ACCMCTargetVehAssigned_flg"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Relational\nOperator1"
+		  SrcPort		  1
+		  Points		  [245, 0]
+		  Branch {
+		    Points		    [0, 285]
+		    Branch {
+		    Points		    [0, 250; 1, 0]
+		    Branch {
+		    Points		    [0, 250]
+		    Branch {
+		    Points		    [0, 250]
+		    DstBlock		    "Switch5"
+		    DstPort		    2
+		    }
+		    Branch {
+		    DstBlock		    "Switch4"
+		    DstPort		    2
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Switch3"
+		    DstPort		    2
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Switch2"
+		    DstPort		    2
+		    }
+		  }
+		  Branch {
+		    DstBlock		    "Switch1"
+		    DstPort		    2
+		  }
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Get_Information_For_AEB_MC_Veh"
+	      SID		      "136"
+	      Ports		      [5, 5]
+	      Position		      [1115, 727, 1480, 973]
+	      ZOrder		      154
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"NIFO_AEBTargetVehRelSpeedX_mps"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		2
+		PropagatedSignals	"NIFO_AEBMCVehXPosition_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		3
+		PropagatedSignals	"NIFO_AEBTargetVehAssigned_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		4
+		PropagatedSignals	"NIFO_AEBMCVehId_num"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		5
+		PropagatedSignals	"NIFO_AEBMCLongAccel_mps2"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"Get_Information_For_AEB_MC_Veh"
+		Location		[-9, 0, 1929, 1050]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"70"
+		Block {
+		  BlockType		  Inport
+		  Name			  "VIFO_AEBMCTTargId_num"
+		  SID			  "137"
+		  Position		  [20, 103, 50, 117]
+		  ZOrder		  151
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VIFO_AEBMCTTargId_num"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VPER_TargXPosVect30_m"
+		  SID			  "138"
+		  Position		  [20, 268, 50, 282]
+		  ZOrder		  152
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VPER_TargXPosVect30_m"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VIFO_TargVehRelSpdXVect30_mps"
+		  SID			  "139"
+		  Position		  [20, 363, 50, 377]
+		  ZOrder		  153
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VIFO_TargVehRelSpdXVect30_mps"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VPER_TargIdVect30_num"
+		  SID			  "209"
+		  Position		  [20, 458, 50, 472]
+		  ZOrder		  158
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VPER_TargIdVect30_num"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VIFO_TargAccelXVect30_mps2"
+		  SID			  "243"
+		  Position		  [20, 548, 50, 562]
+		  ZOrder		  290
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VIFO_TargAccelXVect30_mps2"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "FALSE"
+		  SID			  "141"
+		  Position		  [635, 155, 740, 185]
+		  ZOrder		  150
+		  ShowName		  off
+		  Value			  "FALSE"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From"
+		  SID			  "142"
+		  Position		  [635, 261, 865, 289]
+		  ZOrder		  123
+		  ShowName		  off
+		  GotoTag		  "VIFO_TargVehRelSpdXVect30_mps"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From1"
+		  SID			  "143"
+		  Position		  [635, 321, 865, 349]
+		  ZOrder		  132
+		  ShowName		  off
+		  GotoTag		  "VIFO_AEBMCTTargId_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From2"
+		  SID			  "144"
+		  Position		  [635, 586, 865, 614]
+		  ZOrder		  133
+		  ShowName		  off
+		  GotoTag		  "VIFO_AEBMCTTargId_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From3"
+		  SID			  "145"
+		  Position		  [635, 526, 865, 554]
+		  ZOrder		  125
+		  ShowName		  off
+		  GotoTag		  "VPER_TargXPosVect30_m"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From4"
+		  SID			  "211"
+		  Position		  [635, 836, 865, 864]
+		  ZOrder		  161
+		  ShowName		  off
+		  GotoTag		  "VIFO_AEBMCTTargId_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From5"
+		  SID			  "212"
+		  Position		  [635, 776, 865, 804]
+		  ZOrder		  159
+		  ShowName		  off
+		  GotoTag		  "VPER_TargIdVect30_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From6"
+		  SID			  "245"
+		  Position		  [635, 1086, 865, 1114]
+		  ZOrder		  294
+		  ShowName		  off
+		  GotoTag		  "VIFO_AEBMCTTargId_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From7"
+		  SID			  "246"
+		  Position		  [635, 1026, 865, 1054]
+		  ZOrder		  292
+		  ShowName		  off
+		  GotoTag		  "VIFO_TargAccelXVect30_mps2"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto"
+		  SID			  "146"
+		  Position		  [275, 352, 520, 388]
+		  ZOrder		  144
+		  ShowName		  off
+		  GotoTag		  "VIFO_TargVehRelSpdXVect30_mps"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto1"
+		  SID			  "147"
+		  Position		  [275, 257, 520, 293]
+		  ZOrder		  145
+		  ShowName		  off
+		  GotoTag		  "VPER_TargXPosVect30_m"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto2"
+		  SID			  "148"
+		  Position		  [330, 22, 575, 58]
+		  ZOrder		  146
+		  ShowName		  off
+		  GotoTag		  "VIFO_AEBMCTTargId_num"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto3"
+		  SID			  "210"
+		  Position		  [275, 447, 520, 483]
+		  ZOrder		  157
+		  ShowName		  off
+		  GotoTag		  "VPER_TargIdVect30_num"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto_VPER_TargLongAccelVect30_mps2"
+		  SID			  "244"
+		  Position		  [275, 537, 520, 573]
+		  ZOrder		  291
+		  ShowName		  off
+		  GotoTag		  "VIFO_TargAccelXVect30_mps2"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_RelSpeedNoTargets_kph"
+		  SID			  "149"
+		  Position		  [705, 422, 885, 448]
+		  ZOrder		  142
+		  Value			  "KIFO_RelSpeedNoTargets_kph"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_TargetIdNoTargets_num"
+		  SID			  "217"
+		  Position		  [820, 947, 1015, 973]
+		  ZOrder		  286
+		  ShowName		  off
+		  Value			  "KIFO_TargetIdNoTargets_num"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_TargetIdNoTargets_num1"
+		  SID			  "247"
+		  Position		  [805, 1197, 1015, 1223]
+		  ZOrder		  297
+		  ShowName		  off
+		  Value			  "KIFO_LongAccelNoTargets_mps2"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_XPositionNoTargets_m"
+		  SID			  "150"
+		  Position		  [840, 697, 1015, 723]
+		  ZOrder		  143
+		  ShowName		  off
+		  Value			  "KIFO_XPositionNoTargets_m"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator1"
+		  SID			  "152"
+		  Ports			  [2, 1]
+		  Position		  [270, 102, 300, 133]
+		  ZOrder		  128
+		  ShowName		  off
+		  Operator		  "~="
+		  InputSameDT		  off
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_FCWTargetVehAssigned_flg"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector"
+		  SID			  "153"
+		  Ports			  [2, 1]
+		  Position		  [935, 306, 975, 344]
+		  ZOrder		  124
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector1"
+		  SID			  "154"
+		  Ports			  [2, 1]
+		  Position		  [935, 571, 975, 609]
+		  ZOrder		  126
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector2"
+		  SID			  "214"
+		  Ports			  [2, 1]
+		  Position		  [935, 821, 975, 859]
+		  ZOrder		  160
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector3"
+		  SID			  "248"
+		  Ports			  [2, 1]
+		  Position		  [935, 1071, 975, 1109]
+		  ZOrder		  293
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch1"
+		  SID			  "155"
+		  Position		  [810, 97, 855, 143]
+		  ZOrder		  147
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_AEBTargetVehAssigned_flg"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch2"
+		  SID			  "156"
+		  Position		  [1125, 382, 1170, 428]
+		  ZOrder		  140
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_AEBTargetVehRelSpeedX_mps"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch3"
+		  SID			  "157"
+		  Position		  [1125, 632, 1170, 678]
+		  ZOrder		  141
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_AEBMCVehXPosition_m"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch4"
+		  SID			  "215"
+		  Position		  [1125, 882, 1170, 928]
+		  ZOrder		  162
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_AEBMCVehId_num"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch5"
+		  SID			  "249"
+		  Position		  [1125, 1132, 1170, 1178]
+		  ZOrder		  295
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_AEBMCLongAccel_mps2"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "TRUE"
+		  SID			  "140"
+		  Position		  [635, 40, 740, 70]
+		  ZOrder		  149
+		  ShowName		  off
+		  Value			  "TRUE"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "ZERO_INT"
+		  SID			  "151"
+		  Position		  [130, 167, 210, 193]
+		  ZOrder		  129
+		  ShowName		  off
+		  Value			  "ZERO_INT"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "kph2mps"
+		  SID			  "230"
+		  Ports			  [1, 1]
+		  Position		  [920, 424, 1015, 446]
+		  ZOrder		  287
+		  ShowName		  off
+		  LibraryVersion	  "1.475"
+		  SourceBlock		  "hcu_lib/kph2mps"
+		  SourceType		  "Conversion"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_AEBTargetVehRelSpeedX_mps"
+		  SID			  "158"
+		  Position		  [1475, 398, 1505, 412]
+		  ZOrder		  154
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_AEBMCVehXPosition_m"
+		  SID			  "159"
+		  Position		  [1475, 648, 1505, 662]
+		  ZOrder		  155
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_AEBTargetVehAssigned_flg"
+		  SID			  "160"
+		  Position		  [1485, 113, 1515, 127]
+		  ZOrder		  156
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_AEBMCVehId_num"
+		  SID			  "216"
+		  Position		  [1475, 898, 1505, 912]
+		  ZOrder		  164
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_AEBMCLongAccel_mps2"
+		  SID			  "250"
+		  Position		  [1475, 1148, 1505, 1162]
+		  ZOrder		  296
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  Name			  "NIFO_FCWTargetVehAssigned_flg"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Relational\nOperator1"
+		  SrcPort		  1
+		  Points		  [245, 0]
+		  Branch {
+		    DstBlock		    "Switch1"
+		    DstPort		    2
+		  }
+		  Branch {
+		    Points		    [0, 285]
+		    Branch {
+		    DstBlock		    "Switch2"
+		    DstPort		    2
+		    }
+		    Branch {
+		    Points		    [0, 250; 1, 0]
+		    Branch {
+		    DstBlock		    "Switch3"
+		    DstPort		    2
+		    }
+		    Branch {
+		    Points		    [0, 250]
+		    Branch {
+		    DstBlock		    "Switch4"
+		    DstPort		    2
+		    }
+		    Branch {
+		    Points		    [0, 250]
+		    DstBlock		    "Switch5"
+		    DstPort		    2
+		    }
+		    }
+		    }
+		  }
+		}
+		Line {
+		  SrcBlock		  "From6"
+		  SrcPort		  1
+		  DstBlock		  "Selector3"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Selector3"
+		  SrcPort		  1
+		  Points		  [70, 0; 0, 50]
+		  DstBlock		  "Switch5"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "KIFO_TargetIdNoTargets_num1"
+		  SrcPort		  1
+		  Points		  [50, 0; 0, -40]
+		  DstBlock		  "Switch5"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "From7"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, 40]
+		  DstBlock		  "Selector3"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NIFO_AEBMCLongAccel_mps2"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch5"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_AEBMCLongAccel_mps2"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VIFO_TargAccelXVect30_mps2"
+		  SrcPort		  1
+		  DstBlock		  "Goto_VPER_TargLongAccelVect30_mps2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "kph2mps"
+		  SrcPort		  1
+		  Points		  [27, 0; 0, -15]
+		  DstBlock		  "Switch2"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "From4"
+		  SrcPort		  1
+		  DstBlock		  "Selector2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Selector2"
+		  SrcPort		  1
+		  Points		  [70, 0; 0, 50]
+		  DstBlock		  "Switch4"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "KIFO_TargetIdNoTargets_num"
+		  SrcPort		  1
+		  Points		  [50, 0; 0, -40]
+		  DstBlock		  "Switch4"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "From5"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, 40]
+		  DstBlock		  "Selector2"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NIFO_AEBMCVehId_num"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch4"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_AEBMCVehId_num"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VPER_TargIdVect30_num"
+		  SrcPort		  1
+		  DstBlock		  "Goto3"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "KIFO_RelSpeedNoTargets_kph"
+		  SrcPort		  1
+		  DstBlock		  "kph2mps"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VIFO_AEBMCTTargId_num"
+		  SrcPort		  1
+		  Points		  [170, 0]
+		  Branch {
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Points		    [0, -70]
+		    DstBlock		    "Goto2"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VIFO_TargVehRelSpdXVect30_mps"
+		  SrcPort		  1
+		  DstBlock		  "Goto"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From1"
+		  SrcPort		  1
+		  DstBlock		  "Selector"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "From2"
+		  SrcPort		  1
+		  DstBlock		  "Selector1"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "NIFO_AEBTargetVehRelSpeedX_mps"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch2"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_AEBTargetVehRelSpeedX_mps"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VPER_TargXPosVect30_m"
+		  SrcPort		  1
+		  DstBlock		  "Goto1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Selector1"
+		  SrcPort		  1
+		  Points		  [70, 0; 0, 50]
+		  DstBlock		  "Switch3"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "KIFO_XPositionNoTargets_m"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, -40]
+		  DstBlock		  "Switch3"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "ZERO_INT"
+		  SrcPort		  1
+		  Points		  [40, 0]
+		  DstBlock		  "Relational\nOperator1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "TRUE"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, 50]
+		  DstBlock		  "Switch1"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NIFO_AEBTargetVehAssigned_flg"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch1"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_AEBTargetVehAssigned_flg"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "FALSE"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, -35]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "From"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, 40]
+		  DstBlock		  "Selector"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From3"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, 40]
+		  DstBlock		  "Selector1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Selector"
+		  SrcPort		  1
+		  Points		  [70, 0; 0, 65]
+		  DstBlock		  "Switch2"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NIFO_AEBMCVehXPosition_m"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch3"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_AEBMCVehXPosition_m"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Get_Information_For_FCW_MC_Veh"
+	      SID		      "129"
+	      Ports		      [5, 5]
+	      Position		      [1120, 306, 1480, 624]
+	      ZOrder		      153
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"NIFO_FCWTargetVehRelSpeedX_mps"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		2
+		PropagatedSignals	"NIFO_FCWMCVehXPosition_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		3
+		PropagatedSignals	"NIFO_FCWTargetVehAssigned_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		4
+		PropagatedSignals	"NIFO_FCWMCVehId_num"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		5
+		PropagatedSignals	"NIFO_FCWMCLongAccel_mps2"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"Get_Information_For_FCW_MC_Veh"
+		Location		[-9, 0, 1929, 1050]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"70"
+		Block {
+		  BlockType		  Inport
+		  Name			  "VIFO_FCWMCTTargId_num"
+		  SID			  "130"
+		  Position		  [20, 103, 50, 117]
+		  ZOrder		  151
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VIFO_FCWMCTTargId_num"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VPER_TargXPosVect30_m"
+		  SID			  "131"
+		  Position		  [20, 268, 50, 282]
+		  ZOrder		  152
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VPER_TargXPosVect30_m"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VIFO_TargVehRelSpdXVect30_mps"
+		  SID			  "132"
+		  Position		  [20, 363, 50, 377]
+		  ZOrder		  153
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VIFO_TargVehRelSpdXVect30_mps"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VPER_TargIdVect30_num"
+		  SID			  "198"
+		  Position		  [20, 448, 50, 462]
+		  ZOrder		  279
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VPER_TargIdVect30_num"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VIFO_TargAccelXVect30_mps2"
+		  SID			  "233"
+		  Position		  [20, 533, 50, 547]
+		  ZOrder		  288
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VIFO_TargAccelXVect30_mps2"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "FALSE"
+		  SID			  "100"
+		  Position		  [635, 155, 740, 185]
+		  ZOrder		  150
+		  ShowName		  off
+		  Value			  "FALSE"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From"
+		  SID			  "77"
+		  Position		  [635, 261, 865, 289]
+		  ZOrder		  123
+		  ShowName		  off
+		  GotoTag		  "VIFO_TargVehRelSpdXVect30_mps"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From1"
+		  SID			  "78"
+		  Position		  [635, 321, 865, 349]
+		  ZOrder		  132
+		  ShowName		  off
+		  GotoTag		  "VIFO_FCWMCTTargId_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From2"
+		  SID			  "79"
+		  Position		  [635, 586, 865, 614]
+		  ZOrder		  133
+		  ShowName		  off
+		  GotoTag		  "VIFO_FCWMCTTargId_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From3"
+		  SID			  "80"
+		  Position		  [635, 526, 865, 554]
+		  ZOrder		  125
+		  ShowName		  off
+		  GotoTag		  "VPER_TargXPosVect30_m"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From4"
+		  SID			  "200"
+		  Position		  [635, 836, 865, 864]
+		  ZOrder		  283
+		  ShowName		  off
+		  GotoTag		  "VIFO_FCWMCTTargId_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From5"
+		  SID			  "201"
+		  Position		  [635, 776, 865, 804]
+		  ZOrder		  281
+		  ShowName		  off
+		  GotoTag		  "VPER_TargIdVect30_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From6"
+		  SID			  "235"
+		  Position		  [635, 1086, 865, 1114]
+		  ZOrder		  292
+		  ShowName		  off
+		  GotoTag		  "VIFO_FCWMCTTargId_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "FromVPER_TargLongAccelVect30_mps2"
+		  SID			  "236"
+		  Position		  [635, 1026, 865, 1054]
+		  ZOrder		  290
+		  ShowName		  off
+		  GotoTag		  "VIFO_TargAccelXVect30_mps2"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto"
+		  SID			  "81"
+		  Position		  [275, 352, 520, 388]
+		  ZOrder		  144
+		  ShowName		  off
+		  GotoTag		  "VIFO_TargVehRelSpdXVect30_mps"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto1"
+		  SID			  "82"
+		  Position		  [275, 257, 520, 293]
+		  ZOrder		  145
+		  ShowName		  off
+		  GotoTag		  "VPER_TargXPosVect30_m"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto2"
+		  SID			  "83"
+		  Position		  [330, 22, 575, 58]
+		  ZOrder		  146
+		  ShowName		  off
+		  GotoTag		  "VIFO_FCWMCTTargId_num"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto3"
+		  SID			  "199"
+		  Position		  [265, 437, 510, 473]
+		  ZOrder		  280
+		  ShowName		  off
+		  GotoTag		  "VPER_TargIdVect30_num"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto_VPER_TargLongAccelVect30_mps2"
+		  SID			  "234"
+		  Position		  [265, 522, 510, 558]
+		  ZOrder		  289
+		  ShowName		  off
+		  GotoTag		  "VIFO_TargAccelXVect30_mps2"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_RelSpeedNoTargets_kph"
+		  SID			  "84"
+		  Position		  [700, 422, 865, 448]
+		  ZOrder		  142
+		  ShowName		  off
+		  Value			  "KIFO_RelSpeedNoTargets_kph"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_TargetIdNoTargets_num"
+		  SID			  "202"
+		  Position		  [815, 947, 1015, 973]
+		  ZOrder		  285
+		  ShowName		  off
+		  Value			  "KIFO_TargetIdNoTargets_num"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_TargetIdNoTargets_num1"
+		  SID			  "237"
+		  Position		  [815, 1197, 1015, 1223]
+		  ZOrder		  294
+		  ShowName		  off
+		  Value			  "KIFO_LongAccelNoTargets_mps2"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_XPositionNoTargets_m"
+		  SID			  "85"
+		  Position		  [860, 697, 1015, 723]
+		  ZOrder		  143
+		  ShowName		  off
+		  Value			  "KIFO_XPositionNoTargets_m"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator1"
+		  SID			  "87"
+		  Ports			  [2, 1]
+		  Position		  [270, 102, 300, 133]
+		  ZOrder		  128
+		  ShowName		  off
+		  Operator		  "~="
+		  InputSameDT		  off
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_FCWTargetVehAssigned_flg"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector"
+		  SID			  "88"
+		  Ports			  [2, 1]
+		  Position		  [935, 306, 975, 344]
+		  ZOrder		  124
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector1"
+		  SID			  "89"
+		  Ports			  [2, 1]
+		  Position		  [935, 571, 975, 609]
+		  ZOrder		  126
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector2"
+		  SID			  "203"
+		  Ports			  [2, 1]
+		  Position		  [935, 821, 975, 859]
+		  ZOrder		  282
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector3"
+		  SID			  "238"
+		  Ports			  [2, 1]
+		  Position		  [935, 1071, 975, 1109]
+		  ZOrder		  291
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch1"
+		  SID			  "97"
+		  Position		  [810, 97, 855, 143]
+		  ZOrder		  147
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_FCWTargetVehAssigned_flg"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch2"
+		  SID			  "91"
+		  Position		  [1125, 382, 1170, 428]
+		  ZOrder		  140
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_FCWTargetVehRelSpeedX_mps"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch3"
+		  SID			  "92"
+		  Position		  [1125, 632, 1170, 678]
+		  ZOrder		  141
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_FCWMCVehXPosition_m"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch4"
+		  SID			  "204"
+		  Position		  [1125, 882, 1170, 928]
+		  ZOrder		  284
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_FCWMCVehId_num"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch5"
+		  SID			  "239"
+		  Position		  [1125, 1132, 1170, 1178]
+		  ZOrder		  293
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_FCWMCLongAccel_mps2"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "TRUE"
+		  SID			  "99"
+		  Position		  [635, 40, 740, 70]
+		  ZOrder		  149
+		  ShowName		  off
+		  Value			  "TRUE"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "ZERO_INT"
+		  SID			  "86"
+		  Position		  [130, 167, 210, 193]
+		  ZOrder		  129
+		  ShowName		  off
+		  Value			  "ZERO_INT"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "kph2mps"
+		  SID			  "229"
+		  Ports			  [1, 1]
+		  Position		  [935, 424, 1030, 446]
+		  ZOrder		  287
+		  ShowName		  off
+		  LibraryVersion	  "1.475"
+		  SourceBlock		  "hcu_lib/kph2mps"
+		  SourceType		  "Conversion"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_FCWTargetVehRelSpeedX_mps"
+		  SID			  "133"
+		  Position		  [1475, 398, 1505, 412]
+		  ZOrder		  154
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_FCWMCVehXPosition_m"
+		  SID			  "134"
+		  Position		  [1475, 648, 1505, 662]
+		  ZOrder		  155
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_FCWTargetVehAssigned_flg"
+		  SID			  "135"
+		  Position		  [1485, 113, 1515, 127]
+		  ZOrder		  156
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_FCWMCVehId_num"
+		  SID			  "205"
+		  Position		  [1475, 898, 1505, 912]
+		  ZOrder		  286
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_FCWMCLongAccel_mps2"
+		  SID			  "240"
+		  Position		  [1475, 1148, 1505, 1162]
+		  ZOrder		  295
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  Name			  "NIFO_FCWMCLongAccel_mps2"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch5"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_FCWMCLongAccel_mps2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "FromVPER_TargLongAccelVect30_mps2"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, 40]
+		  DstBlock		  "Selector3"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "KIFO_TargetIdNoTargets_num1"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, -40]
+		  DstBlock		  "Switch5"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Selector3"
+		  SrcPort		  1
+		  Points		  [70, 0; 0, 50]
+		  DstBlock		  "Switch5"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From6"
+		  SrcPort		  1
+		  DstBlock		  "Selector3"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "NIFO_FCWTargetVehAssigned_flg"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Relational\nOperator1"
+		  SrcPort		  1
+		  Points		  [245, 0]
+		  Branch {
+		    Points		    [0, 285]
+		    Branch {
+		    Points		    [0, 250]
+		    Branch {
+		    DstBlock		    "Switch3"
+		    DstPort		    2
+		    }
+		    Branch {
+		    Points		    [0, 250]
+		    Branch {
+		    DstBlock		    "Switch4"
+		    DstPort		    2
+		    }
+		    Branch {
+		    Points		    [0, 250]
+		    DstBlock		    "Switch5"
+		    DstPort		    2
+		    }
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Switch2"
+		    DstPort		    2
+		    }
+		  }
+		  Branch {
+		    DstBlock		    "Switch1"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VIFO_TargAccelXVect30_mps2"
+		  SrcPort		  1
+		  DstBlock		  "Goto_VPER_TargLongAccelVect30_mps2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "kph2mps"
+		  SrcPort		  1
+		  Points		  [12, 0; 0, -15]
+		  DstBlock		  "Switch2"
+		  DstPort		  3
+		}
+		Line {
+		  Name			  "NIFO_FCWMCVehId_num"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch4"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_FCWMCVehId_num"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From5"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, 40]
+		  DstBlock		  "Selector2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "KIFO_TargetIdNoTargets_num"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, -40]
+		  DstBlock		  "Switch4"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Selector2"
+		  SrcPort		  1
+		  Points		  [70, 0; 0, 50]
+		  DstBlock		  "Switch4"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From4"
+		  SrcPort		  1
+		  DstBlock		  "Selector2"
+		  DstPort		  2
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VPER_TargIdVect30_num"
+		  SrcPort		  1
+		  DstBlock		  "Goto3"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NIFO_FCWMCVehXPosition_m"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch3"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_FCWMCVehXPosition_m"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Selector"
+		  SrcPort		  1
+		  Points		  [70, 0; 0, 65]
+		  DstBlock		  "Switch2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From3"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, 40]
+		  DstBlock		  "Selector1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, 40]
+		  DstBlock		  "Selector"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "FALSE"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, -35]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Line {
+		  Name			  "NIFO_FCWTargetVehAssigned_flg"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch1"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_FCWTargetVehAssigned_flg"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "TRUE"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, 50]
+		  DstBlock		  "Switch1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "ZERO_INT"
+		  SrcPort		  1
+		  Points		  [40, 0]
+		  DstBlock		  "Relational\nOperator1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "KIFO_XPositionNoTargets_m"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, -40]
+		  DstBlock		  "Switch3"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Selector1"
+		  SrcPort		  1
+		  Points		  [70, 0; 0, 50]
+		  DstBlock		  "Switch3"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VPER_TargXPosVect30_m"
+		  SrcPort		  1
+		  DstBlock		  "Goto1"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NIFO_FCWTargetVehRelSpeedX_mps"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch2"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_FCWTargetVehRelSpeedX_mps"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From2"
+		  SrcPort		  1
+		  DstBlock		  "Selector1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "From1"
+		  SrcPort		  1
+		  DstBlock		  "Selector"
+		  DstPort		  2
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VIFO_TargVehRelSpdXVect30_mps"
+		  SrcPort		  1
+		  DstBlock		  "Goto"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VIFO_FCWMCTTargId_num"
+		  SrcPort		  1
+		  Points		  [170, 0]
+		  Branch {
+		    Points		    [0, -70]
+		    DstBlock		    "Goto2"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "KIFO_RelSpeedNoTargets_kph"
+		  SrcPort		  1
+		  DstBlock		  "kph2mps"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Get_Information_For_VRU_MC_Ped"
+	      SID		      "314"
+	      Ports		      [6, 5]
+	      Position		      [1115, 1517, 1485, 1813]
+	      ZOrder		      303
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"NIFO_VRUTargetPedRelSpeedX_mps"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		2
+		PropagatedSignals	"NIFO_VRUMCPedXPosition_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		3
+		PropagatedSignals	"NIFO_VRUTargetPedAssigned_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		4
+		PropagatedSignals	"NIFO_VRUMCPedId_num"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		5
+		PropagatedSignals	"NIFO_VRUMCLongAccel_mps2"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"Get_Information_For_VRU_MC_Ped"
+		Location		[169, 33, 1555, 821]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"60"
+		Block {
+		  BlockType		  Inport
+		  Name			  "VIFO_VRUMCTTargId_num"
+		  SID			  "315"
+		  Position		  [20, 103, 50, 117]
+		  ZOrder		  151
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VIFO_VRUMCTTargId_num"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VPER_TargXPosVect30_m"
+		  SID			  "316"
+		  Position		  [20, 268, 50, 282]
+		  ZOrder		  152
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VPER_TargXPosVect30_m"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VIFO_TargVehRelSpdXVect30_mps"
+		  SID			  "317"
+		  Position		  [20, 363, 50, 377]
+		  ZOrder		  153
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VIFO_TargVehRelSpdXVect30_mps"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VPER_TargIdVect30_num"
+		  SID			  "318"
+		  Position		  [20, 458, 50, 472]
+		  ZOrder		  158
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VPER_TargIdVect30_num"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VIFO_TargAccelXVect30_mps2"
+		  SID			  "319"
+		  Position		  [20, 548, 50, 562]
+		  ZOrder		  290
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VIFO_TargAccelXVect30_mps2"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VPER_TargYPosVect30_m"
+		  SID			  "376"
+		  Position		  [20, 648, 50, 662]
+		  ZOrder		  298
+		  Port			  "6"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "FALSE"
+		  SID			  "320"
+		  Position		  [635, 155, 740, 185]
+		  ZOrder		  150
+		  ShowName		  off
+		  Value			  "FALSE"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From"
+		  SID			  "321"
+		  Position		  [635, 261, 865, 289]
+		  ZOrder		  123
+		  ShowName		  off
+		  GotoTag		  "VIFO_TargVehRelSpdXVect30_mps"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From1"
+		  SID			  "381"
+		  Position		  [635, 1291, 865, 1319]
+		  ZOrder		  303
+		  ShowName		  off
+		  GotoTag		  "VPER_TargYPosVect30_m"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From3"
+		  SID			  "322"
+		  Position		  [635, 526, 865, 554]
+		  ZOrder		  125
+		  ShowName		  off
+		  GotoTag		  "VPER_TargXPosVect30_m"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From5"
+		  SID			  "323"
+		  Position		  [635, 776, 865, 804]
+		  ZOrder		  159
+		  ShowName		  off
+		  GotoTag		  "VPER_TargIdVect30_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From7"
+		  SID			  "324"
+		  Position		  [635, 1026, 865, 1054]
+		  ZOrder		  292
+		  ShowName		  off
+		  GotoTag		  "VIFO_TargAccelXVect30_mps2"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From_VIFO_VRUMCTTargId_num_1"
+		  SID			  "325"
+		  Position		  [635, 321, 865, 349]
+		  ZOrder		  132
+		  ShowName		  off
+		  GotoTag		  "VIFO_VRUMCTTargId_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From_VIFO_VRUMCTTargId_num_2"
+		  SID			  "326"
+		  Position		  [635, 586, 865, 614]
+		  ZOrder		  133
+		  ShowName		  off
+		  GotoTag		  "VIFO_VRUMCTTargId_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From_VIFO_VRUMCTTargId_num_3"
+		  SID			  "327"
+		  Position		  [635, 836, 865, 864]
+		  ZOrder		  161
+		  ShowName		  off
+		  GotoTag		  "VIFO_VRUMCTTargId_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From_VIFO_VRUMCTTargId_num_4"
+		  SID			  "328"
+		  Position		  [635, 1086, 865, 1114]
+		  ZOrder		  294
+		  ShowName		  off
+		  GotoTag		  "VIFO_VRUMCTTargId_num"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From_VIFO_VRUMCTTargId_num_5"
+		  SID			  "382"
+		  Position		  [635, 1356, 865, 1384]
+		  ZOrder		  304
+		  ShowName		  off
+		  GotoTag		  "VIFO_VRUMCTTargId_num"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto"
+		  SID			  "329"
+		  Position		  [275, 352, 520, 388]
+		  ZOrder		  144
+		  ShowName		  off
+		  GotoTag		  "VIFO_TargVehRelSpdXVect30_mps"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto1"
+		  SID			  "330"
+		  Position		  [275, 257, 520, 293]
+		  ZOrder		  145
+		  ShowName		  off
+		  GotoTag		  "VPER_TargXPosVect30_m"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto3"
+		  SID			  "331"
+		  Position		  [275, 447, 520, 483]
+		  ZOrder		  157
+		  ShowName		  off
+		  GotoTag		  "VPER_TargIdVect30_num"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto_VIFO_VRUMCTTargId_num"
+		  SID			  "332"
+		  Position		  [270, 37, 515, 73]
+		  ZOrder		  146
+		  ShowName		  off
+		  GotoTag		  "VIFO_VRUMCTTargId_num"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto_VPER_TargLongAccelVect30_mps1"
+		  SID			  "377"
+		  Position		  [275, 637, 520, 673]
+		  ZOrder		  299
+		  ShowName		  off
+		  GotoTag		  "VPER_TargYPosVect30_m"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto_VPER_TargLongAccelVect30_mps2"
+		  SID			  "333"
+		  Position		  [275, 537, 520, 573]
+		  ZOrder		  291
+		  ShowName		  off
+		  GotoTag		  "VIFO_TargAccelXVect30_mps2"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_RelSpeedNoTargets_kph"
+		  SID			  "334"
+		  Position		  [705, 422, 885, 448]
+		  ZOrder		  142
+		  ShowName		  off
+		  Value			  "KIFO_RelSpeedNoTargets_kph"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_TargetIdNoTargets_num"
+		  SID			  "335"
+		  Position		  [820, 947, 1015, 973]
+		  ZOrder		  286
+		  ShowName		  off
+		  Value			  "KIFO_TargetIdNoTargets_num"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_TargetIdNoTargets_num1"
+		  SID			  "336"
+		  Position		  [805, 1197, 1015, 1223]
+		  ZOrder		  297
+		  ShowName		  off
+		  Value			  "KIFO_LongAccelNoTargets_mps2"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_XPositionNoTargets_m"
+		  SID			  "337"
+		  Position		  [840, 697, 1015, 723]
+		  ZOrder		  143
+		  ShowName		  off
+		  Value			  "KIFO_XPositionNoTargets_m"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_XPositionNoTargets_m1"
+		  SID			  "383"
+		  Position		  [820, 1452, 995, 1478]
+		  ZOrder		  305
+		  ShowName		  off
+		  Value			  "KIFO_YPositionNoTargets_m"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator1"
+		  SID			  "338"
+		  Ports			  [2, 1]
+		  Position		  [270, 102, 300, 133]
+		  ZOrder		  128
+		  ShowName		  off
+		  Operator		  "~="
+		  InputSameDT		  off
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_VRUTargetPedAssigned_flg"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector"
+		  SID			  "339"
+		  Ports			  [2, 1]
+		  Position		  [935, 306, 975, 344]
+		  ZOrder		  124
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector1"
+		  SID			  "340"
+		  Ports			  [2, 1]
+		  Position		  [935, 571, 975, 609]
+		  ZOrder		  126
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector2"
+		  SID			  "341"
+		  Ports			  [2, 1]
+		  Position		  [935, 821, 975, 859]
+		  ZOrder		  160
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector3"
+		  SID			  "342"
+		  Ports			  [2, 1]
+		  Position		  [935, 1071, 975, 1109]
+		  ZOrder		  293
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Selector
+		  Name			  "Selector5"
+		  SID			  "379"
+		  Ports			  [2, 1]
+		  Position		  [940, 1341, 980, 1379]
+		  ZOrder		  301
+		  ShowName		  off
+		  InputPortWidth	  "30"
+		  IndexOptions		  "Index vector (port)"
+		  Indices		  "[1 3]"
+		  OutputSizes		  "1"
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch1"
+		  SID			  "343"
+		  Position		  [810, 97, 855, 143]
+		  ZOrder		  147
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_VRUTargetPedAssigned_flg"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch2"
+		  SID			  "344"
+		  Position		  [1125, 382, 1170, 428]
+		  ZOrder		  140
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_VRUTargetPedRelSpeedX_mps"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch3"
+		  SID			  "345"
+		  Position		  [1125, 632, 1170, 678]
+		  ZOrder		  141
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_VRUMCPedXPosition_m"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch4"
+		  SID			  "346"
+		  Position		  [1125, 882, 1170, 928]
+		  ZOrder		  162
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_VRUMCPedId_num"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch5"
+		  SID			  "347"
+		  Position		  [1125, 1132, 1170, 1178]
+		  ZOrder		  295
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_VRUMCLongAccel_mps2"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Switch
+		  Name			  "Switch6"
+		  SID			  "380"
+		  Position		  [1125, 1392, 1170, 1438]
+		  ZOrder		  302
+		  ShowName		  off
+		  Criteria		  "u2 ~= 0"
+		  InputSameDT		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_VRUMCPedYPosition_m"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "TRUE"
+		  SID			  "348"
+		  Position		  [635, 40, 740, 70]
+		  ZOrder		  149
+		  ShowName		  off
+		  Value			  "TRUE"
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator"
+		  SID			  "384"
+		  Position		  [1480, 1405, 1500, 1425]
+		  ZOrder		  306
+		  ShowName		  off
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "ZERO_INT"
+		  SID			  "349"
+		  Position		  [130, 167, 210, 193]
+		  ZOrder		  129
+		  ShowName		  off
+		  Value			  "ZERO_INT"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "kph2mps"
+		  SID			  "350"
+		  Ports			  [1, 1]
+		  Position		  [920, 424, 1015, 446]
+		  ZOrder		  287
+		  ShowName		  off
+		  LibraryVersion	  "1.475"
+		  SourceBlock		  "hcu_lib/kph2mps"
+		  SourceType		  "Conversion"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_VRUTargetPedRelSpeedX_mps"
+		  SID			  "351"
+		  Position		  [1475, 398, 1505, 412]
+		  ZOrder		  154
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_VRUMCPedXPosition_m"
+		  SID			  "352"
+		  Position		  [1475, 648, 1505, 662]
+		  ZOrder		  155
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_VRUTargetPedAssigned_flg"
+		  SID			  "353"
+		  Position		  [1485, 113, 1515, 127]
+		  ZOrder		  156
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_VRUMCPedId_num"
+		  SID			  "354"
+		  Position		  [1475, 898, 1505, 912]
+		  ZOrder		  164
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_VRUMCLongAccel_mps2"
+		  SID			  "355"
+		  Position		  [1475, 1148, 1505, 1162]
+		  ZOrder		  296
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  Name			  "NIFO_VRUMCPedXPosition_m"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch3"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_VRUMCPedXPosition_m"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Selector"
+		  SrcPort		  1
+		  Points		  [70, 0; 0, 65]
+		  DstBlock		  "Switch2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From3"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, 40]
+		  DstBlock		  "Selector1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, 40]
+		  DstBlock		  "Selector"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "FALSE"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, -35]
+		  DstBlock		  "Switch1"
+		  DstPort		  3
+		}
+		Line {
+		  Name			  "NIFO_VRUTargetPedAssigned_flg"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch1"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_VRUTargetPedAssigned_flg"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "TRUE"
+		  SrcPort		  1
+		  Points		  [30, 0; 0, 50]
+		  DstBlock		  "Switch1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "ZERO_INT"
+		  SrcPort		  1
+		  Points		  [40, 0]
+		  DstBlock		  "Relational\nOperator1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "KIFO_XPositionNoTargets_m"
+		  SrcPort		  1
+		  Points		  [25, 0; 0, -40]
+		  DstBlock		  "Switch3"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Selector1"
+		  SrcPort		  1
+		  Points		  [70, 0; 0, 50]
+		  DstBlock		  "Switch3"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VPER_TargXPosVect30_m"
+		  SrcPort		  1
+		  DstBlock		  "Goto1"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NIFO_VRUTargetPedRelSpeedX_mps"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch2"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_VRUTargetPedRelSpeedX_mps"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From_VIFO_VRUMCTTargId_num_2"
+		  SrcPort		  1
+		  DstBlock		  "Selector1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "From_VIFO_VRUMCTTargId_num_1"
+		  SrcPort		  1
+		  DstBlock		  "Selector"
+		  DstPort		  2
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VIFO_TargVehRelSpdXVect30_mps"
+		  SrcPort		  1
+		  DstBlock		  "Goto"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VIFO_VRUMCTTargId_num"
+		  SrcPort		  1
+		  Points		  [170, 0]
+		  Branch {
+		    Points		    [0, -55]
+		    DstBlock		    "Goto_VIFO_VRUMCTTargId_num"
+		    DstPort		    1
+		  }
+		  Branch {
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "KIFO_RelSpeedNoTargets_kph"
+		  SrcPort		  1
+		  DstBlock		  "kph2mps"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VPER_TargIdVect30_num"
+		  SrcPort		  1
+		  DstBlock		  "Goto3"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NIFO_VRUMCPedId_num"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch4"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_VRUMCPedId_num"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From5"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, 40]
+		  DstBlock		  "Selector2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "KIFO_TargetIdNoTargets_num"
+		  SrcPort		  1
+		  Points		  [50, 0; 0, -40]
+		  DstBlock		  "Switch4"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Selector2"
+		  SrcPort		  1
+		  Points		  [70, 0; 0, 50]
+		  DstBlock		  "Switch4"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From_VIFO_VRUMCTTargId_num_3"
+		  SrcPort		  1
+		  DstBlock		  "Selector2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "kph2mps"
+		  SrcPort		  1
+		  Points		  [27, 0; 0, -15]
+		  DstBlock		  "Switch2"
+		  DstPort		  3
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VIFO_TargAccelXVect30_mps2"
+		  SrcPort		  1
+		  DstBlock		  "Goto_VPER_TargLongAccelVect30_mps2"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NIFO_VRUMCLongAccel_mps2"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch5"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_VRUMCLongAccel_mps2"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From7"
+		  SrcPort		  1
+		  Points		  [35, 0; 0, 40]
+		  DstBlock		  "Selector3"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "KIFO_TargetIdNoTargets_num1"
+		  SrcPort		  1
+		  Points		  [50, 0; 0, -40]
+		  DstBlock		  "Switch5"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "Selector3"
+		  SrcPort		  1
+		  Points		  [70, 0; 0, 50]
+		  DstBlock		  "Switch5"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From_VIFO_VRUMCTTargId_num_4"
+		  SrcPort		  1
+		  DstBlock		  "Selector3"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "NIFO_VRUTargetPedAssigned_flg"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Relational\nOperator1"
+		  SrcPort		  1
+		  Points		  [245, 0]
+		  Branch {
+		    Points		    [0, 285]
+		    Branch {
+		    Points		    [0, 250; 1, 0]
+		    Branch {
+		    Points		    [0, 250]
+		    Branch {
+		    Points		    [0, 250]
+		    Branch {
+		    Points		    [0, 260]
+		    DstBlock		    "Switch6"
+		    DstPort		    2
+		    }
+		    Branch {
+		    DstBlock		    "Switch5"
+		    DstPort		    2
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Switch4"
+		    DstPort		    2
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Switch3"
+		    DstPort		    2
+		    }
+		    }
+		    Branch {
+		    DstBlock		    "Switch2"
+		    DstPort		    2
+		    }
+		  }
+		  Branch {
+		    DstBlock		    "Switch1"
+		    DstPort		    2
+		  }
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VPER_TargYPosVect30_m"
+		  SrcPort		  1
+		  DstBlock		  "Goto_VPER_TargLongAccelVect30_mps1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From1"
+		  SrcPort		  1
+		  Points		  [32, 0; 0, 45]
+		  DstBlock		  "Selector5"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "From_VIFO_VRUMCTTargId_num_5"
+		  SrcPort		  1
+		  DstBlock		  "Selector5"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Selector5"
+		  SrcPort		  1
+		  Points		  [62, 0; 0, 40]
+		  DstBlock		  "Switch6"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "KIFO_XPositionNoTargets_m1"
+		  SrcPort		  1
+		  Points		  [60, 0; 0, -35]
+		  DstBlock		  "Switch6"
+		  DstPort		  3
+		}
+		Line {
+		  Name			  "NIFO_VRUMCPedYPosition_m"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Switch6"
+		  SrcPort		  1
+		  DstBlock		  "Terminator"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto1"
+	      SID		      "162"
+	      Position		      [630, 352, 840, 388]
+	      ZOrder		      156
+	      ShowName		      off
+	      GotoTag		      "VPER_TargXPosVect30_m"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto2"
+	      SID		      "164"
+	      Position		      [630, 417, 840, 453]
+	      ZOrder		      158
+	      ShowName		      off
+	      GotoTag		      "VIFO_TargVehRelSpdXVect30_mps"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto3"
+	      SID		      "207"
+	      Position		      [630, 482, 840, 518]
+	      ZOrder		      280
+	      ShowName		      off
+	      GotoTag		      "VPER_TargIdVect30_num"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto_VPER_TargLongAccelVect30_mps2"
+	      SID		      "242"
+	      Position		      [630, 547, 840, 583]
+	      ZOrder		      289
+	      ShowName		      off
+	      GotoTag		      "VIFO_TargAccelXVect30_mps2"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_FCWTargetVehRelSpeedX_mps"
+	      SID		      "94"
+	      Position		      [1810, 328, 1840, 342]
+	      ZOrder		      137
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_FCWMCVehXPosition_m"
+	      SID		      "95"
+	      Position		      [1810, 393, 1840, 407]
+	      ZOrder		      138
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_FCWTargetVehAssigned_flg"
+	      SID		      "96"
+	      Position		      [1810, 458, 1840, 472]
+	      ZOrder		      139
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_AEBTargetVehRelSpeedX_mps"
+	      SID		      "165"
+	      Position		      [1810, 743, 1840, 757]
+	      ZOrder		      159
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_AEBMCVehXPosition_m"
+	      SID		      "166"
+	      Position		      [1810, 793, 1840, 807]
+	      ZOrder		      160
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_AEBTargetVehAssigned_flg"
+	      SID		      "167"
+	      Position		      [1810, 843, 1840, 857]
+	      ZOrder		      161
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_FCWMCVehId_num"
+	      SID		      "206"
+	      Position		      [1810, 523, 1840, 537]
+	      ZOrder		      279
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_AEBMCVehId_num"
+	      SID		      "218"
+	      Position		      [1810, 893, 1840, 907]
+	      ZOrder		      282
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_FCWMCLongAccel_mps2"
+	      SID		      "241"
+	      Position		      [1810, 588, 1840, 602]
+	      ZOrder		      288
+	      Port		      "9"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_AEBMCLongAccel_mps2"
+	      SID		      "251"
+	      Position		      [1810, 943, 1840, 957]
+	      ZOrder		      290
+	      Port		      "10"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_ACCTargetVehRelSpeedX_mps"
+	      SID		      "261"
+	      Position		      [1810, 1138, 1840, 1152]
+	      ZOrder		      296
+	      Port		      "11"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_ACCMCVehXPosition_m"
+	      SID		      "262"
+	      Position		      [1810, 1188, 1840, 1202]
+	      ZOrder		      297
+	      Port		      "12"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_ACCTargetVehAssigned_flg"
+	      SID		      "263"
+	      Position		      [1810, 1238, 1840, 1252]
+	      ZOrder		      298
+	      Port		      "13"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_ACCMCVehId_num"
+	      SID		      "264"
+	      Position		      [1810, 1288, 1840, 1302]
+	      ZOrder		      300
+	      Port		      "14"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_ACCMCLongAccel_mps2"
+	      SID		      "265"
+	      Position		      [1810, 1338, 1840, 1352]
+	      ZOrder		      301
+	      Port		      "15"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_VRUTargetPedRelSpeedX_mps"
+	      SID		      "361"
+	      Position		      [1810, 1538, 1840, 1552]
+	      ZOrder		      309
+	      Port		      "16"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_VRUMCPedXPosition_m"
+	      SID		      "362"
+	      Position		      [1810, 1598, 1840, 1612]
+	      ZOrder		      310
+	      Port		      "17"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_VRUTargetPedAssigned_flg"
+	      SID		      "363"
+	      Position		      [1810, 1658, 1840, 1672]
+	      ZOrder		      311
+	      Port		      "18"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_VRUMCPedId_num"
+	      SID		      "364"
+	      Position		      [1810, 1718, 1840, 1732]
+	      ZOrder		      312
+	      Port		      "19"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NIFO_VRUMCLongAccel_mps2"
+	      SID		      "365"
+	      Position		      [1810, 1778, 1840, 1792]
+	      ZOrder		      313
+	      Port		      "20"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_VRU_MC_Ped"
+	      SrcPort		      3
+	      DstBlock		      "NIFO_VRUTargetPedAssigned_flg"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_VRU_MC_Ped"
+	      SrcPort		      2
+	      DstBlock		      "NIFO_VRUMCPedXPosition_m"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_VRU_MC_Ped"
+	      SrcPort		      5
+	      DstBlock		      "NIFO_VRUMCLongAccel_mps2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_VRU_MC_Ped"
+	      SrcPort		      1
+	      DstBlock		      "NIFO_VRUTargetPedRelSpeedX_mps"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From_VPER_TargLongAccelVect30_mps3"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_VRU_MC_Ped"
+	      DstPort		      5
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From8"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_VRU_MC_Ped"
+	      DstPort		      4
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From7"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_VRU_MC_Ped"
+	      DstPort		      3
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From6"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_VRU_MC_Ped"
+	      DstPort		      2
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VIFO_VRUMCTTargId_num"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_VRU_MC_Ped"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_ACC_MC_Veh"
+	      SrcPort		      5
+	      DstBlock		      "NIFO_ACCMCLongAccel_mps2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From_VPER_TargLongAccelVect30_mps1"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_ACC_MC_Veh"
+	      DstPort		      5
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_ACC_MC_Veh"
+	      SrcPort		      4
+	      DstBlock		      "NIFO_ACCMCVehId_num"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From5"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_ACC_MC_Veh"
+	      DstPort		      4
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_ACC_MC_Veh"
+	      SrcPort		      3
+	      DstBlock		      "NIFO_ACCTargetVehAssigned_flg"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_ACC_MC_Veh"
+	      SrcPort		      2
+	      DstBlock		      "NIFO_ACCMCVehXPosition_m"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_ACC_MC_Veh"
+	      SrcPort		      1
+	      DstBlock		      "NIFO_ACCTargetVehRelSpeedX_mps"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From4"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_ACC_MC_Veh"
+	      DstPort		      3
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From3"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_ACC_MC_Veh"
+	      DstPort		      2
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VIFO_ACCMCTTargId_num"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_ACC_MC_Veh"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_AEB_MC_Veh"
+	      SrcPort		      5
+	      DstBlock		      "NIFO_AEBMCLongAccel_mps2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From_VPER_TargLongAccelVect30_mps2"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_AEB_MC_Veh"
+	      DstPort		      5
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_FCW_MC_Veh"
+	      SrcPort		      5
+	      DstBlock		      "NIFO_FCWMCLongAccel_mps2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "VIFO_TargAccelXVect30_mps2"
+	      SrcPort		      1
+	      Points		      [120, 0]
+	      Branch {
+		Labels			[-1, 0]
+		DstBlock		"Get_Information_For_FCW_MC_Veh"
+		DstPort			5
+	      }
+	      Branch {
+		Points			[0, -30]
+		DstBlock		"Goto_VPER_TargLongAccelVect30_mps2"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_AEB_MC_Veh"
+	      SrcPort		      4
+	      DstBlock		      "NIFO_AEBMCVehId_num"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From2"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_AEB_MC_Veh"
+	      DstPort		      4
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_FCW_MC_Veh"
+	      SrcPort		      4
+	      DstBlock		      "NIFO_FCWMCVehId_num"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "VPER_TargIdVect30_num"
+	      SrcPort		      1
+	      Points		      [119, 0]
+	      Branch {
+		Labels			[-1, 0]
+		DstBlock		"Get_Information_For_FCW_MC_Veh"
+		DstPort			4
+	      }
+	      Branch {
+		Points			[0, -30]
+		DstBlock		"Goto3"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_AEB_MC_Veh"
+	      SrcPort		      3
+	      DstBlock		      "NIFO_AEBTargetVehAssigned_flg"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_AEB_MC_Veh"
+	      SrcPort		      2
+	      DstBlock		      "NIFO_AEBMCVehXPosition_m"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_AEB_MC_Veh"
+	      SrcPort		      1
+	      DstBlock		      "NIFO_AEBTargetVehRelSpeedX_mps"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From1"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_AEB_MC_Veh"
+	      DstPort		      3
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_AEB_MC_Veh"
+	      DstPort		      2
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VIFO_AEBMCTTargId_num"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_AEB_MC_Veh"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_FCW_MC_Veh"
+	      SrcPort		      3
+	      DstBlock		      "NIFO_FCWTargetVehAssigned_flg"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_FCW_MC_Veh"
+	      SrcPort		      2
+	      DstBlock		      "NIFO_FCWMCVehXPosition_m"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_FCW_MC_Veh"
+	      SrcPort		      1
+	      DstBlock		      "NIFO_FCWTargetVehRelSpeedX_mps"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "VIFO_TargVehRelSpdXVect30_mps"
+	      SrcPort		      1
+	      Points		      [119, 0]
+	      Branch {
+		Labels			[-1, 0]
+		DstBlock		"Get_Information_For_FCW_MC_Veh"
+		DstPort			3
+	      }
+	      Branch {
+		Points			[0, -30]
+		DstBlock		"Goto2"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "VPER_TargXPosVect30_m"
+	      SrcPort		      1
+	      Points		      [118, 0]
+	      Branch {
+		Labels			[-1, 0]
+		DstBlock		"Get_Information_For_FCW_MC_Veh"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[0, -30]
+		DstBlock		"Goto1"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VIFO_FCWMCTTargId_num"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_FCW_MC_Veh"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Get_Information_For_VRU_MC_Ped"
+	      SrcPort		      4
+	      DstBlock		      "NIFO_VRUMCPedId_num"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "VPER_TargYPosVect30_m"
+	      SrcPort		      1
+	      DstBlock		      "Get_Information_For_VRU_MC_Ped"
+	      DstPort		      6
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_FCWTargetVehRelSpeedX_mps"
+	  SID			  "65"
+	  Position		  [2320, 258, 2350, 272]
+	  ZOrder		  92
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_FCWMCVehXPosition_m"
+	  SID			  "66"
+	  Position		  [2320, 298, 2350, 312]
+	  ZOrder		  93
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_FCWTargetVehAssigned_flg"
+	  SID			  "67"
+	  Position		  [2320, 338, 2350, 352]
+	  ZOrder		  94
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_AEBTargetVehRelSpeedX_mps"
+	  SID			  "168"
+	  Position		  [2320, 378, 2350, 392]
+	  ZOrder		  96
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_AEBMCVehXPosition_m"
+	  SID			  "169"
+	  Position		  [2320, 418, 2350, 432]
+	  ZOrder		  97
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_AEBTargetVehAssigned_flg"
+	  SID			  "170"
+	  Position		  [2320, 458, 2350, 472]
+	  ZOrder		  98
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_FCWMCVehId_num"
+	  SID			  "219"
+	  Position		  [2320, 498, 2350, 512]
+	  ZOrder		  279
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_AEBMCVehId_num"
+	  SID			  "220"
+	  Position		  [2320, 538, 2350, 552]
+	  ZOrder		  280
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_FCWMCLongAccel_mps2"
+	  SID			  "253"
+	  Position		  [2320, 578, 2350, 592]
+	  ZOrder		  288
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_AEBMCLongAccel_mps2"
+	  SID			  "254"
+	  Position		  [2320, 618, 2350, 632]
+	  ZOrder		  289
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_ACCTargetVehRelSpeedX_mps"
+	  SID			  "308"
+	  Position		  [2320, 658, 2350, 672]
+	  ZOrder		  302
+	  Port			  "11"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_ACCMCVehXPosition_m"
+	  SID			  "309"
+	  Position		  [2320, 698, 2350, 712]
+	  ZOrder		  303
+	  Port			  "12"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_ACCTargetVehAssigned_flg"
+	  SID			  "310"
+	  Position		  [2320, 738, 2350, 752]
+	  ZOrder		  304
+	  Port			  "13"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_ACCMCVehId_num"
+	  SID			  "311"
+	  Position		  [2320, 778, 2350, 792]
+	  ZOrder		  305
+	  Port			  "14"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_ACCMCLongAccel_mps2"
+	  SID			  "312"
+	  Position		  [2320, 818, 2350, 832]
+	  ZOrder		  306
+	  Port			  "15"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_VRUTargetPedRelSpeedX_mps"
+	  SID			  "366"
+	  Position		  [2320, 858, 2350, 872]
+	  ZOrder		  314
+	  Port			  "16"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_VRUMCPedXPosition_m"
+	  SID			  "367"
+	  Position		  [2320, 898, 2350, 912]
+	  ZOrder		  315
+	  Port			  "17"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_VRUTargetPedAssigned_flg"
+	  SID			  "368"
+	  Position		  [2320, 938, 2350, 952]
+	  ZOrder		  316
+	  Port			  "18"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_VRUMCPedId_num"
+	  SID			  "369"
+	  Position		  [2320, 978, 2350, 992]
+	  ZOrder		  317
+	  Port			  "19"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "NIFO_VRUMCLongAccel_mps2"
+	  SID			  "370"
+	  Position		  [2320, 1018, 2350, 1032]
+	  ZOrder		  318
+	  Port			  "20"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  20
+	  DstBlock		  "NIFO_VRUMCLongAccel_mps2"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  19
+	  DstBlock		  "NIFO_VRUMCPedId_num"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  18
+	  DstBlock		  "NIFO_VRUTargetPedAssigned_flg"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  17
+	  DstBlock		  "NIFO_VRUMCPedXPosition_m"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  16
+	  DstBlock		  "NIFO_VRUTargetPedRelSpeedX_mps"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VIFO_VRUMCTTargId_num"
+	  SrcPort		  1
+	  DstBlock		  "Get_Information_For_MC_Veh"
+	  DstPort		  8
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  15
+	  DstBlock		  "NIFO_ACCMCLongAccel_mps2"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  14
+	  DstBlock		  "NIFO_ACCMCVehId_num"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  13
+	  DstBlock		  "NIFO_ACCTargetVehAssigned_flg"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  12
+	  DstBlock		  "NIFO_ACCMCVehXPosition_m"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  11
+	  DstBlock		  "NIFO_ACCTargetVehRelSpeedX_mps"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VIFO_ACCMCTTargId_num"
+	  SrcPort		  1
+	  DstBlock		  "Get_Information_For_MC_Veh"
+	  DstPort		  7
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  10
+	  DstBlock		  "NIFO_AEBMCLongAccel_mps2"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  9
+	  DstBlock		  "NIFO_FCWMCLongAccel_mps2"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VIFO_TargAccelXVect30_mps2"
+	  SrcPort		  1
+	  DstBlock		  "Get_Information_For_MC_Veh"
+	  DstPort		  6
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VIFO_FCWMCTTargetId_enum"
+	  SrcPort		  1
+	  DstBlock		  "Get_Information_For_MC_Veh"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  8
+	  DstBlock		  "NIFO_AEBMCVehId_num"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  7
+	  DstBlock		  "NIFO_FCWMCVehId_num"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VPER_TargIdVect30_num"
+	  SrcPort		  1
+	  DstBlock		  "Get_Information_For_MC_Veh"
+	  DstPort		  5
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VIFO_AEBMCTTargetId_enum"
+	  SrcPort		  1
+	  DstBlock		  "Get_Information_For_MC_Veh"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  6
+	  DstBlock		  "NIFO_AEBTargetVehAssigned_flg"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  5
+	  DstBlock		  "NIFO_AEBMCVehXPosition_m"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  4
+	  DstBlock		  "NIFO_AEBTargetVehRelSpeedX_mps"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VIFO_TargVehRelSpdXVect30_mps"
+	  SrcPort		  1
+	  DstBlock		  "Get_Information_For_MC_Veh"
+	  DstPort		  4
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VPER_TargXPosVect30_m"
+	  SrcPort		  1
+	  DstBlock		  "Get_Information_For_MC_Veh"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  3
+	  DstBlock		  "NIFO_FCWTargetVehAssigned_flg"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  2
+	  DstBlock		  "NIFO_FCWMCVehXPosition_m"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Get_Information_For_MC_Veh"
+	  SrcPort		  1
+	  DstBlock		  "NIFO_FCWTargetVehRelSpeedX_mps"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "VPER_TargYPosVect30_m"
+	  SrcPort		  1
+	  DstBlock		  "Get_Information_For_MC_Veh"
+	  DstPort		  9
+	}
+      }
+    }
+  }
+}

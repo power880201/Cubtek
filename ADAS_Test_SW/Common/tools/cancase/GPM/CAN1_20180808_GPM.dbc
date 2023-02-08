@@ -1,0 +1,943 @@
+VERSION "DNNBNNNYNYNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN/4/%%%/4/'%**4NNN///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: BCM FECU CSW ARD PEPS ECU5 ADAS EPAS ECM TCM ABS APA ECU12 ECU13 ECU14 IOGW ECU16 ABM VIG DSEAT PSEAT PTG APM ECU23 ECU24 ECU25 ECU26 ECU27 ECU28 ECU29 ECU30 ECU31 Tester Default_Receiver Handler
+
+
+BO_ 790 ECM1: 8 ECM
+ SG_ LV_CAN_SUB_TQI : 7|1@0+ (1,0) [0|0] ""  ADAS,TCM,ABS,Default_Receiver
+ SG_ LV_CAN_N_ERR : 1|1@0+ (1,0) [0|0] ""  BCM,ARD,ECU5,ADAS,TCM,ABS,VIG,Default_Receiver
+ SG_ CAN_TQI_ACOR : 15|8@0+ (1.96,-100) [0|0] "Nm"  ECU5,ADAS,TCM,ABS,Default_Receiver
+ SG_ CAN_N : 23|16@0+ (0.125,0) [0|0] "RPM"  BCM,ARD,PEPS,ECU5,ADAS,EPAS,TCM,ABS,VIG,Default_Receiver
+ SG_ CAN_TQI : 39|8@0+ (1.96,-100) [0|0] "Nm"  ADAS,TCM,ABS,Default_Receiver
+ SG_ CAN_TQFR : 47|8@0+ (1.96,-100) [0|0] "Nm"  ADAS,TCM,ABS,Default_Receiver
+
+BO_ 809 ECM2: 8 ECM
+ SG_ CAN_OBD_STAT_DR : 7|1@0+ (1,0) [0|0] ""  ADAS,TCM,ABS,Default_Receiver
+ SG_ CAN_OBD_STAT_WU : 6|1@0+ (1,0) [0|0] ""  ADAS,TCM,ABS,Default_Receiver
+
+BO_ 821 ECM3: 8 ECM
+ SG_ MIL_ON_OFF_Request : 7|1@0+ (1,0) [0|0] ""  BCM,ADAS,VIG,Default_Receiver
+ SG_ LV_CAN_ERRPVS : 6|1@0+ (1,0) [0|0] ""  ADAS,TCM,ABS,ABM,Default_Receiver
+ SG_ LV_CAN_ERRPAS : 5|1@0+ (1,0) [0|0] ""  ECU5,ADAS,TCM,ABS,ABM,Default_Receiver
+ SG_ CAN_PV_EFC : 31|8@0+ (0.3906,0) [0|0] "%"  ADAS,TCM,ABS,ABM,Default_Receiver
+ SG_ CAN_PV_AV : 39|8@0+ (0.3906,0) [0|0] "%"  ECU5,ADAS,TCM,ABS,ABM,VIG,Default_Receiver
+
+BO_ 826 ECM4: 8 ECM
+ SG_ CAN_ENG_STA : 11|3@0+ (1,0) [0|0] ""  PEPS,ADAS,Default_Receiver
+
+BO_ 830 ECM7: 8 ECM
+ SG_ CAN_TQI_DES : 39|8@0+ (1.98,-100) [0|0] "Nm"  ADAS,ABS,Default_Receiver
+
+BO_ 1800 NMmECM: 8 ECM
+ SG_ NM_ECM_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_ECM_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 832 TCM1: 8 TCM
+ SG_ CAN_SWI_CC_ETCU : 7|2@0+ (1,0) [0|0] ""  ADAS,ECM,Default_Receiver
+ SG_ CAN_ETCU_STATE : 13|2@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,ECM,VIG,Default_Receiver
+ SG_ CAN_GEAR_SEL_ETCU : 10|3@0+ (1,0) [0|0] ""  BCM,ARD,PEPS,ECU5,ADAS,ECM,ABS,APA,IOGW,VIG,DSEAT,Default_Receiver
+ SG_ CAN_ETCU_OBD : 18|1@0+ (1,0) [0|0] ""  ADAS,ECM,Default_Receiver
+ SG_ CAN_GEAR_STA_NOW_V : 42|1@0+ (1,0) [0|0] ""  ARD,ECU5,ADAS,EPAS,Default_Receiver
+ SG_ CAN_ETCU_SVL : 41|2@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,VIG,Default_Receiver
+ SG_ CAN_GEAR_STATE_NOW : 55|3@0+ (1,0) [0|0] ""  ARD,ECU5,ADAS,EPAS,ECM,ABS,ECU14,PTG,Default_Receiver
+ SG_ LV_CAN_N_TM_ERR : 52|1@0+ (1,0) [0|0] ""  ECU5,ADAS,ECM,Default_Receiver
+ SG_ CAN_N_TM : 51|12@0+ (2,0) [0|0] "rpm"  ECU5,ADAS,ECM,Default_Receiver
+
+BO_ 842 TCM2: 8 TCM
+ SG_ DR_MODE_IND : 23|4@0+ (1,0) [0|0] ""  BCM,ADAS,ECM,IOGW,VIG,Default_Receiver
+
+BO_ 1801 NMmTCM: 8 TCM
+ SG_ NM_TCM_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_TCM_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 864 ABS2: 8 ABS
+ SG_ VehSpeed : 7|12@0+ (0.125,0) [0|0] "km/h"  BCM,FECU,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,APA,ECU14,IOGW,ABM,VIG,Default_Receiver
+ SG_ VehSpeed_Meter : 11|12@0+ (0.125,0) [0|0] "km/h"  BCM,ARD,ADAS,ECM,PTG,Default_Receiver
+ SG_ ESC_Status : 28|1@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,Default_Receiver
+ SG_ TCS_Status : 27|2@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,Default_Receiver
+ SG_ ABS_Active : 35|1@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,VIG,Default_Receiver
+ SG_ ESC_Active : 34|1@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,ECM,TCM,Default_Receiver
+ SG_ TCS_Active : 33|1@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,ECM,TCM,IOGW,VIG,Default_Receiver
+ SG_ ABS_Failed : 32|1@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,VIG,Default_Receiver
+ SG_ ESC_Failed : 47|1@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,ECM,TCM,VIG,Default_Receiver
+ SG_ TCS_Failed : 46|1@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,ECM,TCM,VIG,Default_Receiver
+ SG_ EBD_Failed : 44|1@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,VIG,Default_Receiver
+ SG_ BrkSw_V : 43|1@0+ (1,0) [0|0] ""  BCM,PEPS,ECU5,ADAS,TCM,ABM,Default_Receiver
+ SG_ BrkSw_Sta : 42|1@0+ (1,0) [0|0] ""  BCM,PEPS,ECU5,ADAS,TCM,ABM,VIG,Default_Receiver
+ SG_ HSA_Active : 41|1@0+ (1,0) [0|0] ""  BCM,ADAS,Default_Receiver
+ SG_ HSA_Failed : 40|1@0+ (1,0) [0|0] ""  BCM,ADAS,ECM,Default_Receiver
+ SG_ VehSpeed_LifeCount : 63|4@0+ (1,0) [0|0] ""  ECU5,ADAS,Default_Receiver
+ SG_ VehSpeed_Checksum : 59|4@0+ (1,0) [0|0] ""  ECU5,ADAS,Default_Receiver
+
+BO_ 896 ABS4: 8 ABS
+ SG_ YawRate_V : 6|1@0+ (1,0) [0|0] ""  BCM,ADAS,Default_Receiver
+ SG_ LatAccel_V : 5|1@0+ (1,0) [0|0] ""  ADAS,APA,Default_Receiver
+ SG_ LongAccel_V : 4|1@0+ (1,0) [0|0] ""  ADAS,APA,Default_Receiver
+ SG_ MCPressure_V : 3|1@0+ (1,0) [0|0] ""  ADAS,ECM,TCM,Default_Receiver
+ SG_ MCPressure : 2|11@0+ (0.1,-11.6) [0|0] "bar"  ADAS,ECM,TCM,Default_Receiver
+ SG_ LatAccel : 23|8@0+ (0.01,-1.27) [0|0] "G's"  ADAS,APA,Default_Receiver
+ SG_ YawRate : 31|16@0+ (0.1,-100) [0|0] "deg/s"  BCM,ADAS,Default_Receiver
+ SG_ LongAccel : 63|8@0+ (0.01,-1.27) [0|0] "G's"  ADAS,APA,Default_Receiver
+
+BO_ 906 ABS5: 8 ABS
+ SG_ RR_RawWhlSpeedLR : 7|12@0+ (0.0625,0) [0|0] "km/h"  BCM,ECU5,ADAS,ECM,TCM,APA,VIG,Default_Receiver
+ SG_ LR_RawWhlSpeedLR : 11|12@0+ (0.0625,0) [0|0] "km/h"  BCM,ECU5,ADAS,ECM,TCM,APA,VIG,Default_Receiver
+ SG_ RF_RawWhlSpeedLR : 31|12@0+ (0.0625,0) [0|0] "km/h"  BCM,ECU5,ADAS,ECM,TCM,APA,VIG,Default_Receiver
+ SG_ LF_RawWhlSpeedLR : 35|12@0+ (0.0625,0) [0|0] "km/h"  BCM,ECU5,ADAS,ECM,TCM,APA,VIG,Default_Receiver
+ SG_ RR_RawWhlSpeedLR_V : 55|1@0+ (1,0) [0|0] ""  ECU5,ADAS,ECM,TCM,APA,VIG,Default_Receiver
+ SG_ LR_RawWhlSpeedLR_V : 54|1@0+ (1,0) [0|0] ""  ECU5,ADAS,ECM,TCM,APA,VIG,Default_Receiver
+ SG_ RF_RawWhlSpeedLR_V : 53|1@0+ (1,0) [0|0] ""  ECU5,ADAS,ECM,TCM,APA,VIG,Default_Receiver
+ SG_ LF_RawWhlSpeedLR_V : 52|1@0+ (1,0) [0|0] ""  ECU5,ADAS,ECM,TCM,APA,VIG,Default_Receiver
+ SG_ WhlSpeed_LifeCount : 63|4@0+ (1,0) [0|0] ""  ECU5,ADAS,ECM,APA,Default_Receiver
+ SG_ WhlSpeed_Checksum : 59|4@0+ (1,0) [0|0] ""  ECU5,ADAS,ECM,APA,Default_Receiver
+
+BO_ 918 ABS6: 8 ABS
+ SG_ RF_Whl_R_Dir : 11|2@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,APA,Default_Receiver
+ SG_ LF_Whl_R_Dir : 27|2@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,APA,Default_Receiver
+ SG_ Steer_Bias : 47|8@0+ (0.5,-63.5) [0|0] "deg"  ADAS,EPAS,Default_Receiver
+ SG_ F_Whl_P_LifeCount : 63|4@0+ (1,0) [0|0] ""  BCM,ADAS,APA,Default_Receiver
+ SG_ F_Whl_P_Checksum : 59|4@0+ (1,0) [0|0] ""  ADAS,APA,Default_Receiver
+
+BO_ 927 ABS7: 8 ABS
+ SG_ RR_Whl_R_Dir : 11|2@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,APA,Default_Receiver
+ SG_ LR_Whl_R_Dir : 27|2@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,APA,Default_Receiver
+ SG_ R_Whl_P_LifeCount : 63|4@0+ (1,0) [0|0] ""  BCM,ADAS,APA,Default_Receiver
+ SG_ R_Whl_P_Checksum : 59|4@0+ (1,0) [0|0] ""  ADAS,APA,Default_Receiver
+
+BO_ 928 EPB1: 8 ABS
+ SG_ PB_BrakeBinStat : 1|2@0+ (1,0) [0|0] ""  PEPS,ADAS,Default_Receiver
+ SG_ EPBSta : 63|3@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+
+BO_ 929 ABS8: 8 ABS
+ SG_ ACCAvail : 33|1@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ BrakDiscTempSta : 32|1@0+ (1,0) [0|0] ""  ADAS,VIG,Default_Receiver
+ SG_ CurBrakeDecReq : 47|8@0+ (0.1,0) [0|0] "m/s2"  ADAS,Default_Receiver
+ SG_ CurBrakeDecReq_A : 55|1@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ DecErrSta : 54|1@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ ActBrkLamp_Sta : 53|1@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ ActBrkLamp_V : 52|1@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ AEBAvail : 51|1@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ ESCBrkSta : 50|3@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ ABS8_RC : 63|4@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ ABS8_CS : 59|4@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+
+BO_ 1802 NMmABS: 8 ABS
+ SG_ NM_ABS_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_ABS_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 882 ADAS1: 8 ADAS
+ SG_ ADAS_StrAngReq : 7|16@0+ (0.1,-720) [0|0] "deg"  Default_Receiver
+ SG_ ADAS_LFCTransGain : 23|8@0+ (0.002,0.8) [0|0] "N/A"  Default_Receiver
+ SG_ ADAS_StrTqReq : 31|12@0+ (0.005,-10) [0|0] "Nm"  Default_Receiver
+ SG_ ADAS_TqRatio : 35|4@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_LFCStatus : 47|3@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_LKAStatus : 44|3@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_EPSMode : 41|2@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_LFCTranGain_A : 55|1@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_StrAngReq_A : 54|1@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_StrTqReq_A : 53|1@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_SHapticReq : 52|1@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS1_LifeCount : 51|4@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS1_Checksum : 63|8@0+ (1,0) [0|0] ""  Default_Receiver
+
+BO_ 889 ADAS2: 8 ADAS
+ SG_ ADAS_PTTqReq : 7|12@0+ (0.2,-100) [0|0] "Nm"  ECM,Default_Receiver
+ SG_ ADAS_ForceIdle : 11|1@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_PTTqReq_A : 10|1@0+ (1,0) [0|0] ""  ECM,TCM,Default_Receiver
+ SG_ ADAS_DecReq_A : 9|1@0+ (1,0) [0|0] ""  ABS,Default_Receiver
+ SG_ ADAS_ForceIdle_A : 8|1@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_DecReq : 23|8@0+ (0.1,0) [0|0] "m/s2"  ABS,Default_Receiver
+ SG_ ADAS_AEBReq : 31|1@0+ (1,0) [0|0] ""  ABS,Default_Receiver
+ SG_ ADAS_AEBReq_A : 30|1@0+ (1,0) [0|0] ""  ABS,Default_Receiver
+ SG_ ADAS_BPrefillReq : 29|1@0+ (1,0) [0|0] ""  ABS,Default_Receiver
+ SG_ ADAS_BPrefillReq_A : 28|1@0+ (1,0) [0|0] ""  ABS,Default_Receiver
+ SG_ ADAS_VehHoldReq : 27|1@0+ (1,0) [0|0] ""  ABS,Default_Receiver
+ SG_ ADAS_PTTqReq_V : 26|1@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_ACCStatus : 25|2@0+ (1,0) [0|0] ""  TCM,ABS,Default_Receiver
+ SG_ ADAS_FaultSta : 37|1@0+ (1,0) [0|0] ""  ABS,Default_Receiver
+ SG_ ADAS_BHapticReq : 36|2@0+ (1,0) [0|0] ""  ABS,Default_Receiver
+ SG_ ADAS_YawRateReq_A : 34|1@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_YawRateReq : 33|10@0+ (0.1,-50) [0|0] "deg/s"  Default_Receiver
+ SG_ ADAS_BrakeStatus : 55|2@0+ (1,0) [0|0] ""  ABS,Default_Receiver
+ SG_ ADAS2_LifeCount : 51|4@0+ (1,0) [0|0] ""  ABS,Default_Receiver
+ SG_ ADAS2_Checksum : 63|8@0+ (1,0) [0|0] ""  ABS,Default_Receiver
+
+BO_ 892 ADAS3: 8 ADAS
+ SG_ ADAS_VehSpdLim : 7|8@0+ (1,0) [0|0] "km/h"  Default_Receiver
+ SG_ ADAS_GearPosReq : 15|4@0+ (1,0) [0|0] ""  TCM,Default_Receiver
+ SG_ ADAS_GearPosReq_A : 11|1@0+ (1,0) [0|0] ""  TCM,Default_Receiver
+ SG_ ADAS_VehSpdLim_A : 8|1@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_ShftPosnReq : 23|3@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_ShftPosnReq_A : 20|1@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_ClutchReq : 19|1@0+ (1,0) [0|0] ""  TCM,Default_Receiver
+ SG_ ADAS_ClutchReq_A : 18|1@0+ (1,0) [0|0] ""  TCM,Default_Receiver
+ SG_ ADAS_WhTqReq_A : 17|1@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_WhTqReq_V : 16|1@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_WhTqReq : 31|16@0+ (0.2,-5000) [0|0] "Nm"  Default_Receiver
+ SG_ ADAS3_LifeCount : 51|4@0+ (1,0) [0|0] ""  TCM,Default_Receiver
+ SG_ ADAS3_Checksum : 63|8@0+ (1,0) [0|0] ""  TCM,Default_Receiver
+
+BO_ 1082 ADAS4: 8 ADAS
+ SG_ ADAS_AEB_Sta : 7|3@0+ (1,0) [0|0] ""  BCM,ARD,Default_Receiver
+ SG_ HazardWarningReq : 4|1@0+ (1,0) [0|0] ""  BCM,IOGW,Default_Receiver
+ SG_ ADAS_FCW_Sta : 3|3@0+ (1,0) [0|0] ""  BCM,ARD,Default_Receiver
+ SG_ RightTurnLightReq : 0|1@0+ (1,0) [0|0] ""  BCM,IOGW,Default_Receiver
+ SG_ ADAS_LDWS_Sta : 15|3@0+ (1,0) [0|0] ""  BCM,ARD,Default_Receiver
+ SG_ LeftTurnLightReq : 12|1@0+ (1,0) [0|0] ""  BCM,IOGW,Default_Receiver
+ SG_ ADAS_PDS_Sta : 11|3@0+ (1,0) [0|0] ""  BCM,ARD,Default_Receiver
+ SG_ ARView_Disp_Req : 8|1@0+ (1,0) [0|0] ""  BCM,Default_Receiver
+ SG_ ADAS_ACC_Sta : 23|3@0+ (1,0) [0|0] ""  BCM,ARD,Default_Receiver
+ SG_ Target_Type : 19|4@0+ (1,0) [0|0] ""  BCM,ARD,Default_Receiver
+ SG_ TimeGapLevel : 31|3@0+ (1,0) [0|0] ""  BCM,ARD,Default_Receiver
+ SG_ ADAS_DAS_Sound_Sta : 27|2@0+ (1,0) [0|0] ""  BCM,Default_Receiver
+ SG_ ACCSetSpeed : 39|8@0+ (1,0) [0|0] "km/h"  BCM,ARD,Default_Receiver
+ SG_ ACCSetSpeed_Disp : 47|3@0+ (1,0) [0|0] ""  BCM,ARD,Default_Receiver
+ SG_ ADAS_WarningMsg : 44|5@0+ (1,0) [0|0] ""  BCM,ARD,Default_Receiver
+ SG_ ADAS_WarningSound : 55|4@0+ (1,0) [0|0] ""  BCM,Default_Receiver
+ SG_ ADAS_FltWrnReq : 51|1@0+ (1,0) [0|0] ""  BCM,ARD,VIG,Default_Receiver
+ SG_ ADAS_DAS_FltWrnReq : 50|1@0+ (1,0) [0|0] ""  BCM,ARD,VIG,Default_Receiver
+ SG_ ADAS_AR_ACC_Sta : 49|2@0+ (1,0) [0|0] ""  BCM,ARD,Default_Receiver
+ SG_ ADAS_NAVI_SpdLim : 63|5@0+ (1,0) [0|0] ""  BCM,ARD,Default_Receiver
+ SG_ ForceLowBeam : 58|1@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ ADAS_AR_Spdset_sta : 57|2@0+ (1,0) [0|0] ""  BCM,ARD,Default_Receiver
+
+BO_ 1084 ADAS5: 8 ADAS
+ SG_ ADAS_LKA_Sta : 7|3@0+ (1,0) [0|0] ""  BCM,ARD,Default_Receiver
+ SG_ ADAS_FCW_Mute : 4|1@0+ (1,0) [0|0] ""  BCM,Default_Receiver
+ SG_ ADAS_LFC_Sta : 3|3@0+ (1,0) [0|0] ""  BCM,ARD,Default_Receiver
+ SG_ ADAS_PDS_Mute : 0|1@0+ (1,0) [0|0] ""  BCM,Default_Receiver
+ SG_ ADAS_LCS_Sta : 15|3@0+ (1,0) [0|0] ""  BCM,Default_Receiver
+ SG_ ADAS_LDWS_Mute : 12|1@0+ (1,0) [0|0] ""  BCM,Default_Receiver
+ SG_ ADAS_LaneModeL : 11|3@0+ (1,0) [0|0] ""  BCM,ARD,Default_Receiver
+ SG_ ADAS_LaneModeR : 23|3@0+ (1,0) [0|0] ""  BCM,ARD,Default_Receiver
+ SG_ ADAS_SenrCal_A : 20|1@0+ (1,0) [0|0] ""  BCM,Default_Receiver
+ SG_ ADAS_LCAS_Sta : 19|3@0+ (1,0) [0|0] ""  BCM,Default_Receiver
+ SG_ ADAS_SenrCal_Sta : 63|4@0+ (1,0) [0|0] ""  BCM,Default_Receiver
+
+BO_ 1798 NMmADAS: 8 ADAS
+ SG_ NM_ADAS_Zero_Byte : 7|8@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ NM_ADAS_D_ES : 15|2@0+ (1,0) [0|0] ""  Default_Receiver
+ SG_ NM_ADAS_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_ADAS_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1982 DiagRespFromADAS: 8 ADAS
+ SG_ DiagRespFromADAS : 7|64@0+ (1,0) [0|0] ""  Tester,Default_Receiver
+
+BO_ 1983 DiagRespFromSENP: 8 ADAS
+ SG_ DiagRespFromSENP : 7|64@0+ (1,0) [0|0] ""  Tester,Default_Receiver
+
+BO_ 922 EPAS1: 8 EPAS
+ SG_ SAS_Angle : 7|16@0+ (0.1,-900) [0|0] "deg"  BCM,ADAS,ECM,ABS,APA,VIG,Default_Receiver
+ SG_ SAS_CAL : 25|1@0+ (1,0) [0|0] ""  ADAS,ABS,APA,Default_Receiver
+ SG_ SAS_OK : 24|1@0+ (1,0) [0|0] ""  BCM,ADAS,ECM,ABS,APA,Default_Receiver
+ SG_ SAS_MsgCount : 39|4@0+ (1,0) [0|0] ""  ADAS,ABS,APA,Default_Receiver
+ SG_ SAS_CheckSum : 35|4@0+ (1,0) [0|0] ""  ADAS,ABS,Default_Receiver
+ SG_ EPS_Sta_Available : 47|2@0+ (1,0) [0|0] ""  ADAS,APA,Default_Receiver
+ SG_ EPS_I_Detect : 45|1@0+ (1,0) [0|0] ""  ADAS,APA,Default_Receiver
+ SG_ EPS_VD_I_Detect : 44|1@0+ (1,0) [0|0] ""  ADAS,APA,Default_Receiver
+ SG_ SAS_CheckSum3 : 51|4@0+ (1,0) [0|0] ""  ADAS,APA,Default_Receiver
+
+BO_ 926 EPAS2: 8 EPAS
+ SG_ Elect_PWR_Consumpt : 7|8@0+ (0.5,0) [0|0] "Amp"  ADAS,Default_Receiver
+ SG_ EpasFailed : 15|1@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,VIG,Default_Receiver
+ SG_ RSP_OK : 14|1@0+ (1,0) [0|0] ""  ADAS,ABS,Default_Receiver
+ SG_ Steering_Torque_V : 8|1@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ Steering_Torque : 23|8@0+ (0.1794,-22.78) [0|0] "Nm"  ADAS,Default_Receiver
+ SG_ R_SAS_Angle : 31|16@0+ (0.1,-1400) [0|0] "deg"  ADAS,ABS,Default_Receiver
+ SG_ SAS_MsgCount2 : 47|4@0+ (1,0) [0|0] ""  ADAS,ABS,Default_Receiver
+ SG_ SAS_CheckSum2 : 43|4@0+ (1,0) [0|0] ""  ADAS,ABS,Default_Receiver
+
+BO_ 1799 NMmEPAS: 8 EPAS
+ SG_ NM_EPAS_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_EPAS_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 954 APA1: 8 APA
+ SG_ APA_V_Rq_EPS_Ctrl : 1|1@0+ (1,0) [0|0] ""  ADAS,EPAS,Default_Receiver
+ SG_ APA_Rq_EPS_Ctrl : 0|1@0+ (1,0) [0|0] ""  ADAS,EPAS,Default_Receiver
+ SG_ APA_RQ_Display : 31|8@0+ (1,0) [0|0] ""  BCM,ADAS,EPAS,Default_Receiver
+ SG_ APA_Roll_Count : 47|4@0+ (1,0) [0|0] ""  ADAS,EPAS,Default_Receiver
+ SG_ APA_checksum : 43|4@0+ (1,0) [0|0] ""  ADAS,EPAS,Default_Receiver
+
+BO_ 1803 NMmAPA: 8 APA
+ SG_ NM_APA_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_APA_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1008 BCM2: 8 BCM
+ SG_ BCM_SRS_Crash_Info : 7|4@0+ (1,0) [0|0] ""  ADAS,ECM,VIG,Default_Receiver
+
+BO_ 1056 BCM1: 8 BCM
+ SG_ BCM_DDrSw_Sta : 13|1@0+ (1,0) [0|0] ""  FECU,ARD,PEPS,ECU5,ADAS,ABS,DSEAT,APM,Default_Receiver
+ SG_ BCM_PDrSw_Sta : 12|1@0+ (1,0) [0|0] ""  ARD,PEPS,ECU5,ADAS,APM,Default_Receiver
+ SG_ BCM_AllDrSw_Sta : 11|1@0+ (1,0) [0|0] ""  ARD,PEPS,ECU5,ADAS,Default_Receiver
+ SG_ BCM_LTurnLp_Sta : 10|1@0+ (1,0) [0|0] ""  ARD,ADAS,IOGW,Default_Receiver
+ SG_ BCM_RTurnLp_Sta : 9|1@0+ (1,0) [0|0] ""  ARD,ADAS,IOGW,Default_Receiver
+ SG_ BCM_TGateSw_Sta : 22|1@0+ (1,0) [0|0] ""  ARD,PEPS,ADAS,ABS,Default_Receiver
+ SG_ BCM_RRDrSw_Sta : 19|1@0+ (1,0) [0|0] ""  ARD,PEPS,ADAS,APM,Default_Receiver
+ SG_ BCM_LRDrSw_Sta : 18|1@0+ (1,0) [0|0] ""  ARD,PEPS,ADAS,APM,Default_Receiver
+ SG_ BCM_HoodSw_Sta : 29|2@0+ (1,0) [0|0] ""  PEPS,ADAS,Default_Receiver
+ SG_ BCM_Hazard_Sta : 38|1@0+ (1,0) [0|0] ""  ADAS,ABS,IOGW,Default_Receiver
+
+BO_ 1072 GW1: 8 BCM
+ SG_ Sta_AMB_Temp : 31|8@0+ (1,-40) [0|0] "Deg C"  ARD,ADAS,ABS,APA,Default_Receiver
+
+BO_ 1078 GW4: 8 BCM
+ SG_ OBU_SMV_Wrn_tone : 17|2@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+
+BO_ 1144 SWC_A: 8 BCM
+ SG_ SWC_CC_Sta : 31|2@0+ (1,0) [0|0] ""  ARD,ADAS,ECM,Default_Receiver
+ SG_ SWC_CANCEL_Sta : 29|2@0+ (1,0) [0|0] ""  ARD,ADAS,ECM,Default_Receiver
+ SG_ SWC_Set_down_Sta : 27|2@0+ (1,0) [0|0] ""  ARD,ADAS,ECM,Default_Receiver
+ SG_ SWC_Res_Up_Sta : 25|2@0+ (1,0) [0|0] ""  ARD,ADAS,ECM,Default_Receiver
+ SG_ SWC_Distance_Sta : 39|2@0+ (1,0) [0|0] ""  ARD,ADAS,Default_Receiver
+
+BO_ 1193 OBUtoADAS1: 8 BCM
+ SG_ ADAS_LDWS_BUTT : 7|2@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ ADAS_PDS_BUTT : 5|2@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ ADAS_FCW_BUTT : 3|2@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ ADAS_AEB_BUTT : 1|2@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ ADAS_LKA_BUTT : 15|2@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ AR_ACC_SW : 13|2@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ OBU_AR_Spdset_Req : 11|2@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ ADAS_LCAS_BUTT : 9|2@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ ADAS_LCS_BUTT : 23|2@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ ADAS_FCWMute_Butt : 21|2@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ ADAS_PDSMute_Butt : 19|2@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ ADAS_LDWSMute_Butt : 17|2@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ ADAS_SenrCal_Req : 25|2@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ ADAS_SenrCal_Req_A : 56|1@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+
+BO_ 1202 NAVI4: 8 BCM
+ SG_ NAVI_Speed_Limit : 44|5@0+ (1,0) [0|0] ""  ARD,ADAS,Default_Receiver
+
+BO_ 1792 NMmBCM: 8 BCM
+ SG_ NM_BCM_AR : 10|1@0+ (1,0) [0|0] ""  FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_BCM_SC : 9|2@0+ (1,0) [0|0] ""  FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1025 PEPS1: 8 PEPS
+ SG_ P_PowerSta : 27|4@0+ (1,0) [0|0] ""  ARD,ADAS,Default_Receiver
+
+BO_ 1796 NMmPEPS: 8 PEPS
+ SG_ NM_PEPS_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_PEPS_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1040 CSW1: 8 CSW
+ SG_ CSW_HdLpSw_Sta : 6|1@0+ (1,0) [0|0] ""  BCM,FECU,ADAS,Default_Receiver
+ SG_ CSW_DimSw_Sta : 5|1@0+ (1,0) [0|0] ""  FECU,ADAS,Default_Receiver
+ SG_ CSW_TurnSw_Sta : 2|2@0+ (1,0) [0|0] ""  BCM,ADAS,APA,IOGW,Default_Receiver
+ SG_ CSW_FWipSw_Sta : 15|3@0+ (1,0) [0|0] ""  BCM,FECU,ADAS,Default_Receiver
+ SG_ CSW_FWipIntPos : 21|3@0+ (1,0) [0|0] ""  BCM,FECU,ADAS,Default_Receiver
+
+BO_ 1794 NMmCSW: 8 CSW
+ SG_ NM_CSW_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_CSW_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1088 FECU1: 8 FECU
+ SG_ FECU_LoBeamRly_Sta : 4|1@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,IOGW,Default_Receiver
+ SG_ FECU_HiBeamRly_Sta : 3|1@0+ (1,0) [0|0] ""  BCM,ARD,ADAS,IOGW,Default_Receiver
+
+BO_ 1793 NMmFECU: 8 FECU
+ SG_ NM_FECU_AR : 10|1@0+ (1,0) [0|0] ""  BCM,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_FECU_SC : 9|2@0+ (1,0) [0|0] ""  BCM,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1104 ARD1: 8 ARD
+ SG_ LowBrakeFluid_Sta : 6|1@0+ (1,0) [0|0] ""  BCM,ADAS,ABS,VIG,Default_Receiver
+ SG_ SeatBelt : 5|1@0+ (1,0) [0|0] ""  BCM,ECU5,ADAS,VIG,Default_Receiver
+ SG_ ODOMETER : 15|24@0+ (0.1,0) [0|0] "km"  BCM,ECU5,ADAS,ABS,VIG,Default_Receiver
+
+BO_ 1285 ARD5: 8 ARD
+ SG_ ARD_Sta : 7|3@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+ SG_ EngCheckLED : 28|1@0+ (1,0) [0|0] ""  BCM,ADAS,Default_Receiver
+
+BO_ 1795 NMmARD: 8 ARD
+ SG_ NM_ARD_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_ARD_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1797 NMmECU5: 8 ECU5
+ SG_ NM_ECU5_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_ECU5_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1804 NMmECU12: 8 ECU12
+ SG_ NM_ECU12_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_ECU12_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1805 NMmECU13: 8 ECU13
+ SG_ NM_ECU13_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_ECU13_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1806 NMmECU14: 8 ECU14
+ SG_ NM_ECU14_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_ECU14_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1807 NMmIOGW: 8 IOGW
+ SG_ NM_IOGW_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_IOGW_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1808 NMmECU16: 8 ECU16
+ SG_ NM_ECU16_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_ECU16_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1809 NMmABM: 8 ABM
+ SG_ NM_ABM_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_ABM_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1810 NMmVIG: 8 VIG
+ SG_ NM_VIG_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_VIG_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1811 NMmDSEAT: 8 DSEAT
+ SG_ NM_DSEAT_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_DSEAT_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1812 NMmPSEAT: 8 PSEAT
+ SG_ NM_PSEAT_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_PSEAT_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1813 NMmPTG: 8 PTG
+ SG_ NM_PTG_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_PTG_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1814 NMmAPM: 8 APM
+ SG_ NM_APM_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_APM_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1815 NMmECU23: 8 ECU23
+ SG_ NM_ECU23_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_ECU23_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1816 NMmECU24: 8 ECU24
+ SG_ NM_ECU24_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_ECU24_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1817 NMmECU25: 8 ECU25
+ SG_ NM_ECU25_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_ECU25_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU26,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1818 NMmECU26: 8 ECU26
+ SG_ NM_ECU26_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_ECU26_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU27,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1819 NMmECU27: 8 ECU27
+ SG_ NM_ECU27_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_ECU27_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU28,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1820 NMmECU28: 8 ECU28
+ SG_ NM_ECU28_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU29,ECU30,ECU31,Default_Receiver
+ SG_ NM_ECU28_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU29,ECU30,ECU31,Default_Receiver
+
+BO_ 1821 NMmECU29: 8 ECU29
+ SG_ NM_ECU29_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU30,ECU31,Default_Receiver
+ SG_ NM_ECU29_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU30,ECU31,Default_Receiver
+
+BO_ 1822 NMmECU30: 8 ECU30
+ SG_ NM_ECU30_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU31,Default_Receiver
+ SG_ NM_ECU30_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU31,Default_Receiver
+
+BO_ 1823 NMmECU31: 8 ECU31
+ SG_ NM_ECU31_AR : 10|1@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,Default_Receiver
+ SG_ NM_ECU31_SC : 9|2@0+ (1,0) [0|0] ""  BCM,FECU,CSW,ARD,PEPS,ECU5,ADAS,EPAS,ECM,TCM,ABS,APA,ECU12,ECU13,ECU14,IOGW,ECU16,ABM,VIG,DSEAT,PSEAT,PTG,APM,ECU23,ECU24,ECU25,ECU26,ECU27,ECU28,ECU29,ECU30,Default_Receiver
+
+BO_ 1918 DiagPhysReqToADAS: 8 Tester
+ SG_ DiagPhysReqToADAS : 7|64@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+
+BO_ 1919 DiagPhysReqToSENP: 8 Tester
+ SG_ DiagPhysReqToSENP : 7|64@0+ (1,0) [0|0] ""  ADAS,Default_Receiver
+
+BO_ 2000 DiagFuncReq: 8 Tester
+ SG_ DiagFuncReq : 7|64@0+ (1,0) [0|0] ""  ARD,ADAS,APA,ABM,VIG,DSEAT,PSEAT,PTG,APM,Default_Receiver
+
+
+
+CM_ "Confidential Document
+To 16027 20180808";
+BA_DEF_  "MessageMap" STRING ;
+BA_DEF_  "BCAN Database" STRING ;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "cyclicX","spontanX","cyclicIfActiveX","spontanWithDelay","cyclicAndSpontanX","cyclicAndSpontanWithDelay","spontanWithRepitition","cyclicIfActiveAndSpontanWD";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 100000;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 100000;
+BA_DEF_DEF_  "MessageMap" "";
+BA_DEF_DEF_  "BCAN Database" "";
+BA_DEF_DEF_  "GenMsgSendType" "";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_ "GenMsgSendType" BO_ 790 0;
+BA_ "GenMsgCycleTime" BO_ 790 10;
+BA_ "GenMsgDelayTime" BO_ 790 0;
+BA_ "GenMsgSendType" BO_ 809 0;
+BA_ "GenMsgCycleTime" BO_ 809 10;
+BA_ "GenMsgDelayTime" BO_ 809 0;
+BA_ "GenMsgSendType" BO_ 821 0;
+BA_ "GenMsgCycleTime" BO_ 821 10;
+BA_ "GenMsgDelayTime" BO_ 821 0;
+BA_ "GenMsgSendType" BO_ 826 0;
+BA_ "GenMsgCycleTime" BO_ 826 10;
+BA_ "GenMsgDelayTime" BO_ 826 0;
+BA_ "GenMsgSendType" BO_ 830 0;
+BA_ "GenMsgCycleTime" BO_ 830 10;
+BA_ "GenMsgDelayTime" BO_ 830 0;
+BA_ "GenMsgSendType" BO_ 1800 1;
+BA_ "GenMsgCycleTime" BO_ 1800 0;
+BA_ "GenMsgDelayTime" BO_ 1800 0;
+BA_ "GenMsgSendType" BO_ 832 0;
+BA_ "GenMsgCycleTime" BO_ 832 10;
+BA_ "GenMsgDelayTime" BO_ 832 0;
+BA_ "GenMsgSendType" BO_ 842 0;
+BA_ "GenMsgCycleTime" BO_ 842 10;
+BA_ "GenMsgDelayTime" BO_ 842 0;
+BA_ "GenMsgSendType" BO_ 1801 1;
+BA_ "GenMsgCycleTime" BO_ 1801 0;
+BA_ "GenMsgDelayTime" BO_ 1801 0;
+BA_ "GenMsgSendType" BO_ 864 0;
+BA_ "GenMsgCycleTime" BO_ 864 10;
+BA_ "GenMsgDelayTime" BO_ 864 0;
+BA_ "GenMsgSendType" BO_ 896 0;
+BA_ "GenMsgCycleTime" BO_ 896 10;
+BA_ "GenMsgDelayTime" BO_ 896 0;
+BA_ "GenMsgSendType" BO_ 906 0;
+BA_ "GenMsgCycleTime" BO_ 906 10;
+BA_ "GenMsgDelayTime" BO_ 906 0;
+BA_ "GenMsgSendType" BO_ 918 0;
+BA_ "GenMsgCycleTime" BO_ 918 20;
+BA_ "GenMsgDelayTime" BO_ 918 0;
+BA_ "GenMsgSendType" BO_ 927 0;
+BA_ "GenMsgCycleTime" BO_ 927 20;
+BA_ "GenMsgDelayTime" BO_ 927 0;
+BA_ "GenMsgSendType" BO_ 928 0;
+BA_ "GenMsgCycleTime" BO_ 928 40;
+BA_ "GenMsgDelayTime" BO_ 928 0;
+BA_ "GenMsgSendType" BO_ 929 0;
+BA_ "GenMsgCycleTime" BO_ 929 10;
+BA_ "GenMsgDelayTime" BO_ 929 0;
+BA_ "GenMsgSendType" BO_ 1802 1;
+BA_ "GenMsgCycleTime" BO_ 1802 0;
+BA_ "GenMsgDelayTime" BO_ 1802 0;
+BA_ "GenMsgSendType" BO_ 882 0;
+BA_ "GenMsgCycleTime" BO_ 882 10;
+BA_ "GenMsgDelayTime" BO_ 882 0;
+BA_ "GenMsgSendType" BO_ 889 0;
+BA_ "GenMsgCycleTime" BO_ 889 10;
+BA_ "GenMsgDelayTime" BO_ 889 0;
+BA_ "GenMsgSendType" BO_ 892 0;
+BA_ "GenMsgCycleTime" BO_ 892 10;
+BA_ "GenMsgDelayTime" BO_ 892 0;
+BA_ "GenMsgSendType" BO_ 1082 4;
+BA_ "GenMsgCycleTime" BO_ 1082 100;
+BA_ "GenMsgDelayTime" BO_ 1082 0;
+BA_ "GenMsgSendType" BO_ 1084 4;
+BA_ "GenMsgCycleTime" BO_ 1084 100;
+BA_ "GenMsgDelayTime" BO_ 1084 0;
+BA_ "GenMsgSendType" BO_ 1798 1;
+BA_ "GenMsgCycleTime" BO_ 1798 0;
+BA_ "GenMsgDelayTime" BO_ 1798 0;
+BA_ "GenMsgSendType" BO_ 1982 1;
+BA_ "GenMsgCycleTime" BO_ 1982 0;
+BA_ "GenMsgDelayTime" BO_ 1982 0;
+BA_ "GenMsgSendType" BO_ 1983 1;
+BA_ "GenMsgCycleTime" BO_ 1983 0;
+BA_ "GenMsgDelayTime" BO_ 1983 0;
+BA_ "GenMsgSendType" BO_ 922 0;
+BA_ "GenMsgCycleTime" BO_ 922 10;
+BA_ "GenMsgDelayTime" BO_ 922 0;
+BA_ "GenMsgSendType" BO_ 926 0;
+BA_ "GenMsgCycleTime" BO_ 926 10;
+BA_ "GenMsgDelayTime" BO_ 926 0;
+BA_ "GenMsgSendType" BO_ 1799 1;
+BA_ "GenMsgCycleTime" BO_ 1799 0;
+BA_ "GenMsgDelayTime" BO_ 1799 0;
+BA_ "GenMsgSendType" BO_ 954 0;
+BA_ "GenMsgCycleTime" BO_ 954 20;
+BA_ "GenMsgDelayTime" BO_ 954 0;
+BA_ "GenMsgSendType" BO_ 1803 1;
+BA_ "GenMsgCycleTime" BO_ 1803 0;
+BA_ "GenMsgDelayTime" BO_ 1803 0;
+BA_ "GenMsgSendType" BO_ 1008 0;
+BA_ "GenMsgCycleTime" BO_ 1008 20;
+BA_ "GenMsgDelayTime" BO_ 1008 0;
+BA_ "GenMsgSendType" BO_ 1056 4;
+BA_ "GenMsgCycleTime" BO_ 1056 200;
+BA_ "GenMsgDelayTime" BO_ 1056 0;
+BA_ "GenMsgSendType" BO_ 1072 4;
+BA_ "GenMsgCycleTime" BO_ 1072 200;
+BA_ "GenMsgDelayTime" BO_ 1072 0;
+BA_ "GenMsgSendType" BO_ 1078 4;
+BA_ "GenMsgCycleTime" BO_ 1078 200;
+BA_ "GenMsgDelayTime" BO_ 1078 0;
+BA_ "GenMsgSendType" BO_ 1144 4;
+BA_ "GenMsgCycleTime" BO_ 1144 200;
+BA_ "GenMsgDelayTime" BO_ 1144 0;
+BA_ "GenMsgSendType" BO_ 1193 4;
+BA_ "GenMsgCycleTime" BO_ 1193 200;
+BA_ "GenMsgDelayTime" BO_ 1193 0;
+BA_ "GenMsgSendType" BO_ 1202 4;
+BA_ "GenMsgCycleTime" BO_ 1202 200;
+BA_ "GenMsgDelayTime" BO_ 1202 0;
+BA_ "GenMsgSendType" BO_ 1792 1;
+BA_ "GenMsgCycleTime" BO_ 1792 0;
+BA_ "GenMsgDelayTime" BO_ 1792 0;
+BA_ "GenMsgSendType" BO_ 1025 4;
+BA_ "GenMsgCycleTime" BO_ 1025 100;
+BA_ "GenMsgDelayTime" BO_ 1025 0;
+BA_ "GenMsgSendType" BO_ 1796 1;
+BA_ "GenMsgCycleTime" BO_ 1796 0;
+BA_ "GenMsgDelayTime" BO_ 1796 0;
+BA_ "GenMsgSendType" BO_ 1040 4;
+BA_ "GenMsgCycleTime" BO_ 1040 200;
+BA_ "GenMsgDelayTime" BO_ 1040 0;
+BA_ "GenMsgSendType" BO_ 1794 1;
+BA_ "GenMsgCycleTime" BO_ 1794 0;
+BA_ "GenMsgDelayTime" BO_ 1794 0;
+BA_ "GenMsgSendType" BO_ 1088 4;
+BA_ "GenMsgCycleTime" BO_ 1088 200;
+BA_ "GenMsgDelayTime" BO_ 1088 0;
+BA_ "GenMsgSendType" BO_ 1793 1;
+BA_ "GenMsgCycleTime" BO_ 1793 0;
+BA_ "GenMsgDelayTime" BO_ 1793 0;
+BA_ "GenMsgSendType" BO_ 1104 4;
+BA_ "GenMsgCycleTime" BO_ 1104 100;
+BA_ "GenMsgDelayTime" BO_ 1104 0;
+BA_ "GenMsgSendType" BO_ 1285 0;
+BA_ "GenMsgCycleTime" BO_ 1285 100;
+BA_ "GenMsgDelayTime" BO_ 1285 0;
+BA_ "GenMsgSendType" BO_ 1795 1;
+BA_ "GenMsgCycleTime" BO_ 1795 0;
+BA_ "GenMsgDelayTime" BO_ 1795 0;
+BA_ "GenMsgSendType" BO_ 1797 1;
+BA_ "GenMsgCycleTime" BO_ 1797 0;
+BA_ "GenMsgDelayTime" BO_ 1797 0;
+BA_ "GenMsgSendType" BO_ 1804 1;
+BA_ "GenMsgCycleTime" BO_ 1804 0;
+BA_ "GenMsgDelayTime" BO_ 1804 0;
+BA_ "GenMsgSendType" BO_ 1805 1;
+BA_ "GenMsgCycleTime" BO_ 1805 0;
+BA_ "GenMsgDelayTime" BO_ 1805 0;
+BA_ "GenMsgSendType" BO_ 1806 1;
+BA_ "GenMsgCycleTime" BO_ 1806 0;
+BA_ "GenMsgDelayTime" BO_ 1806 0;
+BA_ "GenMsgSendType" BO_ 1807 1;
+BA_ "GenMsgCycleTime" BO_ 1807 0;
+BA_ "GenMsgDelayTime" BO_ 1807 0;
+BA_ "GenMsgSendType" BO_ 1808 1;
+BA_ "GenMsgCycleTime" BO_ 1808 0;
+BA_ "GenMsgDelayTime" BO_ 1808 0;
+BA_ "GenMsgSendType" BO_ 1809 1;
+BA_ "GenMsgCycleTime" BO_ 1809 0;
+BA_ "GenMsgDelayTime" BO_ 1809 0;
+BA_ "GenMsgSendType" BO_ 1810 1;
+BA_ "GenMsgCycleTime" BO_ 1810 0;
+BA_ "GenMsgDelayTime" BO_ 1810 0;
+BA_ "GenMsgSendType" BO_ 1811 1;
+BA_ "GenMsgCycleTime" BO_ 1811 0;
+BA_ "GenMsgDelayTime" BO_ 1811 0;
+BA_ "GenMsgSendType" BO_ 1812 1;
+BA_ "GenMsgCycleTime" BO_ 1812 0;
+BA_ "GenMsgDelayTime" BO_ 1812 0;
+BA_ "GenMsgSendType" BO_ 1813 1;
+BA_ "GenMsgCycleTime" BO_ 1813 0;
+BA_ "GenMsgDelayTime" BO_ 1813 0;
+BA_ "GenMsgSendType" BO_ 1814 1;
+BA_ "GenMsgCycleTime" BO_ 1814 0;
+BA_ "GenMsgDelayTime" BO_ 1814 0;
+BA_ "GenMsgSendType" BO_ 1815 1;
+BA_ "GenMsgCycleTime" BO_ 1815 0;
+BA_ "GenMsgDelayTime" BO_ 1815 0;
+BA_ "GenMsgSendType" BO_ 1816 1;
+BA_ "GenMsgCycleTime" BO_ 1816 0;
+BA_ "GenMsgDelayTime" BO_ 1816 0;
+BA_ "GenMsgSendType" BO_ 1817 1;
+BA_ "GenMsgCycleTime" BO_ 1817 0;
+BA_ "GenMsgDelayTime" BO_ 1817 0;
+BA_ "GenMsgSendType" BO_ 1818 1;
+BA_ "GenMsgCycleTime" BO_ 1818 0;
+BA_ "GenMsgDelayTime" BO_ 1818 0;
+BA_ "GenMsgSendType" BO_ 1819 1;
+BA_ "GenMsgCycleTime" BO_ 1819 0;
+BA_ "GenMsgDelayTime" BO_ 1819 0;
+BA_ "GenMsgSendType" BO_ 1820 1;
+BA_ "GenMsgCycleTime" BO_ 1820 0;
+BA_ "GenMsgDelayTime" BO_ 1820 0;
+BA_ "GenMsgSendType" BO_ 1821 1;
+BA_ "GenMsgCycleTime" BO_ 1821 0;
+BA_ "GenMsgDelayTime" BO_ 1821 0;
+BA_ "GenMsgSendType" BO_ 1822 1;
+BA_ "GenMsgCycleTime" BO_ 1822 0;
+BA_ "GenMsgDelayTime" BO_ 1822 0;
+BA_ "GenMsgSendType" BO_ 1823 1;
+BA_ "GenMsgCycleTime" BO_ 1823 0;
+BA_ "GenMsgDelayTime" BO_ 1823 0;
+BA_ "GenMsgSendType" BO_ 1918 1;
+BA_ "GenMsgCycleTime" BO_ 1918 0;
+BA_ "GenMsgDelayTime" BO_ 1918 0;
+BA_ "GenMsgSendType" BO_ 1919 1;
+BA_ "GenMsgCycleTime" BO_ 1919 0;
+BA_ "GenMsgDelayTime" BO_ 1919 0;
+BA_ "GenMsgSendType" BO_ 2000 1;
+BA_ "GenMsgCycleTime" BO_ 2000 0;
+BA_ "GenMsgDelayTime" BO_ 2000 0;
+VAL_ 790 LV_CAN_SUB_TQI 0 "OK" 1 "Fail" ;
+VAL_ 790 LV_CAN_N_ERR 0 "OK" 1 "Fail" ;
+VAL_ 809 CAN_OBD_STAT_DR 0 "Not Achieved" 1 "Achieved" ;
+VAL_ 809 CAN_OBD_STAT_WU 0 "Not Achieved" 1 "Achieved" ;
+VAL_ 821 MIL_ON_OFF_Request 0 "MIL Off Request" 1 "MIL On Request" ;
+VAL_ 821 LV_CAN_ERRPVS 0 "OK" 1 "Fail" ;
+VAL_ 821 LV_CAN_ERRPAS 0 "OK" 1 "Fail" ;
+VAL_ 826 CAN_ENG_STA 0 "engine OFF" 1 "engine KEYON" 2 "engine CRANK" 3 "engine RUN" 4 "engine STALL" 5 "engine POWEROFFDELAY" 6 "engine SHUTDOWNINPROCESS" ;
+VAL_ 1800 NM_ECM_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1800 NM_ECM_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 832 CAN_SWI_CC_ETCU 0 "Inactive" 1 "Transient" 2 "Locked" ;
+VAL_ 832 CAN_ETCU_STATE 0 "Normal" 1 "Fail - no limp home" 2 "Fail - limp home" 3 "AT protection" ;
+VAL_ 832 CAN_GEAR_SEL_ETCU 0 "Park" 1 "Low" 2 "D2" 3 "D3" 4 "Neutral" 5 "D" 6 "Failure" 7 "Reverse" ;
+VAL_ 832 CAN_ETCU_OBD 0 "No Request" 1 "Request MIL" ;
+VAL_ 832 CAN_GEAR_STA_NOW_V 0 "Valid" 1 "Invalid" ;
+VAL_ 832 CAN_ETCU_SVL 0 "Off" 1 "On" ;
+VAL_ 832 CAN_GEAR_STATE_NOW 0 "Park/Neutral" 1 "1st" 2 "2nd" 3 "3rd" 4 "4th" 5 "5th" 6 "6th" 7 "Reverse" ;
+VAL_ 832 LV_CAN_N_TM_ERR 0 "Normal" 1 "Fail" ;
+VAL_ 842 DR_MODE_IND 0 "ECO Mode" 1 "Green Mode" 2 "WUSP" 3 "Reserved" 4 "Down Slope" 5 "MID Altitude" 6 "UP Slope1" 7 "Hot1 mode" 8 "High Altitude" 9 "Up slope2" 10 "Winter mode" 11 "Cruise Control" 12 "Hot2 mode" 13 "Tiptro mode(Manual Mode)" ;
+VAL_ 1801 NM_TCM_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1801 NM_TCM_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 864 ESC_Status 0 "Disabled" 1 "Enabled" ;
+VAL_ 864 TCS_Status 0 "ETCS & BTCS Disabled" 1 "ETCS Disabled only" 2 "BTCS Disabled only" 3 "ETCS & BTCS Enabled" ;
+VAL_ 864 ABS_Active 0 "Inactive" 1 "Active" ;
+VAL_ 864 ESC_Active 0 "Inactive" 1 "Active" ;
+VAL_ 864 TCS_Active 0 "Inactive" 1 "Active" ;
+VAL_ 864 ABS_Failed 0 "Normal" 1 "Failed" ;
+VAL_ 864 ESC_Failed 0 "Normal" 1 "Failed" ;
+VAL_ 864 TCS_Failed 0 "Normal" 1 "Failed" ;
+VAL_ 864 EBD_Failed 0 "Normal" 1 "Failed" ;
+VAL_ 864 BrkSw_V 0 "Valid" 1 "Invalid" ;
+VAL_ 864 BrkSw_Sta 0 "Inactive" 1 "Active" ;
+VAL_ 864 HSA_Active 0 "Inactive" 1 "Active" ;
+VAL_ 864 HSA_Failed 0 "Normal" 1 "Failed" ;
+VAL_ 896 YawRate_V 0 "Valid" 1 "Invalid" ;
+VAL_ 896 LatAccel_V 0 "Valid" 1 "Invalid" ;
+VAL_ 896 LongAccel_V 0 "Valid" 1 "Invalid" ;
+VAL_ 896 MCPressure_V 0 "Valid" 1 "Invalid" ;
+VAL_ 906 RR_RawWhlSpeedLR_V 0 "Valid" 1 "Invalid" ;
+VAL_ 906 LR_RawWhlSpeedLR_V 0 "Valid" 1 "Invalid" ;
+VAL_ 906 RF_RawWhlSpeedLR_V 0 "Valid" 1 "Invalid" ;
+VAL_ 906 LF_RawWhlSpeedLR_V 0 "Valid" 1 "Invalid" ;
+VAL_ 918 RF_Whl_R_Dir 0 "Unknown/Standby" 1 "Forward" 2 "Backward" 3 "Failed" ;
+VAL_ 918 LF_Whl_R_Dir 0 "Unknown/Standby" 1 "Forward" 2 "Backward" 3 "Failed" ;
+VAL_ 927 RR_Whl_R_Dir 0 "Unknown/Standby" 1 "Forward" 2 "Backward" 3 "Failed" ;
+VAL_ 927 LR_Whl_R_Dir 0 "Unknown/Standby" 1 "Forward" 2 "Backward" 3 "Failed" ;
+VAL_ 928 PB_BrakeBinStat 0 "Released" 1 "Applied" 2 "Others" 3 "Unknown" ;
+VAL_ 928 EPBSta 0 "Applied" 1 "Applying" 2 "Released" 3 "Releasing" 4 "Unknown" ;
+VAL_ 929 ACCAvail 0 "Unavailable" 1 "Available" ;
+VAL_ 929 CurBrakeDecReq_A 0 "Not Applicable" 1 "Applicable" ;
+VAL_ 929 DecErrSta 0 "Nomal" 1 "Error" ;
+VAL_ 929 ActBrkLamp_Sta 0 "Off" 1 "On" ;
+VAL_ 929 ActBrkLamp_V 0 "Valid" 1 "Invalid" ;
+VAL_ 929 AEBAvail 0 "Unavailable" 1 "Available" ;
+VAL_ 929 ESCBrkSta 0 "Internal" 1 "Prefill" 2 "AEB Emergency Brake" 3 "Deceleration Control" 4 "Vehicle Holding" 5 "Vehicle Standstill" 6 "Haptic Brake" ;
+VAL_ 1802 NM_ABS_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1802 NM_ABS_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 882 ADAS_TqRatio 0 "Invalid" 1 "2" 2 "5" 3 "10" 4 "15" 5 "20" ;
+VAL_ 882 ADAS_LFCStatus 0 "LFC OFF" 1 "LFC Standby" 2 "LFC Active Normal" 3 "LFC Active Transition" 4 "LFC not Available (temporary failure)" 5 "LFC not Available (permanent failure)" ;
+VAL_ 882 ADAS_LKAStatus 0 "LKA OFF" 1 "LKA Standby" 2 "LKA Active" 3 "LKA not Available (temporary failure)" 4 "LKA not Available (permanent failure)" ;
+VAL_ 882 ADAS_EPSMode 0 "Internal" 1 "Angle" 2 "Torque" 3 "Invalid" ;
+VAL_ 882 ADAS_LFCTranGain_A 0 "Not Applicable" 1 "Applicable" ;
+VAL_ 882 ADAS_StrAngReq_A 0 "Not Applicable" 1 "Applicable" ;
+VAL_ 882 ADAS_StrTqReq_A 0 "Not Applicable" 1 "Applicable" ;
+VAL_ 882 ADAS_SHapticReq 0 "No Request" 1 "Request" ;
+VAL_ 889 ADAS_ForceIdle 0 "No Force Idle" 1 "Force Idle" ;
+VAL_ 889 ADAS_PTTqReq_A 0 "Not Applicable" 1 "Applicable" ;
+VAL_ 889 ADAS_DecReq_A 0 "Not Applicable" 1 "Applicable" ;
+VAL_ 889 ADAS_ForceIdle_A 0 "Not Applicable" 1 "Applicable" ;
+VAL_ 889 ADAS_AEBReq 0 "No Request" 1 "Request" ;
+VAL_ 889 ADAS_AEBReq_A 0 "Not Applicable" 1 "Applicable" ;
+VAL_ 889 ADAS_BPrefillReq 0 "No Request" 1 "Request" ;
+VAL_ 889 ADAS_BPrefillReq_A 0 "Not Applicable" 1 "Applicable" ;
+VAL_ 889 ADAS_VehHoldReq 0 "No Request" 1 "Request" ;
+VAL_ 889 ADAS_PTTqReq_V 0 "Valid" 1 "Invalid" ;
+VAL_ 889 ADAS_ACCStatus 0 "Off" 1 "Standby" 2 "Active" ;
+VAL_ 889 ADAS_FaultSta 0 "Normal" 1 "Fault" ;
+VAL_ 889 ADAS_BHapticReq 0 "No Request" 1 "Request Type 1" 2 "Request Type 2" 3 "Request Type 3" ;
+VAL_ 889 ADAS_YawRateReq_A 0 "Not Applicable" 1 "Applicable" ;
+VAL_ 889 ADAS_BrakeStatus 0 "No Request" 1 "ACC Activated" 2 "DBS Activated" 3 "AEB Activated" ;
+VAL_ 892 ADAS_GearPosReq 0 "No Request" 1 "1st" 2 "2nd" 3 "3rd" 4 "4th" 5 "5th" 6 "6th" 7 "7th" 8 "8th" 9 "9th" 10 "10th" ;
+VAL_ 892 ADAS_GearPosReq_A 0 "Not Applicable" 1 "Applicable" ;
+VAL_ 892 ADAS_VehSpdLim_A 0 "Not Applicable" 1 "Applicable" ;
+VAL_ 892 ADAS_ShftPosnReq 0 "No Request" 1 "Park" 2 "Neutral" 3 "D" 4 "Ds" 7 "Reverse" ;
+VAL_ 892 ADAS_ShftPosnReq_A 0 "Not Applicable" 1 "Applicable" ;
+VAL_ 892 ADAS_ClutchReq 0 "No Request" 1 "Clutch Request" ;
+VAL_ 892 ADAS_ClutchReq_A 0 "No Applicable" 1 "Applicable" ;
+VAL_ 892 ADAS_WhTqReq_A 0 "Not Applicable" 1 "Applicable" ;
+VAL_ 892 ADAS_WhTqReq_V 0 "Valid" 1 "Invalid" ;
+VAL_ 1082 ADAS_AEB_Sta 0 "Off" 1 "Standby" 2 "Active" 3 "Error" 4 "Disable" ;
+VAL_ 1082 HazardWarningReq 0 "No Request" 1 "Request" ;
+VAL_ 1082 ADAS_FCW_Sta 0 "Off" 1 "Standby" 2 "Active" 3 "Error" 4 "Disable" ;
+VAL_ 1082 RightTurnLightReq 0 "No Request" 1 "Request" ;
+VAL_ 1082 ADAS_LDWS_Sta 0 "Off" 1 "Standby" 2 "Left Active" 3 "Right Active" 4 "Error" 5 "Disable" ;
+VAL_ 1082 LeftTurnLightReq 0 "No Request" 1 "Request" ;
+VAL_ 1082 ADAS_PDS_Sta 0 "Off" 1 "Standby" 2 "Active" 3 "Error" 4 "Disable" ;
+VAL_ 1082 ARView_Disp_Req 0 "No Request" 1 "Request" ;
+VAL_ 1082 ADAS_ACC_Sta 0 "Off" 1 "Standby" 2 "Follow Mode" 3 "Speed Mode" ;
+VAL_ 1082 Target_Type 0 "None" 1 "Pedestrian" 2 "Vehicle" ;
+VAL_ 1082 TimeGapLevel 0 "Off" 1 "Level 1" 2 "Level 2" 3 "Level 3" 4 "Level 4" ;
+VAL_ 1082 ADAS_DAS_Sound_Sta 0 "Mute Off" 1 "Mute" 2 "Error" ;
+VAL_ 1082 ACCSetSpeed_Disp 0 "None" 1 "Dash Line" 2 "Grey" 3 "Green" ;
+VAL_ 1082 ADAS_WarningMsg 0 "None" 1 "Close Door to use ADAS" 2 "Fasten Safety belt to use ADAS" 3 "Not in ACC speed range" 4 "ADAS currently not available" 5 "ACC Resume" 6 "ACC Cancelled" 7 "ADAS Malfunction" 8 "Hands On Wheel" 9 "Steering Assist Unavailable" 10 "ACC+LFC Cancelled" 11 "Watch out for traffic" 12 "Pay attention to currentspeed" 13 "LCAS Cancelled" 14 "LCS Cancelled" 15 "LCAS/LCS currently not available" 16 "Low Temperature Warning" ;
+VAL_ 1082 ADAS_WarningSound 0 "None" 1 "Sound1" 2 "Sound2" 3 "Sound3" 4 "Sound4" 5 "Sound5" 6 "Sound6" 7 "Sound7" 8 "Sound8" 9 "Sound9" 10 "Sound10" 15 "Invalid" ;
+VAL_ 1082 ADAS_FltWrnReq 0 "No Warning" 1 "Warning Request" ;
+VAL_ 1082 ADAS_DAS_FltWrnReq 0 "No Warning" 1 "Warning Request" ;
+VAL_ 1082 ADAS_AR_ACC_Sta 0 "Off" 1 "Standby" 2 "Active" 3 "Flash" ;
+VAL_ 1082 ADAS_NAVI_SpdLim 0 "No request" 1 "10 km/h" 2 "20 km/h" 3 "30 km/h" 4 "40 km/h" 5 "50 km/h" 6 "60 km/h" 7 "70 km/h" 8 "80 km/h" 9 "90 km/h" 10 "100 km/h" 11 "110 km/h" 12 "120 km/h" 13 "130 km/h" 14 "140 km/h" 15 "150 km/h" 16 "160 km/h" 17 "170 km/h" 18 "180 km/h" 19 "190 km/h" 20 "200 km/h" ;
+VAL_ 1082 ForceLowBeam 0 "No Request" 1 "Force Low Beam" ;
+VAL_ 1082 ADAS_AR_Spdset_sta 0 "None" 1 "5 km/h" 2 "10 km/h" ;
+VAL_ 1084 ADAS_LKA_Sta 0 "Off" 1 "Standby" 2 "Left Active" 3 "Right Active" 4 "Error" 5 "Disable" ;
+VAL_ 1084 ADAS_FCW_Mute 0 "Mute Off" 1 "Mute" ;
+VAL_ 1084 ADAS_LFC_Sta 0 "Off" 1 "Standby" 2 "Active" 3 "Transition" 4 "Error" 5 "Disable" ;
+VAL_ 1084 ADAS_PDS_Mute 0 "Mute Off" 1 "Mute" ;
+VAL_ 1084 ADAS_LCS_Sta 0 "Off" 1 "Standby" 2 "Active" 3 "Error" 4 "Disable" ;
+VAL_ 1084 ADAS_LDWS_Mute 0 "Mute Off" 1 "Mute" ;
+VAL_ 1084 ADAS_LaneModeL 0 "Not detected" 1 "Detected" ;
+VAL_ 1084 ADAS_LaneModeR 0 "Not detected" 1 "Detected" ;
+VAL_ 1084 ADAS_SenrCal_A 0 "No Applicable" 1 "Applicable" ;
+VAL_ 1084 ADAS_LCAS_Sta 0 "Off" 1 "Standby" 2 "Active" 3 "Error" 4 "Disable" ;
+VAL_ 1084 ADAS_SenrCal_Sta 0 "Not Calibrated" 1 "Calibrated" 2 "Tac2 Calibrating" 3 "Tac2 Invalid" 4 "Tac2 Success" 5 "SPC Calibrating" 6 "Re-calibration Invalid" ;
+VAL_ 1798 NM_ADAS_D_ES 0 "Error Active State" 1 "Error Passive/Warning State" 2 "Bus Off State" 3 "Not used" ;
+VAL_ 1798 NM_ADAS_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1798 NM_ADAS_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 922 SAS_CAL 0 "Not calibrated" 1 "Calibrated" ;
+VAL_ 922 SAS_OK 0 "Invalid" 1 "Valid" ;
+VAL_ 922 EPS_Sta_Available 0 "Control Inhibit" 1 "Available for control" 2 "Controlled" 3 "Permanently Fail" ;
+VAL_ 922 EPS_I_Detect 0 "False" 1 "True" ;
+VAL_ 922 EPS_VD_I_Detect 0 "Valid" 1 "Invalid" ;
+VAL_ 926 EpasFailed 0 "Not Failed" 1 "Failed" ;
+VAL_ 926 RSP_OK 0 "Invalid" 1 "Valid" ;
+VAL_ 926 Steering_Torque_V 0 "Not Failed" 1 "Failed" ;
+VAL_ 1799 NM_EPAS_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1799 NM_EPAS_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 954 APA_V_Rq_EPS_Ctrl 0 "Invalid" 1 "Valid" ;
+VAL_ 954 APA_Rq_EPS_Ctrl 0 "No Request on EPS Control" 1 "Request on EPS Control" ;
+VAL_ 954 APA_RQ_Display 0 "No message" 1 "Searching for parallel parking slot on the right side" 2 "Searching for perpendicular parking slot on the right side" 3 "Searching for parallel parking slot on the left side" 4 "Searching for perpendicular parking slot on the left side" 5 "The right side parking slot be found" 6 "The right side parking slot be found" 7 "The left side parking slot be found" 8 "The left side parking slot be found" 9 "Please drive out of the parking slot from left" 10 "Please drive out of the parking slot from right" 11 "Parking achieved" 12 "Please drive backward" 13 "Please drive forward" 14 "Stop" 15 "Please slow down" 16 "APA Cancelled Please take over steering" 17 "Operation Timeout Please take over steering" 18 "Parking Slot Undersize Please take over steering" 19 "Please shift to reverse gear" 20 "Steering assistant active Please check around" 21 "Please shift to drive gear" 22 "Steering assistant failed Please take over steering" 23 "System Error Please take over steering" ;
+VAL_ 1803 NM_APA_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1803 NM_APA_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1008 BCM_SRS_Crash_Info 5 "Crash" 15 "invalid" 0 "Normal" ;
+VAL_ 1056 BCM_DDrSw_Sta 0 "closed" 1 "open" ;
+VAL_ 1056 BCM_PDrSw_Sta 0 "closed" 1 "open" ;
+VAL_ 1056 BCM_AllDrSw_Sta 0 "All doors closed" 1 "Any door opens" ;
+VAL_ 1056 BCM_LTurnLp_Sta 0 "Off" 1 "On" ;
+VAL_ 1056 BCM_RTurnLp_Sta 0 "Off" 1 "On" ;
+VAL_ 1056 BCM_TGateSw_Sta 0 "closed" 1 "open" ;
+VAL_ 1056 BCM_RRDrSw_Sta 0 "Closed" 1 "Open" ;
+VAL_ 1056 BCM_LRDrSw_Sta 0 "Closed" 1 "Open" ;
+VAL_ 1056 BCM_HoodSw_Sta 0 "closed" 1 "open" 2 "Undefined" 3 "Invalid" ;
+VAL_ 1056 BCM_Hazard_Sta 0 "Off" 1 "On" ;
+VAL_ 1078 OBU_SMV_Wrn_tone 0 "No request" 1 "Pressed" 3 "Invalid" ;
+VAL_ 1144 SWC_CC_Sta 0 "release" 1 "press" 3 "invalid" ;
+VAL_ 1144 SWC_CANCEL_Sta 0 "release" 1 "press" 3 "invalid" ;
+VAL_ 1144 SWC_Set_down_Sta 0 "release" 1 "press" 3 "invalid" ;
+VAL_ 1144 SWC_Res_Up_Sta 0 "release" 1 "press" 3 "invalid" ;
+VAL_ 1144 SWC_Distance_Sta 0 "release" 1 "press" 3 "invalid" ;
+VAL_ 1193 ADAS_LDWS_BUTT 0 "No request" 1 "Pressed" 3 "Invalid" ;
+VAL_ 1193 ADAS_PDS_BUTT 0 "No request" 1 "Pressed" 3 "Invalid" ;
+VAL_ 1193 ADAS_FCW_BUTT 0 "No request" 1 "Pressed" 3 "Invalid" ;
+VAL_ 1193 ADAS_AEB_BUTT 0 "No request" 1 "Pressed" 3 "Invalid" ;
+VAL_ 1193 ADAS_LKA_BUTT 0 "No request" 1 "Pressed" 3 "Invalid" ;
+VAL_ 1193 AR_ACC_SW 0 "Off" 1 "On" 3 "Invalid" ;
+VAL_ 1193 OBU_AR_Spdset_Req 0 "Off" 1 "5 km/h" 2 "10 km/h" ;
+VAL_ 1193 ADAS_LCAS_BUTT 0 "No request" 1 "Pressed" 3 "Invalid" ;
+VAL_ 1193 ADAS_LCS_BUTT 0 "No request" 1 "Pressed" 3 "Invalid" ;
+VAL_ 1193 ADAS_FCWMute_Butt 0 "No Request" 1 "Pressed" 3 "Invalid" ;
+VAL_ 1193 ADAS_PDSMute_Butt 0 "No Request" 1 "Pressed" 3 "Invalid" ;
+VAL_ 1193 ADAS_LDWSMute_Butt 0 "No Request" 1 "Pressed" 3 "Invalid" ;
+VAL_ 1193 ADAS_SenrCal_Req 0 "No request" 1 "Pressed" 3 "Invalid" ;
+VAL_ 1193 ADAS_SenrCal_Req_A 0 "Unavailable" 1 "Available" ;
+VAL_ 1202 NAVI_Speed_Limit 0 "No request" 1 "10 km/h" 2 "20 km/h" 3 "30 km/h" 4 "40 km/h" 5 "50 km/h" 6 "60 km/h" 7 "70 km/h" 8 "80 km/h" 9 "90 km/h" 10 "100 km/h" 11 "110 km/h" 12 "120 km/h" 13 "130 km/h" 14 "140 km/h" 15 "150 km/h" 16 "160 km/h" 17 "170 km/h" 18 "180 km/h" 19 "190 km/h" 20 "200 km/h" ;
+VAL_ 1792 NM_BCM_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1792 NM_BCM_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "S" ;
+VAL_ 1025 P_PowerSta 0 "sInitial" 1 "sOFF" 2 "sACC" 3 "sKeyOn" 4 "sCrank" 5 "sEngineCrankByECM" 6 "sEngineRun" 7 "sEngineStartStop" 8 "sEngineStall" 9 "sDiagnosisMode" ;
+VAL_ 1796 NM_PEPS_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1796 NM_PEPS_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1040 CSW_HdLpSw_Sta 0 "Off" 1 "On" ;
+VAL_ 1040 CSW_DimSw_Sta 0 "Off" 1 "On" ;
+VAL_ 1040 CSW_TurnSw_Sta 0 "Off" 1 "Left" 2 "Right" 3 "Invalid" ;
+VAL_ 1040 CSW_FWipSw_Sta 0 "Off" 1 "Int" 2 "Low" 3 "High" 4 "Mist" 7 "Invalid" ;
+VAL_ 1040 CSW_FWipIntPos 0 "Invalid" 1 "1" 2 "2" 3 "3" 4 "4" 5 "5" 6 "6" 7 "7" ;
+VAL_ 1794 NM_CSW_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1794 NM_CSW_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1088 FECU_LoBeamRly_Sta 0 "Off" 1 "On" ;
+VAL_ 1088 FECU_HiBeamRly_Sta 0 "Off" 1 "On" ;
+VAL_ 1793 NM_FECU_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1793 NM_FECU_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1104 LowBrakeFluid_Sta 0 "Normal" 1 "Low" ;
+VAL_ 1104 SeatBelt 0 "Fasten" 1 "Not fasten" ;
+VAL_ 1285 ARD_Sta 0 "Initial" 1 "Setting" 2 "Standby" 3 "Active" 4 "IN_Diag" 5 "System_fail" ;
+VAL_ 1285 EngCheckLED 0 "Off" 1 "On" ;
+VAL_ 1795 NM_ARD_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1795 NM_ARD_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1797 NM_ECU5_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1797 NM_ECU5_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1804 NM_ECU12_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1804 NM_ECU12_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1805 NM_ECU13_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1805 NM_ECU13_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1806 NM_ECU14_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1806 NM_ECU14_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1807 NM_IOGW_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1807 NM_IOGW_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1808 NM_ECU16_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1808 NM_ECU16_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1809 NM_ABM_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1809 NM_ABM_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1810 NM_VIG_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1810 NM_VIG_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1811 NM_DSEAT_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1811 NM_DSEAT_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1812 NM_PSEAT_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1812 NM_PSEAT_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1813 NM_PTG_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1813 NM_PTG_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1814 NM_APM_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1814 NM_APM_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1815 NM_ECU23_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1815 NM_ECU23_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1816 NM_ECU24_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1816 NM_ECU24_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1817 NM_ECU25_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1817 NM_ECU25_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1818 NM_ECU26_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1818 NM_ECU26_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1819 NM_ECU27_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1819 NM_ECU27_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1820 NM_ECU28_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1820 NM_ECU28_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1821 NM_ECU29_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1821 NM_ECU29_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1822 NM_ECU30_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1822 NM_ECU30_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+VAL_ 1823 NM_ECU31_AR 0 "No Activation Request" 1 "Activation Request" ;
+VAL_ 1823 NM_ECU31_SC 0 "WU" 1 "Not Used" 2 "SA" 3 "Not Used" ;
+

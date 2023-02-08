@@ -1,0 +1,2696 @@
+
+
+-- START@RTICANMM_MAIN_EPS_CAN_DS1401_2_1_1
+
+
+
+group "EPS_CAN" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMM_CTL_SETUP_EPS_CAN_ID
+{
+type: UINT(8)
+alias: "Variation"
+flags: OUTPUT|READONLY
+desc: "current Variation of EPS_CAN"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_NL
+{
+type: UINT(32)
+alias: "NumLostMsgs"
+flags: OUTPUT|READONLY
+desc: "Number of lost messages"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TRAFFIC
+{
+type: UINT(8)
+alias: "Traffic"
+flags: OUTPUT|READONLY
+desc: "Traffic"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_GEIN
+{
+type: UINT(8)
+alias: "GlobalEnable"
+flags: PARAM
+desc: "Enable EPS_CAN"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_TXGEIN
+{
+type: UINT(8)
+alias: "GlobalEnableTX"
+flags: PARAM
+desc: "Enable TX of EPS_CAN"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_MAXMSGPERSTEP
+{
+type: INT(32)
+alias: "MaxMessagesPerStep"
+flags: PARAM
+desc: "MaxMessagesPerStep"
+unit: ""
+range: <0; 100>
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXEEIE[0]
+{
+type: UINT(8)
+alias: "GW_Enable"
+flags: PARAM
+desc: "Enable GW"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_TXEEIE[1]
+{
+type: UINT(8)
+alias: "IFC_Enable"
+flags: PARAM
+desc: "Enable IFC"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+
+group "ABS1" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+
+group "RX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_RX_Msg_1_Sgn_1
+{
+type: UINT(8)
+alias: "RollingCounter_ABS1"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_1_Sgn_2
+{
+type: flt(64,IEEE)
+alias: "FRWheelSpd"
+flags: OUTPUT|READONLY
+desc: ""
+unit: "km/h"
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_1_Sgn_3
+{
+type: UINT(8)
+alias: "FRWheelSpdValid"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_1_Sgn_4
+{
+type: flt(64,IEEE)
+alias: "FLWheelSpd"
+flags: OUTPUT|READONLY
+desc: ""
+unit: "km/h"
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_1_Sgn_5
+{
+type: UINT(8)
+alias: "FLWheelSpdValid"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_1_Sgn_6
+{
+type: UINT(8)
+alias: "CheckSum_ABS1"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_MIDRX[3]
+{
+type: UINT(32)
+alias: "ABS1_ID"
+flags: OUTPUT|READONLY
+desc: "Message ID"
+unit: ""
+value: 561
+}
+
+
+
+
+CANMMEPS_CAN_MIDFRX[3]
+{
+type: UINT(8)
+alias: "ABS1_IDFormat"
+flags: OUTPUT|READONLY
+desc: "Message ID Format"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXLEN[3]
+{
+type: UINT(8)
+alias: "ABS1_Length"
+flags: OUTPUT|READONLY
+desc: "Message Length"
+unit: ""
+value: 8
+}
+
+
+
+
+CANMMEPS_CAN_RXsta[3]
+{
+type: UINT(8)
+alias: "ABS1_status"
+flags: OUTPUT|READONLY
+desc: "ABS1 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXdt[3]
+{
+type: flt(64,IEEE)
+alias: "ABS1_dt"
+flags: OUTPUT|READONLY
+desc: "ABS1 DeltaTime"
+unit: "s"
+value: 0.02
+}
+
+
+
+
+CANMMEPS_CAN_RXt[3]
+{
+type: flt(64,IEEE)
+alias: "ABS1_time"
+flags: OUTPUT|READONLY
+desc: "ABS1 Time"
+unit: "s"
+value: 0.0
+}
+
+
+
+
+
+endgroup -- block-group "RX"
+
+
+
+group "TX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_WBS[2]
+{
+type: UINT(8)
+alias: "ABS1_CheckEnable"
+flags: OUTPUT|READONLY
+desc: "Check enabled ABS1"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXDT[2]
+{
+type: flt(64,IEEE)
+alias: "ABS1_DelayTime"
+flags: OUTPUT|READONLY
+desc: "DelayTime ABS1"
+unit: "s"
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXsta[2]
+{
+type: UINT(8)
+alias: "ABS1_status"
+flags: OUTPUT|READONLY
+desc: "ABS1 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXEIN[2]
+{
+type: UINT(8)
+alias: "ABS1_Enable"
+flags: PARAM
+desc: "Enable ABS1"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_TXCIE[2]
+{
+type: UINT(8)
+alias: "ABS1_PeriodicalOn"
+flags: PARAM
+desc: "Activate cyclic transmission for ABS1"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_TXKIEX[2]
+{
+type: UINT(8)
+alias: "ABS1_Kickout"
+flags: PARAM
+desc: "Kickout ABS1"
+unit: ""
+range: <0; 1>
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXCT[2]
+{
+type: flt(64,IEEE)
+alias: "ABS1_CycleTime"
+flags: PARAM
+desc: "CycleTime ABS1"
+unit: "s"
+range: <0; 1000>
+value: 2.000000e-02
+}
+
+
+
+
+
+endgroup -- block-group "TX"
+
+
+
+endgroup -- block-group "ABS1"
+
+
+
+group "ABS2" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+
+group "RX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_RX_Msg_2_Sgn_1
+{
+type: UINT(8)
+alias: "RollingCounter_ABS2"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_2_Sgn_2
+{
+type: flt(64,IEEE)
+alias: "RRWheelSpd"
+flags: OUTPUT|READONLY
+desc: ""
+unit: "km/h"
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_2_Sgn_3
+{
+type: UINT(8)
+alias: "RRWheelSpdValid"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_2_Sgn_4
+{
+type: flt(64,IEEE)
+alias: "RLWheelSpd"
+flags: OUTPUT|READONLY
+desc: ""
+unit: "km/h"
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_2_Sgn_5
+{
+type: UINT(8)
+alias: "RLWheelSpdValid"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_2_Sgn_6
+{
+type: UINT(8)
+alias: "CheckSum_ABS2"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_MIDRX[4]
+{
+type: UINT(32)
+alias: "ABS2_ID"
+flags: OUTPUT|READONLY
+desc: "Message ID"
+unit: ""
+value: 582
+}
+
+
+
+
+CANMMEPS_CAN_MIDFRX[4]
+{
+type: UINT(8)
+alias: "ABS2_IDFormat"
+flags: OUTPUT|READONLY
+desc: "Message ID Format"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXLEN[4]
+{
+type: UINT(8)
+alias: "ABS2_Length"
+flags: OUTPUT|READONLY
+desc: "Message Length"
+unit: ""
+value: 8
+}
+
+
+
+
+CANMMEPS_CAN_RXsta[4]
+{
+type: UINT(8)
+alias: "ABS2_status"
+flags: OUTPUT|READONLY
+desc: "ABS2 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXdt[4]
+{
+type: flt(64,IEEE)
+alias: "ABS2_dt"
+flags: OUTPUT|READONLY
+desc: "ABS2 DeltaTime"
+unit: "s"
+value: 0.02
+}
+
+
+
+
+CANMMEPS_CAN_RXt[4]
+{
+type: flt(64,IEEE)
+alias: "ABS2_time"
+flags: OUTPUT|READONLY
+desc: "ABS2 Time"
+unit: "s"
+value: 0.0
+}
+
+
+
+
+
+endgroup -- block-group "RX"
+
+
+
+group "TX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_WBS[3]
+{
+type: UINT(8)
+alias: "ABS2_CheckEnable"
+flags: OUTPUT|READONLY
+desc: "Check enabled ABS2"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXDT[3]
+{
+type: flt(64,IEEE)
+alias: "ABS2_DelayTime"
+flags: OUTPUT|READONLY
+desc: "DelayTime ABS2"
+unit: "s"
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXsta[3]
+{
+type: UINT(8)
+alias: "ABS2_status"
+flags: OUTPUT|READONLY
+desc: "ABS2 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXEIN[3]
+{
+type: UINT(8)
+alias: "ABS2_Enable"
+flags: PARAM
+desc: "Enable ABS2"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_TXCIE[3]
+{
+type: UINT(8)
+alias: "ABS2_PeriodicalOn"
+flags: PARAM
+desc: "Activate cyclic transmission for ABS2"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_TXKIEX[3]
+{
+type: UINT(8)
+alias: "ABS2_Kickout"
+flags: PARAM
+desc: "Kickout ABS2"
+unit: ""
+range: <0; 1>
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXCT[3]
+{
+type: flt(64,IEEE)
+alias: "ABS2_CycleTime"
+flags: PARAM
+desc: "CycleTime ABS2"
+unit: "s"
+range: <0; 1000>
+value: 2.000000e-02
+}
+
+
+
+
+
+endgroup -- block-group "TX"
+
+
+
+endgroup -- block-group "ABS2"
+
+
+
+group "ABS3" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+
+group "RX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_RX_Msg_3_Sgn_1
+{
+type: UINT(8)
+alias: "RollingCounter_ABS3"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_3_Sgn_2
+{
+type: flt(64,IEEE)
+alias: "VehcileSpd"
+flags: OUTPUT|READONLY
+desc: ""
+unit: "km/h"
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_3_Sgn_3
+{
+type: UINT(8)
+alias: "VehicleSpdValid"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_3_Sgn_4
+{
+type: UINT(8)
+alias: "CheckSum_ABS3"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_MIDRX[5]
+{
+type: UINT(32)
+alias: "ABS3_ID"
+flags: OUTPUT|READONLY
+desc: "Message ID"
+unit: ""
+value: 613
+}
+
+
+
+
+CANMMEPS_CAN_MIDFRX[5]
+{
+type: UINT(8)
+alias: "ABS3_IDFormat"
+flags: OUTPUT|READONLY
+desc: "Message ID Format"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXLEN[5]
+{
+type: UINT(8)
+alias: "ABS3_Length"
+flags: OUTPUT|READONLY
+desc: "Message Length"
+unit: ""
+value: 8
+}
+
+
+
+
+CANMMEPS_CAN_RXsta[5]
+{
+type: UINT(8)
+alias: "ABS3_status"
+flags: OUTPUT|READONLY
+desc: "ABS3 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXdt[5]
+{
+type: flt(64,IEEE)
+alias: "ABS3_dt"
+flags: OUTPUT|READONLY
+desc: "ABS3 DeltaTime"
+unit: "s"
+value: 0.02
+}
+
+
+
+
+CANMMEPS_CAN_RXt[5]
+{
+type: flt(64,IEEE)
+alias: "ABS3_time"
+flags: OUTPUT|READONLY
+desc: "ABS3 Time"
+unit: "s"
+value: 0.0
+}
+
+
+
+
+
+endgroup -- block-group "RX"
+
+
+
+group "TX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_WBS[4]
+{
+type: UINT(8)
+alias: "ABS3_CheckEnable"
+flags: OUTPUT|READONLY
+desc: "Check enabled ABS3"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXDT[4]
+{
+type: flt(64,IEEE)
+alias: "ABS3_DelayTime"
+flags: OUTPUT|READONLY
+desc: "DelayTime ABS3"
+unit: "s"
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXsta[4]
+{
+type: UINT(8)
+alias: "ABS3_status"
+flags: OUTPUT|READONLY
+desc: "ABS3 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXEIN[4]
+{
+type: UINT(8)
+alias: "ABS3_Enable"
+flags: PARAM
+desc: "Enable ABS3"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_TXCIE[4]
+{
+type: UINT(8)
+alias: "ABS3_PeriodicalOn"
+flags: PARAM
+desc: "Activate cyclic transmission for ABS3"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_TXKIEX[4]
+{
+type: UINT(8)
+alias: "ABS3_Kickout"
+flags: PARAM
+desc: "Kickout ABS3"
+unit: ""
+range: <0; 1>
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXCT[4]
+{
+type: flt(64,IEEE)
+alias: "ABS3_CycleTime"
+flags: PARAM
+desc: "CycleTime ABS3"
+unit: "s"
+range: <0; 1000>
+value: 2.000000e-02
+}
+
+
+
+
+
+endgroup -- block-group "TX"
+
+
+
+endgroup -- block-group "ABS3"
+
+
+
+group "ECM2" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+
+group "RX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_RX_Msg_4_Sgn_1
+{
+type: UINT(8)
+alias: "EngState"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_MIDRX[6]
+{
+type: UINT(32)
+alias: "ECM2_ID"
+flags: OUTPUT|READONLY
+desc: "Message ID"
+unit: ""
+value: 625
+}
+
+
+
+
+CANMMEPS_CAN_MIDFRX[6]
+{
+type: UINT(8)
+alias: "ECM2_IDFormat"
+flags: OUTPUT|READONLY
+desc: "Message ID Format"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXLEN[6]
+{
+type: UINT(8)
+alias: "ECM2_Length"
+flags: OUTPUT|READONLY
+desc: "Message Length"
+unit: ""
+value: 8
+}
+
+
+
+
+CANMMEPS_CAN_RXsta[6]
+{
+type: UINT(8)
+alias: "ECM2_status"
+flags: OUTPUT|READONLY
+desc: "ECM2 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXdt[6]
+{
+type: flt(64,IEEE)
+alias: "ECM2_dt"
+flags: OUTPUT|READONLY
+desc: "ECM2 DeltaTime"
+unit: "s"
+value: 0.02
+}
+
+
+
+
+CANMMEPS_CAN_RXt[6]
+{
+type: flt(64,IEEE)
+alias: "ECM2_time"
+flags: OUTPUT|READONLY
+desc: "ECM2 Time"
+unit: "s"
+value: 0.0
+}
+
+
+
+
+
+endgroup -- block-group "RX"
+
+
+
+group "TX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_WBS[5]
+{
+type: UINT(8)
+alias: "ECM2_CheckEnable"
+flags: OUTPUT|READONLY
+desc: "Check enabled ECM2"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXDT[5]
+{
+type: flt(64,IEEE)
+alias: "ECM2_DelayTime"
+flags: OUTPUT|READONLY
+desc: "DelayTime ECM2"
+unit: "s"
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXsta[5]
+{
+type: UINT(8)
+alias: "ECM2_status"
+flags: OUTPUT|READONLY
+desc: "ECM2 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXEIN[5]
+{
+type: UINT(8)
+alias: "ECM2_Enable"
+flags: PARAM
+desc: "Enable ECM2"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_TXCIE[5]
+{
+type: UINT(8)
+alias: "ECM2_PeriodicalOn"
+flags: PARAM
+desc: "Activate cyclic transmission for ECM2"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_TXKIEX[5]
+{
+type: UINT(8)
+alias: "ECM2_Kickout"
+flags: PARAM
+desc: "Kickout ECM2"
+unit: ""
+range: <0; 1>
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXCT[5]
+{
+type: flt(64,IEEE)
+alias: "ECM2_CycleTime"
+flags: PARAM
+desc: "CycleTime ECM2"
+unit: "s"
+range: <0; 1000>
+value: 2.000000e-02
+}
+
+
+
+
+
+endgroup -- block-group "TX"
+
+
+
+endgroup -- block-group "ECM2"
+
+
+
+group "EPS1" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+
+group "RX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_RX_Msg_5_Sgn_1
+{
+type: UINT(8)
+alias: "RollingCounter_EPS1"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_5_Sgn_2
+{
+type: UINT(8)
+alias: "EPS_CurrMod"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_5_Sgn_3
+{
+type: flt(64,IEEE)
+alias: "EPS_ConsumedCurrValue"
+flags: OUTPUT|READONLY
+desc: ""
+unit: "A"
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_5_Sgn_4
+{
+type: flt(64,IEEE)
+alias: "EPS_DrvInputTrqValue"
+flags: OUTPUT|READONLY
+desc: ""
+unit: "Nm"
+value: -22.78
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_5_Sgn_5
+{
+type: UINT(8)
+alias: "EPS_AvailSts"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_5_Sgn_6
+{
+type: UINT(8)
+alias: "EPS_InterferDetdValid"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_5_Sgn_7
+{
+type: UINT(8)
+alias: "EPS_InterferDetd"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_5_Sgn_8
+{
+type: UINT(8)
+alias: "EPS_TrqSnsrSts"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_5_Sgn_9
+{
+type: UINT(8)
+alias: "EPS_FailSts"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_5_Sgn_10
+{
+type: UINT(8)
+alias: "CheckSum_EPS1"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_MIDRX[8]
+{
+type: UINT(32)
+alias: "EPS1_ID"
+flags: OUTPUT|READONLY
+desc: "Message ID"
+unit: ""
+value: 746
+}
+
+
+
+
+CANMMEPS_CAN_MIDFRX[8]
+{
+type: UINT(8)
+alias: "EPS1_IDFormat"
+flags: OUTPUT|READONLY
+desc: "Message ID Format"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXLEN[8]
+{
+type: UINT(8)
+alias: "EPS1_Length"
+flags: OUTPUT|READONLY
+desc: "Message Length"
+unit: ""
+value: 8
+}
+
+
+
+
+CANMMEPS_CAN_RXsta[8]
+{
+type: UINT(8)
+alias: "EPS1_status"
+flags: OUTPUT|READONLY
+desc: "EPS1 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXdt[8]
+{
+type: flt(64,IEEE)
+alias: "EPS1_dt"
+flags: OUTPUT|READONLY
+desc: "EPS1 DeltaTime"
+unit: "s"
+value: 0.02
+}
+
+
+
+
+CANMMEPS_CAN_RXt[8]
+{
+type: flt(64,IEEE)
+alias: "EPS1_time"
+flags: OUTPUT|READONLY
+desc: "EPS1 Time"
+unit: "s"
+value: 0.0
+}
+
+
+
+
+
+endgroup -- block-group "RX"
+
+
+
+endgroup -- block-group "EPS1"
+
+
+
+group "EPS2" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+
+group "RX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_RX_Msg_6_Sgn_1
+{
+type: UINT(8)
+alias: "RollingCounter_EPS2"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_6_Sgn_2
+{
+type: UINT(8)
+alias: "EPS_LKATrqOvlDlvdSts"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_6_Sgn_3
+{
+type: UINT(8)
+alias: "EPS_HandsOffDetnModEnable"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_6_Sgn_4
+{
+type: UINT(8)
+alias: "EPS_LKATorqOvrlDlvdValid"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_6_Sgn_5
+{
+type: flt(64,IEEE)
+alias: "EPS_LKATorqOvrlDlvd"
+flags: OUTPUT|READONLY
+desc: ""
+unit: "Nm"
+value: -15
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_6_Sgn_6
+{
+type: UINT(8)
+alias: "EPS_HandsOffDetnStsValid"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_6_Sgn_7
+{
+type: UINT(8)
+alias: "EPS_HandsOffDetnSts"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_6_Sgn_8
+{
+type: UINT(8)
+alias: "CheckSum_EPS2"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_MIDRX[2]
+{
+type: UINT(32)
+alias: "EPS2_ID"
+flags: OUTPUT|READONLY
+desc: "Message ID"
+unit: ""
+value: 354
+}
+
+
+
+
+CANMMEPS_CAN_MIDFRX[2]
+{
+type: UINT(8)
+alias: "EPS2_IDFormat"
+flags: OUTPUT|READONLY
+desc: "Message ID Format"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXLEN[2]
+{
+type: UINT(8)
+alias: "EPS2_Length"
+flags: OUTPUT|READONLY
+desc: "Message Length"
+unit: ""
+value: 8
+}
+
+
+
+
+CANMMEPS_CAN_RXsta[2]
+{
+type: UINT(8)
+alias: "EPS2_status"
+flags: OUTPUT|READONLY
+desc: "EPS2 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXdt[2]
+{
+type: flt(64,IEEE)
+alias: "EPS2_dt"
+flags: OUTPUT|READONLY
+desc: "EPS2 DeltaTime"
+unit: "s"
+value: 0.02
+}
+
+
+
+
+CANMMEPS_CAN_RXt[2]
+{
+type: flt(64,IEEE)
+alias: "EPS2_time"
+flags: OUTPUT|READONLY
+desc: "EPS2 Time"
+unit: "s"
+value: 0.0
+}
+
+
+
+
+
+endgroup -- block-group "RX"
+
+
+
+endgroup -- block-group "EPS2"
+
+
+
+group "GWA1" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+
+group "RX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_RX_Msg_7_Sgn_1
+{
+type: UINT(8)
+alias: "EPSSwErrorSts"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_7_Sgn_2
+{
+type: UINT(8)
+alias: "EPSSwSts"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_MIDRX[7]
+{
+type: UINT(32)
+alias: "GWA1_ID"
+flags: OUTPUT|READONLY
+desc: "Message ID"
+unit: ""
+value: 629
+}
+
+
+
+
+CANMMEPS_CAN_MIDFRX[7]
+{
+type: UINT(8)
+alias: "GWA1_IDFormat"
+flags: OUTPUT|READONLY
+desc: "Message ID Format"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXLEN[7]
+{
+type: UINT(8)
+alias: "GWA1_Length"
+flags: OUTPUT|READONLY
+desc: "Message Length"
+unit: ""
+value: 8
+}
+
+
+
+
+CANMMEPS_CAN_RXsta[7]
+{
+type: UINT(8)
+alias: "GWA1_status"
+flags: OUTPUT|READONLY
+desc: "GWA1 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXdt[7]
+{
+type: flt(64,IEEE)
+alias: "GWA1_dt"
+flags: OUTPUT|READONLY
+desc: "GWA1 DeltaTime"
+unit: "s"
+value: 0.05
+}
+
+
+
+
+CANMMEPS_CAN_RXt[7]
+{
+type: flt(64,IEEE)
+alias: "GWA1_time"
+flags: OUTPUT|READONLY
+desc: "GWA1 Time"
+unit: "s"
+value: 0.0
+}
+
+
+
+
+
+endgroup -- block-group "RX"
+
+
+
+group "TX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_WBS[6]
+{
+type: UINT(8)
+alias: "GWA1_CheckEnable"
+flags: OUTPUT|READONLY
+desc: "Check enabled GWA1"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXDT[6]
+{
+type: flt(64,IEEE)
+alias: "GWA1_DelayTime"
+flags: OUTPUT|READONLY
+desc: "DelayTime GWA1"
+unit: "s"
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXsta[6]
+{
+type: UINT(8)
+alias: "GWA1_status"
+flags: OUTPUT|READONLY
+desc: "GWA1 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXEIN[6]
+{
+type: UINT(8)
+alias: "GWA1_Enable"
+flags: PARAM
+desc: "Enable GWA1"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_TXCIE[6]
+{
+type: UINT(8)
+alias: "GWA1_PeriodicalOn"
+flags: PARAM
+desc: "Activate cyclic transmission for GWA1"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_TXKIEX[6]
+{
+type: UINT(8)
+alias: "GWA1_Kickout"
+flags: PARAM
+desc: "Kickout GWA1"
+unit: ""
+range: <0; 1>
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXCT[6]
+{
+type: flt(64,IEEE)
+alias: "GWA1_CycleTime"
+flags: PARAM
+desc: "CycleTime GWA1"
+unit: "s"
+range: <0; 1000>
+value: 5.000000e-02
+}
+
+
+
+
+
+endgroup -- block-group "TX"
+
+
+
+endgroup -- block-group "GWA1"
+
+
+
+group "IFC1" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+
+group "RX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_RX_Msg_8_Sgn_1
+{
+type: UINT(8)
+alias: "RollingCounter_IFC"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_8_Sgn_2
+{
+type: UINT(8)
+alias: "LKATrqCmdReqFlag"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_8_Sgn_3
+{
+type: flt(64,IEEE)
+alias: "LKATrqOvlCmdReqValue"
+flags: OUTPUT|READONLY
+desc: ""
+unit: "Nm"
+value: -10.23
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_8_Sgn_4
+{
+type: UINT(16)
+alias: "LKATrqOvlCmdProtnValue"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_8_Sgn_5
+{
+type: UINT(8)
+alias: "CheckSum_IFC"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_MIDRX[1]
+{
+type: UINT(32)
+alias: "IFC1_ID"
+flags: OUTPUT|READONLY
+desc: "Message ID"
+unit: ""
+value: 265
+}
+
+
+
+
+CANMMEPS_CAN_MIDFRX[1]
+{
+type: UINT(8)
+alias: "IFC1_IDFormat"
+flags: OUTPUT|READONLY
+desc: "Message ID Format"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXLEN[1]
+{
+type: UINT(8)
+alias: "IFC1_Length"
+flags: OUTPUT|READONLY
+desc: "Message Length"
+unit: ""
+value: 8
+}
+
+
+
+
+CANMMEPS_CAN_RXsta[1]
+{
+type: UINT(8)
+alias: "IFC1_status"
+flags: OUTPUT|READONLY
+desc: "IFC1 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXdt[1]
+{
+type: flt(64,IEEE)
+alias: "IFC1_dt"
+flags: OUTPUT|READONLY
+desc: "IFC1 DeltaTime"
+unit: "s"
+value: 0.02
+}
+
+
+
+
+CANMMEPS_CAN_RXt[1]
+{
+type: flt(64,IEEE)
+alias: "IFC1_time"
+flags: OUTPUT|READONLY
+desc: "IFC1 Time"
+unit: "s"
+value: 0.0
+}
+
+
+
+
+
+endgroup -- block-group "RX"
+
+
+
+group "TX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_WBS[1]
+{
+type: UINT(8)
+alias: "IFC1_CheckEnable"
+flags: OUTPUT|READONLY
+desc: "Check enabled IFC1"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXDT[1]
+{
+type: flt(64,IEEE)
+alias: "IFC1_DelayTime"
+flags: OUTPUT|READONLY
+desc: "DelayTime IFC1"
+unit: "s"
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXsta[1]
+{
+type: UINT(8)
+alias: "IFC1_status"
+flags: OUTPUT|READONLY
+desc: "IFC1 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXEIN[1]
+{
+type: UINT(8)
+alias: "IFC1_Enable"
+flags: PARAM
+desc: "Enable IFC1"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_TXCIE[1]
+{
+type: UINT(8)
+alias: "IFC1_PeriodicalOn"
+flags: PARAM
+desc: "Activate cyclic transmission for IFC1"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_TXKIEX[1]
+{
+type: UINT(8)
+alias: "IFC1_Kickout"
+flags: PARAM
+desc: "Kickout IFC1"
+unit: ""
+range: <0; 1>
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXCT[1]
+{
+type: flt(64,IEEE)
+alias: "IFC1_CycleTime"
+flags: PARAM
+desc: "CycleTime IFC1"
+unit: "s"
+range: <0; 1000>
+value: 2.000000e-02
+}
+
+
+
+
+
+endgroup -- block-group "TX"
+
+
+
+endgroup -- block-group "IFC1"
+
+
+
+group "SAS1" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+
+group "RX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_RX_Msg_9_Sgn_1
+{
+type: UINT(8)
+alias: "RollingCounter_SAS1"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_9_Sgn_2
+{
+type: UINT(8)
+alias: "SAS_Sts"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_9_Sgn_3
+{
+type: UINT(8)
+alias: "SAS_Generation"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_9_Sgn_4
+{
+type: UINT(8)
+alias: "SteerWheelSpdSign"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_9_Sgn_5
+{
+type: flt(64,IEEE)
+alias: "SteerWheelSpd"
+flags: OUTPUT|READONLY
+desc: ""
+unit: "deg/s"
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_9_Sgn_6
+{
+type: UINT(8)
+alias: "SteerWheelAngleSign"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_9_Sgn_7
+{
+type: flt(64,IEEE)
+alias: "SteerWheelAngle"
+flags: OUTPUT|READONLY
+desc: ""
+unit: "deg"
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_9_Sgn_8
+{
+type: UINT(8)
+alias: "CheckSum_SAS1"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_MIDRX[0]
+{
+type: UINT(32)
+alias: "SAS1_ID"
+flags: OUTPUT|READONLY
+desc: "Message ID"
+unit: ""
+value: 161
+}
+
+
+
+
+CANMMEPS_CAN_MIDFRX[0]
+{
+type: UINT(8)
+alias: "SAS1_IDFormat"
+flags: OUTPUT|READONLY
+desc: "Message ID Format"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXLEN[0]
+{
+type: UINT(8)
+alias: "SAS1_Length"
+flags: OUTPUT|READONLY
+desc: "Message Length"
+unit: ""
+value: 8
+}
+
+
+
+
+CANMMEPS_CAN_RXsta[0]
+{
+type: UINT(8)
+alias: "SAS1_status"
+flags: OUTPUT|READONLY
+desc: "SAS1 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXdt[0]
+{
+type: flt(64,IEEE)
+alias: "SAS1_dt"
+flags: OUTPUT|READONLY
+desc: "SAS1 DeltaTime"
+unit: "s"
+value: 0.01
+}
+
+
+
+
+CANMMEPS_CAN_RXt[0]
+{
+type: flt(64,IEEE)
+alias: "SAS1_time"
+flags: OUTPUT|READONLY
+desc: "SAS1 Time"
+unit: "s"
+value: 0.0
+}
+
+
+
+
+
+endgroup -- block-group "RX"
+
+
+
+group "TX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_WBS[0]
+{
+type: UINT(8)
+alias: "SAS1_CheckEnable"
+flags: OUTPUT|READONLY
+desc: "Check enabled SAS1"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXDT[0]
+{
+type: flt(64,IEEE)
+alias: "SAS1_DelayTime"
+flags: OUTPUT|READONLY
+desc: "DelayTime SAS1"
+unit: "s"
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXsta[0]
+{
+type: UINT(8)
+alias: "SAS1_status"
+flags: OUTPUT|READONLY
+desc: "SAS1 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXEIN[0]
+{
+type: UINT(8)
+alias: "SAS1_Enable"
+flags: PARAM
+desc: "Enable SAS1"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_TXCIE[0]
+{
+type: UINT(8)
+alias: "SAS1_PeriodicalOn"
+flags: PARAM
+desc: "Activate cyclic transmission for SAS1"
+unit: ""
+range: <0; 1>
+value: 1
+}
+
+
+
+
+CANMMEPS_CAN_TXKIEX[0]
+{
+type: UINT(8)
+alias: "SAS1_Kickout"
+flags: PARAM
+desc: "Kickout SAS1"
+unit: ""
+range: <0; 1>
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_TXCT[0]
+{
+type: flt(64,IEEE)
+alias: "SAS1_CycleTime"
+flags: PARAM
+desc: "CycleTime SAS1"
+unit: "s"
+range: <0; 1000>
+value: 1.000000e-02
+}
+
+
+
+
+
+endgroup -- block-group "TX"
+
+
+
+endgroup -- block-group "SAS1"
+
+
+
+group "SAS2" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+
+group "RX" -- subsystem-group
+{
+     flags: COLLAPSED
+}
+
+
+CANMMEPS_CAN_RX_Msg_10_Sgn_1
+{
+type: UINT(8)
+alias: "SAS_CheckSum"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_10_Sgn_2
+{
+type: UINT(8)
+alias: "SAS_MsgCount"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_10_Sgn_3
+{
+type: UINT(8)
+alias: "SAS_OK"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_10_Sgn_4
+{
+type: UINT(8)
+alias: "SAS_CAL"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_10_Sgn_5
+{
+type: UINT(8)
+alias: "SAS_Trim"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_10_Sgn_6
+{
+type: UINT(8)
+alias: "SAS_Speed_Valid"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_10_Sgn_7
+{
+type: UINT(8)
+alias: "SAS_Stat_SF1"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_10_Sgn_8
+{
+type: UINT(8)
+alias: "SAS_Stat_SF2"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_10_Sgn_9
+{
+type: UINT(8)
+alias: "SAS_Stat_SF3"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_10_Sgn_10
+{
+type: UINT(8)
+alias: "SAS_Stat_SF4"
+flags: OUTPUT|READONLY
+desc: ""
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_10_Sgn_11
+{
+type: UINT(16)
+alias: "SAS_Speed"
+flags: OUTPUT|READONLY
+desc: ""
+unit: "deg/s"
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RX_Msg_10_Sgn_12
+{
+type: flt(64,IEEE)
+alias: "SAS_Angle"
+flags: OUTPUT|READONLY
+desc: ""
+unit: "deg"
+value: -900
+}
+
+
+
+
+CANMMEPS_CAN_MIDRX[9]
+{
+type: UINT(32)
+alias: "SAS2_ID"
+flags: OUTPUT|READONLY
+desc: "Message ID"
+unit: ""
+value: 922
+}
+
+
+
+
+CANMMEPS_CAN_MIDFRX[9]
+{
+type: UINT(8)
+alias: "SAS2_IDFormat"
+flags: OUTPUT|READONLY
+desc: "Message ID Format"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXLEN[9]
+{
+type: UINT(8)
+alias: "SAS2_Length"
+flags: OUTPUT|READONLY
+desc: "Message Length"
+unit: ""
+value: 8
+}
+
+
+
+
+CANMMEPS_CAN_RXsta[9]
+{
+type: UINT(8)
+alias: "SAS2_status"
+flags: OUTPUT|READONLY
+desc: "SAS2 Status"
+unit: ""
+value: 0
+}
+
+
+
+
+CANMMEPS_CAN_RXdt[9]
+{
+type: flt(64,IEEE)
+alias: "SAS2_dt"
+flags: OUTPUT|READONLY
+desc: "SAS2 DeltaTime"
+unit: "s"
+value: 0.01
+}
+
+
+
+
+CANMMEPS_CAN_RXt[9]
+{
+type: flt(64,IEEE)
+alias: "SAS2_time"
+flags: OUTPUT|READONLY
+desc: "SAS2 Time"
+unit: "s"
+value: 0.0
+}
+
+
+
+
+
+endgroup -- block-group "RX"
+
+
+
+endgroup -- block-group "SAS2"
+
+
+
+group "RT" -- subsystem-group
+{
+     flags: COLLAPSED | HIDDEN
+}
+
+
+
+group "FreeRawMessages" -- subsystem-group
+{
+     flags: COLLAPSED | HIDDEN
+}
+
+
+
+endgroup -- block-group "FreeRawMessages"
+
+
+
+endgroup -- block-group "RT"
+
+
+
+endgroup -- block-group "EPS_CAN"
+
+
+-- END@RTICANMM_MAIN_EPS_CAN_DS1401_2_1_1

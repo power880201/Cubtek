@@ -1,0 +1,982 @@
+Model {
+  Name			  fun_ut
+  Version		  7.0
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    1
+    Inport {
+      BusObject		      "BINP_outputs"
+      Name		      "BINP_outputs"
+    }
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.1589"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  PreLoadFcn		  "if exist('tl_preloadfcn','file'), tl_preloadfcn(gcs,100); end"
+  PostLoadFcn		  "if exist('tl_postloadfcn','file'), tl_postloadfcn(gcs,100); end"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  PreSaveFcn		  "if exist('tl_presavefcn','file'), tl_presavefcn(gcs); end"
+  InitFcn		  "if exist('tlds_init','file'), tlds_init(gcs); end"
+  StartFcn		  "if exist('tlds_start','file'), tlds_start(gcs); end"
+  StopFcn		  "if exist('tlds_stop','file'), tlds_stop(gcs); end"
+  UserBdParams		  "DS_PROJECTFILE;TL_MAIN_DATA;TLRevision"
+  DS_PROJECTFILE	  "hcu_strategy.dd"
+  TL_MAIN_DATA		  "struct('date',733922.63123271987,'maxnumsimulations',10,'codeopt',struct('inliningthreshold',6,'tar"
+  "get',['Generic ANSI-C'],'assembler',0,'optlevel',2,'linebreaklimit',100,'stateactcodinglimit',5,'functionsfor64bitop"
+  "s',1,'sections',1,'sfbitfields',1,'globalbitfields',0,'sharefunctions',0,'noinitstozero',0,'limidentlength',1,'decim"
+  "als',1,'separatesearch',0,'cleancode',0,'optimizedbooltype',1,'keepsaturation',0,'extvarsharing',0,'outputstylefile'"
+  ",'cconfig.xml','rootstylesheet','TL_CSourceCodeSS.xsl','addchecksum',0,'modelsaving',2,'browsecodegen',0),'frameopt'"
+  ",struct('exectime',1,'stacksize',1,'simconfig',['default EVM'],'targettimeout',1,'mexargs','-g','tcargs',''),'logopt"
+  "',struct('plotinterval',inf,'globalloggingmode',1),'export',struct('directory','.\\export','sysfiles',1,'docfiles',0"
+  ",'tools',0),'codecoveragelevel',0,'asapscript','asap2_all_in_one','docscript','tldoc_default','rtos',struct('enablem"
+  "ultirate',0,'currentrtos',['generic RTOS'],'autopriority',0,'autoinitalarm',1,'alarminitwithrestart',1,'usestartupho"
+  "ok',0,'useshutdownhook',0,'usepretaskhook',0,'useposttaskhook',0,'useerrorhook',0,'alarmactivationkind',1,'alarmstar"
+  "toffset',0),'blockcomment','')"
+  TLRevision		  "100"
+  Created		  "Mon Aug 11 13:56:13 2008"
+  Creator		  "pg2"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "eb8"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed May 16 19:37:44 2012"
+  RTWModifiedTimeStamp	  259097863
+  ModelVersionFormat	  "1.%<AutoIncrement:1589>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "user"
+  WideLines		  on
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks on
+  BrowserLookUnderMasks	  on
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  off
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.3.0"
+      Array {
+	Type			"Handle"
+	Dimension		7
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.3.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "C_TICK_TIME_S"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "FixedStepDiscrete"
+	  SolverName		  "FixedStepDiscrete"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  RateTranMode		  "Deterministic"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.3.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveFormat		  "Array"
+	  SaveOutput		  off
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.3.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    5
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "InitFltsAndDblsToZero"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  off
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  off
+	  BufferReuse		  off
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  off
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  off
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.3.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "warning"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"none"
+	  CheckSSInitialOutputMsg on
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "none"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "warning"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  StrictBusMsg		  "Warning"
+	  LoggingUnavailableSignals "error"
+  ModelReferenceSimTargetVerbose   off
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.3.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.3.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.3.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "IncludeHyperlinkInReport"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  RTWCompilerOptimization "Off"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.3.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.3.0"
+	      Array {
+		Type			"Cell"
+		Dimension		13
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Data Import//Export"
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    Orientation		    "right"
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Arial"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusAssignment
+      AssignedSignals	      "signal1"
+    }
+    Block {
+      BlockType		      BusSelector
+      OutputAsBus	      off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit via back propagation"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      LockScale		      off
+      ConvertRealWorld	      "Real World Value (RWV)"
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      SignalViewerScope
+      Floating		      off
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "0"
+      Disabled		      off
+      ScrollMode	      on
+    }
+  }
+  System {
+    Name		    fun_ut
+    Location		    [10, -925, 1383, -350]
+    Open		    off
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    215
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Inport
+      Name		      "BINP_outputs"
+      Position		      [320, 168, 350, 182]
+      IconDisplay	      "Port number"
+      UseBusObject	      on
+      BusObject		      "BINP_outputs"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      BusAssignment
+      Name		      "BUS: BINP_outputs"
+      Ports		      [5, 1]
+      Position		      [440, 142, 675, 428]
+      ShowName		      off
+      AssignedSignals	      "VINP_HVBattSOC_pct,VINP_HVBattSOCValid_flg,VINP_HVBattPwrAvailDischargeValid_flg,VINP_MCU"
+      "Enabled_flg"
+      Port {
+	PortNumber		1
+	Name			"BINP_outputs"
+	PropagatedSignals	"VINP_AppTime_ms, VINP_CANBusOff_flg, VINP_AccessoryActive_flg, VINP_CrankActive_flg, VINP_ImpactDe"
+	"tected_flg, VINP_BrkPedalPosn_deg, VINP_BrkPedalPosnValid_flg, VINP_BrkPedalPosnShortHighFlt_enum, VINP_BrkPedalPosnS"
+	"hortLowFlt_enum, VINP_BrkVacuum_kPa, VINP_BrkVacuumValid_flg, VINP_BrkVacuumShortHighFlt_enum, VINP_BrkVacuumShortLow"
+	"Flt_enum, VINP_TiltAngle_deg, VINP_TiltAngleValid_flg, VINP_TiltAngleShortHighFlt_enum, VINP_TiltAngleShortLowFlt_enu"
+	"m, VINP_IgnitionVoltage_V, VINP_IgnitionVoltageValid_flg, VINP_IgnitionVoltageHighFlt_enum, VINP_IgnitionVoltageLowFl"
+	"t_enum, VINP_ECUCANValid_flg, VINP_AccelPedalPosnValid_flg, VINP_AutoStopInhibitEng_flg, VINP_AuxBattCurrent_A, VINP_"
+	"AuxBattCurrentValid_flg, VINP_AuxBattCurrentShortHighFlt_enum, VINP_AuxBattCurrentShortLowFlt_enum, VINP_BrkLightSwit"
+	"chActive_flg, VINP_BrkLightSwitchValid_flg, VINP_EngCoolantTemp_C, VINP_EngCoolantTempValid_flg, VINP_EngHybridOpStat"
+	"e_enum, VINP_EngIdle_flg, VINP_EngIdleControlActive_flg, VINP_EngSpd_erpm, VINP_EngSpdValid_flg, VINP_EngStartComplet"
+	"e_flg, VINP_EngStopped_flg, VINP_EngTqBasicInd_Nm, VINP_EngTqBasicIndValid_flg, VINP_EngTqFriction_Nm, VINP_EngTqIndA"
+	"ct_Nm, VINP_EngTqIndActValid_flg, VINP_EngTqMax_Nm, VINP_EngTqMaxValid_flg, VINP_EngTqMin_Nm, VINP_EngTqMinValid_flg,"
+	" VINP_EngTqStandard_Nm, VINP_FuelConsumedInst_mlps, VINP_FuelConsumedInstValid_flg, VINP_FuelCutActive_flg, VINP_HEVF"
+	"aultMode_enum, VINP_IgnitionActive_flg, VINP_AccelPedalPosnMon_pct, VINP_AccelPedalPosn_pct, VINP_EngSpdMon_erpm, VIN"
+	"P_EngTqAllowedMinMon_Nm, VINP_EngTqAllowedMinMonValid_flg, VINP_TCUCANValid_flg, VINP_AutoStopAllowedTrans_flg, VINP_"
+	"GearActual_enum, VINP_GearShiftActive_flg, VINP_GearShiftMode_enum, VINP_GearShiftPosn_enum, VINP_GearTarget_enum, VI"
+	"NP_GearTorqueLimitReq_Nm, VINP_GearTorqueLimitReqValid_flg, VINP_TransEOPFault_flg, VINP_TransShaftInSpd_rpm, VINP_Tr"
+	"ansShaftInSpdValid_flg, VINP_TrqConvCltchStatus_enum, VINP_GearBoxFault_flg, VINP_NeutralControlActive_flg, VINP_ABSC"
+	"ANValid_flg, VINP_ABSActive_flg, VINP_ABSFault_flg, VINP_VehSpd_kph, VINP_VehSpdValid_flg, VINP_WhlSpdFL_rpm, VINP_Wh"
+	"lSpdFLValid_flg, VINP_WhlSpdFR_rpm, VINP_WhlSpdFRValid_flg, VINP_BCMCANValid_flg, VINP_IPKCANValid_flg, VINP_ACCompre"
+	"ssorOnReq_flg, VINP_ACEvapTemp_C, VINP_ACOn_flg, VINP_AmbientTemp_C, VINP_AmbientTempValid_flg, VINP_ACEconActive_flg"
+	", VINP_BonnetOpen_flg, VINP_CrankSecurityKeyValid_flg, VINP_AutoStopAllowedAC_flg, VINP_ACDefrostActive_flg, VINP_BSG"
+	"Speed_erpm, VINP_BSGSpeed_rpm, VINP_BSGSpeedValid_flg, VINP_BSGTemp_C, VINP_BSGTempValid_flg, VINP_BSGTqAct_Nm, VINP_"
+	"BSGTqActValid_flg, VINP_BSGTqAvailGen_Nm, VINP_BSGTqAvailGenValid_flg, VINP_BSGTqAvailMot_Nm, VINP_BSGTqAvailMotValid"
+	"_flg, VINP_BSGTqCmdMCU_Nm, VINP_BSGTqCmdMCUValid_flg, VINP_DCDCAuxCurrent_A, VINP_DCDCAuxCurrentValid_flg, VINP_DCDCA"
+	"uxVoltage_V, VINP_DCDCAuxVoltageValid_flg, VINP_DCDCEnabled_flg, VINP_DCDCHVCurrent_A, VINP_DCDCHVCurrentValid_flg, V"
+	"INP_DCDCMode_enum, VINP_DCDCTemp_C, VINP_DCDCTempValid_flg, VINP_HVBattCellMaxTemp_C, VINP_HVBattCellMaxTempValid_flg"
+	", VINP_HVBattContactorClosed_flg, VINP_HVBattCurrent_A, VINP_HVBattCurrentValid_flg, VINP_HVBattCapacity_J, VINP_HVBa"
+	"ttPrechargingActive_flg, VINP_HVBattPwrAvailCharge_kW, VINP_HVBattPwrAvailChargeValid_flg, VINP_HVBattPwrAvailDischar"
+	"ge_kW, VINP_HVBattPwrAvailDischargeValid_flg, VINP_HVBattSOC_pct, VINP_HVBattSOCValid_flg, VINP_HVBattSOCMax_pct, VIN"
+	"P_HVBattSOCMaxValid_flg, VINP_HVBattSOCMin_pct, VINP_HVBattSOCMinValid_flg, VINP_HVBattVoltage_V, VINP_HVBattVoltageV"
+	"alid_flg, VINP_HVBattVoltageCellMax_V, VINP_HVBattVoltageCellMaxValid_flg, VINP_HVBattVoltageCellMin_V, VINP_HVBattVo"
+	"ltageCellMinValid_flg, VINP_HVBattVoltageMax_V, VINP_HVBattVoltageMaxValid_flg, VINP_HVBattVoltageMin_V, VINP_HVBattV"
+	"oltageMinValid_flg, VINP_HVLinkVoltage_V, VINP_HVLinkVoltageValid_flg, VINP_MCUDefaultModeGeneration_flg, VINP_MCUDef"
+	"aultModeGenerationAck_flg, VINP_MCUEnabled_flg, VINP_MCUTemp_C, VINP_MCUTempValid_flg, VINP_PwrBoxFanSpeed_rpm, VINP_"
+	"PwrBoxFanSpeedValid_flg, VINP_PwrBoxInletAirTemp_C, VINP_PwrBoxInletAirTempValid_flg, VINP_HVILClosed_flg, VINP_HVILC"
+	"losedValid_flg, VINP_MCUHeartbeat_count, VINP_MCUHeartbeatValid_flg, VINP_SOHExploreStatus_enum"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      BusSelector
+      Name		      "Bus\nSelector3"
+      Ports		      [1, 1]
+      Position		      [1065, 256, 1070, 314]
+      ShowName		      off
+      OutputSignals	      "VFUN_EBoostAvail_flg"
+      Port {
+	PortNumber		1
+	Name			"<VFUN_EBoostAvail_flg>"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "CNV: VINP_VehSpd_kph"
+      Position		      [295, 217, 375, 243]
+      ShowName		      off
+      OutDataTypeMode	      "double"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "CNV: VINP_VehSpd_kph1"
+      Position		      [295, 272, 375, 298]
+      ShowName		      off
+      OutDataTypeMode	      "boolean"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "CNV: VINP_VehSpd_kph2"
+      Position		      [295, 327, 375, 353]
+      ShowName		      off
+      OutDataTypeMode	      "boolean"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "CNV: VINP_VehSpd_kph3"
+      Position		      [295, 382, 375, 408]
+      ShowName		      off
+      OutDataTypeMode	      "boolean"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion41"
+      Position		      [1200, 272, 1265, 298]
+      ShowName		      off
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "FUN"
+      Ports		      [1, 1, 0, 1]
+      Position		      [765, 198, 955, 372]
+      ForegroundColor	      "red"
+      BackgroundColor	      "yellow"
+      SourceBlock	      "fun/FUN"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Port {
+	PortNumber		1
+	PropagatedSignals	"BFUN_outputs"
+	ShowPropagatedSignals	"on"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Function-Call\nGenerator"
+      Ports		      [0, 1]
+      Position		      [755, 140, 800, 160]
+      SourceBlock	      "simulink/Ports &\nSubsystems/Function-Call\nGenerator"
+      SourceType	      "Function-Call Generator"
+      sample_time	      "C_TICK_TIME_S"
+      numberOfIterations      "1"
+      Port {
+	PortNumber		1
+	Name			"trig_FUN"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "IN: VINP_VehSpd_kph"
+      Ports		      [0, 1]
+      Position		      [25, 217, 235, 243]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      SourceBlock	      "siltestlib/Test Input"
+      SourceType	      "Test Input"
+      varname		      "VINP_HVBattSOC_pct"
+      sampletime	      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "IN: VINP_VehSpd_kph1"
+      Ports		      [0, 1]
+      Position		      [25, 272, 235, 298]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      SourceBlock	      "siltestlib/Test Input"
+      SourceType	      "Test Input"
+      varname		      "VINP_HVBattSOCValid_flg"
+      sampletime	      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "IN: VINP_VehSpd_kph2"
+      Ports		      [0, 1]
+      Position		      [25, 327, 235, 353]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      SourceBlock	      "siltestlib/Test Input"
+      SourceType	      "Test Input"
+      varname		      "VINP_HVBattPwrAvailDischargeValid_flg"
+      sampletime	      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "IN: VINP_VehSpd_kph3"
+      Ports		      [0, 1]
+      Position		      [25, 382, 235, 408]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      SourceBlock	      "siltestlib/Test Input"
+      SourceType	      "Test Input"
+      varname		      "VINP_MCUEnabled_flg"
+      sampletime	      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "OUT: VTQD_DriverTqReq_Nm"
+      Ports		      [1]
+      Position		      [1310, 272, 1520, 298]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      SourceBlock	      "siltestlib/Test Output"
+      SourceType	      "Test Output"
+      varname		      "VFUN_EBoostAvail_flg"
+      sampletime	      "-1"
+    }
+    Block {
+      BlockType		      SignalViewerScope
+      Name		      "E-IDle time exceeded"
+      Ports		      []
+      Position		      [20, 15, 60, 55]
+      IOType		      "viewer"
+      Location		      [188, 365, 512, 604]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      ShowDataMarkers	      off
+      ShowLegends	      off
+      SaveName		      "ScopeData1"
+      DataFormat	      "Array"
+      MaxDataPoints	      "7500"
+      RefreshTime	      0.035000
+    }
+    Block {
+      BlockType		      SignalViewerScope
+      Name		      "MFUN_EIdleTimeAllowed_s output"
+      Ports		      []
+      Position		      [20, 15, 60, 55]
+      IOType		      "viewer"
+      Location		      [62, 616, 386, 855]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      ShowDataMarkers	      off
+      ShowLegends	      off
+      DataFormat	      "Array"
+      MaxDataPoints	      "7500"
+      RefreshTime	      0.035000
+    }
+    Line {
+      Name		      "trig_FUN"
+      Labels		      [0, 0]
+      SrcBlock		      "Function-Call\nGenerator"
+      SrcPort		      1
+      Points		      [55, 0]
+      DstBlock		      "FUN"
+      DstPort		      trigger
+    }
+    Line {
+      Name		      "BINP_outputs"
+      Labels		      [0, 0]
+      SrcBlock		      "BUS: BINP_outputs"
+      SrcPort		      1
+      DstBlock		      "FUN"
+      DstPort		      1
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "FUN"
+      SrcPort		      1
+      DstBlock		      "Bus\nSelector3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "IN: VINP_VehSpd_kph"
+      SrcPort		      1
+      DstBlock		      "CNV: VINP_VehSpd_kph"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "BINP_outputs"
+      SrcPort		      1
+      DstBlock		      "BUS: BINP_outputs"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "CNV: VINP_VehSpd_kph"
+      SrcPort		      1
+      DstBlock		      "BUS: BINP_outputs"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "IN: VINP_VehSpd_kph1"
+      SrcPort		      1
+      DstBlock		      "CNV: VINP_VehSpd_kph1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "IN: VINP_VehSpd_kph2"
+      SrcPort		      1
+      DstBlock		      "CNV: VINP_VehSpd_kph2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "IN: VINP_VehSpd_kph3"
+      SrcPort		      1
+      DstBlock		      "CNV: VINP_VehSpd_kph3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "CNV: VINP_VehSpd_kph1"
+      SrcPort		      1
+      DstBlock		      "BUS: BINP_outputs"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "CNV: VINP_VehSpd_kph2"
+      SrcPort		      1
+      DstBlock		      "BUS: BINP_outputs"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "CNV: VINP_VehSpd_kph3"
+      SrcPort		      1
+      DstBlock		      "BUS: BINP_outputs"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "Data Type Conversion41"
+      SrcPort		      1
+      DstBlock		      "OUT: VTQD_DriverTqReq_Nm"
+      DstPort		      1
+    }
+    Line {
+      Name		      "<VFUN_EBoostAvail_flg>"
+      Labels		      [-1, 0]
+      SrcBlock		      "Bus\nSelector3"
+      SrcPort		      1
+      DstBlock		      "Data Type Conversion41"
+      DstPort		      1
+    }
+  }
+}
+Stateflow {
+  machine {
+    id			    1
+    name		    "tp7fd0eb56_4669_4d06_bbc9_4259cb92985c"
+    created		    "28-Aug-2008 15:29:37"
+    isLibrary		    0
+    firstTarget		    2
+    defaultActionLanguage   CLASSIC_BITOPS
+    debug {
+      breakOn		      [1 0 0]
+      animation		      [1 0.2]
+    }
+    sfVersion		    67014000.000001
+  }
+  target {
+    id			    2
+    name		    "sfun"
+    codeFlags		    " debug=1 overflow=1 echo=1"
+    machine		    1
+    linkNode		    [1 0 0]
+  }
+}

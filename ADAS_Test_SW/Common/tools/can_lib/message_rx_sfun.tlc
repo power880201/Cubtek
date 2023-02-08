@@ -1,0 +1,24 @@
+%% File : message_rx_sfun.tlc
+
+%implements  message_rx_sfun "C"
+
+%function BlockTypeSetup(block, system) Output
+  %openfile externs
+  %closefile externs
+  %<LibCacheExtern(externs)>
+  %%
+%endfunction
+
+%function Outputs(block, system) Output
+   /* S-Function "message_rx" Block: %<Name> */
+
+	%assign p1 = LibBlockParameter(P1, "", "", 0)
+	%assign p2 = LibBlockParameter(P2, "", "", 0)
+	
+	can_message_rx( %<p1>, %<p2> );
+	
+  %%
+%endfunction
+
+
+%% [EOF] message_rx_sfun.tlc

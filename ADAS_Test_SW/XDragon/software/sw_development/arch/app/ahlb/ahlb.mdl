@@ -1,0 +1,3181 @@
+Library {
+  Name			  "ahlb"
+  Version		  8.2
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "Big5"
+  PostLoadFcn		  ", if any(exist('dsrtsu_mdlpostloadfcn', 'file') == [2, 3, 6]), try dsrtsu_mdlpostloadfcn('Execute', "
+  "bdroot); catch fprintf('Error in PostLoadFcn (dsrtsu_mdlpostloadfcn) for model \"%s\":\\n %s\\n', bdroot, lasterr); "
+  "end, end, \n"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  UserBdParams		  "DSRTSU_INTERNAL_RTI_VER;DSRTSU_INTERNAL_RTI_TYPE;RTICANMMDATA;DSRTSU_INTERNAL_DSETHERNETUDP;DSRTSU_"
+  "INTERNAL_RTIFPGA"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-8.0, 0.0, 1382.0, 744.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[1]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[13]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1139.0, 577.0]
+	ZoomFactor		[1.0]
+	Offset			[0.0, 0.0]
+      }
+    }
+  }
+  DSRTSU_INTERNAL_RTI_VER "440"
+  DSRTSU_INTERNAL_RTI_TYPE "rti1401"
+  RTICANMMDATA		  "struct('GeneralSetupData',struct('modelroot','D:\\HAITEC\\SVN\\trunk\\ADAS_Softwares\\HTDragon\\sof"
+  "tware\\sw_development\\arch\\app\\ahlb','generalsettings',struct('filesettings',struct('destfolder',struct('Name','R"
+  "TICANMM_FILES','Check',1),'buildfolder',struct('Name','.','Check',1),'AbsDestfolder',struct('Name','D:\\HAITEC\\SVN\\"
+  "trunk\\ADAS_Softwares\\HTDragon\\software\\sw_development\\arch\\app\\ahlb\\RTICANMM_FILES'),'AbsBuildfolder',struct"
+  "('Name','D:\\HAITEC\\SVN\\trunk\\ADAS_Softwares\\HTDragon\\software\\sw_development\\arch\\app\\ahlb'))),'options',s"
+  "truct('addpaths',1,'rmpaths',1,'addtrcexclusion',logical(1),'cannavigator',struct('checkmonitoring',0),'show_usrtrc'"
+  ",0,'use_usrtrc',0),'advanced',struct('options',[1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 "
+  "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 "
+  "1 1 1 1 1 1 1 1]),'MPSetup',{{}},'modelname','ahlb','block','ahlb'))"
+  DSRTSU_INTERNAL_DSETHERNETUDP	"10"
+  DSRTSU_INTERNAL_RTIFPGA "30"
+  Created		  "Tue Oct 06 15:47:25 2015"
+  Creator		  "14014"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "14014"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Jun 23 15:53:03 2016"
+  RTWModifiedTimeStamp	  388597981
+  ModelVersionFormat	  "1.%<AutoIncrement:164>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  RecordCoverage	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  CovEnableCumulative	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      6
+      Version		      "1.13.1"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  7
+	  Version		  "1.13.1"
+	  StartTime		  "0.0"
+	  StopTime		  "Inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.001"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode1"
+	  SolverName		  "ode1"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  8
+	  Version		  "1.13.1"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  9
+	  Version		  "1.13.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  off
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  off
+	  BufferReuse		  off
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  off
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  off
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  10
+	  Version		  "1.13.1"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "none"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  11
+	  Version		  "1.13.1"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Zero"
+	  ProdEndianess		  "BigEndian"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "Generic->Custom"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Zero"
+	  TargetEndianess	  "BigEndian"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Generic->Custom"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  12
+	  Version		  "1.13.1"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  13
+	  Version		  "1.13.1"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  14
+	  Version		  "1.13.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    16
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    Cell		    "PackageGeneratedCodeAndArtifacts"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "rti1401.tlc"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rti"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "rti1401.tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  "dSPACE DS1401 Hardware Platform"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  "rti1401_make_rtw_hook"
+	  ConfigurationScript	  ""
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  DataInitializer	  ""
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      15
+	      Version		      "1.13.1"
+	      Array {
+		Type			"Cell"
+		Dimension		23
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.STFCustomTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      16
+	      Version		      "1.13.1"
+	      Array {
+		Type			"Cell"
+		Dimension		22
+		Cell			"TimeScaleFactor"
+		Cell			"CCompilerOptimizationOpts"
+		Cell			"RTICfgSetVer"
+		Cell			"NetworkClient"
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"GRTInterface"
+		Cell			"ParMdlRefBuildCompliant"
+		Cell			"MultiInstanceERTCode"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   off
+	      ConcurrentExecutionCompliant off
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      on
+	      GenerateAllocFcn	      off
+	      SystemTargetFile	      "rti1401.tlc"
+	      DialogCategory	      0
+	      Array {
+		Type			"Handle"
+		Dimension		1
+		Simulink.GRTTargetCC {
+		  $BackupClass		  "Simulink.TargetCC"
+		  $ObjectID		  17
+		  Version		  "1.13.1"
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    18
+		    Cell		    "GeneratePreprocessorConditionals"
+		    Cell		    "IncludeMdlTerminateFcn"
+		    Cell		    "CombineOutputUpdateFcns"
+		    Cell		    "SuppressErrorStatus"
+		    Cell		    "ERTCustomFileBanners"
+		    Cell		    "GenerateSampleERTMain"
+		    Cell		    "GenerateTestInterfaces"
+		    Cell		    "ModelStepFunctionPrototypeControlCompliant"
+		    Cell		    "CPPClassGenCompliant"
+		    Cell		    "GenerateAllocFcn"
+		    Cell		    "PurelyIntegerCode"
+		    Cell		    "SupportComplex"
+		    Cell		    "SupportAbsoluteTime"
+		    Cell		    "SupportContinuousTime"
+		    Cell		    "SupportNonInlinedSFcns"
+		    Cell		    "GRTInterface"
+		    Cell		    "ParMdlRefBuildCompliant"
+		    Cell		    "MultiInstanceERTCode"
+		    PropName		    "DisabledProps"
+		  }
+		  TargetFcnLib		  "ansi_tfl_table_tmw.mat"
+		  TargetLibSuffix	  ""
+		  TargetPreCompLibLocation ""
+		  CodeReplacementLibrary  "ANSI_C"
+		  UtilityFuncGeneration	  "Auto"
+		  ERTMultiwordTypeDef	  "System defined"
+		  ERTMultiwordLength	  256
+		  MultiwordLength	  2048
+		  GenerateFullHeader	  on
+		  GenerateSampleERTMain	  off
+		  GenerateTestInterfaces  off
+		  IsPILTarget		  off
+		  ModelReferenceCompliant on
+		  ParMdlRefBuildCompliant on
+		  CompOptLevelCompliant	  off
+		  ConcurrentExecutionCompliant off
+		  IncludeMdlTerminateFcn  on
+		  GeneratePreprocessorConditionals "Disable all"
+		  CombineOutputUpdateFcns off
+		  CombineSignalStateStructs off
+		  SuppressErrorStatus	  off
+		  ERTFirstTimeCompliant	  off
+		  IncludeFileDelimiter	  "Auto"
+		  ERTCustomFileBanners	  off
+		  SupportAbsoluteTime	  on
+		  LogVarNameModifier	  "rt_"
+		  MatFileLogging	  on
+		  MultiInstanceERTCode	  off
+		  SupportNonFinite	  on
+		  SupportComplex	  on
+		  PurelyIntegerCode	  off
+		  SupportContinuousTime	  on
+		  SupportNonInlinedSFcns  on
+		  SupportVariableSizeSignals off
+		  EnableShiftOperators	  on
+		  ParenthesesLevel	  "Nominal"
+		  MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+		  ModelStepFunctionPrototypeControlCompliant off
+		  CPPClassGenCompliant	  off
+		  AutosarCompliant	  off
+		  GRTInterface		  on
+		  GenerateAllocFcn	  off
+		  UseMalloc		  off
+		  ExtMode		  off
+		  ExtModeStaticAlloc	  off
+		  ExtModeTesting	  off
+		  ExtModeStaticAllocSize  1000000
+		  ExtModeTransport	  0
+		  ExtModeMexFile	  "noextcomm"
+		  ExtModeIntrfLevel	  "Level1"
+		  RTWCAPISignals	  off
+		  RTWCAPIParams		  off
+		  RTWCAPIStates		  off
+		  RTWCAPIRootIO		  off
+		  GenerateASAP2		  off
+		}
+		PropName		"Components"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1InitialSimState"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "RUN"
+		  Value			  1
+		  String		  "PAUSE"
+		  Value			  2
+		  String		  "STOP"
+		}
+		Name			"InitialSimState"
+		Value			"RUN"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1ExecutionMode"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "real-time"
+		  Value			  1
+		  String		  "time-scaled"
+		  Value			  2
+		  String		  "as fast as possible"
+		}
+		Name			"ExecutionMode"
+		Value			"real-time"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"ExecutionModeNonUI"
+		Value			"RTSIM"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TimeScaleFactor"
+		Value			"1.0"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TimeScaleFactorNonUI"
+		Value			"OPTION_DISABLED"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1AssertionMode"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "OFF"
+		  Value			  1
+		  String		  "WARN"
+		  Value			  2
+		  String		  "STOP"
+		}
+		Name			"AssertionMode"
+		Value			"OFF"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"EnableRealTimeTesting"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"EnableRealTimeTestingNonUI"
+		Value			"ON"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1CCompilerOptimi"
+		"zationOptsPopup_"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Default"
+		  Value			  1
+		  String		  "None"
+		  Value			  2
+		  String		  "User-defined"
+		}
+		Name			"CCompilerOptimizationOptsPopup_"
+		Value			"Default"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"CCompilerOptimizationOptsNonUI"
+		Value			"USE_DEFAULT"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"EnableDataSetStorage"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"EnableDataSetStorageNonUI"
+		Value			"OFF"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"AllowReservedHostServiceNums"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"int32"
+		Name			"RTICfgSetVer"
+		Value			460
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"LoadAfterBuild"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"LoadToFlash"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"LoadApplNonUI"
+		Value			"ON"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files_dSPACE RCPHIL 2014-A_MATLAB_RTI_RTI1401_TLC_rti1401_1PlatformSelecti"
+		"onPopup"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Platform Name"
+		  Value			  1
+		  String		  "Network Client"
+		}
+		Name			"PlatformSelectionPopup"
+		Value			"Platform Name"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"BoardName"
+		Value			"ds1401"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"BoardNameNonUI"
+		Value			"ds1401"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"NetworkClientNonUI"
+		Value			"OPTION_DISABLED"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCOnlyGlobals"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateLabels"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateVirtualBlocks"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateStates"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateDerivatives"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCApplySubsystemPermissions"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateParamValues"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCIsOmitVdOn"
+		Value			off
+	      }
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  18
+	  Version		  "1.13.1"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    " "
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 143, 64, 1223, 704 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusCreator
+      Inputs		      "4"
+      DisplayOption	      "none"
+      OutDataTypeStr	      "Inherit: auto"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      BusSelector
+      OutputSignals	      "signal1,signal2,signal3"
+      OutputAsBus	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+      ContentPreviewEnabled   off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      StatesWhenEnabling      "inherit"
+      PropagateVarSize	      "During execution"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      SampleTimeType	      "triggered"
+      SampleTime	      "1"
+      ZeroCross		      on
+      PortDimensions	      "-1"
+      TriggerSignalSampleTime "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      Interpolate	      on
+    }
+  }
+  System {
+    Name		    "ahlb"
+    Location		    [-8, 0, 1374, 744]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "330"
+    Block {
+      BlockType		      SubSystem
+      Name		      "AHLB"
+      SID		      "1"
+      Ports		      [2, 2, 0, 1]
+      Position		      [325, 156, 485, 234]
+      ZOrder		      1080
+      LibraryVersion	      "*1.141"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Nonreusable function"
+      RTWFcnNameOpts	      "Use subsystem name"
+      RTWFileNameOpts	      "Use subsystem name"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"AHLB"
+	Location		[-8, 0, 1374, 744]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "BDINR_outputs"
+	  SID			  "2"
+	  Position		  [100, 233, 130, 247]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: BDINR_outputs"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "BPER_outputs"
+	  SID			  "299"
+	  Position		  [100, 323, 130, 337]
+	  ZOrder		  2
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: BPER_outputs"
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "trig_AHLB"
+	  SID			  "4"
+	  Ports			  []
+	  Position		  [545, 25, 565, 45]
+	  ZOrder		  -3
+	  TriggerType		  "function-call"
+	  StatesWhenEnabling	  "held"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "AHLB"
+	  SID			  "5"
+	  Ports			  [3, 5]
+	  Position		  [395, 182, 630, 358]
+	  ZOrder		  -4
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VAHLB_ForceLowBeam_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "NAHLB_HighBeamCount_cnt"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    PropagatedSignals	    "NAHLB_HighBeamTime_s"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    PropagatedSignals	    "NAHLB_NoObjectTime_s"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    PropagatedSignals	    "NAHLB_NoObjectTimeLimit_s"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "AHLB"
+	    Location		    [-8, 0, 1374, 744]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "102"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VDINR_RearFogLamp_flg"
+	      SID		      "265"
+	      Position		      [85, 93, 115, 107]
+	      ZOrder		      792
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VDINR_RearFogLamp_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VDINR_HighBeam_flg"
+	      SID		      "266"
+	      Position		      [85, 143, 115, 157]
+	      ZOrder		      793
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VDINR_NumObstacles_num"
+	      SID		      "6"
+	      Position		      [85, 43, 115, 57]
+	      ZOrder		      -1
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VDINR_NumObstacles_num"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "AHLB"
+	      SID		      "279"
+	      Ports		      [7, 5]
+	      Position		      [420, 21, 900, 379]
+	      ZOrder		      791
+	      LibraryVersion	      "1.263"
+	      ErrorFcn		      "Stateflow.Translate.translate"
+	      PermitHierarchicalResolution "ExplicitOnly"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      SFBlockType	      "Chart"
+	      System {
+		Name			"AHLB"
+		Location		[1, 1, 1365, 727]
+		Open			off
+		ModelBrowserVisibility	on
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SIDHighWatermark	"157"
+		Block {
+		  BlockType		  Inport
+		  Name			  "VDINR_NumObstacles_num"
+		  SID			  "279::51"
+		  Position		  [20, 101, 40, 119]
+		  ZOrder		  31
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VDINR_RearFogLamp_flg"
+		  SID			  "279::53"
+		  Position		  [20, 136, 40, 154]
+		  ZOrder		  33
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VDINR_HighBeam_flg"
+		  SID			  "279::54"
+		  Position		  [20, 171, 40, 189]
+		  ZOrder		  34
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "KAHLB_NoObjectTimeHighLimit_s"
+		  SID			  "279::55"
+		  Position		  [20, 206, 40, 224]
+		  ZOrder		  35
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "KAHLB_NoObjectTimeLowLimit_s"
+		  SID			  "279::59"
+		  Position		  [20, 246, 40, 264]
+		  ZOrder		  39
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "KAHLB_HighBeamTimeHighLimit_s"
+		  SID			  "279::56"
+		  Position		  [20, 281, 40, 299]
+		  ZOrder		  36
+		  Port			  "6"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "KAHLB_HighBeamTimeLowLimit_s"
+		  SID			  "279::58"
+		  Position		  [20, 316, 40, 334]
+		  ZOrder		  38
+		  Port			  "7"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Demux
+		  Name			  " Demux "
+		  SID			  "279::64"
+		  Ports			  [1, 1]
+		  Position		  [270, 315, 320, 355]
+		  ZOrder		  44
+		  Outputs		  "1"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  " SFunction "
+		  SID			  "279::63"
+		  Tag			  "Stateflow S-Function ahlb 1"
+		  Ports			  [7, 6]
+		  Position		  [180, 100, 230, 260]
+		  ZOrder		  43
+		  FunctionName		  "sf_sfun"
+		  Parameters		  "C_TASK_5MS_S"
+		  PortCounts		  "[7 6]"
+		  EnableBusSupport	  off
+		  Port {
+		    PortNumber		    2
+		    Name		    "VAHLB_ForceLowBeam_flg"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		  Port {
+		    PortNumber		    3
+		    Name		    "NAHLB_HighBeamCount_cnt"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		  Port {
+		    PortNumber		    4
+		    Name		    "NAHLB_HighBeamTime_s"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		  Port {
+		    PortNumber		    5
+		    Name		    "NAHLB_NoObjectTime_s"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		  Port {
+		    PortNumber		    6
+		    Name		    "NAHLB_NoObjectTimeLimit_s"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  " Terminator "
+		  SID			  "279::78"
+		  Position		  [460, 326, 480, 344]
+		  ZOrder		  47
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "VAHLB_ForceLowBeam_flg"
+		  SID			  "279::52"
+		  Position		  [460, 101, 480, 119]
+		  ZOrder		  32
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NAHLB_HighBeamCount_cnt"
+		  SID			  "279::82"
+		  Position		  [460, 136, 480, 154]
+		  ZOrder		  51
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NAHLB_HighBeamTime_s"
+		  SID			  "279::81"
+		  Position		  [460, 171, 480, 189]
+		  ZOrder		  50
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NAHLB_NoObjectTime_s"
+		  SID			  "279::80"
+		  Position		  [460, 206, 480, 224]
+		  ZOrder		  49
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NAHLB_NoObjectTimeLimit_s"
+		  SID			  "279::79"
+		  Position		  [460, 246, 480, 264]
+		  ZOrder		  48
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  116
+		  SrcBlock		  "VDINR_NumObstacles_num"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  117
+		  SrcBlock		  "VDINR_RearFogLamp_flg"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  118
+		  SrcBlock		  "VDINR_HighBeam_flg"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  3
+		}
+		Line {
+		  ZOrder		  119
+		  SrcBlock		  "KAHLB_NoObjectTimeHighLimit_s"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  4
+		}
+		Line {
+		  ZOrder		  120
+		  SrcBlock		  "KAHLB_NoObjectTimeLowLimit_s"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  5
+		}
+		Line {
+		  ZOrder		  121
+		  SrcBlock		  "KAHLB_HighBeamTimeHighLimit_s"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  6
+		}
+		Line {
+		  ZOrder		  122
+		  SrcBlock		  "KAHLB_HighBeamTimeLowLimit_s"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  7
+		}
+		Line {
+		  Name			  "VAHLB_ForceLowBeam_flg"
+		  ZOrder		  123
+		  Labels		  [0, 0]
+		  SrcBlock		  " SFunction "
+		  SrcPort		  2
+		  DstBlock		  "VAHLB_ForceLowBeam_flg"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NAHLB_HighBeamCount_cnt"
+		  ZOrder		  124
+		  Labels		  [0, 0]
+		  SrcBlock		  " SFunction "
+		  SrcPort		  3
+		  DstBlock		  "NAHLB_HighBeamCount_cnt"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NAHLB_HighBeamTime_s"
+		  ZOrder		  125
+		  Labels		  [0, 0]
+		  SrcBlock		  " SFunction "
+		  SrcPort		  4
+		  DstBlock		  "NAHLB_HighBeamTime_s"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NAHLB_NoObjectTime_s"
+		  ZOrder		  126
+		  Labels		  [0, 0]
+		  SrcBlock		  " SFunction "
+		  SrcPort		  5
+		  DstBlock		  "NAHLB_NoObjectTime_s"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NAHLB_NoObjectTimeLimit_s"
+		  ZOrder		  127
+		  Labels		  [0, 0]
+		  SrcBlock		  " SFunction "
+		  SrcPort		  6
+		  DstBlock		  "NAHLB_NoObjectTimeLimit_s"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  128
+		  SrcBlock		  " Demux "
+		  SrcPort		  1
+		  DstBlock		  " Terminator "
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  129
+		  SrcBlock		  " SFunction "
+		  SrcPort		  1
+		  DstBlock		  " Demux "
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      SID		      "291"
+	      Position		      [30, 287, 220, 313]
+	      ZOrder		      805
+	      ShowName		      off
+	      Value		      "KAHLB_HighBeamTimeHighLimit_s"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      SID		      "282"
+	      Position		      [30, 187, 220, 213]
+	      ZOrder		      796
+	      ShowName		      off
+	      Value		      "KAHLB_NoObjectTimeHighLimit_s"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant3"
+	      SID		      "295"
+	      Position		      [30, 237, 220, 263]
+	      ZOrder		      810
+	      ShowName		      off
+	      Value		      "KAHLB_NoObjectTimeLowLimit_s"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant4"
+	      SID		      "296"
+	      Position		      [30, 337, 220, 363]
+	      ZOrder		      811
+	      ShowName		      off
+	      Value		      "KAHLB_HighBeamTimeLowLimit_s"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VAHLB_ForceLowBeam_flg"
+	      SID		      "249"
+	      Position		      [1060, 53, 1090, 67]
+	      ZOrder		      809
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NAHLB_HighBeamCount_cnt"
+	      SID		      "325"
+	      Position		      [1060, 123, 1090, 137]
+	      ZOrder		      891
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NAHLB_HighBeamTime_s"
+	      SID		      "326"
+	      Position		      [1060, 193, 1090, 207]
+	      ZOrder		      892
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NAHLB_NoObjectTime_s"
+	      SID		      "327"
+	      Position		      [1060, 263, 1090, 277]
+	      ZOrder		      893
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "NAHLB_NoObjectTimeLimit_s"
+	      SID		      "328"
+	      Position		      [1060, 333, 1090, 347]
+	      ZOrder		      894
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "Constant4"
+	      SrcPort		      1
+	      DstBlock		      "AHLB"
+	      DstPort		      7
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      DstBlock		      "AHLB"
+	      DstPort		      6
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "Constant3"
+	      SrcPort		      1
+	      DstBlock		      "AHLB"
+	      DstPort		      5
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "AHLB"
+	      SrcPort		      1
+	      DstBlock		      "VAHLB_ForceLowBeam_flg"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      DstBlock		      "AHLB"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "VDINR_NumObstacles_num"
+	      SrcPort		      1
+	      DstBlock		      "AHLB"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      7
+	      SrcBlock		      "VDINR_RearFogLamp_flg"
+	      SrcPort		      1
+	      DstBlock		      "AHLB"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      8
+	      SrcBlock		      "VDINR_HighBeam_flg"
+	      SrcPort		      1
+	      DstBlock		      "AHLB"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      18
+	      SrcBlock		      "AHLB"
+	      SrcPort		      2
+	      DstBlock		      "NAHLB_HighBeamCount_cnt"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      19
+	      SrcBlock		      "AHLB"
+	      SrcPort		      3
+	      DstBlock		      "NAHLB_HighBeamTime_s"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      20
+	      SrcBlock		      "AHLB"
+	      SrcPort		      4
+	      DstBlock		      "NAHLB_NoObjectTime_s"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      21
+	      SrcBlock		      "AHLB"
+	      SrcPort		      5
+	      DstBlock		      "NAHLB_NoObjectTimeLimit_s"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator"
+	  SID			  "256"
+	  Ports			  [1, 1]
+	  Position		  [815, 181, 820, 219]
+	  ZOrder		  -5
+	  ShowName		  off
+	  Inputs		  "1"
+	  DisplayOption		  "bar"
+	  OutDataTypeStr	  "Bus: BAHLB_outputs"
+	  Port {
+	    PortNumber		    1
+	    Name		    "BAHLB_outputs"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator1"
+	  SID			  "329"
+	  Ports			  [4, 1]
+	  Position		  [805, 218, 810, 357]
+	  ZOrder		  4
+	  ShowName		  off
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector1"
+	  SID			  "258"
+	  Ports			  [1, 2]
+	  Position		  [180, 181, 185, 299]
+	  ZOrder		  -7
+	  ShowName		  off
+	  OutputSignals		  "VDINR_RearFogSwOn_flg,VDINR_HighBeamSwOn_flg"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<VDINR_RearFogSwOn_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "<VDINR_HighBeamSwOn_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector2"
+	  SID			  "300"
+	  Ports			  [1, 1]
+	  Position		  [180, 313, 185, 347]
+	  ZOrder		  1
+	  ShowName		  off
+	  OutputSignals		  "VPER_NumberOfTargets_enum"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<VPER_NumberOfTargets_enum>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BAHLB_outputs"
+	  SID			  "260"
+	  Position		  [950, 193, 980, 207]
+	  ZOrder		  -9
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: BAHLB_outputs"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BAHLB_Tests"
+	  SID			  "330"
+	  Position		  [950, 283, 980, 297]
+	  ZOrder		  3
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  4
+	  Labels		  [-1, 0]
+	  SrcBlock		  "AHLB"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "BAHLB_outputs"
+	  ZOrder		  5
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator"
+	  SrcPort		  1
+	  DstBlock		  "BAHLB_outputs"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "BDINR_outputs"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<VDINR_RearFogSwOn_flg>"
+	  ZOrder		  7
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector1"
+	  SrcPort		  1
+	  Points		  [190, 0]
+	  DstBlock		  "AHLB"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<VDINR_HighBeamSwOn_flg>"
+	  ZOrder		  8
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector1"
+	  SrcPort		  2
+	  Points		  [190, 0]
+	  DstBlock		  "AHLB"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "BPER_outputs"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<VPER_NumberOfTargets_enum>"
+	  ZOrder		  10
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  1
+	  Points		  [190, 0]
+	  DstBlock		  "AHLB"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  11
+	  Labels		  [-1, 0]
+	  SrcBlock		  "AHLB"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  12
+	  Labels		  [-1, 0]
+	  SrcBlock		  "AHLB"
+	  SrcPort		  3
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  13
+	  Labels		  [-1, 0]
+	  SrcBlock		  "AHLB"
+	  SrcPort		  4
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  14
+	  Labels		  [-1, 0]
+	  SrcBlock		  "AHLB"
+	  SrcPort		  5
+	  DstBlock		  "Bus\nCreator1"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  15
+	  SrcBlock		  "Bus\nCreator1"
+	  SrcPort		  1
+	  DstBlock		  "BAHLB_Tests"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Model Info"
+      SID		      "297"
+      Ports		      []
+      Position		      [80, 24, 298, 78]
+      ZOrder		      1082
+      ShowName		      off
+      LibraryVersion	      "1.286"
+      FontName		      "Arial"
+      SourceBlock	      "simulink/Model-Wide\nUtilities/Model Info"
+      SourceType	      "CMBlock"
+      ContentPreviewEnabled   off
+      InitialBlockCM	      "None"
+      BlockCM		      "None"
+      Frame		      "on"
+      DisplayStringWithTags   "Model Version        : %<ModelVersion>\nCreator                   : %<Creator>\nLast Mo"
+      "dified by    : %<LastModifiedBy>"
+      MaskDisplayString	      "Model Version        : 1.163\\nCreator                   : 14014\\nLast Modified by    "
+      ": 14014"
+      HorizontalTextAlignment "Left"
+      LeftAlignmentValue      "0.02"
+      SourceBlockDiagram      "ahlb"
+      TagMaxNumber	      "20"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "model_info"
+      SID		      "298"
+      Ports		      []
+      Position		      [345, 39, 629, 67]
+      ZOrder		      1081
+      ShowName		      off
+      LibraryVersion	      "1.286"
+      FontName		      "Arial"
+      SourceBlock	      "simulink/Model-Wide\nUtilities/Model Info"
+      SourceType	      "CMBlock"
+      ContentPreviewEnabled   off
+      InitialBlockCM	      "None"
+      BlockCM		      "None"
+      Frame		      "on"
+      DisplayStringWithTags   "$Id: ahlb.mdl 1419 2016-06-27 04:04:52Z chimotsai $"
+      MaskDisplayString	      "$Id: ahlb.mdl 1419 2016-06-27 04:04:52Z chimotsai $"
+      HorizontalTextAlignment "Center"
+      LeftAlignmentValue      "0.5"
+      SourceBlockDiagram      "ahlb"
+      TagMaxNumber	      "20"
+    }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.6 (R2013a) dated Aug  8 2013, 23:18:33
+#
+#
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "ahlb"
+    created		    "25-Apr-2016 14:24:29"
+    isLibrary		    1
+    firstTarget		    59
+    defaultActionLanguage   CLASSIC_BITOPS
+    sfVersion		    76014001.0016
+  }
+  chart {
+    id			    2
+    name		    "AHLB/AHLB/AHLB"
+    windowPosition	    [1 1 1364 726]
+    viewLimits		    [1212.393 2333.393 -73.178 485.822]
+    zoomFactor		    1.333
+    stateColor		    [0.3803921568627451 0.2745098039215687 0.1803921568627451]
+    stateLabelColor	    [0.4588235294117647 0.2980392156862745 0.1411764705882353]
+    transitionColor	    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
+    transitionLabelColor    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
+    junctionColor	    [0.7764705882352941 0.4980392156862745 0]
+    chartColor		    [1 0.9882352941176471 0.9254901960784314]
+    screen		    [1 1 1920 1200 1.333333333333333]
+    treeNode		    [0 6 0 0]
+    firstTransition	    55
+    viewObj		    2
+    machine		    1
+    toolbarMode		    LIBRARY_TOOLBAR
+    ssIdHighWaterMark	    413
+    decomposition	    CLUSTER_CHART
+    firstData		    42
+    chartFileNumber	    1
+    saturateOnIntegerOverflow 1
+    userSpecifiedStateTransitionExecutionOrder 1
+    disableImplicitCasting  1
+    actionLanguage	    1
+  }
+  state {
+    id			    3
+    labelString		    "SELECT_DELAY_TIME"
+    position		    [1344.647 259.5933 175.2 38.8333]
+    fontSize		    12
+    chart		    2
+    treeNode		    [9 0 5 0]
+    firstTransition	    21
+    firstJunction	    10
+    superState		    SUBCHART
+    visible		    0
+    subviewer		    2
+    subviewS {
+      x1		      697.212
+      y1		      20.212
+      pos		      [718 41 685.2 526.333]
+    }
+    ssIdNumber		    385
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    4
+    labelString		    "DISABLE\nen:\nVAHLB_ForceLowBeam_flg=0;\nNAHLB_HighBeamCount_cnt=0;\nNAHLB_NoObjectTimeLimit_s=."
+    "..\nKAHLB_NoObjectTimeLowLimit_s;"
+    position		    [20.8308 226.2104 224.7442 103.6]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 6 0]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    19
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    5
+    labelString		    "NO_OBJECTS\ndu:\nNAHLB_NoObjectTime_s=NAHLB_NoObjectTime_s+C_TASK_5MS_S;\n"
+    position		    [2047.2117 245.9073 417.3 89.8]
+    fontSize		    12
+    chart		    2
+    treeNode		    [9 0 8 3]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    288
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    6
+    labelString		    "ENABLE"
+    position		    [550.4389 118.8562 1960.9062 312.25]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 9 0 4]
+    firstTransition	    35
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    323
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    7
+    labelString		    "LOW_BEAM\nen:\nVAHLB_ForceLowBeam_flg=0;\nNAHLB_HighBeamTime_s=C_TASK_5MS_S;\ndu:\nNAHLB_HighBea"
+    "mTime_s=NAHLB_HighBeamTime_s+C_TASK_5MS_S;\n\n"
+    position		    [576.7085 233.8412 403.875 129.8375]
+    fontSize		    12
+    chart		    2
+    treeNode		    [6 0 9 0]
+    visible		    0
+    subviewer		    2
+    subviewS {
+      x1		      -50
+      y1		      -50
+      pos		      [0 0 812.108 494.337]
+    }
+    ssIdNumber		    293
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    8
+    labelString		    "HAVE_OBJECTS\nen:\nNAHLB_NoObjectTime_s=C_TASK_5MS_S;\n"
+    position		    [1557.4179 245.3069 246.294 67.4062]
+    fontSize		    12
+    chart		    2
+    treeNode		    [9 0 0 5]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    295
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    9
+    labelString		    "HIGH_BEAM\n\nen:\nVAHLB_ForceLowBeam_flg=1;\n\n"
+    position		    [1314.9869 146.3476 1174.6823 253.4]
+    fontSize		    12
+    chart		    2
+    treeNode		    [6 8 0 7]
+    firstTransition	    38
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    289
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  junction {
+    id			    10
+    position		    [810.8389 147.3394 7]
+    chart		    2
+    linkNode		    [3 0 11]
+    visible		    0
+    subviewer		    3
+    ssIdNumber		    364
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    11
+    position		    [983.0892 147.3394 7]
+    chart		    2
+    linkNode		    [3 10 12]
+    visible		    0
+    subviewer		    3
+    ssIdNumber		    369
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    12
+    position		    [809.4108 250.5598 7]
+    chart		    2
+    linkNode		    [3 11 13]
+    visible		    0
+    subviewer		    3
+    ssIdNumber		    372
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    13
+    position		    [983.0892 250.5598 7]
+    chart		    2
+    linkNode		    [3 12 14]
+    visible		    0
+    subviewer		    3
+    ssIdNumber		    378
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    14
+    position		    [1138.5893 250.5598 7]
+    chart		    2
+    linkNode		    [3 13 15]
+    visible		    0
+    subviewer		    3
+    ssIdNumber		    374
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    15
+    position		    [809.4108 379.4667 7]
+    chart		    2
+    linkNode		    [3 14 16]
+    visible		    0
+    subviewer		    3
+    ssIdNumber		    366
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    16
+    position		    [1138.5893 379.4667 7]
+    chart		    2
+    linkNode		    [3 15 17]
+    visible		    0
+    subviewer		    3
+    ssIdNumber		    365
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    17
+    position		    [809.914 459.2479 7]
+    chart		    2
+    linkNode		    [3 16 18]
+    visible		    0
+    subviewer		    3
+    ssIdNumber		    370
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    18
+    position		    [983.0892 459.2479 7]
+    chart		    2
+    linkNode		    [3 17 19]
+    visible		    0
+    subviewer		    3
+    ssIdNumber		    368
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    19
+    position		    [809.914 546.2479 7]
+    chart		    2
+    linkNode		    [3 18 20]
+    visible		    0
+    subviewer		    3
+    ssIdNumber		    376
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    20
+    position		    [983.5808 546.2479 7]
+    chart		    2
+    linkNode		    [3 19 0]
+    visible		    0
+    subviewer		    3
+    ssIdNumber		    371
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    21
+    labelString		    ""
+    labelPosition	    [816.186 74.603 2 16.25]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 810.8389 72.0354 0 0]
+    }
+    dst {
+      id		      10
+      intersection	      [1 0 -1 0 810.8389 140.3394 0 0]
+    }
+    midPoint		    [810.8389 102.1874]
+    chart		    2
+    linkNode		    [3 0 22]
+    visible		    0
+    dataLimits		    [808.439 813.239 72.035 140.339]
+    subviewer		    3
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    377
+  }
+  transition {
+    id			    22
+    labelString		    "[NAHLB_HighBeamTime_s <= KAHLB_HighBeamTimeLowLimit_s]"
+    labelPosition	    [839.051 106.673 358.5 17]
+    fontSize		    12
+    src {
+      id		      10
+      intersection	      [2 1 0 0 817.8389 147.3394 0 0]
+    }
+    dst {
+      id		      11
+      intersection	      [4 -1 0 0 976.0892 147.3394 0 0]
+    }
+    midPoint		    [892.9641 147.3394]
+    chart		    2
+    linkNode		    [3 21 23]
+    visible		    0
+    dataLimits		    [817.839 976.089 144.939 149.739]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    367
+  }
+  transition {
+    id			    23
+    labelString		    "{\nNAHLB_HighBeamCount_cnt=0;\n}"
+    labelPosition	    [749.526 173.686 177.25 47]
+    fontSize		    12
+    src {
+      id		      10
+      intersection	      [3 -0.0138 0.9999 0 810.742 154.3387 0 0]
+    }
+    dst {
+      id		      12
+      intersection	      [1 0.0138 -0.9999 0 809.5075 243.5604 0 0]
+    }
+    midPoint		    [810.1802 194.9499]
+    chart		    2
+    linkNode		    [3 22 24]
+    visible		    0
+    dataLimits		    [807.218 812.018 154.339 243.56]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    363
+  }
+  transition {
+    id			    24
+    labelString		    "{\nNAHLB_HighBeamCount_cnt = NAHLB_HighBeamCount_cnt+1;\n}"
+    labelPosition	    [1006.331 160.044 349 47]
+    fontSize		    12
+    src {
+      id		      11
+      intersection	      [3 0 1 0 983.0892 154.3394 0 0]
+    }
+    dst {
+      id		      13
+      intersection	      [1 0 -1 0 983.0892 243.5598 0 0]
+    }
+    midPoint		    [983.0892 194.9496]
+    chart		    2
+    linkNode		    [3 23 25]
+    visible		    0
+    dataLimits		    [980.689 985.489 154.339 243.56]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    373
+  }
+  transition {
+    id			    25
+    labelString		    ""
+    labelPosition	    [896.25 232.56 0 0]
+    fontSize		    12
+    src {
+      id		      13
+      intersection	      [4 -1 0 0 976.0892 250.5598 0 0]
+    }
+    dst {
+      id		      12
+      intersection	      [2 1 0 0 816.4108 250.5598 0 0]
+    }
+    midPoint		    [900.2499 250.5598]
+    chart		    2
+    linkNode		    [3 24 26]
+    visible		    0
+    dataLimits		    [816.411 976.089 248.16 252.96]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    375
+  }
+  transition {
+    id			    26
+    labelString		    "[NAHLB_HighBeamCount_cnt >= 3]"
+    labelPosition	    [994.488 211.434 194 17]
+    fontSize		    12
+    src {
+      id		      13
+      intersection	      [2 1 0 0 990.0892 250.5598 0 0]
+    }
+    dst {
+      id		      14
+      intersection	      [4 -1 0 0 1131.5893 250.5598 0 0]
+    }
+    midPoint		    [1056.8393 250.5598]
+    chart		    2
+    linkNode		    [3 25 27]
+    visible		    0
+    dataLimits		    [990.089 1131.589 248.16 252.96]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    384
+  }
+  transition {
+    id			    27
+    labelString		    ""
+    labelPosition	    [678.724 308.203 2 16.25]
+    fontSize		    12
+    src {
+      id		      12
+      intersection	      [3 0 1 0 809.4108 257.5598 0 0]
+    }
+    dst {
+      id		      15
+      intersection	      [1 0 -1 0 809.4108 372.4667 0 0]
+    }
+    midPoint		    [809.4108 311.0132]
+    chart		    2
+    linkNode		    [3 26 28]
+    visible		    0
+    dataLimits		    [807.011 811.811 257.56 372.467]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    362
+  }
+  transition {
+    id			    28
+    labelString		    "{\nNAHLB_NoObjectTimeLimit_s = KAHLB_NoObjectTimeHighLimit_s;\n}"
+    labelPosition	    [977.712 284.365 363.75 47]
+    fontSize		    12
+    src {
+      id		      14
+      intersection	      [3 0 1 0 1138.5893 257.5598 0 0]
+    }
+    dst {
+      id		      16
+      intersection	      [1 0 -1 0 1138.5893 372.4667 0 0]
+    }
+    midPoint		    [1138.5893 311.0132]
+    chart		    2
+    linkNode		    [3 27 29]
+    visible		    0
+    dataLimits		    [1136.189 1140.989 257.56 372.467]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    361
+  }
+  transition {
+    id			    29
+    labelString		    ""
+    labelPosition	    [821.673 407.566 2 16.25]
+    fontSize		    12
+    src {
+      id		      16
+      intersection	      [4 -1 0 0 1131.5893 379.4667 0 0]
+    }
+    dst {
+      id		      15
+      intersection	      [2 1 0 0 816.4108 379.4667 0 0]
+    }
+    midPoint		    [977.9999 379.4667]
+    chart		    2
+    linkNode		    [3 28 30]
+    visible		    0
+    dataLimits		    [816.411 1131.589 377.067 381.867]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    360
+  }
+  transition {
+    id			    30
+    labelString		    ""
+    labelPosition	    [809.937 413.554 0 0]
+    fontSize		    12
+    src {
+      id		      15
+      intersection	      [3 0.0063 1 0 809.4549 386.4666 0 0]
+    }
+    dst {
+      id		      17
+      intersection	      [1 -0.0063 -1 0 809.87 452.248 0 0]
+    }
+    midPoint		    [809.6372 415.3574]
+    chart		    2
+    linkNode		    [3 29 31]
+    visible		    0
+    dataLimits		    [807.42 812.22 386.467 452.248]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    382
+  }
+  transition {
+    id			    31
+    labelString		    "[NAHLB_HighBeamTime_s >= KAHLB_HighBeamTimeHighLimit_s]"
+    labelPosition	    [833.017 421.198 361.5 17]
+    fontSize		    12
+    src {
+      id		      17
+      intersection	      [2 1 0 0 816.914 459.2479 0 0]
+    }
+    dst {
+      id		      18
+      intersection	      [4 -1 0 0 976.0892 459.2479 0 0]
+    }
+    midPoint		    [892.5017 459.2479]
+    chart		    2
+    linkNode		    [3 30 32]
+    visible		    0
+    dataLimits		    [816.914 976.089 456.848 461.648]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    379
+  }
+  transition {
+    id			    32
+    labelString		    "{\nNAHLB_NoObjectTimeLimit_s = KAHLB_NoObjectTimeLowLimit_s;\n}"
+    labelPosition	    [996.337 474.205 360.75 47]
+    fontSize		    12
+    src {
+      id		      18
+      intersection	      [3 0.0056 1 0 983.1287 466.2478 0 0]
+    }
+    dst {
+      id		      20
+      intersection	      [1 -0.0056 -1 0 983.5412 539.248 0 0]
+    }
+    midPoint		    [983.3124 498.748]
+    chart		    2
+    linkNode		    [3 31 33]
+    visible		    0
+    dataLimits		    [981.096 985.896 466.248 539.248]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    381
+  }
+  transition {
+    id			    33
+    labelString		    ""
+    labelPosition	    [809.96 485.792 0 0]
+    fontSize		    12
+    src {
+      id		      17
+      intersection	      [3 0 1 0 809.914 466.2479 0 0]
+    }
+    dst {
+      id		      19
+      intersection	      [1 0 -1 0 809.914 539.2479 0 0]
+    }
+    midPoint		    [809.914 498.7479]
+    chart		    2
+    linkNode		    [3 32 34]
+    visible		    0
+    dataLimits		    [807.514 812.314 466.248 539.248]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    380
+  }
+  transition {
+    id			    34
+    labelString		    ""
+    labelPosition	    [892.731 532.433 0 0]
+    fontSize		    12
+    src {
+      id		      20
+      intersection	      [4 -1 0 0 976.5808 546.2479 0 0]
+    }
+    dst {
+      id		      19
+      intersection	      [2 1 0 0 816.914 546.2479 0 0]
+    }
+    midPoint		    [900.7474 546.2479]
+    chart		    2
+    linkNode		    [3 33 0]
+    visible		    0
+    dataLimits		    [816.914 976.581 543.848 548.648]
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    383
+  }
+  transition {
+    id			    35
+    labelString		    ""
+    labelPosition	    [659.585 219.841 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 0 0 0 624.5856 195.9005 0 0]
+    }
+    dst {
+      id		      7
+      intersection	      [1 0 -1 0.2052 659.5856 233.8412 0 0]
+    }
+    midPoint		    [642.0856 205.1134]
+    chart		    2
+    linkNode		    [6 0 36]
+    visible		    0
+    dataLimits		    [624.586 661.986 195.9 233.841]
+    subviewer		    2
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    328
+  }
+  transition {
+    id			    36
+    labelString		    "[VDINR_NumObstacles_num > 0]"
+    labelPosition	    [1054.186 243.382 181.75 17]
+    fontSize		    12
+    src {
+      id		      7
+      intersection	      [2 1 0 0.2552 980.5835 266.9812 0 0]
+    }
+    dst {
+      id		      9
+      intersection	      [4 -1 -0 0.5239 1314.9869 266.9812 0 0]
+    }
+    midPoint		    [1143.7852 266.9812]
+    chart		    2
+    linkNode		    [6 35 37]
+    visible		    0
+    dataLimits		    [980.583 1314.987 264.581 269.381]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    322
+  }
+  transition {
+    id			    37
+    labelString		    "[NAHLB_NoObjectTime_s >= NAHLB_NoObjectTimeLimit_s...\n&&VDINR_NumObstacles_num==0]"
+    labelPosition	    [990.488 310.202 331.5 32]
+    fontSize		    12
+    src {
+      id		      9
+      intersection	      [4 -1 0 0.4181 1314.9869 293.8046 0 0]
+    }
+    dst {
+      id		      7
+      intersection	      [2 1 0 0.4618 980.5835 293.8046 0 0]
+    }
+    midPoint		    [1151.7852 293.8046]
+    chart		    2
+    linkNode		    [6 36 0]
+    visible		    0
+    dataLimits		    [980.583 1314.987 291.405 296.205]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    291
+  }
+  transition {
+    id			    38
+    labelString		    ""
+    labelPosition	    [1424.393 244.593 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 -0 1 0 1424.3928 229.5933 0 0]
+    }
+    dst {
+      id		      3
+      intersection	      [1 0 -1 0.4552 1424.3928 259.5933 0 0]
+    }
+    midPoint		    [1424.3928 244.5933]
+    chart		    2
+    linkNode		    [9 0 39]
+    dataLimits		    [1421.993 1426.793 229.593 259.593]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    412
+  }
+  transition {
+    id			    39
+    labelString		    "[VDINR_NumObstacles_num==0]"
+    labelPosition	    [1842.261 257.449 182.25 17]
+    fontSize		    12
+    src {
+      id		      8
+      intersection	      [2 1 0 0.4895 1803.7119 278.3014 0 0]
+    }
+    dst {
+      id		      5
+      intersection	      [4 -1 0 0.6393 2047.2117 278.3014 0 0]
+    }
+    midPoint		    [1921.4618 278.3014]
+    chart		    2
+    linkNode		    [9 38 40]
+    visible		    0
+    dataLimits		    [1803.712 2047.212 275.901 280.701]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    292
+  }
+  transition {
+    id			    40
+    labelString		    ""
+    labelPosition	    [1533.872 263.284 0 0]
+    fontSize		    12
+    src {
+      id		      3
+      intersection	      [2 1 0 0.5586 1519.847 281.2844 0 0]
+    }
+    dst {
+      id		      8
+      intersection	      [4 -1 -0 0.4663 1557.4179 281.2844 0 0]
+    }
+    midPoint		    [1534.6324 281.2844]
+    chart		    2
+    linkNode		    [9 39 41]
+    dataLimits		    [1519.847 1557.418 278.884 283.684]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    411
+  }
+  transition {
+    id			    41
+    labelString		    "[VDINR_NumObstacles_num>0]"
+    labelPosition	    [1837.857 307.407 175.25 17]
+    fontSize		    12
+    src {
+      id		      5
+      intersection	      [4 -1 0 0.4265 2047.2117 297.4075 0 0]
+    }
+    dst {
+      id		      8
+      intersection	      [2 1 -0 0.7729 1803.7119 297.4075 0 0]
+    }
+    midPoint		    [1929.4618 297.4075]
+    chart		    2
+    linkNode		    [9 40 0]
+    visible		    0
+    dataLimits		    [1803.712 2047.212 295.008 299.808]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    290
+  }
+  data {
+    id			    42
+    ssIdNumber		    3
+    name		    "VDINR_NumObstacles_num"
+    linkNode		    [2 0 43]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    43
+    ssIdNumber		    4
+    name		    "VAHLB_ForceLowBeam_flg"
+    linkNode		    [2 42 44]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      resolveToSignalObject   1
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    44
+    ssIdNumber		    5
+    name		    "VDINR_RearFogLamp_flg"
+    linkNode		    [2 43 45]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    45
+    ssIdNumber		    6
+    name		    "VDINR_HighBeam_flg"
+    linkNode		    [2 44 46]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    46
+    ssIdNumber		    34
+    name		    "KAHLB_NoObjectTimeHighLimit_s"
+    linkNode		    [2 45 47]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    47
+    ssIdNumber		    327
+    name		    "KAHLB_NoObjectTimeLowLimit_s"
+    linkNode		    [2 46 48]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    48
+    ssIdNumber		    36
+    name		    "KAHLB_HighBeamTimeHighLimit_s"
+    linkNode		    [2 47 49]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    49
+    ssIdNumber		    326
+    name		    "KAHLB_HighBeamTimeLowLimit_s"
+    linkNode		    [2 48 50]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    50
+    ssIdNumber		    329
+    name		    "NAHLB_HighBeamCount_cnt"
+    linkNode		    [2 49 51]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    51
+    ssIdNumber		    330
+    name		    "NAHLB_HighBeamTime_s"
+    linkNode		    [2 50 52]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_SINGLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "single"
+  }
+  data {
+    id			    52
+    ssIdNumber		    331
+    name		    "NAHLB_NoObjectTime_s"
+    linkNode		    [2 51 53]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_SINGLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "single"
+  }
+  data {
+    id			    53
+    ssIdNumber		    332
+    name		    "NAHLB_NoObjectTimeLimit_s"
+    linkNode		    [2 52 54]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      type {
+	primitive		SF_SINGLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "single"
+  }
+  data {
+    id			    54
+    ssIdNumber		    334
+    name		    "C_TASK_5MS_S"
+    linkNode		    [2 53 0]
+    scope		    PARAMETER_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  transition {
+    id			    55
+    labelString		    ""
+    labelPosition	    [123.953 211.21 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 0 0 0 89.9533 189.828 0 0]
+    }
+    dst {
+      id		      4
+      intersection	      [1 0 -1 0.4588 123.9533 226.2104 0 0]
+    }
+    midPoint		    [97.5561 191.1212]
+    chart		    2
+    linkNode		    [2 0 56]
+    dataLimits		    [89.953 126.353 189.828 226.21]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    20
+  }
+  transition {
+    id			    56
+    labelString		    "[VDINR_RearFogLamp_flg && VDINR_HighBeam_flg]"
+    labelPosition	    [237.703 209.066 291 17]
+    fontSize		    12
+    src {
+      id		      4
+      intersection	      [2 1 0 0.2174 245.575 248.7317 0 0]
+    }
+    dst {
+      id		      6
+      intersection	      [4 -1 -0 0.5841 550.4389 248.7317 0 0]
+    }
+    midPoint		    [394.0069 248.7317]
+    chart		    2
+    linkNode		    [2 55 57]
+    dataLimits		    [245.575 550.439 246.332 251.132]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    21
+  }
+  transition {
+    id			    57
+    labelString		    "[!VDINR_RearFogLamp_flg || !VDINR_HighBeam_flg]"
+    labelPosition	    [269.226 285.638 288 17]
+    fontSize		    12
+    src {
+      id		      6
+      intersection	      [4 -1 0 0.516 550.4389 269.9817 0 0]
+    }
+    dst {
+      id		      4
+      intersection	      [2 1 0 0.4225 245.575 269.9817 0 0]
+    }
+    midPoint		    [402.007 269.9817]
+    chart		    2
+    linkNode		    [2 56 0]
+    dataLimits		    [245.575 550.439 267.582 272.382]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    22
+  }
+  instance {
+    id			    58
+    name		    "AHLB/AHLB/AHLB"
+    machine		    1
+    chart		    2
+  }
+  target {
+    id			    59
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 60]
+  }
+  target {
+    id			    60
+    name		    "rtw"
+    machine		    1
+    linkNode		    [1 59 0]
+  }
+}

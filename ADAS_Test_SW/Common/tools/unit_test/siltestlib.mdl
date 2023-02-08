@@ -1,0 +1,412 @@
+Library {
+  Name			  "siltestlib"
+  Version		  5.2
+  SaveDefaultBlockParams  on
+  LibraryLinkDisplay	  "none"
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  on
+  Created		  "Wed Aug 24 16:19:45 2005"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "srd"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Dec 07 15:55:27 2006"
+  ModelVersionFormat	  "1.%<AutoIncrement:19>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  ExtModeMexFile	  "rti_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  off
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  SimulationMode	  "normal"
+  ConsistencyChecking	  "none"
+  ArrayBoundsChecking	  "none"
+  AlgebraicLoopMsg	  "warning"
+  BlockPriorityViolationMsg "warning"
+  MinStepSizeMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  DiscreteInheritContinuousMsg "warning"
+  MultiTaskRateTransMsg	  "error"
+  SingleTaskRateTransMsg  "none"
+  CheckForMatrixSingularity "none"
+  IntegerOverflowMsg	  "warning"
+  Int32ToFloatConvMsg	  "warning"
+  ParameterDowncastMsg	  "error"
+  ParameterOverflowMsg	  "error"
+  ParameterPrecisionLossMsg "warning"
+  UnderSpecifiedDataTypeMsg "none"
+  UnnecessaryDatatypeConvMsg "none"
+  VectorMatrixConversionMsg "none"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  SfunCompatibilityCheckMsg "none"
+  ProdHWDeviceType	  "Microprocessor"
+  ProdHWWordLengths	  "8,16,32,32"
+  RTWMakeCommand	  "make_rti"
+  RTWGenerateCodeOnly	  off
+  RTWRetainRTWFile	  on
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  TLCAssertion		  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      PortDimensions	      "-1"
+      ShowAdditionalParam     off
+      LatchInput	      off
+      DataType		      "auto"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      PortCounts	      "[]"
+      SFunctionModules	      "''"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      on
+      Permissions	      "ReadWrite"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "siltestlib"
+    Location		    [103, 445, 338, 895]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Generate SiL\ntest frame"
+      Description	      "Generate SiL\\ntest frame"
+      Ports		      []
+      Position		      [70, 354, 157, 396]
+      BackgroundColor	      "lightBlue"
+      DropShadow	      on
+      ShowName		      off
+      OpenFcn		      "if exist('gen_sil_test_frame','file'), gen_sil_"
+"test_frame(gcs); else, \nfprintf('Error: gen_sil_test_frame is not on the mat"
+"lab path.\\n'); end"
+      TreatAsAtomicUnit	      on
+      MaskType		      "Generate SiL test frame button."
+      MaskDescription	      "Calls the function gen_sil_test_frame."
+      MaskHelp		      "Calls the function gen_sil_test_frame."
+      MaskDisplay	      "fprintf('Generate SiL\\ntest frame');"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      System {
+	Name			"Generate SiL\ntest frame"
+	Location		[480, 85, 1060, 386]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+      }
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "Test Input"
+      Ports		      [0, 1]
+      Position		      [35, 25, 195, 65]
+      BackgroundColor	      "lightBlue"
+      FunctionName	      "TestFrameInput_sf"
+      Parameters	      "varname,sampletime"
+      MaskType		      "Test Input"
+      MaskDescription	      "Outputs the value of a Test Input variable from"
+" an Excel spreadsheet when used with the runsiltest script. Otherwise outputs"
+" 0."
+      MaskPromptString	      "Name:|Sample Time:"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "off,off"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "varname=&1;sampletime=@2;"
+      MaskDisplay	      "fprintf('Test Input:\\n%s',varname);"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "<UNDEFINED>|-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Test Input (with override)"
+      Ports		      [2, 1]
+      Position		      [35, 84, 195, 126]
+      BackgroundColor	      "lightBlue"
+      TreatAsAtomicUnit	      off
+      MaskType		      "Test Input (with override)"
+      MaskDescription	      "Outputs the input value if ovride >= 0.5 otherw"
+"ise outputs the value from the SiLTest frame in the Matlab workspace. If not "
+"present then outputs 0."
+      MaskHelp		      "Outputs the input value if ovride >= 0.5 otherw"
+"ise outputs the value from the SiLTest frame in the Matlab workspace. If not "
+"present then outputs 0."
+      MaskPromptString	      "Name:|Sample Time:"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "off,off"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "varname=&1;sampletime=@2;"
+      MaskDisplay	      "fprintf('Test Input\\n(with override):\\n%s',va"
+"rname);\nport_label('input', 1, 'ovride')\nport_label('input', 2, 'vin')\npor"
+"t_label('output', 1, 'vout')\n"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "<UNDEFINED>|-1"
+      System {
+	Name			"Test Input (with override)"
+	Location		[305, 558, 799, 929]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "ovride"
+	  Position		  [20, 33, 50, 47]
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "vin"
+	  Position		  [20, 73, 50, 87]
+	  Port			  "2"
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [115, 18, 120, 102]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "Test Input1"
+	  Ports			  [1, 1]
+	  Position		  [145, 40, 305, 80]
+	  BackgroundColor	  "lightBlue"
+	  FunctionName		  "TestFrameInput_ovride_sf"
+	  Parameters		  "varname,sampletime"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "vout"
+	  Position		  [370, 53, 400, 67]
+	}
+	Line {
+	  SrcBlock		  "vin"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "ovride"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "Test Input1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Test Input1"
+	  SrcPort		  1
+	  DstBlock		  "vout"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "Test Output"
+      Ports		      [1]
+      Position		      [35, 146, 195, 184]
+      BackgroundColor	      "lightBlue"
+      FunctionName	      "TestFrameOutput_sf"
+      Parameters	      "varname,sampletime"
+      MaskType		      "Test Output"
+      MaskDescription	      "Samples the value of a Test Output variable fro"
+"m an Excel spreadsheet when used with the runsiltest script. Otherwise does n"
+"othing."
+      MaskPromptString	      "Name:|Sample Time:"
+      MaskStyleString	      "edit,edit"
+      MaskTunableValueString  "off,off"
+      MaskCallbackString      "|"
+      MaskEnableString	      "on,on"
+      MaskVisibilityString    "on,on"
+      MaskToolTipString	      "on,on"
+      MaskVarAliasString      ","
+      MaskVariables	      "varname=&1;sampletime=@2;"
+      MaskDisplay	      "fprintf('Test Output:\\n%s',varname);"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "<UNDEFINED>|-1"
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "TestInputFrame"
+      Ports		      []
+      Position		      [50, 203, 175, 257]
+      BackgroundColor	      "lightBlue"
+      FunctionName	      "TestInputFrame_sf"
+      MaskType		      "TestInputFrame"
+      MaskDescription	      "Set the value of the obd array in Matlab from o"
+"bdset input variables.\nUpdate Matlab calibration from cal inputs."
+      MaskHelp		      "Set the value of the obd array in Matlab from o"
+"bdset input variables.\nUpdate Matlab calibration from cal inputs."
+      MaskDisplay	      "fprintf('TestInputFrame');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+    }
+    Block {
+      BlockType		      "S-Function"
+      Name		      "TestOutputFrame"
+      Ports		      []
+      Position		      [50, 278, 175, 332]
+      BackgroundColor	      "lightBlue"
+      FunctionName	      "TestOutputFrame_sf"
+      MaskType		      "TestOutputFrame"
+      MaskDescription	      "Sets the value of obdget output variables from "
+"the obd array in Matlab."
+      MaskHelp		      "Sets the value of obdget output variables from "
+"the obd array in Matlab."
+      MaskDisplay	      "fprintf('TestOutputFrame');"
+      MaskSelfModifiable      on
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+    }
+    Annotation {
+      Name		      "5th Dec 2006, v1.4, srd"
+      Position		      [116, 417]
+    }
+  }
+}

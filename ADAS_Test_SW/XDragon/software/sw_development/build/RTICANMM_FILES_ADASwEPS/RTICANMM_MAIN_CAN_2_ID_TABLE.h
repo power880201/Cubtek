@@ -1,0 +1,1249 @@
+/*****************************************************************************************************************************/
+/* RTICANMM_MAIN_CAN_2_ID_TABLE */
+/*                                                                                                                           */
+/*   AUTHOR(S):                                                                                                              */
+/*      U. Homann                                                                                                              */
+/*      M. Eikermann                                                                                                              */
+/*                                                                                                                           */
+/*                                                                                                                           */
+/*   RTICANMM Date: 06-Oct-2014 13:04:04                                                                                     */
+/*   RTICANMM Version: 4.0.735878.5444907408                                                                                     */
+/*                                                                                                                           */
+/*  (c) Copyright 2016, dSPACE GmbH. All rights reserved.                                                                    */
+/*      Brand names or product names are trademarks or registered trademarks of their respective companies or organizations. */
+/*                                                                                                                           */
+/* ***************************************************************************************************************************/
+
+
+
+
+/* TEST1 */
+((UInt32*) IDPTR_MEM_R)[0] = (UInt32) RTICANMM_MAIN_CAN_2_copy_TEST1;
+CANMMCAN_2_MIDTXSW[0] = 0;
+CANMMCAN_2_RXCNT[0] = 0;
+CANMMCAN_2_MIDRX[0] = 0x351;
+CANMMCAN_2_MIDTXS[0] = 0x351;
+CANMMCAN_2_RXMT[0] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[0] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[0] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[0] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* TEST2 */
+((UInt32*) IDPTR_MEM_R)[1] = (UInt32) RTICANMM_MAIN_CAN_2_copy_TEST2;
+CANMMCAN_2_MIDTXSW[1] = 0;
+CANMMCAN_2_RXCNT[1] = 0;
+CANMMCAN_2_MIDRX[1] = 0x352;
+CANMMCAN_2_MIDTXS[1] = 0x352;
+CANMMCAN_2_RXMT[1] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[1] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[1] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[1] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* TEST3 */
+((UInt32*) IDPTR_MEM_R)[2] = (UInt32) RTICANMM_MAIN_CAN_2_copy_TEST3;
+CANMMCAN_2_MIDTXSW[2] = 0;
+CANMMCAN_2_RXCNT[2] = 0;
+CANMMCAN_2_MIDRX[2] = 0x353;
+CANMMCAN_2_MIDTXS[2] = 0x353;
+CANMMCAN_2_RXMT[2] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[2] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[2] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[2] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* TEST4 */
+((UInt32*) IDPTR_MEM_R)[3] = (UInt32) RTICANMM_MAIN_CAN_2_copy_TEST4;
+CANMMCAN_2_MIDTXSW[3] = 0;
+CANMMCAN_2_RXCNT[3] = 0;
+CANMMCAN_2_MIDRX[3] = 0x354;
+CANMMCAN_2_MIDTXS[3] = 0x354;
+CANMMCAN_2_RXMT[3] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[3] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[3] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[3] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* TEST5 */
+((UInt32*) IDPTR_MEM_R)[4] = (UInt32) RTICANMM_MAIN_CAN_2_copy_TEST5;
+CANMMCAN_2_MIDTXSW[4] = 0;
+CANMMCAN_2_RXCNT[4] = 0;
+CANMMCAN_2_MIDRX[4] = 0x355;
+CANMMCAN_2_MIDTXS[4] = 0x355;
+CANMMCAN_2_RXMT[4] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[4] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[4] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[4] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* TEST6 */
+((UInt32*) IDPTR_MEM_R)[5] = (UInt32) RTICANMM_MAIN_CAN_2_copy_TEST6;
+CANMMCAN_2_MIDTXSW[5] = 0;
+CANMMCAN_2_RXCNT[5] = 0;
+CANMMCAN_2_MIDRX[5] = 0x356;
+CANMMCAN_2_MIDTXS[5] = 0x356;
+CANMMCAN_2_RXMT[5] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[5] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[5] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[5] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ABS2_C */
+((UInt32*) IDPTR_MEM_R)[6] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ABS2_C;
+CANMMCAN_2_MIDTXSW[6] = 0;
+CANMMCAN_2_RXCNT[6] = 0;
+CANMMCAN_2_MIDRX[6] = 0x360;
+CANMMCAN_2_MIDTXS[6] = 0x360;
+CANMMCAN_2_RXMT[6] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[6] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[6] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[6] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* SpeedInformation */
+((UInt32*) IDPTR_MEM_R)[7] = (UInt32) RTICANMM_MAIN_CAN_2_copy_SpeedInformation;
+CANMMCAN_2_MIDTXSW[7] = 0;
+CANMMCAN_2_RXCNT[7] = 0;
+CANMMCAN_2_MIDRX[7] = 0x370;
+CANMMCAN_2_MIDTXS[7] = 0x370;
+CANMMCAN_2_RXMT[7] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[7] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[7] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[7] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* YawRateInformation */
+((UInt32*) IDPTR_MEM_R)[8] = (UInt32) RTICANMM_MAIN_CAN_2_copy_YawRateInformation;
+CANMMCAN_2_MIDTXSW[8] = 0;
+CANMMCAN_2_RXCNT[8] = 0;
+CANMMCAN_2_MIDRX[8] = 0x371;
+CANMMCAN_2_MIDTXS[8] = 0x371;
+CANMMCAN_2_RXMT[8] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[8] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[8] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[8] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ABS4_C */
+((UInt32*) IDPTR_MEM_R)[9] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ABS4_C;
+CANMMCAN_2_MIDTXSW[9] = 0;
+CANMMCAN_2_RXCNT[9] = 0;
+CANMMCAN_2_MIDRX[9] = 0x380;
+CANMMCAN_2_MIDTXS[9] = 0x380;
+CANMMCAN_2_RXMT[9] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[9] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[9] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[9] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* SAS1_C */
+((UInt32*) IDPTR_MEM_R)[10] = (UInt32) RTICANMM_MAIN_CAN_2_copy_SAS1_C;
+CANMMCAN_2_MIDTXSW[10] = 0;
+CANMMCAN_2_RXCNT[10] = 0;
+CANMMCAN_2_MIDRX[10] = 0x39A;
+CANMMCAN_2_MIDTXS[10] = 0x39A;
+CANMMCAN_2_RXMT[10] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[10] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[10] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[10] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* CSW1_C */
+((UInt32*) IDPTR_MEM_R)[11] = (UInt32) RTICANMM_MAIN_CAN_2_copy_CSW1_C;
+CANMMCAN_2_MIDTXSW[11] = 0;
+CANMMCAN_2_RXCNT[11] = 0;
+CANMMCAN_2_MIDRX[11] = 0x410;
+CANMMCAN_2_MIDTXS[11] = 0x410;
+CANMMCAN_2_RXMT[11] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[11] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[11] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[11] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* BCM1_C */
+((UInt32*) IDPTR_MEM_R)[12] = (UInt32) RTICANMM_MAIN_CAN_2_copy_BCM1_C;
+CANMMCAN_2_MIDTXSW[12] = 0;
+CANMMCAN_2_RXCNT[12] = 0;
+CANMMCAN_2_MIDRX[12] = 0x420;
+CANMMCAN_2_MIDTXS[12] = 0x420;
+CANMMCAN_2_RXMT[12] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[12] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[12] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[12] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* FECU1_C */
+((UInt32*) IDPTR_MEM_R)[13] = (UInt32) RTICANMM_MAIN_CAN_2_copy_FECU1_C;
+CANMMCAN_2_MIDTXSW[13] = 0;
+CANMMCAN_2_RXCNT[13] = 0;
+CANMMCAN_2_MIDRX[13] = 0x440;
+CANMMCAN_2_MIDTXS[13] = 0x440;
+CANMMCAN_2_RXMT[13] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[13] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[13] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[13] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* IBEO1 */
+((UInt32*) IDPTR_MEM_R)[14] = (UInt32) RTICANMM_MAIN_CAN_2_copy_IBEO1;
+CANMMCAN_2_MIDTXSW[14] = 0;
+CANMMCAN_2_RXCNT[14] = 0;
+CANMMCAN_2_MIDRX[14] = 0x500;
+CANMMCAN_2_MIDTXS[14] = 0x500;
+CANMMCAN_2_RXMT[14] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[14] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[14] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[14] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* IBEO2 */
+((UInt32*) IDPTR_MEM_R)[15] = (UInt32) RTICANMM_MAIN_CAN_2_copy_IBEO2;
+CANMMCAN_2_MIDTXSW[15] = 0;
+CANMMCAN_2_RXCNT[15] = 0;
+CANMMCAN_2_MIDRX[15] = 0x501;
+CANMMCAN_2_MIDTXS[15] = 0x501;
+CANMMCAN_2_RXMT[15] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[15] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[15] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[15] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* IBEO3 */
+((UInt32*) IDPTR_MEM_R)[16] = (UInt32) RTICANMM_MAIN_CAN_2_copy_IBEO3;
+CANMMCAN_2_MIDTXSW[16] = 0;
+CANMMCAN_2_RXCNT[16] = 0;
+CANMMCAN_2_MIDRX[16] = 0x502;
+CANMMCAN_2_MIDTXS[16] = 0x502;
+CANMMCAN_2_RXMT[16] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[16] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[16] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[16] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* IBEO4 */
+((UInt32*) IDPTR_MEM_R)[17] = (UInt32) RTICANMM_MAIN_CAN_2_copy_IBEO4;
+CANMMCAN_2_MIDTXSW[17] = 0;
+CANMMCAN_2_RXCNT[17] = 0;
+CANMMCAN_2_MIDRX[17] = 0x503;
+CANMMCAN_2_MIDTXS[17] = 0x503;
+CANMMCAN_2_RXMT[17] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[17] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[17] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[17] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* IBEO5 */
+((UInt32*) IDPTR_MEM_R)[18] = (UInt32) RTICANMM_MAIN_CAN_2_copy_IBEO5;
+CANMMCAN_2_MIDTXSW[18] = 0;
+CANMMCAN_2_RXCNT[18] = 0;
+CANMMCAN_2_MIDRX[18] = 0x504;
+CANMMCAN_2_MIDTXS[18] = 0x504;
+CANMMCAN_2_RXMT[18] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[18] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[18] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[18] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* IBEO6 */
+((UInt32*) IDPTR_MEM_R)[19] = (UInt32) RTICANMM_MAIN_CAN_2_copy_IBEO6;
+CANMMCAN_2_MIDTXSW[19] = 0;
+CANMMCAN_2_RXCNT[19] = 0;
+CANMMCAN_2_MIDRX[19] = 0x505;
+CANMMCAN_2_MIDTXS[19] = 0x505;
+CANMMCAN_2_RXMT[19] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[19] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[19] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[19] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* IBEO7 */
+((UInt32*) IDPTR_MEM_R)[20] = (UInt32) RTICANMM_MAIN_CAN_2_copy_IBEO7;
+CANMMCAN_2_MIDTXSW[20] = 0;
+CANMMCAN_2_RXCNT[20] = 0;
+CANMMCAN_2_MIDRX[20] = 0x506;
+CANMMCAN_2_MIDTXS[20] = 0x506;
+CANMMCAN_2_RXMT[20] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[20] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[20] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[20] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* IBEO8 */
+((UInt32*) IDPTR_MEM_R)[21] = (UInt32) RTICANMM_MAIN_CAN_2_copy_IBEO8;
+CANMMCAN_2_MIDTXSW[21] = 0;
+CANMMCAN_2_RXCNT[21] = 0;
+CANMMCAN_2_MIDRX[21] = 0x507;
+CANMMCAN_2_MIDTXS[21] = 0x507;
+CANMMCAN_2_RXMT[21] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[21] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[21] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[21] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* HighLowBeam */
+((UInt32*) IDPTR_MEM_R)[22] = (UInt32) RTICANMM_MAIN_CAN_2_copy_HighLowBeam;
+CANMMCAN_2_MIDTXSW[22] = 0;
+CANMMCAN_2_RXCNT[22] = 0;
+CANMMCAN_2_MIDRX[22] = 0x600;
+CANMMCAN_2_MIDTXS[22] = 0x600;
+CANMMCAN_2_RXMT[22] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[22] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[22] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[22] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleStatusB */
+((UInt32*) IDPTR_MEM_R)[23] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleStatusB;
+CANMMCAN_2_MIDTXSW[23] = 0;
+CANMMCAN_2_RXCNT[23] = 0;
+CANMMCAN_2_MIDRX[23] = 0x737;
+CANMMCAN_2_MIDTXS[23] = 0x737;
+CANMMCAN_2_RXMT[23] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[23] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[23] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[23] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleStatusA */
+((UInt32*) IDPTR_MEM_R)[24] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleStatusA;
+CANMMCAN_2_MIDTXSW[24] = 0;
+CANMMCAN_2_RXCNT[24] = 0;
+CANMMCAN_2_MIDRX[24] = 0x738;
+CANMMCAN_2_MIDTXS[24] = 0x738;
+CANMMCAN_2_RXMT[24] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[24] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[24] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[24] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataA1 */
+((UInt32*) IDPTR_MEM_R)[25] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataA1;
+CANMMCAN_2_MIDTXSW[25] = 0;
+CANMMCAN_2_RXCNT[25] = 0;
+CANMMCAN_2_MIDRX[25] = 0x739;
+CANMMCAN_2_MIDTXS[25] = 0x739;
+CANMMCAN_2_RXMT[25] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[25] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[25] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[25] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataB1 */
+((UInt32*) IDPTR_MEM_R)[26] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataB1;
+CANMMCAN_2_MIDTXSW[26] = 0;
+CANMMCAN_2_RXCNT[26] = 0;
+CANMMCAN_2_MIDRX[26] = 0x73A;
+CANMMCAN_2_MIDTXS[26] = 0x73A;
+CANMMCAN_2_RXMT[26] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[26] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[26] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[26] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataC1 */
+((UInt32*) IDPTR_MEM_R)[27] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataC1;
+CANMMCAN_2_MIDTXSW[27] = 0;
+CANMMCAN_2_RXCNT[27] = 0;
+CANMMCAN_2_MIDRX[27] = 0x73B;
+CANMMCAN_2_MIDTXS[27] = 0x73B;
+CANMMCAN_2_RXMT[27] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[27] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[27] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[27] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataA2 */
+((UInt32*) IDPTR_MEM_R)[28] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataA2;
+CANMMCAN_2_MIDTXSW[28] = 0;
+CANMMCAN_2_RXCNT[28] = 0;
+CANMMCAN_2_MIDRX[28] = 0x73C;
+CANMMCAN_2_MIDTXS[28] = 0x73C;
+CANMMCAN_2_RXMT[28] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[28] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[28] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[28] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataB2 */
+((UInt32*) IDPTR_MEM_R)[29] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataB2;
+CANMMCAN_2_MIDTXSW[29] = 0;
+CANMMCAN_2_RXCNT[29] = 0;
+CANMMCAN_2_MIDRX[29] = 0x73D;
+CANMMCAN_2_MIDTXS[29] = 0x73D;
+CANMMCAN_2_RXMT[29] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[29] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[29] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[29] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataC2 */
+((UInt32*) IDPTR_MEM_R)[30] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataC2;
+CANMMCAN_2_MIDTXSW[30] = 0;
+CANMMCAN_2_RXCNT[30] = 0;
+CANMMCAN_2_MIDRX[30] = 0x73E;
+CANMMCAN_2_MIDTXS[30] = 0x73E;
+CANMMCAN_2_RXMT[30] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[30] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[30] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[30] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataA3 */
+((UInt32*) IDPTR_MEM_R)[31] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataA3;
+CANMMCAN_2_MIDTXSW[31] = 0;
+CANMMCAN_2_RXCNT[31] = 0;
+CANMMCAN_2_MIDRX[31] = 0x73F;
+CANMMCAN_2_MIDTXS[31] = 0x73F;
+CANMMCAN_2_RXMT[31] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[31] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[31] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[31] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataB3 */
+((UInt32*) IDPTR_MEM_R)[32] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataB3;
+CANMMCAN_2_MIDTXSW[32] = 0;
+CANMMCAN_2_RXCNT[32] = 0;
+CANMMCAN_2_MIDRX[32] = 0x740;
+CANMMCAN_2_MIDTXS[32] = 0x740;
+CANMMCAN_2_RXMT[32] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[32] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[32] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[32] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataC3 */
+((UInt32*) IDPTR_MEM_R)[33] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataC3;
+CANMMCAN_2_MIDTXSW[33] = 0;
+CANMMCAN_2_RXCNT[33] = 0;
+CANMMCAN_2_MIDRX[33] = 0x741;
+CANMMCAN_2_MIDTXS[33] = 0x741;
+CANMMCAN_2_RXMT[33] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[33] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[33] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[33] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataA4 */
+((UInt32*) IDPTR_MEM_R)[34] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataA4;
+CANMMCAN_2_MIDTXSW[34] = 0;
+CANMMCAN_2_RXCNT[34] = 0;
+CANMMCAN_2_MIDRX[34] = 0x742;
+CANMMCAN_2_MIDTXS[34] = 0x742;
+CANMMCAN_2_RXMT[34] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[34] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[34] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[34] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataB4 */
+((UInt32*) IDPTR_MEM_R)[35] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataB4;
+CANMMCAN_2_MIDTXSW[35] = 0;
+CANMMCAN_2_RXCNT[35] = 0;
+CANMMCAN_2_MIDRX[35] = 0x743;
+CANMMCAN_2_MIDTXS[35] = 0x743;
+CANMMCAN_2_RXMT[35] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[35] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[35] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[35] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataC4 */
+((UInt32*) IDPTR_MEM_R)[36] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataC4;
+CANMMCAN_2_MIDTXSW[36] = 0;
+CANMMCAN_2_RXCNT[36] = 0;
+CANMMCAN_2_MIDRX[36] = 0x744;
+CANMMCAN_2_MIDTXS[36] = 0x744;
+CANMMCAN_2_RXMT[36] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[36] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[36] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[36] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataA5 */
+((UInt32*) IDPTR_MEM_R)[37] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataA5;
+CANMMCAN_2_MIDTXSW[37] = 0;
+CANMMCAN_2_RXCNT[37] = 0;
+CANMMCAN_2_MIDRX[37] = 0x745;
+CANMMCAN_2_MIDTXS[37] = 0x745;
+CANMMCAN_2_RXMT[37] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[37] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[37] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[37] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataB5 */
+((UInt32*) IDPTR_MEM_R)[38] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataB5;
+CANMMCAN_2_MIDTXSW[38] = 0;
+CANMMCAN_2_RXCNT[38] = 0;
+CANMMCAN_2_MIDRX[38] = 0x746;
+CANMMCAN_2_MIDTXS[38] = 0x746;
+CANMMCAN_2_RXMT[38] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[38] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[38] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[38] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataC5 */
+((UInt32*) IDPTR_MEM_R)[39] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataC5;
+CANMMCAN_2_MIDTXSW[39] = 0;
+CANMMCAN_2_RXCNT[39] = 0;
+CANMMCAN_2_MIDRX[39] = 0x747;
+CANMMCAN_2_MIDTXS[39] = 0x747;
+CANMMCAN_2_RXMT[39] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[39] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[39] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[39] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataA6 */
+((UInt32*) IDPTR_MEM_R)[40] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataA6;
+CANMMCAN_2_MIDTXSW[40] = 0;
+CANMMCAN_2_RXCNT[40] = 0;
+CANMMCAN_2_MIDRX[40] = 0x748;
+CANMMCAN_2_MIDTXS[40] = 0x748;
+CANMMCAN_2_RXMT[40] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[40] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[40] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[40] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataB6 */
+((UInt32*) IDPTR_MEM_R)[41] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataB6;
+CANMMCAN_2_MIDTXSW[41] = 0;
+CANMMCAN_2_RXCNT[41] = 0;
+CANMMCAN_2_MIDRX[41] = 0x749;
+CANMMCAN_2_MIDTXS[41] = 0x749;
+CANMMCAN_2_RXMT[41] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[41] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[41] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[41] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataC6 */
+((UInt32*) IDPTR_MEM_R)[42] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataC6;
+CANMMCAN_2_MIDTXSW[42] = 0;
+CANMMCAN_2_RXCNT[42] = 0;
+CANMMCAN_2_MIDRX[42] = 0x74A;
+CANMMCAN_2_MIDTXS[42] = 0x74A;
+CANMMCAN_2_RXMT[42] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[42] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[42] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[42] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataA7 */
+((UInt32*) IDPTR_MEM_R)[43] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataA7;
+CANMMCAN_2_MIDTXSW[43] = 0;
+CANMMCAN_2_RXCNT[43] = 0;
+CANMMCAN_2_MIDRX[43] = 0x74B;
+CANMMCAN_2_MIDTXS[43] = 0x74B;
+CANMMCAN_2_RXMT[43] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[43] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[43] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[43] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataB7 */
+((UInt32*) IDPTR_MEM_R)[44] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataB7;
+CANMMCAN_2_MIDTXSW[44] = 0;
+CANMMCAN_2_RXCNT[44] = 0;
+CANMMCAN_2_MIDRX[44] = 0x74C;
+CANMMCAN_2_MIDTXS[44] = 0x74C;
+CANMMCAN_2_RXMT[44] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[44] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[44] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[44] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataC7 */
+((UInt32*) IDPTR_MEM_R)[45] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataC7;
+CANMMCAN_2_MIDTXSW[45] = 0;
+CANMMCAN_2_RXCNT[45] = 0;
+CANMMCAN_2_MIDRX[45] = 0x74D;
+CANMMCAN_2_MIDTXS[45] = 0x74D;
+CANMMCAN_2_RXMT[45] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[45] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[45] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[45] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataA8 */
+((UInt32*) IDPTR_MEM_R)[46] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataA8;
+CANMMCAN_2_MIDTXSW[46] = 0;
+CANMMCAN_2_RXCNT[46] = 0;
+CANMMCAN_2_MIDRX[46] = 0x74E;
+CANMMCAN_2_MIDTXS[46] = 0x74E;
+CANMMCAN_2_RXMT[46] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[46] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[46] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[46] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataB8 */
+((UInt32*) IDPTR_MEM_R)[47] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataB8;
+CANMMCAN_2_MIDTXSW[47] = 0;
+CANMMCAN_2_RXCNT[47] = 0;
+CANMMCAN_2_MIDRX[47] = 0x74F;
+CANMMCAN_2_MIDTXS[47] = 0x74F;
+CANMMCAN_2_RXMT[47] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[47] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[47] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[47] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataC8 */
+((UInt32*) IDPTR_MEM_R)[48] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataC8;
+CANMMCAN_2_MIDTXSW[48] = 0;
+CANMMCAN_2_RXCNT[48] = 0;
+CANMMCAN_2_MIDRX[48] = 0x750;
+CANMMCAN_2_MIDTXS[48] = 0x750;
+CANMMCAN_2_RXMT[48] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[48] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[48] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[48] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataA9 */
+((UInt32*) IDPTR_MEM_R)[49] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataA9;
+CANMMCAN_2_MIDTXSW[49] = 0;
+CANMMCAN_2_RXCNT[49] = 0;
+CANMMCAN_2_MIDRX[49] = 0x751;
+CANMMCAN_2_MIDTXS[49] = 0x751;
+CANMMCAN_2_RXMT[49] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[49] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[49] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[49] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataB9 */
+((UInt32*) IDPTR_MEM_R)[50] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataB9;
+CANMMCAN_2_MIDTXSW[50] = 0;
+CANMMCAN_2_RXCNT[50] = 0;
+CANMMCAN_2_MIDRX[50] = 0x752;
+CANMMCAN_2_MIDTXS[50] = 0x752;
+CANMMCAN_2_RXMT[50] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[50] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[50] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[50] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataC9 */
+((UInt32*) IDPTR_MEM_R)[51] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataC9;
+CANMMCAN_2_MIDTXSW[51] = 0;
+CANMMCAN_2_RXCNT[51] = 0;
+CANMMCAN_2_MIDRX[51] = 0x753;
+CANMMCAN_2_MIDTXS[51] = 0x753;
+CANMMCAN_2_RXMT[51] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[51] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[51] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[51] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataA10 */
+((UInt32*) IDPTR_MEM_R)[52] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataA10;
+CANMMCAN_2_MIDTXSW[52] = 0;
+CANMMCAN_2_RXCNT[52] = 0;
+CANMMCAN_2_MIDRX[52] = 0x754;
+CANMMCAN_2_MIDTXS[52] = 0x754;
+CANMMCAN_2_RXMT[52] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[52] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[52] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[52] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataB10 */
+((UInt32*) IDPTR_MEM_R)[53] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataB10;
+CANMMCAN_2_MIDTXSW[53] = 0;
+CANMMCAN_2_RXCNT[53] = 0;
+CANMMCAN_2_MIDRX[53] = 0x755;
+CANMMCAN_2_MIDTXS[53] = 0x755;
+CANMMCAN_2_RXMT[53] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[53] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[53] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[53] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleDataC10 */
+((UInt32*) IDPTR_MEM_R)[54] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleDataC10;
+CANMMCAN_2_MIDTXSW[54] = 0;
+CANMMCAN_2_RXCNT[54] = 0;
+CANMMCAN_2_MIDRX[54] = 0x756;
+CANMMCAN_2_MIDTXS[54] = 0x756;
+CANMMCAN_2_RXMT[54] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[54] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[54] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[54] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* ObstacleStatusC */
+((UInt32*) IDPTR_MEM_R)[55] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ObstacleStatusC;
+CANMMCAN_2_MIDTXSW[55] = 0;
+CANMMCAN_2_RXCNT[55] = 0;
+CANMMCAN_2_MIDRX[55] = 0x757;
+CANMMCAN_2_MIDTXS[55] = 0x757;
+CANMMCAN_2_RXMT[55] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[55] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[55] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[55] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* LKA_Left_Lane_A */
+((UInt32*) IDPTR_MEM_R)[56] = (UInt32) RTICANMM_MAIN_CAN_2_copy_LKA_Left_Lane_A;
+CANMMCAN_2_MIDTXSW[56] = 0;
+CANMMCAN_2_RXCNT[56] = 0;
+CANMMCAN_2_MIDRX[56] = 0x766;
+CANMMCAN_2_MIDTXS[56] = 0x766;
+CANMMCAN_2_RXMT[56] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[56] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[56] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[56] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* LKA_Left_Lane_B */
+((UInt32*) IDPTR_MEM_R)[57] = (UInt32) RTICANMM_MAIN_CAN_2_copy_LKA_Left_Lane_B;
+CANMMCAN_2_MIDTXSW[57] = 0;
+CANMMCAN_2_RXCNT[57] = 0;
+CANMMCAN_2_MIDRX[57] = 0x767;
+CANMMCAN_2_MIDTXS[57] = 0x767;
+CANMMCAN_2_RXMT[57] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[57] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[57] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[57] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* LKA_Right_Lane_A */
+((UInt32*) IDPTR_MEM_R)[58] = (UInt32) RTICANMM_MAIN_CAN_2_copy_LKA_Right_Lane_A;
+CANMMCAN_2_MIDTXSW[58] = 0;
+CANMMCAN_2_RXCNT[58] = 0;
+CANMMCAN_2_MIDRX[58] = 0x768;
+CANMMCAN_2_MIDTXS[58] = 0x768;
+CANMMCAN_2_RXMT[58] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[58] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[58] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[58] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* LKA_Right_Lane_B */
+((UInt32*) IDPTR_MEM_R)[59] = (UInt32) RTICANMM_MAIN_CAN_2_copy_LKA_Right_Lane_B;
+CANMMCAN_2_MIDTXSW[59] = 0;
+CANMMCAN_2_RXCNT[59] = 0;
+CANMMCAN_2_MIDRX[59] = 0x769;
+CANMMCAN_2_MIDTXS[59] = 0x769;
+CANMMCAN_2_RXMT[59] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[59] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[59] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[59] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* Road_Information */
+((UInt32*) IDPTR_MEM_R)[60] = (UInt32) RTICANMM_MAIN_CAN_2_copy_Road_Information;
+CANMMCAN_2_MIDTXSW[60] = 0;
+CANMMCAN_2_RXCNT[60] = 0;
+CANMMCAN_2_MIDRX[60] = 0x76B;
+CANMMCAN_2_MIDTXS[60] = 0x76B;
+CANMMCAN_2_RXMT[60] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[60] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[60] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[60] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* Next_Left_Lane_A */
+((UInt32*) IDPTR_MEM_R)[61] = (UInt32) RTICANMM_MAIN_CAN_2_copy_Next_Left_Lane_A;
+CANMMCAN_2_MIDTXSW[61] = 0;
+CANMMCAN_2_RXCNT[61] = 0;
+CANMMCAN_2_MIDRX[61] = 0x76C;
+CANMMCAN_2_MIDTXS[61] = 0x76C;
+CANMMCAN_2_RXMT[61] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[61] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[61] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[61] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* Next_Left_Lane_B */
+((UInt32*) IDPTR_MEM_R)[62] = (UInt32) RTICANMM_MAIN_CAN_2_copy_Next_Left_Lane_B;
+CANMMCAN_2_MIDTXSW[62] = 0;
+CANMMCAN_2_RXCNT[62] = 0;
+CANMMCAN_2_MIDRX[62] = 0x76D;
+CANMMCAN_2_MIDTXS[62] = 0x76D;
+CANMMCAN_2_RXMT[62] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[62] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[62] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[62] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* Next_Right_Lane_A */
+((UInt32*) IDPTR_MEM_R)[63] = (UInt32) RTICANMM_MAIN_CAN_2_copy_Next_Right_Lane_A;
+CANMMCAN_2_MIDTXSW[63] = 0;
+CANMMCAN_2_RXCNT[63] = 0;
+CANMMCAN_2_MIDRX[63] = 0x76E;
+CANMMCAN_2_MIDTXS[63] = 0x76E;
+CANMMCAN_2_RXMT[63] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[63] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[63] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[63] = 0;  /* 0: standard, 1:extended */ 
+
+
+
+/* Next_Right_Lane_B */
+((UInt32*) IDPTR_MEM_R)[64] = (UInt32) RTICANMM_MAIN_CAN_2_copy_Next_Right_Lane_B;
+CANMMCAN_2_MIDTXSW[64] = 0;
+CANMMCAN_2_RXCNT[64] = 0;
+CANMMCAN_2_MIDRX[64] = 0x76F;
+CANMMCAN_2_MIDTXS[64] = 0x76F;
+CANMMCAN_2_RXMT[64] = RTICANMM_MESSAGE_TYPE_STD;
+CANMMCAN_2_MIDFRX[64] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTXS[64] = 0;  /* 0: standard, 1:extended */ 
+CANMMCAN_2_MIDFTX[64] = 0;  /* 0: standard, 1:extended */ 
+ 
+ 
+
+
+/* TEST1 */
+CANMMCAN_2_MIDTX[0] = 0; 
+((UInt32*) IDPTR_MEM_T)[0] = (UInt32) RTICANMM_MAIN_CAN_2_copy_TEST1;
+
+
+
+/* TEST2 */
+CANMMCAN_2_MIDTX[1] = 1; 
+((UInt32*) IDPTR_MEM_T)[1] = (UInt32) RTICANMM_MAIN_CAN_2_copy_TEST2;
+
+
+
+/* TEST3 */
+CANMMCAN_2_MIDTX[2] = 2; 
+((UInt32*) IDPTR_MEM_T)[2] = (UInt32) RTICANMM_MAIN_CAN_2_copy_TEST3;
+
+
+
+/* TEST4 */
+CANMMCAN_2_MIDTX[3] = 3; 
+((UInt32*) IDPTR_MEM_T)[3] = (UInt32) RTICANMM_MAIN_CAN_2_copy_TEST4;
+
+
+
+/* TEST5 */
+CANMMCAN_2_MIDTX[4] = 4; 
+((UInt32*) IDPTR_MEM_T)[4] = (UInt32) RTICANMM_MAIN_CAN_2_copy_TEST5;
+
+
+
+/* TEST6 */
+CANMMCAN_2_MIDTX[5] = 5; 
+((UInt32*) IDPTR_MEM_T)[5] = (UInt32) RTICANMM_MAIN_CAN_2_copy_TEST6;
+
+
+
+/* ABS2_C */
+CANMMCAN_2_MIDTX[6] = 6; 
+((UInt32*) IDPTR_MEM_T)[6] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ABS2_C;
+
+
+
+/* SpeedInformation */
+CANMMCAN_2_MIDTX[7] = 7; 
+((UInt32*) IDPTR_MEM_T)[7] = (UInt32) RTICANMM_MAIN_CAN_2_copy_SpeedInformation;
+
+
+
+/* YawRateInformation */
+CANMMCAN_2_MIDTX[8] = 8; 
+((UInt32*) IDPTR_MEM_T)[8] = (UInt32) RTICANMM_MAIN_CAN_2_copy_YawRateInformation;
+
+
+
+/* ABS4_C */
+CANMMCAN_2_MIDTX[9] = 9; 
+((UInt32*) IDPTR_MEM_T)[9] = (UInt32) RTICANMM_MAIN_CAN_2_copy_ABS4_C;
+
+
+
+/* SAS1_C */
+CANMMCAN_2_MIDTX[10] = 10; 
+((UInt32*) IDPTR_MEM_T)[10] = (UInt32) RTICANMM_MAIN_CAN_2_copy_SAS1_C;
+
+
+
+/* CSW1_C */
+CANMMCAN_2_MIDTX[11] = 11; 
+((UInt32*) IDPTR_MEM_T)[11] = (UInt32) RTICANMM_MAIN_CAN_2_copy_CSW1_C;
+
+
+
+/* BCM1_C */
+CANMMCAN_2_MIDTX[12] = 12; 
+((UInt32*) IDPTR_MEM_T)[12] = (UInt32) RTICANMM_MAIN_CAN_2_copy_BCM1_C;
+
+
+
+/* FECU1_C */
+CANMMCAN_2_MIDTX[13] = 13; 
+((UInt32*) IDPTR_MEM_T)[13] = (UInt32) RTICANMM_MAIN_CAN_2_copy_FECU1_C;
+
+CANMMCAN_2_COT[0] = 636;
+CANMMCAN_2_COLEN[0] = 639;
+CANMMCAN_2_CAPOID[0] = 637;
+CANMMCAN_2_CAPOIDF[0] = 638;
+CANMMCAN_2_COIDX_0[0] = 640;
+CANMMCAN_2_COIDX_1[0] = 641;
+CANMMCAN_2_COIDX_2[0] = 642;
+CANMMCAN_2_COIDX_3[0] = 643;
+CANMMCAN_2_COIDX_4[0] = 644;
+CANMMCAN_2_COIDX_5[0] = 645;
+CANMMCAN_2_COIDX_6[0] = 646;
+CANMMCAN_2_COIDX_7[0] = 647;
+CANMMCAN_2_COT[1] = 649;
+CANMMCAN_2_COLEN[1] = 652;
+CANMMCAN_2_CAPOID[1] = 650;
+CANMMCAN_2_CAPOIDF[1] = 651;
+CANMMCAN_2_COIDX_0[1] = 653;
+CANMMCAN_2_COIDX_1[1] = 654;
+CANMMCAN_2_COIDX_2[1] = 655;
+CANMMCAN_2_COIDX_3[1] = 656;
+CANMMCAN_2_COIDX_4[1] = 657;
+CANMMCAN_2_COIDX_5[1] = 658;
+CANMMCAN_2_COIDX_6[1] = 659;
+CANMMCAN_2_COIDX_7[1] = 660;
+CANMMCAN_2_COT[2] = 662;
+CANMMCAN_2_COLEN[2] = 665;
+CANMMCAN_2_CAPOID[2] = 663;
+CANMMCAN_2_CAPOIDF[2] = 664;
+CANMMCAN_2_COIDX_0[2] = 666;
+CANMMCAN_2_COIDX_1[2] = 667;
+CANMMCAN_2_COIDX_2[2] = 668;
+CANMMCAN_2_COIDX_3[2] = 669;
+CANMMCAN_2_COIDX_4[2] = 670;
+CANMMCAN_2_COIDX_5[2] = 671;
+CANMMCAN_2_COIDX_6[2] = 672;
+CANMMCAN_2_COIDX_7[2] = 673;
+CANMMCAN_2_COT[3] = 675;
+CANMMCAN_2_COLEN[3] = 678;
+CANMMCAN_2_CAPOID[3] = 676;
+CANMMCAN_2_CAPOIDF[3] = 677;
+CANMMCAN_2_COIDX_0[3] = 679;
+CANMMCAN_2_COIDX_1[3] = 680;
+CANMMCAN_2_COIDX_2[3] = 681;
+CANMMCAN_2_COIDX_3[3] = 682;
+CANMMCAN_2_COIDX_4[3] = 683;
+CANMMCAN_2_COIDX_5[3] = 684;
+CANMMCAN_2_COIDX_6[3] = 685;
+CANMMCAN_2_COIDX_7[3] = 686;
+CANMMCAN_2_COT[4] = 688;
+CANMMCAN_2_COLEN[4] = 691;
+CANMMCAN_2_CAPOID[4] = 689;
+CANMMCAN_2_CAPOIDF[4] = 690;
+CANMMCAN_2_COIDX_0[4] = 692;
+CANMMCAN_2_COIDX_1[4] = 693;
+CANMMCAN_2_COIDX_2[4] = 694;
+CANMMCAN_2_COIDX_3[4] = 695;
+CANMMCAN_2_COIDX_4[4] = 696;
+CANMMCAN_2_COIDX_5[4] = 697;
+CANMMCAN_2_COIDX_6[4] = 698;
+CANMMCAN_2_COIDX_7[4] = 699;
+CANMMCAN_2_COT[5] = 701;
+CANMMCAN_2_COLEN[5] = 704;
+CANMMCAN_2_CAPOID[5] = 702;
+CANMMCAN_2_CAPOIDF[5] = 703;
+CANMMCAN_2_COIDX_0[5] = 705;
+CANMMCAN_2_COIDX_1[5] = 706;
+CANMMCAN_2_COIDX_2[5] = 707;
+CANMMCAN_2_COIDX_3[5] = 708;
+CANMMCAN_2_COIDX_4[5] = 709;
+CANMMCAN_2_COIDX_5[5] = 710;
+CANMMCAN_2_COIDX_6[5] = 711;
+CANMMCAN_2_COIDX_7[5] = 712;
+CANMMCAN_2_COT[6] = 714;
+CANMMCAN_2_COLEN[6] = 717;
+CANMMCAN_2_CAPOID[6] = 715;
+CANMMCAN_2_CAPOIDF[6] = 716;
+CANMMCAN_2_COIDX_0[6] = 718;
+CANMMCAN_2_COIDX_1[6] = 719;
+CANMMCAN_2_COIDX_2[6] = 720;
+CANMMCAN_2_COIDX_3[6] = 721;
+CANMMCAN_2_COIDX_4[6] = 722;
+CANMMCAN_2_COIDX_5[6] = 723;
+CANMMCAN_2_COIDX_6[6] = 724;
+CANMMCAN_2_COIDX_7[6] = 725;
+CANMMCAN_2_COT[7] = 727;
+CANMMCAN_2_COLEN[7] = 730;
+CANMMCAN_2_CAPOID[7] = 728;
+CANMMCAN_2_CAPOIDF[7] = 729;
+CANMMCAN_2_COIDX_0[7] = 731;
+CANMMCAN_2_COIDX_1[7] = 732;
+CANMMCAN_2_COIDX_2[7] = 733;
+CANMMCAN_2_COIDX_3[7] = 734;
+CANMMCAN_2_COIDX_4[7] = 735;
+CANMMCAN_2_COIDX_5[7] = 736;
+CANMMCAN_2_COIDX_6[7] = 737;
+CANMMCAN_2_COIDX_7[7] = 738;
+CANMMCAN_2_COT[8] = 740;
+CANMMCAN_2_COLEN[8] = 743;
+CANMMCAN_2_CAPOID[8] = 741;
+CANMMCAN_2_CAPOIDF[8] = 742;
+CANMMCAN_2_COIDX_0[8] = 744;
+CANMMCAN_2_COIDX_1[8] = 745;
+CANMMCAN_2_COIDX_2[8] = 746;
+CANMMCAN_2_COIDX_3[8] = 747;
+CANMMCAN_2_COIDX_4[8] = 748;
+CANMMCAN_2_COIDX_5[8] = 749;
+CANMMCAN_2_COIDX_6[8] = 750;
+CANMMCAN_2_COIDX_7[8] = 751;
+CANMMCAN_2_COT[9] = 753;
+CANMMCAN_2_COLEN[9] = 756;
+CANMMCAN_2_CAPOID[9] = 754;
+CANMMCAN_2_CAPOIDF[9] = 755;
+CANMMCAN_2_COIDX_0[9] = 757;
+CANMMCAN_2_COIDX_1[9] = 758;
+CANMMCAN_2_COIDX_2[9] = 759;
+CANMMCAN_2_COIDX_3[9] = 760;
+CANMMCAN_2_COIDX_4[9] = 761;
+CANMMCAN_2_COIDX_5[9] = 762;
+CANMMCAN_2_COIDX_6[9] = 763;
+CANMMCAN_2_COIDX_7[9] = 764;
+CANMMCAN_2_COT[10] = 766;
+CANMMCAN_2_COLEN[10] = 769;
+CANMMCAN_2_CAPOID[10] = 767;
+CANMMCAN_2_CAPOIDF[10] = 768;
+CANMMCAN_2_COIDX_0[10] = 770;
+CANMMCAN_2_COIDX_1[10] = 771;
+CANMMCAN_2_COIDX_2[10] = 772;
+CANMMCAN_2_COIDX_3[10] = 773;
+CANMMCAN_2_COIDX_4[10] = 774;
+CANMMCAN_2_COIDX_5[10] = 775;
+CANMMCAN_2_COIDX_6[10] = 776;
+CANMMCAN_2_COIDX_7[10] = 777;
+CANMMCAN_2_COT[11] = 779;
+CANMMCAN_2_COLEN[11] = 782;
+CANMMCAN_2_CAPOID[11] = 780;
+CANMMCAN_2_CAPOIDF[11] = 781;
+CANMMCAN_2_COIDX_0[11] = 783;
+CANMMCAN_2_COIDX_1[11] = 784;
+CANMMCAN_2_COIDX_2[11] = 785;
+CANMMCAN_2_COIDX_3[11] = 786;
+CANMMCAN_2_COIDX_4[11] = 787;
+CANMMCAN_2_COIDX_5[11] = 788;
+CANMMCAN_2_COIDX_6[11] = 789;
+CANMMCAN_2_COIDX_7[11] = 790;
+CANMMCAN_2_COT[12] = 792;
+CANMMCAN_2_COLEN[12] = 795;
+CANMMCAN_2_CAPOID[12] = 793;
+CANMMCAN_2_CAPOIDF[12] = 794;
+CANMMCAN_2_COIDX_0[12] = 796;
+CANMMCAN_2_COIDX_1[12] = 797;
+CANMMCAN_2_COIDX_2[12] = 798;
+CANMMCAN_2_COIDX_3[12] = 799;
+CANMMCAN_2_COIDX_4[12] = 800;
+CANMMCAN_2_COIDX_5[12] = 801;
+CANMMCAN_2_COIDX_6[12] = 802;
+CANMMCAN_2_COIDX_7[12] = 803;
+CANMMCAN_2_COT[13] = 805;
+CANMMCAN_2_COLEN[13] = 808;
+CANMMCAN_2_CAPOID[13] = 806;
+CANMMCAN_2_CAPOIDF[13] = 807;
+CANMMCAN_2_COIDX_0[13] = 809;
+CANMMCAN_2_COIDX_1[13] = 810;
+CANMMCAN_2_COIDX_2[13] = 811;
+CANMMCAN_2_COIDX_3[13] = 812;
+CANMMCAN_2_COIDX_4[13] = 813;
+CANMMCAN_2_COIDX_5[13] = 814;
+CANMMCAN_2_COIDX_6[13] = 815;
+CANMMCAN_2_COIDX_7[13] = 816;
+CANMMCAN_2_COT[14] = 818;
+CANMMCAN_2_COLEN[14] = 821;
+CANMMCAN_2_CAPOID[14] = 819;
+CANMMCAN_2_CAPOIDF[14] = 820;
+CANMMCAN_2_COIDX_0[14] = 822;
+CANMMCAN_2_COIDX_1[14] = 823;
+CANMMCAN_2_COIDX_2[14] = 824;
+CANMMCAN_2_COIDX_3[14] = 825;
+CANMMCAN_2_COIDX_4[14] = 826;
+CANMMCAN_2_COIDX_5[14] = 827;
+CANMMCAN_2_COIDX_6[14] = 828;
+CANMMCAN_2_COIDX_7[14] = 829;
+CANMMCAN_2_COT[15] = 831;
+CANMMCAN_2_COLEN[15] = 834;
+CANMMCAN_2_CAPOID[15] = 832;
+CANMMCAN_2_CAPOIDF[15] = 833;
+CANMMCAN_2_COIDX_0[15] = 835;
+CANMMCAN_2_COIDX_1[15] = 836;
+CANMMCAN_2_COIDX_2[15] = 837;
+CANMMCAN_2_COIDX_3[15] = 838;
+CANMMCAN_2_COIDX_4[15] = 839;
+CANMMCAN_2_COIDX_5[15] = 840;
+CANMMCAN_2_COIDX_6[15] = 841;
+CANMMCAN_2_COIDX_7[15] = 842;
+CANMMCAN_2_COT[16] = 844;
+CANMMCAN_2_COLEN[16] = 847;
+CANMMCAN_2_CAPOID[16] = 845;
+CANMMCAN_2_CAPOIDF[16] = 846;
+CANMMCAN_2_COIDX_0[16] = 848;
+CANMMCAN_2_COIDX_1[16] = 849;
+CANMMCAN_2_COIDX_2[16] = 850;
+CANMMCAN_2_COIDX_3[16] = 851;
+CANMMCAN_2_COIDX_4[16] = 852;
+CANMMCAN_2_COIDX_5[16] = 853;
+CANMMCAN_2_COIDX_6[16] = 854;
+CANMMCAN_2_COIDX_7[16] = 855;
+CANMMCAN_2_COT[17] = 857;
+CANMMCAN_2_COLEN[17] = 860;
+CANMMCAN_2_CAPOID[17] = 858;
+CANMMCAN_2_CAPOIDF[17] = 859;
+CANMMCAN_2_COIDX_0[17] = 861;
+CANMMCAN_2_COIDX_1[17] = 862;
+CANMMCAN_2_COIDX_2[17] = 863;
+CANMMCAN_2_COIDX_3[17] = 864;
+CANMMCAN_2_COIDX_4[17] = 865;
+CANMMCAN_2_COIDX_5[17] = 866;
+CANMMCAN_2_COIDX_6[17] = 867;
+CANMMCAN_2_COIDX_7[17] = 868;
+CANMMCAN_2_COT[18] = 870;
+CANMMCAN_2_COLEN[18] = 873;
+CANMMCAN_2_CAPOID[18] = 871;
+CANMMCAN_2_CAPOIDF[18] = 872;
+CANMMCAN_2_COIDX_0[18] = 874;
+CANMMCAN_2_COIDX_1[18] = 875;
+CANMMCAN_2_COIDX_2[18] = 876;
+CANMMCAN_2_COIDX_3[18] = 877;
+CANMMCAN_2_COIDX_4[18] = 878;
+CANMMCAN_2_COIDX_5[18] = 879;
+CANMMCAN_2_COIDX_6[18] = 880;
+CANMMCAN_2_COIDX_7[18] = 881;
+CANMMCAN_2_COT[19] = 883;
+CANMMCAN_2_COLEN[19] = 886;
+CANMMCAN_2_CAPOID[19] = 884;
+CANMMCAN_2_CAPOIDF[19] = 885;
+CANMMCAN_2_COIDX_0[19] = 887;
+CANMMCAN_2_COIDX_1[19] = 888;
+CANMMCAN_2_COIDX_2[19] = 889;
+CANMMCAN_2_COIDX_3[19] = 890;
+CANMMCAN_2_COIDX_4[19] = 891;
+CANMMCAN_2_COIDX_5[19] = 892;
+CANMMCAN_2_COIDX_6[19] = 893;
+CANMMCAN_2_COIDX_7[19] = 894;
+CANMMCAN_2_COT[20] = 896;
+CANMMCAN_2_COLEN[20] = 899;
+CANMMCAN_2_CAPOID[20] = 897;
+CANMMCAN_2_CAPOIDF[20] = 898;
+CANMMCAN_2_COIDX_0[20] = 900;
+CANMMCAN_2_COIDX_1[20] = 901;
+CANMMCAN_2_COIDX_2[20] = 902;
+CANMMCAN_2_COIDX_3[20] = 903;
+CANMMCAN_2_COIDX_4[20] = 904;
+CANMMCAN_2_COIDX_5[20] = 905;
+CANMMCAN_2_COIDX_6[20] = 906;
+CANMMCAN_2_COIDX_7[20] = 907;
+CANMMCAN_2_COT[21] = 909;
+CANMMCAN_2_COLEN[21] = 912;
+CANMMCAN_2_CAPOID[21] = 910;
+CANMMCAN_2_CAPOIDF[21] = 911;
+CANMMCAN_2_COIDX_0[21] = 913;
+CANMMCAN_2_COIDX_1[21] = 914;
+CANMMCAN_2_COIDX_2[21] = 915;
+CANMMCAN_2_COIDX_3[21] = 916;
+CANMMCAN_2_COIDX_4[21] = 917;
+CANMMCAN_2_COIDX_5[21] = 918;
+CANMMCAN_2_COIDX_6[21] = 919;
+CANMMCAN_2_COIDX_7[21] = 920;
+CANMMCAN_2_COT[22] = 922;
+CANMMCAN_2_COLEN[22] = 925;
+CANMMCAN_2_CAPOID[22] = 923;
+CANMMCAN_2_CAPOIDF[22] = 924;
+CANMMCAN_2_COIDX_0[22] = 926;
+CANMMCAN_2_COIDX_1[22] = 927;
+CANMMCAN_2_COIDX_2[22] = 928;
+CANMMCAN_2_COIDX_3[22] = 929;
+CANMMCAN_2_COIDX_4[22] = 930;
+CANMMCAN_2_COIDX_5[22] = 931;
+CANMMCAN_2_COIDX_6[22] = 932;
+CANMMCAN_2_COIDX_7[22] = 933;
+CANMMCAN_2_COT[23] = 935;
+CANMMCAN_2_COLEN[23] = 938;
+CANMMCAN_2_CAPOID[23] = 936;
+CANMMCAN_2_CAPOIDF[23] = 937;
+CANMMCAN_2_COIDX_0[23] = 939;
+CANMMCAN_2_COIDX_1[23] = 940;
+CANMMCAN_2_COIDX_2[23] = 941;
+CANMMCAN_2_COIDX_3[23] = 942;
+CANMMCAN_2_COIDX_4[23] = 943;
+CANMMCAN_2_COIDX_5[23] = 944;
+CANMMCAN_2_COIDX_6[23] = 945;
+CANMMCAN_2_COIDX_7[23] = 946;
+CANMMCAN_2_COT[24] = 948;
+CANMMCAN_2_COLEN[24] = 951;
+CANMMCAN_2_CAPOID[24] = 949;
+CANMMCAN_2_CAPOIDF[24] = 950;
+CANMMCAN_2_COIDX_0[24] = 952;
+CANMMCAN_2_COIDX_1[24] = 953;
+CANMMCAN_2_COIDX_2[24] = 954;
+CANMMCAN_2_COIDX_3[24] = 955;
+CANMMCAN_2_COIDX_4[24] = 956;
+CANMMCAN_2_COIDX_5[24] = 957;
+CANMMCAN_2_COIDX_6[24] = 958;
+CANMMCAN_2_COIDX_7[24] = 959;
+
+

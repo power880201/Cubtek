@@ -1,0 +1,3760 @@
+Library {
+  Name			  "vip"
+  Version		  8.1
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1252"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-8.0, 0.0, 1936.0, 1056.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[13]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1884.0, 870.0]
+	ZoomFactor		[1.0]
+	Offset			[0.0, 0.0]
+      }
+    }
+  }
+  Created		  "Tue Sep 15 16:55:42 2015"
+  Creator		  "xsellart"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "tescamilla"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed Jan 04 17:03:47 2017"
+  RTWModifiedTimeStamp	  405450219
+  ModelVersionFormat	  "1.%<AutoIncrement:48>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "all"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  RecordCoverage	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      6
+      Version		      "1.13.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  7
+	  Version		  "1.13.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  8
+	  Version		  "1.13.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  9
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  10
+	  Version		  "1.13.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  11
+	  Version		  "1.13.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  12
+	  Version		  "1.13.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  13
+	  Version		  "1.13.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  14
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    15
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      15
+	      Version		      "1.13.0"
+	      Array {
+		Type			"Cell"
+		Dimension		22
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      16
+	      Version		      "1.13.0"
+	      Array {
+		Type			"Cell"
+		Dimension		15
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  17
+	  Version		  "1.13.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    " "
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 153, 69, 1213, 699 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Abs
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      ActionPort
+      InitializeStates	      "held"
+      PropagateVarSize	      "Only when execution is resumed"
+      ActionType	      "unset"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Delay
+      DelayLengthSource	      "Dialog"
+      DelayLength	      "2"
+      DelayLengthUpperLimit   "100"
+      InitialConditionSource  "Dialog"
+      InitialCondition	      "0.0"
+      ExternalReset	      "None"
+      PreventDirectFeedthrough off
+      DiagnosticForOutOfRangeDelayLength "None"
+      RemoveProtectionDelayLength off
+      InputProcessing	      "Elements as channels (sample based)"
+      UseCircularBuffer	      off
+      SampleTime	      "-1"
+      StateMustResolveToSignalObject off
+      CodeGenStateStorageClass "Auto"
+    }
+    Block {
+      BlockType		      From
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Goto
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      If
+      NumInputs		      "1"
+      IfExpression	      "u1 > 0"
+      ShowElse		      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Math
+      Operator		      "exp"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      IntermediateResultsDataTypeStr "Inherit: Inherit via internal rule"
+      AlgorithmType	      "Newton-Raphson"
+      Iterations	      "3"
+    }
+    Block {
+      BlockType		      Merge
+      Inputs		      "2"
+      InitialOutput	      "[]"
+      AllowUnequalInputPortWidths off
+      InputPortOffsets	      "[]"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Sqrt
+      Operator		      "sqrt"
+      OutputSignalType	      "auto"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      IntermediateResultsDataTypeStr "Inherit: Inherit via internal rule"
+      AlgorithmType	      "Exact"
+      Iterations	      "3"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+  }
+  System {
+    Name		    "vip"
+    Location		    [-8, 0, 1928, 1056]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "164"
+    Block {
+      BlockType		      SubSystem
+      Name		      "VehicleInPath"
+      SID		      "14"
+      Ports		      [14, 3]
+      Position		      [480, 20, 925, 330]
+      ZOrder		      337
+      LibraryVersion	      "*1.47"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		3
+	PropagatedSignals	"VIFO_ACCVehInPathVect30_flg"
+	ShowPropagatedSignals	"on"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"VehicleInPath"
+	Location		[-9, 0, 1929, 1050]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"30"
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_LaneC0L_m"
+	  SID			  "156"
+	  Position		  [20, 1548, 50, 1562]
+	  ZOrder		  406
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_LaneC0L_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_LaneC1L_rad"
+	  SID			  "157"
+	  Position		  [20, 1598, 50, 1612]
+	  ZOrder		  407
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_LaneC1L_rad"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_LaneC2L_rat"
+	  SID			  "158"
+	  Position		  [20, 1648, 50, 1662]
+	  ZOrder		  408
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_LaneC2L_rat"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_LaneC3L_rat"
+	  SID			  "159"
+	  Position		  [20, 1698, 50, 1712]
+	  ZOrder		  409
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_LaneC3L_rat"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_LaneC0R_m"
+	  SID			  "160"
+	  Position		  [20, 1748, 50, 1762]
+	  ZOrder		  410
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_LaneC0R_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_LaneC1R_rad"
+	  SID			  "161"
+	  Position		  [20, 1798, 50, 1812]
+	  ZOrder		  411
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_LaneC1R_rad"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_LaneC2R_rat"
+	  SID			  "162"
+	  Position		  [20, 1848, 50, 1862]
+	  ZOrder		  412
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_LaneC2R_rat"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_LaneC3R_rat"
+	  SID			  "163"
+	  Position		  [20, 1898, 50, 1912]
+	  ZOrder		  413
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_LaneC3R_rat"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_TargIdVect30_num"
+	  SID			  "95"
+	  Position		  [20, 73, 50, 87]
+	  ZOrder		  278
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_TargIdVect30_num"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VDINR_YawRate_degps"
+	  SID			  "15"
+	  Position		  [20, 423, 50, 437]
+	  ZOrder		  50
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VDINR_YawRate_degps"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VDINR_SteerAngle_deg"
+	  SID			  "16"
+	  Position		  [20, 543, 50, 557]
+	  ZOrder		  52
+	  Port			  "11"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VDINR_SteerAngle_deg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_TargVehWidthVect30_m"
+	  SID			  "17"
+	  Position		  [20, 243, 50, 257]
+	  ZOrder		  49
+	  Port			  "12"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_TargWidthVect30_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_TargXPosVect30_m"
+	  SID			  "18"
+	  Position		  [20, 603, 50, 617]
+	  ZOrder		  53
+	  Port			  "13"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_TargXPosVect30_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_TargYPosVect30_m"
+	  SID			  "19"
+	  Position		  [20, 483, 50, 497]
+	  ZOrder		  51
+	  Port			  "14"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_TargYPosVect30_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "ACCBoundary"
+	  SID			  "105"
+	  Ports			  [2, 1]
+	  Position		  [1435, 1287, 1800, 1403]
+	  ZOrder		  285
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VIFO_ACCPathBoundVect30_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "ACCBoundary"
+	    Location		    [-8, 0, 1288, 780]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VPER_TargVehWidthVect30_m"
+	      SID		      "106"
+	      Position		      [20, 23, 50, 37]
+	      ZOrder		      24
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VPER_TargWidthVect30_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "TargInPathLatOffset"
+	      SID		      "107"
+	      Position		      [20, 253, 50, 267]
+	      ZOrder		      25
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"KIFO_TargInPathLatOffsetACC_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      SID		      "108"
+	      Ports		      [3, 1]
+	      Position		      [680, 111, 705, 189]
+	      ZOrder		      17
+	      ShowName		      off
+	      Inputs		      "+++"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	      Port {
+		PortNumber		1
+		Name			"VIFO_ACCPathBoundVect30_m"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "109"
+	      Position		      [310, 55, 385, 85]
+	      ZOrder		      16
+	      ShowName		      off
+	      Value		      "single(2)"
+	      OutDataTypeStr	      "single"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      SID		      "110"
+	      Position		      [310, 170, 385, 200]
+	      ZOrder		      27
+	      ShowName		      off
+	      Value		      "single(2)"
+	      OutDataTypeStr	      "single"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide"
+	      SID		      "111"
+	      Ports		      [2, 1]
+	      Position		      [480, 22, 510, 53]
+	      ZOrder		      15
+	      ShowName		      off
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide1"
+	      SID		      "112"
+	      Ports		      [2, 1]
+	      Position		      [480, 132, 510, 163]
+	      ZOrder		      19
+	      ShowName		      off
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "KIFO_HostVehicleWidth_m"
+	      SID		      "113"
+	      Position		      [110, 127, 280, 153]
+	      ZOrder		      18
+	      ShowName		      off
+	      Value		      "KIFO_HostVehicleWidth_m"
+	      Port {
+		PortNumber		1
+		Name			"KIFO_HostVehicleWidth_m"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VIFO_ACCPathBoundVect30_m"
+	      SID		      "114"
+	      Position		      [1005, 143, 1035, 157]
+	      ZOrder		      26
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VPER_TargVehWidthVect30_m"
+	      SrcPort		      1
+	      DstBlock		      "Divide"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Divide"
+	      SrcPort		      1
+	      Points		      [100, 0; 0, 85]
+	      DstBlock		      "Add"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      Points		      [42, 0; 0, -30]
+	      DstBlock		      "Divide1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Divide1"
+	      SrcPort		      1
+	      DstBlock		      "Add"
+	      DstPort		      2
+	    }
+	    Line {
+	      Name		      "VIFO_ACCPathBoundVect30_m"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      DstBlock		      "VIFO_ACCPathBoundVect30_m"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "KIFO_HostVehicleWidth_m"
+	      Labels		      [0, 0]
+	      SrcBlock		      "KIFO_HostVehicleWidth_m"
+	      SrcPort		      1
+	      DstBlock		      "Divide1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "TargInPathLatOffset"
+	      SrcPort		      1
+	      Points		      [514, 0; 0, -85]
+	      DstBlock		      "Add"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      Points		      [42, 0; 0, -25]
+	      DstBlock		      "Divide"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "AEBBoundary"
+	  SID			  "20"
+	  Ports			  [2, 1]
+	  Position		  [1435, 767, 1800, 883]
+	  ZOrder		  42
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VIFO_AEBPathBoundVect30_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "AEBBoundary"
+	    Location		    [-8, -8, 1288, 992]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VPER_TargVehWidthVect30_m"
+	      SID		      "21"
+	      Position		      [175, 23, 205, 37]
+	      ZOrder		      24
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "TargInPathLatOffset"
+	      SID		      "22"
+	      Position		      [20, 253, 50, 267]
+	      ZOrder		      25
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"KIFO_TargInPathLatOffsetAEB_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      SID		      "23"
+	      Ports		      [3, 1]
+	      Position		      [680, 111, 705, 189]
+	      ZOrder		      17
+	      ShowName		      off
+	      Inputs		      "+++"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	      Port {
+		PortNumber		1
+		Name			"VIFO_AEBPathBoundVect30_m"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "24"
+	      Position		      [310, 55, 385, 85]
+	      ZOrder		      16
+	      ShowName		      off
+	      Value		      "single(2)"
+	      OutDataTypeStr	      "single"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      SID		      "91"
+	      Position		      [310, 170, 385, 200]
+	      ZOrder		      27
+	      ShowName		      off
+	      Value		      "single(2)"
+	      OutDataTypeStr	      "single"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide"
+	      SID		      "26"
+	      Ports		      [2, 1]
+	      Position		      [480, 22, 510, 53]
+	      ZOrder		      15
+	      ShowName		      off
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide1"
+	      SID		      "27"
+	      Ports		      [2, 1]
+	      Position		      [480, 132, 510, 163]
+	      ZOrder		      19
+	      ShowName		      off
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "KIFO_HostVehicleWidth_m"
+	      SID		      "28"
+	      Position		      [110, 127, 280, 153]
+	      ZOrder		      18
+	      ShowName		      off
+	      Value		      "KIFO_HostVehicleWidth_m"
+	      Port {
+		PortNumber		1
+		Name			"KIFO_HostVehicleWidth_m"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VIFO_AEBPathBoundVect30_m"
+	      SID		      "29"
+	      Position		      [1005, 143, 1035, 157]
+	      ZOrder		      26
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "VPER_TargVehWidthVect30_m"
+	      SrcPort		      1
+	      DstBlock		      "Divide"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Divide"
+	      SrcPort		      1
+	      Points		      [100, 0; 0, 85]
+	      DstBlock		      "Add"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      Points		      [42, 0; 0, -30]
+	      DstBlock		      "Divide1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Divide1"
+	      SrcPort		      1
+	      DstBlock		      "Add"
+	      DstPort		      2
+	    }
+	    Line {
+	      Name		      "VIFO_AEBPathBoundVect30_m"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      DstBlock		      "VIFO_AEBPathBoundVect30_m"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "KIFO_HostVehicleWidth_m"
+	      Labels		      [0, 0]
+	      SrcBlock		      "KIFO_HostVehicleWidth_m"
+	      SrcPort		      1
+	      DstBlock		      "Divide1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "TargInPathLatOffset"
+	      SrcPort		      1
+	      Points		      [514, 0; 0, -85]
+	      DstBlock		      "Add"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      Points		      [42, 0; 0, -25]
+	      DstBlock		      "Divide"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Compare\nTo Zero"
+	  SID			  "96"
+	  Ports			  [1, 1]
+	  Position		  [1990, 65, 2020, 95]
+	  ZOrder		  279
+	  ShowName		  off
+	  LibraryVersion	  "1.274"
+	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
+	  SourceType		  "Compare To Zero"
+	  relop			  "~="
+	  OutDataTypeStr	  "boolean"
+	  ZeroCross		  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Compare\nTo Zero1"
+	  SID			  "100"
+	  Ports			  [1, 1]
+	  Position		  [1990, 730, 2020, 760]
+	  ZOrder		  283
+	  ShowName		  off
+	  LibraryVersion	  "1.274"
+	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
+	  SourceType		  "Compare To Zero"
+	  relop			  "~="
+	  OutDataTypeStr	  "boolean"
+	  ZeroCross		  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Compare\nTo Zero2"
+	  SID			  "115"
+	  Ports			  [1, 1]
+	  Position		  [1990, 1230, 2020, 1260]
+	  ZOrder		  292
+	  ShowName		  off
+	  LibraryVersion	  "1.274"
+	  SourceBlock		  "simulink/Logic and Bit\nOperations/Compare\nTo Zero"
+	  SourceType		  "Compare To Zero"
+	  relop			  "~="
+	  OutDataTypeStr	  "boolean"
+	  ZeroCross		  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant"
+	  SID			  "128"
+	  Position		  [1830, 187, 1925, 213]
+	  ZOrder		  298
+	  ShowName		  off
+	  Value			  "ZERO_FLOAT"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant1"
+	  SID			  "129"
+	  Position		  [1830, 1057, 1925, 1083]
+	  ZOrder		  301
+	  ShowName		  off
+	  Value			  "ZERO_FLOAT"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  SID			  "132"
+	  Position		  [1830, 2207, 1925, 2233]
+	  ZOrder		  304
+	  ShowName		  off
+	  Value			  "ZERO_FLOAT"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "FCWBoundary"
+	  SID			  "30"
+	  Ports			  [2, 1]
+	  Position		  [1435, 222, 1800, 338]
+	  ZOrder		  32
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VIFO_FCWPathBoundVect30_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "FCWBoundary"
+	    Location		    [-8, -8, 1288, 992]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VPER_TargVehWidthVect30_m"
+	      SID		      "31"
+	      Position		      [40, 48, 70, 62]
+	      ZOrder		      24
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VPER_TargWidthVect30_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "TargInPathLatOffset"
+	      SID		      "32"
+	      Position		      [40, 228, 70, 242]
+	      ZOrder		      25
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"KIFO_TargInPathLatOffsetFCW_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      SID		      "33"
+	      Ports		      [3, 1]
+	      Position		      [680, 111, 705, 189]
+	      ZOrder		      17
+	      ShowName		      off
+	      Inputs		      "+++"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	      Port {
+		PortNumber		1
+		Name			"VIFO_FCWPathBoundVect30_m"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "34"
+	      Position		      [310, 80, 385, 110]
+	      ZOrder		      16
+	      ShowName		      off
+	      Value		      "single(2)"
+	      OutDataTypeStr	      "single"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      SID		      "35"
+	      Position		      [315, 170, 385, 200]
+	      ZOrder		      20
+	      ShowName		      off
+	      Value		      "single(2)"
+	      OutDataTypeStr	      "single"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide"
+	      SID		      "36"
+	      Ports		      [2, 1]
+	      Position		      [455, 47, 485, 78]
+	      ZOrder		      15
+	      ShowName		      off
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide1"
+	      SID		      "37"
+	      Ports		      [2, 1]
+	      Position		      [455, 132, 485, 163]
+	      ZOrder		      19
+	      ShowName		      off
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "KIFO_HostVehicleWidth_m"
+	      SID		      "38"
+	      Position		      [110, 127, 280, 153]
+	      ZOrder		      18
+	      ShowName		      off
+	      Value		      "KIFO_HostVehicleWidth_m"
+	      Port {
+		PortNumber		1
+		Name			"KIFO_HostVehicleWidth_m"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VIFO_FCWPathBoundVect30_m"
+	      SID		      "39"
+	      Position		      [935, 143, 965, 157]
+	      ZOrder		      26
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      Points		      [42, 0; 0, -25]
+	      DstBlock		      "Divide"
+	      DstPort		      2
+	    }
+	    Line {
+	      Labels		      [3, 1]
+	      SrcBlock		      "TargInPathLatOffset"
+	      SrcPort		      1
+	      Points		      [432, 0; 0, -60]
+	      DstBlock		      "Add"
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "KIFO_HostVehicleWidth_m"
+	      Labels		      [0, 0]
+	      SrcBlock		      "KIFO_HostVehicleWidth_m"
+	      SrcPort		      1
+	      DstBlock		      "Divide1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "VIFO_FCWPathBoundVect30_m"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      DstBlock		      "VIFO_FCWPathBoundVect30_m"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Divide1"
+	      SrcPort		      1
+	      DstBlock		      "Add"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      Points		      [50, 0]
+	      DstBlock		      "Divide1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Divide"
+	      SrcPort		      1
+	      Points		      [20, 0; 0, 60]
+	      DstBlock		      "Add"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VPER_TargVehWidthVect30_m"
+	      SrcPort		      1
+	      DstBlock		      "Divide"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From1"
+	  SID			  "40"
+	  Position		  [710, 778, 930, 812]
+	  ZOrder		  44
+	  ShowName		  off
+	  GotoTag		  "VPER_TargVehWidthVect30_m"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_TargWidthVect30_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From2"
+	  SID			  "41"
+	  Position		  [1260, 938, 1480, 972]
+	  ZOrder		  47
+	  ShowName		  off
+	  GotoTag		  "VIFO_PositionToPathVect30_m"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VIFO_PositionToPathVect30_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From3"
+	  SID			  "99"
+	  Position		  [710, 728, 930, 762]
+	  ZOrder		  282
+	  ShowName		  off
+	  GotoTag		  "VPER_TargIdVect30_num"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_TargIdVect30_num"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From4"
+	  SID			  "116"
+	  Position		  [710, 1298, 930, 1332]
+	  ZOrder		  286
+	  ShowName		  off
+	  GotoTag		  "VPER_TargVehWidthVect30_m"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_TargWidthVect30_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From5"
+	  SID			  "117"
+	  Position		  [1260, 1438, 1480, 1472]
+	  ZOrder		  288
+	  ShowName		  off
+	  GotoTag		  "VIFO_PositionToPathVect30_m"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VIFO_PositionToPathVect30_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From6"
+	  SID			  "118"
+	  Position		  [710, 1228, 930, 1262]
+	  ZOrder		  291
+	  ShowName		  off
+	  GotoTag		  "VPER_TargIdVect30_num"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_TargIdVect30_num"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_TargXPosVect30_m"
+	  SID			  "125"
+	  Position		  [290, 123, 510, 157]
+	  ZOrder		  295
+	  ShowName		  off
+	  GotoTag		  "VPER_TargXPosVect30_m"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_TargXPosVect30_m1"
+	  SID			  "133"
+	  Position		  [290, 2143, 510, 2177]
+	  ZOrder		  302
+	  ShowName		  off
+	  GotoTag		  "VPER_TargXPosVect30_m"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_TargXPosVect30_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_TargXPosVect30_m2"
+	  SID			  "130"
+	  Position		  [290, 993, 510, 1027]
+	  ZOrder		  299
+	  ShowName		  off
+	  GotoTag		  "VPER_TargXPosVect30_m"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_TargXPosVect30_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_TargXPosVect30_m3"
+	  SID			  "152"
+	  Position		  [290, 1938, 510, 1972]
+	  ZOrder		  401
+	  ShowName		  off
+	  GotoTag		  "VPER_TargXPosVect30_m"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_TargXPosVect30_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_TargYPosVect30_m"
+	  SID			  "154"
+	  Position		  [290, 1988, 510, 2022]
+	  ZOrder		  403
+	  ShowName		  off
+	  GotoTag		  "VPER_TargYPosVect30_m"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_TargYPosVect30_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto"
+	  SID			  "42"
+	  Position		  [665, 185, 905, 215]
+	  ZOrder		  43
+	  ShowName		  off
+	  GotoTag		  "VPER_TargVehWidthVect30_m"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto1"
+	  SID			  "43"
+	  Position		  [1205, 470, 1445, 500]
+	  ZOrder		  46
+	  ShowName		  off
+	  GotoTag		  "VIFO_PositionToPathVect30_m"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto2"
+	  SID			  "98"
+	  Position		  [665, 15, 905, 45]
+	  ZOrder		  281
+	  ShowName		  off
+	  GotoTag		  "VPER_TargIdVect30_num"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VPER_TargXPosVect30_m"
+	  SID			  "124"
+	  Position		  [150, 575, 390, 605]
+	  ZOrder		  294
+	  ShowName		  off
+	  GotoTag		  "VPER_TargXPosVect30_m"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VPER_TargYPosVect30_m"
+	  SID			  "153"
+	  Position		  [150, 455, 390, 485]
+	  ZOrder		  402
+	  ShowName		  off
+	  GotoTag		  "VPER_TargYPosVect30_m"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "KIFO_TargInPathLatOffsetAEB_m"
+	  SID			  "45"
+	  Position		  [830, 842, 1060, 868]
+	  ZOrder		  45
+	  ShowName		  off
+	  Value			  "KIFO_TargInPathLatOffsetAEB_m"
+	  Port {
+	    PortNumber		    1
+	    Name		    "KIFO_TargInPathLatOffsetAEB_m"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "KIFO_TargInPathLatOffsetAEB_m1"
+	  SID			  "119"
+	  Position		  [830, 1362, 1060, 1388]
+	  ZOrder		  287
+	  ShowName		  off
+	  Value			  "KIFO_TargInPathLatOffsetACC_m"
+	  Port {
+	    PortNumber		    1
+	    Name		    "KIFO_TargInPathLatOffsetACC_m"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "KIFO_TargInPathLatOffsetFCW_m"
+	  SID			  "44"
+	  Position		  [830, 297, 1060, 323]
+	  ZOrder		  26
+	  ShowName		  off
+	  Value			  "KIFO_TargInPathLatOffsetFCW_m"
+	  Port {
+	    PortNumber		    1
+	    Name		    "KIFO_TargInPathLatOffsetFCW_m"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator"
+	  SID			  "97"
+	  Ports			  [3, 1]
+	  Position		  [2255, 129, 2285, 171]
+	  ZOrder		  280
+	  ShowName		  off
+	  Inputs		  "3"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	  Port {
+	    PortNumber		    1
+	    Name		    "VIFO_FCWVehInPathVect30_flg"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator1"
+	  SID			  "101"
+	  Ports			  [3, 1]
+	  Position		  [2255, 736, 2285, 784]
+	  ZOrder		  284
+	  ShowName		  off
+	  Inputs		  "3"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	  Port {
+	    PortNumber		    1
+	    Name		    "VIFO_AEBVehInPathVect30_flg"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator2"
+	  SID			  "120"
+	  Ports			  [3, 1]
+	  Position		  [2255, 1228, 2290, 1342]
+	  ZOrder		  293
+	  ShowName		  off
+	  Inputs		  "3"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	  Port {
+	    PortNumber		    1
+	    Name		    "VIFO_ACCVehInPathVect30_flg"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator3"
+	  SID			  "150"
+	  Ports			  [2, 1]
+	  Position		  [2155, 1267, 2185, 1298]
+	  ZOrder		  305
+	  ShowName		  off
+	  Operator		  "OR"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Position_To_Path"
+	  SID			  "46"
+	  Ports			  [4, 1]
+	  Position		  [585, 395, 955, 645]
+	  ZOrder		  41
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VIFO_PositionToPathVect30_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "Position_To_Path"
+	    Location		    [-9, 0, 1369, 780]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "50"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VDINR_YawRate_degps"
+	      SID		      "47"
+	      Position		      [20, 158, 50, 172]
+	      ZOrder		      38
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VDINR_YawRate_degps"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VPER_TargYPosVect30_m"
+	      SID		      "48"
+	      Position		      [20, 538, 50, 552]
+	      ZOrder		      39
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      PortDimensions	      "30"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VPER_TargYPosVect30_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VDINR_SteerAngle_deg"
+	      SID		      "49"
+	      Position		      [20, 293, 50, 307]
+	      ZOrder		      40
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VDINR_SteerAngle_deg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VPER_TargXPosVect30_m"
+	      SID		      "50"
+	      Position		      [20, 608, 50, 622]
+	      ZOrder		      41
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      PortDimensions	      "30"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VPER_TargXPosVect30_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Abs
+	      Name		      "Abs1"
+	      SID		      "51"
+	      Position		      [170, 150, 200, 180]
+	      ZOrder		      29
+	      ShowName		      off
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Abs
+	      Name		      "Abs2"
+	      SID		      "146"
+	      Position		      [925, 20, 955, 50]
+	      ZOrder		      239
+	      ShowName		      off
+	      Commented		      on
+	      SaturateOnIntegerOverflow	off
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "C_TASK_100MS_S"
+	      SID		      "136"
+	      Position		      [170, 392, 305, 418]
+	      ZOrder		      231
+	      ShowName		      off
+	      Value		      "C_TASK_100MS_S"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "C_TICK_TIME_S"
+	      SID		      "137"
+	      Position		      [170, 357, 305, 383]
+	      ZOrder		      232
+	      ShowName		      off
+	      Value		      "C_TICK_TIME_S"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      SID		      "149"
+	      Position		      [1190, 255, 1270, 285]
+	      ZOrder		      240
+	      ShowName		      off
+	      Value		      "TRUE"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Curve_Case"
+	      SID		      "52"
+	      Ports		      [3, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [1600, 437, 2120, 653]
+	      ZOrder		      35
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"NIFO_PosToPathCurveVect30_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"Curve_Case"
+		Location		[-9, -9, 1929, 1041]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"50"
+		Block {
+		  BlockType		  Inport
+		  Name			  "NIFO_SWARollingAvg_deg"
+		  SID			  "53"
+		  Position		  [20, 258, 50, 272]
+		  ZOrder		  -1
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "NIFO_SWARollingAvg_deg"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VPER_TargYPosVect30_m"
+		  SID			  "54"
+		  Position		  [20, 543, 50, 557]
+		  ZOrder		  7
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VPER_TargYPosVect30_m"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VPER_TargXPosVect30_m"
+		  SID			  "55"
+		  Position		  [20, 638, 50, 652]
+		  ZOrder		  11
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VPER_TargXPosVect30_m"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "56"
+		  Position		  [700, 15, 759, 43]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Abs
+		  Name			  "Abs1"
+		  SID			  "57"
+		  Position		  [2725, 285, 2755, 315]
+		  ZOrder		  16
+		  ShowName		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_PosToPathCurveVect30_m"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Abs
+		  Name			  "Abs2"
+		  SID			  "58"
+		  Position		  [2200, 255, 2230, 285]
+		  ZOrder		  17
+		  ShowName		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_HostDistToTurnPointAbs_m"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Add"
+		  SID			  "59"
+		  Ports			  [2, 1]
+		  Position		  [1770, 302, 1800, 333]
+		  ZOrder		  9
+		  ShowName		  off
+		  Inputs		  "+-"
+		  InputSameDT		  off
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Add1"
+		  SID			  "60"
+		  Ports			  [2, 1]
+		  Position		  [2110, 312, 2140, 343]
+		  ZOrder		  13
+		  ShowName		  off
+		  InputSameDT		  off
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Sum
+		  Name			  "Add2"
+		  SID			  "61"
+		  Ports			  [2, 1]
+		  Position		  [2600, 239, 2625, 361]
+		  ZOrder		  15
+		  ShowName		  off
+		  Inputs		  "+-"
+		  InputSameDT		  off
+		  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+		  SaturateOnIntegerOverflow off
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "94"
+		  Position		  [540, 340, 625, 370]
+		  ZOrder		  22
+		  ShowName		  off
+		  Value			  "ZERO_FLOAT"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KAPP_SteeringRatio_rat"
+		  SID			  "63"
+		  Position		  [405, 292, 625, 328]
+		  ZOrder		  4
+		  ShowName		  off
+		  Value			  "KAPP_SteeringRatio_rat"
+		  Port {
+		    PortNumber		    1
+		    Name		    "KAPP_SteeringRatio_rat"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KAPP_WheelBase_m"
+		  SID			  "62"
+		  Position		  [965, 192, 1185, 228]
+		  ZOrder		  1
+		  ShowName		  off
+		  Value			  "KAPP_WheelBase_m"
+		  Port {
+		    PortNumber		    1
+		    Name		    "KAPP_WheelBase_m"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "KIFO_DefaultTurnRad_m"
+		  SID			  "64"
+		  Position		  [965, 382, 1185, 418]
+		  ZOrder		  6
+		  ShowName		  off
+		  Value			  "KIFO_DefaultTurnRad_m"
+		  Port {
+		    PortNumber		    1
+		    Name		    "KIFO_DefaultTurnRad_m"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Math
+		  Name			  "Math\nFunction"
+		  SID			  "65"
+		  Ports			  [1, 1]
+		  Position		  [1890, 305, 1920, 335]
+		  ZOrder		  10
+		  ShowName		  off
+		  Operator		  "square"
+		}
+		Block {
+		  BlockType		  Math
+		  Name			  "Math\nFunction1"
+		  SID			  "66"
+		  Ports			  [1, 1]
+		  Position		  [1890, 630, 1920, 660]
+		  ZOrder		  12
+		  ShowName		  off
+		  Operator		  "square"
+		}
+		Block {
+		  BlockType		  Sqrt
+		  Name			  "Sqrt"
+		  SID			  "68"
+		  Position		  [2255, 315, 2285, 345]
+		  ZOrder		  14
+		  ShowName		  off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_TargDistToTurnPoint_m"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "TAN"
+		  SID			  "148"
+		  Ports			  [1, 1]
+		  Position		  [1155, 297, 1240, 323]
+		  ZOrder		  125
+		  BackgroundColor	  "yellow"
+		  LibraryVersion	  "1.475"
+		  SourceBlock		  "hcu_lib/TAN"
+		  SourceType		  "Trigonometric Function (Tangent)"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "divide"
+		  SID			  "70"
+		  Ports			  [3, 1]
+		  Position		  [1390, 268, 1525, 352]
+		  ZOrder		  2
+		  LibraryVersion	  "1.475"
+		  SourceBlock		  "hcu_lib/divide"
+		  SourceType		  "divide"
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_HostDistToTurnPoint_m"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "divide1"
+		  SID			  "92"
+		  Ports			  [3, 1]
+		  Position		  [770, 242, 905, 378]
+		  ZOrder		  20
+		  ShowName		  off
+		  LibraryVersion	  "1.475"
+		  SourceBlock		  "hcu_lib/divide"
+		  SourceType		  "divide"
+		}
+		Block {
+		  BlockType		  Reference
+		  Name			  "miles2km1"
+		  SID			  "89"
+		  Ports			  [1, 1]
+		  Position		  [980, 299, 1075, 321]
+		  ZOrder		  18
+		  ShowName		  off
+		  LibraryVersion	  "1.475"
+		  SourceBlock		  "hcu_lib/miles2km1"
+		  SourceType		  "Conversion"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_PosToPathCurveVect30_m"
+		  SID			  "71"
+		  Position		  [3015, 293, 3045, 307]
+		  ZOrder		  -3
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  Name			  "NIFO_HostDistToTurnPointAbs_m"
+		  Labels		  [-1, 0]
+		  SrcBlock		  "Abs2"
+		  SrcPort		  1
+		  DstBlock		  "Add2"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "KAPP_WheelBase_m"
+		  Labels		  [0, 0]
+		  SrcBlock		  "KAPP_WheelBase_m"
+		  SrcPort		  1
+		  Points		  [175, 0; 0, 70]
+		  DstBlock		  "divide"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "KAPP_SteeringRatio_rat"
+		  Labels		  [-1, 0]
+		  SrcBlock		  "KAPP_SteeringRatio_rat"
+		  SrcPort		  1
+		  DstBlock		  "divide1"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "KIFO_DefaultTurnRad_m"
+		  Labels		  [0, 0]
+		  SrcBlock		  "KIFO_DefaultTurnRad_m"
+		  SrcPort		  1
+		  Points		  [174, 0; 0, -60]
+		  DstBlock		  "divide"
+		  DstPort		  3
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VPER_TargYPosVect30_m"
+		  SrcPort		  1
+		  Points		  [1642, 0; 0, -225]
+		  DstBlock		  "Add"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "NIFO_HostDistToTurnPoint_m"
+		  Labels		  [0, 0]
+		  SrcBlock		  "divide"
+		  SrcPort		  1
+		  Points		  [172, 0]
+		  Branch {
+		    DstBlock		    "Add"
+		    DstPort		    1
+		  }
+		  Branch {
+		    Labels		    [2, 1]
+		    Points		    [0, -40]
+		    DstBlock		    "Abs2"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  SrcBlock		  "Add"
+		  SrcPort		  1
+		  DstBlock		  "Math\nFunction"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [0, 0]
+		  SrcBlock		  "VPER_TargXPosVect30_m"
+		  SrcPort		  1
+		  DstBlock		  "Math\nFunction1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Math\nFunction"
+		  SrcPort		  1
+		  DstBlock		  "Add1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Math\nFunction1"
+		  SrcPort		  1
+		  Points		  [92, 0; 0, -310]
+		  DstBlock		  "Add1"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Add1"
+		  SrcPort		  1
+		  DstBlock		  "Sqrt"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NIFO_TargDistToTurnPoint_m"
+		  Labels		  [-1, 0]
+		  SrcBlock		  "Sqrt"
+		  SrcPort		  1
+		  DstBlock		  "Add2"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "Add2"
+		  SrcPort		  1
+		  DstBlock		  "Abs1"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "NIFO_PosToPathCurveVect30_m"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Abs1"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_PosToPathCurveVect30_m"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "TAN"
+		  SrcPort		  1
+		  DstBlock		  "divide"
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "miles2km1"
+		  SrcPort		  1
+		  DstBlock		  "TAN"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "divide1"
+		  SrcPort		  1
+		  DstBlock		  "miles2km1"
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "divide1"
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "NIFO_SWARollingAvg_deg"
+		  SrcPort		  1
+		  DstBlock		  "divide1"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Delay
+	      Name		      "Delay"
+	      SID		      "140"
+	      Ports		      [1, 1]
+	      Position		      [600, 458, 635, 492]
+	      ZOrder		      234
+	      BlockMirror	      on
+	      ShowName		      off
+	      InputPortMap	      "u0"
+	      DelayLength	      "1"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From_VPER_TargYPosVect30_m"
+	      SID		      "72"
+	      Position		      [2050, 343, 2270, 377]
+	      ZOrder		      34
+	      ShowName		      off
+	      GotoTag		      "VPER_TargYPosVect30_m"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto_VPER_TargYPosVect30_m"
+	      SID		      "74"
+	      Position		      [150, 500, 390, 530]
+	      ZOrder		      33
+	      ShowName		      off
+	      GotoTag		      "VPER_TargYPosVect30_m"
+	    }
+	    Block {
+	      BlockType		      If
+	      Name		      "If"
+	      SID		      "75"
+	      Ports		      [1, 2]
+	      Position		      [1560, 204, 1635, 251]
+	      ZOrder		      28
+	      IfExpression	      "u1"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "KIFO_StraightSWARollAvg_deg"
+	      SID		      "143"
+	      Position		      [925, 57, 1080, 83]
+	      ZOrder		      237
+	      ShowName		      off
+	      Commented		      on
+	      Value		      "KIFO_StraightSWARollAvg_deg"
+	      Port {
+		PortNumber		1
+		Name			"KIFO_StraightSWARollAvg_deg"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "KIFO_StraightYawRate_degps"
+	      SID		      "76"
+	      Position		      [170, 187, 325, 213]
+	      ZOrder		      30
+	      ShowName		      off
+	      Value		      "KIFO_StraightYawRate_degps"
+	      Port {
+		PortNumber		1
+		Name			"KIFO_StraightYawRate_degps"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Logic
+	      Name		      "Logical\nOperator"
+	      SID		      "144"
+	      Ports		      [2, 1]
+	      Position		      [1340, 140, 1375, 315]
+	      ZOrder		      238
+	      ShowName		      off
+	      AllPortsSameDT	      off
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      Merge
+	      Name		      "Merge"
+	      SID		      "77"
+	      Ports		      [2, 1]
+	      Position		      [3005, 490, 3080, 565]
+	      ZOrder		      37
+	      Port {
+		PortNumber		1
+		Name			"VIFO_PositionToPathVect30_m"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      RelationalOperator
+	      Name		      "Relational\nOperator"
+	      SID		      "141"
+	      Ports		      [2, 1]
+	      Position		      [475, 149, 500, 216]
+	      ZOrder		      235
+	      ShowName		      off
+	      Operator		      "<="
+	      InputSameDT	      off
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      RelationalOperator
+	      Name		      "Relational\nOperator1"
+	      SID		      "142"
+	      Ports		      [2, 1]
+	      Position		      [1245, 19, 1270, 86]
+	      ZOrder		      236
+	      ShowName		      off
+	      Commented		      on
+	      Operator		      "<"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "boolean"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Straight_Case"
+	      SID		      "78"
+	      Ports		      [1, 1, 0, 0, 0, 0, 0, 1]
+	      Position		      [2330, 309, 2760, 411]
+	      ZOrder		      31
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"NIFO_PosToPathStraightVect30_m"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"Straight_Case"
+		Location		[-8, 0, 1928, 1056]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"125"
+		Block {
+		  BlockType		  Inport
+		  Name			  "VPER_TargYPosVect30_m"
+		  SID			  "79"
+		  Position		  [80, 143, 110, 157]
+		  ZOrder		  36
+		  IconDisplay		  "Port number"
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VPER_TargYPosVect30_m"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  ActionPort
+		  Name			  "Action Port"
+		  SID			  "80"
+		  Position		  [170, 15, 229, 43]
+		  ZOrder		  -2
+		}
+		Block {
+		  BlockType		  Abs
+		  Name			  "Abs"
+		  SID			  "81"
+		  Position		  [365, 135, 395, 165]
+		  ZOrder		  33
+		  ShowName		  off
+		  SaturateOnIntegerOverflow off
+		  Port {
+		    PortNumber		    1
+		    Name		    "NIFO_PosToPathStraightVect30_m"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "NIFO_PosToPathStraightVect30_m"
+		  SID			  "82"
+		  Position		  [795, 143, 825, 157]
+		  ZOrder		  37
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  Name			  "NIFO_PosToPathStraightVect30_m"
+		  Labels		  [0, 0]
+		  SrcBlock		  "Abs"
+		  SrcPort		  1
+		  DstBlock		  "NIFO_PosToPathStraightVect30_m"
+		  DstPort		  1
+		}
+		Line {
+		  Labels		  [-1, 0]
+		  SrcBlock		  "VPER_TargYPosVect30_m"
+		  SrcPort		  1
+		  DstBlock		  "Abs"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "rolling average"
+	      SID		      "135"
+	      Ports		      [4, 1]
+	      Position		      [500, 281, 705, 424]
+	      ZOrder		      230
+	      LibraryVersion	      "1.475"
+	      SourceBlock	      "hcu_lib/rolling average"
+	      SourceType	      "Rolling Average"
+	      Port {
+		PortNumber		1
+		Name			"NIFO_SWARollingAvg_deg"
+		PropagatedSignals	"new_ave"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VIFO_PositionToPathVect30_m"
+	      SID		      "83"
+	      Position		      [3285, 523, 3315, 537]
+	      ZOrder		      42
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Curve_Case"
+	      SrcPort		      1
+	      DstBlock		      "Merge"
+	      DstPort		      2
+	    }
+	    Line {
+	      Name		      "VIFO_PositionToPathVect30_m"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Merge"
+	      SrcPort		      1
+	      DstBlock		      "VIFO_PositionToPathVect30_m"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "VPER_TargYPosVect30_m"
+	      SrcPort		      1
+	      Points		      [67, 0]
+	      Branch {
+		Points			[0, -30]
+		DstBlock		"Goto_VPER_TargYPosVect30_m"
+		DstPort			1
+	      }
+	      Branch {
+		Labels			[-1, 0]
+		Points			[0, 0]
+		DstBlock		"Curve_Case"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "Straight_Case"
+	      SrcPort		      1
+	      Points		      [176, 0; 0, 150]
+	      DstBlock		      "Merge"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VPER_TargXPosVect30_m"
+	      SrcPort		      1
+	      DstBlock		      "Curve_Case"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "If"
+	      SrcPort		      1
+	      Points		      [905, 0]
+	      DstBlock		      "Straight_Case"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      SrcBlock		      "From_VPER_TargYPosVect30_m"
+	      SrcPort		      1
+	      DstBlock		      "Straight_Case"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "If"
+	      SrcPort		      2
+	      Points		      [220, 0]
+	      DstBlock		      "Curve_Case"
+	      DstPort		      ifaction
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VDINR_YawRate_degps"
+	      SrcPort		      1
+	      DstBlock		      "Abs1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Abs1"
+	      SrcPort		      1
+	      DstBlock		      "Relational\nOperator"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "KIFO_StraightYawRate_degps"
+	      Labels		      [0, 0]
+	      SrcBlock		      "KIFO_StraightYawRate_degps"
+	      SrcPort		      1
+	      DstBlock		      "Relational\nOperator"
+	      DstPort		      2
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "VDINR_SteerAngle_deg"
+	      SrcPort		      1
+	      DstBlock		      "rolling average"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "C_TICK_TIME_S"
+	      SrcPort		      1
+	      DstBlock		      "rolling average"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "C_TASK_100MS_S"
+	      SrcPort		      1
+	      DstBlock		      "rolling average"
+	      DstPort		      4
+	    }
+	    Line {
+	      Name		      "NIFO_SWARollingAvg_deg"
+	      Labels		      [0, 0]
+	      SrcBlock		      "rolling average"
+	      SrcPort		      1
+	      Points		      [129, 0; 0, 120]
+	      Branch {
+		DstBlock		"Curve_Case"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Delay"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      Name		      "KIFO_StraightSWARollAvg_deg"
+	      Labels		      [0, 0]
+	      SrcBlock		      "KIFO_StraightSWARollAvg_deg"
+	      SrcPort		      1
+	      DstBlock		      "Relational\nOperator1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Relational\nOperator"
+	      SrcPort		      1
+	      DstBlock		      "Logical\nOperator"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Logical\nOperator"
+	      SrcPort		      1
+	      DstBlock		      "If"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Abs2"
+	      SrcPort		      1
+	      DstBlock		      "Relational\nOperator1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Delay"
+	      SrcPort		      1
+	      Points		      [-473, 0; 0, -140]
+	      DstBlock		      "rolling average"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "Logical\nOperator"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator"
+	  SID			  "84"
+	  Ports			  [2, 1]
+	  Position		  [1990, 272, 2020, 303]
+	  ZOrder		  22
+	  ShowName		  off
+	  Operator		  ">"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator1"
+	  SID			  "85"
+	  Ports			  [2, 1]
+	  Position		  [1990, 817, 2020, 848]
+	  ZOrder		  48
+	  ShowName		  off
+	  Operator		  ">"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator2"
+	  SID			  "121"
+	  Ports			  [2, 1]
+	  Position		  [1990, 1337, 2020, 1368]
+	  ZOrder		  289
+	  ShowName		  off
+	  Operator		  ">"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator3"
+	  SID			  "127"
+	  Ports			  [2, 1]
+	  Position		  [1990, 132, 2020, 163]
+	  ZOrder		  297
+	  ShowName		  off
+	  Operator		  ">"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator4"
+	  SID			  "131"
+	  Ports			  [2, 1]
+	  Position		  [1990, 1002, 2020, 1033]
+	  ZOrder		  300
+	  ShowName		  off
+	  Operator		  ">"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator5"
+	  SID			  "134"
+	  Ports			  [2, 1]
+	  Position		  [1990, 2152, 2020, 2183]
+	  ZOrder		  303
+	  ShowName		  off
+	  Operator		  ">"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Vehicle_In_Lane"
+	  SID			  "151"
+	  Ports			  [10, 1]
+	  Position		  [1455, 1522, 1800, 2038]
+	  ZOrder		  400
+	  LibraryVersion	  "1.8"
+	  SourceBlock		  "vil/Vehicle_In_Lane"
+	  SourceType		  "SubSystem"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VIFO_TargetInLane_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VIFO_FCWVehInPathVect30_flg"
+	  SID			  "86"
+	  Position		  [2510, 143, 2540, 157]
+	  ZOrder		  54
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VIFO_AEBVehInPathVect30_flg"
+	  SID			  "87"
+	  Position		  [2510, 753, 2540, 767]
+	  ZOrder		  55
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VIFO_ACCVehInPathVect30_flg"
+	  SID			  "122"
+	  Position		  [2600, 1278, 2630, 1292]
+	  ZOrder		  290
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  Name			  "KIFO_TargInPathLatOffsetACC_m"
+	  Labels		  [-1, 0]
+	  SrcBlock		  "KIFO_TargInPathLatOffsetAEB_m1"
+	  SrcPort		  1
+	  DstBlock		  "ACCBoundary"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "From5"
+	  SrcPort		  1
+	  Points		  [397, 0; 0, -95]
+	  DstBlock		  "Relational\nOperator2"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "ACCBoundary"
+	  SrcPort		  1
+	  DstBlock		  "Relational\nOperator2"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From4"
+	  SrcPort		  1
+	  DstBlock		  "ACCBoundary"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From6"
+	  SrcPort		  1
+	  DstBlock		  "Compare\nTo Zero2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Compare\nTo Zero2"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator2"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "VPER_TargVehWidthVect30_m"
+	  SrcPort		  1
+	  Points		  [474, 0]
+	  Branch {
+	    Points		    [0, -50]
+	    DstBlock		    "Goto"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "FCWBoundary"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Name			  "KIFO_TargInPathLatOffsetAEB_m"
+	  Labels		  [-1, 0]
+	  SrcBlock		  "KIFO_TargInPathLatOffsetAEB_m"
+	  SrcPort		  1
+	  DstBlock		  "AEBBoundary"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VDINR_YawRate_degps"
+	  SrcPort		  1
+	  DstBlock		  "Position_To_Path"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "From2"
+	  SrcPort		  1
+	  Points		  [397, 0; 0, -115]
+	  DstBlock		  "Relational\nOperator1"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "AEBBoundary"
+	  SrcPort		  1
+	  DstBlock		  "Relational\nOperator1"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "FCWBoundary"
+	  SrcPort		  1
+	  DstBlock		  "Relational\nOperator"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From1"
+	  SrcPort		  1
+	  DstBlock		  "AEBBoundary"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Position_To_Path"
+	  SrcPort		  1
+	  Points		  [143, 0]
+	  Branch {
+	    Points		    [784, 0; 0, -225]
+	    DstBlock		    "Relational\nOperator"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -35]
+	    DstBlock		    "Goto1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Name			  "KIFO_TargInPathLatOffsetFCW_m"
+	  Labels		  [-1, 0]
+	  SrcBlock		  "KIFO_TargInPathLatOffsetFCW_m"
+	  SrcPort		  1
+	  DstBlock		  "FCWBoundary"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "VPER_TargYPosVect30_m"
+	  SrcPort		  1
+	  Points		  [75, 0]
+	  Branch {
+	    Labels		    [-1, 0]
+	    DstBlock		    "Position_To_Path"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -20]
+	    DstBlock		    "Goto_VPER_TargYPosVect30_m"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VDINR_SteerAngle_deg"
+	  SrcPort		  1
+	  DstBlock		  "Position_To_Path"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "VPER_TargXPosVect30_m"
+	  SrcPort		  1
+	  Points		  [75, 0]
+	  Branch {
+	    Labels		    [-1, 0]
+	    DstBlock		    "Position_To_Path"
+	    DstPort		    4
+	  }
+	  Branch {
+	    Points		    [0, -20]
+	    DstBlock		    "Goto_VPER_TargXPosVect30_m"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "VPER_TargIdVect30_num"
+	  SrcPort		  1
+	  Points		  [477, 0]
+	  Branch {
+	    Points		    [0, -50]
+	    DstBlock		    "Goto2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Compare\nTo Zero"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Compare\nTo Zero"
+	  SrcPort		  1
+	  Points		  [52, 0; 0, 55]
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "VIFO_FCWVehInPathVect30_flg"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Logical\nOperator"
+	  SrcPort		  1
+	  DstBlock		  "VIFO_FCWVehInPathVect30_flg"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator"
+	  SrcPort		  1
+	  Points		  [52, 0; 0, -125]
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From3"
+	  SrcPort		  1
+	  DstBlock		  "Compare\nTo Zero1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "VIFO_AEBVehInPathVect30_flg"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Logical\nOperator1"
+	  SrcPort		  1
+	  DstBlock		  "VIFO_AEBVehInPathVect30_flg"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Compare\nTo Zero1"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator1"
+	  SrcPort		  1
+	  Points		  [52, 0; 0, -75]
+	  DstBlock		  "Logical\nOperator1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_TargXPosVect30_m"
+	  SrcPort		  1
+	  DstBlock		  "Relational\nOperator3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant"
+	  SrcPort		  1
+	  Points		  [22, 0; 0, -45]
+	  DstBlock		  "Relational\nOperator3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator3"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VPER_TargXPosVect30_m2"
+	  SrcPort		  1
+	  DstBlock		  "Relational\nOperator4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant1"
+	  SrcPort		  1
+	  Points		  [9, 0; 0, -45]
+	  DstBlock		  "Relational\nOperator4"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VPER_TargXPosVect30_m1"
+	  SrcPort		  1
+	  DstBlock		  "Relational\nOperator5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  Points		  [2, 0; 0, -45]
+	  DstBlock		  "Relational\nOperator5"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator4"
+	  SrcPort		  1
+	  Points		  [116, 0; 0, -245]
+	  DstBlock		  "Logical\nOperator1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator5"
+	  SrcPort		  1
+	  Points		  [215, 0]
+	  DstBlock		  "Logical\nOperator2"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Vehicle_In_Lane"
+	  SrcPort		  1
+	  Points		  [301, 0; 0, -490]
+	  DstBlock		  "Logical\nOperator3"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VPER_TargXPosVect30_m3"
+	  SrcPort		  1
+	  DstBlock		  "Vehicle_In_Lane"
+	  DstPort		  9
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VPER_TargYPosVect30_m"
+	  SrcPort		  1
+	  DstBlock		  "Vehicle_In_Lane"
+	  DstPort		  10
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VPER_LaneC0L_m"
+	  SrcPort		  1
+	  DstBlock		  "Vehicle_In_Lane"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VPER_LaneC1R_rad"
+	  SrcPort		  1
+	  DstBlock		  "Vehicle_In_Lane"
+	  DstPort		  6
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VPER_LaneC3L_rat"
+	  SrcPort		  1
+	  DstBlock		  "Vehicle_In_Lane"
+	  DstPort		  4
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VPER_LaneC2L_rat"
+	  SrcPort		  1
+	  DstBlock		  "Vehicle_In_Lane"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VPER_LaneC1L_rad"
+	  SrcPort		  1
+	  DstBlock		  "Vehicle_In_Lane"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VPER_LaneC0R_m"
+	  SrcPort		  1
+	  DstBlock		  "Vehicle_In_Lane"
+	  DstPort		  5
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VPER_LaneC3R_rat"
+	  SrcPort		  1
+	  DstBlock		  "Vehicle_In_Lane"
+	  DstPort		  8
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VPER_LaneC2R_rat"
+	  SrcPort		  1
+	  DstBlock		  "Vehicle_In_Lane"
+	  DstPort		  7
+	}
+	Line {
+	  Name			  "VIFO_ACCVehInPathVect30_flg"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Logical\nOperator2"
+	  SrcPort		  1
+	  DstBlock		  "VIFO_ACCVehInPathVect30_flg"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator2"
+	  SrcPort		  1
+	  Points		  [55, 0; 0, -80]
+	  DstBlock		  "Logical\nOperator3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator3"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator2"
+	  DstPort		  2
+	}
+      }
+    }
+  }
+}

@@ -1,0 +1,285 @@
+%============ $Id: hal_def.m 1597 2017-07-17 06:39:01Z bcluan $ ==
+disp('Loading $Id: hal_def.m 1597 2017-07-17 06:39:01Z bcluan $');
+
+ENUM_HWDI_IN_01 = uint8(1);         % E02
+ENUM_HWDI_IN_02 = uint8(2);         % E42
+ENUM_HWDI_IN_03 = uint8(3);         % E39
+ENUM_HWDI_IN_04 = uint8(4);         % C22
+ENUM_HWDI_IN_05 = uint8(5);         % E21
+ENUM_HWDI_IN_06 = uint8(6);         % C60
+ENUM_HWDI_IN_07 = uint8(7);         % E41
+ENUM_HWDI_IN_08 = uint8(8);         % C19
+ENUM_HWDI_IN_09 = uint8(9);         % C20
+ENUM_HWDI_IN_10 = uint8(10);       % C21
+ENUM_HWDI_IN_11 = uint8(11);       % E46
+ENUM_HWDI_IN_12 = uint8(12);       % E22
+
+ENUM_HWAD_IN_01 = uint8(1);         % E38
+ENUM_HWAD_IN_02 = uint8(2);         % C11
+ENUM_HWAD_IN_03 = uint8(3);         % C54
+ENUM_HWAD_IN_04 = uint8(4);         % C27
+ENUM_HWAD_IN_05 = uint8(5);         % C28
+ENUM_HWAD_IN_06 = uint8(6);         % C56
+ENUM_HWAD_IN_07 = uint8(7);         % E44
+ENUM_HWAD_IN_08 = uint8(8);         % E45
+ENUM_HWAD_IN_09 = uint8(9);         % E34
+ENUM_HWAD_IN_10 = uint8(10);       % E26
+ENUM_HWAD_IN_11 = uint8(11);       % E29
+ENUM_HWAD_IN_12 = uint8(12);       % E27
+ENUM_HWAD_IN_13 = uint8(13);       % E40
+ENUM_HWAD_IN_14 = uint8(14);       % C55
+ENUM_HWAD_IN_15 = uint8(15);       % C40
+ENUM_HWAD_IN_16 = uint8(16);       % C26
+ENUM_HWAD_IN_17 = uint8(17);       % C09
+ENUM_HWAD_IN_18 = uint8(18);       % C38
+ENUM_HWAD_IN_19 = uint8(19);       % C39
+ENUM_HWAD_IN_20 = uint8(20);       % C25
+ENUM_HWAD_IN_21 = uint8(21);       % C24
+ENUM_HWAD_IN_22 = uint8(22);       % C23
+ENUM_HWAD_IN_ACC = uint8(23);                              % E10
+ENUM_HWAD_IN_IGN  = uint8(24);                              % E09
+ENUM_HWAD_IN_VBATPROT = uint8(25);                 % E48  
+ENUM_HWAD_IN_PROXIMITY_UP = uint8(26);         % AN37
+ENUM_HWAD_IN_PILOT_DC_UP   = uint8(27);          % AN38
+ENUM_HWAD_IN_5VREF1  = uint8(28);                       % C62,C63,C47 
+ENUM_HWAD_IN_5VREF2  = uint8(29);                       % C37,C53,E30
+
+ENUM_HWDO_OUT_01 = uint8(1);         % E15
+ENUM_HWDO_OUT_02 = uint8(2);         % E03
+ENUM_HWDO_OUT_03 = uint8(3);         % E37
+ENUM_HWDO_OUT_04 = uint8(4);         % E17
+ENUM_HWDO_OUT_05 = uint8(5);         % E16
+ENUM_HWDO_OUT_06 = uint8(6);         % E08
+ENUM_HWDO_OUT_07 = uint8(7);         % PILOT SWITCH
+ENUM_HWDO_OUT_08 = uint8(8);         % CAN2 EN
+ENUM_HWDO_OUT_09 = uint8(9);         % CAN2 WAKE
+ENUM_HWDO_OUT_10 = uint8(10);       % CAN2 STB
+ENUM_HWDO_OUT_11 = uint8(11);       % CAN3 EN
+ENUM_HWDO_OUT_12 = uint8(12);       % CAN3 WAKE
+ENUM_HWDO_OUT_13 = uint8(13);       % CAN3 STB
+ENUM_HWDO_OUT_14 = uint8(14);       % RESERVED1
+ENUM_HWDO_OUT_15 = uint8(15);       % RESERVED2
+ENUM_HWDO_OUT_16 = uint8(16);       % RESERVED3
+
+ENUM_HWPWMO_OUT_01 = uint8(1);       % E18
+ENUM_HWPWMO_OUT_02 = uint8(2);       % E07
+ENUM_HWPWMO_OUT_03 = uint8(3);       % E06
+ENUM_HWPWMO_OUT_04 = uint8(4);       % E19
+ENUM_HWPWMO_OUT_05 = uint8(5);       % C08
+ENUM_HWPWMO_OUT_06 = uint8(6);       % C07
+ENUM_HWPWMO_OUT_07 = uint8(7);       % C06
+ENUM_HWPWMO_OUT_08 = uint8(8);       % C05
+ENUM_HWPWMO_OUT_09 = uint8(9);       % C18
+ENUM_HWPWMO_OUT_10 = uint8(10);     % C17
+ENUM_HWPWMO_OUT_11 = uint8(11);     % C14
+ENUM_HWPWMO_OUT_12 = uint8(12);     % C13
+ENUM_HWPWMO_OUT_13 = uint8(13);     % C12
+ENUM_HWPWMO_OUT_14 = uint8(14);     % C10
+ENUM_HWPWMO_OUT_15 = uint8(15);     % C04
+ENUM_HWPWMO_OUT_16 = uint8(16);     % E25
+ENUM_HWPWMO_OUT_17 = uint8(17);     % E01
+ENUM_HWPWMO_OUT_18 = uint8(18);     % E13
+ENUM_HWPWMO_OUT_19 = uint8(19);     % E11
+ENUM_HWPWMO_OUT_20 = uint8(20);     % E23
+ENUM_HWPWMO_OUT_21 = uint8(21);     % E04
+ENUM_HWPWMO_OUT_22 = uint8(22);     % E05
+
+
+ENUM_LLU08_FAULT_ADC            = uint8(0)  ;
+ENUM_LLU08_FAULT_CPUCLK     = uint8(1)  ;
+ENUM_LLU08_FAULT_EEPROM    = uint8(2)  ;
+ENUM_LLU08_FAULT_GPR             = uint8(3)  ;
+ENUM_LLU08_FAULT_RAM            = uint8(4)  ;
+ENUM_LLU08_FAULT_ROM           = uint8(5)  ;
+ENUM_LLU08_FAULT_VREF1         = uint8(6)  ;
+ENUM_LLU08_FAULT_VREF2         = uint8(7)  ;
+
+ENUM_LLU08_FAULT_HWDO_OUT_01_OPENCIRCUIT = uint8(8);
+ENUM_LLU08_FAULT_HWDO_OUT_01_SHORTHIGH = uint8(9);
+ENUM_LLU08_FAULT_HWDO_OUT_01_SHORTLOW = uint8(10);
+
+ENUM_LLU08_FAULT_HWDO_OUT_02_OPENCIRCUIT = uint8(11);
+ENUM_LLU08_FAULT_HWDO_OUT_02_SHORTHIGH = uint8(12);
+ENUM_LLU08_FAULT_HWDO_OUT_02_SHORTLOW = uint8(13);
+
+ENUM_LLU08_FAULT_HWDO_OUT_03_OPENCIRCUIT = uint8(14);
+ENUM_LLU08_FAULT_HWDO_OUT_03_SHORTHIGH = uint8(15);
+ENUM_LLU08_FAULT_HWDO_OUT_03_SHORTLOW = uint8(16);
+
+ENUM_LLU08_FAULT_HWDO_OUT_04_OPENCIRCUIT = uint8(17);
+ENUM_LLU08_FAULT_HWDO_OUT_04_SHORTHIGH = uint8(18);
+ENUM_LLU08_FAULT_HWDO_OUT_04_SHORTLOW = uint8(19);
+
+ENUM_LLU08_FAULT_HWDO_OUT_05_OPENCIRCUIT = uint8(20);
+ENUM_LLU08_FAULT_HWDO_OUT_05_SHORTHIGH = uint8(21);
+ENUM_LLU08_FAULT_HWDO_OUT_05_SHORTLOW = uint8(22);
+
+ENUM_LLU08_FAULT_HWDO_OUT_06_OPENCIRCUIT = uint8(23);
+ENUM_LLU08_FAULT_HWDO_OUT_06_SHORTHIGH = uint8(24);
+ENUM_LLU08_FAULT_HWDO_OUT_06_SHORTLOW = uint8(25);
+
+ENUM_LLU08_FAULT_PWMO_OUT_01_OPENCIRCUIT = uint8(26);
+ENUM_LLU08_FAULT_PWMO_OUT_01_SHORTHIGH = uint8(27);
+ENUM_LLU08_FAULT_PWMO_OUT_01_SHORTLOW = uint8(28);
+
+ENUM_LLU08_FAULT_PWMO_OUT_02_OPENCIRCUIT = uint8(29);
+ENUM_LLU08_FAULT_PWMO_OUT_02_SHORTHIGH = uint8(30);
+ENUM_LLU08_FAULT_PWMO_OUT_02_SHORTLOW = uint8(31);
+
+ENUM_LLU08_FAULT_PWMO_OUT_03_OPENCIRCUIT = uint8(32);
+ENUM_LLU08_FAULT_PWMO_OUT_03_SHORTHIGH = uint8(33);
+ENUM_LLU08_FAULT_PWMO_OUT_03_SHORTLOW = uint8(34);
+
+ENUM_LLU08_FAULT_PWMO_OUT_04_OPENCIRCUIT = uint8(35);
+ENUM_LLU08_FAULT_PWMO_OUT_04_SHORTHIGH = uint8(36);
+ENUM_LLU08_FAULT_PWMO_OUT_04_SHORTLOW = uint8(37);
+
+ENUM_LLU08_FAULT_PWMO_OUT_05_OPENCIRCUIT = uint8(38);
+ENUM_LLU08_FAULT_PWMO_OUT_05_SHORTHIGH = uint8(39);
+ENUM_LLU08_FAULT_PWMO_OUT_05_SHORTLOW = uint8(40);
+
+ENUM_LLU08_FAULT_PWMO_OUT_06_OPENCIRCUIT = uint8(41);
+ENUM_LLU08_FAULT_PWMO_OUT_06_SHORTHIGH = uint8(42);
+ENUM_LLU08_FAULT_PWMO_OUT_06_SHORTLOW = uint8(43);
+
+ENUM_LLU08_FAULT_PWMO_OUT_07_OPENCIRCUIT = uint8(44);
+ENUM_LLU08_FAULT_PWMO_OUT_07_SHORTHIGH = uint8(45);
+ENUM_LLU08_FAULT_PWMO_OUT_07_SHORTLOW = uint8(46);
+
+ENUM_LLU08_FAULT_PWMO_OUT_08_OPENCIRCUIT = uint8(47);
+ENUM_LLU08_FAULT_PWMO_OUT_08_SHORTHIGH = uint8(48);
+ENUM_LLU08_FAULT_PWMO_OUT_08_SHORTLOW = uint8(49);
+
+ENUM_LLU08_FAULT_PWMO_OUT_09_OPENCIRCUIT = uint8(50);
+ENUM_LLU08_FAULT_PWMO_OUT_09_SHORTHIGH = uint8(51);
+ENUM_LLU08_FAULT_PWMO_OUT_09_SHORTLOW = uint8(52);
+
+ENUM_LLU08_FAULT_PWMO_OUT_10_OPENCIRCUIT = uint8(53);
+ENUM_LLU08_FAULT_PWMO_OUT_10_SHORTHIGH = uint8(54);
+ENUM_LLU08_FAULT_PWMO_OUT_10_SHORTLOW = uint8(55);
+
+ENUM_LLU08_FAULT_PWMO_OUT_11_OPENCIRCUIT = uint8(56);
+ENUM_LLU08_FAULT_PWMO_OUT_11_SHORTHIGH = uint8(57);
+ENUM_LLU08_FAULT_PWMO_OUT_11_SHORTLOW = uint8(58);
+
+ENUM_LLU08_FAULT_PWMO_OUT_12_OPENCIRCUIT = uint8(59);
+ENUM_LLU08_FAULT_PWMO_OUT_12_SHORTHIGH = uint8(60);
+ENUM_LLU08_FAULT_PWMO_OUT_12_SHORTLOW = uint8(61);
+
+ENUM_LLU08_FAULT_PWMO_OUT_13_OPENCIRCUIT = uint8(62);
+ENUM_LLU08_FAULT_PWMO_OUT_13_SHORTHIGH = uint8(63);
+ENUM_LLU08_FAULT_PWMO_OUT_13_SHORTLOW = uint8(64);
+
+ENUM_LLU08_FAULT_PWMO_OUT_14_OPENCIRCUIT = uint8(65);
+ENUM_LLU08_FAULT_PWMO_OUT_14_SHORTHIGH = uint8(66);
+ENUM_LLU08_FAULT_PWMO_OUT_14_SHORTLOW = uint8(67);
+
+ENUM_LLU08_FAULT_PWMO_OUT_15_OPENCIRCUIT = uint8(68);
+ENUM_LLU08_FAULT_PWMO_OUT_15_SHORTHIGH = uint8(69);
+ENUM_LLU08_FAULT_PWMO_OUT_15_SHORTLOW = uint8(70);
+
+ENUM_LLU08_FAULT_PWMO_OUT_16_OPENCIRCUIT = uint8(71);
+ENUM_LLU08_FAULT_PWMO_OUT_16_SHORTHIGH = uint8(72);
+ENUM_LLU08_FAULT_PWMO_OUT_16_SHORTLOW = uint8(73);
+
+ENUM_LLU08_FAULT_PWMO_OUT_17_OPENCIRCUIT = uint8(74);
+ENUM_LLU08_FAULT_PWMO_OUT_17_SHORTHIGH = uint8(75);
+ENUM_LLU08_FAULT_PWMO_OUT_17_SHORTLOW = uint8(76);
+
+ENUM_LLU08_FAULT_PWMO_OUT_18_OPENCIRCUIT = uint8(77);
+ENUM_LLU08_FAULT_PWMO_OUT_18_SHORTHIGH = uint8(78);
+ENUM_LLU08_FAULT_PWMO_OUT_18_SHORTLOW = uint8(79);
+
+ENUM_LLU08_FAULT_PWMO_OUT_19_OPENCIRCUIT = uint8(80);
+ENUM_LLU08_FAULT_PWMO_OUT_19_SHORTHIGH = uint8(81);
+ENUM_LLU08_FAULT_PWMO_OUT_19_SHORTLOW = uint8(82);
+
+ENUM_LLU08_FAULT_PWMO_OUT_20_OPENCIRCUIT = uint8(83);
+ENUM_LLU08_FAULT_PWMO_OUT_20_SHORTHIGH = uint8(84);
+ENUM_LLU08_FAULT_PWMO_OUT_20_SHORTLOW = uint8(85);
+
+ENUM_LLU08_FAULT_PWMO_OUT_21_OPENCIRCUIT = uint8(86);
+ENUM_LLU08_FAULT_PWMO_OUT_21_SHORTHIGH = uint8(87);
+ENUM_LLU08_FAULT_PWMO_OUT_21_SHORTLOW = uint8(88);
+
+ENUM_LLU08_FAULT_PWMO_OUT_22_OPENCIRCUIT = uint8(89);
+ENUM_LLU08_FAULT_PWMO_OUT_22_SHORTHIGH = uint8(90);
+ENUM_LLU08_FAULT_PWMO_OUT_22_SHORTLOW = uint8(91);
+
+
+ENUM_LLF32_APP_TIME							= uint8(0)	;
+
+ENUM_LLBOOL_RESERVED            			= uint8(0)	;
+
+INVALID_VEH_SPD                     		= uint32(2048);
+INVALID_ENG_TORQUE_FRICTIONAL               = uint32(255); 
+INVALID_ENG_TORQUE_INDICATED                = uint32(255); 
+INVALID_ENG_TORQUE_INDICATEDCOR             = uint32(255); 
+INVALID_ENG_TQ_MAX                          = uint32(65535);
+INVALID_ENG_TQ_MIN                          = uint32(65535);
+INVALID_LAT_ACC                             = uint32(255); 
+INVALID_LONG_ACC                            = uint32(255);
+INVALID_MC_PRESSURE                         = uint32(2047);
+INVALID_YAW_RATE                            = uint32(2001);
+INVALID_GRADE                               = uint32(255); 
+INVALID_BOOSTER_VAC                         = uint32(255);
+INVALID_WHEEL_SPD                           = uint32(16377);
+INVALID_VEH_CRASH                           = uint32(15);
+INVALID_SHIFTER_POSN                        = uint32(6);
+INVALID_SAS_ANGLE                           = uint32(65535);
+INVALID_CURSTEERANG_REQ                     = uint32(65535);
+INVALID_CURSTEERTQ_REQ                      = uint32(255);
+INVALID_EPS_BATTVOLT                        = uint32(251);
+INVALID_ODO_METER                           = uint32(1000000);
+INVALID_METER_VEHSPD                        = uint32(2048);
+INVALID_OUTSIDE_TEMP                        = uint32(96);
+INVALID_PARKBRAKEBIND_STAT                  = uint32(3);
+INVALID_ADAS_DECREQ                         = uint32(255);%
+INVALID_ADAS_TQREQ                          = uint32(4095);%
+INVALID_ADAS_VEHSPDLIM                      = uint32(255);%
+INVALID_CURBRAKEDECE_REQ                    = uint32(255);
+INVALID_ADASTORQ_REQ                        = uint32(4095);
+INVALID_CUR_VEHDECE                         = uint32(255);
+INVALID_ESC_BATTVOLT                        = uint32(251);
+INVALID_PEDALTQ_REQ                         = uint32(4095);
+
+INVALID_ECM1_TIMEOUT                        = single(0.03);
+INVALID_ECM2_TIMEOUT                        = single(0.03);
+INVALID_ECM3_TIMEOUT                        = single(0.03);
+INVALID_ECM9_TIMEOUT                        = single(0.03);
+
+INVALID_TCM1_TIMEOUT                        = single(0.03);
+INVALID_TCM2_TIMEOUT                        = single(0.03);
+
+INVALID_ABS1_TIMEOUT                        = single(0.03);
+INVALID_ABS2_TIMEOUT                        = single(0.03);
+INVALID_ABS3_TIMEOUT                        = single(0.03);
+INVALID_ABS4_TIMEOUT                        = single(0.03);
+
+INVALID_SAS1_TIMEOUT                       = single(0.03);
+INVALID_EPAS1_TIMEOUT                       = single(0.03);
+INVALID_EPAS2_TIMEOUT                       = single(0.03);
+INVALID_EPAS3_TIMEOUT                       = single(0.03);
+
+INVALID_BCM1_TIMEOUT                        = single(0.6);
+INVALID_BCM2_TIMEOUT                        = single(0.06);
+
+INVALID_METER1_TIMEOUT                      = single(0.3);
+INVALID_METER3_TIMEOUT                      = single(0.3);
+
+INVALID_AC1_TIMEOUT                         = single(0.3);
+
+INVALID_EPB1_TIMEOUT                        = single(0.12);
+
+INVALID_CSW1_TIMEOUT                        = single(0.6);
+
+INVALID_VCU1_TIMEOUT                        = single(0.03);
+INVALID_VCU2_TIMEOUT                        = single(0.03);
+
+INVALID_HCU3_TIMEOUT                        = single(0.03);
+INVALID_HCU4_TIMEOUT                        = single(0.03);
+
+INVALID_HMI1_TIMEOUT                        = single(0.03);
+INVALID_HMI2_TIMEOUT                        = single(0.03);
+
+run('R_Objects.m');

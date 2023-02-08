@@ -1,0 +1,2295 @@
+Library {
+  Name			  "jcw1"
+  Version		  8.1
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1252"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-8.0, -8.0, 1456.0, 876.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[1]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1213.0, 710.0]
+	ZoomFactor		[1.0]
+	Offset			[805.40820835617774, 488.44044474325904]
+      }
+    }
+  }
+  Created		  "Tue Sep 15 16:55:42 2015"
+  Creator		  "xsellart"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "AT015411"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Oct 19 16:19:21 2015"
+  RTWModifiedTimeStamp	  367172339
+  ModelVersionFormat	  "1.%<AutoIncrement:7>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "all"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  RecordCoverage	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      6
+      Version		      "1.13.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  7
+	  Version		  "1.13.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  8
+	  Version		  "1.13.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  9
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  10
+	  Version		  "1.13.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  11
+	  Version		  "1.13.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  12
+	  Version		  "1.13.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  13
+	  Version		  "1.13.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  14
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    15
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      15
+	      Version		      "1.13.0"
+	      Array {
+		Type			"Cell"
+		Dimension		22
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      16
+	      Version		      "1.13.0"
+	      Array {
+		Type			"Cell"
+		Dimension		15
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  17
+	  Version		  "1.13.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    " "
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 153, 69, 1213, 699 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusSelector
+      OutputSignals	      "signal1,signal2,signal3"
+      OutputAsBus	      off
+    }
+    Block {
+      BlockType		      From
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Goto
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+    Block {
+      BlockType		      UnitDelay
+      InitialCondition	      "0"
+      InputProcessing	      "Inherited"
+      SampleTime	      "1"
+      StateMustResolveToSignalObject off
+      CodeGenStateStorageClass "Auto"
+      HasFrameUpgradeWarning  on
+    }
+  }
+  System {
+    Name		    "jcw1"
+    Location		    [-8, -8, 1448, 868]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "267"
+    Block {
+      BlockType		      SubSystem
+      Name		      "jcw"
+      SID		      "251"
+      Ports		      [4, 6]
+      Position		      [905, 551, 1225, 764]
+      ZOrder		      178
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"jcw"
+	Location		[-8, -8, 1448, 868]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "BINP_outputs"
+	  SID			  "252"
+	  Position		  [20, 83, 50, 97]
+	  ZOrder		  178
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: BINP_outputs"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "BIFO_outputs"
+	  SID			  "253"
+	  Position		  [20, 458, 50, 472]
+	  ZOrder		  179
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: BIFO_outputs"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "BPER_outputs"
+	  SID			  "254"
+	  Position		  [20, 833, 50, 847]
+	  ZOrder		  180
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: BPER_outputs"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "BAEB_outputs"
+	  SID			  "255"
+	  Position		  [20, 933, 50, 947]
+	  ZOrder		  181
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: BAEB_outputs"
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector1"
+	  SID			  "247"
+	  Ports			  [1, 3]
+	  Position		  [150, 16, 155, 164]
+	  ZOrder		  174
+	  ShowName		  off
+	  OutputSignals		  "VINP_HostVehicleSpeedA_mps,VINP_VehiclePowerMode_enum,VINP_HMIStatusOk_flg"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<VINP_HostVehicleSpeedA_mps>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "<VINP_VehiclePowerMode_enum>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "<VINP_HMIStatusOk_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector2"
+	  SID			  "248"
+	  Ports			  [1, 12]
+	  Position		  [150, 176, 155, 754]
+	  ZOrder		  175
+	  ShowName		  off
+	  OutputSignals		  "VIFO_DriverFCWModeSel_enum,VIFO_AggressiveDriverDetec_flg,VIFO_ActiveDriverDetec_flg,VIFO_Parking"
+	  "Situation_flg,VIFO_DriverOverrideReq_flg,VIFO_FCWTargetVehAssigned_flg,VIFO_TargetVehRelSpeed_mps,VIFO_TargetVehicl"
+	  "eTTCX_ms,VIFO_FCWDisabledViaOBD_flg,VIFO_FCWDisabledViaHMI_flg,VIFO_VehicleStatusOk_flg,VIFO_DriverSafetyStatusOk_f"
+	  "lg"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<VIFO_DriverFCWModeSel_enum>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "<VIFO_AggressiveDriverDetec_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "<VIFO_ActiveDriverDetec_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    Name		    "<VIFO_ParkingSituation_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    Name		    "<VIFO_DriverOverrideReq_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    6
+	    Name		    "<VIFO_FCWTargetVehAssigned_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    7
+	    Name		    "<VIFO_TargetVehRelSpeed_mps>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    8
+	    Name		    "<VIFO_TargetVehicleTTCX_ms>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    9
+	    Name		    "<VIFO_FCWDisabledViaOBD_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    10
+	    Name		    "<VIFO_FCWDisabledViaHMI_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    11
+	    Name		    "<VIFO_VehicleStatusOk_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    12
+	    Name		    "<VIFO_DriverSafetyStatusOk_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector3"
+	  SID			  "249"
+	  Ports			  [1, 3]
+	  Position		  [150, 768, 155, 912]
+	  ZOrder		  176
+	  ShowName		  off
+	  OutputSignals		  "VIFO_FCWDisabledViaHMI_flg,VIFO_VehicleStatusOk_flg,VIFO_DriverSafetyStatusOk_flg"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<VIFO_FCWDisabledViaHMI_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "<VIFO_VehicleStatusOk_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "<VIFO_DriverSafetyStatusOk_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector4"
+	  SID			  "250"
+	  Ports			  [1, 1]
+	  Position		  [150, 915, 155, 965]
+	  ZOrder		  177
+	  ShowName		  off
+	  OutputSignals		  "VIFO_FCWDisabledViaHMI_flg"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<VIFO_FCWDisabledViaHMI_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "jcw"
+	  SID			  "77"
+	  Ports			  [19, 6]
+	  Position		  [415, 16, 755, 964]
+	  ZOrder		  169
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VJUD_FCWEnableReq_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "VJUD_FCWOperational_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    PropagatedSignals	    "VJUD_FCWSpeedInRange_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    PropagatedSignals	    "VJUD_FCWActionReq_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    PropagatedSignals	    "VJUD_FCWDeactivationReq_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    6
+	    PropagatedSignals	    "VJUD_FCWDBSAllowed_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "jcw"
+	    Location		    [-8, -8, 1448, 868]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VINP_HostVehicleSpeedA_mps"
+	      SID		      "199"
+	      Position		      [185, 1033, 215, 1047]
+	      ZOrder		      175
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VINP_VehiclePowerMode_enum"
+	      SID		      "211"
+	      Position		      [180, 208, 210, 222]
+	      ZOrder		      205
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VINP_VehiclePowerMode_enum"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VINP_HMIStatusOk_flg"
+	      SID		      "217"
+	      Position		      [180, 433, 210, 447]
+	      ZOrder		      211
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VINP_HMIStatusOk_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_DriverFCWModeSel_enum"
+	      SID		      "200"
+	      Position		      [185, 1108, 215, 1122]
+	      ZOrder		      176
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_AggressiveDriverDetec_flg"
+	      SID		      "201"
+	      Position		      [185, 1158, 215, 1172]
+	      ZOrder		      177
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_ActiveDriverDetec_flg"
+	      SID		      "202"
+	      Position		      [185, 1208, 215, 1222]
+	      ZOrder		      178
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_ParkingSituation_flg"
+	      SID		      "203"
+	      Position		      [185, 653, 215, 667]
+	      ZOrder		      179
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_ParkingSituation_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_DriverOverrideReq_flg"
+	      SID		      "204"
+	      Position		      [185, 838, 215, 852]
+	      ZOrder		      180
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_DriverOverrideReq_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_FCWTargetVehAssigned_flg"
+	      SID		      "205"
+	      Position		      [185, 1473, 215, 1487]
+	      ZOrder		      181
+	      Port		      "9"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_FCWTargetVehAssigned_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_TargetVehRelSpeed_mps"
+	      SID		      "206"
+	      Position		      [185, 1258, 215, 1272]
+	      ZOrder		      182
+	      Port		      "10"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_TargetVehRelSpeed_mps"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_TargetVehicleTTCX_ms"
+	      SID		      "207"
+	      Position		      [185, 1403, 215, 1417]
+	      ZOrder		      183
+	      Port		      "11"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_TargetVehicleTTCX_ms"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_FCWDisabledViaOBD_flg"
+	      SID		      "209"
+	      Position		      [180, 118, 210, 132]
+	      ZOrder		      203
+	      Port		      "12"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_FCWDisabledViaOBD_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_FCWDisabledViaHMI_flg"
+	      SID		      "210"
+	      Position		      [180, 163, 210, 177]
+	      ZOrder		      204
+	      Port		      "13"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_FCWDisabledViaHMI_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_VehicleStatusOk_flg"
+	      SID		      "215"
+	      Position		      [180, 388, 210, 402]
+	      ZOrder		      209
+	      Port		      "14"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_VehicleStatusOk_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_DriverSafetyStatusOk_flg"
+	      SID		      "216"
+	      Position		      [180, 478, 210, 492]
+	      ZOrder		      210
+	      Port		      "15"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_DriverSafetyStatusOk_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VPER_CameraStatus_enum"
+	      SID		      "212"
+	      Position		      [180, 253, 210, 267]
+	      ZOrder		      206
+	      Port		      "16"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_FCWDisabledViaHMI_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VPER_RadarStatus_enum"
+	      SID		      "213"
+	      Position		      [180, 298, 210, 312]
+	      ZOrder		      207
+	      Port		      "17"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_VehicleStatusOk_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VPER_FusionStatus_enum"
+	      SID		      "214"
+	      Position		      [180, 343, 210, 357]
+	      ZOrder		      208
+	      Port		      "18"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_DriverSafetyStatusOk_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VAEB_AEBActing_flg"
+	      SID		      "208"
+	      Position		      [185, 1543, 215, 1557]
+	      ZOrder		      192
+	      Port		      "19"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "Calculation_of_FCWTriggerTTC"
+	      SID		      "218"
+	      Ports		      [4, 1]
+	      Position		      [1140, 1093, 1435, 1287]
+	      ZOrder		      169
+	      LibraryVersion	      "1.14"
+	      SourceBlock	      "ftc/Calculation_of_FCWTriggerTTC"
+	      SourceType	      "SubSystem"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VJUD_FCWTriggerTTC_ms"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "FCW_Action_Conditions"
+	      SID		      "219"
+	      Ports		      [4, 1]
+	      Position		      [1680, 1308, 2005, 1582]
+	      ZOrder		      174
+	      LibraryVersion	      "1.7"
+	      SourceBlock	      "fac/FCW_Action_Conditions"
+	      SourceType	      "SubSystem"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VJUD_FCWActionReq_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "FCW_Deactivation_Conditions"
+	      SID		      "220"
+	      Ports		      [6, 1]
+	      Position		      [1680, 1688, 2005, 1982]
+	      ZOrder		      173
+	      LibraryVersion	      "1.4"
+	      SourceBlock	      "fdc/FCW_Deactivation_Conditions"
+	      SourceType	      "SubSystem"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VJUD_FCWDeactivationReq_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "FCW_Enabling_conditions"
+	      SID		      "221"
+	      Ports		      [9, 2]
+	      Position		      [1680, 101, 2005, 509]
+	      ZOrder		      172
+	      LibraryVersion	      "1.11"
+	      SourceBlock	      "fec/FCW_Enabling_conditions"
+	      SourceType	      "SubSystem"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VJUD_FCWEnableReq_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		2
+		PropagatedSignals	"VJUD_FCWDBSAllowed_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "FCW_Operational_Conditions"
+	      SID		      "222"
+	      Ports		      [3, 1]
+	      Position		      [1685, 732, 2010, 958]
+	      ZOrder		      171
+	      LibraryVersion	      "1.5"
+	      SourceBlock	      "foc/FCW_Operational_Conditions"
+	      SourceType	      "SubSystem"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VJUD_FCWOperational_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "FCW_SpeedInRange_Calculation"
+	      SID		      "223"
+	      Ports		      [1, 1]
+	      Position		      [335, 1012, 650, 1068]
+	      ZOrder		      170
+	      LibraryVersion	      "1.12"
+	      SourceBlock	      "fsr/FCW_SpeedInRange_Calculation"
+	      SourceType	      "SubSystem"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VJUD_FCWSpeedInRange_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From_VIFO_DriverOverrideReq_flg"
+	      SID		      "224"
+	      Position		      [1295, 1846, 1495, 1874]
+	      ZOrder		      187
+	      GotoTag		      "VIFO_DriverOverrideReq_flg"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_DriverOverrideReq_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From_VIFO_FCWTargetVehAssigned_flg"
+	      SID		      "225"
+	      Position		      [1295, 1896, 1495, 1924]
+	      ZOrder		      195
+	      GotoTag		      "VIFO_FCWTargetVehAssigned_flg"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_FCWTargetVehAssigned_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From_VIFO_ParkingSituation_flg"
+	      SID		      "226"
+	      Position		      [1295, 1746, 1495, 1774]
+	      ZOrder		      185
+	      GotoTag		      "VIFO_ParkingSituation_flg"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_ParkingSituation_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From_VIFO_TargetVehicleTTCX_ms"
+	      SID		      "227"
+	      Position		      [1295, 1796, 1495, 1824]
+	      ZOrder		      189
+	      GotoTag		      "VIFO_TargetVehicleTTCX_ms"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VIFO_TargetVehicleTTCX_ms"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From_VINP_HostVehicleSpeedA_mps"
+	      SID		      "228"
+	      Position		      [1295, 1946, 1495, 1974]
+	      ZOrder		      212
+	      GotoTag		      "VINP_HostVehicleSpeedA_mps"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VINP_HostVehicleSpeedA_mps"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From_VJUD_FCWSpeedInRange_flg"
+	      SID		      "229"
+	      Position		      [1835, 1151, 2035, 1179]
+	      ZOrder		      191
+	      GotoTag		      "VJUD_FCWSpeedInRange_flg"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VJUD_FCWSpeedInRange_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto_VIFO_DriverOverrideReq_flg"
+	      SID		      "230"
+	      Position		      [795, 775, 1025, 805]
+	      ZOrder		      186
+	      GotoTag		      "VIFO_DriverOverrideReq_flg"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto_VIFO_FCWTargetVehAssigned_flg"
+	      SID		      "231"
+	      Position		      [795, 1425, 1025, 1455]
+	      ZOrder		      194
+	      GotoTag		      "VIFO_FCWTargetVehAssigned_flg"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto_VIFO_ParkingSituation_flg"
+	      SID		      "232"
+	      Position		      [795, 585, 1025, 615]
+	      ZOrder		      184
+	      GotoTag		      "VIFO_ParkingSituation_flg"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto_VIFO_TargetVehicleTTCX_ms"
+	      SID		      "233"
+	      Position		      [795, 1345, 1025, 1375]
+	      ZOrder		      188
+	      GotoTag		      "VIFO_TargetVehicleTTCX_ms"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto_VINP_HostVehicleSpeedA_mps"
+	      SID		      "234"
+	      Position		      [365, 955, 595, 985]
+	      ZOrder		      196
+	      GotoTag		      "VINP_HostVehicleSpeedA_mps"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto_VJUD_FCWSpeedInRange_flg"
+	      SID		      "235"
+	      Position		      [795, 970, 1025, 1000]
+	      ZOrder		      190
+	      GotoTag		      "VJUD_FCWSpeedInRange_flg"
+	    }
+	    Block {
+	      BlockType		      UnitDelay
+	      Name		      "Unit Delay"
+	      SID		      "236"
+	      Position		      [695, 1533, 730, 1567]
+	      ZOrder		      193
+	      InputProcessing	      "Elements as channels (sample based)"
+	      SampleTime	      "-1"
+	      Port {
+		PortNumber		1
+		Name			"VAEB_AEBActingPrev_flg"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VJUD_FCWEnableReq_flg"
+	      SID		      "237"
+	      Position		      [2490, 198, 2520, 212]
+	      ZOrder		      197
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VJUD_FCWOperational_flg"
+	      SID		      "238"
+	      Position		      [2490, 838, 2520, 852]
+	      ZOrder		      198
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VJUD_FCWSpeedInRange_flg"
+	      SID		      "239"
+	      Position		      [2490, 1158, 2520, 1172]
+	      ZOrder		      199
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VJUD_FCWActionReq_flg"
+	      SID		      "240"
+	      Position		      [2490, 1438, 2520, 1452]
+	      ZOrder		      200
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VJUD_FCWDeactivationReq_flg"
+	      SID		      "241"
+	      Position		      [2490, 1828, 2520, 1842]
+	      ZOrder		      201
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VJUD_FCWDBSAllowed_flg"
+	      SID		      "242"
+	      Position		      [2490, 403, 2520, 417]
+	      ZOrder		      202
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "FCW_Enabling_conditions"
+	      SrcPort		      1
+	      DstBlock		      "VJUD_FCWEnableReq_flg"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "VIFO_FCWTargetVehAssigned_flg"
+	      SrcPort		      1
+	      Points		      [513, 0]
+	      Branch {
+		Labels			[-1, 0]
+		DstBlock		"FCW_Action_Conditions"
+		DstPort			3
+	      }
+	      Branch {
+		Points			[0, -40]
+		DstBlock		"Goto_VIFO_FCWTargetVehAssigned_flg"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "VIFO_TargetVehicleTTCX_ms"
+	      SrcPort		      1
+	      Points		      [514, 0]
+	      Branch {
+		Labels			[-1, 0]
+		DstBlock		"FCW_Action_Conditions"
+		DstPort			2
+	      }
+	      Branch {
+		Points			[0, -50]
+		DstBlock		"Goto_VIFO_TargetVehicleTTCX_ms"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VIFO_DriverFCWModeSel_enum"
+	      SrcPort		      1
+	      DstBlock		      "Calculation_of_FCWTriggerTTC"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VIFO_AggressiveDriverDetec_flg"
+	      SrcPort		      1
+	      DstBlock		      "Calculation_of_FCWTriggerTTC"
+	      DstPort		      2
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VIFO_ActiveDriverDetec_flg"
+	      SrcPort		      1
+	      DstBlock		      "Calculation_of_FCWTriggerTTC"
+	      DstPort		      3
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "Calculation_of_FCWTriggerTTC"
+	      SrcPort		      1
+	      Points		      [81, 0; 0, 150]
+	      DstBlock		      "FCW_Action_Conditions"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "FCW_Operational_Conditions"
+	      SrcPort		      1
+	      DstBlock		      "VJUD_FCWOperational_flg"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "FCW_Action_Conditions"
+	      SrcPort		      1
+	      DstBlock		      "VJUD_FCWActionReq_flg"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From_VIFO_ParkingSituation_flg"
+	      SrcPort		      1
+	      DstBlock		      "FCW_Deactivation_Conditions"
+	      DstPort		      2
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From_VIFO_TargetVehicleTTCX_ms"
+	      SrcPort		      1
+	      DstBlock		      "FCW_Deactivation_Conditions"
+	      DstPort		      3
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From_VIFO_DriverOverrideReq_flg"
+	      SrcPort		      1
+	      DstBlock		      "FCW_Deactivation_Conditions"
+	      DstPort		      4
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "FCW_Deactivation_Conditions"
+	      SrcPort		      1
+	      DstBlock		      "VJUD_FCWDeactivationReq_flg"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "From_VJUD_FCWSpeedInRange_flg"
+	      SrcPort		      1
+	      DstBlock		      "VJUD_FCWSpeedInRange_flg"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "VAEB_AEBActing_flg"
+	      SrcPort		      1
+	      DstBlock		      "Unit Delay"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "VAEB_AEBActingPrev_flg"
+	      SrcBlock		      "Unit Delay"
+	      SrcPort		      1
+	      Points		      [521, 0]
+	      Branch {
+		Labels			[-1, 0]
+		Points			[0, 160]
+		DstBlock		"FCW_Deactivation_Conditions"
+		DstPort			1
+	      }
+	      Branch {
+		Labels			[-1, 0]
+		DstBlock		"FCW_Action_Conditions"
+		DstPort			4
+	      }
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From_VIFO_FCWTargetVehAssigned_flg"
+	      SrcPort		      1
+	      DstBlock		      "FCW_Deactivation_Conditions"
+	      DstPort		      5
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VIFO_FCWDisabledViaOBD_flg"
+	      SrcPort		      1
+	      DstBlock		      "FCW_Enabling_conditions"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VIFO_FCWDisabledViaHMI_flg"
+	      SrcPort		      1
+	      DstBlock		      "FCW_Enabling_conditions"
+	      DstPort		      2
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VINP_VehiclePowerMode_enum"
+	      SrcPort		      1
+	      DstBlock		      "FCW_Enabling_conditions"
+	      DstPort		      3
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VIFO_DriverSafetyStatusOk_flg"
+	      SrcPort		      1
+	      DstBlock		      "FCW_Enabling_conditions"
+	      DstPort		      9
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VPER_CameraStatus_enum"
+	      SrcPort		      1
+	      DstBlock		      "FCW_Enabling_conditions"
+	      DstPort		      4
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VIFO_VehicleStatusOk_flg"
+	      SrcPort		      1
+	      DstBlock		      "FCW_Enabling_conditions"
+	      DstPort		      7
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VINP_HMIStatusOk_flg"
+	      SrcPort		      1
+	      DstBlock		      "FCW_Enabling_conditions"
+	      DstPort		      8
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VPER_FusionStatus_enum"
+	      SrcPort		      1
+	      DstBlock		      "FCW_Enabling_conditions"
+	      DstPort		      6
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VPER_RadarStatus_enum"
+	      SrcPort		      1
+	      DstBlock		      "FCW_Enabling_conditions"
+	      DstPort		      5
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "FCW_Enabling_conditions"
+	      SrcPort		      2
+	      DstBlock		      "VJUD_FCWDBSAllowed_flg"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "From_VINP_HostVehicleSpeedA_mps"
+	      SrcPort		      1
+	      DstBlock		      "FCW_Deactivation_Conditions"
+	      DstPort		      6
+	    }
+	    Line {
+	      SrcBlock		      "VINP_HostVehicleSpeedA_mps"
+	      SrcPort		      1
+	      Points		      [75, 0]
+	      Branch {
+		Points			[0, -70]
+		DstBlock		"Goto_VINP_HostVehicleSpeedA_mps"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"FCW_SpeedInRange_Calculation"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "FCW_SpeedInRange_Calculation"
+	      SrcPort		      1
+	      Points		      [86, 0]
+	      Branch {
+		Points			[0, -55]
+		DstBlock		"Goto_VJUD_FCWSpeedInRange_flg"
+		DstPort			1
+	      }
+	      Branch {
+		Labels			[-1, 0]
+		Points			[489, 0; 0, -120]
+		DstBlock		"FCW_Operational_Conditions"
+		DstPort			3
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "VIFO_DriverOverrideReq_flg"
+	      SrcPort		      1
+	      Points		      [526, 0]
+	      Branch {
+		Points			[0, -55]
+		DstBlock		"Goto_VIFO_DriverOverrideReq_flg"
+		DstPort			1
+	      }
+	      Branch {
+		Labels			[-1, 0]
+		DstBlock		"FCW_Operational_Conditions"
+		DstPort			2
+	      }
+	    }
+	    Line {
+	      SrcBlock		      "VIFO_ParkingSituation_flg"
+	      SrcPort		      1
+	      Points		      [530, 0]
+	      Branch {
+		Points			[0, -60]
+		DstBlock		"Goto_VIFO_ParkingSituation_flg"
+		DstPort			1
+	      }
+	      Branch {
+		Labels			[3, 1]
+		Points			[788, 0; 0, 110]
+		DstBlock		"FCW_Operational_Conditions"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      Labels		      [-1, 0]
+	      SrcBlock		      "VIFO_TargetVehRelSpeed_mps"
+	      SrcPort		      1
+	      DstBlock		      "Calculation_of_FCWTriggerTTC"
+	      DstPort		      4
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VJUD_FCWEnableReq_flg"
+	  SID			  "262"
+	  Position		  [1145, 83, 1175, 97]
+	  ZOrder		  203
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VJUD_FCWOperational_flg"
+	  SID			  "263"
+	  Position		  [1145, 243, 1175, 257]
+	  ZOrder		  204
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VJUD_FCWSpeedInRange_flg"
+	  SID			  "264"
+	  Position		  [1145, 403, 1175, 417]
+	  ZOrder		  205
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VJUD_FCWActionReq_flg"
+	  SID			  "265"
+	  Position		  [1145, 563, 1175, 577]
+	  ZOrder		  206
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VJUD_FCWDeactivationReq_flg"
+	  SID			  "266"
+	  Position		  [1145, 723, 1175, 737]
+	  ZOrder		  207
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VJUD_FCWDBSAllowed_flg"
+	  SID			  "267"
+	  Position		  [1145, 883, 1175, 897]
+	  ZOrder		  208
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  Name			  "<VINP_HostVehicleSpeedA_mps>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector1"
+	  SrcPort		  1
+	  DstBlock		  "jcw"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<VIFO_DriverSafetyStatusOk_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector3"
+	  SrcPort		  3
+	  DstBlock		  "jcw"
+	  DstPort		  18
+	}
+	Line {
+	  Name			  "<VINP_HMIStatusOk_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector1"
+	  SrcPort		  3
+	  DstBlock		  "jcw"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "<VIFO_FCWDisabledViaHMI_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector3"
+	  SrcPort		  1
+	  DstBlock		  "jcw"
+	  DstPort		  16
+	}
+	Line {
+	  Name			  "<VINP_VehiclePowerMode_enum>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector1"
+	  SrcPort		  2
+	  DstBlock		  "jcw"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "<VIFO_FCWDisabledViaHMI_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector4"
+	  SrcPort		  1
+	  DstBlock		  "jcw"
+	  DstPort		  19
+	}
+	Line {
+	  Name			  "<VIFO_VehicleStatusOk_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector3"
+	  SrcPort		  2
+	  DstBlock		  "jcw"
+	  DstPort		  17
+	}
+	Line {
+	  Name			  "<VIFO_TargetVehicleTTCX_ms>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  8
+	  DstBlock		  "jcw"
+	  DstPort		  11
+	}
+	Line {
+	  Name			  "<VIFO_DriverOverrideReq_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  5
+	  DstBlock		  "jcw"
+	  DstPort		  8
+	}
+	Line {
+	  Name			  "<VIFO_AggressiveDriverDetec_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  2
+	  DstBlock		  "jcw"
+	  DstPort		  5
+	}
+	Line {
+	  Name			  "<VIFO_DriverFCWModeSel_enum>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  1
+	  DstBlock		  "jcw"
+	  DstPort		  4
+	}
+	Line {
+	  Name			  "<VIFO_ParkingSituation_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  4
+	  DstBlock		  "jcw"
+	  DstPort		  7
+	}
+	Line {
+	  Name			  "<VIFO_ActiveDriverDetec_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  3
+	  DstBlock		  "jcw"
+	  DstPort		  6
+	}
+	Line {
+	  Name			  "<VIFO_TargetVehRelSpeed_mps>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  7
+	  DstBlock		  "jcw"
+	  DstPort		  10
+	}
+	Line {
+	  Name			  "<VIFO_FCWTargetVehAssigned_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  6
+	  DstBlock		  "jcw"
+	  DstPort		  9
+	}
+	Line {
+	  SrcBlock		  "BIFO_outputs"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "BINP_outputs"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<VIFO_DriverSafetyStatusOk_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  12
+	  DstBlock		  "jcw"
+	  DstPort		  15
+	}
+	Line {
+	  Name			  "<VIFO_FCWDisabledViaOBD_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  9
+	  DstBlock		  "jcw"
+	  DstPort		  12
+	}
+	Line {
+	  Name			  "<VIFO_VehicleStatusOk_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  11
+	  DstBlock		  "jcw"
+	  DstPort		  14
+	}
+	Line {
+	  SrcBlock		  "BPER_outputs"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector3"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<VIFO_FCWDisabledViaHMI_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  10
+	  DstBlock		  "jcw"
+	  DstPort		  13
+	}
+	Line {
+	  SrcBlock		  "BAEB_outputs"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector4"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "jcw"
+	  SrcPort		  1
+	  DstBlock		  "VJUD_FCWEnableReq_flg"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "jcw"
+	  SrcPort		  6
+	  DstBlock		  "VJUD_FCWDBSAllowed_flg"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "jcw"
+	  SrcPort		  4
+	  DstBlock		  "VJUD_FCWActionReq_flg"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "jcw"
+	  SrcPort		  2
+	  DstBlock		  "VJUD_FCWOperational_flg"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "jcw"
+	  SrcPort		  5
+	  DstBlock		  "VJUD_FCWDeactivationReq_flg"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "jcw"
+	  SrcPort		  3
+	  DstBlock		  "VJUD_FCWSpeedInRange_flg"
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}

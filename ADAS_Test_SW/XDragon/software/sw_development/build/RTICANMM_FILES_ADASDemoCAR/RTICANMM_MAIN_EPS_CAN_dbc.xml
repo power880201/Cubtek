@@ -1,0 +1,1780 @@
+<GeneralData>
+   <GenVar attName="MessageMap" attType="str" attVal=""/>
+   <GenVar attName="BCAN_Database" attType="str" attVal=""/>
+   <GenVar attName="GenMsgSendType" attType="num" attVal="0"/>
+   <GenVar attName="GenMsgCycleTime" attType="num" attVal="10"/>
+   <GenVar attName="GenMsgDelayTime" attType="num" attVal="0"/>
+</GeneralData>
+<Defs>
+   <Def attName="MessageMap" attType="">
+      <DefVar attName="DataType" attType="str" attVal="STRING"/>
+      <DefVar attName="Min" attType="num" attVal=""/>
+      <DefVar attName="Max" attType="num" attVal=""/>
+      <DefVar attName="Values" attType="list" attVal=""/>
+   </Def>
+   <Def attName="BCAN Database" attType="">
+      <DefVar attName="DataType" attType="str" attVal="STRING"/>
+      <DefVar attName="Min" attType="num" attVal=""/>
+      <DefVar attName="Max" attType="num" attVal=""/>
+      <DefVar attName="Values" attType="list" attVal=""/>
+   </Def>
+   <Def attName="GenMsgSendType" attType="BO">
+      <DefVar attName="DataType" attType="str" attVal="ENUM"/>
+      <DefVar attName="Min" attType="num" attVal=""/>
+      <DefVar attName="Max" attType="num" attVal=""/>
+      <DefVar attName="Values" attType="list" attVal="cyclicX,spontanX,cyclicIfActiveX,spontanWithDelay,cyclicAndSpontanX,cyclicAndSpontanWithDelay,spontanWithRepitition,cyclicIfActiveAndSpontanWD"/>
+   </Def>
+   <Def attName="GenMsgCycleTime" attType="BO">
+      <DefVar attName="DataType" attType="str" attVal="INT"/>
+      <DefVar attName="Min" attType="num" attVal="0"/>
+      <DefVar attName="Max" attType="num" attVal="0"/>
+      <DefVar attName="Values" attType="list" attVal=""/>
+   </Def>
+   <Def attName="GenMsgDelayTime" attType="BO">
+      <DefVar attName="DataType" attType="str" attVal="INT"/>
+      <DefVar attName="Min" attType="num" attVal="0"/>
+      <DefVar attName="Max" attType="num" attVal="0"/>
+      <DefVar attName="Values" attType="list" attVal=""/>
+   </Def>
+</Defs>
+<ECUs>
+   <ECU attName="ADAS">
+      <ECUVar attName="Adr" attType="str" attVal="253"/>
+   </ECU>
+   <ECU attName="APA">
+      <ECUVar attName="Adr" attType="str" attVal="253"/>
+   </ECU>
+   <ECU attName="Default_Receiver">
+      <ECUVar attName="Adr" attType="str" attVal="253"/>
+   </ECU>
+   <ECU attName="EPS">
+      <ECUVar attName="Adr" attType="str" attVal="253"/>
+   </ECU>
+   <ECU attName="GW">
+      <ECUVar attName="Adr" attType="str" attVal="253"/>
+   </ECU>
+   <ECU attName="Handler">
+      <ECUVar attName="Adr" attType="str" attVal="253"/>
+   </ECU>
+   <ECU attName="IFC">
+      <ECUVar attName="Adr" attType="str" attVal="253"/>
+   </ECU>
+   <ECU attName="IP">
+      <ECUVar attName="Adr" attType="str" attVal="253"/>
+   </ECU>
+   <ECU attName="SAS">
+      <ECUVar attName="Adr" attType="str" attVal="253"/>
+   </ECU>
+</ECUs>
+<Msgs>
+   <Msg attName="ABS1" attID="561">
+      <MsgVar attName="IDFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Len" attType="num" attVal="8"/>
+      <MsgVar attName="ECU" attType="str" attVal="GW"/>
+      <MsgVar attName="NumSig" attType="num" attVal="6"/>
+      <MsgVar attName="Com" attType="str" attVal=""/>
+      <MsgVar attName="CycleT" attType="num" attVal="20"/>
+      <MsgVar attName="DelayT" attType="num" attVal="0"/>
+      <MsgVar attName="BTime" attType="num" attVal="0"/>
+      <MsgVar attName="UTime" attType="num" attVal="0"/>
+      <MsgVar attName="SendType" attType="str" attVal="cyclicX"/>
+      <MsgVar attName="Modes" attType="list" attVal=""/>
+      <MsgVar attName="ModeMsg" attType="num" attVal="0"/>
+      <MsgVar attName="ModeSignal" attType="str" attVal=""/>
+      <MsgVar attName="RECUs" attType="list" attVal="APA,EPS,IFC"/>
+      <MsgVar attName="MsgIdNumFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Variations" attType="num" attVal=""/>
+      <MsgVar attName="MsgUpdateNum" attType="num" attVal="1"/>
+      <MsgVar attName="MsgStartValue" attType="str" attVal="0000000000000000h"/>
+      <MsgVar attName="J1939PGPrio" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGDest" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGSrc" attType="num" attVal="0"/>
+      <MsgVar attName="J1939Mapping" attType="str" attVal=""/>
+      <MsgVar attName="MessageType" attType="str" attVal="StandardCAN"/>
+      <MsgVar attName="CANFD_BRS" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgChkConstant" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgPDUConstants" attType="str" attVal=""/>
+      <MsgVar attName="EnumErrorAttributes" attType="str" attVal=""/>
+      <MsgVar attName="SendECU" attType="list" attVal="GW"/>
+      <MsgVar attName="Receiver" attType="num" attVal=""/>
+      <Sgns>
+         <Sgn attName="RollingCounter_ABS1" attStartBit="0">
+            <SgnVar attName="Len" attType="num" attVal="4"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="0"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="15"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+         <Sgn attName="FRWheelSpd" attStartBit="24">
+            <SgnVar attName="Len" attType="num" attVal="13"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="24"/>
+            <SgnVar attName="Fac" attType="num" attVal="0.05625"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal="km/h"/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="5333"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="460.74375000000003"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="DOUBLE"/>
+         </Sgn>
+         <Sgn attName="FRWheelSpdValid" attStartBit="37">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="37"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Invalid" attVal="0"/>
+               <VNP attName="Valid" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="FLWheelSpd" attStartBit="40">
+            <SgnVar attName="Len" attType="num" attVal="13"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="40"/>
+            <SgnVar attName="Fac" attType="num" attVal="0.05625"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal="km/h"/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="5333"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="460.74375000000003"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="DOUBLE"/>
+         </Sgn>
+         <Sgn attName="FLWheelSpdValid" attStartBit="53">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="53"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Invalid" attVal="0"/>
+               <VNP attName="Valid" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="CheckSum_ABS1" attStartBit="56">
+            <SgnVar attName="Len" attType="num" attVal="8"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="56"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="255"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+      </Sgns>
+   </Msg>
+   <Msg attName="ABS2" attID="582">
+      <MsgVar attName="IDFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Len" attType="num" attVal="8"/>
+      <MsgVar attName="ECU" attType="str" attVal="GW"/>
+      <MsgVar attName="NumSig" attType="num" attVal="6"/>
+      <MsgVar attName="Com" attType="str" attVal=""/>
+      <MsgVar attName="CycleT" attType="num" attVal="20"/>
+      <MsgVar attName="DelayT" attType="num" attVal="0"/>
+      <MsgVar attName="BTime" attType="num" attVal="0"/>
+      <MsgVar attName="UTime" attType="num" attVal="0"/>
+      <MsgVar attName="SendType" attType="str" attVal="cyclicX"/>
+      <MsgVar attName="Modes" attType="list" attVal=""/>
+      <MsgVar attName="ModeMsg" attType="num" attVal="0"/>
+      <MsgVar attName="ModeSignal" attType="str" attVal=""/>
+      <MsgVar attName="RECUs" attType="list" attVal="APA,EPS,IFC"/>
+      <MsgVar attName="MsgIdNumFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Variations" attType="num" attVal=""/>
+      <MsgVar attName="MsgUpdateNum" attType="num" attVal="1"/>
+      <MsgVar attName="MsgStartValue" attType="str" attVal="0000000000000000h"/>
+      <MsgVar attName="J1939PGPrio" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGDest" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGSrc" attType="num" attVal="0"/>
+      <MsgVar attName="J1939Mapping" attType="str" attVal=""/>
+      <MsgVar attName="MessageType" attType="str" attVal="StandardCAN"/>
+      <MsgVar attName="CANFD_BRS" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgChkConstant" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgPDUConstants" attType="str" attVal=""/>
+      <MsgVar attName="EnumErrorAttributes" attType="num" attVal=""/>
+      <MsgVar attName="SendECU" attType="list" attVal="GW"/>
+      <MsgVar attName="Receiver" attType="num" attVal=""/>
+      <Sgns>
+         <Sgn attName="RollingCounter_ABS2" attStartBit="0">
+            <SgnVar attName="Len" attType="num" attVal="4"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="0"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="15"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+         <Sgn attName="RRWheelSpd" attStartBit="24">
+            <SgnVar attName="Len" attType="num" attVal="13"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="24"/>
+            <SgnVar attName="Fac" attType="num" attVal="0.05625"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal="km/h"/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="5333"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="460.74375000000003"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="DOUBLE"/>
+         </Sgn>
+         <Sgn attName="RRWheelSpdValid" attStartBit="37">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="37"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Invalid" attVal="0"/>
+               <VNP attName="Valid" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="RLWheelSpd" attStartBit="40">
+            <SgnVar attName="Len" attType="num" attVal="13"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="40"/>
+            <SgnVar attName="Fac" attType="num" attVal="0.05625"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal="km/h"/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="5333"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="460.74375000000003"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="DOUBLE"/>
+         </Sgn>
+         <Sgn attName="RLWheelSpdValid" attStartBit="53">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="53"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Invalid" attVal="0"/>
+               <VNP attName="Valid" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="CheckSum_ABS2" attStartBit="56">
+            <SgnVar attName="Len" attType="num" attVal="8"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="56"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="255"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+      </Sgns>
+   </Msg>
+   <Msg attName="ABS3" attID="613">
+      <MsgVar attName="IDFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Len" attType="num" attVal="8"/>
+      <MsgVar attName="ECU" attType="str" attVal="GW"/>
+      <MsgVar attName="NumSig" attType="num" attVal="4"/>
+      <MsgVar attName="Com" attType="str" attVal=""/>
+      <MsgVar attName="CycleT" attType="num" attVal="20"/>
+      <MsgVar attName="DelayT" attType="num" attVal="0"/>
+      <MsgVar attName="BTime" attType="num" attVal="0"/>
+      <MsgVar attName="UTime" attType="num" attVal="0"/>
+      <MsgVar attName="SendType" attType="str" attVal="cyclicX"/>
+      <MsgVar attName="Modes" attType="list" attVal=""/>
+      <MsgVar attName="ModeMsg" attType="num" attVal="0"/>
+      <MsgVar attName="ModeSignal" attType="str" attVal=""/>
+      <MsgVar attName="RECUs" attType="list" attVal="APA,EPS,IFC"/>
+      <MsgVar attName="MsgIdNumFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Variations" attType="num" attVal=""/>
+      <MsgVar attName="MsgUpdateNum" attType="num" attVal="1"/>
+      <MsgVar attName="MsgStartValue" attType="str" attVal="0000000000000000h"/>
+      <MsgVar attName="J1939PGPrio" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGDest" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGSrc" attType="num" attVal="0"/>
+      <MsgVar attName="J1939Mapping" attType="str" attVal=""/>
+      <MsgVar attName="MessageType" attType="str" attVal="StandardCAN"/>
+      <MsgVar attName="CANFD_BRS" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgChkConstant" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgPDUConstants" attType="str" attVal=""/>
+      <MsgVar attName="EnumErrorAttributes" attType="num" attVal=""/>
+      <MsgVar attName="SendECU" attType="list" attVal="GW"/>
+      <MsgVar attName="Receiver" attType="num" attVal=""/>
+      <Sgns>
+         <Sgn attName="RollingCounter_ABS3" attStartBit="0">
+            <SgnVar attName="Len" attType="num" attVal="4"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="0"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="15"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+         <Sgn attName="VehcileSpd" attStartBit="40">
+            <SgnVar attName="Len" attType="num" attVal="13"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="40"/>
+            <SgnVar attName="Fac" attType="num" attVal="0.05625"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal="km/h"/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="5333"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="460.74375000000003"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="DOUBLE"/>
+         </Sgn>
+         <Sgn attName="VehicleSpdValid" attStartBit="53">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="53"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Invalid" attVal="0"/>
+               <VNP attName="Valid" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="CheckSum_ABS3" attStartBit="56">
+            <SgnVar attName="Len" attType="num" attVal="8"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="56"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="255"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+      </Sgns>
+   </Msg>
+   <Msg attName="ECM2" attID="625">
+      <MsgVar attName="IDFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Len" attType="num" attVal="8"/>
+      <MsgVar attName="ECU" attType="str" attVal="GW"/>
+      <MsgVar attName="NumSig" attType="num" attVal="1"/>
+      <MsgVar attName="Com" attType="str" attVal=""/>
+      <MsgVar attName="CycleT" attType="num" attVal="20"/>
+      <MsgVar attName="DelayT" attType="num" attVal="0"/>
+      <MsgVar attName="BTime" attType="num" attVal="0"/>
+      <MsgVar attName="UTime" attType="num" attVal="0"/>
+      <MsgVar attName="SendType" attType="str" attVal="cyclicX"/>
+      <MsgVar attName="Modes" attType="list" attVal=""/>
+      <MsgVar attName="ModeMsg" attType="num" attVal="0"/>
+      <MsgVar attName="ModeSignal" attType="str" attVal=""/>
+      <MsgVar attName="RECUs" attType="list" attVal="EPS,IFC"/>
+      <MsgVar attName="MsgIdNumFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Variations" attType="num" attVal=""/>
+      <MsgVar attName="MsgUpdateNum" attType="num" attVal="1"/>
+      <MsgVar attName="MsgStartValue" attType="str" attVal="0000000000000000h"/>
+      <MsgVar attName="J1939PGPrio" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGDest" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGSrc" attType="num" attVal="0"/>
+      <MsgVar attName="J1939Mapping" attType="str" attVal=""/>
+      <MsgVar attName="MessageType" attType="str" attVal="StandardCAN"/>
+      <MsgVar attName="CANFD_BRS" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgChkConstant" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgPDUConstants" attType="str" attVal=""/>
+      <MsgVar attName="EnumErrorAttributes" attType="num" attVal=""/>
+      <MsgVar attName="SendECU" attType="list" attVal="GW"/>
+      <MsgVar attName="Receiver" attType="num" attVal=""/>
+      <Sgns>
+         <Sgn attName="EngState" attStartBit="3">
+            <SgnVar attName="Len" attType="num" attVal="2"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="3"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="3"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+            <ValueNamePairs>
+               <VNP attName="Stopped" attVal="0"/>
+               <VNP attName="Cranking" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+      </Sgns>
+   </Msg>
+   <Msg attName="EPS1" attID="746">
+      <MsgVar attName="IDFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Len" attType="num" attVal="8"/>
+      <MsgVar attName="ECU" attType="str" attVal="EPS"/>
+      <MsgVar attName="NumSig" attType="num" attVal="10"/>
+      <MsgVar attName="Com" attType="str" attVal=""/>
+      <MsgVar attName="CycleT" attType="num" attVal="20"/>
+      <MsgVar attName="DelayT" attType="num" attVal="0"/>
+      <MsgVar attName="BTime" attType="num" attVal="0"/>
+      <MsgVar attName="UTime" attType="num" attVal="0"/>
+      <MsgVar attName="SendType" attType="str" attVal="cyclicX"/>
+      <MsgVar attName="Modes" attType="list" attVal=""/>
+      <MsgVar attName="ModeMsg" attType="num" attVal="0"/>
+      <MsgVar attName="ModeSignal" attType="str" attVal=""/>
+      <MsgVar attName="RECUs" attType="list" attVal="ADAS,APA,Default_Receiver,IFC,IP"/>
+      <MsgVar attName="MsgIdNumFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Variations" attType="num" attVal=""/>
+      <MsgVar attName="MsgUpdateNum" attType="num" attVal="1"/>
+      <MsgVar attName="MsgStartValue" attType="str" attVal="0000000000000000h"/>
+      <MsgVar attName="J1939PGPrio" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGDest" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGSrc" attType="num" attVal="0"/>
+      <MsgVar attName="J1939Mapping" attType="str" attVal=""/>
+      <MsgVar attName="MessageType" attType="str" attVal="StandardCAN"/>
+      <MsgVar attName="CANFD_BRS" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgChkConstant" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgPDUConstants" attType="str" attVal=""/>
+      <MsgVar attName="EnumErrorAttributes" attType="num" attVal=""/>
+      <MsgVar attName="SendECU" attType="list" attVal="EPS"/>
+      <MsgVar attName="Receiver" attType="num" attVal=""/>
+      <Sgns>
+         <Sgn attName="RollingCounter_EPS1" attStartBit="0">
+            <SgnVar attName="Len" attType="num" attVal="4"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="0"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="15"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+         <Sgn attName="EPS_CurrMod" attStartBit="9">
+            <SgnVar attName="Len" attType="num" attVal="3"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="9"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="IP,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="7"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+            <ValueNamePairs>
+               <VNP attName="Normal" attVal="0"/>
+               <VNP attName="Sport Mode" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="EPS_ConsumedCurrValue" attStartBit="16">
+            <SgnVar attName="Len" attType="num" attVal="8"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="16"/>
+            <SgnVar attName="Fac" attType="num" attVal="0.5"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal="A"/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="254"/>
+            <SgnVar attName="RECUs" attType="list" attVal="ADAS,Default_Receiver"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="127.5"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="DOUBLE"/>
+         </Sgn>
+         <Sgn attName="EPS_DrvInputTrqValue" attStartBit="24">
+            <SgnVar attName="Len" attType="num" attVal="8"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="24"/>
+            <SgnVar attName="Fac" attType="num" attVal="0.1794"/>
+            <SgnVar attName="Offs" attType="num" attVal="-22.78"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal="Nm"/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="255"/>
+            <SgnVar attName="RECUs" attType="list" attVal="IFC,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="22.967"/>
+            <SgnVar attName="absMin" attType="num" attVal="-22.78"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="DOUBLE"/>
+         </Sgn>
+         <Sgn attName="EPS_AvailSts" attStartBit="36">
+            <SgnVar attName="Len" attType="num" attVal="2"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="36"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="3"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+            <ValueNamePairs>
+               <VNP attName="Temporary inhibit" attVal="0"/>
+               <VNP attName="Available for control" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="EPS_InterferDetdValid" attStartBit="38">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="38"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Invalid" attVal="0"/>
+               <VNP attName="Valid" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="EPS_InterferDetd" attStartBit="39">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="39"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="False" attVal="0"/>
+               <VNP attName="True" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="EPS_TrqSnsrSts" attStartBit="54">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="54"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="IFC,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Normal" attVal="0"/>
+               <VNP attName="Abnormal" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="EPS_FailSts" attStartBit="55">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="55"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="IFC,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="No Fault" attVal="0"/>
+               <VNP attName="Fault" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="CheckSum_EPS1" attStartBit="56">
+            <SgnVar attName="Len" attType="num" attVal="8"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="56"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="255"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+      </Sgns>
+   </Msg>
+   <Msg attName="EPS2" attID="354">
+      <MsgVar attName="IDFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Len" attType="num" attVal="8"/>
+      <MsgVar attName="ECU" attType="str" attVal="EPS"/>
+      <MsgVar attName="NumSig" attType="num" attVal="8"/>
+      <MsgVar attName="Com" attType="str" attVal=""/>
+      <MsgVar attName="CycleT" attType="num" attVal="20"/>
+      <MsgVar attName="DelayT" attType="num" attVal="0"/>
+      <MsgVar attName="BTime" attType="num" attVal="0"/>
+      <MsgVar attName="UTime" attType="num" attVal="0"/>
+      <MsgVar attName="SendType" attType="str" attVal="cyclicX"/>
+      <MsgVar attName="Modes" attType="list" attVal=""/>
+      <MsgVar attName="ModeMsg" attType="num" attVal="0"/>
+      <MsgVar attName="ModeSignal" attType="str" attVal=""/>
+      <MsgVar attName="RECUs" attType="list" attVal="ADAS,IFC,IP"/>
+      <MsgVar attName="MsgIdNumFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Variations" attType="num" attVal=""/>
+      <MsgVar attName="MsgUpdateNum" attType="num" attVal="1"/>
+      <MsgVar attName="MsgStartValue" attType="str" attVal="0000000000000000h"/>
+      <MsgVar attName="J1939PGPrio" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGDest" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGSrc" attType="num" attVal="0"/>
+      <MsgVar attName="J1939Mapping" attType="str" attVal=""/>
+      <MsgVar attName="MessageType" attType="str" attVal="StandardCAN"/>
+      <MsgVar attName="CANFD_BRS" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgChkConstant" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgPDUConstants" attType="str" attVal=""/>
+      <MsgVar attName="EnumErrorAttributes" attType="num" attVal=""/>
+      <MsgVar attName="SendECU" attType="list" attVal="EPS"/>
+      <MsgVar attName="Receiver" attType="num" attVal=""/>
+      <Sgns>
+         <Sgn attName="RollingCounter_EPS2" attStartBit="0">
+            <SgnVar attName="Len" attType="num" attVal="4"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="0"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="IFC,IP"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="15"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+         <Sgn attName="EPS_LKATrqOvlDlvdSts" attStartBit="4">
+            <SgnVar attName="Len" attType="num" attVal="2"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="4"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="IFC,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="3"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+            <ValueNamePairs>
+               <VNP attName="inactive" attVal="0"/>
+               <VNP attName="active" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="EPS_HandsOffDetnModEnable" attStartBit="6">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="6"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="IFC,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Handsoff detection disabled" attVal="0"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="EPS_LKATorqOvrlDlvdValid" attStartBit="7">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="7"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="IFC,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Invalid" attVal="0"/>
+               <VNP attName="Valid" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="EPS_LKATorqOvrlDlvd" attStartBit="8">
+            <SgnVar attName="Len" attType="num" attVal="16"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="8"/>
+            <SgnVar attName="Fac" attType="num" attVal="0.01"/>
+            <SgnVar attName="Offs" attType="num" attVal="-15"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal="Nm"/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="255"/>
+            <SgnVar attName="RECUs" attType="list" attVal="IFC,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="640.35"/>
+            <SgnVar attName="absMin" attType="num" attVal="-15"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal="640.35"/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="DOUBLE"/>
+         </Sgn>
+         <Sgn attName="EPS_HandsOffDetnStsValid" attStartBit="45">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="45"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="IFC,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Invalid" attVal="0"/>
+               <VNP attName="Valid" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="EPS_HandsOffDetnSts" attStartBit="46">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="46"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="IFC,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Handsoff not detected" attVal="0"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="CheckSum_EPS2" attStartBit="56">
+            <SgnVar attName="Len" attType="num" attVal="8"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="56"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="IFC"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="255"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+      </Sgns>
+   </Msg>
+   <Msg attName="GWA1" attID="629">
+      <MsgVar attName="IDFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Len" attType="num" attVal="8"/>
+      <MsgVar attName="ECU" attType="str" attVal="GW"/>
+      <MsgVar attName="NumSig" attType="num" attVal="2"/>
+      <MsgVar attName="Com" attType="str" attVal=""/>
+      <MsgVar attName="CycleT" attType="num" attVal="50"/>
+      <MsgVar attName="DelayT" attType="num" attVal="0"/>
+      <MsgVar attName="BTime" attType="num" attVal="0"/>
+      <MsgVar attName="UTime" attType="num" attVal="0"/>
+      <MsgVar attName="SendType" attType="str" attVal="cyclicX"/>
+      <MsgVar attName="Modes" attType="list" attVal=""/>
+      <MsgVar attName="ModeMsg" attType="num" attVal="0"/>
+      <MsgVar attName="ModeSignal" attType="str" attVal=""/>
+      <MsgVar attName="RECUs" attType="list" attVal="EPS"/>
+      <MsgVar attName="MsgIdNumFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Variations" attType="num" attVal=""/>
+      <MsgVar attName="MsgUpdateNum" attType="num" attVal="1"/>
+      <MsgVar attName="MsgStartValue" attType="str" attVal="0000000000000000h"/>
+      <MsgVar attName="J1939PGPrio" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGDest" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGSrc" attType="num" attVal="0"/>
+      <MsgVar attName="J1939Mapping" attType="str" attVal=""/>
+      <MsgVar attName="MessageType" attType="str" attVal="StandardCAN"/>
+      <MsgVar attName="CANFD_BRS" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgChkConstant" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgPDUConstants" attType="str" attVal=""/>
+      <MsgVar attName="EnumErrorAttributes" attType="num" attVal=""/>
+      <MsgVar attName="SendECU" attType="list" attVal="GW"/>
+      <MsgVar attName="Receiver" attType="num" attVal=""/>
+      <Sgns>
+         <Sgn attName="EPSSwErrorSts" attStartBit="4">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="4"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="No Error" attVal="0"/>
+               <VNP attName="Error" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="EPSSwSts" attStartBit="5">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="5"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="OFF" attVal="0"/>
+               <VNP attName="ON" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+      </Sgns>
+   </Msg>
+   <Msg attName="IFC1" attID="265">
+      <MsgVar attName="IDFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Len" attType="num" attVal="8"/>
+      <MsgVar attName="ECU" attType="str" attVal="IFC"/>
+      <MsgVar attName="NumSig" attType="num" attVal="5"/>
+      <MsgVar attName="Com" attType="str" attVal=""/>
+      <MsgVar attName="CycleT" attType="num" attVal="20"/>
+      <MsgVar attName="DelayT" attType="num" attVal="0"/>
+      <MsgVar attName="BTime" attType="num" attVal="0"/>
+      <MsgVar attName="UTime" attType="num" attVal="0"/>
+      <MsgVar attName="SendType" attType="str" attVal="cyclicX"/>
+      <MsgVar attName="Modes" attType="list" attVal=""/>
+      <MsgVar attName="ModeMsg" attType="num" attVal="0"/>
+      <MsgVar attName="ModeSignal" attType="str" attVal=""/>
+      <MsgVar attName="RECUs" attType="list" attVal="EPS"/>
+      <MsgVar attName="MsgIdNumFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Variations" attType="num" attVal=""/>
+      <MsgVar attName="MsgUpdateNum" attType="num" attVal="1"/>
+      <MsgVar attName="MsgStartValue" attType="str" attVal="0000000000000000h"/>
+      <MsgVar attName="J1939PGPrio" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGDest" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGSrc" attType="num" attVal="0"/>
+      <MsgVar attName="J1939Mapping" attType="str" attVal=""/>
+      <MsgVar attName="MessageType" attType="str" attVal="StandardCAN"/>
+      <MsgVar attName="CANFD_BRS" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgChkConstant" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgPDUConstants" attType="str" attVal=""/>
+      <MsgVar attName="EnumErrorAttributes" attType="num" attVal=""/>
+      <MsgVar attName="SendECU" attType="list" attVal="IFC"/>
+      <MsgVar attName="Receiver" attType="num" attVal=""/>
+      <Sgns>
+         <Sgn attName="RollingCounter_IFC" attStartBit="0">
+            <SgnVar attName="Len" attType="num" attVal="4"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="0"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="15"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+         <Sgn attName="LKATrqCmdReqFlag" attStartBit="17">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="17"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="No Request" attVal="0"/>
+               <VNP attName="Request" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="LKATrqOvlCmdReqValue" attStartBit="21">
+            <SgnVar attName="Len" attType="num" attVal="11"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="21"/>
+            <SgnVar attName="Fac" attType="num" attVal="0.01"/>
+            <SgnVar attName="Offs" attType="num" attVal="-10.23"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal="Nm"/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="2047"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="10.239999999999998"/>
+            <SgnVar attName="absMin" attType="num" attVal="-10.23"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="DOUBLE"/>
+         </Sgn>
+         <Sgn attName="LKATrqOvlCmdProtnValue" attStartBit="42">
+            <SgnVar attName="Len" attType="num" attVal="14"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="42"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="16383"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT16"/>
+         </Sgn>
+         <Sgn attName="CheckSum_IFC" attStartBit="56">
+            <SgnVar attName="Len" attType="num" attVal="8"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="56"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="255"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+      </Sgns>
+   </Msg>
+   <Msg attName="SAS1" attID="161">
+      <MsgVar attName="IDFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Len" attType="num" attVal="8"/>
+      <MsgVar attName="ECU" attType="str" attVal="GW"/>
+      <MsgVar attName="NumSig" attType="num" attVal="8"/>
+      <MsgVar attName="Com" attType="str" attVal=""/>
+      <MsgVar attName="CycleT" attType="num" attVal="10"/>
+      <MsgVar attName="DelayT" attType="num" attVal="0"/>
+      <MsgVar attName="BTime" attType="num" attVal="0"/>
+      <MsgVar attName="UTime" attType="num" attVal="0"/>
+      <MsgVar attName="SendType" attType="str" attVal="cyclicX"/>
+      <MsgVar attName="Modes" attType="list" attVal=""/>
+      <MsgVar attName="ModeMsg" attType="num" attVal="0"/>
+      <MsgVar attName="ModeSignal" attType="str" attVal=""/>
+      <MsgVar attName="RECUs" attType="list" attVal="APA,EPS,IFC"/>
+      <MsgVar attName="MsgIdNumFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Variations" attType="num" attVal=""/>
+      <MsgVar attName="MsgUpdateNum" attType="num" attVal="1"/>
+      <MsgVar attName="MsgStartValue" attType="str" attVal="0000000000000000h"/>
+      <MsgVar attName="J1939PGPrio" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGDest" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGSrc" attType="num" attVal="0"/>
+      <MsgVar attName="J1939Mapping" attType="str" attVal=""/>
+      <MsgVar attName="MessageType" attType="str" attVal="StandardCAN"/>
+      <MsgVar attName="CANFD_BRS" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgChkConstant" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgPDUConstants" attType="str" attVal=""/>
+      <MsgVar attName="EnumErrorAttributes" attType="num" attVal=""/>
+      <MsgVar attName="SendECU" attType="list" attVal="GW"/>
+      <MsgVar attName="Receiver" attType="num" attVal=""/>
+      <Sgns>
+         <Sgn attName="RollingCounter_SAS1" attStartBit="0">
+            <SgnVar attName="Len" attType="num" attVal="4"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="0"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="15"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+         <Sgn attName="SAS_Sts" attStartBit="14">
+            <SgnVar attName="Len" attType="num" attVal="2"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="14"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="3"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+            <ValueNamePairs>
+               <VNP attName="SAS Angle And Speed Correct" attVal="0"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="SAS_Generation" attStartBit="16">
+            <SgnVar attName="Len" attType="num" attVal="8"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="16"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="255"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+         <Sgn attName="SteerWheelSpdSign" attStartBit="24">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="24"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Left" attVal="0"/>
+               <VNP attName="Right" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="SteerWheelSpd" attStartBit="25">
+            <SgnVar attName="Len" attType="num" attVal="15"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="25"/>
+            <SgnVar attName="Fac" attType="num" attVal="0.1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal="deg/s"/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="10160"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="3276.7000000000003"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="DOUBLE"/>
+         </Sgn>
+         <Sgn attName="SteerWheelAngleSign" attStartBit="40">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="40"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Left" attVal="0"/>
+               <VNP attName="Right" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="SteerWheelAngle" attStartBit="41">
+            <SgnVar attName="Len" attType="num" attVal="15"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="41"/>
+            <SgnVar attName="Fac" attType="num" attVal="0.1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal="deg"/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="7800"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="3276.7000000000003"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="DOUBLE"/>
+         </Sgn>
+         <Sgn attName="CheckSum_SAS1" attStartBit="56">
+            <SgnVar attName="Len" attType="num" attVal="8"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="56"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="APA,IFC,EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="255"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="0"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+      </Sgns>
+   </Msg>
+   <Msg attName="SAS2" attID="922">
+      <MsgVar attName="IDFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Len" attType="num" attVal="8"/>
+      <MsgVar attName="ECU" attType="str" attVal="SAS"/>
+      <MsgVar attName="NumSig" attType="num" attVal="12"/>
+      <MsgVar attName="Com" attType="str" attVal=""/>
+      <MsgVar attName="CycleT" attType="num" attVal="10"/>
+      <MsgVar attName="DelayT" attType="num" attVal="0"/>
+      <MsgVar attName="BTime" attType="num" attVal="0"/>
+      <MsgVar attName="UTime" attType="num" attVal="0"/>
+      <MsgVar attName="SendType" attType="str" attVal="cyclicX"/>
+      <MsgVar attName="Modes" attType="list" attVal=""/>
+      <MsgVar attName="ModeMsg" attType="num" attVal="0"/>
+      <MsgVar attName="ModeSignal" attType="str" attVal=""/>
+      <MsgVar attName="RECUs" attType="list" attVal="ADAS,EPS"/>
+      <MsgVar attName="MsgIdNumFormat" attType="num" attVal="0"/>
+      <MsgVar attName="Variations" attType="num" attVal=""/>
+      <MsgVar attName="MsgUpdateNum" attType="num" attVal="1"/>
+      <MsgVar attName="MsgStartValue" attType="str" attVal="0000000000000000h"/>
+      <MsgVar attName="J1939PGPrio" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGDest" attType="num" attVal="0"/>
+      <MsgVar attName="J1939PGSrc" attType="num" attVal="0"/>
+      <MsgVar attName="J1939Mapping" attType="str" attVal=""/>
+      <MsgVar attName="MessageType" attType="str" attVal="StandardCAN"/>
+      <MsgVar attName="CANFD_BRS" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgChkConstant" attType="num" attVal="0"/>
+      <MsgVar attName="GenMsgPDUConstants" attType="str" attVal=""/>
+      <MsgVar attName="EnumErrorAttributes" attType="num" attVal=""/>
+      <MsgVar attName="SendECU" attType="list" attVal="SAS"/>
+      <MsgVar attName="Receiver" attType="num" attVal=""/>
+      <Sgns>
+         <Sgn attName="SAS_CheckSum" attStartBit="32">
+            <SgnVar attName="Len" attType="num" attVal="4"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="32"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="15"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="2"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+         <Sgn attName="SAS_MsgCount" attStartBit="36">
+            <SgnVar attName="Len" attType="num" attVal="4"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="36"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="15"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="2"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT8"/>
+         </Sgn>
+         <Sgn attName="SAS_OK" attStartBit="24">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="24"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="2"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Invalid" attVal="0"/>
+               <VNP attName="Valid" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="SAS_CAL" attStartBit="25">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="25"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="2"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Not calibrated" attVal="0"/>
+               <VNP attName="Calibrated" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="SAS_Trim" attStartBit="26">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="26"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="2"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Not Trimmed" attVal="0"/>
+               <VNP attName="Trimmed" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="SAS_Speed_Valid" attStartBit="27">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="27"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="2"/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+            <ValueNamePairs>
+               <VNP attName="Invalid" attVal="0"/>
+               <VNP attName="Valid" attVal="1"/>
+            </ValueNamePairs>
+         </Sgn>
+         <Sgn attName="SAS_Stat_SF1" attStartBit="28">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="28"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="2"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+         </Sgn>
+         <Sgn attName="SAS_Stat_SF2" attStartBit="29">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="29"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="2"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+         </Sgn>
+         <Sgn attName="SAS_Stat_SF3" attStartBit="30">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="30"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="2"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+         </Sgn>
+         <Sgn attName="SAS_Stat_SF4" attStartBit="31">
+            <SgnVar attName="Len" attType="num" attVal="1"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="31"/>
+            <SgnVar attName="Fac" attType="num" attVal="1"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal=""/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="0"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="2"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="BOOLEAN"/>
+         </Sgn>
+         <Sgn attName="SAS_Speed" attStartBit="16">
+            <SgnVar attName="Len" attType="num" attVal="8"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="16"/>
+            <SgnVar attName="Fac" attType="num" attVal="4"/>
+            <SgnVar attName="Offs" attType="num" attVal="0"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal="deg/s"/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="255"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="1020"/>
+            <SgnVar attName="absMin" attType="num" attVal="0"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="2"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal="1020"/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="UINT16"/>
+         </Sgn>
+         <Sgn attName="SAS_Angle" attStartBit="0">
+            <SgnVar attName="Len" attType="num" attVal="16"/>
+            <SgnVar attName="SgnStartBit" attType="num" attVal="8"/>
+            <SgnVar attName="Fac" attType="num" attVal="0.1"/>
+            <SgnVar attName="Offs" attType="num" attVal="-900"/>
+            <SgnVar attName="Com" attType="str" attVal=""/>
+            <SgnVar attName="Unit" attType="str" attVal="deg"/>
+            <SgnVar attName="Min" attType="num" attVal="0"/>
+            <SgnVar attName="Max" attType="num" attVal="18000"/>
+            <SgnVar attName="RECUs" attType="list" attVal="EPS,ADAS"/>
+            <SgnVar attName="Type" attType="num" attVal="0"/>
+            <SgnVar attName="DataType" attType="num" attVal="0"/>
+            <SgnVar attName="ModeVal" attType="num" attVal="-1"/>
+            <SgnVar attName="IniVal" attType="num" attVal="0"/>
+            <SgnVar attName="absMax" attType="num" attVal="5653.5"/>
+            <SgnVar attName="absMin" attType="num" attVal="-900"/>
+            <SgnVar attName="ByteLayout" attType="num" attVal="2"/>
+            <SgnVar attName="ValueNamePairs" attType="num" attVal=""/>
+            <SgnVar attName="SgnErrorValue" attType="num" attVal=""/>
+            <SgnVar attName="SgnDataType" attType="str" attVal="DOUBLE"/>
+         </Sgn>
+      </Sgns>
+   </Msg>
+</Msgs>

@@ -1,0 +1,3470 @@
+Library {
+  Name			  "sdc"
+  Version		  8.1
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1252"
+  PostLoadFcn		  ", if any(exist('dsrtsu_mdlpostloadfcn', 'file') == [2, 3, 6]), try dsrtsu_mdlpostloadfcn('Execute', "
+  "bdroot); catch fprintf('Error in PostLoadFcn (dsrtsu_mdlpostloadfcn) for model \"%s\":\\n %s\\n', bdroot, lasterr); "
+  "end, end, \n"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  UserBdParams		  "DSRTSU_INTERNAL_RTI_VER;DSRTSU_INTERNAL_RTI_TYPE;RTICANMMDATA;DSRTSU_INTERNAL_DSETHERNETUDP;DSRTSU_"
+  "INTERNAL_RTIFPGA"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [0.0, 0.0, 960.0, 1040.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[13]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[910.0, 874.0]
+	ZoomFactor		[2.0]
+	Offset			[994.32934955472206, 143.11507276263231]
+      }
+    }
+  }
+  DSRTSU_INTERNAL_RTI_VER "450"
+  DSRTSU_INTERNAL_RTI_TYPE "rti1401"
+  RTICANMMDATA		  "struct('GeneralSetupData',struct('modelroot','D:\\ELN150201_TAIWAN\\trunk\\AdasDragon\\software\\sw"
+  "_development\\arch\\app\\ifo','generalsettings',struct('filesettings',struct('destfolder',struct('Name','RTICANMM_FI"
+  "LES','Check',1),'buildfolder',struct('Name','.','Check',1),'AbsDestfolder',struct('Name','D:\\ELN150201_TAIWAN\\trun"
+  "k\\AdasDragon\\software\\sw_development\\arch\\app\\ifo\\RTICANMM_FILES'),'AbsBuildfolder',struct('Name','D:\\ELN150"
+  "201_TAIWAN\\trunk\\AdasDragon\\software\\sw_development\\arch\\app\\ifo'))),'options',struct('addpaths',1,'rmpaths',"
+  "1,'addtrcexclusion',logical(1),'cannavigator',struct('checkmonitoring',0),'show_usrtrc',0,'use_usrtrc',0),'advanced'"
+  ",struct('options',[1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"
+  " 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1]),'MPSetup',{"
+  "{}},'modelname','sdc','block','sdc'))"
+  DSRTSU_INTERNAL_DSETHERNETUDP	"10"
+  DSRTSU_INTERNAL_RTIFPGA "40"
+  Created		  "Wed May 04 13:34:27 2016"
+  Creator		  "tescamilla"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "AT015555"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Mar 09 10:12:23 2017"
+  RTWModifiedTimeStamp	  410954958
+  ModelVersionFormat	  "1.%<AutoIncrement:18>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  RecordCoverage	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      6
+      Version		      "1.13.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  7
+	  Version		  "1.13.0"
+	  StartTime		  "0.0"
+	  StopTime		  "Inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.001"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode1"
+	  SolverName		  "ode1"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  8
+	  Version		  "1.13.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  9
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  off
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  off
+	  BufferReuse		  off
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  off
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  off
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  10
+	  Version		  "1.13.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  11
+	  Version		  "1.13.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Zero"
+	  ProdEndianess		  "BigEndian"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "Generic->Custom"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Zero"
+	  TargetEndianess	  "BigEndian"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Generic->Custom"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  12
+	  Version		  "1.13.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  13
+	  Version		  "1.13.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  14
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    16
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    Cell		    "PackageGeneratedCodeAndArtifacts"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "rti1401.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rti"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  TemplateMakefile	  "rti1401.tmf"
+	  Description		  "dSPACE DS1401 Hardware Platform"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  "rti1401_make_rtw_hook"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      15
+	      Version		      "1.13.0"
+	      Array {
+		Type			"Cell"
+		Dimension		22
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.STFCustomTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      16
+	      Version		      "1.13.0"
+	      Array {
+		Type			"Cell"
+		Dimension		22
+		Cell			"TimeScaleFactor"
+		Cell			"CCompilerOptimizationOpts"
+		Cell			"RTICfgSetVer"
+		Cell			"NetworkClient"
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"GRTInterface"
+		Cell			"ParMdlRefBuildCompliant"
+		Cell			"MultiInstanceERTCode"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   off
+	      ConcurrentExecutionCompliant off
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      on
+	      GenerateAllocFcn	      off
+	      SystemTargetFile	      "rti1401.tlc"
+	      DialogCategory	      0
+	      Array {
+		Type			"Handle"
+		Dimension		1
+		Simulink.GRTTargetCC {
+		  $BackupClass		  "Simulink.TargetCC"
+		  $ObjectID		  17
+		  Version		  "1.13.0"
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    18
+		    Cell		    "GeneratePreprocessorConditionals"
+		    Cell		    "IncludeMdlTerminateFcn"
+		    Cell		    "CombineOutputUpdateFcns"
+		    Cell		    "SuppressErrorStatus"
+		    Cell		    "ERTCustomFileBanners"
+		    Cell		    "GenerateSampleERTMain"
+		    Cell		    "GenerateTestInterfaces"
+		    Cell		    "ModelStepFunctionPrototypeControlCompliant"
+		    Cell		    "CPPClassGenCompliant"
+		    Cell		    "GenerateAllocFcn"
+		    Cell		    "PurelyIntegerCode"
+		    Cell		    "SupportComplex"
+		    Cell		    "SupportAbsoluteTime"
+		    Cell		    "SupportContinuousTime"
+		    Cell		    "SupportNonInlinedSFcns"
+		    Cell		    "GRTInterface"
+		    Cell		    "ParMdlRefBuildCompliant"
+		    Cell		    "MultiInstanceERTCode"
+		    PropName		    "DisabledProps"
+		  }
+		  TargetFcnLib		  "ansi_tfl_table_tmw.mat"
+		  TargetLibSuffix	  ""
+		  TargetPreCompLibLocation ""
+		  CodeReplacementLibrary  "ANSI_C"
+		  UtilityFuncGeneration	  "Auto"
+		  ERTMultiwordTypeDef	  "System defined"
+		  ERTMultiwordLength	  256
+		  MultiwordLength	  2048
+		  GenerateFullHeader	  on
+		  GenerateSampleERTMain	  off
+		  GenerateTestInterfaces  off
+		  IsPILTarget		  off
+		  ModelReferenceCompliant on
+		  ParMdlRefBuildCompliant on
+		  CompOptLevelCompliant	  off
+		  ConcurrentExecutionCompliant off
+		  IncludeMdlTerminateFcn  on
+		  GeneratePreprocessorConditionals "Disable all"
+		  CombineOutputUpdateFcns off
+		  CombineSignalStateStructs off
+		  SuppressErrorStatus	  off
+		  ERTFirstTimeCompliant	  off
+		  IncludeFileDelimiter	  "Auto"
+		  ERTCustomFileBanners	  off
+		  SupportAbsoluteTime	  on
+		  LogVarNameModifier	  "rt_"
+		  MatFileLogging	  on
+		  MultiInstanceERTCode	  off
+		  SupportNonFinite	  on
+		  SupportComplex	  on
+		  PurelyIntegerCode	  off
+		  SupportContinuousTime	  on
+		  SupportNonInlinedSFcns  on
+		  SupportVariableSizeSignals off
+		  EnableShiftOperators	  on
+		  ParenthesesLevel	  "Nominal"
+		  MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+		  ModelStepFunctionPrototypeControlCompliant off
+		  CPPClassGenCompliant	  off
+		  AutosarCompliant	  off
+		  GRTInterface		  on
+		  GenerateAllocFcn	  off
+		  UseMalloc		  off
+		  ExtMode		  off
+		  ExtModeStaticAlloc	  off
+		  ExtModeTesting	  off
+		  ExtModeStaticAllocSize  1000000
+		  ExtModeTransport	  0
+		  ExtModeMexFile	  "noextcomm"
+		  ExtModeIntrfLevel	  "Level1"
+		  RTWCAPISignals	  off
+		  RTWCAPIParams		  off
+		  RTWCAPIStates		  off
+		  RTWCAPIRootIO		  off
+		  GenerateASAP2		  off
+		}
+		PropName		"Components"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files (x86)_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1InitialSi"
+		"mState"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "RUN"
+		  Value			  1
+		  String		  "PAUSE"
+		  Value			  2
+		  String		  "STOP"
+		}
+		Name			"InitialSimState"
+		Value			"RUN"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files (x86)_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1Execution"
+		"Mode"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "real-time"
+		  Value			  1
+		  String		  "time-scaled"
+		  Value			  2
+		  String		  "as fast as possible"
+		}
+		Name			"ExecutionMode"
+		Value			"real-time"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"ExecutionModeNonUI"
+		Value			"RTSIM"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TimeScaleFactor"
+		Value			"1.0"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TimeScaleFactorNonUI"
+		Value			"OPTION_DISABLED"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files (x86)_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1Assertion"
+		"Mode"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "OFF"
+		  Value			  1
+		  String		  "WARN"
+		  Value			  2
+		  String		  "STOP"
+		}
+		Name			"AssertionMode"
+		Value			"OFF"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"EnableRealTimeTesting"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"EnableRealTimeTestingNonUI"
+		Value			"ON"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files (x86)_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1CCompiler"
+		"OptimizationOptsPopup_"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Default"
+		  Value			  1
+		  String		  "None"
+		  Value			  2
+		  String		  "User-defined"
+		}
+		Name			"CCompilerOptimizationOptsPopup_"
+		Value			"Default"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"CCompilerOptimizationOptsNonUI"
+		Value			"USE_DEFAULT"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"EnableDataSetStorage"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"EnableDataSetStorageNonUI"
+		Value			"OFF"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"AllowReservedHostServiceNums"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"int32"
+		Name			"RTICfgSetVer"
+		Value			450
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"LoadAfterBuild"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"LoadToFlash"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"LoadApplNonUI"
+		Value			"ON"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files (x86)_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1PlatformS"
+		"electionPopup"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Platform Name"
+		  Value			  1
+		  String		  "Network Client"
+		}
+		Name			"PlatformSelectionPopup"
+		Value			"Platform Name"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"BoardName"
+		Value			"ds1401"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"BoardNameNonUI"
+		Value			"ds1401"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"NetworkClientNonUI"
+		Value			"OPTION_DISABLED"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCOnlyGlobals"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateLabels"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateVirtualBlocks"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateStates"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateDerivatives"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateParamValues"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCIsOmitVdOn"
+		Value			off
+	      }
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  18
+	  Version		  "1.13.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    " "
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 153, 69, 1213, 699 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Arial"
+    FontSize		    12
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Arial"
+    FontSize		    12
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Arial"
+    FontSize		    12
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      From
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Goto
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+  }
+  System {
+    Name		    "sdc"
+    Location		    [0, 0, 960, 1040]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "200"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "285"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Same_Direction_Calculation"
+      SID		      "111"
+      Ports		      [5, 2]
+      Position		      [1010, 192, 1380, 388]
+      ZOrder		      338
+      LibraryVersion	      "*1.12"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"Same_Direction_Calculation"
+	Location		[0, 0, 960, 1040]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"125"
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_RadObjValidVect30_flg"
+	  SID			  "112"
+	  Position		  [20, 568, 50, 582]
+	  ZOrder		  330
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_RadObjValidVect30_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VIFO_TargAbsSpeedXVect30_mps"
+	  SID			  "113"
+	  Position		  [30, 1228, 60, 1242]
+	  ZOrder		  331
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VIFO_TargAbsSpeedXVect30_mps"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_RadDynPropertyVect30_enum"
+	  SID			  "114"
+	  Position		  [20, 903, 50, 917]
+	  ZOrder		  332
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_RadDynPropertyVect30_enum"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_CamObstValidVect30_flg"
+	  SID			  "115"
+	  Position		  [20, 613, 50, 627]
+	  ZOrder		  333
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_CamObsValidVect30_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VPER_CamObstStatusVect30_enum"
+	  SID			  "116"
+	  Position		  [20, 663, 50, 677]
+	  ZOrder		  334
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPER_CamObsStatusVect30_enum"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "ENUM_CAMDYN_ONCOMING"
+	  SID			  "143"
+	  Position		  [310, 707, 525, 733]
+	  ZOrder		  349
+	  ShowName		  off
+	  Value			  "ENUM_CAMDYN_ONCOMING"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "ENUM_CAMDYN_UNDEFINED"
+	  SID			  "176"
+	  Position		  [310, 827, 525, 853]
+	  ZOrder		  383
+	  ShowName		  off
+	  Value			  "ENUM_CAMDYN_UNDEFINED"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "ENUM_RADARDYN_ONCOMING"
+	  SID			  "145"
+	  Position		  [310, 947, 525, 973]
+	  ZOrder		  352
+	  ShowName		  off
+	  Value			  "ENUM_RADARDYN_ONCOMING"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "ENUM_RADARDYN_UNDEFINED"
+	  SID			  "181"
+	  Position		  [310, 1067, 525, 1093]
+	  ZOrder		  386
+	  ShowName		  off
+	  Value			  "ENUM_RADARDYN_UNDEFINED"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg1"
+	  SID			  "131"
+	  Position		  [1020, 561, 1250, 589]
+	  ZOrder		  344
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg10"
+	  SID			  "158"
+	  Position		  [1020, 1006, 1250, 1034]
+	  ZOrder		  365
+	  ShowName		  off
+	  GotoTag		  "VIFO_CamOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg11"
+	  SID			  "182"
+	  Position		  [1020, 1496, 1250, 1524]
+	  ZOrder		  389
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg12"
+	  SID			  "160"
+	  Position		  [1020, 1091, 1250, 1119]
+	  ZOrder		  366
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg13"
+	  SID			  "161"
+	  Position		  [1020, 1131, 1250, 1159]
+	  ZOrder		  367
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg14"
+	  SID			  "183"
+	  Position		  [1020, 1941, 1250, 1969]
+	  ZOrder		  403
+	  ShowName		  off
+	  GotoTag		  "VIFO_CamOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg15"
+	  SID			  "184"
+	  Position		  [1020, 1536, 1250, 1564]
+	  ZOrder		  390
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg16"
+	  SID			  "185"
+	  Position		  [1020, 1576, 1250, 1604]
+	  ZOrder		  391
+	  ShowName		  off
+	  GotoTag		  "VIFO_CamOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg17"
+	  SID			  "186"
+	  Position		  [1020, 1616, 1250, 1644]
+	  ZOrder		  392
+	  ShowName		  off
+	  GotoTag		  "VIFO_RadOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg18"
+	  SID			  "187"
+	  Position		  [1020, 1696, 1250, 1724]
+	  ZOrder		  394
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg19"
+	  SID			  "188"
+	  Position		  [1020, 1736, 1250, 1764]
+	  ZOrder		  395
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg2"
+	  SID			  "132"
+	  Position		  [1020, 601, 1250, 629]
+	  ZOrder		  345
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg20"
+	  SID			  "189"
+	  Position		  [1020, 1776, 1250, 1804]
+	  ZOrder		  397
+	  ShowName		  off
+	  GotoTag		  "VIFO_RadOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg21"
+	  SID			  "190"
+	  Position		  [1020, 1861, 1250, 1889]
+	  ZOrder		  399
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg22"
+	  SID			  "191"
+	  Position		  [1020, 1901, 1250, 1929]
+	  ZOrder		  400
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg23"
+	  SID			  "199"
+	  Position		  [1020, 2006, 1250, 2034]
+	  ZOrder		  406
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg24"
+	  SID			  "200"
+	  Position		  [1020, 2046, 1250, 2074]
+	  ZOrder		  407
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg25"
+	  SID			  "201"
+	  Position		  [1020, 2086, 1250, 2114]
+	  ZOrder		  408
+	  ShowName		  off
+	  GotoTag		  "VIFO_CamOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg26"
+	  SID			  "202"
+	  Position		  [1020, 2126, 1250, 2154]
+	  ZOrder		  409
+	  ShowName		  off
+	  GotoTag		  "VIFO_RadOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg27"
+	  SID			  "206"
+	  Position		  [1020, 2166, 1250, 2194]
+	  ZOrder		  413
+	  ShowName		  off
+	  GotoTag		  "VIFO_CamUndefVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg28"
+	  SID			  "209"
+	  Position		  [1020, 2206, 1250, 2234]
+	  ZOrder		  416
+	  ShowName		  off
+	  GotoTag		  "VIFO_RadUndefVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg29"
+	  SID			  "210"
+	  Position		  [1020, 2261, 1250, 2289]
+	  ZOrder		  417
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg3"
+	  SID			  "133"
+	  Position		  [1020, 641, 1250, 669]
+	  ZOrder		  346
+	  ShowName		  off
+	  GotoTag		  "VIFO_CamOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg30"
+	  SID			  "211"
+	  Position		  [1020, 2301, 1250, 2329]
+	  ZOrder		  418
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg31"
+	  SID			  "212"
+	  Position		  [1020, 2341, 1250, 2369]
+	  ZOrder		  419
+	  ShowName		  off
+	  GotoTag		  "VIFO_CamOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg32"
+	  SID			  "222"
+	  Position		  [1020, 2441, 1250, 2469]
+	  ZOrder		  429
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg33"
+	  SID			  "214"
+	  Position		  [1020, 2381, 1250, 2409]
+	  ZOrder		  424
+	  ShowName		  off
+	  GotoTag		  "VIFO_CamUndefVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg34"
+	  SID			  "223"
+	  Position		  [1020, 2481, 1250, 2509]
+	  ZOrder		  430
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg35"
+	  SID			  "236"
+	  Position		  [1020, 2661, 1250, 2689]
+	  ZOrder		  443
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg36"
+	  SID			  "225"
+	  Position		  [1020, 2521, 1250, 2549]
+	  ZOrder		  432
+	  ShowName		  off
+	  GotoTag		  "VIFO_RadOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg37"
+	  SID			  "237"
+	  Position		  [1020, 2701, 1250, 2729]
+	  ZOrder		  444
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg38"
+	  SID			  "227"
+	  Position		  [1020, 2561, 1250, 2589]
+	  ZOrder		  439
+	  ShowName		  off
+	  GotoTag		  "VIFO_RadUndefVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg39"
+	  SID			  "244"
+	  Position		  [1020, 2856, 1250, 2884]
+	  ZOrder		  451
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg4"
+	  SID			  "134"
+	  Position		  [1020, 681, 1250, 709]
+	  ZOrder		  347
+	  ShowName		  off
+	  GotoTag		  "VIFO_RadOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg40"
+	  SID			  "245"
+	  Position		  [1020, 2896, 1250, 2924]
+	  ZOrder		  452
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg41"
+	  SID			  "241"
+	  Position		  [1020, 2741, 1250, 2769]
+	  ZOrder		  448
+	  ShowName		  off
+	  GotoTag		  "VIFO_CamUndefVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg42"
+	  SID			  "242"
+	  Position		  [1020, 2781, 1250, 2809]
+	  ZOrder		  449
+	  ShowName		  off
+	  GotoTag		  "VIFO_RadUndefVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg43"
+	  SID			  "246"
+	  Position		  [1020, 2936, 1250, 2964]
+	  ZOrder		  453
+	  ShowName		  off
+	  GotoTag		  "VIFO_CamOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg44"
+	  SID			  "247"
+	  Position		  [1020, 2976, 1250, 3004]
+	  ZOrder		  454
+	  ShowName		  off
+	  GotoTag		  "VIFO_RadOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg45"
+	  SID			  "250"
+	  Position		  [1020, 3046, 1250, 3074]
+	  ZOrder		  457
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg46"
+	  SID			  "251"
+	  Position		  [1020, 3086, 1250, 3114]
+	  ZOrder		  458
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg47"
+	  SID			  "252"
+	  Position		  [1020, 3126, 1250, 3154]
+	  ZOrder		  459
+	  ShowName		  off
+	  GotoTag		  "VIFO_CamOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg48"
+	  SID			  "253"
+	  Position		  [1020, 3166, 1250, 3194]
+	  ZOrder		  460
+	  ShowName		  off
+	  GotoTag		  "VIFO_RadOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg49"
+	  SID			  "257"
+	  Position		  [1020, 3246, 1250, 3274]
+	  ZOrder		  464
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg5"
+	  SID			  "148"
+	  Position		  [1020, 761, 1250, 789]
+	  ZOrder		  355
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg50"
+	  SID			  "258"
+	  Position		  [1020, 3286, 1250, 3314]
+	  ZOrder		  465
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg51"
+	  SID			  "259"
+	  Position		  [1020, 3326, 1250, 3354]
+	  ZOrder		  467
+	  ShowName		  off
+	  GotoTag		  "VIFO_CamUndefVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg52"
+	  SID			  "264"
+	  Position		  [1020, 3486, 1250, 3514]
+	  ZOrder		  471
+	  ShowName		  off
+	  GotoTag		  "VIFO_RadUndefVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg53"
+	  SID			  "265"
+	  Position		  [1020, 3406, 1250, 3434]
+	  ZOrder		  472
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg54"
+	  SID			  "266"
+	  Position		  [1020, 3446, 1250, 3474]
+	  ZOrder		  473
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg55"
+	  SID			  "271"
+	  Position		  [1020, 3571, 1250, 3599]
+	  ZOrder		  478
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg56"
+	  SID			  "272"
+	  Position		  [1020, 3611, 1250, 3639]
+	  ZOrder		  479
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg57"
+	  SID			  "280"
+	  Position		  [1020, 3726, 1250, 3754]
+	  ZOrder		  487
+	  ShowName		  off
+	  GotoTag		  "VIFO_TargAbsSpeedXVect30_mps"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg6"
+	  SID			  "149"
+	  Position		  [1020, 801, 1250, 829]
+	  ZOrder		  356
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg7"
+	  SID			  "151"
+	  Position		  [1020, 841, 1250, 869]
+	  ZOrder		  358
+	  ShowName		  off
+	  GotoTag		  "VIFO_RadOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg8"
+	  SID			  "153"
+	  Position		  [1020, 926, 1250, 954]
+	  ZOrder		  360
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VPER_RadObjValidVect30_flg9"
+	  SID			  "154"
+	  Position		  [1020, 966, 1250, 994]
+	  ZOrder		  361
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VIFO_CamUndefVect30_enum"
+	  SID			  "178"
+	  Position		  [635, 785, 865, 815]
+	  ZOrder		  385
+	  ShowName		  off
+	  GotoTag		  "VIFO_CamUndefVect30_flg"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VIFO_RadUndefVect30_enum_enum"
+	  SID			  "179"
+	  Position		  [635, 1025, 865, 1055]
+	  ZOrder		  388
+	  ShowName		  off
+	  GotoTag		  "VIFO_RadUndefVect30_flg"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VIFO_RadUndefVect30_enum_enum1"
+	  SID			  "279"
+	  Position		  [635, 1185, 865, 1215]
+	  ZOrder		  486
+	  ShowName		  off
+	  GotoTag		  "VIFO_TargAbsSpeedXVect30_mps"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VPER_RadObjValidVect30_flg1"
+	  SID			  "127"
+	  Position		  [635, 560, 865, 590]
+	  ZOrder		  340
+	  ShowName		  off
+	  GotoTag		  "VPER_RadObjValidVect30_flg"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VPER_RadObjValidVect30_flg2"
+	  SID			  "128"
+	  Position		  [635, 605, 865, 635]
+	  ZOrder		  341
+	  ShowName		  off
+	  GotoTag		  "VPER_CamObstValidVect30_flg"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VPER_RadObjValidVect30_flg3"
+	  SID			  "129"
+	  Position		  [635, 665, 865, 695]
+	  ZOrder		  342
+	  ShowName		  off
+	  GotoTag		  "VIFO_CamOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VPER_RadObjValidVect30_flg4"
+	  SID			  "130"
+	  Position		  [635, 905, 865, 935]
+	  ZOrder		  343
+	  ShowName		  off
+	  GotoTag		  "VIFO_RadOncomingVect30_flg"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "IsInRange"
+	  SID			  "165"
+	  Ports			  [3, 1]
+	  Position		  [1565, 1217, 1685, 1323]
+	  ZOrder		  372
+	  BackgroundColor	  "lightBlue"
+	  LibraryVersion	  "1.475"
+	  SourceBlock		  "hcu_lib/IsInRange"
+	  SourceType		  ""
+	  ShowPortLabels	  "FromPortIcon"
+	  SystemSampleTime	  "-1"
+	  FunctionWithSeparateData off
+	  GeneratePreprocessorConditionals off
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "KIFO_SameDirecSpeed_kph"
+	  SID			  "168"
+	  Position		  [1230, 1292, 1405, 1318]
+	  ZOrder		  375
+	  ShowName		  off
+	  Value			  "KIFO_SameDirecSpeed_kph"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "KIFO_SameDirecSpeed_kph1"
+	  SID			  "172"
+	  Position		  [305, 1362, 520, 1388]
+	  ZOrder		  379
+	  ShowName		  off
+	  Value			  "KIFO_SameDirecSpeed_kph"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "KIFO_SameDirecSpeed_kph3"
+	  SID			  "285"
+	  Position		  [1070, 3817, 1250, 3843]
+	  ZOrder		  492
+	  ShowName		  off
+	  Value			  "KIFO_SameDirecSpeed_kph"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator1"
+	  SID			  "147"
+	  Ports			  [4, 1]
+	  Position		  [1400, 557, 1450, 713]
+	  ZOrder		  354
+	  ShowName		  off
+	  Inputs		  "4"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator10"
+	  SID			  "173"
+	  Ports			  [1, 1]
+	  Position		  [2260, 1154, 2290, 1186]
+	  ZOrder		  380
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	  Port {
+	    PortNumber		    1
+	    Name		    "VIFO_AEBTargetSameDirVect30_flg"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator11"
+	  SID			  "174"
+	  Ports			  [1, 1]
+	  Position		  [1305, 1089, 1335, 1121]
+	  ZOrder		  381
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator12"
+	  SID			  "175"
+	  Ports			  [1, 1]
+	  Position		  [1305, 1129, 1335, 1161]
+	  ZOrder		  382
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator13"
+	  SID			  "192"
+	  Ports			  [4, 1]
+	  Position		  [1400, 1492, 1450, 1648]
+	  ZOrder		  393
+	  ShowName		  off
+	  Inputs		  "4"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator14"
+	  SID			  "193"
+	  Ports			  [1, 1]
+	  Position		  [1305, 1734, 1335, 1766]
+	  ZOrder		  396
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator15"
+	  SID			  "194"
+	  Ports			  [3, 1]
+	  Position		  [1400, 1688, 1450, 1812]
+	  ZOrder		  398
+	  ShowName		  off
+	  Inputs		  "3"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator16"
+	  SID			  "195"
+	  Ports			  [1, 1]
+	  Position		  [1305, 1859, 1335, 1891]
+	  ZOrder		  401
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator17"
+	  SID			  "196"
+	  Ports			  [3, 1]
+	  Position		  [1400, 1853, 1450, 1977]
+	  ZOrder		  402
+	  ShowName		  off
+	  Inputs		  "3"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator18"
+	  SID			  "197"
+	  Ports			  [3, 1]
+	  Position		  [1665, 1752, 1715, 1868]
+	  ZOrder		  404
+	  ShowName		  off
+	  Operator		  "OR"
+	  Inputs		  "3"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	  Port {
+	    PortNumber		    1
+	    Name		    "NIFO_ACCOncomingVeh_flg"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator19"
+	  SID			  "198"
+	  Ports			  [1, 1]
+	  Position		  [1935, 1794, 1965, 1826]
+	  ZOrder		  405
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator2"
+	  SID			  "150"
+	  Ports			  [1, 1]
+	  Position		  [1305, 799, 1335, 831]
+	  ZOrder		  357
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator20"
+	  SID			  "203"
+	  Ports			  [6, 1]
+	  Position		  [1400, 2004, 1450, 2236]
+	  ZOrder		  410
+	  ShowName		  off
+	  Inputs		  "6"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator21"
+	  SID			  "204"
+	  Ports			  [1, 1]
+	  Position		  [1305, 2084, 1335, 2116]
+	  ZOrder		  411
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator22"
+	  SID			  "205"
+	  Ports			  [1, 1]
+	  Position		  [1305, 2124, 1335, 2156]
+	  ZOrder		  412
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator23"
+	  SID			  "207"
+	  Ports			  [1, 1]
+	  Position		  [1305, 2164, 1335, 2196]
+	  ZOrder		  414
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator24"
+	  SID			  "208"
+	  Ports			  [1, 1]
+	  Position		  [1305, 2204, 1335, 2236]
+	  ZOrder		  415
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator25"
+	  SID			  "216"
+	  Ports			  [4, 1]
+	  Position		  [1400, 2251, 1450, 2419]
+	  ZOrder		  421
+	  ShowName		  off
+	  Inputs		  "4"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator26"
+	  SID			  "217"
+	  Ports			  [1, 1]
+	  Position		  [1305, 2339, 1335, 2371]
+	  ZOrder		  422
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator27"
+	  SID			  "234"
+	  Ports			  [4, 1]
+	  Position		  [1400, 2431, 1450, 2599]
+	  ZOrder		  441
+	  ShowName		  off
+	  Inputs		  "4"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator28"
+	  SID			  "219"
+	  Ports			  [1, 1]
+	  Position		  [1305, 2379, 1335, 2411]
+	  ZOrder		  425
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator29"
+	  SID			  "235"
+	  Ports			  [3, 1]
+	  Position		  [1665, 2277, 1715, 2393]
+	  ZOrder		  442
+	  ShowName		  off
+	  Operator		  "OR"
+	  Inputs		  "3"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	  Port {
+	    PortNumber		    1
+	    Name		    "NIFO_ACCStopOrMoveVeh_flg"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator3"
+	  SID			  "152"
+	  Ports			  [3, 1]
+	  Position		  [1400, 753, 1450, 877]
+	  ZOrder		  359
+	  ShowName		  off
+	  Inputs		  "3"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator30"
+	  SID			  "221"
+	  Ports			  [1, 1]
+	  Position		  [1305, 2259, 1335, 2291]
+	  ZOrder		  428
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator31"
+	  SID			  "230"
+	  Ports			  [1, 1]
+	  Position		  [1305, 2519, 1335, 2551]
+	  ZOrder		  435
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator32"
+	  SID			  "240"
+	  Ports			  [3, 1]
+	  Position		  [1550, 2651, 1600, 2779]
+	  ZOrder		  447
+	  ShowName		  off
+	  Inputs		  "3"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator33"
+	  SID			  "232"
+	  Ports			  [1, 1]
+	  Position		  [1305, 2559, 1335, 2591]
+	  ZOrder		  438
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator34"
+	  SID			  "233"
+	  Ports			  [1, 1]
+	  Position		  [1305, 2479, 1335, 2511]
+	  ZOrder		  440
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator35"
+	  SID			  "243"
+	  Ports			  [2, 1]
+	  Position		  [1400, 2734, 1450, 2816]
+	  ZOrder		  450
+	  ShowName		  off
+	  Operator		  "OR"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator36"
+	  SID			  "248"
+	  Ports			  [4, 1]
+	  Position		  [1400, 2852, 1450, 3008]
+	  ZOrder		  455
+	  ShowName		  off
+	  Inputs		  "4"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator37"
+	  SID			  "249"
+	  Ports			  [1, 1]
+	  Position		  [1305, 2974, 1335, 3006]
+	  ZOrder		  456
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator38"
+	  SID			  "254"
+	  Ports			  [4, 1]
+	  Position		  [1400, 3042, 1450, 3198]
+	  ZOrder		  461
+	  ShowName		  off
+	  Inputs		  "4"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator39"
+	  SID			  "261"
+	  Ports			  [3, 1]
+	  Position		  [1400, 3236, 1450, 3364]
+	  ZOrder		  466
+	  ShowName		  off
+	  Inputs		  "3"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator4"
+	  SID			  "156"
+	  Ports			  [1, 1]
+	  Position		  [1305, 924, 1335, 956]
+	  ZOrder		  362
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator40"
+	  SID			  "256"
+	  Ports			  [1, 1]
+	  Position		  [1305, 3124, 1335, 3156]
+	  ZOrder		  463
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator41"
+	  SID			  "263"
+	  Ports			  [1, 1]
+	  Position		  [1305, 3244, 1335, 3276]
+	  ZOrder		  470
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator42"
+	  SID			  "268"
+	  Ports			  [3, 1]
+	  Position		  [1400, 3396, 1450, 3524]
+	  ZOrder		  474
+	  ShowName		  off
+	  Inputs		  "3"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator43"
+	  SID			  "273"
+	  Ports			  [1, 1]
+	  Position		  [1305, 3569, 1335, 3601]
+	  ZOrder		  481
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator44"
+	  SID			  "270"
+	  Ports			  [1, 1]
+	  Position		  [1305, 3444, 1335, 3476]
+	  ZOrder		  477
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator45"
+	  SID			  "274"
+	  Ports			  [1, 1]
+	  Position		  [1305, 3609, 1335, 3641]
+	  ZOrder		  482
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator46"
+	  SID			  "275"
+	  Ports			  [2, 1]
+	  Position		  [1400, 3563, 1450, 3647]
+	  ZOrder		  480
+	  ShowName		  off
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator47"
+	  SID			  "276"
+	  Ports			  [6, 1]
+	  Position		  [1665, 3102, 1715, 3218]
+	  ZOrder		  483
+	  ShowName		  off
+	  Operator		  "OR"
+	  Inputs		  "6"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator48"
+	  SID			  "277"
+	  Ports			  [1, 1]
+	  Position		  [1935, 3164, 1965, 3196]
+	  ZOrder		  484
+	  ShowName		  off
+	  Operator		  "NOT"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator49"
+	  SID			  "278"
+	  Ports			  [2, 1]
+	  Position		  [1820, 3138, 1870, 3222]
+	  ZOrder		  485
+	  ShowName		  off
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator5"
+	  SID			  "157"
+	  Ports			  [3, 1]
+	  Position		  [1400, 918, 1450, 1042]
+	  ZOrder		  364
+	  ShowName		  off
+	  Inputs		  "3"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator50"
+	  SID			  "283"
+	  Ports			  [3, 1]
+	  Position		  [2120, 2277, 2170, 2393]
+	  ZOrder		  490
+	  ShowName		  off
+	  Operator		  "OR"
+	  Inputs		  "3"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	  Port {
+	    PortNumber		    1
+	    Name		    "VIFO_ACCTargetSameDirVect30_flg"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator6"
+	  SID			  "164"
+	  Ports			  [4, 1]
+	  Position		  [1610, 817, 1660, 973]
+	  ZOrder		  371
+	  ShowName		  off
+	  Operator		  "OR"
+	  Inputs		  "4"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator7"
+	  SID			  "163"
+	  Ports			  [2, 1]
+	  Position		  [1400, 1083, 1450, 1167]
+	  ZOrder		  369
+	  ShowName		  off
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator8"
+	  SID			  "169"
+	  Ports			  [2, 1]
+	  Position		  [1790, 988, 1840, 1072]
+	  ZOrder		  376
+	  ShowName		  off
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator9"
+	  SID			  "170"
+	  Ports			  [2, 1]
+	  Position		  [1945, 1124, 1995, 1211]
+	  ZOrder		  377
+	  ShowName		  off
+	  Operator		  "OR"
+	  AllPortsSameDT	  off
+	  OutDataTypeStr	  "boolean"
+	  Port {
+	    PortNumber		    1
+	    Name		    "VIFO_TargetOncomingVect30_flg"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator1"
+	  SID			  "146"
+	  Ports			  [2, 1]
+	  Position		  [580, 902, 610, 933]
+	  ZOrder		  353
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator11"
+	  SID			  "142"
+	  Ports			  [2, 1]
+	  Position		  [580, 662, 610, 693]
+	  ZOrder		  350
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator2"
+	  SID			  "171"
+	  Ports			  [2, 1]
+	  Position		  [1195, 1352, 1225, 1383]
+	  ZOrder		  378
+	  ShowName		  off
+	  Operator		  "<"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator3"
+	  SID			  "177"
+	  Ports			  [2, 1]
+	  Position		  [580, 782, 610, 813]
+	  ZOrder		  384
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator4"
+	  SID			  "180"
+	  Ports			  [2, 1]
+	  Position		  [580, 1022, 610, 1053]
+	  ZOrder		  387
+	  ShowName		  off
+	  Operator		  "=="
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  RelationalOperator
+	  Name			  "Relational\nOperator5"
+	  SID			  "282"
+	  Ports			  [2, 1]
+	  Position		  [1410, 3732, 1440, 3763]
+	  ZOrder		  488
+	  ShowName		  off
+	  Operator		  "<"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "boolean"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "ZERO_FLOAT"
+	  SID			  "166"
+	  Position		  [1230, 1257, 1405, 1283]
+	  ZOrder		  373
+	  ShowName		  off
+	  Value			  "ZERO_FLOAT"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "mps2kph"
+	  SID			  "167"
+	  Ports			  [1, 1]
+	  Position		  [430, 1224, 525, 1246]
+	  ZOrder		  374
+	  ShowName		  off
+	  LibraryVersion	  "1.475"
+	  SourceBlock		  "hcu_lib/mps2kph"
+	  SourceType		  "Conversion"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VIFO_AEBTargetSameDirVect30_flg"
+	  SID			  "117"
+	  Position		  [2580, 1163, 2610, 1177]
+	  ZOrder		  335
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VIFO_ACCTargetSameDirVect30_flg"
+	  SID			  "284"
+	  Position		  [2580, 2328, 2610, 2342]
+	  ZOrder		  491
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator12"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator7"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator11"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator7"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "VIFO_TargetOncomingVect30_flg"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Logical\nOperator9"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator10"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "VIFO_AEBTargetSameDirVect30_flg"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Logical\nOperator10"
+	  SrcPort		  1
+	  DstBlock		  "VIFO_AEBTargetSameDirVect30_flg"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator8"
+	  SrcPort		  1
+	  Points		  [47, 0; 0, 115]
+	  DstBlock		  "Logical\nOperator9"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator2"
+	  SrcPort		  1
+	  Points		  [664, 0; 0, -180]
+	  DstBlock		  "Logical\nOperator9"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "KIFO_SameDirecSpeed_kph1"
+	  SrcPort		  1
+	  DstBlock		  "Relational\nOperator2"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "IsInRange"
+	  SrcPort		  1
+	  Points		  [36, 0; 0, -220]
+	  DstBlock		  "Logical\nOperator8"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator6"
+	  SrcPort		  1
+	  Points		  [60, 0; 0, 115]
+	  DstBlock		  "Logical\nOperator8"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "KIFO_SameDirecSpeed_kph"
+	  SrcPort		  1
+	  DstBlock		  "IsInRange"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "mps2kph"
+	  SrcPort		  1
+	  Points		  [61, 0]
+	  Branch {
+	    Points		    [0, -35]
+	    DstBlock		    "Goto_VIFO_RadUndefVect30_enum_enum1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [483, 0]
+	    Branch {
+	      DstBlock		      "IsInRange"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 125]
+	      DstBlock		      "Relational\nOperator2"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "ZERO_FLOAT"
+	  SrcPort		  1
+	  DstBlock		  "IsInRange"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "VIFO_TargAbsSpeedXVect30_mps"
+	  SrcPort		  1
+	  DstBlock		  "mps2kph"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator1"
+	  SrcPort		  1
+	  Points		  [115, 0; 0, 200]
+	  DstBlock		  "Logical\nOperator6"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator7"
+	  SrcPort		  1
+	  Points		  [115, 0; 0, -170]
+	  DstBlock		  "Logical\nOperator6"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator5"
+	  SrcPort		  1
+	  Points		  [75, 0; 0, -65]
+	  DstBlock		  "Logical\nOperator6"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator3"
+	  SrcPort		  1
+	  Points		  [75, 0; 0, 60]
+	  DstBlock		  "Logical\nOperator6"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg12"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator11"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg13"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator12"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator4"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg10"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator5"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg9"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator5"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg8"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg7"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator3"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator2"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg6"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg5"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator3"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ENUM_RADARDYN_ONCOMING"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -35]
+	  DstBlock		  "Relational\nOperator1"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "VPER_CamObstStatusVect30_enum"
+	  SrcPort		  1
+	  Points		  [223, 0]
+	  Branch {
+	    DstBlock		    "Relational\nOperator11"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 120]
+	    DstBlock		    "Relational\nOperator3"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "ENUM_CAMDYN_ONCOMING"
+	  SrcPort		  1
+	  Points		  [15, 0; 0, -35]
+	  DstBlock		  "Relational\nOperator11"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg4"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator1"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg3"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator1"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg2"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator1"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg1"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator1"
+	  SrcPort		  1
+	  DstBlock		  "Goto_VPER_RadObjValidVect30_flg4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator11"
+	  SrcPort		  1
+	  DstBlock		  "Goto_VPER_RadObjValidVect30_flg3"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "VPER_CamObstValidVect30_flg"
+	  SrcPort		  1
+	  DstBlock		  "Goto_VPER_RadObjValidVect30_flg2"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "VPER_RadObjValidVect30_flg"
+	  SrcPort		  1
+	  DstBlock		  "Goto_VPER_RadObjValidVect30_flg1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ENUM_CAMDYN_UNDEFINED"
+	  SrcPort		  1
+	  Points		  [12, 0; 0, -35]
+	  DstBlock		  "Relational\nOperator3"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator3"
+	  SrcPort		  1
+	  DstBlock		  "Goto_VIFO_CamUndefVect30_enum"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "VPER_RadDynPropertyVect30_enum"
+	  SrcPort		  1
+	  Points		  [226, 0]
+	  Branch {
+	    DstBlock		    "Relational\nOperator1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 120]
+	    DstBlock		    "Relational\nOperator4"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "ENUM_RADARDYN_UNDEFINED"
+	  SrcPort		  1
+	  Points		  [29, 0; 0, -35]
+	  DstBlock		  "Relational\nOperator4"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator4"
+	  SrcPort		  1
+	  DstBlock		  "Goto_VIFO_RadUndefVect30_enum_enum"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator13"
+	  SrcPort		  1
+	  Points		  [105, 0; 0, 200]
+	  DstBlock		  "Logical\nOperator18"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator17"
+	  SrcPort		  1
+	  Points		  [75, 0; 0, -65]
+	  DstBlock		  "Logical\nOperator18"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator15"
+	  SrcPort		  1
+	  Points		  [55, 0; 0, 60]
+	  DstBlock		  "Logical\nOperator18"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator16"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator17"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg14"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator17"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg22"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator17"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg21"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator16"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg20"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator15"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator14"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator15"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg19"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator14"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg18"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator15"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg17"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator13"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg16"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator13"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg15"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator13"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg11"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator13"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "NIFO_ACCOncomingVeh_flg"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Logical\nOperator18"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator19"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg26"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator22"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg25"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator21"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg24"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator20"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg23"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator20"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator21"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator20"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator22"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator20"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg27"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator23"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator23"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator20"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg28"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator24"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator24"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator20"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg31"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator26"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg30"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator25"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg29"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator30"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator26"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator25"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg33"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator28"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator28"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator25"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator30"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator25"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg36"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator31"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg34"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator34"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg32"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator27"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator31"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator27"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg38"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator33"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator33"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator27"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator34"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator27"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator20"
+	  SrcPort		  1
+	  Points		  [80, 0; 0, 175]
+	  DstBlock		  "Logical\nOperator29"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator25"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator29"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator27"
+	  SrcPort		  1
+	  Points		  [80, 0; 0, -140]
+	  DstBlock		  "Logical\nOperator29"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator35"
+	  SrcPort		  1
+	  Points		  [80, 0]
+	  DstBlock		  "Logical\nOperator32"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg37"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator32"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg35"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator32"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg41"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator35"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg42"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator35"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg44"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator37"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg43"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator36"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg40"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator36"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg39"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator36"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator37"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator36"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg47"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator40"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg46"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator38"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg45"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator38"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg48"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator38"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator40"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator38"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg51"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator39"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg50"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator39"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg49"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator41"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator41"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator39"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg52"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator42"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg54"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator44"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg53"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator42"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator44"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator42"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator45"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator46"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator43"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator46"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg55"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator43"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg56"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator45"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator38"
+	  SrcPort		  1
+	  Points		  [102, 0; 0, 30]
+	  DstBlock		  "Logical\nOperator47"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator39"
+	  SrcPort		  1
+	  Points		  [102, 0; 0, -130]
+	  DstBlock		  "Logical\nOperator47"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator36"
+	  SrcPort		  1
+	  Points		  [156, 0; 0, 200]
+	  DstBlock		  "Logical\nOperator47"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator32"
+	  SrcPort		  1
+	  Points		  [33, 0; 0, 395]
+	  DstBlock		  "Logical\nOperator47"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator42"
+	  SrcPort		  1
+	  Points		  [156, 0; 0, -270]
+	  DstBlock		  "Logical\nOperator47"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator46"
+	  SrcPort		  1
+	  Points		  [183, 0; 0, -395]
+	  DstBlock		  "Logical\nOperator47"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator47"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator49"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "KIFO_SameDirecSpeed_kph3"
+	  SrcPort		  1
+	  Points		  [75, 0; 0, -75]
+	  DstBlock		  "Relational\nOperator5"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "From_VPER_RadObjValidVect30_flg57"
+	  SrcPort		  1
+	  DstBlock		  "Relational\nOperator5"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Relational\nOperator5"
+	  SrcPort		  1
+	  Points		  [309, 0; 0, -550]
+	  DstBlock		  "Logical\nOperator49"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator49"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator48"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "NIFO_ACCStopOrMoveVeh_flg"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Logical\nOperator29"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator50"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator19"
+	  SrcPort		  1
+	  Points		  [98, 0; 0, 485]
+	  DstBlock		  "Logical\nOperator50"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Logical\nOperator48"
+	  SrcPort		  1
+	  Points		  [98, 0; 0, -805]
+	  DstBlock		  "Logical\nOperator50"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "VIFO_ACCTargetSameDirVect30_flg"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Logical\nOperator50"
+	  SrcPort		  1
+	  DstBlock		  "VIFO_ACCTargetSameDirVect30_flg"
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}

@@ -1,0 +1,2269 @@
+Library {
+  Name			  "slc"
+  Version		  8.1
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1252"
+  PostLoadFcn		  ", if any(exist('dsrtsu_mdlpostloadfcn', 'file') == [2, 3, 6]), try dsrtsu_mdlpostloadfcn('Execute', "
+  "bdroot); catch fprintf('Error in PostLoadFcn (dsrtsu_mdlpostloadfcn) for model \"%s\":\\n %s\\n', bdroot, lasterr); "
+  "end, end, \n"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  UserBdParams		  "DSRTSU_INTERNAL_RTI_VER;DSRTSU_INTERNAL_RTI_TYPE;RTICANMMDATA;DSRTSU_INTERNAL_DSETHERNETUDP;DSRTSU_"
+  "INTERNAL_RTIFPGA"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-8.0, 0.0, 1932.0, 1056.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[13]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1882.0, 890.0]
+	ZoomFactor		[1.0]
+	Offset			[0.0, 0.0]
+      }
+    }
+  }
+  DSRTSU_INTERNAL_RTI_VER "450"
+  DSRTSU_INTERNAL_RTI_TYPE "rti1401"
+  RTICANMMDATA		  "struct('GeneralSetupData',struct('modelroot','D:\\ELN150201_TAIWAN\\trunk\\AdasDragon\\software\\sw"
+  "_development\\arch\\app\\acc','generalsettings',struct('filesettings',struct('destfolder',struct('Name','RTICANMM_FI"
+  "LES','Check',1),'buildfolder',struct('Name','.','Check',1),'AbsDestfolder',struct('Name','D:\\ELN150201_TAIWAN\\trun"
+  "k\\AdasDragon\\software\\sw_development\\arch\\app\\acc\\RTICANMM_FILES'),'AbsBuildfolder',struct('Name','D:\\ELN150"
+  "201_TAIWAN\\trunk\\AdasDragon\\software\\sw_development\\arch\\app\\acc'))),'options',struct('addpaths',1,'rmpaths',"
+  "1,'addtrcexclusion',logical(1),'cannavigator',struct('checkmonitoring',0),'show_usrtrc',0,'use_usrtrc',0),'advanced'"
+  ",struct('options',[1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"
+  " 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1]),'MPSetup',{"
+  "{}},'modelname','slc','block','slc'))"
+  DSRTSU_INTERNAL_DSETHERNETUDP	"10"
+  DSRTSU_INTERNAL_RTIFPGA "40"
+  Created		  "Fri Jul 22 16:22:05 2016"
+  Creator		  "tescamilla"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "AT015555"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Mar 17 10:35:24 2017"
+  RTWModifiedTimeStamp	  411647708
+  ModelVersionFormat	  "1.%<AutoIncrement:151>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "all"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  RecordCoverage	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      6
+      Version		      "1.13.0"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  7
+	  Version		  "1.13.0"
+	  StartTime		  "0.0"
+	  StopTime		  "Inf"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.001"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode1"
+	  SolverName		  "ode1"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  8
+	  Version		  "1.13.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  9
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  off
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  off
+	  BufferReuse		  off
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  off
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  off
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  10
+	  Version		  "1.13.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  11
+	  Version		  "1.13.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Zero"
+	  ProdEndianess		  "BigEndian"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "Generic->Custom"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Zero"
+	  TargetEndianess	  "BigEndian"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Generic->Custom"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  12
+	  Version		  "1.13.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  13
+	  Version		  "1.13.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  14
+	  Version		  "1.13.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    16
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    Cell		    "PackageGeneratedCodeAndArtifacts"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "rti1401.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rti"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  TemplateMakefile	  "rti1401.tmf"
+	  Description		  "dSPACE DS1401 Hardware Platform"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  "rti1401_make_rtw_hook"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      15
+	      Version		      "1.13.0"
+	      Array {
+		Type			"Cell"
+		Dimension		22
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.STFCustomTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      16
+	      Version		      "1.13.0"
+	      Array {
+		Type			"Cell"
+		Dimension		22
+		Cell			"TimeScaleFactor"
+		Cell			"CCompilerOptimizationOpts"
+		Cell			"RTICfgSetVer"
+		Cell			"NetworkClient"
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"GRTInterface"
+		Cell			"ParMdlRefBuildCompliant"
+		Cell			"MultiInstanceERTCode"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   off
+	      ConcurrentExecutionCompliant off
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      on
+	      GenerateAllocFcn	      off
+	      SystemTargetFile	      "rti1401.tlc"
+	      DialogCategory	      0
+	      Array {
+		Type			"Handle"
+		Dimension		1
+		Simulink.GRTTargetCC {
+		  $BackupClass		  "Simulink.TargetCC"
+		  $ObjectID		  17
+		  Version		  "1.13.0"
+		  Array {
+		    Type		    "Cell"
+		    Dimension		    18
+		    Cell		    "GeneratePreprocessorConditionals"
+		    Cell		    "IncludeMdlTerminateFcn"
+		    Cell		    "CombineOutputUpdateFcns"
+		    Cell		    "SuppressErrorStatus"
+		    Cell		    "ERTCustomFileBanners"
+		    Cell		    "GenerateSampleERTMain"
+		    Cell		    "GenerateTestInterfaces"
+		    Cell		    "ModelStepFunctionPrototypeControlCompliant"
+		    Cell		    "CPPClassGenCompliant"
+		    Cell		    "GenerateAllocFcn"
+		    Cell		    "PurelyIntegerCode"
+		    Cell		    "SupportComplex"
+		    Cell		    "SupportAbsoluteTime"
+		    Cell		    "SupportContinuousTime"
+		    Cell		    "SupportNonInlinedSFcns"
+		    Cell		    "GRTInterface"
+		    Cell		    "ParMdlRefBuildCompliant"
+		    Cell		    "MultiInstanceERTCode"
+		    PropName		    "DisabledProps"
+		  }
+		  TargetFcnLib		  "ansi_tfl_table_tmw.mat"
+		  TargetLibSuffix	  ""
+		  TargetPreCompLibLocation ""
+		  CodeReplacementLibrary  "ANSI_C"
+		  UtilityFuncGeneration	  "Auto"
+		  ERTMultiwordTypeDef	  "System defined"
+		  ERTMultiwordLength	  256
+		  MultiwordLength	  2048
+		  GenerateFullHeader	  on
+		  GenerateSampleERTMain	  off
+		  GenerateTestInterfaces  off
+		  IsPILTarget		  off
+		  ModelReferenceCompliant on
+		  ParMdlRefBuildCompliant on
+		  CompOptLevelCompliant	  off
+		  ConcurrentExecutionCompliant off
+		  IncludeMdlTerminateFcn  on
+		  GeneratePreprocessorConditionals "Disable all"
+		  CombineOutputUpdateFcns off
+		  CombineSignalStateStructs off
+		  SuppressErrorStatus	  off
+		  ERTFirstTimeCompliant	  off
+		  IncludeFileDelimiter	  "Auto"
+		  ERTCustomFileBanners	  off
+		  SupportAbsoluteTime	  on
+		  LogVarNameModifier	  "rt_"
+		  MatFileLogging	  on
+		  MultiInstanceERTCode	  off
+		  SupportNonFinite	  on
+		  SupportComplex	  on
+		  PurelyIntegerCode	  off
+		  SupportContinuousTime	  on
+		  SupportNonInlinedSFcns  on
+		  SupportVariableSizeSignals off
+		  EnableShiftOperators	  on
+		  ParenthesesLevel	  "Nominal"
+		  MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+		  ModelStepFunctionPrototypeControlCompliant off
+		  CPPClassGenCompliant	  off
+		  AutosarCompliant	  off
+		  GRTInterface		  on
+		  GenerateAllocFcn	  off
+		  UseMalloc		  off
+		  ExtMode		  off
+		  ExtModeStaticAlloc	  off
+		  ExtModeTesting	  off
+		  ExtModeStaticAllocSize  1000000
+		  ExtModeTransport	  0
+		  ExtModeMexFile	  "noextcomm"
+		  ExtModeIntrfLevel	  "Level1"
+		  RTWCAPISignals	  off
+		  RTWCAPIParams		  off
+		  RTWCAPIStates		  off
+		  RTWCAPIRootIO		  off
+		  GenerateASAP2		  off
+		}
+		PropName		"Components"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files (x86)_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1InitialSi"
+		"mState"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "RUN"
+		  Value			  1
+		  String		  "PAUSE"
+		  Value			  2
+		  String		  "STOP"
+		}
+		Name			"InitialSimState"
+		Value			"RUN"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files (x86)_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1Execution"
+		"Mode"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "real-time"
+		  Value			  1
+		  String		  "time-scaled"
+		  Value			  2
+		  String		  "as fast as possible"
+		}
+		Name			"ExecutionMode"
+		Value			"real-time"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"ExecutionModeNonUI"
+		Value			"RTSIM"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TimeScaleFactor"
+		Value			"1.0"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"TimeScaleFactorNonUI"
+		Value			"OPTION_DISABLED"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files (x86)_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1Assertion"
+		"Mode"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "OFF"
+		  Value			  1
+		  String		  "WARN"
+		  Value			  2
+		  String		  "STOP"
+		}
+		Name			"AssertionMode"
+		Value			"OFF"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"EnableRealTimeTesting"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"EnableRealTimeTestingNonUI"
+		Value			"ON"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files (x86)_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1CCompiler"
+		"OptimizationOptsPopup_"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Default"
+		  Value			  1
+		  String		  "None"
+		  Value			  2
+		  String		  "User-defined"
+		}
+		Name			"CCompilerOptimizationOptsPopup_"
+		Value			"Default"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"CCompilerOptimizationOptsNonUI"
+		Value			"USE_DEFAULT"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"EnableDataSetStorage"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"EnableDataSetStorageNonUI"
+		Value			"OFF"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"AllowReservedHostServiceNums"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"int32"
+		Name			"RTICfgSetVer"
+		Value			450
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"LoadAfterBuild"
+		Value			on
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"LoadToFlash"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"LoadApplNonUI"
+		Value			"ON"
+	      }
+	      CustomProperty {
+		DataType		"RTWOptions_EnumType_C__Program Files (x86)_dSPACE RCPHIL 2014-B_MATLAB_RTI_RTI1401_TLC_rti1401_1PlatformS"
+		"electionPopup"
+		EnumStrPairs {
+		  Value			  0
+		  String		  "Platform Name"
+		  Value			  1
+		  String		  "Network Client"
+		}
+		Name			"PlatformSelectionPopup"
+		Value			"Platform Name"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"BoardName"
+		Value			"ds1401"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"BoardNameNonUI"
+		Value			"ds1401"
+	      }
+	      CustomProperty {
+		DataType		"string"
+		Name			"NetworkClientNonUI"
+		Value			"OPTION_DISABLED"
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCOnlyGlobals"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateLabels"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateVirtualBlocks"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateStates"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateDerivatives"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCGenerateParamValues"
+		Value			off
+	      }
+	      CustomProperty {
+		DataType		"slbool"
+		Name			"TRCIsOmitVdOn"
+		Value			off
+	      }
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  18
+	  Version		  "1.13.0"
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    " "
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 153, 69, 1213, 699 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Arial"
+    FontSize		    12
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Arial"
+    FontSize		    12
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Arial"
+    FontSize		    12
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      From
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Goto
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+    }
+  }
+  System {
+    Name		    "slc"
+    Location		    [-8, 0, 1924, 1056]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "2175"
+    Block {
+      BlockType		      SubSystem
+      Name		      "ACC_Switching_Logic_and_Control"
+      SID		      "1429"
+      Ports		      [11, 9]
+      Position		      [165, 39, 565, 831]
+      ZOrder		      583
+      LibraryVersion	      "*1.103"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Auto"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      Port {
+	PortNumber		3
+	PropagatedSignals	"VACC_DecelControlReq_flg"
+	ShowPropagatedSignals	"on"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      System {
+	Name			"ACC_Switching_Logic_and_Control"
+	Location		[-8, 0, 1924, 1056]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"60"
+	Block {
+	  BlockType		  Inport
+	  Name			  "VDINR_VehSpd_mps"
+	  SID			  "1432"
+	  Position		  [20, 333, 50, 347]
+	  ZOrder		  571
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VJUD_ACCSetSpeed_kph"
+	  SID			  "1433"
+	  Position		  [20, 398, 50, 412]
+	  ZOrder		  489
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VJUD_ACCSetTimeGap_s"
+	  SID			  "1435"
+	  Position		  [20, 268, 50, 282]
+	  ZOrder		  487
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VIFO_ACCTargetVehRelSpeedX_mps"
+	  SID			  "1434"
+	  Position		  [20, 1003, 50, 1017]
+	  ZOrder		  560
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VACC_ACCTargetVehSpd_mps"
+	  SID			  "1436"
+	  Position		  [20, 463, 50, 477]
+	  ZOrder		  490
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VIFO_ACCTGap_s"
+	  SID			  "1442"
+	  Position		  [20, 528, 50, 542]
+	  ZOrder		  544
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VIFO_ACCTargetVehAssigned_flg"
+	  SID			  "1444"
+	  Position		  [20, 593, 50, 607]
+	  ZOrder		  545
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VIFO_ACCDist_flg"
+	  SID			  "1984"
+	  Position		  [20, 658, 50, 672]
+	  ZOrder		  669
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VACC_ACCOverride_flg"
+	  SID			  "1985"
+	  Position		  [20, 1283, 50, 1297]
+	  ZOrder		  670
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VIFO_ACCMCLongAcc_mps2"
+	  SID			  "2146"
+	  Position		  [20, 1353, 50, 1367]
+	  ZOrder		  727
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "VIFO_ACCVehClearance_m"
+	  SID			  "1437"
+	  Position		  [20, 788, 50, 802]
+	  ZOrder		  491
+	  Port			  "11"
+	  IconDisplay		  "Port number"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "ACC_ReferenceSpd_Calculation"
+	  SID			  "1976"
+	  Ports			  [9, 3]
+	  Position		  [2090, 243, 2435, 827]
+	  ZOrder		  621
+	  LibraryVersion	  "1.172"
+	  SourceBlock		  "ars/ACC_ReferenceSpd_Calculation"
+	  SourceType		  "SubSystem"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VACC_MinDesiredDistance_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "VACC_ACCDistControlSel_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    PropagatedSignals	    "VACC_ACCRefSpd_mps"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Brake_To_Stop_Conditions"
+	  SID			  "2173"
+	  Ports			  [2, 1]
+	  Position		  [4575, 1936, 4935, 2029]
+	  ZOrder		  735
+	  LibraryVersion	  "1.63"
+	  SourceBlock		  "bts/Brake_To_Stop_Conditions"
+	  SourceType		  "SubSystem"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VACC_ACCBrakeToStop_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Decel_Control_Switching_Logic"
+	  SID			  "1569"
+	  Ports			  [15, 3]
+	  Position		  [5935, 612, 6270, 1688]
+	  ZOrder		  570
+	  LibraryVersion	  "1.100"
+	  SourceBlock		  "dcl/Decel_Control_Switching_Logic"
+	  SourceType		  "SubSystem"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VACC_DecelControlReq_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "VACC_TorqueReleaseReq_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    PropagatedSignals	    "VACC_ACCBrakeReleaseSituation_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VACC_ACCDistControlSel_flg"
+	  SID			  "1989"
+	  Position		  [5520, 783, 5790, 817]
+	  ZOrder		  673
+	  ShowName		  off
+	  GotoTag		  "VACC_ACCDistControlSel_flg"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VACC_ACCDistControlSel_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VACC_ACCDistControlSel_flg1"
+	  SID			  "2040"
+	  Position		  [3920, 1708, 4190, 1742]
+	  ZOrder		  684
+	  ShowName		  off
+	  GotoTag		  "VACC_ACCDistControlSel_flg"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VACC_ACCDistControlSel_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VACC_ACCDistControlSel_flg2"
+	  SID			  "2147"
+	  Position		  [2555, 1414, 2785, 1446]
+	  ZOrder		  729
+	  ShowName		  off
+	  GotoTag		  "VACC_ACCDistControlSel_flg"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VACC_ACCDistControlSel_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VACC_ACCMCDecel_mps2"
+	  SID			  "2169"
+	  Position		  [3920, 2189, 4225, 2221]
+	  ZOrder		  732
+	  ShowName		  off
+	  GotoTag		  "VACC_ACCMCDecel_mps2"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VACC_ACCMCDecel_mps2"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VACC_ACCTargetVehAssigned_flg"
+	  SID			  "1810"
+	  Position		  [3920, 1529, 4225, 1561]
+	  ZOrder		  589
+	  ShowName		  off
+	  GotoTag		  "VIFO_ACCTargetVehAssigned_flg"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VACC_ACCTargetVehAssigned_flg1"
+	  SID			  "1983"
+	  Position		  [1605, 1064, 1910, 1096]
+	  ZOrder		  668
+	  ShowName		  off
+	  GotoTag		  "VIFO_ACCTargetVehAssigned_flg"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VACC_ACCTargetVehSpd_mps"
+	  SID			  "2130"
+	  Position		  [3920, 1989, 4225, 2021]
+	  ZOrder		  705
+	  ShowName		  off
+	  GotoTag		  "VACC_ACCTargetVehSpd_mps"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VACC_ACCTargetVehSpd_mps1"
+	  SID			  "2141"
+	  Position		  [3920, 1414, 4225, 1446]
+	  ZOrder		  707
+	  ShowName		  off
+	  GotoTag		  "VACC_ACCTargetVehSpd_mps"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VACC_DesiredDistance_m"
+	  SID			  "1814"
+	  Position		  [5520, 419, 5825, 451]
+	  ZOrder		  593
+	  ShowName		  off
+	  GotoTag		  "VACC_DesiredDistance_m"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VACC_DesiredDistance_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VACC_DesiredDistance_m1"
+	  SID			  "2042"
+	  Position		  [3920, 1754, 4225, 1786]
+	  ZOrder		  685
+	  ShowName		  off
+	  GotoTag		  "VACC_DesiredDistance_m"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VACC_DesiredDistance_m"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VDINR_VehSpd_mps"
+	  SID			  "1574"
+	  Position		  [1605, 924, 1910, 956]
+	  ZOrder		  479
+	  ShowName		  off
+	  GotoTag		  "VDINR_VehSpd_mps"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VIFO_ACCTGap_s"
+	  SID			  "1981"
+	  Position		  [1605, 1204, 1910, 1236]
+	  ZOrder		  666
+	  ShowName		  off
+	  GotoTag		  "VIFO_ACCTGap_s"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VIFO_ACCTGap_s1"
+	  SID			  "1994"
+	  Position		  [3920, 1664, 4225, 1696]
+	  ZOrder		  677
+	  ShowName		  off
+	  GotoTag		  "VIFO_ACCTGap_s"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VIFO_ACCTargetVehRelSpeedX_mps"
+	  SID			  "1997"
+	  Position		  [3920, 1574, 4225, 1606]
+	  ZOrder		  680
+	  ShowName		  off
+	  GotoTag		  "VIFO_ACCTargetVehRelSpeedX_mps"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VIFO_ACCTargetVehRelSpeedX_mps1"
+	  SID			  "2120"
+	  Position		  [1605, 714, 1910, 746]
+	  ZOrder		  688
+	  ShowName		  off
+	  GotoTag		  "VIFO_ACCTargetVehRelSpeedX_mps"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VIFO_ACCVehClearance_m"
+	  SID			  "2045"
+	  Position		  [3920, 1799, 4225, 1831]
+	  ZOrder		  687
+	  ShowName		  off
+	  GotoTag		  "VIFO_ACCVehClearance_m"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VJUD_ACCSetTimeGap_s"
+	  SID			  "1982"
+	  Position		  [1605, 1134, 1910, 1166]
+	  ZOrder		  667
+	  ShowName		  off
+	  GotoTag		  "VJUD_ACCSetTimeGap_s"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  From
+	  Name			  "From_VJUD_ACCSetTimeGap_s1"
+	  SID			  "1995"
+	  Position		  [3920, 1619, 4225, 1651]
+	  ZOrder		  678
+	  ShowName		  off
+	  GotoTag		  "VJUD_ACCSetTimeGap_s"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VACC_ACCDistControlSel_flg"
+	  SID			  "1990"
+	  Position		  [2555, 289, 2860, 321]
+	  ZOrder		  672
+	  ShowName		  off
+	  GotoTag		  "VACC_ACCDistControlSel_flg"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VACC_ACCMCDecel_mps2"
+	  SID			  "2168"
+	  Position		  [3485, 1314, 3790, 1346]
+	  ZOrder		  731
+	  ShowName		  off
+	  GotoTag		  "VACC_ACCMCDecel_mps2"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VACC_ACCTargetVehAssigned_flg"
+	  SID			  "1809"
+	  Position		  [1205, 559, 1510, 591]
+	  ZOrder		  588
+	  ShowName		  off
+	  GotoTag		  "VIFO_ACCTargetVehAssigned_flg"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VACC_ACCTargetVehSpd_mps"
+	  SID			  "2129"
+	  Position		  [1210, 429, 1515, 461]
+	  ZOrder		  704
+	  ShowName		  off
+	  GotoTag		  "VACC_ACCTargetVehSpd_mps"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VACC_DesiredDistance_m"
+	  SID			  "1813"
+	  Position		  [3485, 679, 3790, 711]
+	  ZOrder		  592
+	  ShowName		  off
+	  GotoTag		  "VACC_DesiredDistance_m"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VDINR_VehSpd_mps"
+	  SID			  "1578"
+	  Position		  [1195, 299, 1500, 331]
+	  ZOrder		  572
+	  ShowName		  off
+	  GotoTag		  "VDINR_VehSpd_mps"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VIFO_ACCTGap_s"
+	  SID			  "1980"
+	  Position		  [1205, 494, 1510, 526]
+	  ZOrder		  665
+	  ShowName		  off
+	  GotoTag		  "VIFO_ACCTGap_s"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VIFO_ACCTargetVehRelSpeedX_mps"
+	  SID			  "1996"
+	  Position		  [1205, 969, 1510, 1001]
+	  ZOrder		  679
+	  ShowName		  off
+	  GotoTag		  "VIFO_ACCTargetVehRelSpeedX_mps"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VIFO_ACCVehClearance_m"
+	  SID			  "2044"
+	  Position		  [1205, 754, 1510, 786]
+	  ZOrder		  686
+	  ShowName		  off
+	  GotoTag		  "VIFO_ACCVehClearance_m"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto_VJUD_ACCSetTimeGap_s"
+	  SID			  "1979"
+	  Position		  [1195, 234, 1500, 266]
+	  ZOrder		  664
+	  ShowName		  off
+	  GotoTag		  "VJUD_ACCSetTimeGap_s"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Target_Vehicle_Braking"
+	  SID			  "2172"
+	  Ports			  [2, 2]
+	  Position		  [3025, 1326, 3365, 1464]
+	  ZOrder		  734
+	  LibraryVersion	  "1.59"
+	  SourceBlock		  "tvb/Target_Vehicle_Braking"
+	  SourceType		  "SubSystem"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VACC_ACCMCDecel_mps2"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "VACC_ACCMCBraking_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Transitory_Conditions"
+	  SID			  "2174"
+	  Ports			  [8, 1]
+	  Position		  [4575, 1484, 4935, 1831]
+	  ZOrder		  736
+	  LibraryVersion	  "1.66"
+	  SourceBlock		  "tco/Transitory_Conditions"
+	  SourceType		  "SubSystem"
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VACC_ACCTransitory_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VACC_TorqueReleaseReq_flg"
+	  SID			  "1973"
+	  Position		  [6750, 1143, 6780, 1157]
+	  ZOrder		  619
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VACC_ACCRefSpd_mps"
+	  SID			  "1629"
+	  Position		  [6750, 528, 6780, 542]
+	  ZOrder		  494
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VACC_DecelControlReq_flg"
+	  SID			  "1630"
+	  Position		  [6750, 783, 6780, 797]
+	  ZOrder		  564
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VACC_DesiredDistance_m"
+	  SID			  "1970"
+	  Position		  [6750, 428, 6780, 442]
+	  ZOrder		  599
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VACC_ACCDistControlSel_flg"
+	  SID			  "1988"
+	  Position		  [6750, 333, 6780, 347]
+	  ZOrder		  671
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VACC_ACCBrakeToStop_flg"
+	  SID			  "2144"
+	  Position		  [6750, 1978, 6780, 1992]
+	  ZOrder		  710
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VACC_ACCMCBraking_flg"
+	  SID			  "2167"
+	  Position		  [6750, 2083, 6780, 2097]
+	  ZOrder		  730
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VACC_ACCMCDecel_mps2"
+	  SID			  "2170"
+	  Position		  [6750, 2198, 6780, 2212]
+	  ZOrder		  733
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "VACC_ACCBrakeReleaseSituation_flg"
+	  SID			  "2175"
+	  Position		  [6765, 1503, 6795, 1517]
+	  ZOrder		  737
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Decel_Control_Switching_Logic"
+	  SrcPort		  1
+	  DstBlock		  "VACC_DecelControlReq_flg"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "VIFO_ACCTargetVehRelSpeedX_mps"
+	  SrcPort		  1
+	  Points		  [1129, 0]
+	  Branch {
+	    Points		    [0, -25]
+	    DstBlock		    "Goto_VIFO_ACCTargetVehRelSpeedX_mps"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Labels		    [-1, 0]
+	    DstBlock		    "Decel_Control_Switching_Logic"
+	    DstPort		    6
+	  }
+	}
+	Line {
+	  SrcBlock		  "VIFO_ACCTGap_s"
+	  SrcPort		  1
+	  Points		  [1125, 0]
+	  Branch {
+	    Labels		    [-1, 0]
+	    DstBlock		    "ACC_ReferenceSpd_Calculation"
+	    DstPort		    5
+	  }
+	  Branch {
+	    Points		    [0, -25]
+	    DstBlock		    "Goto_VIFO_ACCTGap_s"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "ACC_ReferenceSpd_Calculation"
+	  SrcPort		  2
+	  Points		  [3160, 0]
+	  Branch {
+	    Labels		    [-1, 0]
+	    Points		    [0, 125]
+	    DstBlock		    "Decel_Control_Switching_Logic"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Labels		    [-1, 0]
+	    DstBlock		    "VACC_ACCRefSpd_mps"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "VJUD_ACCSetTimeGap_s"
+	  SrcPort		  1
+	  Points		  [1109, 0]
+	  Branch {
+	    Points		    [0, -25]
+	    DstBlock		    "Goto_VJUD_ACCSetTimeGap_s"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Labels		    [-1, 0]
+	    DstBlock		    "ACC_ReferenceSpd_Calculation"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VDINR_VehSpd_mps"
+	  SrcPort		  1
+	  DstBlock		  "Decel_Control_Switching_Logic"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "VIFO_ACCVehClearance_m"
+	  SrcPort		  1
+	  Points		  [1116, 0]
+	  Branch {
+	    Points		    [0, -25]
+	    DstBlock		    "Goto_VIFO_ACCVehClearance_m"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [481, 0]
+	    Branch {
+	      Labels		      [-1, 0]
+	      Points		      [0, 75]
+	      DstBlock		      "Decel_Control_Switching_Logic"
+	      DstPort		      4
+	    }
+	    Branch {
+	      Labels		      [-1, 0]
+	      DstBlock		      "ACC_ReferenceSpd_Calculation"
+	      DstPort		      9
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "VACC_ACCTargetVehSpd_mps"
+	  SrcPort		  1
+	  Points		  [1126, 0]
+	  Branch {
+	    Labels		    [-1, 0]
+	    DstBlock		    "ACC_ReferenceSpd_Calculation"
+	    DstPort		    4
+	  }
+	  Branch {
+	    Points		    [0, -25]
+	    DstBlock		    "Goto_VACC_ACCTargetVehSpd_mps"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VJUD_ACCSetSpeed_kph"
+	  SrcPort		  1
+	  DstBlock		  "ACC_ReferenceSpd_Calculation"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "ACC_ReferenceSpd_Calculation"
+	  SrcPort		  3
+	  Points		  [849, 0]
+	  Branch {
+	    Labels		    [-1, 0]
+	    DstBlock		    "Decel_Control_Switching_Logic"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -35]
+	    DstBlock		    "Goto_VACC_DesiredDistance_m"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "VDINR_VehSpd_mps"
+	  SrcPort		  1
+	  Points		  [1124, 0]
+	  Branch {
+	    Labels		    [-1, 0]
+	    DstBlock		    "ACC_ReferenceSpd_Calculation"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -25]
+	    DstBlock		    "Goto_VDINR_VehSpd_mps"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "VIFO_ACCTargetVehAssigned_flg"
+	  SrcPort		  1
+	  Points		  [1117, 0]
+	  Branch {
+	    Labels		    [-1, 0]
+	    DstBlock		    "ACC_ReferenceSpd_Calculation"
+	    DstPort		    6
+	  }
+	  Branch {
+	    Points		    [0, -25]
+	    DstBlock		    "Goto_VACC_ACCTargetVehAssigned_flg"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VACC_DesiredDistance_m"
+	  SrcPort		  1
+	  DstBlock		  "VACC_DesiredDistance_m"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Decel_Control_Switching_Logic"
+	  SrcPort		  2
+	  DstBlock		  "VACC_TorqueReleaseReq_flg"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VACC_ACCTargetVehAssigned_flg"
+	  SrcPort		  1
+	  DstBlock		  "Transitory_Conditions"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VIFO_ACCTGap_s"
+	  SrcPort		  1
+	  DstBlock		  "Decel_Control_Switching_Logic"
+	  DstPort		  9
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VJUD_ACCSetTimeGap_s"
+	  SrcPort		  1
+	  DstBlock		  "Decel_Control_Switching_Logic"
+	  DstPort		  8
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VACC_ACCTargetVehAssigned_flg1"
+	  SrcPort		  1
+	  DstBlock		  "Decel_Control_Switching_Logic"
+	  DstPort		  7
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VIFO_ACCDist_flg"
+	  SrcPort		  1
+	  DstBlock		  "ACC_ReferenceSpd_Calculation"
+	  DstPort		  7
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VACC_ACCOverride_flg"
+	  SrcPort		  1
+	  DstBlock		  "Decel_Control_Switching_Logic"
+	  DstPort		  10
+	}
+	Line {
+	  SrcBlock		  "ACC_ReferenceSpd_Calculation"
+	  SrcPort		  1
+	  Points		  [75, 0]
+	  Branch {
+	    Points		    [0, -35]
+	    DstBlock		    "Goto_VACC_ACCDistControlSel_flg"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Labels		    [-1, 0]
+	    DstBlock		    "VACC_ACCDistControlSel_flg"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VACC_ACCDistControlSel_flg"
+	  SrcPort		  1
+	  DstBlock		  "Decel_Control_Switching_Logic"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VJUD_ACCSetTimeGap_s1"
+	  SrcPort		  1
+	  DstBlock		  "Transitory_Conditions"
+	  DstPort		  4
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VIFO_ACCTGap_s1"
+	  SrcPort		  1
+	  DstBlock		  "Transitory_Conditions"
+	  DstPort		  5
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VIFO_ACCTargetVehRelSpeedX_mps"
+	  SrcPort		  1
+	  DstBlock		  "Transitory_Conditions"
+	  DstPort		  3
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "Transitory_Conditions"
+	  SrcPort		  1
+	  Points		  [305, 0; 0, -160]
+	  DstBlock		  "Decel_Control_Switching_Logic"
+	  DstPort		  13
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VACC_DesiredDistance_m1"
+	  SrcPort		  1
+	  DstBlock		  "Transitory_Conditions"
+	  DstPort		  7
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VACC_ACCDistControlSel_flg1"
+	  SrcPort		  1
+	  DstBlock		  "Transitory_Conditions"
+	  DstPort		  6
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VIFO_ACCVehClearance_m"
+	  SrcPort		  1
+	  DstBlock		  "Transitory_Conditions"
+	  DstPort		  8
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VIFO_ACCTargetVehRelSpeedX_mps1"
+	  SrcPort		  1
+	  DstBlock		  "ACC_ReferenceSpd_Calculation"
+	  DstPort		  8
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VACC_ACCTargetVehSpd_mps"
+	  SrcPort		  1
+	  DstBlock		  "Brake_To_Stop_Conditions"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Brake_To_Stop_Conditions"
+	  SrcPort		  1
+	  Points		  [741, 0]
+	  Branch {
+	    Labels		    [-1, 0]
+	    Points		    [0, -345]
+	    DstBlock		    "Decel_Control_Switching_Logic"
+	    DstPort		    15
+	  }
+	  Branch {
+	    Labels		    [-1, 0]
+	    DstBlock		    "VACC_ACCBrakeToStop_flg"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VACC_ACCTargetVehSpd_mps1"
+	  SrcPort		  1
+	  DstBlock		  "Decel_Control_Switching_Logic"
+	  DstPort		  12
+	}
+	Line {
+	  SrcBlock		  "Target_Vehicle_Braking"
+	  SrcPort		  1
+	  Points		  [81, 0]
+	  Branch {
+	    Points		    [0, -30]
+	    DstBlock		    "Goto_VACC_ACCMCDecel_mps2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Labels		    [-1, 0]
+	    DstBlock		    "Decel_Control_Switching_Logic"
+	    DstPort		    11
+	  }
+	}
+	Line {
+	  SrcBlock		  "Target_Vehicle_Braking"
+	  SrcPort		  2
+	  Points		  [464, 0; 0, 70]
+	  Branch {
+	    Points		    [0, 372]
+	    Branch {
+	      Labels		      [-1, 0]
+	      Points		      [1720, 0; 0, -302]
+	      DstBlock		      "Decel_Control_Switching_Logic"
+	      DstPort		      14
+	    }
+	    Branch {
+	      Points		      [0, 88]
+	      Branch {
+		Labels			[-1, 0]
+		Points			[0, 130]
+		DstBlock		"VACC_ACCMCBraking_flg"
+		DstPort			1
+	      }
+	      Branch {
+		Labels			[-1, 0]
+		DstBlock		"Brake_To_Stop_Conditions"
+		DstPort			1
+	      }
+	    }
+	  }
+	  Branch {
+	    Labels		    [-1, 0]
+	    DstBlock		    "Transitory_Conditions"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "VIFO_ACCMCLongAcc_mps2"
+	  SrcPort		  1
+	  DstBlock		  "Target_Vehicle_Braking"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [1, 1]
+	  SrcBlock		  "From_VACC_ACCDistControlSel_flg2"
+	  SrcPort		  1
+	  DstBlock		  "Target_Vehicle_Braking"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [-1, 0]
+	  SrcBlock		  "From_VACC_ACCMCDecel_mps2"
+	  SrcPort		  1
+	  DstBlock		  "VACC_ACCMCDecel_mps2"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "Decel_Control_Switching_Logic"
+	  SrcPort		  3
+	  DstBlock		  "VACC_ACCBrakeReleaseSituation_flg"
+	  DstPort		  1
+	}
+      }
+    }
+  }
+}

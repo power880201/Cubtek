@@ -1,0 +1,7040 @@
+Library {
+  Name			  "dip"
+  Version		  8.2
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "Big5"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-9.0, 0.0, 1618.0, 870.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[13]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1566.0, 687.0]
+	ZoomFactor		[1.0]
+	Offset			[0.0, 0.0]
+      }
+    }
+  }
+  Created		  "Thu Jul 03 16:47:56 2014"
+  Creator		  "13192"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "13192"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri May 05 16:07:46 2017"
+  RTWModifiedTimeStamp	  415901261
+  ModelVersionFormat	  "1.%<AutoIncrement:296>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "all"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  RecordCoverage	  off
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  CovForceBlockReductionOff on
+  CovEnableCumulative	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      6
+      Version		      "1.13.1"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  7
+	  Version		  "1.13.1"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "SingleTasking"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  8
+	  Version		  "1.13.1"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  9
+	  Version		  "1.13.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    8
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  off
+	  BooleanDataType	  off
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  UseIntDivNetSlope	  off
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  128
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	  ParallelExecutionInRapidAccelerator on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  10
+	  Version		  "1.13.1"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"none"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "EnableAllAsError"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "warning"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "none"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "Warning"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  11
+	  Version		  "1.13.1"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  on
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  12
+	  Version		  "1.13.1"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  13
+	  Version		  "1.13.1"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimCtrlC		  on
+	  SimExtrinsic		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  14
+	  Version		  "1.13.1"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    15
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "grt_default_tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  ""
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ProcessScript		  ""
+	  ConfigurationScript	  ""
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  GenerateErtSFunction	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  RTWCompilerOptimization "Off"
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  CustomRebuildMode	  "OnUpdate"
+	  DataInitializer	  ""
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      15
+	      Version		      "1.13.1"
+	      Array {
+		Type			"Cell"
+		Dimension		23
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"InsertPolySpaceComments"
+		Cell			"SFDataObjDesc"
+		Cell			"MATLABFcnDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InternalIdentifier"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      16
+	      Version		      "1.13.1"
+	      Array {
+		Type			"Cell"
+		Dimension		15
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"GenerateAllocFcn"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      CodeReplacementLibrary  "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns on
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      GRTInterface	      off
+	      GenerateAllocFcn	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition     [ 143, 64, 1223, 704 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Arial"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "on"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusCreator
+      Inputs		      "4"
+      DisplayOption	      "none"
+      OutDataTypeStr	      "Inherit: auto"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      BusSelector
+      OutputSignals	      "signal1,signal2,signal3"
+      OutputAsBus	      off
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via back propagation"
+      LockScale		      off
+      ConvertRealWorld	      "Real World Value (RWV)"
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      From
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Goto
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      RelationalOperator
+      Operator		      ">="
+      InputSameDT	      on
+      OutDataTypeStr	      "Inherit: Logical (see Configuration Parameters: Optimization)"
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      SFBlockType	      "NONE"
+      Variant		      off
+      GeneratePreprocessorConditionals off
+      ContentPreviewEnabled   off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      StatesWhenEnabling      "inherit"
+      PropagateVarSize	      "During execution"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      SampleTimeType	      "triggered"
+      SampleTime	      "1"
+      ZeroCross		      on
+      PortDimensions	      "-1"
+      TriggerSignalSampleTime "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      UnitDelay
+      InitialCondition	      "0"
+      InputProcessing	      "Inherited"
+      SampleTime	      "1"
+      StateMustResolveToSignalObject off
+      CodeGenStateStorageClass "Auto"
+      HasFrameUpgradeWarning  on
+    }
+  }
+  System {
+    Name		    "dip"
+    Location		    [-9, 0, 1609, 870]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "252"
+    Block {
+      BlockType		      SubSystem
+      Name		      "DIP"
+      SID		      "1"
+      Ports		      [4, 1, 0, 1]
+      Position		      [350, 197, 650, 393]
+      ZOrder		      -1
+      FontSize		      12
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      RTWSystemCode	      "Nonreusable function"
+      RTWFcnNameOpts	      "Use subsystem name"
+      RTWFileNameOpts	      "Use subsystem name"
+      FunctionWithSeparateData off
+      Opaque		      off
+      RequestExecContextInheritance off
+      MaskHideContents	      off
+      System {
+	Name			"DIP"
+	Location		[-9, 0, 1609, 870]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "BLFC_outputs"
+	  SID			  "4"
+	  Position		  [95, 123, 125, 137]
+	  ZOrder		  -3
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: BLFC_outputs"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "BLKA_outputs"
+	  SID			  "91"
+	  Position		  [95, 178, 125, 192]
+	  ZOrder		  3
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: BLKA_outputs"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "BPER_outputs"
+	  SID			  "93"
+	  Position		  [95, 288, 125, 302]
+	  ZOrder		  5
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: BPER_outputs"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "BIFO_outputs"
+	  SID			  "196"
+	  Position		  [95, 483, 125, 497]
+	  ZOrder		  7
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: BIFO_outputs"
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "trig_DIP"
+	  SID			  "7"
+	  Ports			  []
+	  Position		  [650, 30, 670, 50]
+	  ZOrder		  -6
+	  TriggerType		  "function-call"
+	  StatesWhenEnabling	  "held"
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator"
+	  SID			  "8"
+	  Ports			  [8, 1]
+	  Position		  [1125, 114, 1130, 586]
+	  ZOrder		  -7
+	  ShowName		  off
+	  Inputs		  "8"
+	  DisplayOption		  "bar"
+	  OutDataTypeStr	  "Bus: BDIP_outputs"
+	  Port {
+	    PortNumber		    1
+	    Name		    "BDIP_outputs"
+	    PropagatedSignals	    "VDIP_LeftLaneLampMode_enum, VDIP_RightLaneLampMode_enum, VDIP_LFCHMIStatus_enum, VDIP_LKAH"
+	    "MIStatus_enum, VDIP_LFCWarningReq_flg, VDIP_ADASFunOnSoundReq_flg, VDIP_ADASFunOffSoundReq_flg, VDIP_NumberOfTarg"
+	    "ets_num"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector1"
+	  SID			  "9"
+	  Ports			  [1, 1]
+	  Position		  [260, 85, 265, 175]
+	  ZOrder		  -8
+	  ShowName		  off
+	  FontSize		  12
+	  OutputSignals		  "VLFC_LFCState_enum"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<VLFC_LFCState_enum>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector2"
+	  SID			  "92"
+	  Ports			  [1, 1]
+	  Position		  [260, 165, 265, 205]
+	  ZOrder		  2
+	  ShowName		  off
+	  FontSize		  12
+	  OutputSignals		  "VLKA_LKAState_enum"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<VLKA_LKAState_enum>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector3"
+	  SID			  "94"
+	  Ports			  [1, 3]
+	  Position		  [260, 214, 265, 376]
+	  ZOrder		  4
+	  ShowName		  off
+	  FontSize		  12
+	  OutputSignals		  "VPER_LeftLaneAvail_flg,VPER_RightLaneAvail_flg,VPER_NumberOfTargets_enum"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<VPER_LeftLaneAvail_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "<VPER_RightLaneAvail_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "<VPER_NumberOfTargets_enum>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector4"
+	  SID			  "197"
+	  Ports			  [1, 4]
+	  Position		  [260, 380, 265, 595]
+	  ZOrder		  8
+	  ShowName		  off
+	  FontSize		  12
+	  OutputSignals		  "VIFO_ResidualLaneFinish_flg,VIFO_DegradedFinish_flg,VIFO_DriverHOD_flg,VIFO_Curvature4DisableWarn"
+	  "ing_flg"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<VIFO_ResidualLaneFinish_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "<VIFO_DegradedFinish_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "<VIFO_DriverHOD_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    Name		    "<VIFO_Curvature4DisableWarning_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "DIP"
+	  SID			  "14"
+	  Ports			  [9, 8]
+	  Position		  [515, 110, 840, 590]
+	  ZOrder		  -13
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  RequestExecContextInheritance	off
+	  MaskHideContents	  off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VDIP_LeftLaneLampMode_enum"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "VDIP_RightLaneLampMode_enum"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    PropagatedSignals	    "VDIP_LFCHMIStatus_enum"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    PropagatedSignals	    "VDIP_LKAHMIStatus_enum"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    PropagatedSignals	    "VDIP_LFCWarningReq_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    6
+	    PropagatedSignals	    "VDIP_ADASFunOnSoundReq_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    7
+	    PropagatedSignals	    "VDIP_ADASFunOffSoundReq_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    8
+	    PropagatedSignals	    "VDIP_NumberOfTargets_num"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "DIP"
+	    Location		    [-9, 0, 1609, 870]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VLFC_LFCState_enum"
+	      SID		      "59"
+	      Position		      [20, 43, 50, 57]
+	      ZOrder		      908
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VLKA_LKAState_enum"
+	      SID		      "62"
+	      Position		      [20, 238, 50, 252]
+	      ZOrder		      911
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VPER_LeftLaneAvail_fig"
+	      SID		      "60"
+	      Position		      [20, 108, 50, 122]
+	      ZOrder		      909
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VPER_RightLaneAvail_fig"
+	      SID		      "61"
+	      Position		      [20, 173, 50, 187]
+	      ZOrder		      910
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VPER_NumberOfTargets_enum"
+	      SID		      "181"
+	      Position		      [30, 1098, 60, 1112]
+	      ZOrder		      952
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_ResidualLaneFinish_flg"
+	      SID		      "194"
+	      Position		      [30, 748, 60, 762]
+	      ZOrder		      965
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_DegradedFinsih_flg"
+	      SID		      "222"
+	      Position		      [30, 783, 60, 797]
+	      ZOrder		      980
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_DriverHOD_flg"
+	      SID		      "233"
+	      Position		      [30, 818, 60, 832]
+	      ZOrder		      981
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VIFO_Curvature4DisabledWarning_flg"
+	      SID		      "236"
+	      Position		      [30, 853, 60, 867]
+	      ZOrder		      982
+	      Port		      "9"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      DataTypeConversion
+	      Name		      "Data Type Conversion"
+	      SID		      "182"
+	      Position		      [690, 1088, 765, 1122]
+	      ZOrder		      953
+	      ShowName		      off
+	      OutDataTypeStr	      "uint8"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      Port {
+		PortNumber		1
+		Name			"VDIP_NumberOfTargets_num"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From"
+	      SID		      "247"
+	      Position		      [265, 380, 430, 400]
+	      ZOrder		      987
+	      ShowName		      off
+	      GotoTag		      "VLFC_LFCState_enum"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From1"
+	      SID		      "249"
+	      Position		      [265, 580, 430, 600]
+	      ZOrder		      989
+	      ShowName		      off
+	      GotoTag		      "VLKA_LKAState_enum"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From2"
+	      SID		      "250"
+	      Position		      [265, 710, 430, 730]
+	      ZOrder		      990
+	      ShowName		      off
+	      GotoTag		      "VLFC_LFCState_enum"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From3"
+	      SID		      "251"
+	      Position		      [285, 990, 450, 1010]
+	      ZOrder		      991
+	      ShowName		      off
+	      GotoTag		      "VLKA_LKAState_enum"
+	    }
+	    Block {
+	      BlockType		      From
+	      Name		      "From4"
+	      SID		      "252"
+	      Position		      [285, 940, 450, 960]
+	      ZOrder		      992
+	      ShowName		      off
+	      GotoTag		      "VLFC_LFCState_enum"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Function_OnOff_Sound"
+	      SID		      "106"
+	      Ports		      [2, 2]
+	      Position		      [560, 923, 860, 1027]
+	      ZOrder		      949
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VDIP_ADASFunOnSoundReq_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		2
+		PropagatedSignals	"VDIP_ADASFunOffSoundReq_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"Function_OnOff_Sound"
+		Location		[-9, 0, 1609, 870]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "VLFC_LFCState_enum"
+		  SID			  "111"
+		  Position		  [205, 178, 235, 192]
+		  ZOrder		  953
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VLKA_LKAState_enum"
+		  SID			  "112"
+		  Position		  [205, 418, 235, 432]
+		  ZOrder		  954
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant"
+		  SID			  "179"
+		  Position		  [1335, 205, 1420, 235]
+		  ZOrder		  1001
+		  ShowName		  off
+		  Value			  "FALSE"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant1"
+		  SID			  "180"
+		  Position		  [1335, 320, 1420, 350]
+		  ZOrder		  1002
+		  ShowName		  off
+		  Value			  "FALSE"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From1"
+		  SID			  "162"
+		  Position		  [1195, 290, 1400, 310]
+		  ZOrder		  997
+		  ShowName		  off
+		  GotoTag		  "VDIP_LFCOffSoundReq_flg"
+		}
+		Block {
+		  BlockType		  From
+		  Name			  "From14"
+		  SID			  "127"
+		  Position		  [1195, 175, 1400, 195]
+		  ZOrder		  969
+		  ShowName		  off
+		  GotoTag		  "VDIP_LFCOnSoundReq_flg"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto1"
+		  SID			  "161"
+		  Position		  [920, 270, 1125, 290]
+		  ZOrder		  996
+		  ShowName		  off
+		  GotoTag		  "VDIP_LFCOffSoundReq_flg"
+		}
+		Block {
+		  BlockType		  Goto
+		  Name			  "Goto12"
+		  SID			  "126"
+		  Position		  [920, 175, 1125, 195]
+		  ZOrder		  968
+		  ShowName		  off
+		  GotoTag		  "VDIP_LFCOnSoundReq_flg"
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "LFCOffSound"
+		  SID			  "155"
+		  Ports			  [1, 1]
+		  Position		  [455, 252, 720, 308]
+		  ZOrder		  994
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VDIP_LFCOffSoundReq_flg"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		  System {
+		    Name		    "LFCOffSound"
+		    Location		    [-9, -9, 1609, 861]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "VLFC_LFCState_enum"
+		    SID			    "157"
+		    Position		    [25, 118, 55, 132]
+		    ZOrder		    995
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant1"
+		    SID			    "202"
+		    Position		    [120, 284, 325, 306]
+		    ZOrder		    1000
+		    ShowName		    off
+		    Value		    "ENUM_LFCSTATE_OFF"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant2"
+		    SID			    "115"
+		    Position		    [120, 694, 325, 716]
+		    ZOrder		    957
+		    ShowName		    off
+		    Value		    "ENUM_LFCSTATE_DEGRADED"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant3"
+		    SID			    "241"
+		    Position		    [120, 419, 325, 441]
+		    ZOrder		    1002
+		    ShowName		    off
+		    Value		    "ENUM_LFCSTATE_DISABLED"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant4"
+		    SID			    "117"
+		    Position		    [120, 794, 325, 816]
+		    ZOrder		    959
+		    ShowName		    off
+		    Value		    "ENUM_LFCSTATE_SOFTEN"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant5"
+		    SID			    "118"
+		    Position		    [120, 594, 325, 616]
+		    ZOrder		    960
+		    ShowName		    off
+		    Value		    "ENUM_LFCSTATE_AUTOSTEERING"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant6"
+		    SID			    "150"
+		    Position		    [935, 639, 1140, 661]
+		    ZOrder		    992
+		    ShowName		    off
+		    Value		    "KDIP_ADASOnSoundReqLatch_s"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant7"
+		    SID			    "133"
+		    Position		    [120, 149, 325, 171]
+		    ZOrder		    975
+		    ShowName		    off
+		    Value		    "ENUM_LFCSTATE_STANDBY"
+		    }
+		    Block {
+		    BlockType		    Logic
+		    Name		    "Logical\nOperator"
+		    SID			    "149"
+		    Ports		    [2, 1]
+		    Position		    [705, 474, 735, 541]
+		    ZOrder		    988
+		    ShowName		    off
+		    AllPortsSameDT	    off
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    Logic
+		    Name		    "Logical\nOperator1"
+		    SID			    "201"
+		    Ports		    [3, 1]
+		    Position		    [465, 77, 500, 483]
+		    ZOrder		    999
+		    ShowName		    off
+		    Operator		    "OR"
+		    Inputs		    "3"
+		    AllPortsSameDT	    off
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    Logic
+		    Name		    "Logical\nOperator2"
+		    SID			    "144"
+		    Ports		    [3, 1]
+		    Position		    [465, 540, 495, 840]
+		    ZOrder		    986
+		    ShowName		    off
+		    Operator		    "OR"
+		    Inputs		    "3"
+		    AllPortsSameDT	    off
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator1"
+		    SID			    "203"
+		    Ports		    [2, 1]
+		    Position		    [360, 244, 390, 311]
+		    ZOrder		    1001
+		    ShowName		    off
+		    Operator		    "=="
+		    InputSameDT		    off
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator2"
+		    SID			    "151"
+		    Ports		    [2, 1]
+		    Position		    [1215, 579, 1245, 646]
+		    ZOrder		    991
+		    ShowName		    off
+		    InputSameDT		    off
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator3"
+		    SID			    "131"
+		    Ports		    [2, 1]
+		    Position		    [360, 554, 390, 621]
+		    ZOrder		    973
+		    ShowName		    off
+		    Operator		    "=="
+		    InputSameDT		    off
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator4"
+		    SID			    "132"
+		    Ports		    [2, 1]
+		    Position		    [360, 109, 390, 176]
+		    ZOrder		    974
+		    ShowName		    off
+		    Operator		    "=="
+		    InputSameDT		    off
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator5"
+		    SID			    "136"
+		    Ports		    [2, 1]
+		    Position		    [360, 654, 390, 721]
+		    ZOrder		    978
+		    ShowName		    off
+		    Operator		    "=="
+		    InputSameDT		    off
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator6"
+		    SID			    "242"
+		    Ports		    [2, 1]
+		    Position		    [360, 379, 390, 446]
+		    ZOrder		    1003
+		    ShowName		    off
+		    Operator		    "=="
+		    InputSameDT		    off
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator7"
+		    SID			    "142"
+		    Ports		    [2, 1]
+		    Position		    [360, 754, 390, 821]
+		    ZOrder		    984
+		    ShowName		    off
+		    Operator		    "=="
+		    InputSameDT		    off
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "SR-Latch"
+		    SID			    "152"
+		    Ports		    [2, 1]
+		    Position		    [820, 493, 940, 562]
+		    ZOrder		    989
+		    BackgroundColor	    "lightBlue"
+		    LibraryVersion	    "1.533"
+		    SourceBlock		    "hcu_lib/SR-Latch"
+		    SourceType		    ""
+		    ShowPortLabels	    "FromPortIcon"
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    GeneratePreprocessorConditionals off
+		    ContentPreviewEnabled   off
+		    Port {
+		    PortNumber		    1
+		    Name		    "VDIP_LFCOffSoundReq_flg"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Timer"
+		    SID			    "153"
+		    Ports		    [0, 1, 1]
+		    Position		    [1030, 574, 1130, 616]
+		    ZOrder		    990
+		    BackgroundColor	    "lightBlue"
+		    LibraryVersion	    "1.533"
+		    SourceBlock		    "hcu_lib/Timer"
+		    SourceType		    ""
+		    ShowPortLabels	    "FromPortIcon"
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    GeneratePreprocessorConditionals off
+		    ContentPreviewEnabled   off
+		    }
+		    Block {
+		    BlockType		    UnitDelay
+		    Name		    "Unit Delay1"
+		    SID			    "154"
+		    Position		    [820, 673, 855, 707]
+		    ZOrder		    993
+		    BlockMirror		    on
+		    ShowName		    off
+		    InputProcessing	    "Elements as channels (sample based)"
+		    SampleTime		    "-1"
+		    }
+		    Block {
+		    BlockType		    UnitDelay
+		    Name		    "Unit Delay2"
+		    SID			    "134"
+		    Position		    [205, 553, 240, 587]
+		    ZOrder		    976
+		    ShowName		    off
+		    InputProcessing	    "Elements as channels (sample based)"
+		    SampleTime		    "-1"
+		    }
+		    Block {
+		    BlockType		    UnitDelay
+		    Name		    "Unit Delay3"
+		    SID			    "137"
+		    Position		    [205, 653, 240, 687]
+		    ZOrder		    979
+		    ShowName		    off
+		    InputProcessing	    "Elements as channels (sample based)"
+		    SampleTime		    "-1"
+		    }
+		    Block {
+		    BlockType		    UnitDelay
+		    Name		    "Unit Delay5"
+		    SID			    "143"
+		    Position		    [205, 753, 240, 787]
+		    ZOrder		    985
+		    ShowName		    off
+		    InputProcessing	    "Elements as channels (sample based)"
+		    SampleTime		    "-1"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "VDIP_LFCOffSoundReq_flg"
+		    SID			    "160"
+		    Position		    [1345, 523, 1375, 537]
+		    ZOrder		    998
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    212
+		    SrcBlock		    "Relational\nOperator4"
+		    SrcPort		    1
+		    DstBlock		    "Logical\nOperator1"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    114
+		    SrcBlock		    "Constant5"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator3"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    153
+		    SrcBlock		    "Logical\nOperator2"
+		    SrcPort		    1
+		    Points		    [87, 0; 0, -165]
+		    DstBlock		    "Logical\nOperator"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    159
+		    SrcBlock		    "Unit Delay1"
+		    SrcPort		    1
+		    Points		    [-49, 0; 0, -145]
+		    DstBlock		    "SR-Latch"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    148
+		    SrcBlock		    "Relational\nOperator3"
+		    SrcPort		    1
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    135
+		    SrcBlock		    "Unit Delay5"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator7"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "VDIP_LFCOffSoundReq_flg"
+		    ZOrder		    156
+		    Labels		    [1, 1]
+		    SrcBlock		    "SR-Latch"
+		    SrcPort		    1
+		    Points		    [135, 0]
+		    Branch {
+		    ZOrder		    169
+		    DstBlock		    "VDIP_LFCOffSoundReq_flg"
+		    DstPort		    1
+		    }
+		    Branch {
+		    ZOrder		    154
+		    DstBlock		    "Timer"
+		    DstPort		    enable
+		    }
+		    }
+		    Line {
+		    ZOrder		    149
+		    SrcBlock		    "Relational\nOperator5"
+		    SrcPort		    1
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    139
+		    SrcBlock		    "Constant4"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator7"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    198
+		    SrcBlock		    "Relational\nOperator7"
+		    SrcPort		    1
+		    DstBlock		    "Logical\nOperator2"
+		    DstPort		    3
+		    }
+		    Line {
+		    ZOrder		    158
+		    SrcBlock		    "Timer"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator2"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    118
+		    SrcBlock		    "Unit Delay2"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator3"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    121
+		    SrcBlock		    "Unit Delay3"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator5"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    125
+		    SrcBlock		    "Constant2"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator5"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    157
+		    SrcBlock		    "Constant6"
+		    SrcPort		    1
+		    Points		    [27, 0; 0, -20]
+		    DstBlock		    "Relational\nOperator2"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    115
+		    SrcBlock		    "Constant7"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator4"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    162
+		    SrcBlock		    "Logical\nOperator"
+		    SrcPort		    1
+		    DstBlock		    "SR-Latch"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    160
+		    SrcBlock		    "Relational\nOperator2"
+		    SrcPort		    1
+		    Points		    [22, 0; 0, 75]
+		    DstBlock		    "Unit Delay1"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    211
+		    SrcBlock		    "Constant1"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    213
+		    SrcBlock		    "Relational\nOperator1"
+		    SrcPort		    1
+		    DstBlock		    "Logical\nOperator1"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    214
+		    SrcBlock		    "Logical\nOperator1"
+		    SrcPort		    1
+		    Points		    [100, 0; 0, 210]
+		    DstBlock		    "Logical\nOperator"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    172
+		    SrcBlock		    "VLFC_LFCState_enum"
+		    SrcPort		    1
+		    Points		    [43, 0]
+		    Branch {
+		    ZOrder		    117
+		    DstBlock		    "Relational\nOperator4"
+		    DstPort		    1
+		    }
+		    Branch {
+		    ZOrder		    116
+		    Points		    [0, 135]
+		    Branch {
+		    ZOrder		    209
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    1
+		    }
+		    Branch {
+		    ZOrder		    208
+		    Points		    [0, 135]
+		    Branch {
+		    ZOrder		    247
+		    DstBlock		    "Relational\nOperator6"
+		    DstPort		    1
+		    }
+		    Branch {
+		    ZOrder		    246
+		    Points		    [0, 175]
+		    Branch {
+		    ZOrder		    123
+		    Points		    [0, 100]
+		    Branch {
+		    ZOrder		    130
+		    Points		    [0, 100]
+		    DstBlock		    "Unit Delay5"
+		    DstPort		    1
+		    }
+		    Branch {
+		    ZOrder		    129
+		    DstBlock		    "Unit Delay3"
+		    DstPort		    1
+		    }
+		    }
+		    Branch {
+		    ZOrder		    122
+		    DstBlock		    "Unit Delay2"
+		    DstPort		    1
+		    }
+		    }
+		    }
+		    }
+		    }
+		    Line {
+		    ZOrder		    245
+		    SrcBlock		    "Constant3"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator6"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    248
+		    SrcBlock		    "Relational\nOperator6"
+		    SrcPort		    1
+		    DstBlock		    "Logical\nOperator1"
+		    DstPort		    3
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "LFCOnSound"
+		  SID			  "145"
+		  Ports			  [1, 1]
+		  Position		  [455, 157, 720, 213]
+		  ZOrder		  987
+		  MinAlgLoopOccurrences	  off
+		  PropExecContextOutsideSubsystem off
+		  RTWSystemCode		  "Auto"
+		  FunctionWithSeparateData off
+		  Opaque		  off
+		  RequestExecContextInheritance	off
+		  MaskHideContents	  off
+		  Port {
+		    PortNumber		    1
+		    PropagatedSignals	    "VDIP_LFCOnSoundReq_flg"
+		    ShowPropagatedSignals   "on"
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		  System {
+		    Name		    "LFCOnSound"
+		    Location		    [-9, 0, 1609, 870]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    Inport
+		    Name		    "VLFC_LFCState_enum"
+		    SID			    "146"
+		    Position		    [55, 153, 85, 167]
+		    ZOrder		    973
+		    IconDisplay		    "Port number"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant"
+		    SID			    "113"
+		    Position		    [150, 269, 355, 291]
+		    ZOrder		    955
+		    ShowName		    off
+		    Value		    "ENUM_LFCSTATE_STANDBY"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant1"
+		    SID			    "114"
+		    Position		    [150, 184, 355, 206]
+		    ZOrder		    956
+		    ShowName		    off
+		    Value		    "ENUM_LFCSTATE_AUTOSTEERING"
+		    }
+		    Block {
+		    BlockType		    Constant
+		    Name		    "Constant6"
+		    SID			    "129"
+		    Position		    [720, 329, 925, 351]
+		    ZOrder		    971
+		    ShowName		    off
+		    Value		    "KDIP_ADASOnSoundReqLatch_s"
+		    }
+		    Block {
+		    BlockType		    Logic
+		    Name		    "Logical\nOperator"
+		    SID			    "122"
+		    Ports		    [2, 1]
+		    Position		    [490, 164, 520, 231]
+		    ZOrder		    964
+		    ShowName		    off
+		    AllPortsSameDT	    off
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator"
+		    SID			    "119"
+		    Ports		    [2, 1]
+		    Position		    [390, 144, 420, 211]
+		    ZOrder		    961
+		    ShowName		    off
+		    Operator		    "=="
+		    InputSameDT		    off
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator1"
+		    SID			    "120"
+		    Ports		    [2, 1]
+		    Position		    [390, 229, 420, 296]
+		    ZOrder		    962
+		    ShowName		    off
+		    Operator		    "=="
+		    InputSameDT		    off
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    RelationalOperator
+		    Name		    "Relational\nOperator2"
+		    SID			    "128"
+		    Ports		    [2, 1]
+		    Position		    [1010, 269, 1040, 336]
+		    ZOrder		    970
+		    ShowName		    off
+		    InputSameDT		    off
+		    OutDataTypeStr	    "boolean"
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "SR-Latch"
+		    SID			    "123"
+		    Ports		    [2, 1]
+		    Position		    [615, 183, 735, 252]
+		    ZOrder		    965
+		    BackgroundColor	    "lightBlue"
+		    LibraryVersion	    "1.533"
+		    SourceBlock		    "hcu_lib/SR-Latch"
+		    SourceType		    ""
+		    ShowPortLabels	    "FromPortIcon"
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    GeneratePreprocessorConditionals off
+		    ContentPreviewEnabled   off
+		    Port {
+		    PortNumber		    1
+		    Name		    "VDIP_LFCOnSoundReq_flg"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		    }
+		    }
+		    Block {
+		    BlockType		    Reference
+		    Name		    "Timer"
+		    SID			    "124"
+		    Ports		    [0, 1, 1]
+		    Position		    [825, 264, 925, 306]
+		    ZOrder		    966
+		    BackgroundColor	    "lightBlue"
+		    LibraryVersion	    "1.533"
+		    SourceBlock		    "hcu_lib/Timer"
+		    SourceType		    ""
+		    ShowPortLabels	    "FromPortIcon"
+		    SystemSampleTime	    "-1"
+		    FunctionWithSeparateData off
+		    GeneratePreprocessorConditionals off
+		    ContentPreviewEnabled   off
+		    }
+		    Block {
+		    BlockType		    UnitDelay
+		    Name		    "Unit Delay"
+		    SID			    "121"
+		    Position		    [235, 228, 270, 262]
+		    ZOrder		    963
+		    ShowName		    off
+		    InputProcessing	    "Elements as channels (sample based)"
+		    SampleTime		    "-1"
+		    }
+		    Block {
+		    BlockType		    UnitDelay
+		    Name		    "Unit Delay1"
+		    SID			    "130"
+		    Position		    [615, 363, 650, 397]
+		    ZOrder		    972
+		    BlockMirror		    on
+		    ShowName		    off
+		    InputProcessing	    "Elements as channels (sample based)"
+		    SampleTime		    "-1"
+		    }
+		    Block {
+		    BlockType		    Outport
+		    Name		    "VDIP_LFCOnSoundReq_flg"
+		    SID			    "148"
+		    Position		    [1165, 213, 1195, 227]
+		    ZOrder		    975
+		    IconDisplay		    "Port number"
+		    }
+		    Line {
+		    ZOrder		    93
+		    SrcBlock		    "Unit Delay"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    1
+		    }
+		    Line {
+		    Name		    "VDIP_LFCOnSoundReq_flg"
+		    ZOrder		    99
+		    Labels		    [1, 1]
+		    SrcBlock		    "SR-Latch"
+		    SrcPort		    1
+		    Points		    [135, 0]
+		    Branch {
+		    ZOrder		    115
+		    DstBlock		    "VDIP_LFCOnSoundReq_flg"
+		    DstPort		    1
+		    }
+		    Branch {
+		    ZOrder		    101
+		    DstBlock		    "Timer"
+		    DstPort		    enable
+		    }
+		    }
+		    Line {
+		    ZOrder		    89
+		    SrcBlock		    "Constant1"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    90
+		    SrcBlock		    "Constant"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    109
+		    SrcBlock		    "Constant6"
+		    SrcPort		    1
+		    Points		    [37, 0; 0, -20]
+		    DstBlock		    "Relational\nOperator2"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    108
+		    SrcBlock		    "Timer"
+		    SrcPort		    1
+		    DstBlock		    "Relational\nOperator2"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    113
+		    SrcBlock		    "VLFC_LFCState_enum"
+		    SrcPort		    1
+		    Points		    [50, 0]
+		    Branch {
+		    ZOrder		    117
+		    Points		    [0, 85]
+		    DstBlock		    "Unit Delay"
+		    DstPort		    1
+		    }
+		    Branch {
+		    ZOrder		    116
+		    DstBlock		    "Relational\nOperator"
+		    DstPort		    1
+		    }
+		    }
+		    Line {
+		    ZOrder		    111
+		    SrcBlock		    "Unit Delay1"
+		    SrcPort		    1
+		    Points		    [-49, 0; 0, -145]
+		    DstBlock		    "SR-Latch"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    110
+		    SrcBlock		    "Relational\nOperator2"
+		    SrcPort		    1
+		    Points		    [22, 0; 0, 75]
+		    DstBlock		    "Unit Delay1"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    94
+		    SrcBlock		    "Relational\nOperator"
+		    SrcPort		    1
+		    DstBlock		    "Logical\nOperator"
+		    DstPort		    1
+		    }
+		    Line {
+		    ZOrder		    95
+		    SrcBlock		    "Relational\nOperator1"
+		    SrcPort		    1
+		    Points		    [17, 0; 0, -50]
+		    DstBlock		    "Logical\nOperator"
+		    DstPort		    2
+		    }
+		    Line {
+		    ZOrder		    96
+		    SrcBlock		    "Logical\nOperator"
+		    SrcPort		    1
+		    DstBlock		    "SR-Latch"
+		    DstPort		    1
+		    }
+		  }
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator1"
+		  SID			  "125"
+		  Ports			  [2, 1]
+		  Position		  [1480, 169, 1510, 236]
+		  ZOrder		  995
+		  ShowName		  off
+		  Operator		  "OR"
+		  AllPortsSameDT	  off
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "VDIP_ADASFunOnSoundReq_flg"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator2"
+		  SID			  "163"
+		  Ports			  [2, 1]
+		  Position		  [1480, 284, 1510, 351]
+		  ZOrder		  998
+		  ShowName		  off
+		  Operator		  "OR"
+		  AllPortsSameDT	  off
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "VDIP_ADASFunOffSoundReq_flg"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  "Terminator"
+		  SID			  "178"
+		  Position		  [445, 415, 465, 435]
+		  ZOrder		  1000
+		  ShowName		  off
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "VDIP_ADASFunOnSoundReq_flg"
+		  SID			  "107"
+		  Position		  [1770, 198, 1800, 212]
+		  ZOrder		  949
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "VDIP_ADASFunOffSoundReq_flg"
+		  SID			  "109"
+		  Position		  [1770, 313, 1800, 327]
+		  ZOrder		  951
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  88
+		  SrcBlock		  "VLFC_LFCState_enum"
+		  SrcPort		  1
+		  Points		  [116, 0]
+		  Branch {
+		    ZOrder		    170
+		    Points		    [0, 95]
+		    DstBlock		    "LFCOffSound"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    168
+		    DstBlock		    "LFCOnSound"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  142
+		  Labels		  [0, 0]
+		  SrcBlock		  "LFCOnSound"
+		  SrcPort		  1
+		  DstBlock		  "Goto12"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  172
+		  Labels		  [0, 0]
+		  SrcBlock		  "LFCOffSound"
+		  SrcPort		  1
+		  DstBlock		  "Goto1"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  173
+		  SrcBlock		  "From14"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator1"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "VDIP_ADASFunOnSoundReq_flg"
+		  ZOrder		  174
+		  Labels		  [0, 0]
+		  SrcBlock		  "Logical\nOperator1"
+		  SrcPort		  1
+		  DstBlock		  "VDIP_ADASFunOnSoundReq_flg"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "VDIP_ADASFunOffSoundReq_flg"
+		  ZOrder		  175
+		  Labels		  [0, 0]
+		  SrcBlock		  "Logical\nOperator2"
+		  SrcPort		  1
+		  DstBlock		  "VDIP_ADASFunOffSoundReq_flg"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  176
+		  SrcBlock		  "From1"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator2"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  178
+		  SrcBlock		  "VLKA_LKAState_enum"
+		  SrcPort		  1
+		  DstBlock		  "Terminator"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  179
+		  SrcBlock		  "Constant"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator1"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  180
+		  SrcBlock		  "Constant1"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator2"
+		  DstPort		  2
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto"
+	      SID		      "246"
+	      Position		      [300, 65, 465, 85]
+	      ZOrder		      986
+	      ShowName		      off
+	      GotoTag		      "VLFC_LFCState_enum"
+	    }
+	    Block {
+	      BlockType		      Goto
+	      Name		      "Goto1"
+	      SID		      "248"
+	      Position		      [280, 265, 445, 285]
+	      ZOrder		      988
+	      ShowName		      off
+	      GotoTag		      "VLKA_LKAState_enum"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "LFCWarning"
+	      SID		      "217"
+	      Ports		      [5, 1]
+	      Position		      [1105, 699, 1430, 881]
+	      ZOrder		      979
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      System {
+		Name			"LFCWarning"
+		Location		[-9, -9, 1609, 861]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "VLFC_LFCState_enum"
+		  SID			  "218"
+		  Position		  [650, 38, 680, 52]
+		  ZOrder		  979
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VIFO_ResidualLaneFinish_flg"
+		  SID			  "220"
+		  Position		  [650, 278, 680, 292]
+		  ZOrder		  981
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VIFO_DegradedFinsih_flg"
+		  SID			  "226"
+		  Position		  [650, 358, 680, 372]
+		  ZOrder		  986
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VIFO_DriverHOD_flg"
+		  SID			  "219"
+		  Position		  [650, 198, 680, 212]
+		  ZOrder		  980
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VIFO_Curvature4DisabledWarning_flg"
+		  SID			  "237"
+		  Position		  [650, 413, 680, 427]
+		  ZOrder		  987
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant1"
+		  SID			  "238"
+		  Position		  [680, 474, 885, 496]
+		  ZOrder		  989
+		  ShowName		  off
+		  Value			  "ENUM_LFCSTATE_AUTOSTEERING"
+		}
+		Block {
+		  BlockType		  Constant
+		  Name			  "Constant3"
+		  SID			  "207"
+		  Position		  [1065, 69, 1270, 91]
+		  ZOrder		  971
+		  ShowName		  off
+		  Value			  "ENUM_LFCSTATE_SOFTEN"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator"
+		  SID			  "192"
+		  Ports			  [4, 1]
+		  Position		  [1365, 166, 1400, 484]
+		  ZOrder		  963
+		  ShowName		  off
+		  Operator		  "OR"
+		  Inputs		  "4"
+		  AllPortsSameDT	  off
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator1"
+		  SID			  "240"
+		  Ports			  [2, 1]
+		  Position		  [1040, 396, 1075, 494]
+		  ZOrder		  990
+		  ShowName		  off
+		  AllPortsSameDT	  off
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator4"
+		  SID			  "210"
+		  Ports			  [2, 1]
+		  Position		  [1735, 22, 1770, 193]
+		  ZOrder		  972
+		  ShowName		  off
+		  AllPortsSameDT	  off
+		  OutDataTypeStr	  "boolean"
+		  Port {
+		    PortNumber		    1
+		    Name		    "VDIP_LFCWarningReq_flg"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Logic
+		  Name			  "Logical\nOperator5"
+		  SID			  "211"
+		  Ports			  [1, 1]
+		  Position		  [1475, 49, 1505, 81]
+		  ZOrder		  973
+		  ShowName		  off
+		  Operator		  "NOT"
+		  AllPortsSameDT	  off
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator1"
+		  SID			  "239"
+		  Ports			  [2, 1]
+		  Position		  [910, 434, 940, 501]
+		  ZOrder		  988
+		  ShowName		  off
+		  Operator		  "=="
+		  InputSameDT		  off
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  RelationalOperator
+		  Name			  "Relational\nOperator3"
+		  SID			  "209"
+		  Ports			  [2, 1]
+		  Position		  [1295, 29, 1325, 96]
+		  ZOrder		  970
+		  ShowName		  off
+		  Operator		  "=="
+		  InputSameDT		  off
+		  OutDataTypeStr	  "boolean"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "VDIP_LFCWarningReq_flg"
+		  SID			  "221"
+		  Position		  [2065, 103, 2095, 117]
+		  ZOrder		  982
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  229
+		  SrcBlock		  "Logical\nOperator5"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator4"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  314
+		  SrcBlock		  "VLFC_LFCState_enum"
+		  SrcPort		  1
+		  Points		  [109, 0]
+		  Branch {
+		    ZOrder		    413
+		    Points		    [0, 405]
+		    DstBlock		    "Relational\nOperator1"
+		    DstPort		    1
+		  }
+		  Branch {
+		    ZOrder		    412
+		    DstBlock		    "Relational\nOperator3"
+		    DstPort		    1
+		  }
+		}
+		Line {
+		  ZOrder		  227
+		  SrcBlock		  "Relational\nOperator3"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator5"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  224
+		  SrcBlock		  "Constant3"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator3"
+		  DstPort		  2
+		}
+		Line {
+		  Name			  "VDIP_LFCWarningReq_flg"
+		  ZOrder		  317
+		  Labels		  [1, 1]
+		  SrcBlock		  "Logical\nOperator4"
+		  SrcPort		  1
+		  DstBlock		  "VDIP_LFCWarningReq_flg"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  403
+		  SrcBlock		  "VIFO_DriverHOD_flg"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  394
+		  SrcBlock		  "VIFO_ResidualLaneFinish_flg"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  395
+		  SrcBlock		  "VIFO_DegradedFinsih_flg"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator"
+		  DstPort		  3
+		}
+		Line {
+		  ZOrder		  396
+		  SrcBlock		  "Logical\nOperator"
+		  SrcPort		  1
+		  Points		  [162, 0; 0, -175]
+		  DstBlock		  "Logical\nOperator4"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  410
+		  SrcBlock		  "VIFO_Curvature4DisabledWarning_flg"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator1"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  408
+		  SrcBlock		  "Constant1"
+		  SrcPort		  1
+		  DstBlock		  "Relational\nOperator1"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  411
+		  SrcBlock		  "Relational\nOperator1"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator1"
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  414
+		  SrcBlock		  "Logical\nOperator1"
+		  SrcPort		  1
+		  DstBlock		  "Logical\nOperator"
+		  DstPort		  4
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "LFC_DIP"
+	      SID		      "184"
+	      Ports		      [1, 1]
+	      Position		      [520, 312, 945, 468]
+	      ZOrder		      955
+	      ErrorFcn		      "Stateflow.Translate.translate"
+	      PermitHierarchicalResolution "ExplicitOnly"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      SFBlockType	      "Chart"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VDIP_LFCHMIStatus_enum"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"LFC_DIP"
+		Location		[-9, -9, 1375, 729]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SIDHighWatermark	"190"
+		SIDPrevWatermark	"95"
+		Block {
+		  BlockType		  Inport
+		  Name			  "VLFC_LFCState_enum"
+		  SID			  "184::49"
+		  Position		  [20, 101, 40, 119]
+		  ZOrder		  29
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Demux
+		  Name			  " Demux "
+		  SID			  "184::94"
+		  Ports			  [1, 1]
+		  Position		  [270, 230, 320, 270]
+		  ZOrder		  36
+		  Outputs		  "1"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  " SFunction "
+		  SID			  "184::93"
+		  Tag			  "Stateflow S-Function dip 1"
+		  Ports			  [1, 2]
+		  Position		  [180, 105, 230, 165]
+		  ZOrder		  35
+		  FunctionName		  "sf_sfun"
+		  Parameters		  "ENUM_LFCHMISTATUS_ACTING,ENUM_LFCHMISTATUS_OFF,ENUM_LFCHMISTATUS_STANDBY,ENUM_LFCSTATE_ADASFAILURE,"
+		  "ENUM_LFCSTATE_AUTOSTEERING,ENUM_LFCSTATE_DEGRADED,ENUM_LFCSTATE_DISABLED,ENUM_LFCSTATE_EPSRECOVERYPENDING,ENUM_LFC"
+		  "STATE_OFF,ENUM_LFCSTATE_SOFTEN,ENUM_LFCSTATE_STANDBY"
+		  PortCounts		  "[1 2]"
+		  EnableBusSupport	  off
+		  Port {
+		    PortNumber		    2
+		    Name		    "VDIP_LFCHMIStatus_enum"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  " Terminator "
+		  SID			  "184::95"
+		  Position		  [460, 241, 480, 259]
+		  ZOrder		  37
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "VDIP_LFCHMIStatus_enum"
+		  SID			  "184::50"
+		  Position		  [460, 101, 480, 119]
+		  ZOrder		  30
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  27
+		  SrcBlock		  "VLFC_LFCState_enum"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "VDIP_LFCHMIStatus_enum"
+		  ZOrder		  28
+		  Labels		  [0, 0]
+		  SrcBlock		  " SFunction "
+		  SrcPort		  2
+		  DstBlock		  "VDIP_LFCHMIStatus_enum"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  29
+		  SrcBlock		  " Demux "
+		  SrcPort		  1
+		  DstBlock		  " Terminator "
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  30
+		  SrcBlock		  " SFunction "
+		  SrcPort		  1
+		  DstBlock		  " Demux "
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "LKA_DIP"
+	      SID		      "83"
+	      Ports		      [1, 1]
+	      Position		      [520, 512, 945, 668]
+	      ZOrder		      907
+	      LibraryVersion	      "1.263"
+	      ErrorFcn		      "Stateflow.Translate.translate"
+	      PermitHierarchicalResolution "ExplicitOnly"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      SFBlockType	      "Chart"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VDIP_LKAHMIStatus_enum"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"LKA_DIP"
+		Location		[-9, -9, 1375, 729]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SIDHighWatermark	"191"
+		Block {
+		  BlockType		  Inport
+		  Name			  "VLKA_LKAState_enum"
+		  SID			  "83::49"
+		  Position		  [20, 101, 40, 119]
+		  ZOrder		  29
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Demux
+		  Name			  " Demux "
+		  SID			  "83::46"
+		  Ports			  [1, 1]
+		  Position		  [270, 230, 320, 270]
+		  ZOrder		  26
+		  Outputs		  "1"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  " SFunction "
+		  SID			  "83::45"
+		  Tag			  "Stateflow S-Function dip 2"
+		  Ports			  [1, 2]
+		  Position		  [180, 120, 230, 180]
+		  ZOrder		  25
+		  FunctionName		  "sf_sfun"
+		  Parameters		  "ENUM_LKAHMISTATUS_ACTING,ENUM_LKAHMISTATUS_OFF,ENUM_LKASTATE_ADASFAILURE,ENUM_LKASTATE_DISABLED,ENU"
+		  "M_LKASTATE_EPSRECOVERYPENDING,ENUM_LKASTATE_LEFTASSISTING,ENUM_LKASTATE_OFF,ENUM_LKASTATE_OPERATIONAL,ENUM_LKASTAT"
+		  "E_RIGHTASSISTING,ENUM_LKASTATE_STANDBY"
+		  PortCounts		  "[1 2]"
+		  EnableBusSupport	  on
+		  Port {
+		    PortNumber		    2
+		    Name		    "VDIP_LKAHMIStatus_enum"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  " Terminator "
+		  SID			  "83::47"
+		  Position		  [460, 241, 480, 259]
+		  ZOrder		  27
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "VDIP_LKAHMIStatus_enum"
+		  SID			  "83::53"
+		  Position		  [460, 101, 480, 119]
+		  ZOrder		  33
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  27
+		  SrcBlock		  "VLKA_LKAState_enum"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "VDIP_LKAHMIStatus_enum"
+		  ZOrder		  28
+		  Labels		  [0, 0]
+		  SrcBlock		  " SFunction "
+		  SrcPort		  2
+		  DstBlock		  "VDIP_LKAHMIStatus_enum"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  29
+		  SrcBlock		  " Demux "
+		  SrcPort		  1
+		  DstBlock		  " Terminator "
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  30
+		  SrcBlock		  " SFunction "
+		  SrcPort		  1
+		  DstBlock		  " Demux "
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "Lane_DIP"
+	      SID		      "243"
+	      Ports		      [4, 2]
+	      Position		      [520, 20, 945, 275]
+	      ZOrder		      983
+	      ErrorFcn		      "Stateflow.Translate.translate"
+	      PermitHierarchicalResolution "ExplicitOnly"
+	      TreatAsAtomicUnit	      on
+	      MinAlgLoopOccurrences   off
+	      PropExecContextOutsideSubsystem off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      Opaque		      off
+	      RequestExecContextInheritance off
+	      MaskHideContents	      off
+	      SFBlockType	      "Chart"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VDIP_LeftLaneLampMode_enum"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		2
+		PropagatedSignals	"VDIP_RightLaneLampMode_enum"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"Lane_DIP"
+		Location		[-9, 0, 1609, 870]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		SIDHighWatermark	"198"
+		SIDPrevWatermark	"188"
+		Block {
+		  BlockType		  Inport
+		  Name			  "VLFC_LFCState_enum"
+		  SID			  "243::49"
+		  Position		  [20, 101, 40, 119]
+		  ZOrder		  29
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VPER_LeftLaneAvail_fig"
+		  SID			  "243::55"
+		  Position		  [20, 136, 40, 154]
+		  ZOrder		  33
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VPER_RightLaneAvail_fig"
+		  SID			  "243::56"
+		  Position		  [20, 171, 40, 189]
+		  ZOrder		  34
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VLKA_LKAState_enum"
+		  SID			  "243::189"
+		  Position		  [20, 206, 40, 224]
+		  ZOrder		  41
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Demux
+		  Name			  " Demux "
+		  SID			  "243::187"
+		  Ports			  [1, 1]
+		  Position		  [270, 230, 320, 270]
+		  ZOrder		  39
+		  Outputs		  "1"
+		}
+		Block {
+		  BlockType		  S-Function
+		  Name			  " SFunction "
+		  SID			  "243::186"
+		  Tag			  "Stateflow S-Function dip 3"
+		  Ports			  [4, 3]
+		  Position		  [180, 107, 230, 208]
+		  ZOrder		  38
+		  FunctionName		  "sf_sfun"
+		  Parameters		  "ENUM_LANELAMPMODE_GREEN,ENUM_LANELAMPMODE_GREY,ENUM_LANELAMPMODE_OFF,ENUM_LANELAMPMODE_RED,ENUM_LFC"
+		  "STATE_AUTOSTEERING,ENUM_LFCSTATE_DEGRADED,ENUM_LFCSTATE_SOFTEN,ENUM_LKASTATE_LEFTASSISTING,ENUM_LKASTATE_RIGHTASSI"
+		  "STING"
+		  PortCounts		  "[4 3]"
+		  EnableBusSupport	  off
+		  Port {
+		    PortNumber		    2
+		    Name		    "VDIP_LeftLaneLampMode_enum"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		  Port {
+		    PortNumber		    3
+		    Name		    "VDIP_RightLaneLampMode_enum"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  " Terminator "
+		  SID			  "243::188"
+		  Position		  [460, 241, 480, 259]
+		  ZOrder		  40
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "VDIP_LeftLaneLampMode_enum"
+		  SID			  "243::53"
+		  Position		  [460, 101, 480, 119]
+		  ZOrder		  31
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "VDIP_RightLaneLampMode_enum"
+		  SID			  "243::54"
+		  Position		  [460, 136, 480, 154]
+		  ZOrder		  32
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  ZOrder		  1
+		  SrcBlock		  "VLFC_LFCState_enum"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  2
+		  SrcBlock		  "VPER_LeftLaneAvail_fig"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  2
+		}
+		Line {
+		  ZOrder		  3
+		  SrcBlock		  "VPER_RightLaneAvail_fig"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  3
+		}
+		Line {
+		  ZOrder		  4
+		  SrcBlock		  "VLKA_LKAState_enum"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  4
+		}
+		Line {
+		  Name			  "VDIP_LeftLaneLampMode_enum"
+		  ZOrder		  5
+		  Labels		  [0, 0]
+		  SrcBlock		  " SFunction "
+		  SrcPort		  2
+		  DstBlock		  "VDIP_LeftLaneLampMode_enum"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "VDIP_RightLaneLampMode_enum"
+		  ZOrder		  6
+		  Labels		  [0, 0]
+		  SrcBlock		  " SFunction "
+		  SrcPort		  3
+		  DstBlock		  "VDIP_RightLaneLampMode_enum"
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  7
+		  SrcBlock		  " Demux "
+		  SrcPort		  1
+		  DstBlock		  " Terminator "
+		  DstPort		  1
+		}
+		Line {
+		  ZOrder		  8
+		  SrcBlock		  " SFunction "
+		  SrcPort		  1
+		  DstBlock		  " Demux "
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VDIP_LeftLaneLampMode_enum"
+	      SID		      "86"
+	      Position		      [1875, 78, 1905, 92]
+	      ZOrder		      922
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VDIP_RightLaneLampMode_enum"
+	      SID		      "87"
+	      Position		      [1875, 203, 1905, 217]
+	      ZOrder		      927
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VDIP_LFCHMIStatus_enum"
+	      SID		      "88"
+	      Position		      [1875, 383, 1905, 397]
+	      ZOrder		      931
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VDIP_LKAHMIStatus_enum"
+	      SID		      "89"
+	      Position		      [1875, 583, 1905, 597]
+	      ZOrder		      932
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VDIP_LFCWarningReq_flg"
+	      SID		      "99"
+	      Position		      [1875, 783, 1905, 797]
+	      ZOrder		      942
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VDIP_ADASFunOnSoundReq_flg"
+	      SID		      "102"
+	      Position		      [1875, 943, 1905, 957]
+	      ZOrder		      945
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VDIP_ADASFunOffSoundReq_flg"
+	      SID		      "103"
+	      Position		      [1875, 993, 1905, 1007]
+	      ZOrder		      946
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VDIP_NumberOfTargets_num"
+	      SID		      "183"
+	      Position		      [1875, 1098, 1905, 1112]
+	      ZOrder		      954
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      51
+	      SrcBlock		      "VPER_LeftLaneAvail_fig"
+	      SrcPort		      1
+	      DstBlock		      "Lane_DIP"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      54
+	      SrcBlock		      "VPER_RightLaneAvail_fig"
+	      SrcPort		      1
+	      DstBlock		      "Lane_DIP"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      55
+	      SrcBlock		      "VLKA_LKAState_enum"
+	      SrcPort		      1
+	      Points		      [205, 0]
+	      Branch {
+		ZOrder			380
+		Points			[0, 30]
+		DstBlock		"Goto1"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			379
+		DstBlock		"Lane_DIP"
+		DstPort			4
+	      }
+	    }
+	    Line {
+	      ZOrder		      353
+	      Labels		      [1, 1]
+	      SrcBlock		      "Lane_DIP"
+	      SrcPort		      1
+	      DstBlock		      "VDIP_LeftLaneLampMode_enum"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      354
+	      Labels		      [1, 1]
+	      SrcBlock		      "Lane_DIP"
+	      SrcPort		      2
+	      DstBlock		      "VDIP_RightLaneLampMode_enum"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      355
+	      Labels		      [1, 1]
+	      SrcBlock		      "LFC_DIP"
+	      SrcPort		      1
+	      DstBlock		      "VDIP_LFCHMIStatus_enum"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      356
+	      Labels		      [1, 1]
+	      SrcBlock		      "LKA_DIP"
+	      SrcPort		      1
+	      DstBlock		      "VDIP_LKAHMIStatus_enum"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      86
+	      Labels		      [-1, 0]
+	      SrcBlock		      "Function_OnOff_Sound"
+	      SrcPort		      1
+	      DstBlock		      "VDIP_ADASFunOnSoundReq_flg"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      87
+	      Labels		      [-1, 0]
+	      SrcBlock		      "Function_OnOff_Sound"
+	      SrcPort		      2
+	      DstBlock		      "VDIP_ADASFunOffSoundReq_flg"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      118
+	      SrcBlock		      "VPER_NumberOfTargets_enum"
+	      SrcPort		      1
+	      DstBlock		      "Data Type Conversion"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "VDIP_NumberOfTargets_num"
+	      ZOrder		      119
+	      Labels		      [1, 1]
+	      SrcBlock		      "Data Type Conversion"
+	      SrcPort		      1
+	      DstBlock		      "VDIP_NumberOfTargets_num"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      48
+	      SrcBlock		      "VLFC_LFCState_enum"
+	      SrcPort		      1
+	      Points		      [201, 0]
+	      Branch {
+		ZOrder			377
+		Points			[0, 25]
+		DstBlock		"Goto"
+		DstPort			1
+	      }
+	      Branch {
+		ZOrder			376
+		DstBlock		"Lane_DIP"
+		DstPort			1
+	      }
+	    }
+	    Line {
+	      ZOrder		      315
+	      SrcBlock		      "VIFO_ResidualLaneFinish_flg"
+	      SrcPort		      1
+	      DstBlock		      "LFCWarning"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      316
+	      SrcBlock		      "LFCWarning"
+	      SrcPort		      1
+	      DstBlock		      "VDIP_LFCWarningReq_flg"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      327
+	      SrcBlock		      "VIFO_DegradedFinsih_flg"
+	      SrcPort		      1
+	      DstBlock		      "LFCWarning"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      330
+	      SrcBlock		      "VIFO_DriverHOD_flg"
+	      SrcPort		      1
+	      DstBlock		      "LFCWarning"
+	      DstPort		      4
+	    }
+	    Line {
+	      ZOrder		      331
+	      SrcBlock		      "VIFO_Curvature4DisabledWarning_flg"
+	      SrcPort		      1
+	      DstBlock		      "LFCWarning"
+	      DstPort		      5
+	    }
+	    Line {
+	      ZOrder		      378
+	      SrcBlock		      "From"
+	      SrcPort		      1
+	      DstBlock		      "LFC_DIP"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      381
+	      SrcBlock		      "From1"
+	      SrcPort		      1
+	      DstBlock		      "LKA_DIP"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      382
+	      SrcBlock		      "From2"
+	      SrcPort		      1
+	      DstBlock		      "LFCWarning"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      384
+	      SrcBlock		      "From4"
+	      SrcPort		      1
+	      DstBlock		      "Function_OnOff_Sound"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      385
+	      SrcBlock		      "From3"
+	      SrcPort		      1
+	      DstBlock		      "Function_OnOff_Sound"
+	      DstPort		      2
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BDIP_outputs"
+	  SID			  "53"
+	  Position		  [1240, 343, 1270, 357]
+	  ZOrder		  -14
+	  IconDisplay		  "Port number"
+	  OutDataTypeStr	  "Bus: BDIP_outputs"
+	}
+	Line {
+	  ZOrder		  2
+	  Labels		  [0, 0]
+	  SrcBlock		  "BLFC_outputs"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "BDIP_outputs"
+	  ZOrder		  3
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator"
+	  SrcPort		  1
+	  DstBlock		  "BDIP_outputs"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<VLFC_LFCState_enum>"
+	  ZOrder		  14
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector1"
+	  SrcPort		  1
+	  DstBlock		  "DIP"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  15
+	  Labels		  [0, 0]
+	  SrcBlock		  "BLKA_outputs"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<VLKA_LKAState_enum>"
+	  ZOrder		  16
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  1
+	  DstBlock		  "DIP"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  17
+	  Labels		  [0, 0]
+	  SrcBlock		  "BPER_outputs"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector3"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<VPER_LeftLaneAvail_flg>"
+	  ZOrder		  19
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector3"
+	  SrcPort		  1
+	  DstBlock		  "DIP"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "<VPER_RightLaneAvail_flg>"
+	  ZOrder		  20
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector3"
+	  SrcPort		  2
+	  DstBlock		  "DIP"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  21
+	  Labels		  [-1, 0]
+	  SrcBlock		  "DIP"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  22
+	  Labels		  [-1, 0]
+	  SrcBlock		  "DIP"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  23
+	  Labels		  [-1, 0]
+	  SrcBlock		  "DIP"
+	  SrcPort		  3
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  24
+	  Labels		  [-1, 0]
+	  SrcBlock		  "DIP"
+	  SrcPort		  4
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  25
+	  Labels		  [-1, 0]
+	  SrcBlock		  "DIP"
+	  SrcPort		  5
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  5
+	}
+	Line {
+	  ZOrder		  26
+	  Labels		  [-1, 0]
+	  SrcBlock		  "DIP"
+	  SrcPort		  6
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  6
+	}
+	Line {
+	  ZOrder		  27
+	  Labels		  [-1, 0]
+	  SrcBlock		  "DIP"
+	  SrcPort		  7
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  7
+	}
+	Line {
+	  Name			  "<VPER_NumberOfTargets_enum>"
+	  ZOrder		  28
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector3"
+	  SrcPort		  3
+	  DstBlock		  "DIP"
+	  DstPort		  5
+	}
+	Line {
+	  ZOrder		  29
+	  Labels		  [-1, 0]
+	  SrcBlock		  "DIP"
+	  SrcPort		  8
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  8
+	}
+	Line {
+	  ZOrder		  33
+	  SrcBlock		  "BIFO_outputs"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nSelector4"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<VIFO_DriverHOD_flg>"
+	  ZOrder		  36
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector4"
+	  SrcPort		  3
+	  DstBlock		  "DIP"
+	  DstPort		  8
+	}
+	Line {
+	  Name			  "<VIFO_DegradedFinish_flg>"
+	  ZOrder		  37
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector4"
+	  SrcPort		  2
+	  DstBlock		  "DIP"
+	  DstPort		  7
+	}
+	Line {
+	  Name			  "<VIFO_ResidualLaneFinish_flg>"
+	  ZOrder		  38
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector4"
+	  SrcPort		  1
+	  DstBlock		  "DIP"
+	  DstPort		  6
+	}
+	Line {
+	  Name			  "<VIFO_Curvature4DisableWarning_flg>"
+	  ZOrder		  39
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector4"
+	  SrcPort		  4
+	  DstBlock		  "DIP"
+	  DstPort		  9
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Model Info"
+      SID		      "56"
+      Ports		      []
+      Position		      [50, 39, 268, 93]
+      ZOrder		      127
+      ShowName		      off
+      LibraryVersion	      "1.286"
+      SourceBlock	      "simulink/Model-Wide\nUtilities/Model Info"
+      SourceType	      "CMBlock"
+      ContentPreviewEnabled   off
+      InitialBlockCM	      "None"
+      BlockCM		      "None"
+      Frame		      "on"
+      DisplayStringWithTags   "Model Version        : %<ModelVersion>\nCreator                   : %<Creator>\nLast Mo"
+      "dified by    : %<LastModifiedBy>"
+      MaskDisplayString	      "Model Version        : 1.295\\nCreator                   : 13192\\nLast Modified by    "
+      ": 13192"
+      HorizontalTextAlignment "Left"
+      LeftAlignmentValue      "0.02"
+      SourceBlockDiagram      "dip"
+      TagMaxNumber	      "20"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "model_info"
+      SID		      "57"
+      Ports		      []
+      Position		      [315, 54, 599, 82]
+      ZOrder		      126
+      ShowName		      off
+      LibraryVersion	      "1.286"
+      SourceBlock	      "simulink/Model-Wide\nUtilities/Model Info"
+      SourceType	      "CMBlock"
+      ContentPreviewEnabled   off
+      InitialBlockCM	      "None"
+      BlockCM		      "None"
+      Frame		      "on"
+      DisplayStringWithTags   "$Id: hcu_lib.mdl 289 2016-04-11 06:01:08Z chimotsai $"
+      MaskDisplayString	      "$Id: hcu_lib.mdl 289 2016-04-11 06:01:08Z chimotsai $"
+      HorizontalTextAlignment "Center"
+      LeftAlignmentValue      "0.5"
+      SourceBlockDiagram      "dip"
+      TagMaxNumber	      "20"
+    }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.6 (R2013a) dated Aug  8 2013, 23:18:33
+#
+#
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "dip"
+    created		    "03-Jul-2014 16:48:16"
+    isLibrary		    1
+    firstTarget		    174
+    defaultActionLanguage   CLASSIC_BITOPS
+    sfVersion		    76014001.0016
+  }
+  chart {
+    id			    2
+    name		    "DIP/DIP/LFC_DIP"
+    windowPosition	    [-9 -9 1384 738]
+    viewLimits		    [5.466 1670.558 697.27 1391.058]
+    zoomFactor		    2.014
+    stateColor		    [0.3803921568627451 0.2745098039215687 0.1803921568627451]
+    stateLabelColor	    [0.4588235294117647 0.2980392156862745 0.1411764705882353]
+    transitionColor	    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
+    transitionLabelColor    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
+    junctionColor	    [0.7764705882352941 0.4980392156862745 0]
+    chartColor		    [1 0.9882352941176471 0.9254901960784314]
+    screen		    [1 1 1920 1200 1.333333333333333]
+    firstTransition	    33
+    firstJunction	    16
+    viewObj		    2
+    machine		    1
+    toolbarMode		    LIBRARY_TOOLBAR
+    ssIdHighWaterMark	    219
+    decomposition	    CLUSTER_CHART
+    firstData		    3
+    chartFileNumber	    1
+    saturateOnIntegerOverflow 1
+    userSpecifiedStateTransitionExecutionOrder 1
+    disableImplicitCasting  1
+    actionLanguage	    1
+  }
+  data {
+    id			    3
+    ssIdNumber		    113
+    name		    "VLFC_LFCState_enum"
+    linkNode		    [2 0 4]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    4
+    ssIdNumber		    114
+    name		    "VDIP_LFCHMIStatus_enum"
+    linkNode		    [2 3 5]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      resolveToSignalObject   1
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    5
+    ssIdNumber		    117
+    name		    "ENUM_LFCSTATE_DISABLED"
+    linkNode		    [2 4 6]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 6
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    6
+    ssIdNumber		    118
+    name		    "ENUM_LFCSTATE_OFF"
+    linkNode		    [2 5 7]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 8
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    7
+    ssIdNumber		    119
+    name		    "ENUM_LFCSTATE_STANDBY"
+    linkNode		    [2 6 8]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 10
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    8
+    ssIdNumber		    120
+    name		    "ENUM_LFCSTATE_AUTOSTEERING"
+    linkNode		    [2 7 9]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 4
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    9
+    ssIdNumber		    121
+    name		    "ENUM_LFCSTATE_DEGRADED"
+    linkNode		    [2 8 10]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 5
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    10
+    ssIdNumber		    123
+    name		    "ENUM_LFCSTATE_SOFTEN"
+    linkNode		    [2 9 11]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 9
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    11
+    ssIdNumber		    124
+    name		    "ENUM_LFCSTATE_ADASFAILURE"
+    linkNode		    [2 10 12]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 3
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    12
+    ssIdNumber		    125
+    name		    "ENUM_LFCSTATE_EPSRECOVERYPENDING"
+    linkNode		    [2 11 13]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 7
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    13
+    ssIdNumber		    126
+    name		    "ENUM_LFCHMISTATUS_ACTING"
+    linkNode		    [2 12 14]
+    scope		    PARAMETER_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    14
+    ssIdNumber		    127
+    name		    "ENUM_LFCHMISTATUS_OFF"
+    linkNode		    [2 13 15]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 1
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    15
+    ssIdNumber		    128
+    name		    "ENUM_LFCHMISTATUS_STANDBY"
+    linkNode		    [2 14 0]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 2
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    16
+    position		    [3473.75 530.5 7]
+    chart		    2
+    linkNode		    [2 0 17]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    68
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    17
+    position		    [3028.6667 668.8333 7]
+    chart		    2
+    linkNode		    [2 16 18]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    74
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    18
+    position		    [27 870.8333 7]
+    chart		    2
+    linkNode		    [2 17 19]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    84
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    19
+    position		    [1922.0833 870.8333 7]
+    chart		    2
+    linkNode		    [2 18 20]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    86
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    20
+    position		    [27 1018.2333 7]
+    chart		    2
+    linkNode		    [2 19 21]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    90
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    21
+    position		    [1536.85 1018.2333 7]
+    chart		    2
+    linkNode		    [2 20 22]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    92
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    22
+    position		    [27 1149.4333 7]
+    chart		    2
+    linkNode		    [2 21 23]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    96
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    23
+    position		    [1149 1149.4333 7]
+    chart		    2
+    linkNode		    [2 22 24]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    98
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    24
+    position		    [27 1461.0833 7]
+    chart		    2
+    linkNode		    [2 23 25]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    217
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    25
+    position		    [1149 1461.0833 7]
+    chart		    2
+    linkNode		    [2 24 26]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    209
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    26
+    position		    [1536.85 1461.0833 7]
+    chart		    2
+    linkNode		    [2 25 27]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    207
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    27
+    position		    [1922.0833 1461.0833 7]
+    chart		    2
+    linkNode		    [2 26 28]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    170
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    28
+    position		    [27 1997.5 7]
+    chart		    2
+    linkNode		    [2 27 29]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    102
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    29
+    position		    [3028.6667 1997.5 7]
+    chart		    2
+    linkNode		    [2 28 30]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    76
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    30
+    position		    [4251.8 1997.5 7]
+    chart		    2
+    linkNode		    [2 29 31]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    63
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    31
+    position		    [4702.6667 1997.5 7]
+    chart		    2
+    linkNode		    [2 30 32]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    56
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    32
+    position		    [5166.9 1997.5 7]
+    chart		    2
+    linkNode		    [2 31 0]
+    visible		    0
+    subviewer		    2
+    ssIdNumber		    53
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    33
+    labelString		    ""
+    labelPosition	    [26.859 848.834 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 0.0064 1 0 26.7624 833.8341 0 0]
+    }
+    dst {
+      id		      18
+      intersection	      [1 -0.0064 -1 0 26.955 863.8334 0 0]
+    }
+    midPoint		    [26.8587 848.8338]
+    chart		    2
+    linkNode		    [2 0 34]
+    dataLimits		    [24.504 29.304 833.834 863.833]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    206
+  }
+  transition {
+    id			    34
+    labelString		    "[VLFC_LFCState_enum==ENUM_LFCSTATE_DISABLED || VLFC_LFCState_enum==ENUM_LFCSTATE_OFF || VLFC_LFC"
+    "State_enum==ENUM_LFCSTATE_ADASFAILURE || VLFC_LFCState_enum==ENUM_LFCSTATE_EPSRECOVERYPENDING]"
+    labelPosition	    [114.547 821.689 1343.75 17]
+    fontSize		    12
+    src {
+      id		      18
+      intersection	      [2 1 0 0 34 870.8333 0 0]
+    }
+    dst {
+      id		      19
+      intersection	      [4 -1 0 0 1915.0833 870.8333 0 0]
+    }
+    midPoint		    [970.5416 870.8333]
+    chart		    2
+    linkNode		    [2 33 35]
+    dataLimits		    [34 1915.083 868.433 873.233]
+    stampAngle		    -0.7854
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    87
+  }
+  transition {
+    id			    35
+    labelString		    ""
+    labelPosition	    [27 923.598 0 0]
+    fontSize		    12
+    src {
+      id		      18
+      intersection	      [3 0 1 0 27 877.8333 0 0]
+    }
+    dst {
+      id		      20
+      intersection	      [1 0 -1 0 27 1011.2333 0 0]
+    }
+    midPoint		    [27 940.5333]
+    chart		    2
+    linkNode		    [2 34 36]
+    dataLimits		    [24.6 29.4 877.833 1011.233]
+    stampAngle		    0.7854
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    91
+  }
+  transition {
+    id			    36
+    labelString		    "{VDIP_LFCHMIStatus_enum=ENUM_LFCHMISTATUS_OFF;}"
+    labelPosition	    [1936.528 1159.465 331.5 17]
+    fontSize		    12
+    src {
+      id		      19
+      intersection	      [3 0 1 0 1922.0833 877.8333 0 0]
+    }
+    dst {
+      id		      27
+      intersection	      [1 0 -1 0 1922.0833 1454.0833 0 0]
+    }
+    midPoint		    [1922.0833 1161.9583]
+    chart		    2
+    linkNode		    [2 35 37]
+    dataLimits		    [1919.683 1924.483 877.833 1454.083]
+    stampAngle		    0.7854
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    171
+  }
+  transition {
+    id			    37
+    labelString		    "[VLFC_LFCState_enum==ENUM_LFCSTATE_STANDBY]"
+    labelPosition	    [659.354 990.089 310.25 17]
+    fontSize		    12
+    src {
+      id		      20
+      intersection	      [2 1 0 0 34 1018.2333 0 0]
+    }
+    dst {
+      id		      21
+      intersection	      [4 -1 -0 0 1529.85 1018.2333 0 0]
+    }
+    midPoint		    [777.925 1018.2333]
+    chart		    2
+    linkNode		    [2 36 38]
+    dataLimits		    [34 1529.85 1015.833 1020.633]
+    stampAngle		    -0.7854
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    93
+  }
+  transition {
+    id			    38
+    labelString		    ""
+    labelPosition	    [27 1066.772 0 0]
+    fontSize		    12
+    src {
+      id		      20
+      intersection	      [3 0 1 0 27 1025.2333 0 0]
+    }
+    dst {
+      id		      22
+      intersection	      [1 0 -1 0 27 1142.4333 0 0]
+    }
+    midPoint		    [27 1079.8333]
+    chart		    2
+    linkNode		    [2 37 39]
+    dataLimits		    [24.6 29.4 1025.233 1142.433]
+    stampAngle		    0.7854
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    97
+  }
+  transition {
+    id			    39
+    labelString		    "{VDIP_LFCHMIStatus_enum=ENUM_LFCHMISTATUS_STANDBY;}"
+    labelPosition	    [1545.491 1150.533 362 17]
+    fontSize		    12
+    src {
+      id		      21
+      intersection	      [3 0 1 0 1536.85 1025.2333 0 0]
+    }
+    dst {
+      id		      26
+      intersection	      [1 0 -1 0 1536.85 1454.0833 0 0]
+    }
+    midPoint		    [1536.85 1235.6583]
+    chart		    2
+    linkNode		    [2 38 40]
+    dataLimits		    [1534.45 1539.25 1025.233 1454.083]
+    stampAngle		    0.7854
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    208
+  }
+  transition {
+    id			    40
+    labelString		    "[VLFC_LFCState_enum==ENUM_LFCSTATE_AUTOSTEERING || VLFC_LFCState_enum==ENUM_LFCSTATE_DEGRADED ||"
+    " VLFC_LFCState_enum==ENUM_LFCSTATE_SOFTEN]"
+    labelPosition	    [42.621 1113.689 983.75 17]
+    fontSize		    12
+    src {
+      id		      22
+      intersection	      [2 1 0 0 34 1149.4333 0 0]
+    }
+    dst {
+      id		      23
+      intersection	      [4 -1 0 0 1142 1149.4333 0 0]
+    }
+    midPoint		    [584 1149.4333]
+    chart		    2
+    linkNode		    [2 39 41]
+    dataLimits		    [34 1142 1147.033 1151.833]
+    stampAngle		    -0.7744
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    99
+  }
+  transition {
+    id			    41
+    labelString		    "{VDIP_LFCHMIStatus_enum=ENUM_LFCHMISTATUS_OFF;}"
+    labelPosition	    [36.4 1272.342 331.5 17]
+    fontSize		    12
+    src {
+      id		      22
+      intersection	      [3 0 1 0 27 1156.4333 0 0]
+    }
+    dst {
+      id		      24
+      intersection	      [1 0 -1 0 27 1454.0833 0 0]
+    }
+    midPoint		    [27 1301.2583]
+    chart		    2
+    linkNode		    [2 40 42]
+    dataLimits		    [24.6 29.4 1156.433 1454.083]
+    stampAngle		    0.7737
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    218
+  }
+  transition {
+    id			    42
+    labelString		    "{VDIP_LFCHMIStatus_enum=ENUM_LFCHMISTATUS_ACTING;}"
+    labelPosition	    [1150.544 1260.606 352.5 17]
+    fontSize		    12
+    src {
+      id		      23
+      intersection	      [3 0 1 0 1149 1156.4333 0 0]
+    }
+    dst {
+      id		      25
+      intersection	      [1 0 -1 0 1149 1454.0833 0 0]
+    }
+    midPoint		    [1149 1301.2583]
+    chart		    2
+    linkNode		    [2 41 43]
+    dataLimits		    [1146.6 1151.4 1156.433 1454.083]
+    stampAngle		    0.7854
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    210
+  }
+  transition {
+    id			    43
+    labelString		    ""
+    labelPosition	    [588.076 1443.912 0 0]
+    fontSize		    12
+    src {
+      id		      25
+      intersection	      [4 -1 0 0 1142 1461.0833 0 0]
+    }
+    dst {
+      id		      24
+      intersection	      [2 1 0 0 34 1461.0833 0 0]
+    }
+    midPoint		    [592 1461.0833]
+    chart		    2
+    linkNode		    [2 42 44]
+    dataLimits		    [34 1142 1458.683 1463.483]
+    stampAngle		    2.3976
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    219
+  }
+  transition {
+    id			    44
+    labelString		    ""
+    labelPosition	    [1342.925 1443.083 0 0]
+    fontSize		    12
+    src {
+      id		      26
+      intersection	      [4 -1 0 0 1529.85 1461.0833 0 0]
+    }
+    dst {
+      id		      25
+      intersection	      [2 1 0 0 1156 1461.0833 0 0]
+    }
+    midPoint		    [1346.925 1461.0833]
+    chart		    2
+    linkNode		    [2 43 45]
+    dataLimits		    [1156 1529.85 1458.683 1463.483]
+    stampAngle		    2.3562
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    216
+  }
+  transition {
+    id			    45
+    labelString		    ""
+    labelPosition	    [1729.467 1443.083 0 0]
+    fontSize		    12
+    src {
+      id		      27
+      intersection	      [4 -1 0 0 1915.0833 1461.0833 0 0]
+    }
+    dst {
+      id		      26
+      intersection	      [2 1 0 0 1543.85 1461.0833 0 0]
+    }
+    midPoint		    [1733.4666 1461.0833]
+    chart		    2
+    linkNode		    [2 44 46]
+    dataLimits		    [1543.85 1915.083 1458.683 1463.483]
+    stampAngle		    2.3562
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    215
+  }
+  transition {
+    id			    46
+    labelString		    ""
+    labelPosition	    [4505.144 1979.4 0 0]
+    fontSize		    12
+    src {
+      id		      31
+      intersection	      [4 -1 0 0 4695.6667 1997.5 0 0]
+    }
+    dst {
+      id		      30
+      intersection	      [2 1 0 0 4258.8 1997.5 0 0]
+    }
+    midPoint		    [4481.2334 1997.5]
+    chart		    2
+    linkNode		    [2 45 47]
+    dataLimits		    [4258.8 4695.667 1995.1 1999.9]
+    stampAngle		    2.3562
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    105
+  }
+  transition {
+    id			    47
+    labelString		    ""
+    labelPosition	    [4963.558 1979.5 0 0]
+    fontSize		    12
+    src {
+      id		      32
+      intersection	      [4 -1 0 0 5159.9 1997.5 0 0]
+    }
+    dst {
+      id		      31
+      intersection	      [2 1 0 0 4709.6667 1997.5 0 0]
+    }
+    midPoint		    [4938.7833 1997.5]
+    chart		    2
+    linkNode		    [2 46 0]
+    dataLimits		    [4709.667 5159.9 1995.1 1999.9]
+    stampAngle		    2.3562
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    104
+  }
+  instance {
+    id			    48
+    name		    "DIP/DIP/LFC_DIP"
+    machine		    1
+    chart		    2
+  }
+  chart {
+    id			    49
+    name		    "DIP/DIP/LKA_DIP"
+    windowPosition	    [-9 -9 1384 738]
+    viewLimits		    [177.402 1087.88 1020.188 1453.825]
+    zoomFactor		    1.289
+    stateColor		    [0.3803921568627451 0.2745098039215687 0.1803921568627451]
+    stateLabelColor	    [0.4588235294117647 0.2980392156862745 0.1411764705882353]
+    transitionColor	    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
+    transitionLabelColor    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
+    junctionColor	    [0.7764705882352941 0.4980392156862745 0]
+    chartColor		    [1 0.9882352941176471 0.9254901960784314]
+    screen		    [1 1 1920 1200 1.333333333333333]
+    firstTransition	    69
+    firstJunction	    62
+    viewObj		    49
+    machine		    1
+    toolbarMode		    LIBRARY_TOOLBAR
+    ssIdHighWaterMark	    216
+    decomposition	    CLUSTER_CHART
+    firstData		    50
+    chartFileNumber	    2
+    saturateOnIntegerOverflow 1
+    userSpecifiedStateTransitionExecutionOrder 1
+    disableImplicitCasting  1
+    actionLanguage	    1
+  }
+  data {
+    id			    50
+    ssIdNumber		    113
+    name		    "VLKA_LKAState_enum"
+    linkNode		    [49 0 51]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    51
+    ssIdNumber		    137
+    name		    "ENUM_LKASTATE_DISABLED"
+    linkNode		    [49 50 52]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 3
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    52
+    ssIdNumber		    138
+    name		    "ENUM_LKASTATE_OFF"
+    linkNode		    [49 51 53]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 6
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    53
+    ssIdNumber		    139
+    name		    "ENUM_LKASTATE_STANDBY"
+    linkNode		    [49 52 54]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 9
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    54
+    ssIdNumber		    140
+    name		    "ENUM_LKASTATE_OPERATIONAL"
+    linkNode		    [49 53 55]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 7
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    55
+    ssIdNumber		    141
+    name		    "ENUM_LKASTATE_LEFTASSISTING"
+    linkNode		    [49 54 56]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 5
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    56
+    ssIdNumber		    142
+    name		    "ENUM_LKASTATE_ADASFAILURE"
+    linkNode		    [49 55 57]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 2
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    57
+    ssIdNumber		    143
+    name		    "ENUM_LKASTATE_EPSRECOVERYPENDING"
+    linkNode		    [49 56 58]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 4
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    58
+    ssIdNumber		    149
+    name		    "VDIP_LKAHMIStatus_enum"
+    linkNode		    [49 57 59]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      resolveToSignalObject   1
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    59
+    ssIdNumber		    151
+    name		    "ENUM_LKAHMISTATUS_OFF"
+    linkNode		    [49 58 60]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 1
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    60
+    ssIdNumber		    153
+    name		    "ENUM_LKAHMISTATUS_ACTING"
+    linkNode		    [49 59 61]
+    scope		    PARAMETER_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    61
+    ssIdNumber		    202
+    name		    "ENUM_LKASTATE_RIGHTASSISTING"
+    linkNode		    [49 60 0]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 8
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    62
+    position		    [166 1085 7]
+    chart		    49
+    linkNode		    [49 0 63]
+    visible		    0
+    subviewer		    49
+    ssIdNumber		    102
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    63
+    position		    [1328 1085 7]
+    chart		    49
+    linkNode		    [49 62 64]
+    visible		    0
+    subviewer		    49
+    ssIdNumber		    188
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    64
+    position		    [166 1310 7]
+    chart		    49
+    linkNode		    [49 63 65]
+    visible		    0
+    subviewer		    49
+    ssIdNumber		    192
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    65
+    position		    [969 1310 7]
+    chart		    49
+    linkNode		    [49 64 66]
+    visible		    0
+    subviewer		    49
+    ssIdNumber		    209
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    66
+    position		    [166 1422.9 7]
+    chart		    49
+    linkNode		    [49 65 67]
+    visible		    0
+    subviewer		    49
+    ssIdNumber		    214
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    67
+    position		    [969 1422.9 7]
+    chart		    49
+    linkNode		    [49 66 68]
+    visible		    0
+    subviewer		    49
+    ssIdNumber		    211
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    68
+    position		    [1328 1422.9 7]
+    chart		    49
+    linkNode		    [49 67 0]
+    visible		    0
+    subviewer		    49
+    ssIdNumber		    190
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    69
+    labelString		    ""
+    labelPosition	    [166.111 1063 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 -0.005 1 0 166.1867 1048.0005 0 0]
+    }
+    dst {
+      id		      62
+      intersection	      [1 0.005 -1 0 166.0353 1078.0001 0 0]
+    }
+    midPoint		    [166.111 1063.0003]
+    chart		    49
+    linkNode		    [49 0 70]
+    dataLimits		    [163.675 168.475 1048.001 1078]
+    subviewer		    49
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    206
+  }
+  transition {
+    id			    70
+    labelString		    "[VLKA_LKAState_enum==ENUM_LKASTATE_DISABLED || VLKA_LKAState_enum==ENUM_LKASTATE_OFF || VLKA_LKA"
+    "State_enum==ENUM_LKASTATE_ADASFAILURE ||...\n VLKA_LKAState_enum==ENUM_LKASTATE_EPSRECOVERYPENDING || VLKA_LKAStat"
+    "e_enum==ENUM_LKASTATE_STANDBY]"
+    labelPosition	    [287.106 1036.294 955 32]
+    fontSize		    12
+    src {
+      id		      62
+      intersection	      [2 1 0 0 173 1085 0 0]
+    }
+    dst {
+      id		      63
+      intersection	      [4 -1 0 0 1321 1085 0 0]
+    }
+    midPoint		    [743 1085]
+    chart		    49
+    linkNode		    [49 69 71]
+    dataLimits		    [173 1321 1082.6 1087.4]
+    stampAngle		    -0.7854
+    subviewer		    49
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    189
+  }
+  transition {
+    id			    71
+    labelString		    ""
+    labelPosition	    [173.504 1198.763 2 16.25]
+    fontSize		    12
+    src {
+      id		      62
+      intersection	      [3 0 1 0 166 1092 0 0]
+    }
+    dst {
+      id		      64
+      intersection	      [1 0 -1 0 166 1303 0 0]
+    }
+    midPoint		    [166 1193.5]
+    chart		    49
+    linkNode		    [49 70 72]
+    dataLimits		    [163.6 168.4 1092 1303]
+    stampAngle		    0.7854
+    subviewer		    49
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    193
+  }
+  transition {
+    id			    72
+    labelString		    "{VDIP_LKAHMIStatus_enum=ENUM_LKAHMISTATUS_OFF;}"
+    labelPosition	    [1357.222 1270.297 331.5 17]
+    fontSize		    12
+    src {
+      id		      63
+      intersection	      [3 0 1 0 1328 1092 0 0]
+    }
+    dst {
+      id		      68
+      intersection	      [1 0 -1 0 1328 1415.9 0 0]
+    }
+    midPoint		    [1328 1249.95]
+    chart		    49
+    linkNode		    [49 71 73]
+    dataLimits		    [1325.6 1330.4 1092 1415.9]
+    stampAngle		    0.7188
+    subviewer		    49
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    191
+  }
+  transition {
+    id			    73
+    labelString		    "[VLKA_LKAState_enum==ENUM_LKASTATE_OPERATIONAL ||...\n VLKA_LKAState_enum==ENUM_LKASTATE_LEFTASS"
+    "ISTING || VLKA_LKAState_enum==ENUM_LKASTATE_RIGHTASSISTING] "
+    labelPosition	    [221.685 1244.965 707.5 32]
+    fontSize		    12
+    src {
+      id		      64
+      intersection	      [2 1 0 0 173 1310 0 0]
+    }
+    dst {
+      id		      65
+      intersection	      [4 -1 0 0 962 1310 0 0]
+    }
+    midPoint		    [563.5 1310]
+    chart		    49
+    linkNode		    [49 72 74]
+    dataLimits		    [173 962 1307.6 1312.4]
+    stampAngle		    -0.7854
+    subviewer		    49
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    210
+  }
+  transition {
+    id			    74
+    labelString		    "{VDIP_LKAHMIStatus_enum=ENUM_LKAHMISTATUS_OFF;}"
+    labelPosition	    [181.838 1353.345 331.5 17]
+    fontSize		    12
+    src {
+      id		      64
+      intersection	      [3 0 1 0 166 1317 0 0]
+    }
+    dst {
+      id		      66
+      intersection	      [1 0 -1 0 166 1415.9 0 0]
+    }
+    midPoint		    [166 1362.45]
+    chart		    49
+    linkNode		    [49 73 75]
+    dataLimits		    [163.6 168.4 1317 1415.9]
+    stampAngle		    0.7854
+    subviewer		    49
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    216
+  }
+  transition {
+    id			    75
+    labelString		    "{VDIP_LKAHMIStatus_enum=ENUM_LKAHMISTATUS_ACTING;}"
+    labelPosition	    [978.973 1362.145 352.5 17]
+    fontSize		    12
+    src {
+      id		      65
+      intersection	      [3 0 1 0 969 1317 0 0]
+    }
+    dst {
+      id		      67
+      intersection	      [1 0 -1 0 969 1415.9 0 0]
+    }
+    midPoint		    [969 1362.45]
+    chart		    49
+    linkNode		    [49 74 76]
+    dataLimits		    [966.6 971.4 1317 1415.9]
+    stampAngle		    0.7854
+    subviewer		    49
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    212
+  }
+  transition {
+    id			    76
+    labelString		    ""
+    labelPosition	    [567.5 1404.9 0 0]
+    fontSize		    12
+    src {
+      id		      67
+      intersection	      [4 -1 0 0 962 1422.9 0 0]
+    }
+    dst {
+      id		      66
+      intersection	      [2 1 0 0 173 1422.9 0 0]
+    }
+    midPoint		    [571.5 1422.9]
+    chart		    49
+    linkNode		    [49 75 77]
+    dataLimits		    [173 962 1420.5 1425.3]
+    stampAngle		    2.3562
+    subviewer		    49
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    215
+  }
+  transition {
+    id			    77
+    labelString		    ""
+    labelPosition	    [1148.5 1404.9 0 0]
+    fontSize		    12
+    src {
+      id		      68
+      intersection	      [4 -1 0 0 1321 1422.9 0 0]
+    }
+    dst {
+      id		      67
+      intersection	      [2 1 0 0 976 1422.9 0 0]
+    }
+    midPoint		    [1152.5 1422.9]
+    chart		    49
+    linkNode		    [49 76 0]
+    dataLimits		    [976 1321 1420.5 1425.3]
+    stampAngle		    2.3562
+    subviewer		    49
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    213
+  }
+  instance {
+    id			    78
+    name		    "DIP/DIP/LKA_DIP"
+    machine		    1
+    chart		    49
+  }
+  chart {
+    id			    79
+    name		    "DIP/DIP/Lane_DIP"
+    windowPosition	    [-9 -9 1618 870]
+    viewLimits		    [2523.872 4089.872 434.741 1121.741]
+    zoomFactor		    1.611
+    stateColor		    [0.3803921568627451 0.2745098039215687 0.1803921568627451]
+    stateLabelColor	    [0.4588235294117647 0.2980392156862745 0.1411764705882353]
+    transitionColor	    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
+    transitionLabelColor    [0.3215686274509804 0.5450980392156862 0.7725490196078432]
+    junctionColor	    [0.7764705882352941 0.4980392156862745 0]
+    chartColor		    [1 0.9882352941176471 0.9254901960784314]
+    screen		    [1 1 1920 1200 1.333333333333333]
+    firstTransition	    129
+    firstJunction	    95
+    viewObj		    79
+    visible		    1
+    machine		    1
+    toolbarMode		    LIBRARY_TOOLBAR
+    subviewS {
+    }
+    ssIdHighWaterMark	    246
+    decomposition	    CLUSTER_CHART
+    firstData		    80
+    chartFileNumber	    3
+    saturateOnIntegerOverflow 1
+    userSpecifiedStateTransitionExecutionOrder 1
+    disableImplicitCasting  1
+    actionLanguage	    1
+  }
+  data {
+    id			    80
+    ssIdNumber		    113
+    name		    "VLFC_LFCState_enum"
+    linkNode		    [79 0 81]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    81
+    ssIdNumber		    120
+    name		    "ENUM_LFCSTATE_AUTOSTEERING"
+    linkNode		    [79 80 82]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 4
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    82
+    ssIdNumber		    121
+    name		    "ENUM_LFCSTATE_DEGRADED"
+    linkNode		    [79 81 83]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 5
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    83
+    ssIdNumber		    131
+    name		    "ENUM_LANELAMPMODE_GREEN"
+    linkNode		    [79 82 84]
+    scope		    PARAMETER_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    84
+    ssIdNumber		    132
+    name		    "ENUM_LANELAMPMODE_OFF"
+    linkNode		    [79 83 85]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 2
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    85
+    ssIdNumber		    133
+    name		    "VDIP_LeftLaneLampMode_enum"
+    linkNode		    [79 84 86]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      resolveToSignalObject   1
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    86
+    ssIdNumber		    134
+    name		    "VDIP_RightLaneLampMode_enum"
+    linkNode		    [79 85 87]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      resolveToSignalObject   1
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    87
+    ssIdNumber		    135
+    name		    "VPER_LeftLaneAvail_fig"
+    linkNode		    [79 86 88]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    88
+    ssIdNumber		    136
+    name		    "VPER_RightLaneAvail_fig"
+    linkNode		    [79 87 89]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    89
+    ssIdNumber		    200
+    name		    "ENUM_LANELAMPMODE_RED"
+    linkNode		    [79 88 90]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 3
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    90
+    ssIdNumber		    201
+    name		    "ENUM_LANELAMPMODE_GREY"
+    linkNode		    [79 89 91]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 1
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    91
+    ssIdNumber		    242
+    name		    "ENUM_LFCSTATE_SOFTEN"
+    linkNode		    [79 90 92]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 6
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    92
+    ssIdNumber		    243
+    name		    "VLKA_LKAState_enum"
+    linkNode		    [79 91 93]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    93
+    ssIdNumber		    244
+    name		    "ENUM_LKASTATE_LEFTASSISTING"
+    linkNode		    [79 92 94]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 7
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  data {
+    id			    94
+    ssIdNumber		    245
+    name		    "ENUM_LKASTATE_RIGHTASSISTING"
+    linkNode		    [79 93 0]
+    scope		    PARAMETER_DATA
+    paramIndexForInitFromWorkspace 8
+    machine		    1
+    props {
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  junction {
+    id			    95
+    position		    [27 530.5 7]
+    chart		    79
+    linkNode		    [79 0 96]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    66
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    96
+    position		    [3473.75 530.5 7]
+    chart		    79
+    linkNode		    [79 95 97]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    68
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    97
+    position		    [3473.75 609.8333 7]
+    chart		    79
+    linkNode		    [79 96 98]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    141
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    98
+    position		    [4839.75 609.8333 7]
+    chart		    79
+    linkNode		    [79 97 99]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    143
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    99
+    position		    [27 668.8333 7]
+    chart		    79
+    linkNode		    [79 98 100]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    72
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    100
+    position		    [3028.6667 668.8333 7]
+    chart		    79
+    linkNode		    [79 99 101]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    74
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    101
+    position		    [3473.75 720 7]
+    chart		    79
+    linkNode		    [79 100 102]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    148
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    102
+    position		    [4372.1 720 7]
+    chart		    79
+    linkNode		    [79 101 103]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    150
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    103
+    position		    [3473.75 829 7]
+    chart		    79
+    linkNode		    [79 102 104]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    154
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    104
+    position		    [3918.75 829 7]
+    chart		    79
+    linkNode		    [79 103 105]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    156
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    105
+    position		    [27 877.5833 7]
+    chart		    79
+    linkNode		    [79 104 106]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    202
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    106
+    position		    [2591.5 877.5833 7]
+    chart		    79
+    linkNode		    [79 105 107]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    204
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    107
+    position		    [27 1028.8333 7]
+    chart		    79
+    linkNode		    [79 106 108]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    209
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    108
+    position		    [2121.5 1028.8333 7]
+    chart		    79
+    linkNode		    [79 107 109]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    211
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    109
+    position		    [27 1256.3333 7]
+    chart		    79
+    linkNode		    [79 108 110]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    217
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    110
+    position		    [1653 1256.3333 7]
+    chart		    79
+    linkNode		    [79 109 111]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    219
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    111
+    position		    [27 1506.3333 7]
+    chart		    79
+    linkNode		    [79 110 112]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    225
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    112
+    position		    [1205.25 1506.3333 7]
+    chart		    79
+    linkNode		    [79 111 113]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    227
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    113
+    position		    [27 1702.5833 7]
+    chart		    79
+    linkNode		    [79 112 114]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    232
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    114
+    position		    [723.25 1702.5833 7]
+    chart		    79
+    linkNode		    [79 113 115]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    234
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    115
+    position		    [27 1997.5 7]
+    chart		    79
+    linkNode		    [79 114 116]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    239
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    116
+    position		    [723.25 1997.5 7]
+    chart		    79
+    linkNode		    [79 115 117]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    236
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    117
+    position		    [1205.25 1997.5 7]
+    chart		    79
+    linkNode		    [79 116 118]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    229
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    118
+    position		    [1653 1997.5 7]
+    chart		    79
+    linkNode		    [79 117 119]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    221
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    119
+    position		    [2121.5 1997.5 7]
+    chart		    79
+    linkNode		    [79 118 120]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    213
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    120
+    position		    [2591.5 1997.5 7]
+    chart		    79
+    linkNode		    [79 119 121]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    207
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    121
+    position		    [3028.6667 1997.5 7]
+    chart		    79
+    linkNode		    [79 120 122]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    76
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    122
+    position		    [3473.75 1997.5 7]
+    chart		    79
+    linkNode		    [79 121 123]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    160
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    123
+    position		    [3918.75 1997.5 7]
+    chart		    79
+    linkNode		    [79 122 124]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    158
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    124
+    position		    [4372.1 1997.5 7]
+    chart		    79
+    linkNode		    [79 123 125]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    152
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    125
+    position		    [4839.75 1997.5 7]
+    chart		    79
+    linkNode		    [79 124 126]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    146
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    126
+    position		    [5311.8 1997.5 7]
+    chart		    79
+    linkNode		    [79 125 127]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    63
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    127
+    position		    [5762.6667 1997.5 7]
+    chart		    79
+    linkNode		    [79 126 128]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    56
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    128
+    position		    [6226.9 1997.5 7]
+    chart		    79
+    linkNode		    [79 127 0]
+    visible		    0
+    subviewer		    79
+    ssIdNumber		    53
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    129
+    labelString		    ""
+    labelPosition	    [27 509.5 0 0]
+    fontSize		    12
+    src {
+      intersection	      [0 -0 1 0 27 436.7413 0 0]
+    }
+    dst {
+      id		      95
+      intersection	      [1 0 -1 0 27 523.5 0 0]
+    }
+    midPoint		    [27 476.1207]
+    chart		    79
+    linkNode		    [79 0 130]
+    dataLimits		    [24.6 29.4 436.741 523.5]
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    46
+  }
+  transition {
+    id			    130
+    labelString		    "[VLFC_LFCState_enum==ENUM_LFCSTATE_AUTOSTEERING || VLFC_LFCState_enum==ENUM_LFCSTATE_SOFTEN]"
+    labelPosition	    [2563.132 486.618 656.25 17]
+    fontSize		    12
+    src {
+      id		      95
+      intersection	      [2 1 0 0 34 530.5 0 0]
+    }
+    dst {
+      id		      96
+      intersection	      [4 -1 0 0 3466.75 530.5 0 0]
+    }
+    midPoint		    [1746.375 530.5]
+    chart		    79
+    linkNode		    [79 129 131]
+    dataLimits		    [34 3466.75 528.1 532.9]
+    stampAngle		    -0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    69
+  }
+  transition {
+    id			    131
+    labelString		    ""
+    labelPosition	    [27 581.667 0 0]
+    fontSize		    12
+    src {
+      id		      95
+      intersection	      [3 0 1 0 27 537.5 0 0]
+    }
+    dst {
+      id		      99
+      intersection	      [1 0 -1 0 27 661.8333 0 0]
+    }
+    midPoint		    [27 595.6667]
+    chart		    79
+    linkNode		    [79 130 132]
+    dataLimits		    [24.6 29.4 537.5 661.833]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    73
+  }
+  transition {
+    id			    132
+    labelString		    ""
+    labelPosition	    [3473.75 555.636 0 0]
+    fontSize		    12
+    src {
+      id		      96
+      intersection	      [3 0 1 0 3473.75 537.5 0 0]
+    }
+    dst {
+      id		      97
+      intersection	      [1 0 -1 0 3473.75 602.8333 0 0]
+    }
+    midPoint		    [3473.75 566.1667]
+    chart		    79
+    linkNode		    [79 131 133]
+    dataLimits		    [3471.35 3476.15 537.5 602.833]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    142
+  }
+  transition {
+    id			    133
+    labelString		    "[VPER_LeftLaneAvail_fig && VPER_RightLaneAvail_fig]"
+    labelPosition	    [4488.778 590.887 302 17]
+    fontSize		    12
+    src {
+      id		      97
+      intersection	      [2 1 0 0 3480.75 609.8333 0 0]
+    }
+    dst {
+      id		      98
+      intersection	      [4 -1 0 0 4832.75 609.8333 0 0]
+    }
+    midPoint		    [4152.75 609.8333]
+    chart		    79
+    linkNode		    [79 132 134]
+    dataLimits		    [3480.75 4832.75 607.433 612.233]
+    stampAngle		    -0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    144
+  }
+  transition {
+    id			    134
+    labelString		    ""
+    labelPosition	    [3473.75 643.06 0 0]
+    fontSize		    12
+    src {
+      id		      97
+      intersection	      [3 0 1 0 3473.75 616.8333 0 0]
+    }
+    dst {
+      id		      101
+      intersection	      [1 0 -1 0 3473.75 713 0 0]
+    }
+    midPoint		    [3473.75 660.9167]
+    chart		    79
+    linkNode		    [79 133 135]
+    dataLimits		    [3471.35 3476.15 616.833 713]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    149
+  }
+  transition {
+    id			    135
+    labelString		    "{VDIP_LeftLaneLampMode_enum=ENUM_LANELAMPMODE_GREEN; ...\nVDIP_RightLaneLampMode_enum=ENUM_LANEL"
+    "AMPMODE_GREEN;}"
+    labelPosition	    [4863.15 714.893 399.25 32]
+    fontSize		    12
+    src {
+      id		      98
+      intersection	      [3 0 1 0 4839.75 616.8333 0 0]
+    }
+    dst {
+      id		      125
+      intersection	      [1 0 -1 0 4839.75 1990.5 0 0]
+    }
+    midPoint		    [4839.75 1299.6667]
+    chart		    79
+    linkNode		    [79 134 136]
+    dataLimits		    [4837.35 4842.15 616.833 1990.5]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    147
+  }
+  transition {
+    id			    136
+    labelString		    "[VLFC_LFCState_enum==ENUM_LFCSTATE_DEGRADED]"
+    labelPosition	    [2196.357 646.754 323.5 17]
+    fontSize		    12
+    src {
+      id		      99
+      intersection	      [2 1 0 0 34 668.8333 0 0]
+    }
+    dst {
+      id		      100
+      intersection	      [4 -1 0 0 3021.6667 668.8333 0 0]
+    }
+    midPoint		    [1523.8333 668.8333]
+    chart		    79
+    linkNode		    [79 135 137]
+    dataLimits		    [34 3021.667 666.433 671.233]
+    stampAngle		    -0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    75
+  }
+  transition {
+    id			    137
+    labelString		    ""
+    labelPosition	    [27 755.208 0 0]
+    fontSize		    12
+    src {
+      id		      99
+      intersection	      [3 0 1 0 27 675.8333 0 0]
+    }
+    dst {
+      id		      105
+      intersection	      [1 0 -1 0 27 870.5833 0 0]
+    }
+    midPoint		    [27 769.2083]
+    chart		    79
+    linkNode		    [79 136 138]
+    dataLimits		    [24.6 29.4 675.833 870.583]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    203
+  }
+  transition {
+    id			    138
+    labelString		    "{VDIP_LeftLaneLampMode_enum=ENUM_LANELAMPMODE_OFF; ...\nVDIP_RightLaneLampMode_enum=ENUM_LANELAM"
+    "PMODE_OFF;}"
+    labelPosition	    [3038.528 780.94 380.25 32]
+    fontSize		    12
+    src {
+      id		      100
+      intersection	      [3 0 1 0 3028.6667 675.8333 0 0]
+    }
+    dst {
+      id		      121
+      intersection	      [1 0 -1 0 3028.6667 1990.5 0 0]
+    }
+    midPoint		    [3028.6667 1329.1667]
+    chart		    79
+    linkNode		    [79 137 139]
+    dataLimits		    [3026.267 3031.067 675.833 1990.5]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    77
+  }
+  transition {
+    id			    139
+    labelString		    "[VPER_LeftLaneAvail_fig && !VPER_RightLaneAvail_fig]"
+    labelPosition	    [3978.632 705.724 305.5 17]
+    fontSize		    12
+    src {
+      id		      101
+      intersection	      [2 1 0 0 3480.75 720 0 0]
+    }
+    dst {
+      id		      102
+      intersection	      [4 -1 0 0 4365.1 720 0 0]
+    }
+    midPoint		    [3918.925 720]
+    chart		    79
+    linkNode		    [79 138 140]
+    dataLimits		    [3480.75 4365.1 717.6 722.4]
+    stampAngle		    -0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    151
+  }
+  transition {
+    id			    140
+    labelString		    ""
+    labelPosition	    [3473.75 758.587 0 0]
+    fontSize		    12
+    src {
+      id		      101
+      intersection	      [3 0 1 0 3473.75 727 0 0]
+    }
+    dst {
+      id		      103
+      intersection	      [1 0 -1 0 3473.75 822 0 0]
+    }
+    midPoint		    [3473.75 770.5]
+    chart		    79
+    linkNode		    [79 139 141]
+    dataLimits		    [3471.35 3476.15 727 822]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    155
+  }
+  transition {
+    id			    141
+    labelString		    "{VDIP_LeftLaneLampMode_enum=ENUM_LANELAMPMODE_GREEN; ...\nVDIP_RightLaneLampMode_enum=ENUM_LANEL"
+    "AMPMODE_OFF;}"
+    labelPosition	    [4403.707 806.871 399.25 32]
+    fontSize		    12
+    src {
+      id		      102
+      intersection	      [3 0 1 0 4372.1 727 0 0]
+    }
+    dst {
+      id		      124
+      intersection	      [1 0 -1 0 4372.1 1990.5 0 0]
+    }
+    midPoint		    [4372.1 1354.75]
+    chart		    79
+    linkNode		    [79 140 142]
+    dataLimits		    [4369.7 4374.5 727 1990.5]
+    stampAngle		    0.7236
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    153
+  }
+  transition {
+    id			    142
+    labelString		    "[!VPER_LeftLaneAvail_fig && VPER_RightLaneAvail_fig]"
+    labelPosition	    [3562.138 813.505 305.5 17]
+    fontSize		    12
+    src {
+      id		      103
+      intersection	      [2 1 0 0 3480.75 829 0 0]
+    }
+    dst {
+      id		      104
+      intersection	      [4 -1 0 0 3911.75 829 0 0]
+    }
+    midPoint		    [3692.25 829]
+    chart		    79
+    linkNode		    [79 141 143]
+    dataLimits		    [3480.75 3911.75 826.6 831.4]
+    stampAngle		    -0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    157
+  }
+  transition {
+    id			    143
+    labelString		    "{VDIP_LeftLaneLampMode_enum=ENUM_LANELAMPMODE_OFF; ...\nVDIP_RightLaneLampMode_enum=ENUM_LANELAM"
+    "PMODE_OFF;}"
+    labelPosition	    [3490.024 1203.52 380.25 32]
+    fontSize		    12
+    src {
+      id		      103
+      intersection	      [3 0 1 0 3473.75 836 0 0]
+    }
+    dst {
+      id		      122
+      intersection	      [1 0 -1 0 3473.75 1990.5 0 0]
+    }
+    midPoint		    [3473.75 1409.25]
+    chart		    79
+    linkNode		    [79 142 144]
+    dataLimits		    [3471.35 3476.15 836 1990.5]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    161
+  }
+  transition {
+    id			    144
+    labelString		    "{VDIP_LeftLaneLampMode_enum=ENUM_LANELAMPMODE_OFF; ...\nVDIP_RightLaneLampMode_enum=ENUM_LANELAM"
+    "PMODE_GREEN;}"
+    labelPosition	    [3933.784 973.675 394.25 32]
+    fontSize		    12
+    src {
+      id		      104
+      intersection	      [3 0 1 0 3918.75 836 0 0]
+    }
+    dst {
+      id		      123
+      intersection	      [1 0 -1 0 3918.75 1990.5 0 0]
+    }
+    midPoint		    [3918.75 1409.25]
+    chart		    79
+    linkNode		    [79 143 145]
+    dataLimits		    [3916.35 3921.15 836 1990.5]
+    stampAngle		    0.7504
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    159
+  }
+  transition {
+    id			    145
+    labelString		    "[VLKA_LKAState_enum==ENUM_LKASTATE_LEFTASSISTING]"
+    labelPosition	    [1322.761 833.668 346.25 17]
+    fontSize		    12
+    src {
+      id		      105
+      intersection	      [2 1 0 0 34 877.5833 0 0]
+    }
+    dst {
+      id		      106
+      intersection	      [4 -1 0 0 2584.5 877.5833 0 0]
+    }
+    midPoint		    [1305.25 877.5833]
+    chart		    79
+    linkNode		    [79 144 146]
+    dataLimits		    [34 2584.5 875.183 879.983]
+    stampAngle		    -0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    205
+  }
+  transition {
+    id			    146
+    labelString		    ""
+    labelPosition	    [27 935.208 0 0]
+    fontSize		    12
+    src {
+      id		      105
+      intersection	      [3 0 1 0 27 884.5833 0 0]
+    }
+    dst {
+      id		      107
+      intersection	      [1 0 -1 0 27 1021.8333 0 0]
+    }
+    midPoint		    [27 949.2083]
+    chart		    79
+    linkNode		    [79 145 147]
+    dataLimits		    [24.6 29.4 884.583 1021.833]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    210
+  }
+  transition {
+    id			    147
+    labelString		    "{VDIP_LeftLaneLampMode_enum=ENUM_LANELAMPMODE_RED;}"
+    labelPosition	    [2598.07 1206.13 373 17]
+    fontSize		    12
+    src {
+      id		      106
+      intersection	      [3 0 1 0 2591.5 884.5833 0 0]
+    }
+    dst {
+      id		      120
+      intersection	      [1 0 -1 0 2591.5 1990.5 0 0]
+    }
+    midPoint		    [2591.5 1433.5417]
+    chart		    79
+    linkNode		    [79 146 148]
+    dataLimits		    [2589.1 2593.9 884.583 1990.5]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    208
+  }
+  transition {
+    id			    148
+    labelString		    "[VLKA_LKAState_enum==ENUM_LKASTATE_RIGHTASSISTING]"
+    labelPosition	    [1224.144 1009.416 354 17]
+    fontSize		    12
+    src {
+      id		      107
+      intersection	      [2 1 0 0 34 1028.8333 0 0]
+    }
+    dst {
+      id		      108
+      intersection	      [4 -1 0 0 2114.5 1028.8333 0 0]
+    }
+    midPoint		    [1070.25 1028.8333]
+    chart		    79
+    linkNode		    [79 147 149]
+    dataLimits		    [34 2114.5 1026.433 1031.233]
+    stampAngle		    -0.7879
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    212
+  }
+  transition {
+    id			    149
+    labelString		    ""
+    labelPosition	    [27 1124.583 0 0]
+    fontSize		    12
+    src {
+      id		      107
+      intersection	      [3 0 1 0 27 1035.8333 0 0]
+    }
+    dst {
+      id		      109
+      intersection	      [1 0 -1 0 27 1249.3333 0 0]
+    }
+    midPoint		    [27 1138.5833]
+    chart		    79
+    linkNode		    [79 148 150]
+    dataLimits		    [24.6 29.4 1035.833 1249.333]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    218
+  }
+  transition {
+    id			    150
+    labelString		    "{VDIP_RightLaneLampMode_enum=ENUM_LANELAMPMODE_RED;}"
+    labelPosition	    [2144.598 1391.782 381 17]
+    fontSize		    12
+    src {
+      id		      108
+      intersection	      [3 0 1 0 2121.5 1035.8333 0 0]
+    }
+    dst {
+      id		      119
+      intersection	      [1 0 -1 0 2121.5 1990.5 0 0]
+    }
+    midPoint		    [2121.5 1509.1667]
+    chart		    79
+    linkNode		    [79 149 151]
+    dataLimits		    [2119.1 2123.9 1035.833 1990.5]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    214
+  }
+  transition {
+    id			    151
+    labelString		    "[VPER_LeftLaneAvail_fig && VPER_RightLaneAvail_fig]"
+    labelPosition	    [820.8 1220.333 302 17]
+    fontSize		    12
+    src {
+      id		      109
+      intersection	      [2 1 0 0 34 1256.3333 0 0]
+    }
+    dst {
+      id		      110
+      intersection	      [4 -1 0 0 1646 1256.3333 0 0]
+    }
+    midPoint		    [836 1256.3333]
+    chart		    79
+    linkNode		    [79 150 152]
+    dataLimits		    [34 1646 1253.933 1258.733]
+    stampAngle		    -0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    220
+  }
+  transition {
+    id			    152
+    labelString		    ""
+    labelPosition	    [27 1363.333 0 0]
+    fontSize		    12
+    src {
+      id		      109
+      intersection	      [3 0 1 0 27 1263.3333 0 0]
+    }
+    dst {
+      id		      111
+      intersection	      [1 0 -1 0 27 1499.3333 0 0]
+    }
+    midPoint		    [27 1377.3333]
+    chart		    79
+    linkNode		    [79 151 153]
+    dataLimits		    [24.6 29.4 1263.333 1499.333]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    226
+  }
+  transition {
+    id			    153
+    labelString		    "{VDIP_LeftLaneLampMode_enum=ENUM_LANELAMPMODE_GREY; ...\nVDIP_RightLaneLampMode_enum=ENUM_LANELA"
+    "MPMODE_GREY;}"
+    labelPosition	    [1666.371 1641.008 389.25 32]
+    fontSize		    12
+    src {
+      id		      110
+      intersection	      [3 0 1 0 1653 1263.3333 0 0]
+    }
+    dst {
+      id		      118
+      intersection	      [1 0 -1 0 1653 1990.5 0 0]
+    }
+    midPoint		    [1653 1622.9167]
+    chart		    79
+    linkNode		    [79 152 154]
+    dataLimits		    [1650.6 1655.4 1263.333 1990.5]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    222
+  }
+  transition {
+    id			    154
+    labelString		    "[VPER_LeftLaneAvail_fig && !VPER_RightLaneAvail_fig]"
+    labelPosition	    [557.861 1469.884 305.5 17]
+    fontSize		    12
+    src {
+      id		      111
+      intersection	      [2 1 0 0 34 1506.3333 0 0]
+    }
+    dst {
+      id		      112
+      intersection	      [4 -1 0 0 1198.25 1506.3333 0 0]
+    }
+    midPoint		    [612.125 1506.3333]
+    chart		    79
+    linkNode		    [79 153 155]
+    dataLimits		    [34 1198.25 1503.933 1508.733]
+    stampAngle		    -0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    228
+  }
+  transition {
+    id			    155
+    labelString		    ""
+    labelPosition	    [27 1586.458 0 0]
+    fontSize		    12
+    src {
+      id		      111
+      intersection	      [3 0 1 0 27 1513.3333 0 0]
+    }
+    dst {
+      id		      113
+      intersection	      [1 0 -1 0 27 1695.5833 0 0]
+    }
+    midPoint		    [27 1600.4583]
+    chart		    79
+    linkNode		    [79 154 156]
+    dataLimits		    [24.6 29.4 1513.333 1695.583]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    233
+  }
+  transition {
+    id			    156
+    labelString		    "{VDIP_LeftLaneLampMode_enum=ENUM_LANELAMPMODE_GREY; ...\nVDIP_RightLaneLampMode_enum=ENUM_LANELA"
+    "MPMODE_OFF;}"
+    labelPosition	    [1214.347 1729.772 389.25 32]
+    fontSize		    12
+    src {
+      id		      112
+      intersection	      [3 0 1 0 1205.25 1513.3333 0 0]
+    }
+    dst {
+      id		      117
+      intersection	      [1 0 -1 0 1205.25 1990.5 0 0]
+    }
+    midPoint		    [1205.25 1747.9167]
+    chart		    79
+    linkNode		    [79 155 157]
+    dataLimits		    [1202.85 1207.65 1513.333 1990.5]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    230
+  }
+  transition {
+    id			    157
+    labelString		    "[!VPER_LeftLaneAvail_fig && VPER_RightLaneAvail_fig]"
+    labelPosition	    [250.845 1660.49 305.5 17]
+    fontSize		    12
+    src {
+      id		      113
+      intersection	      [2 1 0 0 34 1702.5833 0 0]
+    }
+    dst {
+      id		      114
+      intersection	      [4 -1 0 0 716.25 1702.5833 0 0]
+    }
+    midPoint		    [371.125 1702.5833]
+    chart		    79
+    linkNode		    [79 156 158]
+    dataLimits		    [34 716.25 1700.183 1704.983]
+    stampAngle		    -0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    235
+  }
+  transition {
+    id			    158
+    labelString		    "{VDIP_LeftLaneLampMode_enum=ENUM_LANELAMPMODE_OFF; ...\nVDIP_RightLaneLampMode_enum=ENUM_LANELAM"
+    "PMODE_OFF;}"
+    labelPosition	    [37.05 1847.03 380.25 32]
+    fontSize		    12
+    src {
+      id		      113
+      intersection	      [3 0 1 0 27 1709.5833 0 0]
+    }
+    dst {
+      id		      115
+      intersection	      [1 0 -1 0 27 1990.5 0 0]
+    }
+    midPoint		    [27 1846.0417]
+    chart		    79
+    linkNode		    [79 157 159]
+    dataLimits		    [24.6 29.4 1709.583 1990.5]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    2
+    ssIdNumber		    240
+  }
+  transition {
+    id			    159
+    labelString		    "{VDIP_LeftLaneLampMode_enum=ENUM_LANELAMPMODE_OFF; ...\nVDIP_RightLaneLampMode_enum=ENUM_LANELAM"
+    "PMODE_GREY;}"
+    labelPosition	    [727.802 1798.745 384.25 32]
+    fontSize		    12
+    src {
+      id		      114
+      intersection	      [3 0 1 0 723.25 1709.5833 0 0]
+    }
+    dst {
+      id		      116
+      intersection	      [1 0 -1 0 723.25 1990.5 0 0]
+    }
+    midPoint		    [723.25 1846.0417]
+    chart		    79
+    linkNode		    [79 158 160]
+    dataLimits		    [720.85 725.65 1709.583 1990.5]
+    stampAngle		    0.7854
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    237
+  }
+  transition {
+    id			    160
+    labelString		    ""
+    labelPosition	    [375.125 1979.5 0 0]
+    fontSize		    12
+    src {
+      id		      116
+      intersection	      [4 -1 0 0 716.25 1997.5 0 0]
+    }
+    dst {
+      id		      115
+      intersection	      [2 1 0 0 34 1997.5 0 0]
+    }
+    midPoint		    [379.125 1997.5]
+    chart		    79
+    linkNode		    [79 159 161]
+    dataLimits		    [34 716.25 1995.1 1999.9]
+    stampAngle		    2.3562
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    241
+  }
+  transition {
+    id			    161
+    labelString		    ""
+    labelPosition	    [964.25 1979.5 0 0]
+    fontSize		    12
+    src {
+      id		      117
+      intersection	      [4 -1 0 0 1198.25 1997.5 0 0]
+    }
+    dst {
+      id		      116
+      intersection	      [2 1 0 0 730.25 1997.5 0 0]
+    }
+    midPoint		    [968.25 1997.5]
+    chart		    79
+    linkNode		    [79 160 162]
+    dataLimits		    [730.25 1198.25 1995.1 1999.9]
+    stampAngle		    2.3562
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    238
+  }
+  transition {
+    id			    162
+    labelString		    ""
+    labelPosition	    [1429.125 1979.5 0 0]
+    fontSize		    12
+    src {
+      id		      118
+      intersection	      [4 -1 0 0 1646 1997.5 0 0]
+    }
+    dst {
+      id		      117
+      intersection	      [2 1 0 0 1212.25 1997.5 0 0]
+    }
+    midPoint		    [1433.125 1997.5]
+    chart		    79
+    linkNode		    [79 161 163]
+    dataLimits		    [1212.25 1646 1995.1 1999.9]
+    stampAngle		    2.3562
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    231
+  }
+  transition {
+    id			    163
+    labelString		    ""
+    labelPosition	    [1887.25 1979.5 0 0]
+    fontSize		    12
+    src {
+      id		      119
+      intersection	      [4 -1 0 0 2114.5 1997.5 0 0]
+    }
+    dst {
+      id		      118
+      intersection	      [2 1 0 0 1660 1997.5 0 0]
+    }
+    midPoint		    [1891.25 1997.5]
+    chart		    79
+    linkNode		    [79 162 164]
+    dataLimits		    [1660 2114.5 1995.1 1999.9]
+    stampAngle		    2.3562
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    223
+  }
+  transition {
+    id			    164
+    labelString		    ""
+    labelPosition	    [2356.5 1979.5 0 0]
+    fontSize		    12
+    src {
+      id		      120
+      intersection	      [4 -1 0 0 2584.5 1997.5 0 0]
+    }
+    dst {
+      id		      119
+      intersection	      [2 1 0 0 2128.5 1997.5 0 0]
+    }
+    midPoint		    [2360.5 1997.5]
+    chart		    79
+    linkNode		    [79 163 165]
+    dataLimits		    [2128.5 2584.5 1995.1 1999.9]
+    stampAngle		    2.3562
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    216
+  }
+  transition {
+    id			    165
+    labelString		    ""
+    labelPosition	    [2810.083 1979.5 0 0]
+    fontSize		    12
+    src {
+      id		      121
+      intersection	      [4 -1 0 0 3021.6667 1997.5 0 0]
+    }
+    dst {
+      id		      120
+      intersection	      [2 1 0 0 2598.5 1997.5 0 0]
+    }
+    midPoint		    [2814.0833 1997.5]
+    chart		    79
+    linkNode		    [79 164 166]
+    dataLimits		    [2598.5 3021.667 1995.1 1999.9]
+    stampAngle		    2.3562
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    215
+  }
+  transition {
+    id			    166
+    labelString		    ""
+    labelPosition	    [3252.455 1979.5 0 0]
+    fontSize		    12
+    src {
+      id		      122
+      intersection	      [4 -1 0 0 3466.75 1997.5 0 0]
+    }
+    dst {
+      id		      121
+      intersection	      [2 1 0 0 3035.6667 1997.5 0 0]
+    }
+    midPoint		    [3255.2083 1997.5]
+    chart		    79
+    linkNode		    [79 165 167]
+    dataLimits		    [3035.667 3466.75 1995.1 1999.9]
+    stampAngle		    2.3562
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    167
+  }
+  transition {
+    id			    167
+    labelString		    ""
+    labelPosition	    [3701.623 1979.653 0 0]
+    fontSize		    12
+    src {
+      id		      123
+      intersection	      [4 -1 0 0 3911.75 1997.5 0 0]
+    }
+    dst {
+      id		      122
+      intersection	      [2 1 0 0 3480.75 1997.5 0 0]
+    }
+    midPoint		    [3700.25 1997.5]
+    chart		    79
+    linkNode		    [79 166 168]
+    dataLimits		    [3480.75 3911.75 1995.1 1999.9]
+    stampAngle		    2.3366
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    165
+  }
+  transition {
+    id			    168
+    labelString		    ""
+    labelPosition	    [4149.164 1979.5 0 0]
+    fontSize		    12
+    src {
+      id		      124
+      intersection	      [4 -1 0 0 4365.1 1997.5 0 0]
+    }
+    dst {
+      id		      123
+      intersection	      [2 1 0 0 3925.75 1997.5 0 0]
+    }
+    midPoint		    [4149.425 1997.5]
+    chart		    79
+    linkNode		    [79 167 169]
+    dataLimits		    [3925.75 4365.1 1995.1 1999.9]
+    stampAngle		    2.3562
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    164
+  }
+  transition {
+    id			    169
+    labelString		    ""
+    labelPosition	    [4609.015 1979.492 0 0]
+    fontSize		    12
+    src {
+      id		      125
+      intersection	      [4 -1 0 0 4832.75 1997.5 0 0]
+    }
+    dst {
+      id		      124
+      intersection	      [2 1 0 0 4379.1 1997.5 0 0]
+    }
+    midPoint		    [4609.925 1997.5]
+    chart		    79
+    linkNode		    [79 168 170]
+    dataLimits		    [4379.1 4832.75 1995.1 1999.9]
+    stampAngle		    2.3569
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    163
+  }
+  transition {
+    id			    170
+    labelString		    ""
+    labelPosition	    [5080.938 1979.462 0 0]
+    fontSize		    12
+    src {
+      id		      126
+      intersection	      [4 -1 0 0 5304.8 1997.5 0 0]
+    }
+    dst {
+      id		      125
+      intersection	      [2 1 0 0 4846.75 1997.5 0 0]
+    }
+    midPoint		    [5079.775 1997.5]
+    chart		    79
+    linkNode		    [79 169 171]
+    dataLimits		    [4846.75 5304.8 1995.1 1999.9]
+    stampAngle		    2.3606
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    162
+  }
+  transition {
+    id			    171
+    labelString		    ""
+    labelPosition	    [5565.144 1979.4 0 0]
+    fontSize		    12
+    src {
+      id		      127
+      intersection	      [4 -1 0 0 5755.6667 1997.5 0 0]
+    }
+    dst {
+      id		      126
+      intersection	      [2 1 0 0 5318.8 1997.5 0 0]
+    }
+    midPoint		    [5541.2334 1997.5]
+    chart		    79
+    linkNode		    [79 170 172]
+    dataLimits		    [5318.8 5755.667 1995.1 1999.9]
+    stampAngle		    2.3562
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    105
+  }
+  transition {
+    id			    172
+    labelString		    ""
+    labelPosition	    [6023.558 1979.5 0 0]
+    fontSize		    12
+    src {
+      id		      128
+      intersection	      [4 -1 0 0 6219.9 1997.5 0 0]
+    }
+    dst {
+      id		      127
+      intersection	      [2 1 0 0 5769.6667 1997.5 0 0]
+    }
+    midPoint		    [5998.7833 1997.5]
+    chart		    79
+    linkNode		    [79 171 0]
+    dataLimits		    [5769.667 6219.9 1995.1 1999.9]
+    stampAngle		    2.3562
+    subviewer		    79
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    104
+  }
+  instance {
+    id			    173
+    name		    "DIP/DIP/Lane_DIP"
+    machine		    1
+    chart		    79
+  }
+  target {
+    id			    174
+    name		    "sfun"
+    machine		    1
+    linkNode		    [1 0 175]
+  }
+  target {
+    id			    175
+    name		    "rtw"
+    codeFlags		    " comments=1 statebitsets=1 databitsets=1 emitlogicalops=1 elseifdetection=1 constantfolding=1 redu"
+    "ndantloadelimination=0 preservenames=0 preservenameswithparent=0 exportcharts=0"
+    machine		    1
+    linkNode		    [1 174 0]
+  }
+}

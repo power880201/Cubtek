@@ -1,0 +1,1766 @@
+Library {
+  Name			  "pmm"
+  Version		  7.0
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "windows-1252"
+  LibraryType		  "BlockLibrary"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Wed May 30 13:48:08 2012"
+  Creator		  "jc19"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "14014"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Sep 21 12:00:41 2015"
+  RTWModifiedTimeStamp	  0
+  ModelVersionFormat	  "1.%<AutoIncrement:64>"
+  ConfigurationManager	  "None"
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusCreator
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      BusSelector
+      OutputAsBus	      off
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Logic
+      Operator		      "AND"
+      Inputs		      "2"
+      IconShape		      "rectangular"
+      AllPortsSameDT	      on
+      OutDataTypeMode	      "Logical (see Configuration Parameters: Optimization)"
+      LogicDataType	      "uint(8)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      "S-Function"
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      TriggerPort
+      TriggerType	      "rising"
+      StatesWhenEnabling      "inherit"
+      ShowOutputPort	      off
+      OutputDataType	      "auto"
+      SampleTimeType	      "triggered"
+      SampleTime	      "1"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "pmm"
+    Location		    [2, 82, 1348, 721]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "PMM"
+      Ports		      [2, 1, 0, 1]
+      Position		      [150, 72, 360, 268]
+      MinAlgLoopOccurrences   off
+      RTWSystemCode	      "Function"
+      RTWFcnNameOpts	      "Use subsystem name"
+      RTWFileNameOpts	      "Use subsystem name"
+      FunctionWithSeparateData off
+      System {
+	Name			"PMM"
+	Location		[2, 82, 1331, 704]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "BINP_outputs"
+	  Position		  [95, 263, 125, 277]
+	  IconDisplay		  "Port number"
+	  UseBusObject		  on
+	  BusObject		  "BINP_outputs"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "task_time_s"
+	  Position		  [95, 733, 125, 747]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	  BusObject		  "BINP_outputs"
+	  Port {
+	    PortNumber		    1
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  TriggerPort
+	  Name			  "trig_PMM"
+	  Ports			  []
+	  Position		  [650, 25, 670, 45]
+	  TriggerType		  "function-call"
+	  StatesWhenEnabling	  "held"
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator"
+	  Ports			  [2, 1]
+	  Position		  [1175, 156, 1185, 854]
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	  UseBusObject		  on
+	  BusObject		  "BPMM_outputs"
+	  Port {
+	    PortNumber		    1
+	    Name		    "BPMM_outputs"
+	    PropagatedSignals	    "VPMM_SysPowerModeOut_enum, VPMM_ReInitDataPowerUp_flg, VPMM_ReInitDataNormal_flg, VPMM_ReInitDataPowerDown_flg, VPMM_BMSDisconnectCmd_flg, VPMM_MCUDisableReq_flg, VPMM_InverterDisableReq_flg, VPMM_SysPowerDownCmd_flg, VPMM_ActiveDischargeReq_flg, VPMM_PowerUpFault_enum, VPMM_PowerDownFault_enum, VPMM_HCUMainPwrRelayClose_flg"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector"
+	  Ports			  [1, 1]
+	  Position		  [245, 155, 255, 385]
+	  ShowName		  off
+	  OutputSignals		  "VINP_IgnitionActive_flg"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<VINP_IgnitionActive_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  BusSelector
+	  Name			  "Bus\nSelector2"
+	  Ports			  [1, 11]
+	  Position		  [245, 397, 255, 613]
+	  ShowName		  off
+	  OutputSignals		  "VINP_ABSCANAlive_flg,VINP_BCMCANAlive_flg,VINP_ECMCANAlive_flg,VINP_TCMCANAlive_flg,VINP_EPSCANAlive_flg,VINP_METERCANAlive_flg,VINP_ACCANAlive_flg,VINP_EPBCANAlive_flg,VINP_VCUCANAlive_flg,VINP_HMICANAlive_flg,VINP_EPMCANAlive_flg"
+	  Port {
+	    PortNumber		    1
+	    Name		    "<VINP_ABSCANAlive_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "<VINP_BCMCANAlive_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "<VINP_ECMCANAlive_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    Name		    "<VINP_TCMCANAlive_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    Name		    "<VINP_EPSCANAlive_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    6
+	    Name		    "<VINP_METERCANAlive_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    7
+	    Name		    "<VINP_ACCANAlive_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    8
+	    Name		    "<VINP_EPBCANAlive_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    9
+	    Name		    "<VINP_VCUCANAlive_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    10
+	    Name		    "<VINP_HMICANAlive_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    11
+	    Name		    "<VINP_EPMCANAlive_flg>"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Logic
+	  Name			  "Logical\nOperator"
+	  Ports			  [11, 1]
+	  Position		  [410, 391, 440, 619]
+	  ShowName		  off
+	  Operator		  "NOR"
+	  Inputs		  "11"
+	  AllPortsSameDT	  off
+	  OutDataTypeMode	  "boolean"
+	  Port {
+	    PortNumber		    1
+	    Name		    "VPMM_CANInactive_flg"
+	    MustResolveToSignalObject on
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "PowerModeManagement"
+	  Ports			  [3, 2]
+	  Position		  [635, 153, 985, 857]
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  Port {
+	    PortNumber		    1
+	    PropagatedSignals	    "VPMM_SysPowerModeOut_enum"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    PropagatedSignals	    "VPMM_SysPowerDownCmd_flg"
+	    ShowPropagatedSignals   "on"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "PowerModeManagement"
+	    Location		    [2, 82, 1356, 704]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VINP_IgnitionActive_flg"
+	      Position		      [115, 58, 145, 72]
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VINP_IgnitionActive_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "VPMM_CANInactive_flg"
+	      Position		      [115, 123, 145, 137]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VPMM_CANInactive_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "task_time_s"
+	      Position		      [110, 188, 140, 202]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	      Port {
+		PortNumber		1
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant"
+	      Position		      [205, 248, 410, 272]
+	      ShowName		      off
+	      Value		      "KPMM_ForcePowerDown_flg"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant1"
+	      Position		      [205, 313, 410, 337]
+	      ShowName		      off
+	      Value		      "KPMM_InitializeWaitTime_s"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant2"
+	      Position		      [1105, 73, 1290, 97]
+	      ShowName		      off
+	      Value		      "KPMM_SysPowerModeOvrd_flg"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "Constant3"
+	      Position		      [1105, 43, 1290, 67]
+	      ShowName		      off
+	      Value		      "KPMM_SysPowerModeOvrd_enum"
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	    }
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "PowerModeTransition"
+	      Ports		      [5, 2]
+	      Position		      [500, 31, 905, 359]
+	      PermitHierarchicalResolution "ExplicitOnly"
+	      MinAlgLoopOccurrences   off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      MaskType		      "Stateflow"
+	      MaskDescription	      "Stateflow diagram"
+	      MaskDisplay	      "plot(sf('Private','sfblk','xIcon'),sf('Private','sfblk','yIcon'));text(0.5,0,sf('Private', 'sfblk', 'tIcon'),'HorizontalAl','Center','VerticalAl','Bottom');"
+	      MaskSelfModifiable      on
+	      MaskIconFrame	      off
+	      MaskIconOpaque	      off
+	      MaskIconRotate	      "none"
+	      MaskIconUnits	      "autoscale"
+	      Port {
+		PortNumber		1
+		PropagatedSignals	"VPMM_SysPowerMode_enum"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		2
+		PropagatedSignals	"VPMM_SysPowerDownCmd_flg"
+		ShowPropagatedSignals	"on"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      System {
+		Name			"PowerModeTransition"
+		Location		[257, 457, 812, 717]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  Inport
+		  Name			  "VINP_IgnitionActive_flg"
+		  Position		  [20, 101, 40, 119]
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "VPMM_CANInactive_flg"
+		  Position		  [20, 136, 40, 154]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "task_time_s"
+		  Position		  [20, 171, 40, 189]
+		  Port			  "3"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "KPMM_ForcePowerDown_flg"
+		  Position		  [20, 206, 40, 224]
+		  Port			  "4"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Inport
+		  Name			  "KPMM_InitializeWaitTime_s"
+		  Position		  [20, 246, 40, 264]
+		  Port			  "5"
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Demux
+		  Name			  " Demux "
+		  Ports			  [1, 1]
+		  Position		  [270, 220, 320, 260]
+		  Outputs		  "1"
+		}
+		Block {
+		  BlockType		  "S-Function"
+		  Name			  " SFunction "
+		  Tag			  "Stateflow S-Function pmm 1"
+		  Ports			  [5, 3]
+		  Position		  [180, 100, 230, 220]
+		  FunctionName		  "sf_sfun"
+		  Parameters		  "ENUM_PMMMODE_FAULT,ENUM_PMMMODE_IDLE,ENUM_PMMMODE_INITIALIZE,ENUM_PMMMODE_NORMAL,ENUM_PMMMODE_POWER_DOWN,ENUM_PMMMODE_POWER_UP,FALSE,TRUE"
+		  PortCounts		  "[5 3]"
+		  Port {
+		    PortNumber		    2
+		    Name		    "VPMM_SysPowerMode_enum"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		  Port {
+		    PortNumber		    3
+		    Name		    "VPMM_SysPowerDownCmd_flg"
+		    MustResolveToSignalObject on
+		    RTWStorageClass	    "Auto"
+		    DataLoggingNameMode	    "SignalName"
+		  }
+		}
+		Block {
+		  BlockType		  Terminator
+		  Name			  " Terminator "
+		  Position		  [460, 231, 480, 249]
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "VPMM_SysPowerMode_enum"
+		  Position		  [460, 101, 480, 119]
+		  IconDisplay		  "Port number"
+		}
+		Block {
+		  BlockType		  Outport
+		  Name			  "VPMM_SysPowerDownCmd_flg"
+		  Position		  [460, 136, 480, 154]
+		  Port			  "2"
+		  IconDisplay		  "Port number"
+		}
+		Line {
+		  SrcBlock		  " SFunction "
+		  SrcPort		  1
+		  Points		  [0, 120]
+		  DstBlock		  " Demux "
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  " Demux "
+		  SrcPort		  1
+		  DstBlock		  " Terminator "
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "VINP_IgnitionActive_flg"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  1
+		}
+		Line {
+		  SrcBlock		  "VPMM_CANInactive_flg"
+		  SrcPort		  1
+		  Points		  [120, 0]
+		  DstBlock		  " SFunction "
+		  DstPort		  2
+		}
+		Line {
+		  SrcBlock		  "task_time_s"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  3
+		}
+		Line {
+		  SrcBlock		  "KPMM_ForcePowerDown_flg"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  4
+		}
+		Line {
+		  SrcBlock		  "KPMM_InitializeWaitTime_s"
+		  SrcPort		  1
+		  DstBlock		  " SFunction "
+		  DstPort		  5
+		}
+		Line {
+		  Name			  "VPMM_SysPowerMode_enum"
+		  Labels		  [0, 0]
+		  SrcBlock		  " SFunction "
+		  SrcPort		  2
+		  DstBlock		  "VPMM_SysPowerMode_enum"
+		  DstPort		  1
+		}
+		Line {
+		  Name			  "VPMM_SysPowerDownCmd_flg"
+		  Labels		  [0, 0]
+		  SrcBlock		  " SFunction "
+		  SrcPort		  3
+		  DstBlock		  "VPMM_SysPowerDownCmd_flg"
+		  DstPort		  1
+		}
+	      }
+	    }
+	    Block {
+	      BlockType		      Switch
+	      Name		      "Switch"
+	      Position		      [1330, 40, 1360, 130]
+	      ShowName		      off
+	      Criteria		      "u2 ~= 0"
+	      InputSameDT	      off
+	      OutDataType	      "sfix(16)"
+	      OutScaling	      "2^0"
+	      SaturateOnIntegerOverflow	off
+	      Port {
+		PortNumber		1
+		Name			"VPMM_SysPowerModeOut_enum"
+		MustResolveToSignalObject on
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VPMM_SysPowerModeOut_enum"
+	      Position		      [1520, 78, 1550, 92]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "VPMM_SysPowerDownCmd_flg"
+	      Position		      [1520, 273, 1550, 287]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      Name		      "VPMM_SysPowerModeOut_enum"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Switch"
+	      SrcPort		      1
+	      DstBlock		      "VPMM_SysPowerModeOut_enum"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "PowerModeTransition"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Constant3"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant2"
+	      SrcPort		      1
+	      DstBlock		      "Switch"
+	      DstPort		      2
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "PowerModeTransition"
+	      SrcPort		      2
+	      DstBlock		      "VPMM_SysPowerDownCmd_flg"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Constant"
+	      SrcPort		      1
+	      DstBlock		      "PowerModeTransition"
+	      DstPort		      4
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "VPMM_CANInactive_flg"
+	      SrcPort		      1
+	      DstBlock		      "PowerModeTransition"
+	      DstPort		      2
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "VINP_IgnitionActive_flg"
+	      SrcPort		      1
+	      DstBlock		      "PowerModeTransition"
+	      DstPort		      1
+	    }
+	    Line {
+	      Labels		      [0, 0]
+	      SrcBlock		      "task_time_s"
+	      SrcPort		      1
+	      DstBlock		      "PowerModeTransition"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "Constant1"
+	      SrcPort		      1
+	      DstBlock		      "PowerModeTransition"
+	      DstPort		      5
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "model_info"
+	  Ports			  []
+	  Position		  [300, 64, 584, 92]
+	  ShowName		  off
+	  CopyFcn		  "slcm CopyBlock;"
+	  DeleteFcn		  "slcm Cancel;"
+	  LoadFcn		  "slcm LoadBlock;"
+	  PostSaveFcn		  "slcm('UpdateAllCMBlocksInThisModel')"
+	  InitFcn		  "slcm('UpdateAllCMBlocksInThisModelInit')"
+	  NameChangeFcn		  "slcm Rename;"
+	  OpenFcn		  "slcm"
+	  FontName		  "Arial"
+	  MinAlgLoopOccurrences	  off
+	  RTWSystemCode		  "Auto"
+	  FunctionWithSeparateData off
+	  MaskType		  "CMBlock"
+	  MaskDescription	  "This block allows revision control information to be displayed within the model."
+	  MaskPromptString	  "InitialSaveTempField|InitialBlockCM|BlockCM|Frame|SaveTempField|DisplayStringWithTags|MaskDisplayString|HorizontalTextAlignment|LeftAlignmentValue|SourceBlockDiagram|TagMaxNumber|CMTag1|CMTag2|CMTag3|CMTag4|CMTag5|CMTag6|CMTag7|CMTag8|CMTag9|CMTag10|CMTag11|CMTag12|CMTag13|CMTag14|CMTag15|CMTag16|CMTag17|CMTag18|CMTag19|CMTag20"
+	  MaskStyleString	  "edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit,edit"
+	  MaskTunableValueString  "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+	  MaskCallbackString	  "||||||||||||||||||||||||||||||"
+	  MaskEnableString	  "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+	  MaskVisibilityString	  "off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off,off"
+	  MaskToolTipString	  "on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on,on"
+	  MaskVarAliasString	  ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"
+	  MaskVariables		  "InitialSaveTempField=&1;InitialBlockCM=&2;BlockCM=&3;Frame=&4;SaveTempField=&5;DisplayStringWithTags=&6;MaskDisplayString=&7;HorizontalTextAlignment=&8;LeftAlignmentValue=&9;SourceBlockDiagram=&10;TagMaxNumber=@11;CMTag1=&12;CMTag2=&13;CMTag3=&14;CMTag4=&15;CMTag5=&16;CMTag6=&17;CMTag7=&18;CMTag8=&19;CMTag9=&20;CMTag10=&21;CMTag11=&22;CMTag12=&23;CMTag13=&24;CMTag14=&25;CMTag15=&26;CMTag16=&27;CMTag17=&28;CMTag18=&29;CMTag19=&30;CMTag20=&31;"
+	  MaskDisplay		  "text(str2num(LeftAlignmentValue), 0.5, MaskDisplayString, 'HorizontalAlignment', HorizontalTextAlignment)\n"
+	  MaskSelfModifiable	  on
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  on
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "normalized"
+	  MaskValueString	  "|None|None|on||$Id: pmm.mdl 991 2014-11-19 08:50:02Z chimotsai $|$Id: pmm.mdl 991 2014-11-19 08:50:02Z chimotsai $|Center|0.5|pmm|20||||||||||||||||||||"
+	  MaskCapabilities	  "slmaskedcaps(gcbh)"
+	  MaskTabNameString	  ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"
+	  System {
+	    Name		    "model_info"
+	    Location		    [154, 467, 416, 618]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "EmptySubsystem"
+	      Ports		      []
+	      Position		      [115, 50, 145, 80]
+	      MinAlgLoopOccurrences   off
+	      RTWSystemCode	      "Auto"
+	      FunctionWithSeparateData off
+	      System {
+		Name			"EmptySubsystem"
+		Location		[146, 180, 902, 673]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+	      }
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "BPMM_outputs"
+	  Position		  [1305, 498, 1335, 512]
+	  IconDisplay		  "Port number"
+	  UseBusObject		  on
+	  BusObject		  "BPMM_outputs"
+	}
+	Line {
+	  Name			  "VPMM_CANInactive_flg"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Logical\nOperator"
+	  SrcPort		  1
+	  DstBlock		  "PowerModeManagement"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "<VINP_IgnitionActive_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector"
+	  SrcPort		  1
+	  DstBlock		  "PowerModeManagement"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "PowerModeManagement"
+	  SrcPort		  1
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "BINP_outputs"
+	  SrcPort		  1
+	  Points		  [30, 0]
+	  Branch {
+	    Points		    [0, 235]
+	    DstBlock		    "Bus\nSelector2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Bus\nSelector"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Name			  "BPMM_outputs"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nCreator"
+	  SrcPort		  1
+	  DstBlock		  "BPMM_outputs"
+	  DstPort		  1
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "PowerModeManagement"
+	  SrcPort		  2
+	  DstBlock		  "Bus\nCreator"
+	  DstPort		  2
+	}
+	Line {
+	  Labels		  [0, 0]
+	  SrcBlock		  "task_time_s"
+	  SrcPort		  1
+	  DstBlock		  "PowerModeManagement"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "<VINP_ABSCANAlive_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  1
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "<VINP_BCMCANAlive_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  2
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  2
+	}
+	Line {
+	  Name			  "<VINP_ECMCANAlive_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  3
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  3
+	}
+	Line {
+	  Name			  "<VINP_TCMCANAlive_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  4
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  4
+	}
+	Line {
+	  Name			  "<VINP_EPSCANAlive_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  5
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  5
+	}
+	Line {
+	  Name			  "<VINP_METERCANAlive_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  6
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  6
+	}
+	Line {
+	  Name			  "<VINP_ACCANAlive_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  7
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  7
+	}
+	Line {
+	  Name			  "<VINP_EPBCANAlive_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  8
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  8
+	}
+	Line {
+	  Name			  "<VINP_VCUCANAlive_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  9
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  9
+	}
+	Line {
+	  Name			  "<VINP_HMICANAlive_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  10
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  10
+	}
+	Line {
+	  Name			  "<VINP_EPMCANAlive_flg>"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Bus\nSelector2"
+	  SrcPort		  11
+	  DstBlock		  "Logical\nOperator"
+	  DstPort		  11
+	}
+      }
+    }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 6.7 (R2007b) dated Aug  7 2007, 16:48:14
+#
+#
+
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "pmm"
+    created		    "30-May-2012 13:48:16"
+    isLibrary		    1
+    firstTarget		    40
+    defaultActionLanguage   CLASSIC_BITOPS
+    sfVersion		    67014000.000001
+  }
+  chart {
+    id			    2
+    name		    "PMM/PowerModeManagement/PowerModeTransition"
+    windowPosition	    [33.75 -7.5 1024.5 498]
+    viewLimits		    [0 1000.62 26.783 498.023]
+    zoomFactor		    1.02
+    screen		    [1 1 1366 768 1.333333333333333]
+    treeNode		    [0 4 0 0]
+    firstTransition	    19
+    viewObj		    2
+    machine		    1
+    toolbarMode		    LIBRARY_TOOLBAR
+    subviewS {
+      y1		      26.783
+      zoomFactor	      1.02
+    }
+    decomposition	    CLUSTER_CHART
+    firstData		    23
+    chartFileNumber	    1
+    userSpecifiedStateTransitionExecutionOrder 1
+    disableImplicitCasting  1
+    actionLanguage	    1
+  }
+  state {
+    id			    3
+    labelString		    "Idle\nentry:\nVPMM_SysPowerMode_enum = ENUM_PMMMODE_IDLE;"
+    position		    [154.2338 363.9247 398.4999 122.25]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 4 0]
+    firstTransition	    11
+    firstJunction	    10
+    superState		    SUBCHART
+    subviewer		    2
+    subviewS {
+      x1		      -11.13
+      y1		      -8.573
+      zoomFactor	      0.742
+      pos		      [0 0 588.969 325.781]
+    }
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  state {
+    id			    4
+    labelString		    "Normal\nentry:\nVPMM_SysPowerMode_enum = ENUM_PMMMODE_NORMAL;"
+    position		    [148.1565 135.063 390.9375 123.7499]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 0 3]
+    firstTransition	    20
+    firstJunction	    8
+    superState		    SUBCHART
+    subviewer		    2
+    subviewS {
+      x1		      -15
+      y1		      -15
+      pos		      [0 0 560.813 223.875]
+    }
+    type		    OR_STATE
+    decomposition	    CLUSTER_STATE
+  }
+  junction {
+    id			    5
+    position		    [59.125 239.625 7]
+    chart		    2
+    linkNode		    [3 7 6]
+    visible		    0
+    subviewer		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    6
+    position		    [290.875 239.625 7]
+    chart		    2
+    linkNode		    [3 5 0]
+    visible		    0
+    subviewer		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    7
+    position		    [290.875 152.25 7]
+    chart		    2
+    linkNode		    [3 10 5]
+    visible		    0
+    subviewer		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    8
+    position		    [273.3125 168.8631 7]
+    chart		    2
+    linkNode		    [4 0 9]
+    visible		    0
+    subviewer		    4
+    quantum		    [0 0 0 14]
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    9
+    position		    [512.2186 168.8631 7]
+    chart		    2
+    linkNode		    [4 8 0]
+    visible		    0
+    subviewer		    4
+    type		    CONNECTIVE_JUNCTION
+  }
+  junction {
+    id			    10
+    position		    [59.125 152.25 7]
+    chart		    2
+    linkNode		    [3 0 7]
+    visible		    0
+    subviewer		    3
+    quantum		    [0 0 0 15]
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    11
+    labelPosition	    [76.625 99.75 8.411 15.27]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 59.125 76.7812 0 0]
+    }
+    dst {
+      id		      10
+      intersection	      [0 -0 -1 -1 59.125 145.25 0 0]
+    }
+    midPoint		    [59.125 108.2434]
+    chart		    2
+    linkNode		    [3 0 15]
+    visible		    0
+    dataLimits		    [56.725 61.525 76.781 145.25]
+    subviewer		    3
+    drawStyle		    SMART
+    executionOrder	    1
+  }
+  transition {
+    id			    12
+    labelPosition	    [59.125 198.629 8.411 15.27]
+    fontSize		    12
+    src {
+      id		      10
+      intersection	      [0 0 1 -1 59.125 159.25 0 0]
+    }
+    dst {
+      id		      5
+      intersection	      [0 0 -1 -1 59.125 232.625 0 0]
+    }
+    midPoint		    [59.125 193.2719]
+    chart		    2
+    linkNode		    [3 16 18]
+    visible		    0
+    dataLimits		    [56.725 61.525 159.25 232.625]
+    subviewer		    3
+    drawStyle		    SMART
+    executionOrder	    2
+  }
+  transition {
+    id			    13
+    labelPosition	    [156.615 239.625 8.411 15.27]
+    fontSize		    12
+    src {
+      id		      6
+      intersection	      [0 -1 0 -1 283.875 239.625 0 0]
+    }
+    dst {
+      id		      5
+      intersection	      [0 1 0 -1 66.125 239.625 0 0]
+    }
+    midPoint		    [174.527 239.625]
+    chart		    2
+    linkNode		    [3 18 0]
+    visible		    0
+    dataLimits		    [66.125 283.875 237.225 242.025]
+    subviewer		    3
+    drawStyle		    SMART
+    executionOrder	    1
+  }
+  transition {
+    id			    14
+    labelPosition	    [20.812 145.313 8.246 14.971]
+    fontSize		    12
+    src {
+      id		      4
+      intersection	      [4 1 0 0.2457 0 168.8631 0 0]
+    }
+    dst {
+      id		      8
+      intersection	      [0 -1 0 -1 266.3125 168.8631 0 0]
+    }
+    midPoint		    [134.6849 168.8631]
+    chart		    2
+    linkNode		    [4 20 21]
+    visible		    0
+    dataLimits		    [0 266.313 166.463 171.263]
+    stampAngle		    -2.3853
+    subviewer		    4
+    drawStyle		    SMART
+    executionOrder	    1
+  }
+  transition {
+    id			    15
+    labelPosition	    [26.444 152.25 8.411 15.27]
+    fontSize		    12
+    src {
+      id		      3
+      intersection	      [4 1 0 0.5327 0 152.25 0 0]
+    }
+    dst {
+      id		      10
+      intersection	      [0 -1 0 -1 52.125 152.25 0 0]
+    }
+    midPoint		    [22.9349 152.25]
+    chart		    2
+    linkNode		    [3 11 16]
+    visible		    0
+    dataLimits		    [0 52.125 149.85 154.65]
+    stampAngle		    -1.9931
+    subviewer		    3
+    drawStyle		    SMART
+    slide {
+      sticky		      DST_STICK
+    }
+    executionOrder	    1
+  }
+  transition {
+    id			    16
+    labelString		    "[VPMM_CANInactive_flg]"
+    labelPosition	    [88.554 129 136.104 15.27]
+    fontSize		    12
+    src {
+      id		      10
+      intersection	      [0 1 0 -1 66.125 152.25 0 0]
+    }
+    dst {
+      id		      7
+      intersection	      [0 -1 0 -1 283.875 152.25 0 0]
+    }
+    midPoint		    [175.473 152.25]
+    chart		    2
+    linkNode		    [3 15 12]
+    visible		    0
+    dataLimits		    [66.125 283.875 149.85 154.65]
+    subviewer		    3
+    drawStyle		    SMART
+    executionOrder	    1
+  }
+  transition {
+    id			    17
+    labelString		    "[((VPMM_InitializeTime_s > KPMM_InitializeWaitTime_s) && ...\n((!VINP_IgnitionActive_flg) && VPMM_CANInactive_flg)) ||...\nKPMM_ForcePowerDown_flg]"
+    labelPosition	    [53.294 300.142 336.437 42.756]
+    fontSize		    12
+    src {
+      id		      4
+      intersection	      [3 -0 1 0.823 217.3524 258.8129 0 126.256]
+    }
+    dst {
+      id		      3
+      intersection	      [1 0 -1 0.1584 217.3524 363.9247 0 -126.256]
+    }
+    midPoint		    [217.3692 309.3931]
+    chart		    2
+    linkNode		    [2 19 22]
+    dataLimits		    [217.352 217.369 258.813 355.925]
+    stampAngle		    -1
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+  }
+  transition {
+    id			    18
+    labelString		    "{VPMM_SysPowerDownCmd_flg = TRUE;}"
+    labelPosition	    [291.625 188.913 230.918 15.27]
+    fontSize		    12
+    src {
+      id		      7
+      intersection	      [0 0 1 -1 290.875 159.25 0 0]
+    }
+    dst {
+      id		      6
+      intersection	      [0 0 -1 -1 290.875 232.625 0 0]
+    }
+    midPoint		    [290.875 193.2719]
+    chart		    2
+    linkNode		    [3 12 13]
+    visible		    0
+    dataLimits		    [288.475 293.275 159.25 232.625]
+    subviewer		    3
+    drawStyle		    SMART
+    executionOrder	    1
+  }
+  transition {
+    id			    19
+    labelPosition	    [225.584 79.423 8.411 15.27]
+    fontSize		    12
+    src {
+      intersection	      [3 0 1 0.8194 212.2702 38.6314 0 131.375]
+    }
+    dst {
+      id		      4
+      intersection	      [1 0 -1 0.164 212.2702 135.063 0 -131.375]
+    }
+    midPoint		    [212.2703 84.6828]
+    chart		    2
+    linkNode		    [2 0 17]
+    dataLimits		    [212.27 212.27 38.631 127.063]
+    stampAngle		    -1
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+  }
+  transition {
+    id			    20
+    labelString		    "{VPMM_InitializeTime_s = 0;\nVPMM_SysPowerDownCmd_flg = FALSE;}"
+    labelPosition	    [284.875 104.625 230.139 28.444]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 273.3125 74.1974 0 0]
+    }
+    dst {
+      id		      8
+      intersection	      [0 -0 -1 -1 273.3125 161.8631 0 0]
+    }
+    midPoint		    [273.3125 115.6753]
+    chart		    2
+    linkNode		    [4 0 14]
+    visible		    0
+    dataLimits		    [270.913 275.712 74.197 161.863]
+    subviewer		    4
+    drawStyle		    SMART
+    executionOrder	    1
+  }
+  transition {
+    id			    21
+    labelString		    "{VPMM_InitializeTime_s = VPMM_InitializeTime_s+task_time_s;}"
+    labelPosition	    [212.25 186.75 341.085 14.971]
+    fontSize		    12
+    src {
+      id		      8
+      intersection	      [0 1 0 -1 280.3125 168.8631 0 0]
+    }
+    dst {
+      id		      9
+      intersection	      [0 -1 0 -1 505.2186 168.8631 0 0]
+    }
+    midPoint		    [393.3941 168.8631]
+    chart		    2
+    linkNode		    [4 14 0]
+    visible		    0
+    dataLimits		    [280.313 505.219 166.463 171.263]
+    subviewer		    4
+    drawStyle		    SMART
+    executionOrder	    1
+  }
+  transition {
+    id			    22
+    labelString		    "[VINP_IgnitionActive_flg]"
+    labelPosition	    [442.68 299.888 131.516 15.27]
+    fontSize		    12
+    src {
+      id		      3
+      intersection	      [1 0 -1 0.72 441.1642 363.9247 0 97.5248]
+    }
+    dst {
+      id		      4
+      intersection	      [3 -0 1 0.2505 441.1642 258.8129 0 -97.5248]
+    }
+    midPoint		    [441.15 313.3445]
+    chart		    2
+    linkNode		    [2 17 0]
+    dataLimits		    [441.15 441.164 266.813 363.925]
+    stampAngle		    -1
+    subviewer		    2
+    drawStyle		    SMART
+    executionOrder	    1
+  }
+  data {
+    id			    23
+    name		    "VINP_IgnitionActive_flg"
+    linkNode		    [2 0 24]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "inherited"
+  }
+  data {
+    id			    24
+    name		    "VPMM_SysPowerMode_enum"
+    linkNode		    [2 23 25]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      resolveToSignalObject   1
+      type {
+	primitive		SF_UINT8_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "uint8"
+  }
+  data {
+    id			    25
+    name		    "TRUE"
+    linkNode		    [2 24 26]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 7
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "inherited"
+  }
+  data {
+    id			    26
+    name		    "FALSE"
+    linkNode		    [2 25 27]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 6
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "inherited"
+  }
+  data {
+    id			    27
+    name		    "VPMM_SysPowerDownCmd_flg"
+    linkNode		    [2 26 28]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      resolveToSignalObject   1
+      type {
+	primitive		SF_BOOLEAN_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "boolean"
+  }
+  data {
+    id			    28
+    name		    "ENUM_PMMMODE_INITIALIZE"
+    linkNode		    [2 27 29]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 2
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "inherited"
+  }
+  data {
+    id			    29
+    name		    "ENUM_PMMMODE_POWER_UP"
+    linkNode		    [2 28 30]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 5
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "inherited"
+  }
+  data {
+    id			    30
+    name		    "ENUM_PMMMODE_NORMAL"
+    linkNode		    [2 29 31]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 3
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "inherited"
+  }
+  data {
+    id			    31
+    name		    "ENUM_PMMMODE_POWER_DOWN"
+    linkNode		    [2 30 32]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 4
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "inherited"
+  }
+  data {
+    id			    32
+    name		    "ENUM_PMMMODE_IDLE"
+    linkNode		    [2 31 33]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    paramIndexForInitFromWorkspace 1
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "inherited"
+  }
+  data {
+    id			    33
+    name		    "ENUM_PMMMODE_FAULT"
+    linkNode		    [2 32 34]
+    scope		    PARAMETER_DATA
+    initFromWorkspace	    1
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "inherited"
+  }
+  data {
+    id			    34
+    name		    "VPMM_CANInactive_flg"
+    linkNode		    [2 33 35]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "inherited"
+  }
+  data {
+    id			    35
+    name		    "task_time_s"
+    linkNode		    [2 34 36]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "inherited"
+  }
+  data {
+    id			    36
+    name		    "KPMM_ForcePowerDown_flg"
+    linkNode		    [2 35 37]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "inherited"
+  }
+  data {
+    id			    37
+    name		    "KPMM_InitializeWaitTime_s"
+    linkNode		    [2 36 38]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "inherited"
+  }
+  data {
+    id			    38
+    name		    "VPMM_InitializeTime_s"
+    linkNode		    [2 37 0]
+    scope		    LOCAL_DATA
+    machine		    1
+    props {
+      resolveToSignalObject   1
+      type {
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+    }
+    dataType		    "double"
+  }
+  instance {
+    id			    39
+    name		    "PMM/PowerModeManagement/PowerModeTransition"
+    machine		    1
+    chart		    2
+  }
+  target {
+    id			    40
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    machine		    1
+    linkNode		    [1 0 41]
+  }
+  target {
+    id			    41
+    name		    "rtw"
+    codeFlags		    " comments=1 statebitsets=1 databitsets=1 emitlogicalops=1 elseifdetection=1 constantfolding=1 redundantloadelimination=0 preservenames=0 preservenameswithparent=0 exportcharts=0"
+    machine		    1
+    linkNode		    [1 40 0]
+  }
+}

@@ -1,0 +1,2227 @@
+<Type>MainBlock</Type>
+<GenInfo>
+   <Ver>4.0.735878.5444907408</Ver>
+   <Var>1</Var>
+   <CANName>EPS_CAN</CANName>
+   <CANUniqueID>1</CANUniqueID>
+   <CANFDSupport>OFF</CANFDSupport>
+   <CapMsgs>
+      <A>OFF</A>
+   </CapMsgs>
+   <GW>OFF</GW>
+   <J1939>OFF</J1939>
+   <CRCs attCount="0"/>
+   <NoFreeIds>0</NoFreeIds>
+   <NoRTTMsgs>0</NoRTTMsgs>
+</GenInfo>
+<TRCInfos>
+   <TRCPrefixGlobal>BusSystems/CAN/EPS_CAN</TRCPrefixGlobal>
+   <TRCPrefixMsg>
+      <RX>BusSystems/CAN/EPS_CAN/%MsgName%/RX/</RX>
+      <TX>BusSystems/CAN/EPS_CAN/%MsgName%/TX/</TX>
+      <Capt>BusSystems/CAN/EPS_CAN/%MsgName%/</Capt>
+   </TRCPrefixMsg>
+</TRCInfos>
+<Settings>
+   <Global>
+      <Generic>
+         <GlobalVar attName="En">
+            <InportDefault>0</InportDefault>
+            <Logic>-</Logic>
+            <Source>TRC</Source>
+            <TN>GlobalEnable</TN>
+            <DN>GlobalEnable</DN>
+         </GlobalVar>
+         <GlobalVar attName="EnTx">
+            <InportDefault>0</InportDefault>
+            <Logic>-</Logic>
+            <Source>TRC</Source>
+            <TN>GlobalEnableTX</TN>
+            <DN>GlobalEnableTX</DN>
+         </GlobalVar>
+         <GlobalVar attName="Var">
+            <TN>Variation</TN>
+            <DN>Variation</DN>
+         </GlobalVar>
+         <GlobalVar attName="MaxMessagesPerStep">
+            <TN>MaxMessagesPerStep</TN>
+            <DN>Maximum TX Messages per SampleStep</DN>
+         </GlobalVar>
+      </Generic>
+   </Global>
+   <ECUs attCount="9">
+      <ECU>
+         <Name>ADAS</Name>
+         <NodeIndex>1</NodeIndex>
+         <Generic></Generic>
+      </ECU>
+      <ECU>
+         <Name>APA</Name>
+         <NodeIndex>2</NodeIndex>
+         <Generic></Generic>
+      </ECU>
+      <ECU>
+         <Name>Default_Receiver</Name>
+         <NodeIndex>3</NodeIndex>
+         <Generic></Generic>
+      </ECU>
+      <ECU>
+         <Name>EPS</Name>
+         <NodeIndex>4</NodeIndex>
+         <Generic></Generic>
+      </ECU>
+      <ECU>
+         <Name>GW</Name>
+         <NodeIndex>5</NodeIndex>
+         <Generic>
+            <ECUVar attName="En">
+               <InportDefault>0</InportDefault>
+               <Logic>-</Logic>
+               <Source>TRC</Source>
+               <TN>GW_Enable</TN>
+               <DN>GW</DN>
+            </ECUVar>
+         </Generic>
+      </ECU>
+      <ECU>
+         <Name>Handler</Name>
+         <NodeIndex>6</NodeIndex>
+         <Generic></Generic>
+      </ECU>
+      <ECU>
+         <Name>IFC</Name>
+         <NodeIndex>7</NodeIndex>
+         <Generic>
+            <ECUVar attName="En">
+               <InportDefault>0</InportDefault>
+               <Logic>-</Logic>
+               <Source>TRC</Source>
+               <TN>IFC_Enable</TN>
+               <DN>IFC</DN>
+            </ECUVar>
+         </Generic>
+      </ECU>
+      <ECU>
+         <Name>IP</Name>
+         <NodeIndex>8</NodeIndex>
+         <Generic></Generic>
+      </ECU>
+      <ECU>
+         <Name>SAS</Name>
+         <NodeIndex>9</NodeIndex>
+         <Generic></Generic>
+      </ECU>
+   </ECUs>
+   <Msgs attCount="10">
+      <Msg ID="561" Name="ABS1" DBCName="ABS1" DBCID="561">
+         <ECU>GW</ECU>
+         <RECU>APA,EPS,IFC</RECU>
+         <FreeRawMsg>OFF</FreeRawMsg>
+         <CaptureMsg>OFF</CaptureMsg>
+         <Len>8</Len>
+         <Dir>2</Dir>
+         <Vars attCount="0"/>
+         <TX>
+            <Generic>
+               <TXVar attName="CEn">
+                  <TN>ABS1_CheckEnable</TN>
+                  <DN>CheckEnable</DN>
+               </TXVar>
+               <TXVar attName="En">
+                  <InportDefault>0</InportDefault>
+                  <Logic>-</Logic>
+                  <Source>TRC</Source>
+                  <TN>ABS1_Enable</TN>
+                  <DN>Enable</DN>
+               </TXVar>
+               <TXVar attName="Cyclic">
+                  <InportDefault>0</InportDefault>
+                  <Logic>-</Logic>
+                  <Source>TRC</Source>
+                  <TN>ABS1_PeriodicalOn</TN>
+                  <DN>PeriodicalOn</DN>
+               </TXVar>
+               <TXVar attName="Kout">
+                  <TN>ABS1_Kickout</TN>
+                  <DN>Kickout</DN>
+                  <Type>Button</Type>
+               </TXVar>
+               <TXVar attName="Delay">
+                  <TN>ABS1_DelayTime</TN>
+                  <DN>DelayTime</DN>
+                  <Type>Display</Type>
+               </TXVar>
+               <TXVar attName="Status">
+                  <TN>ABS1_status</TN>
+                  <DN>ABS1_status</DN>
+                  <Type>Display</Type>
+               </TXVar>
+               <TXVar attName="CycleTime">
+                  <TN>ABS1_CycleTime</TN>
+                  <DN>CycleTime</DN>
+                  <Type>Input</Type>
+               </TXVar>
+            </Generic>
+            <ERD>
+               <A>OFF</A>
+               <ERDTRC>
+                  <A>OFF</A>
+                  <ByteMap attIdx="1">
+                     <TN>ABS1_RAW_byte_1</TN>
+                     <DN>RAWswitch_1</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="2">
+                     <TN>ABS1_RAW_byte_2</TN>
+                     <DN>RAWswitch_2</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="3">
+                     <TN>ABS1_RAW_byte_3</TN>
+                     <DN>RAWswitch_3</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="4">
+                     <TN>ABS1_RAW_byte_4</TN>
+                     <DN>RAWswitch_4</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="5">
+                     <TN>ABS1_RAW_byte_5</TN>
+                     <DN>RAWswitch_5</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="6">
+                     <TN>ABS1_RAW_byte_6</TN>
+                     <DN>RAWswitch_6</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="7">
+                     <TN>ABS1_RAW_byte_7</TN>
+                     <DN>RAWswitch_7</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="8">
+                     <TN>ABS1_RAW_byte_8</TN>
+                     <DN>RAWswitch_8</DN>
+                  </ByteMap>
+               </ERDTRC>
+               <Switch>
+                  <A>OFF</A>
+                  <TN>ABS1_RAW_switch</TN>
+                  <DN>RAWswitch</DN>
+               </Switch>
+            </ERD>
+            <RDD>
+               <A>OFF</A>
+            </RDD>
+         </TX>
+         <RX>
+            <Generic>
+               <RXVar attName="StdID">
+                  <TN>ABS1_ID</TN>
+                  <DN>ABS1_ID</DN>
+               </RXVar>
+               <RXVar attName="Len">
+                  <TN>ABS1_Length</TN>
+                  <DN>ABS1_Length</DN>
+               </RXVar>
+               <RXVar attName="IDFormat">
+                  <TN>ABS1_IDFormat</TN>
+                  <DN>ABS1_IDFormat</DN>
+               </RXVar>
+               <RXVar attName="Status">
+                  <TN>ABS1_status</TN>
+                  <DN>ABS1_status</DN>
+               </RXVar>
+               <RXVar attName="Time">
+                  <TN>ABS1_time</TN>
+                  <DN>ABS1_time</DN>
+               </RXVar>
+               <RXVar attName="DeltaTime">
+                  <TN>ABS1_dt</TN>
+                  <DN>ABS1_dt</DN>
+               </RXVar>
+               <RXVar attName="CycleTime">
+                  <TN>ABS1_CycleTime</TN>
+                  <DN>CycleTime</DN>
+               </RXVar>
+            </Generic>
+         </RX>
+         <Sgns attCount="6">
+            <Sgn attName="RollingCounter_ABS1" attStartBit="0">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="RollingCounter_ABS1"/>
+                        <SgnTXVar attName="GW" attValue="RollingCounter_ABS1_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="RollingCounter_ABS1_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="RollingCounter_ABS1_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="RollingCounter_ABS1_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="RollingCounter_ABS1_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="RollingCounter_ABS1"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="FRWheelSpd" attStartBit="24">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="FRWheelSpd"/>
+                        <SgnTXVar attName="GW" attValue="FRWheelSpd_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="FRWheelSpd_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="FRWheelSpd_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="FRWheelSpd_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="FRWheelSpd_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="FRWheelSpd"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="FRWheelSpdValid" attStartBit="37">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="FRWheelSpdValid"/>
+                        <SgnTXVar attName="GW" attValue="FRWheelSpdValid_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="FRWheelSpdValid_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="FRWheelSpdValid_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="FRWheelSpdValid_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="FRWheelSpdValid_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="FRWheelSpdValid"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="FLWheelSpd" attStartBit="40">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="FLWheelSpd"/>
+                        <SgnTXVar attName="GW" attValue="FLWheelSpd_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="FLWheelSpd_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="FLWheelSpd_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="FLWheelSpd_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="FLWheelSpd_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="FLWheelSpd"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="FLWheelSpdValid" attStartBit="53">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="FLWheelSpdValid"/>
+                        <SgnTXVar attName="GW" attValue="FLWheelSpdValid_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="FLWheelSpdValid_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="FLWheelSpdValid_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="FLWheelSpdValid_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="FLWheelSpdValid_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="FLWheelSpdValid"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="CheckSum_ABS1" attStartBit="56">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="CheckSum_ABS1"/>
+                        <SgnTXVar attName="GW" attValue="CheckSum_ABS1_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="CheckSum_ABS1_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="CheckSum_ABS1_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="CheckSum_ABS1_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="CheckSum_ABS1_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="CheckSum_ABS1"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+         </Sgns>
+      </Msg>
+      <Msg ID="582" Name="ABS2" DBCName="ABS2" DBCID="582">
+         <ECU>GW</ECU>
+         <RECU>APA,EPS,IFC</RECU>
+         <FreeRawMsg>OFF</FreeRawMsg>
+         <CaptureMsg>OFF</CaptureMsg>
+         <Len>8</Len>
+         <Dir>2</Dir>
+         <Vars attCount="0"/>
+         <TX>
+            <Generic>
+               <TXVar attName="CEn">
+                  <TN>ABS2_CheckEnable</TN>
+                  <DN>CheckEnable</DN>
+               </TXVar>
+               <TXVar attName="En">
+                  <InportDefault>0</InportDefault>
+                  <Logic>-</Logic>
+                  <Source>TRC</Source>
+                  <TN>ABS2_Enable</TN>
+                  <DN>Enable</DN>
+               </TXVar>
+               <TXVar attName="Cyclic">
+                  <InportDefault>0</InportDefault>
+                  <Logic>-</Logic>
+                  <Source>TRC</Source>
+                  <TN>ABS2_PeriodicalOn</TN>
+                  <DN>PeriodicalOn</DN>
+               </TXVar>
+               <TXVar attName="Kout">
+                  <TN>ABS2_Kickout</TN>
+                  <DN>Kickout</DN>
+                  <Type>Button</Type>
+               </TXVar>
+               <TXVar attName="Delay">
+                  <TN>ABS2_DelayTime</TN>
+                  <DN>DelayTime</DN>
+                  <Type>Display</Type>
+               </TXVar>
+               <TXVar attName="Status">
+                  <TN>ABS2_status</TN>
+                  <DN>ABS2_status</DN>
+                  <Type>Display</Type>
+               </TXVar>
+               <TXVar attName="CycleTime">
+                  <TN>ABS2_CycleTime</TN>
+                  <DN>CycleTime</DN>
+                  <Type>Input</Type>
+               </TXVar>
+            </Generic>
+            <ERD>
+               <A>OFF</A>
+               <ERDTRC>
+                  <A>OFF</A>
+                  <ByteMap attIdx="1">
+                     <TN>ABS2_RAW_byte_1</TN>
+                     <DN>RAWswitch_1</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="2">
+                     <TN>ABS2_RAW_byte_2</TN>
+                     <DN>RAWswitch_2</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="3">
+                     <TN>ABS2_RAW_byte_3</TN>
+                     <DN>RAWswitch_3</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="4">
+                     <TN>ABS2_RAW_byte_4</TN>
+                     <DN>RAWswitch_4</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="5">
+                     <TN>ABS2_RAW_byte_5</TN>
+                     <DN>RAWswitch_5</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="6">
+                     <TN>ABS2_RAW_byte_6</TN>
+                     <DN>RAWswitch_6</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="7">
+                     <TN>ABS2_RAW_byte_7</TN>
+                     <DN>RAWswitch_7</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="8">
+                     <TN>ABS2_RAW_byte_8</TN>
+                     <DN>RAWswitch_8</DN>
+                  </ByteMap>
+               </ERDTRC>
+               <Switch>
+                  <A>OFF</A>
+                  <TN>ABS2_RAW_switch</TN>
+                  <DN>RAWswitch</DN>
+               </Switch>
+            </ERD>
+            <RDD>
+               <A>OFF</A>
+            </RDD>
+         </TX>
+         <RX>
+            <Generic>
+               <RXVar attName="StdID">
+                  <TN>ABS2_ID</TN>
+                  <DN>ABS2_ID</DN>
+               </RXVar>
+               <RXVar attName="Len">
+                  <TN>ABS2_Length</TN>
+                  <DN>ABS2_Length</DN>
+               </RXVar>
+               <RXVar attName="IDFormat">
+                  <TN>ABS2_IDFormat</TN>
+                  <DN>ABS2_IDFormat</DN>
+               </RXVar>
+               <RXVar attName="Status">
+                  <TN>ABS2_status</TN>
+                  <DN>ABS2_status</DN>
+               </RXVar>
+               <RXVar attName="Time">
+                  <TN>ABS2_time</TN>
+                  <DN>ABS2_time</DN>
+               </RXVar>
+               <RXVar attName="DeltaTime">
+                  <TN>ABS2_dt</TN>
+                  <DN>ABS2_dt</DN>
+               </RXVar>
+               <RXVar attName="CycleTime">
+                  <TN>ABS2_CycleTime</TN>
+                  <DN>CycleTime</DN>
+               </RXVar>
+            </Generic>
+         </RX>
+         <Sgns attCount="6">
+            <Sgn attName="RollingCounter_ABS2" attStartBit="0">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="RollingCounter_ABS2"/>
+                        <SgnTXVar attName="GW" attValue="RollingCounter_ABS2_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="RollingCounter_ABS2_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="RollingCounter_ABS2_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="RollingCounter_ABS2_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="RollingCounter_ABS2_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="RollingCounter_ABS2"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="RRWheelSpd" attStartBit="24">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="RRWheelSpd"/>
+                        <SgnTXVar attName="GW" attValue="RRWheelSpd_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="RRWheelSpd_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="RRWheelSpd_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="RRWheelSpd_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="RRWheelSpd_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="RRWheelSpd"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="RRWheelSpdValid" attStartBit="37">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="RRWheelSpdValid"/>
+                        <SgnTXVar attName="GW" attValue="RRWheelSpdValid_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="RRWheelSpdValid_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="RRWheelSpdValid_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="RRWheelSpdValid_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="RRWheelSpdValid_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="RRWheelSpdValid"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="RLWheelSpd" attStartBit="40">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="RLWheelSpd"/>
+                        <SgnTXVar attName="GW" attValue="RLWheelSpd_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="RLWheelSpd_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="RLWheelSpd_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="RLWheelSpd_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="RLWheelSpd_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="RLWheelSpd"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="RLWheelSpdValid" attStartBit="53">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="RLWheelSpdValid"/>
+                        <SgnTXVar attName="GW" attValue="RLWheelSpdValid_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="RLWheelSpdValid_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="RLWheelSpdValid_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="RLWheelSpdValid_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="RLWheelSpdValid_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="RLWheelSpdValid"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="CheckSum_ABS2" attStartBit="56">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="CheckSum_ABS2"/>
+                        <SgnTXVar attName="GW" attValue="CheckSum_ABS2_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="CheckSum_ABS2_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="CheckSum_ABS2_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="CheckSum_ABS2_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="CheckSum_ABS2_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="CheckSum_ABS2"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+         </Sgns>
+      </Msg>
+      <Msg ID="613" Name="ABS3" DBCName="ABS3" DBCID="613">
+         <ECU>GW</ECU>
+         <RECU>APA,EPS,IFC</RECU>
+         <FreeRawMsg>OFF</FreeRawMsg>
+         <CaptureMsg>OFF</CaptureMsg>
+         <Len>8</Len>
+         <Dir>2</Dir>
+         <Vars attCount="0"/>
+         <TX>
+            <Generic>
+               <TXVar attName="CEn">
+                  <TN>ABS3_CheckEnable</TN>
+                  <DN>CheckEnable</DN>
+               </TXVar>
+               <TXVar attName="En">
+                  <InportDefault>0</InportDefault>
+                  <Logic>-</Logic>
+                  <Source>TRC</Source>
+                  <TN>ABS3_Enable</TN>
+                  <DN>Enable</DN>
+               </TXVar>
+               <TXVar attName="Cyclic">
+                  <InportDefault>0</InportDefault>
+                  <Logic>-</Logic>
+                  <Source>TRC</Source>
+                  <TN>ABS3_PeriodicalOn</TN>
+                  <DN>PeriodicalOn</DN>
+               </TXVar>
+               <TXVar attName="Kout">
+                  <TN>ABS3_Kickout</TN>
+                  <DN>Kickout</DN>
+                  <Type>Button</Type>
+               </TXVar>
+               <TXVar attName="Delay">
+                  <TN>ABS3_DelayTime</TN>
+                  <DN>DelayTime</DN>
+                  <Type>Display</Type>
+               </TXVar>
+               <TXVar attName="Status">
+                  <TN>ABS3_status</TN>
+                  <DN>ABS3_status</DN>
+                  <Type>Display</Type>
+               </TXVar>
+               <TXVar attName="CycleTime">
+                  <TN>ABS3_CycleTime</TN>
+                  <DN>CycleTime</DN>
+                  <Type>Input</Type>
+               </TXVar>
+            </Generic>
+            <ERD>
+               <A>OFF</A>
+               <ERDTRC>
+                  <A>OFF</A>
+                  <ByteMap attIdx="1">
+                     <TN>ABS3_RAW_byte_1</TN>
+                     <DN>RAWswitch_1</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="2">
+                     <TN>ABS3_RAW_byte_2</TN>
+                     <DN>RAWswitch_2</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="3">
+                     <TN>ABS3_RAW_byte_3</TN>
+                     <DN>RAWswitch_3</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="4">
+                     <TN>ABS3_RAW_byte_4</TN>
+                     <DN>RAWswitch_4</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="5">
+                     <TN>ABS3_RAW_byte_5</TN>
+                     <DN>RAWswitch_5</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="6">
+                     <TN>ABS3_RAW_byte_6</TN>
+                     <DN>RAWswitch_6</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="7">
+                     <TN>ABS3_RAW_byte_7</TN>
+                     <DN>RAWswitch_7</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="8">
+                     <TN>ABS3_RAW_byte_8</TN>
+                     <DN>RAWswitch_8</DN>
+                  </ByteMap>
+               </ERDTRC>
+               <Switch>
+                  <A>OFF</A>
+                  <TN>ABS3_RAW_switch</TN>
+                  <DN>RAWswitch</DN>
+               </Switch>
+            </ERD>
+            <RDD>
+               <A>OFF</A>
+            </RDD>
+         </TX>
+         <RX>
+            <Generic>
+               <RXVar attName="StdID">
+                  <TN>ABS3_ID</TN>
+                  <DN>ABS3_ID</DN>
+               </RXVar>
+               <RXVar attName="Len">
+                  <TN>ABS3_Length</TN>
+                  <DN>ABS3_Length</DN>
+               </RXVar>
+               <RXVar attName="IDFormat">
+                  <TN>ABS3_IDFormat</TN>
+                  <DN>ABS3_IDFormat</DN>
+               </RXVar>
+               <RXVar attName="Status">
+                  <TN>ABS3_status</TN>
+                  <DN>ABS3_status</DN>
+               </RXVar>
+               <RXVar attName="Time">
+                  <TN>ABS3_time</TN>
+                  <DN>ABS3_time</DN>
+               </RXVar>
+               <RXVar attName="DeltaTime">
+                  <TN>ABS3_dt</TN>
+                  <DN>ABS3_dt</DN>
+               </RXVar>
+               <RXVar attName="CycleTime">
+                  <TN>ABS3_CycleTime</TN>
+                  <DN>CycleTime</DN>
+               </RXVar>
+            </Generic>
+         </RX>
+         <Sgns attCount="4">
+            <Sgn attName="RollingCounter_ABS3" attStartBit="0">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="RollingCounter_ABS3"/>
+                        <SgnTXVar attName="GW" attValue="RollingCounter_ABS3_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="RollingCounter_ABS3_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="RollingCounter_ABS3_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="RollingCounter_ABS3_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="RollingCounter_ABS3_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="RollingCounter_ABS3"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="VehcileSpd" attStartBit="40">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="VehcileSpd"/>
+                        <SgnTXVar attName="GW" attValue="VehcileSpd_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="VehcileSpd_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="VehcileSpd_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="VehcileSpd_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="VehcileSpd_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="VehcileSpd"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="VehicleSpdValid" attStartBit="53">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="VehicleSpdValid"/>
+                        <SgnTXVar attName="GW" attValue="VehicleSpdValid_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="VehicleSpdValid_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="VehicleSpdValid_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="VehicleSpdValid_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="VehicleSpdValid_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="VehicleSpdValid"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="CheckSum_ABS3" attStartBit="56">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="CheckSum_ABS3"/>
+                        <SgnTXVar attName="GW" attValue="CheckSum_ABS3_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="CheckSum_ABS3_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="CheckSum_ABS3_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="CheckSum_ABS3_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="CheckSum_ABS3_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="CheckSum_ABS3"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+         </Sgns>
+      </Msg>
+      <Msg ID="625" Name="ECM2" DBCName="ECM2" DBCID="625">
+         <ECU>GW</ECU>
+         <RECU>EPS,IFC</RECU>
+         <FreeRawMsg>OFF</FreeRawMsg>
+         <CaptureMsg>OFF</CaptureMsg>
+         <Len>8</Len>
+         <Dir>2</Dir>
+         <Vars attCount="0"/>
+         <TX>
+            <Generic>
+               <TXVar attName="CEn">
+                  <TN>ECM2_CheckEnable</TN>
+                  <DN>CheckEnable</DN>
+               </TXVar>
+               <TXVar attName="En">
+                  <InportDefault>0</InportDefault>
+                  <Logic>-</Logic>
+                  <Source>TRC</Source>
+                  <TN>ECM2_Enable</TN>
+                  <DN>Enable</DN>
+               </TXVar>
+               <TXVar attName="Cyclic">
+                  <InportDefault>0</InportDefault>
+                  <Logic>-</Logic>
+                  <Source>TRC</Source>
+                  <TN>ECM2_PeriodicalOn</TN>
+                  <DN>PeriodicalOn</DN>
+               </TXVar>
+               <TXVar attName="Kout">
+                  <TN>ECM2_Kickout</TN>
+                  <DN>Kickout</DN>
+                  <Type>Button</Type>
+               </TXVar>
+               <TXVar attName="Delay">
+                  <TN>ECM2_DelayTime</TN>
+                  <DN>DelayTime</DN>
+                  <Type>Display</Type>
+               </TXVar>
+               <TXVar attName="Status">
+                  <TN>ECM2_status</TN>
+                  <DN>ECM2_status</DN>
+                  <Type>Display</Type>
+               </TXVar>
+               <TXVar attName="CycleTime">
+                  <TN>ECM2_CycleTime</TN>
+                  <DN>CycleTime</DN>
+                  <Type>Input</Type>
+               </TXVar>
+            </Generic>
+            <ERD>
+               <A>OFF</A>
+               <ERDTRC>
+                  <A>OFF</A>
+                  <ByteMap attIdx="1">
+                     <TN>ECM2_RAW_byte_1</TN>
+                     <DN>RAWswitch_1</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="2">
+                     <TN>ECM2_RAW_byte_2</TN>
+                     <DN>RAWswitch_2</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="3">
+                     <TN>ECM2_RAW_byte_3</TN>
+                     <DN>RAWswitch_3</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="4">
+                     <TN>ECM2_RAW_byte_4</TN>
+                     <DN>RAWswitch_4</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="5">
+                     <TN>ECM2_RAW_byte_5</TN>
+                     <DN>RAWswitch_5</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="6">
+                     <TN>ECM2_RAW_byte_6</TN>
+                     <DN>RAWswitch_6</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="7">
+                     <TN>ECM2_RAW_byte_7</TN>
+                     <DN>RAWswitch_7</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="8">
+                     <TN>ECM2_RAW_byte_8</TN>
+                     <DN>RAWswitch_8</DN>
+                  </ByteMap>
+               </ERDTRC>
+               <Switch>
+                  <A>OFF</A>
+                  <TN>ECM2_RAW_switch</TN>
+                  <DN>RAWswitch</DN>
+               </Switch>
+            </ERD>
+            <RDD>
+               <A>OFF</A>
+            </RDD>
+         </TX>
+         <RX>
+            <Generic>
+               <RXVar attName="StdID">
+                  <TN>ECM2_ID</TN>
+                  <DN>ECM2_ID</DN>
+               </RXVar>
+               <RXVar attName="Len">
+                  <TN>ECM2_Length</TN>
+                  <DN>ECM2_Length</DN>
+               </RXVar>
+               <RXVar attName="IDFormat">
+                  <TN>ECM2_IDFormat</TN>
+                  <DN>ECM2_IDFormat</DN>
+               </RXVar>
+               <RXVar attName="Status">
+                  <TN>ECM2_status</TN>
+                  <DN>ECM2_status</DN>
+               </RXVar>
+               <RXVar attName="Time">
+                  <TN>ECM2_time</TN>
+                  <DN>ECM2_time</DN>
+               </RXVar>
+               <RXVar attName="DeltaTime">
+                  <TN>ECM2_dt</TN>
+                  <DN>ECM2_dt</DN>
+               </RXVar>
+               <RXVar attName="CycleTime">
+                  <TN>ECM2_CycleTime</TN>
+                  <DN>CycleTime</DN>
+               </RXVar>
+            </Generic>
+         </RX>
+         <Sgns attCount="1">
+            <Sgn attName="EngState" attStartBit="3">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="EngState"/>
+                        <SgnTXVar attName="GW" attValue="EngState_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="EngState_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="EngState_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="EngState_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="EngState_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EngState"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+         </Sgns>
+      </Msg>
+      <Msg ID="746" Name="EPS1" DBCName="EPS1" DBCID="746">
+         <ECU>EPS</ECU>
+         <RECU>ADAS,APA,Default_Receiver,IFC,IP</RECU>
+         <FreeRawMsg>OFF</FreeRawMsg>
+         <CaptureMsg>OFF</CaptureMsg>
+         <Len>8</Len>
+         <Dir>1</Dir>
+         <Vars attCount="0"/>
+         <RX>
+            <Generic>
+               <RXVar attName="StdID">
+                  <TN>EPS1_ID</TN>
+                  <DN>EPS1_ID</DN>
+               </RXVar>
+               <RXVar attName="Len">
+                  <TN>EPS1_Length</TN>
+                  <DN>EPS1_Length</DN>
+               </RXVar>
+               <RXVar attName="IDFormat">
+                  <TN>EPS1_IDFormat</TN>
+                  <DN>EPS1_IDFormat</DN>
+               </RXVar>
+               <RXVar attName="Status">
+                  <TN>EPS1_status</TN>
+                  <DN>EPS1_status</DN>
+               </RXVar>
+               <RXVar attName="Time">
+                  <TN>EPS1_time</TN>
+                  <DN>EPS1_time</DN>
+               </RXVar>
+               <RXVar attName="DeltaTime">
+                  <TN>EPS1_dt</TN>
+                  <DN>EPS1_dt</DN>
+               </RXVar>
+               <RXVar attName="CycleTime">
+                  <TN>EPS1_CycleTime</TN>
+                  <DN>CycleTime</DN>
+               </RXVar>
+            </Generic>
+         </RX>
+         <Sgns attCount="10">
+            <Sgn attName="RollingCounter_EPS1" attStartBit="0">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="RollingCounter_EPS1"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="EPS_CurrMod" attStartBit="9">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EPS_CurrMod"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="EPS_ConsumedCurrValue" attStartBit="16">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EPS_ConsumedCurrValue"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="EPS_DrvInputTrqValue" attStartBit="24">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EPS_DrvInputTrqValue"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="EPS_AvailSts" attStartBit="36">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EPS_AvailSts"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="EPS_InterferDetdValid" attStartBit="38">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EPS_InterferDetdValid"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="EPS_InterferDetd" attStartBit="39">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EPS_InterferDetd"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="EPS_TrqSnsrSts" attStartBit="54">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EPS_TrqSnsrSts"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="EPS_FailSts" attStartBit="55">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EPS_FailSts"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="CheckSum_EPS1" attStartBit="56">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="CheckSum_EPS1"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+         </Sgns>
+      </Msg>
+      <Msg ID="354" Name="EPS2" DBCName="EPS2" DBCID="354">
+         <ECU>EPS</ECU>
+         <RECU>ADAS,IFC,IP</RECU>
+         <FreeRawMsg>OFF</FreeRawMsg>
+         <CaptureMsg>OFF</CaptureMsg>
+         <Len>8</Len>
+         <Dir>1</Dir>
+         <Vars attCount="0"/>
+         <RX>
+            <Generic>
+               <RXVar attName="StdID">
+                  <TN>EPS2_ID</TN>
+                  <DN>EPS2_ID</DN>
+               </RXVar>
+               <RXVar attName="Len">
+                  <TN>EPS2_Length</TN>
+                  <DN>EPS2_Length</DN>
+               </RXVar>
+               <RXVar attName="IDFormat">
+                  <TN>EPS2_IDFormat</TN>
+                  <DN>EPS2_IDFormat</DN>
+               </RXVar>
+               <RXVar attName="Status">
+                  <TN>EPS2_status</TN>
+                  <DN>EPS2_status</DN>
+               </RXVar>
+               <RXVar attName="Time">
+                  <TN>EPS2_time</TN>
+                  <DN>EPS2_time</DN>
+               </RXVar>
+               <RXVar attName="DeltaTime">
+                  <TN>EPS2_dt</TN>
+                  <DN>EPS2_dt</DN>
+               </RXVar>
+               <RXVar attName="CycleTime">
+                  <TN>EPS2_CycleTime</TN>
+                  <DN>CycleTime</DN>
+               </RXVar>
+            </Generic>
+         </RX>
+         <Sgns attCount="8">
+            <Sgn attName="RollingCounter_EPS2" attStartBit="0">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="RollingCounter_EPS2"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="EPS_LKATrqOvlDlvdSts" attStartBit="4">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EPS_LKATrqOvlDlvdSts"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="EPS_HandsOffDetnModEnable" attStartBit="6">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EPS_HandsOffDetnModEnable"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="EPS_LKATorqOvrlDlvdValid" attStartBit="7">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EPS_LKATorqOvrlDlvdValid"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="EPS_LKATorqOvrlDlvd" attStartBit="8">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EPS_LKATorqOvrlDlvd"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="EPS_HandsOffDetnStsValid" attStartBit="45">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EPS_HandsOffDetnStsValid"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="EPS_HandsOffDetnSts" attStartBit="46">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EPS_HandsOffDetnSts"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="CheckSum_EPS2" attStartBit="56">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="CheckSum_EPS2"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+         </Sgns>
+      </Msg>
+      <Msg ID="629" Name="GWA1" DBCName="GWA1" DBCID="629">
+         <ECU>GW</ECU>
+         <RECU>EPS</RECU>
+         <FreeRawMsg>OFF</FreeRawMsg>
+         <CaptureMsg>OFF</CaptureMsg>
+         <Len>8</Len>
+         <Dir>2</Dir>
+         <Vars attCount="0"/>
+         <TX>
+            <Generic>
+               <TXVar attName="CEn">
+                  <TN>GWA1_CheckEnable</TN>
+                  <DN>CheckEnable</DN>
+               </TXVar>
+               <TXVar attName="En">
+                  <InportDefault>0</InportDefault>
+                  <Logic>-</Logic>
+                  <Source>TRC</Source>
+                  <TN>GWA1_Enable</TN>
+                  <DN>Enable</DN>
+               </TXVar>
+               <TXVar attName="Cyclic">
+                  <InportDefault>0</InportDefault>
+                  <Logic>-</Logic>
+                  <Source>TRC</Source>
+                  <TN>GWA1_PeriodicalOn</TN>
+                  <DN>PeriodicalOn</DN>
+               </TXVar>
+               <TXVar attName="Kout">
+                  <TN>GWA1_Kickout</TN>
+                  <DN>Kickout</DN>
+                  <Type>Button</Type>
+               </TXVar>
+               <TXVar attName="Delay">
+                  <TN>GWA1_DelayTime</TN>
+                  <DN>DelayTime</DN>
+                  <Type>Display</Type>
+               </TXVar>
+               <TXVar attName="Status">
+                  <TN>GWA1_status</TN>
+                  <DN>GWA1_status</DN>
+                  <Type>Display</Type>
+               </TXVar>
+               <TXVar attName="CycleTime">
+                  <TN>GWA1_CycleTime</TN>
+                  <DN>CycleTime</DN>
+                  <Type>Input</Type>
+               </TXVar>
+            </Generic>
+            <ERD>
+               <A>OFF</A>
+               <ERDTRC>
+                  <A>OFF</A>
+                  <ByteMap attIdx="1">
+                     <TN>GWA1_RAW_byte_1</TN>
+                     <DN>RAWswitch_1</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="2">
+                     <TN>GWA1_RAW_byte_2</TN>
+                     <DN>RAWswitch_2</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="3">
+                     <TN>GWA1_RAW_byte_3</TN>
+                     <DN>RAWswitch_3</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="4">
+                     <TN>GWA1_RAW_byte_4</TN>
+                     <DN>RAWswitch_4</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="5">
+                     <TN>GWA1_RAW_byte_5</TN>
+                     <DN>RAWswitch_5</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="6">
+                     <TN>GWA1_RAW_byte_6</TN>
+                     <DN>RAWswitch_6</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="7">
+                     <TN>GWA1_RAW_byte_7</TN>
+                     <DN>RAWswitch_7</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="8">
+                     <TN>GWA1_RAW_byte_8</TN>
+                     <DN>RAWswitch_8</DN>
+                  </ByteMap>
+               </ERDTRC>
+               <Switch>
+                  <A>OFF</A>
+                  <TN>GWA1_RAW_switch</TN>
+                  <DN>RAWswitch</DN>
+               </Switch>
+            </ERD>
+            <RDD>
+               <A>OFF</A>
+            </RDD>
+         </TX>
+         <RX>
+            <Generic>
+               <RXVar attName="StdID">
+                  <TN>GWA1_ID</TN>
+                  <DN>GWA1_ID</DN>
+               </RXVar>
+               <RXVar attName="Len">
+                  <TN>GWA1_Length</TN>
+                  <DN>GWA1_Length</DN>
+               </RXVar>
+               <RXVar attName="IDFormat">
+                  <TN>GWA1_IDFormat</TN>
+                  <DN>GWA1_IDFormat</DN>
+               </RXVar>
+               <RXVar attName="Status">
+                  <TN>GWA1_status</TN>
+                  <DN>GWA1_status</DN>
+               </RXVar>
+               <RXVar attName="Time">
+                  <TN>GWA1_time</TN>
+                  <DN>GWA1_time</DN>
+               </RXVar>
+               <RXVar attName="DeltaTime">
+                  <TN>GWA1_dt</TN>
+                  <DN>GWA1_dt</DN>
+               </RXVar>
+               <RXVar attName="CycleTime">
+                  <TN>GWA1_CycleTime</TN>
+                  <DN>CycleTime</DN>
+               </RXVar>
+            </Generic>
+         </RX>
+         <Sgns attCount="2">
+            <Sgn attName="EPSSwErrorSts" attStartBit="4">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="EPSSwErrorSts"/>
+                        <SgnTXVar attName="GW" attValue="EPSSwErrorSts_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="EPSSwErrorSts_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="EPSSwErrorSts_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="EPSSwErrorSts_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="EPSSwErrorSts_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EPSSwErrorSts"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="EPSSwSts" attStartBit="5">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="EPSSwSts"/>
+                        <SgnTXVar attName="GW" attValue="EPSSwSts_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="EPSSwSts_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="EPSSwSts_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="EPSSwSts_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="EPSSwSts_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="EPSSwSts"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+         </Sgns>
+      </Msg>
+      <Msg ID="265" Name="IFC1" DBCName="IFC1" DBCID="265">
+         <ECU>IFC</ECU>
+         <RECU>EPS</RECU>
+         <FreeRawMsg>OFF</FreeRawMsg>
+         <CaptureMsg>OFF</CaptureMsg>
+         <Len>8</Len>
+         <Dir>2</Dir>
+         <Vars attCount="0"/>
+         <TX>
+            <Generic>
+               <TXVar attName="CEn">
+                  <TN>IFC1_CheckEnable</TN>
+                  <DN>CheckEnable</DN>
+               </TXVar>
+               <TXVar attName="En">
+                  <InportDefault>0</InportDefault>
+                  <Logic>-</Logic>
+                  <Source>TRC</Source>
+                  <TN>IFC1_Enable</TN>
+                  <DN>Enable</DN>
+               </TXVar>
+               <TXVar attName="Cyclic">
+                  <InportDefault>0</InportDefault>
+                  <Logic>-</Logic>
+                  <Source>TRC</Source>
+                  <TN>IFC1_PeriodicalOn</TN>
+                  <DN>PeriodicalOn</DN>
+               </TXVar>
+               <TXVar attName="Kout">
+                  <TN>IFC1_Kickout</TN>
+                  <DN>Kickout</DN>
+                  <Type>Button</Type>
+               </TXVar>
+               <TXVar attName="Delay">
+                  <TN>IFC1_DelayTime</TN>
+                  <DN>DelayTime</DN>
+                  <Type>Display</Type>
+               </TXVar>
+               <TXVar attName="Status">
+                  <TN>IFC1_status</TN>
+                  <DN>IFC1_status</DN>
+                  <Type>Display</Type>
+               </TXVar>
+               <TXVar attName="CycleTime">
+                  <TN>IFC1_CycleTime</TN>
+                  <DN>CycleTime</DN>
+                  <Type>Input</Type>
+               </TXVar>
+            </Generic>
+            <ERD>
+               <A>OFF</A>
+               <ERDTRC>
+                  <A>OFF</A>
+                  <ByteMap attIdx="1">
+                     <TN>IFC1_RAW_byte_1</TN>
+                     <DN>RAWswitch_1</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="2">
+                     <TN>IFC1_RAW_byte_2</TN>
+                     <DN>RAWswitch_2</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="3">
+                     <TN>IFC1_RAW_byte_3</TN>
+                     <DN>RAWswitch_3</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="4">
+                     <TN>IFC1_RAW_byte_4</TN>
+                     <DN>RAWswitch_4</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="5">
+                     <TN>IFC1_RAW_byte_5</TN>
+                     <DN>RAWswitch_5</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="6">
+                     <TN>IFC1_RAW_byte_6</TN>
+                     <DN>RAWswitch_6</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="7">
+                     <TN>IFC1_RAW_byte_7</TN>
+                     <DN>RAWswitch_7</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="8">
+                     <TN>IFC1_RAW_byte_8</TN>
+                     <DN>RAWswitch_8</DN>
+                  </ByteMap>
+               </ERDTRC>
+               <Switch>
+                  <A>OFF</A>
+                  <TN>IFC1_RAW_switch</TN>
+                  <DN>RAWswitch</DN>
+               </Switch>
+            </ERD>
+            <RDD>
+               <A>OFF</A>
+            </RDD>
+         </TX>
+         <RX>
+            <Generic>
+               <RXVar attName="StdID">
+                  <TN>IFC1_ID</TN>
+                  <DN>IFC1_ID</DN>
+               </RXVar>
+               <RXVar attName="Len">
+                  <TN>IFC1_Length</TN>
+                  <DN>IFC1_Length</DN>
+               </RXVar>
+               <RXVar attName="IDFormat">
+                  <TN>IFC1_IDFormat</TN>
+                  <DN>IFC1_IDFormat</DN>
+               </RXVar>
+               <RXVar attName="Status">
+                  <TN>IFC1_status</TN>
+                  <DN>IFC1_status</DN>
+               </RXVar>
+               <RXVar attName="Time">
+                  <TN>IFC1_time</TN>
+                  <DN>IFC1_time</DN>
+               </RXVar>
+               <RXVar attName="DeltaTime">
+                  <TN>IFC1_dt</TN>
+                  <DN>IFC1_dt</DN>
+               </RXVar>
+               <RXVar attName="CycleTime">
+                  <TN>IFC1_CycleTime</TN>
+                  <DN>CycleTime</DN>
+               </RXVar>
+            </Generic>
+         </RX>
+         <Sgns attCount="5">
+            <Sgn attName="RollingCounter_IFC" attStartBit="0">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="RollingCounter_IFC"/>
+                        <SgnTXVar attName="GW" attValue="RollingCounter_IFC_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="RollingCounter_IFC_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="RollingCounter_IFC_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="RollingCounter_IFC_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="RollingCounter_IFC_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="RollingCounter_IFC"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="LKATrqCmdReqFlag" attStartBit="17">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="LKATrqCmdReqFlag"/>
+                        <SgnTXVar attName="GW" attValue="LKATrqCmdReqFlag_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="LKATrqCmdReqFlag_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="LKATrqCmdReqFlag_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="LKATrqCmdReqFlag_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="LKATrqCmdReqFlag_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="LKATrqCmdReqFlag"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="LKATrqOvlCmdReqValue" attStartBit="21">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="LKATrqOvlCmdReqValue"/>
+                        <SgnTXVar attName="GW" attValue="LKATrqOvlCmdReqValue_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="LKATrqOvlCmdReqValue_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="LKATrqOvlCmdReqValue_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="LKATrqOvlCmdReqValue_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="LKATrqOvlCmdReqValue_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="LKATrqOvlCmdReqValue"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="LKATrqOvlCmdProtnValue" attStartBit="42">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="LKATrqOvlCmdProtnValue"/>
+                        <SgnTXVar attName="GW" attValue="LKATrqOvlCmdProtnValue_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="LKATrqOvlCmdProtnValue_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="LKATrqOvlCmdProtnValue_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="LKATrqOvlCmdProtnValue_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="LKATrqOvlCmdProtnValue_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="LKATrqOvlCmdProtnValue"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="CheckSum_IFC" attStartBit="56">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="CheckSum_IFC"/>
+                        <SgnTXVar attName="GW" attValue="CheckSum_IFC_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="CheckSum_IFC_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="CheckSum_IFC_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="CheckSum_IFC_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="CheckSum_IFC_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="CheckSum_IFC"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+         </Sgns>
+      </Msg>
+      <Msg ID="161" Name="SAS1" DBCName="SAS1" DBCID="161">
+         <ECU>GW</ECU>
+         <RECU>APA,EPS,IFC</RECU>
+         <FreeRawMsg>OFF</FreeRawMsg>
+         <CaptureMsg>OFF</CaptureMsg>
+         <Len>8</Len>
+         <Dir>2</Dir>
+         <Vars attCount="0"/>
+         <TX>
+            <Generic>
+               <TXVar attName="CEn">
+                  <TN>SAS1_CheckEnable</TN>
+                  <DN>CheckEnable</DN>
+               </TXVar>
+               <TXVar attName="En">
+                  <InportDefault>0</InportDefault>
+                  <Logic>-</Logic>
+                  <Source>TRC</Source>
+                  <TN>SAS1_Enable</TN>
+                  <DN>Enable</DN>
+               </TXVar>
+               <TXVar attName="Cyclic">
+                  <InportDefault>0</InportDefault>
+                  <Logic>-</Logic>
+                  <Source>TRC</Source>
+                  <TN>SAS1_PeriodicalOn</TN>
+                  <DN>PeriodicalOn</DN>
+               </TXVar>
+               <TXVar attName="Kout">
+                  <TN>SAS1_Kickout</TN>
+                  <DN>Kickout</DN>
+                  <Type>Button</Type>
+               </TXVar>
+               <TXVar attName="Delay">
+                  <TN>SAS1_DelayTime</TN>
+                  <DN>DelayTime</DN>
+                  <Type>Display</Type>
+               </TXVar>
+               <TXVar attName="Status">
+                  <TN>SAS1_status</TN>
+                  <DN>SAS1_status</DN>
+                  <Type>Display</Type>
+               </TXVar>
+               <TXVar attName="CycleTime">
+                  <TN>SAS1_CycleTime</TN>
+                  <DN>CycleTime</DN>
+                  <Type>Input</Type>
+               </TXVar>
+            </Generic>
+            <ERD>
+               <A>OFF</A>
+               <ERDTRC>
+                  <A>OFF</A>
+                  <ByteMap attIdx="1">
+                     <TN>SAS1_RAW_byte_1</TN>
+                     <DN>RAWswitch_1</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="2">
+                     <TN>SAS1_RAW_byte_2</TN>
+                     <DN>RAWswitch_2</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="3">
+                     <TN>SAS1_RAW_byte_3</TN>
+                     <DN>RAWswitch_3</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="4">
+                     <TN>SAS1_RAW_byte_4</TN>
+                     <DN>RAWswitch_4</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="5">
+                     <TN>SAS1_RAW_byte_5</TN>
+                     <DN>RAWswitch_5</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="6">
+                     <TN>SAS1_RAW_byte_6</TN>
+                     <DN>RAWswitch_6</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="7">
+                     <TN>SAS1_RAW_byte_7</TN>
+                     <DN>RAWswitch_7</DN>
+                  </ByteMap>
+                  <ByteMap attIdx="8">
+                     <TN>SAS1_RAW_byte_8</TN>
+                     <DN>RAWswitch_8</DN>
+                  </ByteMap>
+               </ERDTRC>
+               <Switch>
+                  <A>OFF</A>
+                  <TN>SAS1_RAW_switch</TN>
+                  <DN>RAWswitch</DN>
+               </Switch>
+            </ERD>
+            <RDD>
+               <A>OFF</A>
+            </RDD>
+         </TX>
+         <RX>
+            <Generic>
+               <RXVar attName="StdID">
+                  <TN>SAS1_ID</TN>
+                  <DN>SAS1_ID</DN>
+               </RXVar>
+               <RXVar attName="Len">
+                  <TN>SAS1_Length</TN>
+                  <DN>SAS1_Length</DN>
+               </RXVar>
+               <RXVar attName="IDFormat">
+                  <TN>SAS1_IDFormat</TN>
+                  <DN>SAS1_IDFormat</DN>
+               </RXVar>
+               <RXVar attName="Status">
+                  <TN>SAS1_status</TN>
+                  <DN>SAS1_status</DN>
+               </RXVar>
+               <RXVar attName="Time">
+                  <TN>SAS1_time</TN>
+                  <DN>SAS1_time</DN>
+               </RXVar>
+               <RXVar attName="DeltaTime">
+                  <TN>SAS1_dt</TN>
+                  <DN>SAS1_dt</DN>
+               </RXVar>
+               <RXVar attName="CycleTime">
+                  <TN>SAS1_CycleTime</TN>
+                  <DN>CycleTime</DN>
+               </RXVar>
+            </Generic>
+         </RX>
+         <Sgns attCount="8">
+            <Sgn attName="RollingCounter_SAS1" attStartBit="0">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="RollingCounter_SAS1"/>
+                        <SgnTXVar attName="GW" attValue="RollingCounter_SAS1_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="RollingCounter_SAS1_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="RollingCounter_SAS1_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="RollingCounter_SAS1_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="RollingCounter_SAS1_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="RollingCounter_SAS1"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SAS_Sts" attStartBit="14">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="SAS_Sts"/>
+                        <SgnTXVar attName="GW" attValue="SAS_Sts_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="SAS_Sts_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="SAS_Sts_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="SAS_Sts_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="SAS_Sts_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SAS_Sts"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SAS_Generation" attStartBit="16">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="SAS_Generation"/>
+                        <SgnTXVar attName="GW" attValue="SAS_Generation_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="SAS_Generation_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="SAS_Generation_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="SAS_Generation_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="SAS_Generation_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SAS_Generation"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SteerWheelSpdSign" attStartBit="24">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="SteerWheelSpdSign"/>
+                        <SgnTXVar attName="GW" attValue="SteerWheelSpdSign_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="SteerWheelSpdSign_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="SteerWheelSpdSign_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="SteerWheelSpdSign_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="SteerWheelSpdSign_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SteerWheelSpdSign"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SteerWheelSpd" attStartBit="25">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="SteerWheelSpd"/>
+                        <SgnTXVar attName="GW" attValue="SteerWheelSpd_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="SteerWheelSpd_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="SteerWheelSpd_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="SteerWheelSpd_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="SteerWheelSpd_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SteerWheelSpd"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SteerWheelAngleSign" attStartBit="40">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="SteerWheelAngleSign"/>
+                        <SgnTXVar attName="GW" attValue="SteerWheelAngleSign_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="SteerWheelAngleSign_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="SteerWheelAngleSign_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="SteerWheelAngleSign_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="SteerWheelAngleSign_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SteerWheelAngleSign"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SteerWheelAngle" attStartBit="41">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="SteerWheelAngle"/>
+                        <SgnTXVar attName="GW" attValue="SteerWheelAngle_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="SteerWheelAngle_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="SteerWheelAngle_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="SteerWheelAngle_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="SteerWheelAngle_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SteerWheelAngle"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="CheckSum_SAS1" attStartBit="56">
+               <Generics>
+                  <SgnTXOpt attName="IN"/>
+               </Generics>
+               <STRC>
+                  <TX>
+                     <Generics>
+                        <SgnTXVar attName="Const" attValue="CheckSum_SAS1"/>
+                        <SgnTXVar attName="GW" attValue="CheckSum_SAS1_GW"/>
+                        <SgnTXVar attName="GWSw" attValue="CheckSum_SAS1_GwSwitch"/>
+                        <SgnTXVar attName="Sw" attValue="CheckSum_SAS1_Switch"/>
+                        <SgnTXVar attName="DynVal" attValue="CheckSum_SAS1_dynvalue"/>
+                        <SgnTXVar attName="DynValCntd" attValue="CheckSum_SAS1_dyncount"/>
+                     </Generics>
+                  </TX>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="CheckSum_SAS1"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+         </Sgns>
+      </Msg>
+      <Msg ID="922" Name="SAS2" DBCName="SAS2" DBCID="922">
+         <ECU>SAS</ECU>
+         <RECU>ADAS,EPS</RECU>
+         <FreeRawMsg>OFF</FreeRawMsg>
+         <CaptureMsg>OFF</CaptureMsg>
+         <Len>8</Len>
+         <Dir>1</Dir>
+         <Vars attCount="0"/>
+         <RX>
+            <Generic>
+               <RXVar attName="StdID">
+                  <TN>SAS2_ID</TN>
+                  <DN>SAS2_ID</DN>
+               </RXVar>
+               <RXVar attName="Len">
+                  <TN>SAS2_Length</TN>
+                  <DN>SAS2_Length</DN>
+               </RXVar>
+               <RXVar attName="IDFormat">
+                  <TN>SAS2_IDFormat</TN>
+                  <DN>SAS2_IDFormat</DN>
+               </RXVar>
+               <RXVar attName="Status">
+                  <TN>SAS2_status</TN>
+                  <DN>SAS2_status</DN>
+               </RXVar>
+               <RXVar attName="Time">
+                  <TN>SAS2_time</TN>
+                  <DN>SAS2_time</DN>
+               </RXVar>
+               <RXVar attName="DeltaTime">
+                  <TN>SAS2_dt</TN>
+                  <DN>SAS2_dt</DN>
+               </RXVar>
+               <RXVar attName="CycleTime">
+                  <TN>SAS2_CycleTime</TN>
+                  <DN>CycleTime</DN>
+               </RXVar>
+            </Generic>
+         </RX>
+         <Sgns attCount="12">
+            <Sgn attName="SAS_CheckSum" attStartBit="32">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SAS_CheckSum"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SAS_MsgCount" attStartBit="36">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SAS_MsgCount"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SAS_OK" attStartBit="24">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SAS_OK"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SAS_CAL" attStartBit="25">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SAS_CAL"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SAS_Trim" attStartBit="26">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SAS_Trim"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SAS_Speed_Valid" attStartBit="27">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SAS_Speed_Valid"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SAS_Stat_SF1" attStartBit="28">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SAS_Stat_SF1"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SAS_Stat_SF2" attStartBit="29">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SAS_Stat_SF2"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SAS_Stat_SF3" attStartBit="30">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SAS_Stat_SF3"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SAS_Stat_SF4" attStartBit="31">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SAS_Stat_SF4"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SAS_Speed" attStartBit="16">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SAS_Speed"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+            <Sgn attName="SAS_Angle" attStartBit="0">
+               <Generics>
+                  <SgnTXOpt attName="Err" attValue="0"/>
+               </Generics>
+               <STRC>
+                  <RX>
+                     <Generics>
+                        <SgnRXVar attName="Const" attValue="SAS_Angle"/>
+                     </Generics>
+                  </RX>
+               </STRC>
+            </Sgn>
+         </Sgns>
+      </Msg>
+   </Msgs>
+</Settings>
